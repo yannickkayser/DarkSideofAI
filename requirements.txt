@@ -1,0 +1,18 @@
+# Core scraping libraries
+requests==2.31.0
+beautifulsoup4==4.12.3
+lxml==5.1.0
+
+# Browser automation (for dynamic scraping)
+selenium==4.16.0
+playwright==1.40.0
+
+# Database
+sqlalchemy==2.0.25
+
+# Utilities
+python-dateutil==2.8.2
+
+# Optional but recommended
+html5lib==1.1
+soupsieve==2.5
