@@ -1,0 +1,361 @@
+2026-02-12 18:55:59 - scraper.mindrift.ai - INFO - Starting scrape of Mindrift AI
+2026-02-12 18:56:04 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/
+2026-02-12 18:56:10 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/: All validations passed
+2026-02-12 18:56:10 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/ | Status: 200 | Size: 414546 bytes
+2026-02-12 18:56:10 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/about
+2026-02-12 18:56:12 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/about: All validations passed
+2026-02-12 18:56:12 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/about | Status: 200 | Size: 200604 bytes
+2026-02-12 18:56:12 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/community
+2026-02-12 18:56:13 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/community: All validations passed
+2026-02-12 18:56:13 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/community | Status: 200 | Size: 301742 bytes
+2026-02-12 18:56:13 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/how
+2026-02-12 18:56:16 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/how: All validations passed
+2026-02-12 18:56:16 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/how | Status: 200 | Size: 309487 bytes
+2026-02-12 18:56:16 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/project/agent
+2026-02-12 18:56:18 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/project/agent: All validations passed
+2026-02-12 18:56:18 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/project/agent | Status: 200 | Size: 223972 bytes
+2026-02-12 18:56:18 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/project/tendem
+2026-02-12 18:56:20 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/project/tendem: All validations passed
+2026-02-12 18:56:20 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/project/tendem | Status: 200 | Size: 407116 bytes
+2026-02-12 18:56:20 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/faq
+2026-02-12 18:56:22 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/faq: All validations passed
+2026-02-12 18:56:22 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/faq | Status: 200 | Size: 222284 bytes
+2026-02-12 18:56:22 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/apply
+2026-02-12 18:56:24 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/apply: All validations passed
+2026-02-12 18:56:24 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/apply | Status: 200 | Size: 278547 bytes
+2026-02-12 18:56:24 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/legal/privacy
+2026-02-12 18:56:26 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/legal/privacy: All validations passed
+2026-02-12 18:56:26 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/legal/privacy | Status: 200 | Size: 325219 bytes
+2026-02-12 18:56:26 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/legal/confidential-march-20
+2026-02-12 18:56:28 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/legal/confidential-march-20: All validations passed
+2026-02-12 18:56:28 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/legal/confidential-march-20 | Status: 200 | Size: 355705 bytes
+2026-02-12 18:56:28 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/legal/user-agreement
+2026-02-12 18:56:30 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/legal/user-agreement: All validations passed
+2026-02-12 18:56:30 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/legal/user-agreement | Status: 200 | Size: 371165 bytes
+2026-02-12 18:56:30 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/legal/user-agreement-january-2025
+2026-02-12 18:56:32 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/legal/user-agreement-january-2025: All validations passed
+2026-02-12 18:56:32 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/legal/user-agreement-january-2025 | Status: 200 | Size: 367327 bytes
+2026-02-12 18:56:32 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/legal/user-agreement-june-2024
+2026-02-12 18:56:34 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/legal/user-agreement-june-2024: All validations passed
+2026-02-12 18:56:34 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/legal/user-agreement-june-2024 | Status: 200 | Size: 282740 bytes
+2026-02-12 18:56:34 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/legal/mobile-license-agreement/components
+2026-02-12 18:56:36 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/legal/mobile-license-agreement/components: All validations passed
+2026-02-12 18:56:36 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/legal/mobile-license-agreement/components | Status: 200 | Size: 177172 bytes
+2026-02-12 18:56:36 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/legal/cookie-notice
+2026-02-12 18:56:38 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/legal/cookie-notice: All validations passed
+2026-02-12 18:56:38 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/legal/cookie-notice | Status: 200 | Size: 191263 bytes
+2026-02-12 18:56:38 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/legal/cookies-list
+2026-02-12 18:56:40 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/legal/cookies-list: All validations passed
+2026-02-12 18:56:40 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/legal/cookies-list | Status: 200 | Size: 209284 bytes
+2026-02-12 18:56:40 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog
+2026-02-12 18:56:43 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog: All validations passed
+2026-02-12 18:56:43 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog | Status: 200 | Size: 588162 bytes
+2026-02-12 18:56:43 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/redirect-to-login-page
+2026-02-12 18:56:47 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/redirect-to-login-page: All validations passed
+2026-02-12 18:56:47 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/redirect-to-login-page | Status: 200 | Size: 15205 bytes
+2026-02-12 18:56:47 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/legal/addendum
+2026-02-12 18:56:49 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/legal/addendum: All validations passed
+2026-02-12 18:56:49 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/legal/addendum | Status: 200 | Size: 225448 bytes
+2026-02-12 18:56:49 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/legal/terms
+2026-02-12 18:56:51 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/legal/terms: All validations passed
+2026-02-12 18:56:51 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/legal/terms | Status: 200 | Size: 290488 bytes
+2026-02-12 18:56:51 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/legal/code-of-conduct
+2026-02-12 18:56:53 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/legal/code-of-conduct: All validations passed
+2026-02-12 18:56:53 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/legal/code-of-conduct | Status: 200 | Size: 199355 bytes
+2026-02-12 18:56:53 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/app/apple
+2026-02-12 18:56:56 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/app/apple: All validations passed
+2026-02-12 18:56:56 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/app/apple | Status: 200 | Size: 149725 bytes
+2026-02-12 18:56:57 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/app/google
+2026-02-12 18:57:00 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/app/google: All validations passed
+2026-02-12 18:57:00 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/app/google | Status: 200 | Size: 1165482 bytes
+2026-02-12 18:57:00 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/prompt-jobs-guide
+2026-02-12 18:57:02 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/prompt-jobs-guide: All validations passed
+2026-02-12 18:57:02 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/prompt-jobs-guide | Status: 200 | Size: 251210 bytes
+2026-02-12 18:57:02 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/slop-buzzword
+2026-02-12 18:57:04 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/slop-buzzword: All validations passed
+2026-02-12 18:57:04 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/slop-buzzword | Status: 200 | Size: 262577 bytes
+2026-02-12 18:57:04 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/youtube-toolkit
+2026-02-12 18:57:06 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/youtube-toolkit: All validations passed
+2026-02-12 18:57:06 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/youtube-toolkit | Status: 200 | Size: 269524 bytes
+2026-02-12 18:57:06 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/model-break
+2026-02-12 18:57:08 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/model-break: All validations passed
+2026-02-12 18:57:08 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/model-break | Status: 200 | Size: 246145 bytes
+2026-02-12 18:57:08 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/remote-cybersecurity
+2026-02-12 18:57:10 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/remote-cybersecurity: All validations passed
+2026-02-12 18:57:10 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/remote-cybersecurity | Status: 200 | Size: 246006 bytes
+2026-02-12 18:57:10 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/future-healthcare
+2026-02-12 18:57:12 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/future-healthcare: All validations passed
+2026-02-12 18:57:12 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/future-healthcare | Status: 200 | Size: 245999 bytes
+2026-02-12 18:57:12 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/gartner26
+2026-02-12 18:57:14 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/gartner26: All validations passed
+2026-02-12 18:57:14 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/gartner26 | Status: 200 | Size: 258059 bytes
+2026-02-12 18:57:14 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/library
+2026-02-12 18:57:16 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/library: All validations passed
+2026-02-12 18:57:16 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/library | Status: 200 | Size: 265483 bytes
+2026-02-12 18:57:16 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/mindrift-unwrapped-2025
+2026-02-12 18:57:18 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/mindrift-unwrapped-2025: All validations passed
+2026-02-12 18:57:18 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/mindrift-unwrapped-2025 | Status: 200 | Size: 252477 bytes
+2026-02-12 18:57:18 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/ai-trends-2026
+2026-02-12 18:57:20 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/ai-trends-2026: All validations passed
+2026-02-12 18:57:20 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/ai-trends-2026 | Status: 200 | Size: 257383 bytes
+2026-02-12 18:57:20 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/ai-jobs-with-no-experience
+2026-02-12 18:57:22 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/ai-jobs-with-no-experience: All validations passed
+2026-02-12 18:57:22 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/ai-jobs-with-no-experience | Status: 200 | Size: 247695 bytes
+2026-02-12 18:57:22 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/application-to-task
+2026-02-12 18:57:24 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/application-to-task: All validations passed
+2026-02-12 18:57:24 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/application-to-task | Status: 200 | Size: 251481 bytes
+2026-02-12 18:57:24 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/wave-of-physics-jobs
+2026-02-12 18:57:26 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/wave-of-physics-jobs: All validations passed
+2026-02-12 18:57:26 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/wave-of-physics-jobs | Status: 200 | Size: 244859 bytes
+2026-02-12 18:57:26 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/ai-agent-era
+2026-02-12 18:57:28 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/ai-agent-era: All validations passed
+2026-02-12 18:57:28 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/ai-agent-era | Status: 200 | Size: 247382 bytes
+2026-02-12 18:57:28 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/workslop
+2026-02-12 18:57:30 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/workslop: All validations passed
+2026-02-12 18:57:30 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/workslop | Status: 200 | Size: 246595 bytes
+2026-02-12 18:57:30 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/train-ai-for-money
+2026-02-12 18:57:32 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/train-ai-for-money: All validations passed
+2026-02-12 18:57:32 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/train-ai-for-money | Status: 200 | Size: 245227 bytes
+2026-02-12 18:57:32 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/ai-library
+2026-02-12 18:57:34 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/ai-library: All validations passed
+2026-02-12 18:57:34 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/ai-library | Status: 200 | Size: 247781 bytes
+2026-02-12 18:57:34 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/ai-agents-taking-over
+2026-02-12 18:57:36 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/ai-agents-taking-over: All validations passed
+2026-02-12 18:57:36 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/ai-agents-taking-over | Status: 200 | Size: 247472 bytes
+2026-02-12 18:57:36 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/stem-is-remote
+2026-02-12 18:57:38 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/stem-is-remote: All validations passed
+2026-02-12 18:57:38 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/stem-is-remote | Status: 200 | Size: 246135 bytes
+2026-02-12 18:57:38 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/5-online-math-jobs
+2026-02-12 18:57:40 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/5-online-math-jobs: All validations passed
+2026-02-12 18:57:40 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/5-online-math-jobs | Status: 200 | Size: 243077 bytes
+2026-02-12 18:57:40 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/ai-meets-the-real-world
+2026-02-12 18:57:42 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/ai-meets-the-real-world: All validations passed
+2026-02-12 18:57:42 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/ai-meets-the-real-world | Status: 200 | Size: 247094 bytes
+2026-02-12 18:57:42 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/ai-native
+2026-02-12 18:57:44 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/ai-native: All validations passed
+2026-02-12 18:57:44 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/ai-native | Status: 200 | Size: 246786 bytes
+2026-02-12 18:57:44 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/future-of-work
+2026-02-12 18:57:46 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/future-of-work: All validations passed
+2026-02-12 18:57:46 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/future-of-work | Status: 200 | Size: 251363 bytes
+2026-02-12 18:57:46 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/too-helpful
+2026-02-12 18:57:48 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/too-helpful: All validations passed
+2026-02-12 18:57:48 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/too-helpful | Status: 200 | Size: 248667 bytes
+2026-02-12 18:57:48 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/tristan
+2026-02-12 18:57:50 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/tristan: All validations passed
+2026-02-12 18:57:50 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/tristan | Status: 200 | Size: 245885 bytes
+2026-02-12 18:57:50 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/remote-software-engineering
+2026-02-12 18:57:52 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/remote-software-engineering: All validations passed
+2026-02-12 18:57:52 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/remote-software-engineering | Status: 200 | Size: 257625 bytes
+2026-02-12 18:57:52 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/gdpr
+2026-02-12 18:57:54 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/gdpr: All validations passed
+2026-02-12 18:57:54 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/gdpr | Status: 200 | Size: 248164 bytes
+2026-02-12 18:57:54 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/author
+2026-02-12 18:57:56 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/author: All validations passed
+2026-02-12 18:57:56 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/author | Status: 200 | Size: 253013 bytes
+2026-02-12 18:57:56 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/lab
+2026-02-12 18:57:58 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/lab: All validations passed
+2026-02-12 18:57:58 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/lab | Status: 200 | Size: 247231 bytes
+2026-02-12 18:57:58 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/red
+2026-02-12 18:58:00 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/red: All validations passed
+2026-02-12 18:58:00 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/red | Status: 200 | Size: 245295 bytes
+2026-02-12 18:58:00 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/4-things
+2026-02-12 18:58:02 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/4-things: All validations passed
+2026-02-12 18:58:02 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/4-things | Status: 200 | Size: 242170 bytes
+2026-02-12 18:58:02 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/writing-career
+2026-02-12 18:58:04 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/writing-career: All validations passed
+2026-02-12 18:58:04 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/writing-career | Status: 200 | Size: 251397 bytes
+2026-02-12 18:58:04 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/ambiguity
+2026-02-12 18:58:06 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/ambiguity: All validations passed
+2026-02-12 18:58:06 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/ambiguity | Status: 200 | Size: 242180 bytes
+2026-02-12 18:58:06 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/simon
+2026-02-12 18:58:08 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/simon: All validations passed
+2026-02-12 18:58:08 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/simon | Status: 200 | Size: 247178 bytes
+2026-02-12 18:58:08 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/money
+2026-02-12 18:58:11 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/money: All validations passed
+2026-02-12 18:58:11 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/money | Status: 200 | Size: 248518 bytes
+2026-02-12 18:58:11 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/roman
+2026-02-12 18:58:12 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/roman: All validations passed
+2026-02-12 18:58:12 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/roman | Status: 200 | Size: 243582 bytes
+2026-02-12 18:58:12 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/onboard
+2026-02-12 18:58:14 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/onboard: All validations passed
+2026-02-12 18:58:14 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/onboard | Status: 200 | Size: 242508 bytes
+2026-02-12 18:58:14 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/audience
+2026-02-12 18:58:17 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/audience: All validations passed
+2026-02-12 18:58:17 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/audience | Status: 200 | Size: 251467 bytes
+2026-02-12 18:58:17 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/writing-experts
+2026-02-12 18:58:18 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/writing-experts: All validations passed
+2026-02-12 18:58:18 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/writing-experts | Status: 200 | Size: 244881 bytes
+2026-02-12 18:58:18 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/golden
+2026-02-12 18:58:20 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/golden: All validations passed
+2026-02-12 18:58:20 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/golden | Status: 200 | Size: 254734 bytes
+2026-02-12 18:58:20 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/2025-genai-trends
+2026-02-12 18:58:22 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/2025-genai-trends: All validations passed
+2026-02-12 18:58:22 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/2025-genai-trends | Status: 200 | Size: 254908 bytes
+2026-02-12 18:58:22 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/hallucination
+2026-02-12 18:58:24 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/hallucination: All validations passed
+2026-02-12 18:58:24 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/hallucination | Status: 200 | Size: 251495 bytes
+2026-02-12 18:58:24 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/future-work
+2026-02-12 18:58:26 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/future-work: All validations passed
+2026-02-12 18:58:26 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/future-work | Status: 200 | Size: 252263 bytes
+2026-02-12 18:58:26 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/freelance-tips
+2026-02-12 18:58:29 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/freelance-tips: All validations passed
+2026-02-12 18:58:29 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/freelance-tips | Status: 200 | Size: 255913 bytes
+2026-02-12 18:58:29 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/qa-ai
+2026-02-12 18:58:31 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/qa-ai: All validations passed
+2026-02-12 18:58:31 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/qa-ai | Status: 200 | Size: 245254 bytes
+2026-02-12 18:58:31 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/alexander
+2026-02-12 18:58:33 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/alexander: All validations passed
+2026-02-12 18:58:33 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/alexander | Status: 200 | Size: 244902 bytes
+2026-02-12 18:58:33 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/chloe
+2026-02-12 18:58:35 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/chloe: All validations passed
+2026-02-12 18:58:35 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/chloe | Status: 200 | Size: 245738 bytes
+2026-02-12 18:58:35 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/want-to-be-an-ai-tutor
+2026-02-12 18:58:37 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/want-to-be-an-ai-tutor: All validations passed
+2026-02-12 18:58:37 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/want-to-be-an-ai-tutor | Status: 200 | Size: 251434 bytes
+2026-02-12 18:58:37 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/identity
+2026-02-12 18:58:39 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/identity: All validations passed
+2026-02-12 18:58:39 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/identity | Status: 200 | Size: 248576 bytes
+2026-02-12 18:58:39 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/gig-project
+2026-02-12 18:58:41 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/gig-project: All validations passed
+2026-02-12 18:58:41 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/gig-project | Status: 200 | Size: 254848 bytes
+2026-02-12 18:58:41 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/faith
+2026-02-12 18:58:43 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/faith: All validations passed
+2026-02-12 18:58:43 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/faith | Status: 200 | Size: 242386 bytes
+2026-02-12 18:58:43 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/landscape
+2026-02-12 18:58:46 - scraper.mindrift.ai - WARNING - ✗ VALIDATION FAILED: https://mindrift.ai/blog/landscape: Missing required field: text_content
+2026-02-12 18:58:46 - scraper.mindrift.ai - WARNING - Validation failed for https://mindrift.ai/blog/landscape: Missing required field: text_content
+2026-02-12 18:58:46 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/discovering-with-ai
+2026-02-12 18:58:48 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/discovering-with-ai: All validations passed
+2026-02-12 18:58:48 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/discovering-with-ai | Status: 200 | Size: 241396 bytes
+2026-02-12 18:58:48 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/value-of-readability
+2026-02-12 18:58:50 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/value-of-readability: All validations passed
+2026-02-12 18:58:50 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/value-of-readability | Status: 200 | Size: 252392 bytes
+2026-02-12 18:58:50 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/ai-in-comms
+2026-02-12 18:58:52 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/ai-in-comms: All validations passed
+2026-02-12 18:58:52 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/ai-in-comms | Status: 200 | Size: 243384 bytes
+2026-02-12 18:58:52 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/about-talent-pool
+2026-02-12 18:58:53 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/about-talent-pool: All validations passed
+2026-02-12 18:58:53 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/about-talent-pool | Status: 200 | Size: 241361 bytes
+2026-02-12 18:58:53 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/year-with-mindrift
+2026-02-12 18:58:56 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/year-with-mindrift: All validations passed
+2026-02-12 18:58:56 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/year-with-mindrift | Status: 200 | Size: 240261 bytes
+2026-02-12 18:58:56 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/teaching-ai-ii
+2026-02-12 18:58:58 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/teaching-ai-ii: All validations passed
+2026-02-12 18:58:58 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/teaching-ai-ii | Status: 200 | Size: 244698 bytes
+2026-02-12 18:58:58 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/how-to-talent-pool
+2026-02-12 18:59:01 - scraper.mindrift.ai - WARNING - ✗ VALIDATION FAILED: https://mindrift.ai/blog/how-to-talent-pool: Missing required field: text_content
+2026-02-12 18:59:01 - scraper.mindrift.ai - WARNING - Validation failed for https://mindrift.ai/blog/how-to-talent-pool: Missing required field: text_content
+2026-02-12 18:59:01 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/60
+2026-02-12 18:59:02 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/60: All validations passed
+2026-02-12 18:59:02 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/60 | Status: 200 | Size: 242836 bytes
+2026-02-12 18:59:02 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/time-tips
+2026-02-12 18:59:04 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/time-tips: All validations passed
+2026-02-12 18:59:04 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/time-tips | Status: 200 | Size: 243824 bytes
+2026-02-12 18:59:04 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/teaching-ai
+2026-02-12 18:59:06 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/teaching-ai: All validations passed
+2026-02-12 18:59:06 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/teaching-ai | Status: 200 | Size: 247246 bytes
+2026-02-12 18:59:06 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/range
+2026-02-12 18:59:08 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/range: All validations passed
+2026-02-12 18:59:08 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/range | Status: 200 | Size: 245095 bytes
+2026-02-12 18:59:08 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/lisa
+2026-02-12 18:59:11 - scraper.mindrift.ai - WARNING - ✗ VALIDATION FAILED: https://mindrift.ai/blog/lisa: Missing required field: text_content
+2026-02-12 18:59:11 - scraper.mindrift.ai - WARNING - Validation failed for https://mindrift.ai/blog/lisa: Missing required field: text_content
+2026-02-12 18:59:11 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/inside-ai
+2026-02-12 18:59:13 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/inside-ai: All validations passed
+2026-02-12 18:59:13 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/inside-ai | Status: 200 | Size: 241548 bytes
+2026-02-12 18:59:13 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/flexible-freelancing
+2026-02-12 18:59:15 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/flexible-freelancing: All validations passed
+2026-02-12 18:59:15 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/flexible-freelancing | Status: 200 | Size: 243487 bytes
+2026-02-12 18:59:15 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/bias-free
+2026-02-12 18:59:17 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/bias-free: All validations passed
+2026-02-12 18:59:17 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/bias-free | Status: 200 | Size: 242955 bytes
+2026-02-12 18:59:17 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/community
+2026-02-12 18:59:19 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/community: All validations passed
+2026-02-12 18:59:19 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/community | Status: 200 | Size: 240817 bytes
+2026-02-12 18:59:19 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/topics
+2026-02-12 18:59:21 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/topics: All validations passed
+2026-02-12 18:59:21 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/topics | Status: 200 | Size: 243293 bytes
+2026-02-12 18:59:21 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/are-my-tests-used-to-train-ai
+2026-02-12 18:59:23 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/are-my-tests-used-to-train-ai: All validations passed
+2026-02-12 18:59:23 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/are-my-tests-used-to-train-ai | Status: 200 | Size: 242584 bytes
+2026-02-12 18:59:23 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/izet
+2026-02-12 18:59:25 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/izet: All validations passed
+2026-02-12 18:59:25 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/izet | Status: 200 | Size: 243426 bytes
+2026-02-12 18:59:25 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/gig
+2026-02-12 18:59:27 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/gig: All validations passed
+2026-02-12 18:59:27 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/gig | Status: 200 | Size: 243673 bytes
+2026-02-12 18:59:27 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/role-of-writer
+2026-02-12 18:59:29 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/role-of-writer: All validations passed
+2026-02-12 18:59:29 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/role-of-writer | Status: 200 | Size: 246188 bytes
+2026-02-12 18:59:29 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/the-evolution-of-ai-and-the-crucial-role-of-ai-tutors
+2026-02-12 18:59:31 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/the-evolution-of-ai-and-the-crucial-role-of-ai-tutors: All validations passed
+2026-02-12 18:59:31 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/the-evolution-of-ai-and-the-crucial-role-of-ai-tutors | Status: 200 | Size: 243674 bytes
+2026-02-12 18:59:31 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/anita
+2026-02-12 18:59:33 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/anita: All validations passed
+2026-02-12 18:59:33 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/anita | Status: 200 | Size: 244211 bytes
+2026-02-12 18:59:33 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/importance-of-ai-tutor
+2026-02-12 18:59:35 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/importance-of-ai-tutor: All validations passed
+2026-02-12 18:59:35 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/importance-of-ai-tutor | Status: 200 | Size: 242992 bytes
+2026-02-12 18:59:35 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/anatomy-of-genai
+2026-02-12 18:59:37 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/anatomy-of-genai: All validations passed
+2026-02-12 18:59:37 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/anatomy-of-genai | Status: 200 | Size: 241751 bytes
+2026-02-12 18:59:37 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/partha
+2026-02-12 18:59:39 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/partha: All validations passed
+2026-02-12 18:59:39 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/partha | Status: 200 | Size: 244452 bytes
+2026-02-12 18:59:39 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/tanisha
+2026-02-12 18:59:42 - scraper.mindrift.ai - WARNING - ✗ VALIDATION FAILED: https://mindrift.ai/blog/tanisha: Missing required field: text_content
+2026-02-12 18:59:42 - scraper.mindrift.ai - WARNING - Validation failed for https://mindrift.ai/blog/tanisha: Missing required field: text_content
+2026-02-12 18:59:42 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/emma
+2026-02-12 18:59:44 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/emma: All validations passed
+2026-02-12 18:59:44 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/emma | Status: 200 | Size: 244984 bytes
+2026-02-12 18:59:44 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/lance-s-leap-into-generative-ai
+2026-02-12 18:59:46 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/lance-s-leap-into-generative-ai: All validations passed
+2026-02-12 18:59:46 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/lance-s-leap-into-generative-ai | Status: 200 | Size: 242702 bytes
+2026-02-12 18:59:46 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/from-engineering-to-ai-vanice-s-transformative-journey
+2026-02-12 18:59:48 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/from-engineering-to-ai-vanice-s-transformative-journey: All validations passed
+2026-02-12 18:59:48 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/from-engineering-to-ai-vanice-s-transformative-journey | Status: 200 | Size: 242914 bytes
+2026-02-12 18:59:48 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/touching-tomorrow-my-journey-as-an-ai-tutor-at-mindrift
+2026-02-12 18:59:50 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/touching-tomorrow-my-journey-as-an-ai-tutor-at-mindrift: All validations passed
+2026-02-12 18:59:50 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/touching-tomorrow-my-journey-as-an-ai-tutor-at-mindrift | Status: 200 | Size: 240530 bytes
+2026-02-12 18:59:50 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/interview-with-amy-from-romantic-novelist-to-pioneer-ai-editor
+2026-02-12 18:59:53 - scraper.mindrift.ai - WARNING - ✗ VALIDATION FAILED: https://mindrift.ai/blog/interview-with-amy-from-romantic-novelist-to-pioneer-ai-editor: Missing required field: text_content
+2026-02-12 18:59:53 - scraper.mindrift.ai - WARNING - Validation failed for https://mindrift.ai/blog/interview-with-amy-from-romantic-novelist-to-pioneer-ai-editor: Missing required field: text_content
+2026-02-12 18:59:53 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/conversation-with-tech-editor-amrita
+2026-02-12 18:59:55 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/conversation-with-tech-editor-amrita: All validations passed
+2026-02-12 18:59:55 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/conversation-with-tech-editor-amrita | Status: 200 | Size: 242127 bytes
+2026-02-12 18:59:55 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/editing-experts-meet-coding-gurus-the-tech-editor-role-at-mindrift
+2026-02-12 18:59:57 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/editing-experts-meet-coding-gurus-the-tech-editor-role-at-mindrift: All validations passed
+2026-02-12 18:59:57 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/editing-experts-meet-coding-gurus-the-tech-editor-role-at-mindrift | Status: 200 | Size: 247490 bytes
+2026-02-12 18:59:57 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/interview-with-artur-from-sorbonne-to-ai-applying-classical-education-in-tomorrow-s-world
+2026-02-12 18:59:59 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/interview-with-artur-from-sorbonne-to-ai-applying-classical-education-in-tomorrow-s-world: All validations passed
+2026-02-12 18:59:59 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/interview-with-artur-from-sorbonne-to-ai-applying-classical-education-in-tomorrow-s-world | Status: 200 | Size: 242607 bytes
+2026-02-12 18:59:59 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/podcast-summary-celebrating-charlie-s-success-in-the-ai-engineering-path
+2026-02-12 19:00:01 - scraper.mindrift.ai - WARNING - ✗ VALIDATION FAILED: https://mindrift.ai/blog/podcast-summary-celebrating-charlie-s-success-in-the-ai-engineering-path: Missing required field: text_content
+2026-02-12 19:00:01 - scraper.mindrift.ai - WARNING - Validation failed for https://mindrift.ai/blog/podcast-summary-celebrating-charlie-s-success-in-the-ai-engineering-path: Missing required field: text_content
+2026-02-12 19:00:01 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/beyond-wikipedia-downloads-understanding-the-role-of-human-intelligence-in-training-gen-ai
+2026-02-12 19:00:03 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/beyond-wikipedia-downloads-understanding-the-role-of-human-intelligence-in-training-gen-ai: All validations passed
+2026-02-12 19:00:03 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/beyond-wikipedia-downloads-understanding-the-role-of-human-intelligence-in-training-gen-ai | Status: 200 | Size: 242918 bytes
+2026-02-12 19:00:03 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/ai-tutor-conversations-humanizing-generative-ai-with-authenticity
+2026-02-12 19:00:04 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/ai-tutor-conversations-humanizing-generative-ai-with-authenticity: All validations passed
+2026-02-12 19:00:04 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/ai-tutor-conversations-humanizing-generative-ai-with-authenticity | Status: 200 | Size: 243330 bytes
+2026-02-12 19:00:04 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/industry-report-ai-and-the-workforce
+2026-02-12 19:00:07 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/industry-report-ai-and-the-workforce: All validations passed
+2026-02-12 19:00:07 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/industry-report-ai-and-the-workforce | Status: 200 | Size: 238618 bytes
+2026-02-12 19:00:07 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/the-writer-s-guide-to-ai-decoding-the-role-of-ai-tutors
+2026-02-12 19:00:09 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/the-writer-s-guide-to-ai-decoding-the-role-of-ai-tutors: All validations passed
+2026-02-12 19:00:09 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/the-writer-s-guide-to-ai-decoding-the-role-of-ai-tutors | Status: 200 | Size: 251440 bytes
+2026-02-12 19:00:09 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/inside-mindrift-who-we-are-and-what-we-do
+2026-02-12 19:00:11 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/inside-mindrift-who-we-are-and-what-we-do: All validations passed
+2026-02-12 19:00:11 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/inside-mindrift-who-we-are-and-what-we-do | Status: 200 | Size: 245967 bytes
+2026-02-12 19:00:11 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/conversations-with-mindrift-experts-crafting-a-career-in-generative-ai-with-freedom-and-flexibility
+2026-02-12 19:00:13 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/conversations-with-mindrift-experts-crafting-a-career-in-generative-ai-with-freedom-and-flexibility: All validations passed
+2026-02-12 19:00:13 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/conversations-with-mindrift-experts-crafting-a-career-in-generative-ai-with-freedom-and-flexibility | Status: 200 | Size: 241047 bytes
+2026-02-12 19:00:13 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/embracing-the-real-world-risks-and-all
+2026-02-12 19:00:15 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/embracing-the-real-world-risks-and-all: All validations passed
+2026-02-12 19:00:15 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/embracing-the-real-world-risks-and-all | Status: 200 | Size: 242868 bytes
+2026-02-12 19:00:15 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/who-are-the-brains-behind-generative-ai
+2026-02-12 19:00:17 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/who-are-the-brains-behind-generative-ai: All validations passed
+2026-02-12 19:00:17 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/who-are-the-brains-behind-generative-ai | Status: 200 | Size: 238870 bytes
+2026-02-12 19:00:17 - scraper.mindrift.ai - INFO - Starting scrape: https://mindrift.ai/blog/interview-with-julia
+2026-02-12 19:00:19 - scraper.mindrift.ai - INFO - ✓ VALIDATION PASSED: https://mindrift.ai/blog/interview-with-julia: All validations passed
+2026-02-12 19:00:19 - scraper.mindrift.ai - INFO - ✓ SUCCESS: https://mindrift.ai/blog/interview-with-julia | Status: 200 | Size: 242564 bytes
