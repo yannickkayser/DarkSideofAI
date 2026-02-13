@@ -3,6 +3,7 @@ Main scraper for JavaScript-heavy websites using Playwright
 """
 import time
 import json
+import re
 import hashlib
 from datetime import datetime
 from urllib.parse import urlparse, urljoin
@@ -72,6 +73,82 @@ class WebScraper:
             return '/'
         return '/'.join(path.split('/')[:-1]) or '/'
     
+    def _extract_css_colors(self, page: Page, soup) -> dict:
+        """
+        Extract color codes categorized by element type
+        
+        Returns:
+            Dictionary with color lists by category
+        """
+        colors = {
+            'background_colors': set(),
+            'text_colors': set(),
+            'link_colors': set(),
+            'button_colors': set()
+        }
+        
+        # Color pattern (hex, rgb, rgba)
+        color_pattern = r'#[0-9a-fA-F]{3,6}|rgba?\([^)]+\)'
+        
+        try:
+            # Get computed styles using JavaScript
+            color_script = """
+            () => {
+                const colors = {
+                    backgrounds: [],
+                    texts: [],
+                    links: [],
+                    buttons: []
+                };
+                
+                // Background colors from body, header, main, sections
+                ['body', 'header', 'main', 'section', 'nav', 'footer'].forEach(tag => {
+                    document.querySelectorAll(tag).forEach(el => {
+                        const bg = window.getComputedStyle(el).backgroundColor;
+                        if (bg && bg !== 'rgba(0, 0, 0, 0)') colors.backgrounds.push(bg);
+                    });
+                });
+                
+                // Text colors from paragraphs, headings, spans
+                ['p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'span', 'div'].forEach(tag => {
+                    document.querySelectorAll(tag).forEach(el => {
+                        const color = window.getComputedStyle(el).color;
+                        if (color) colors.texts.push(color);
+                    });
+                });
+                
+                // Link colors
+                document.querySelectorAll('a').forEach(el => {
+                    const color = window.getComputedStyle(el).color;
+                    if (color) colors.links.push(color);
+                });
+                
+                // Button colors (background and text)
+                document.querySelectorAll('button, .btn, [role="button"]').forEach(el => {
+                    const bg = window.getComputedStyle(el).backgroundColor;
+                    const color = window.getComputedStyle(el).color;
+                    if (bg && bg !== 'rgba(0, 0, 0, 0)') colors.buttons.push(bg);
+                    if (color) colors.buttons.push(color);
+                });
+                
+                return colors;
+            }
+            """
+            
+            extracted_colors = page.evaluate(color_script)
+            
+            # Process and deduplicate colors
+            colors['background_colors'] = list(set(extracted_colors['backgrounds']))[:20]  # Limit to top 20
+            colors['text_colors'] = list(set(extracted_colors['texts']))[:20]
+            colors['link_colors'] = list(set(extracted_colors['links']))[:10]
+            colors['button_colors'] = list(set(extracted_colors['buttons']))[:10]
+            
+        except Exception as e:
+            self.logger.warning(f"Error extracting CSS colors: {e}")
+        
+        # Convert sets to lists for JSON serialization
+        return {k: list(v) for k, v in colors.items()}
+    
     def _extract_text_from_page(self, page: Page) -> Dict[str, any]:
         """
         Extract all text content and metadata from page
@@ -89,6 +166,9 @@ class WebScraper:
         html_content = page.content()
         soup = BeautifulSoup(html_content, 'html.parser')
         
+        # Extract CSS colors 
+        css_colors = self._extract_css_colors(page, soup)
+
         # Extract title
         title_elem = soup.find('title')
         title = title_elem.get_text(strip=True) if title_elem else ''
@@ -145,6 +225,7 @@ class WebScraper:
             'html_element': html_element,
             'directory': self._extract_directory(page.url),
             'content_length': len(html_content),
+            'css_colors': css_colors,
             'links': links
         }
     
@@ -286,7 +367,8 @@ class WebScraper:
                             html_element=page_data['html_element'],
                             depth=page_data['depth'],
                             status_code=page_data['status_code'],
-                            content_length=page_data['content_length']
+                            content_length=page_data['content_length'],
+                            css_colors=json.dumps(page_data['css_colors'])
                         )
                         
                         if page_id:

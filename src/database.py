@@ -62,6 +62,7 @@ class Database:
                 page_depth INTEGER,
                 status_code INTEGER,
                 content_length INTEGER,
+                css_colors TEXT,  
                 scraped_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                 FOREIGN KEY (website_id) REFERENCES websites(id)
             )
@@ -110,7 +111,8 @@ class Database:
     
     def add_page(self, website_id: int, url: str, title: str, 
                  text_content: str, directory: str, html_element: str,
-                 depth: int, status_code: int, content_length: int) -> int:
+                 depth: int, status_code: int, content_length: int, 
+                 css_colors: str = None) -> int:
         """Add page with metadata"""
         conn = self.connect()
         cursor = conn.cursor()
@@ -125,10 +127,10 @@ class Database:
         cursor.execute("""
             INSERT INTO pages (
                 website_id, url, url_hash, title, text_content,
-                directory, html_element, page_depth, status_code, content_length
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                directory, html_element, page_depth, status_code, content_length, css_colors
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """, (website_id, url, url_hash, title, text_content, 
-              directory, html_element, depth, status_code, content_length))
+              directory, html_element, depth, status_code, content_length, css_colors))
         
         conn.commit()
         return cursor.lastrowid
