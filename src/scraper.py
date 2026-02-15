@@ -81,73 +81,69 @@ class WebScraper:
             Dictionary with color lists by category
         """
         colors = {
-            'background_colors': set(),
-            'text_colors': set(),
-            'link_colors': set(),
-            'button_colors': set()
+            'background_colors': [],
+            'text_colors': [],
+            'link_colors': [],
+            'button_colors': []
         }
         
-        # Color pattern (hex, rgb, rgba)
-        color_pattern = r'#[0-9a-fA-F]{3,6}|rgba?\([^)]+\)'
-        
         try:
-            # Get computed styles using JavaScript
-            color_script = """
-            () => {
-                const colors = {
-                    backgrounds: [],
-                    texts: [],
-                    links: [],
-                    buttons: []
-                };
-                
-                // Background colors from body, header, main, sections
-                ['body', 'header', 'main', 'section', 'nav', 'footer'].forEach(tag => {
-                    document.querySelectorAll(tag).forEach(el => {
-                        const bg = window.getComputedStyle(el).backgroundColor;
-                        if (bg && bg !== 'rgba(0, 0, 0, 0)') colors.backgrounds.push(bg);
-                    });
-                });
-                
-                // Text colors from paragraphs, headings, spans
-                ['p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'span', 'div'].forEach(tag => {
-                    document.querySelectorAll(tag).forEach(el => {
-                        const color = window.getComputedStyle(el).color;
-                        if (color) colors.texts.push(color);
-                    });
-                });
-                
-                // Link colors
-                document.querySelectorAll('a').forEach(el => {
-                    const color = window.getComputedStyle(el).color;
-                    if (color) colors.links.push(color);
-                });
-                
-                // Button colors (background and text)
-                document.querySelectorAll('button, .btn, [role="button"]').forEach(el => {
-                    const bg = window.getComputedStyle(el).backgroundColor;
-                    const color = window.getComputedStyle(el).color;
-                    if (bg && bg !== 'rgba(0, 0, 0, 0)') colors.buttons.push(bg);
-                    if (color) colors.buttons.push(color);
-                });
-                
-                return colors;
-            }
+            # Simpler approach: evaluate each color type separately
+            
+            # Background colors
+            bg_script = """
+            Array.from(new Set(
+                Array.from(document.querySelectorAll('body, header, main, section, nav, footer'))
+                    .map(el => window.getComputedStyle(el).backgroundColor)
+                    .filter(c => c && c !== 'rgba(0, 0, 0, 0)')
+            )).slice(0, 20)
             """
+            colors['background_colors'] = page.evaluate(bg_script)
             
-            extracted_colors = page.evaluate(color_script)
+            # Text colors
+            text_script = """
+            Array.from(new Set(
+                Array.from(document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, span'))
+                    .map(el => window.getComputedStyle(el).color)
+                    .filter(c => c)
+            )).slice(0, 20)
+            """
+            colors['text_colors'] = page.evaluate(text_script)
             
-            # Process and deduplicate colors
-            colors['background_colors'] = list(set(extracted_colors['backgrounds']))[:20]  # Limit to top 20
-            colors['text_colors'] = list(set(extracted_colors['texts']))[:20]
-            colors['link_colors'] = list(set(extracted_colors['links']))[:10]
-            colors['button_colors'] = list(set(extracted_colors['buttons']))[:10]
+            # Link colors
+            link_script = """
+            Array.from(new Set(
+                Array.from(document.querySelectorAll('a'))
+                    .map(el => window.getComputedStyle(el).color)
+                    .filter(c => c)
+            )).slice(0, 10)
+            """
+            colors['link_colors'] = page.evaluate(link_script)
+            
+            # Button colors
+            button_script = """
+            Array.from(new Set(
+                Array.from(document.querySelectorAll('button, .btn, [role="button"]'))
+                    .flatMap(el => [
+                        window.getComputedStyle(el).backgroundColor,
+                        window.getComputedStyle(el).color
+                    ])
+                    .filter(c => c && c !== 'rgba(0, 0, 0, 0)')
+            )).slice(0, 10)
+            """
+            colors['button_colors'] = page.evaluate(button_script)
             
         except Exception as e:
             self.logger.warning(f"Error extracting CSS colors: {e}")
+            # Return empty lists on error
+            colors = {
+                'background_colors': [],
+                'text_colors': [],
+                'link_colors': [],
+                'button_colors': []
+            }
         
-        # Convert sets to lists for JSON serialization
-        return {k: list(v) for k, v in colors.items()}
+        return colors
     
     def _extract_text_from_page(self, page: Page) -> Dict[str, any]:
         """
@@ -249,17 +245,17 @@ class WebScraper:
         self.logger.debug(f"Saved raw data to {file_path}")
     
     def scrape_page(self, page: Page, url: str, depth: int = 0) -> Optional[Dict]:
-        """
-        Scrape a single page
-        
-        Returns:
-            Page data dictionary or None if failed
-        """
+        """Scrape a single page"""
         log_scrape_start(self.logger, url)
         
         for attempt in range(RETRY_ATTEMPTS):
             try:
                 self._wait_for_rate_limit()
+                
+                # ADD: Check if page is valid
+                if page.is_closed():
+                    self.logger.error("Page is closed, cannot scrape")
+                    return None
                 
                 # Navigate to page
                 response = page.goto(url, wait_until='domcontentloaded', timeout=PAGE_WAIT_TIMEOUT)
@@ -286,8 +282,17 @@ class WebScraper:
                 
                 return page_data
                 
+            except KeyboardInterrupt:  # ADD THIS
+                raise  # Re-raise to stop scraping
             except Exception as e:
-                log_scrape_error(self.logger, url, str(e))
+                error_msg = str(e)
+                
+                # Don't retry if page/browser closed errors
+                if 'closed' in error_msg.lower() or 'target' in error_msg.lower():
+                    log_scrape_error(self.logger, url, error_msg)
+                    return None
+                
+                log_scrape_error(self.logger, url, error_msg)
                 
                 if attempt < RETRY_ATTEMPTS - 1:
                     self.logger.info(f"Retrying {url} (attempt {attempt + 2}/{RETRY_ATTEMPTS})")
@@ -300,12 +305,6 @@ class WebScraper:
     def scrape_website(self, max_pages: Optional[int] = None) -> Dict:
         """
         Scrape entire website using sitemap
-        
-        Args:
-            max_pages: Maximum number of pages to scrape
-        
-        Returns:
-            Statistics dictionary
         """
         self.logger.info(f"Starting scrape of {self.config['name']}")
         
@@ -329,12 +328,44 @@ class WebScraper:
             website_type=self.config.get('type', 'Unknown')
         )
         
-        # Start Playwright
+        ## Start Playwright
         with sync_playwright() as p:
-            browser = p.chromium.launch(headless=HEADLESS)
-            context = browser.new_context(
-                user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+            # More realistic browser args
+            browser = p.chromium.launch(
+                headless=HEADLESS,
+                args=[
+                    '--disable-blink-features=AutomationControlled',  
+                    '--disable-dev-shm-usage',
+                    '--no-sandbox'
+                ]
             )
+            
+            #  More realistic context
+            context = browser.new_context(
+                user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                viewport={'width': 1920, 'height': 1080},
+                locale='en-US',
+                timezone_id='America/New_York',
+                
+                extra_http_headers={
+                    'Accept-Language': 'en-US,en;q=0.9',
+                    'Accept-Encoding': 'gzip, deflate, br',
+                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+                    'Connection': 'keep-alive',
+                    'Upgrade-Insecure-Requests': '1'
+                }
+            )
+            
+            # Stealth settings
+            context.add_init_script("""
+                Object.defineProperty(navigator, 'webdriver', {
+                    get: () => undefined
+                });
+            """)
+            
+            
+            context.set_default_timeout(PAGE_WAIT_TIMEOUT)
+            
             page = context.new_page()
             
             try:
@@ -350,13 +381,20 @@ class WebScraper:
                     
                     self.visited_urls.add(url)
                     
+                    # ADD: Check if page is still valid, recreate if needed
+                    try:
+                        if page.is_closed():
+                            page = context.new_page()
+                    except:
+                        page = context.new_page()
+                    
                     # Scrape page
                     page_data = self.scrape_page(page, url, depth=0)
                     
                     if page_data:
                         # Save raw data backup
                         self._save_raw_data(page_data)
-
+                        
                         # Save to database
                         page_id = self.db.add_page(
                             website_id=website_id,
@@ -388,8 +426,18 @@ class WebScraper:
                     else:
                         self.stats['pages_failed'] += 1
             
+            except KeyboardInterrupt:  # ADD THIS
+                self.logger.warning("Scraping interrupted by user")
+            except Exception as e:  # ADD THIS
+                self.logger.error(f"Unexpected error: {e}")
             finally:
-                browser.close()
+                try:
+                    if not page.is_closed():
+                        page.close()
+                    context.close()
+                    browser.close()
+                except:
+                    pass  # Ignore close errors
         
         # Update website
         self.db.update_website_last_scraped(website_id)

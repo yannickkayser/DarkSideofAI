@@ -1,0 +1,470 @@
+2026-02-13 22:26:56 - scraper.www.sama.com - INFO - Starting scrape of Sama
+2026-02-13 22:26:57 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com
+2026-02-13 22:27:03 - scraper.www.sama.com - ERROR - ✗ ERROR: https://www.sama.com | name 'Page' is not defined
+2026-02-13 22:27:03 - scraper.www.sama.com - INFO - Retrying https://www.sama.com (attempt 2/3)
+2026-02-13 22:27:06 - scraper.www.sama.com - ERROR - ✗ ERROR: https://www.sama.com | Target page, context or browser has been closed
+2026-02-13 22:27:06 - scraper.www.sama.com - INFO - Retrying https://www.sama.com (attempt 3/3)
+2026-02-13 22:27:10 - scraper.www.sama.com - ERROR - ✗ ERROR: https://www.sama.com | Target page, context or browser has been closed
+2026-02-13 22:27:10 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/ai-events
+2026-02-13 22:40:05 - scraper.www.sama.com - INFO - Starting scrape of Sama
+2026-02-13 22:40:07 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com
+2026-02-13 22:40:13 - scraper.www.sama.com - ERROR - ✗ ERROR: https://www.sama.com | name 'Page' is not defined
+2026-02-13 22:40:13 - scraper.www.sama.com - INFO - Retrying https://www.sama.com (attempt 2/3)
+2026-02-13 22:40:15 - scraper.www.sama.com - ERROR - Page is closed, cannot scrape
+2026-02-13 22:40:15 - scraper.www.sama.com - ERROR - Unexpected error: Target page, context or browser has been closed
+2026-02-13 22:49:55 - scraper.www.sama.com - INFO - Starting scrape of Sama
+2026-02-13 22:49:56 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com
+2026-02-13 22:50:02 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com: All validations passed
+2026-02-13 22:50:02 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com | Status: 200 | Size: 130496 bytes
+2026-02-13 22:50:02 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/ai-events
+2026-02-13 22:50:04 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/ai-events: All validations passed
+2026-02-13 22:50:04 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/ai-events | Status: 200 | Size: 119655 bytes
+2026-02-13 22:50:04 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/ai101
+2026-02-13 22:50:06 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/ai101: All validations passed
+2026-02-13 22:50:06 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/ai101 | Status: 200 | Size: 87066 bytes
+2026-02-13 22:50:06 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/how-ai-happens-podcast
+2026-02-13 22:50:08 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/how-ai-happens-podcast: All validations passed
+2026-02-13 22:50:08 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/how-ai-happens-podcast | Status: 200 | Size: 120811 bytes
+2026-02-13 22:50:08 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog
+2026-02-13 22:50:10 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog: All validations passed
+2026-02-13 22:50:10 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog | Status: 200 | Size: 136447 bytes
+2026-02-13 22:50:11 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/careers
+2026-02-13 22:50:13 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/careers: All validations passed
+2026-02-13 22:50:13 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/careers | Status: 200 | Size: 99206 bytes
+2026-02-13 22:50:13 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/case-studies
+2026-02-13 22:50:17 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/case-studies: All validations passed
+2026-02-13 22:50:17 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/case-studies | Status: 200 | Size: 156419 bytes
+2026-02-13 22:50:17 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/contact-us
+2026-02-13 22:50:19 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/contact-us: All validations passed
+2026-02-13 22:50:19 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/contact-us | Status: 200 | Size: 116909 bytes
+2026-02-13 22:50:19 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/data-annotation-ebooks
+2026-02-13 22:50:22 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/data-annotation-ebooks: All validations passed
+2026-02-13 22:50:22 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/data-annotation-ebooks | Status: 200 | Size: 169234 bytes
+2026-02-13 22:50:22 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/data-annotation-solution
+2026-02-13 22:50:27 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/data-annotation-solution: All validations passed
+2026-02-13 22:50:27 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/data-annotation-solution | Status: 200 | Size: 136906 bytes
+2026-02-13 22:50:27 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/data-security-and-trust
+2026-02-13 22:50:29 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/data-security-and-trust: All validations passed
+2026-02-13 22:50:29 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/data-security-and-trust | Status: 200 | Size: 224323 bytes
+2026-02-13 22:50:29 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/impact
+2026-02-13 22:50:35 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/impact: All validations passed
+2026-02-13 22:50:35 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/impact | Status: 200 | Size: 109890 bytes
+2026-02-13 22:50:35 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/news
+2026-02-13 22:50:38 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/news: All validations passed
+2026-02-13 22:50:38 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/news | Status: 200 | Size: 120015 bytes
+2026-02-13 22:50:38 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/our-team
+2026-02-13 22:50:42 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/our-team: All validations passed
+2026-02-13 22:50:42 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/our-team | Status: 200 | Size: 264897 bytes
+2026-02-13 22:50:43 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/privacy-policy
+2026-02-13 22:50:46 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/privacy-policy: All validations passed
+2026-02-13 22:50:46 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/privacy-policy | Status: 200 | Size: 94812 bytes
+2026-02-13 22:50:46 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/quality-information
+2026-02-13 22:50:48 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/quality-information: All validations passed
+2026-02-13 22:50:48 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/quality-information | Status: 200 | Size: 72487 bytes
+2026-02-13 22:50:48 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/resources
+2026-02-13 22:50:50 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/resources: All validations passed
+2026-02-13 22:50:50 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/resources | Status: 200 | Size: 125933 bytes
+2026-02-13 22:50:50 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/sama-coco-dataset
+2026-02-13 22:50:54 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/sama-coco-dataset: All validations passed
+2026-02-13 22:50:54 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/sama-coco-dataset | Status: 200 | Size: 114541 bytes
+2026-02-13 22:50:54 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/talk-to-an-expert
+2026-02-13 22:50:57 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/talk-to-an-expert: All validations passed
+2026-02-13 22:50:57 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/talk-to-an-expert | Status: 200 | Size: 148000 bytes
+2026-02-13 22:50:58 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/terms-of-service
+2026-02-13 22:51:00 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/terms-of-service: All validations passed
+2026-02-13 22:51:00 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/terms-of-service | Status: 200 | Size: 108279 bytes
+2026-02-13 22:51:00 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/video-gallery
+2026-02-13 22:51:06 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/video-gallery: All validations passed
+2026-02-13 22:51:06 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/video-gallery | Status: 200 | Size: 136597 bytes
+2026-02-13 22:51:06 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/adas-and-autonomous-vehicles
+2026-02-13 22:51:10 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/adas-and-autonomous-vehicles: All validations passed
+2026-02-13 22:51:10 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/adas-and-autonomous-vehicles | Status: 200 | Size: 246535 bytes
+2026-02-13 22:51:10 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/retail-ecommerce
+2026-02-13 22:51:14 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/retail-ecommerce: All validations passed
+2026-02-13 22:51:14 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/retail-ecommerce | Status: 200 | Size: 253283 bytes
+2026-02-13 22:51:14 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/computer-vision-for-agriculture
+2026-02-13 22:51:16 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/computer-vision-for-agriculture: All validations passed
+2026-02-13 22:51:16 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/computer-vision-for-agriculture | Status: 200 | Size: 230442 bytes
+2026-02-13 22:51:16 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/high-quality-training-data-consumer-media
+2026-02-13 22:51:20 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/high-quality-training-data-consumer-media: All validations passed
+2026-02-13 22:51:20 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/high-quality-training-data-consumer-media | Status: 200 | Size: 250434 bytes
+2026-02-13 22:51:20 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/robotics-manufacturing
+2026-02-13 22:51:22 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/robotics-manufacturing: All validations passed
+2026-02-13 22:51:22 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/robotics-manufacturing | Status: 200 | Size: 241239 bytes
+2026-02-13 22:51:22 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/data-curation-tools-ai-ml-models
+2026-02-13 22:51:25 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/data-curation-tools-ai-ml-models: All validations passed
+2026-02-13 22:51:25 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/data-curation-tools-ai-ml-models | Status: 200 | Size: 132289 bytes
+2026-02-13 22:51:25 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/2d-video-annotation-tool-services
+2026-02-13 22:51:28 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/2d-video-annotation-tool-services: All validations passed
+2026-02-13 22:51:28 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/2d-video-annotation-tool-services | Status: 200 | Size: 162948 bytes
+2026-02-13 22:51:29 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/2d-image-annotation-services
+2026-02-13 22:51:31 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/2d-image-annotation-services: All validations passed
+2026-02-13 22:51:31 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/2d-image-annotation-services | Status: 200 | Size: 159404 bytes
+2026-02-13 22:51:31 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/3d-lidar-radar-point-cloud-annotation
+2026-02-13 22:51:33 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/3d-lidar-radar-point-cloud-annotation: All validations passed
+2026-02-13 22:51:33 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/3d-lidar-radar-point-cloud-annotation | Status: 200 | Size: 132151 bytes
+2026-02-13 22:51:33 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/managed-service-data-validation-solution
+2026-02-13 22:51:35 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/managed-service-data-validation-solution: All validations passed
+2026-02-13 22:51:35 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/managed-service-data-validation-solution | Status: 200 | Size: 111315 bytes
+2026-02-13 22:51:35 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/data-annotation-services-for-foundation-models
+2026-02-13 22:51:37 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/data-annotation-services-for-foundation-models: All validations passed
+2026-02-13 22:51:37 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/data-annotation-services-for-foundation-models | Status: 200 | Size: 124232 bytes
+2026-02-13 22:51:37 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/leila-janah-founder
+2026-02-13 22:51:39 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/leila-janah-founder: All validations passed
+2026-02-13 22:51:39 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/leila-janah-founder | Status: 200 | Size: 93442 bytes
+2026-02-13 22:51:39 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/our-story
+2026-02-13 22:51:43 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/our-story: All validations passed
+2026-02-13 22:51:43 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/our-story | Status: 200 | Size: 109997 bytes
+2026-02-13 22:51:44 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/bounding-boxes-annotation
+2026-02-13 22:51:47 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/bounding-boxes-annotation: All validations passed
+2026-02-13 22:51:47 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/bounding-boxes-annotation | Status: 200 | Size: 100553 bytes
+2026-02-13 22:51:47 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/polygon-annotation-tool
+2026-02-13 22:51:50 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/polygon-annotation-tool: All validations passed
+2026-02-13 22:51:50 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/polygon-annotation-tool | Status: 200 | Size: 100981 bytes
+2026-02-13 22:51:50 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/cuboid-annotation-tool
+2026-02-13 22:51:53 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/cuboid-annotation-tool: All validations passed
+2026-02-13 22:51:53 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/cuboid-annotation-tool | Status: 200 | Size: 110208 bytes
+2026-02-13 22:51:53 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/keypoint-annotation-tool
+2026-02-13 22:51:57 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/keypoint-annotation-tool: All validations passed
+2026-02-13 22:51:57 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/keypoint-annotation-tool | Status: 200 | Size: 101031 bytes
+2026-02-13 22:51:57 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/lines-and-arrows-annotation
+2026-02-13 22:52:01 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/lines-and-arrows-annotation: All validations passed
+2026-02-13 22:52:01 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/lines-and-arrows-annotation | Status: 200 | Size: 99467 bytes
+2026-02-13 22:52:01 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/data-annotation-and-validation-platform
+2026-02-13 22:52:05 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/data-annotation-and-validation-platform: All validations passed
+2026-02-13 22:52:05 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/data-annotation-and-validation-platform | Status: 200 | Size: 147323 bytes
+2026-02-13 22:52:05 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/gen-ai-training-data
+2026-02-13 22:52:10 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/gen-ai-training-data: All validations passed
+2026-02-13 22:52:10 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/gen-ai-training-data | Status: 200 | Size: 146206 bytes
+2026-02-13 22:52:10 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/supervised-fine-tuning
+2026-02-13 22:52:13 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/supervised-fine-tuning: All validations passed
+2026-02-13 22:52:13 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/supervised-fine-tuning | Status: 200 | Size: 123796 bytes
+2026-02-13 22:52:13 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/report/2023-impact-report
+2026-02-13 22:52:15 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/report/2023-impact-report: All validations passed
+2026-02-13 22:52:15 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/report/2023-impact-report | Status: 200 | Size: 82442 bytes
+2026-02-13 22:52:15 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/gen-ai
+2026-02-13 22:52:19 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/gen-ai: All validations passed
+2026-02-13 22:52:19 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/gen-ai | Status: 200 | Size: 267491 bytes
+2026-02-13 22:52:19 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/generative-ai-for-banking-financial-services-and-insurance-bfsi
+2026-02-13 22:52:23 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/generative-ai-for-banking-financial-services-and-insurance-bfsi: All validations passed
+2026-02-13 22:52:23 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/generative-ai-for-banking-financial-services-and-insurance-bfsi | Status: 200 | Size: 248977 bytes
+2026-02-13 22:52:23 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/machines-still-need-us
+2026-02-13 22:52:27 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/machines-still-need-us: All validations passed
+2026-02-13 22:52:27 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/machines-still-need-us | Status: 200 | Size: 87779 bytes
+2026-02-13 22:52:27 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/why-sama
+2026-02-13 22:52:31 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/why-sama: All validations passed
+2026-02-13 22:52:31 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/why-sama | Status: 200 | Size: 142108 bytes
+2026-02-13 22:52:31 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/gen-ai-data-scoping
+2026-02-13 22:52:34 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/gen-ai-data-scoping: All validations passed
+2026-02-13 22:52:34 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/gen-ai-data-scoping | Status: 200 | Size: 87870 bytes
+2026-02-13 22:52:34 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/ai-agent-evaluation
+2026-02-13 22:52:36 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/ai-agent-evaluation: All validations passed
+2026-02-13 22:52:36 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/ai-agent-evaluation | Status: 200 | Size: 93903 bytes
+2026-02-13 22:52:36 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/retrieval-augmented-generation
+2026-02-13 22:52:38 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/retrieval-augmented-generation: All validations passed
+2026-02-13 22:52:38 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/retrieval-augmented-generation | Status: 200 | Size: 86472 bytes
+2026-02-13 22:52:38 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/search
+2026-02-13 22:52:41 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/search: All validations passed
+2026-02-13 22:52:41 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/search | Status: 200 | Size: 29659 bytes
+2026-02-13 22:52:41 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/ca-013-primary-services
+2026-02-13 22:52:46 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/ca-013-primary-services: All validations passed
+2026-02-13 22:52:46 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/ca-013-primary-services | Status: 200 | Size: 154797 bytes
+2026-02-13 22:52:46 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/case-studies/accurate-data-labeling-shoe-sizing-volumental
+2026-02-13 22:52:49 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/case-studies/accurate-data-labeling-shoe-sizing-volumental: All validations passed
+2026-02-13 22:52:49 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/case-studies/accurate-data-labeling-shoe-sizing-volumental | Status: 200 | Size: 119877 bytes
+2026-02-13 22:52:49 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/case-studies/ecommerce-leader-taps-sama-to-improve-search-relevance
+2026-02-13 22:52:55 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/case-studies/ecommerce-leader-taps-sama-to-improve-search-relevance: All validations passed
+2026-02-13 22:52:55 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/case-studies/ecommerce-leader-taps-sama-to-improve-search-relevance | Status: 200 | Size: 115320 bytes
+2026-02-13 22:52:55 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/case-studies/gen-ai-model-evaluation-for-custom-ad-imagery
+2026-02-13 22:53:00 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/case-studies/gen-ai-model-evaluation-for-custom-ad-imagery: All validations passed
+2026-02-13 22:53:00 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/case-studies/gen-ai-model-evaluation-for-custom-ad-imagery | Status: 200 | Size: 111728 bytes
+2026-02-13 22:53:00 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/case-studies/gen-ai-prompt-output-evaluation-for-search-algorithms
+2026-02-13 22:53:03 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/case-studies/gen-ai-prompt-output-evaluation-for-search-algorithms: All validations passed
+2026-02-13 22:53:03 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/case-studies/gen-ai-prompt-output-evaluation-for-search-algorithms | Status: 200 | Size: 108175 bytes
+2026-02-13 22:53:03 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/case-studies/global-hr-saas-leader-uses-sama-to-improve-candidate-matching-algorithm
+2026-02-13 22:53:08 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/case-studies/global-hr-saas-leader-uses-sama-to-improve-candidate-matching-algorithm: All validations passed
+2026-02-13 22:53:08 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/case-studies/global-hr-saas-leader-uses-sama-to-improve-candidate-matching-algorithm | Status: 200 | Size: 112705 bytes
+2026-02-13 22:53:08 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/case-studies/google-project-guideline-computer-vision-blind-runners
+2026-02-13 22:53:10 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/case-studies/google-project-guideline-computer-vision-blind-runners: All validations passed
+2026-02-13 22:53:10 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/case-studies/google-project-guideline-computer-vision-blind-runners | Status: 200 | Size: 110223 bytes
+2026-02-13 22:53:10 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/case-studies/high-quality-labels-walmart-search-relevance
+2026-02-13 22:53:14 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/case-studies/high-quality-labels-walmart-search-relevance: All validations passed
+2026-02-13 22:53:14 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/case-studies/high-quality-labels-walmart-search-relevance | Status: 200 | Size: 118867 bytes
+2026-02-13 22:53:14 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/case-studies/how-a-fortune-500-tech-leader-accelerated-gen-ai-model-performance-with-sama
+2026-02-13 22:53:18 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/case-studies/how-a-fortune-500-tech-leader-accelerated-gen-ai-model-performance-with-sama: All validations passed
+2026-02-13 22:53:18 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/case-studies/how-a-fortune-500-tech-leader-accelerated-gen-ai-model-performance-with-sama | Status: 200 | Size: 117488 bytes
+2026-02-13 22:53:18 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/case-studies/how-an-oem-used-sama-to-improve-a-multi-class-object-detection-mcod-system
+2026-02-13 22:53:22 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/case-studies/how-an-oem-used-sama-to-improve-a-multi-class-object-detection-mcod-system: All validations passed
+2026-02-13 22:53:22 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/case-studies/how-an-oem-used-sama-to-improve-a-multi-class-object-detection-mcod-system | Status: 200 | Size: 118268 bytes
+2026-02-13 22:53:22 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/case-studies/how-indoor-robotics-improved-training-data-to-enhance-model-performance
+2026-02-13 22:53:26 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/case-studies/how-indoor-robotics-improved-training-data-to-enhance-model-performance: All validations passed
+2026-02-13 22:53:26 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/case-studies/how-indoor-robotics-improved-training-data-to-enhance-model-performance | Status: 200 | Size: 122441 bytes
+2026-02-13 22:53:26 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/case-studies/increasing-accuracy-and-clarity-in-multi-modal-captioning
+2026-02-13 22:53:29 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/case-studies/increasing-accuracy-and-clarity-in-multi-modal-captioning: All validations passed
+2026-02-13 22:53:29 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/case-studies/increasing-accuracy-and-clarity-in-multi-modal-captioning | Status: 200 | Size: 111118 bytes
+2026-02-13 22:53:29 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/case-studies/object-tracking-and-edge-case-detection
+2026-02-13 22:53:33 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/case-studies/object-tracking-and-edge-case-detection: All validations passed
+2026-02-13 22:53:33 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/case-studies/object-tracking-and-edge-case-detection | Status: 200 | Size: 110446 bytes
+2026-02-13 22:53:33 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/case-studies/orbisk-is-using-accurate-ai-to-help-restaurants-reduce-food-waste-up-to-70
+2026-02-13 22:53:37 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/case-studies/orbisk-is-using-accurate-ai-to-help-restaurants-reduce-food-waste-up-to-70: All validations passed
+2026-02-13 22:53:37 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/case-studies/orbisk-is-using-accurate-ai-to-help-restaurants-reduce-food-waste-up-to-70 | Status: 200 | Size: 119819 bytes
+2026-02-13 22:53:37 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/case-studies/polyperception-accurate-data-sorting-facilities-visibility
+2026-02-13 22:53:40 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/case-studies/polyperception-accurate-data-sorting-facilities-visibility: All validations passed
+2026-02-13 22:53:40 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/case-studies/polyperception-accurate-data-sorting-facilities-visibility | Status: 200 | Size: 120634 bytes
+2026-02-13 22:53:40 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/case-studies/samas-csr-audit-sets-the-benchmark
+2026-02-13 22:53:44 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/case-studies/samas-csr-audit-sets-the-benchmark: All validations passed
+2026-02-13 22:53:44 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/case-studies/samas-csr-audit-sets-the-benchmark | Status: 200 | Size: 122216 bytes
+2026-02-13 22:53:44 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/case-studies/swift-medical-cost-effecively-scale-annotations
+2026-02-13 22:53:49 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/case-studies/swift-medical-cost-effecively-scale-annotations: All validations passed
+2026-02-13 22:53:49 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/case-studies/swift-medical-cost-effecively-scale-annotations | Status: 200 | Size: 119621 bytes
+2026-02-13 22:53:49 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/case-studies/tribe-dynamics-influencer-marketing-data-labeling
+2026-02-13 22:53:53 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/case-studies/tribe-dynamics-influencer-marketing-data-labeling: All validations passed
+2026-02-13 22:53:53 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/case-studies/tribe-dynamics-influencer-marketing-data-labeling | Status: 200 | Size: 117956 bytes
+2026-02-13 22:53:53 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/case-studies/validating-generative-ai-image-masking-model-outputs
+2026-02-13 22:53:56 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/case-studies/validating-generative-ai-image-masking-model-outputs: All validations passed
+2026-02-13 22:53:56 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/case-studies/validating-generative-ai-image-masking-model-outputs | Status: 200 | Size: 111393 bytes
+2026-02-13 22:53:56 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/case-studies/vulcan-wildlife-conservation-data-annotation
+2026-02-13 22:53:59 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/case-studies/vulcan-wildlife-conservation-data-annotation: All validations passed
+2026-02-13 22:53:59 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/case-studies/vulcan-wildlife-conservation-data-annotation | Status: 200 | Size: 119277 bytes
+2026-02-13 22:53:59 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/2016-01-26-davos-its-not-enough-to-do-less-bad-5-tech-and-impact-trends
+2026-02-13 22:54:02 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/2016-01-26-davos-its-not-enough-to-do-less-bad-5-tech-and-impact-trends: All validations passed
+2026-02-13 22:54:02 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/2016-01-26-davos-its-not-enough-to-do-less-bad-5-tech-and-impact-trends | Status: 200 | Size: 110092 bytes
+2026-02-13 22:54:02 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/2022-awards-honorable-mentions-ai
+2026-02-13 22:54:05 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/2022-awards-honorable-mentions-ai: All validations passed
+2026-02-13 22:54:05 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/2022-awards-honorable-mentions-ai | Status: 200 | Size: 109391 bytes
+2026-02-13 22:54:05 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/2024-impact-highlights-report
+2026-02-13 22:54:07 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/2024-impact-highlights-report: All validations passed
+2026-02-13 22:54:07 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/2024-impact-highlights-report | Status: 200 | Size: 109264 bytes
+2026-02-13 22:54:07 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/3-key-conversations-from-cvpr-2024
+2026-02-13 22:54:09 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/3-key-conversations-from-cvpr-2024: All validations passed
+2026-02-13 22:54:09 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/3-key-conversations-from-cvpr-2024 | Status: 200 | Size: 114344 bytes
+2026-02-13 22:54:09 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/3-takeaways-from-iccv-2019
+2026-02-13 22:54:12 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/3-takeaways-from-iccv-2019: All validations passed
+2026-02-13 22:54:12 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/3-takeaways-from-iccv-2019 | Status: 200 | Size: 108054 bytes
+2026-02-13 22:54:12 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/4-tech-quotes-from-meta-fairs-10-year-anniversary
+2026-02-13 22:54:15 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/4-tech-quotes-from-meta-fairs-10-year-anniversary: All validations passed
+2026-02-13 22:54:15 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/4-tech-quotes-from-meta-fairs-10-year-anniversary | Status: 200 | Size: 116015 bytes
+2026-02-13 22:54:15 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/56-students-use-machine-learning-to-reduce-poverty-and-inequality
+2026-02-13 22:54:19 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/56-students-use-machine-learning-to-reduce-poverty-and-inequality: All validations passed
+2026-02-13 22:54:19 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/56-students-use-machine-learning-to-reduce-poverty-and-inequality | Status: 200 | Size: 110441 bytes
+2026-02-13 22:54:19 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/8-answers-to-your-questions-about-ai-and-machine-learning
+2026-02-13 22:54:25 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/8-answers-to-your-questions-about-ai-and-machine-learning: All validations passed
+2026-02-13 22:54:25 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/8-answers-to-your-questions-about-ai-and-machine-learning | Status: 200 | Size: 123963 bytes
+2026-02-13 22:54:25 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/accurate-data-labeling-makes-your-smart-homes-smarter
+2026-02-13 22:54:28 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/accurate-data-labeling-makes-your-smart-homes-smarter: All validations passed
+2026-02-13 22:54:28 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/accurate-data-labeling-makes-your-smart-homes-smarter | Status: 200 | Size: 112310 bytes
+2026-02-13 22:54:28 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/ai-you-didnt-know-you-used
+2026-02-13 22:54:31 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/ai-you-didnt-know-you-used: All validations passed
+2026-02-13 22:54:31 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/ai-you-didnt-know-you-used | Status: 200 | Size: 110959 bytes
+2026-02-13 22:54:31 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/announcing-object-tracking-with-video-annotation
+2026-02-13 22:54:33 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/announcing-object-tracking-with-video-annotation: All validations passed
+2026-02-13 22:54:33 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/announcing-object-tracking-with-video-annotation | Status: 200 | Size: 110679 bytes
+2026-02-13 22:54:33 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/artificial-intelligence-breakthrough-award
+2026-02-13 22:54:36 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/artificial-intelligence-breakthrough-award: All validations passed
+2026-02-13 22:54:36 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/artificial-intelligence-breakthrough-award | Status: 200 | Size: 110387 bytes
+2026-02-13 22:54:36 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/avoid-machine-learning-biases-in-retail-industry
+2026-02-13 22:54:39 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/avoid-machine-learning-biases-in-retail-industry: All validations passed
+2026-02-13 22:54:39 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/avoid-machine-learning-biases-in-retail-industry | Status: 200 | Size: 111361 bytes
+2026-02-13 22:54:39 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/benefits-and-advantages-of-good-quality-data-annotation
+2026-02-13 22:54:42 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/benefits-and-advantages-of-good-quality-data-annotation: All validations passed
+2026-02-13 22:54:42 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/benefits-and-advantages-of-good-quality-data-annotation | Status: 200 | Size: 110917 bytes
+2026-02-13 22:54:42 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/better-algorithms-better-lives-reducing-poverty-through-training-data
+2026-02-13 22:54:44 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/better-algorithms-better-lives-reducing-poverty-through-training-data: All validations passed
+2026-02-13 22:54:44 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/better-algorithms-better-lives-reducing-poverty-through-training-data | Status: 200 | Size: 109901 bytes
+2026-02-13 22:54:44 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/bounding-box-computer-vision
+2026-02-13 22:54:49 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/bounding-box-computer-vision: All validations passed
+2026-02-13 22:54:49 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/bounding-box-computer-vision | Status: 200 | Size: 121339 bytes
+2026-02-13 22:54:49 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/breaking-down-the-scale-ai-acquisition-and-how-sama-is-different
+2026-02-13 22:54:52 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/breaking-down-the-scale-ai-acquisition-and-how-sama-is-different: All validations passed
+2026-02-13 22:54:52 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/breaking-down-the-scale-ai-acquisition-and-how-sama-is-different | Status: 200 | Size: 117586 bytes
+2026-02-13 22:54:52 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/building-an-ethical-supply-chain
+2026-02-13 22:54:54 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/building-an-ethical-supply-chain: All validations passed
+2026-02-13 22:54:54 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/building-an-ethical-supply-chain | Status: 200 | Size: 117759 bytes
+2026-02-13 22:54:54 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/building-robust-automotive-lidar-annotation-quality-rubric
+2026-02-13 22:54:56 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/building-robust-automotive-lidar-annotation-quality-rubric: All validations passed
+2026-02-13 22:54:56 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/building-robust-automotive-lidar-annotation-quality-rubric | Status: 200 | Size: 116198 bytes
+2026-02-13 22:54:56 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/celebrating-50-years-of-earth-day-honoring-leila-janahs-legacy
+2026-02-13 22:54:58 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/celebrating-50-years-of-earth-day-honoring-leila-janahs-legacy: All validations passed
+2026-02-13 22:54:58 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/celebrating-50-years-of-earth-day-honoring-leila-janahs-legacy | Status: 200 | Size: 109500 bytes
+2026-02-13 22:54:58 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/challenges-solutions-for-3d-lidar-annotation-3d-data-sets
+2026-02-13 22:55:04 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/challenges-solutions-for-3d-lidar-annotation-3d-data-sets: All validations passed
+2026-02-13 22:55:04 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/challenges-solutions-for-3d-lidar-annotation-3d-data-sets | Status: 200 | Size: 107608 bytes
+2026-02-13 22:55:04 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/chatbot-during-covid-19
+2026-02-13 22:55:06 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/chatbot-during-covid-19: All validations passed
+2026-02-13 22:55:06 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/chatbot-during-covid-19 | Status: 200 | Size: 109667 bytes
+2026-02-13 22:55:06 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/codejam-2020-mcgill-hackathon
+2026-02-13 22:55:08 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/codejam-2020-mcgill-hackathon: All validations passed
+2026-02-13 22:55:08 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/codejam-2020-mcgill-hackathon | Status: 200 | Size: 108511 bytes
+2026-02-13 22:55:08 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/computer-vision-applications-in-agriculture
+2026-02-13 22:55:11 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/computer-vision-applications-in-agriculture: All validations passed
+2026-02-13 22:55:11 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/computer-vision-applications-in-agriculture | Status: 200 | Size: 113692 bytes
+2026-02-13 22:55:11 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/computer-vision-applications-in-retail
+2026-02-13 22:55:13 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/computer-vision-applications-in-retail: All validations passed
+2026-02-13 22:55:13 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/computer-vision-applications-in-retail | Status: 200 | Size: 114299 bytes
+2026-02-13 22:55:13 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/computer-vision-history-how-it-works
+2026-02-13 22:55:17 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/computer-vision-history-how-it-works: All validations passed
+2026-02-13 22:55:17 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/computer-vision-history-how-it-works | Status: 200 | Size: 109546 bytes
+2026-02-13 22:55:17 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/computer-vision-insights-from-around-the-web
+2026-02-13 22:55:20 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/computer-vision-insights-from-around-the-web: All validations passed
+2026-02-13 22:55:20 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/computer-vision-insights-from-around-the-web | Status: 200 | Size: 109351 bytes
+2026-02-13 22:55:20 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/crowdsourcing-data-annotation-benefits-risks
+2026-02-13 22:55:23 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/crowdsourcing-data-annotation-benefits-risks: All validations passed
+2026-02-13 22:55:23 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/crowdsourcing-data-annotation-benefits-risks | Status: 200 | Size: 115276 bytes
+2026-02-13 22:55:23 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/data-annotation-guide
+2026-02-13 22:55:26 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/data-annotation-guide: All validations passed
+2026-02-13 22:55:26 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/data-annotation-guide | Status: 200 | Size: 172894 bytes
+2026-02-13 22:55:26 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/data-enrichment-workers-what-role-will-they-play-tomorrow
+2026-02-13 22:55:29 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/data-enrichment-workers-what-role-will-they-play-tomorrow: All validations passed
+2026-02-13 22:55:29 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/data-enrichment-workers-what-role-will-they-play-tomorrow | Status: 200 | Size: 119137 bytes
+2026-02-13 22:55:29 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/data-labeling-challenges-for-sports-analytics
+2026-02-13 22:55:35 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/data-labeling-challenges-for-sports-analytics: All validations passed
+2026-02-13 22:55:35 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/data-labeling-challenges-for-sports-analytics | Status: 200 | Size: 113040 bytes
+2026-02-13 22:55:35 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/data-labeling-faqs
+2026-02-13 22:55:40 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/data-labeling-faqs: All validations passed
+2026-02-13 22:55:40 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/data-labeling-faqs | Status: 200 | Size: 117298 bytes
+2026-02-13 22:55:40 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/data-labeling-quality-for-autonomous-driving
+2026-02-13 22:55:45 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/data-labeling-quality-for-autonomous-driving: All validations passed
+2026-02-13 22:55:45 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/data-labeling-quality-for-autonomous-driving | Status: 200 | Size: 117675 bytes
+2026-02-13 22:55:45 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/data-protection-and-privacy-for-training-data
+2026-02-13 22:55:47 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/data-protection-and-privacy-for-training-data: All validations passed
+2026-02-13 22:55:47 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/data-protection-and-privacy-for-training-data | Status: 200 | Size: 108876 bytes
+2026-02-13 22:55:48 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/data-quality-with-auto-q-a
+2026-02-13 22:55:49 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/data-quality-with-auto-q-a: All validations passed
+2026-02-13 22:55:49 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/data-quality-with-auto-q-a | Status: 200 | Size: 110126 bytes
+2026-02-13 22:55:49 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/define-and-measure-training-data-quality
+2026-02-13 22:55:52 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/define-and-measure-training-data-quality: All validations passed
+2026-02-13 22:55:52 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/define-and-measure-training-data-quality | Status: 200 | Size: 112704 bytes
+2026-02-13 22:55:52 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/efficient-drivable-area-annotation-for-3d-point-cloud-data
+2026-02-13 22:55:54 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/efficient-drivable-area-annotation-for-3d-point-cloud-data: All validations passed
+2026-02-13 22:55:54 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/efficient-drivable-area-annotation-for-3d-point-cloud-data | Status: 200 | Size: 109472 bytes
+2026-02-13 22:55:54 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/enhance-data-annotation-with-a-multi-vendor-approach
+2026-02-13 22:55:59 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/enhance-data-annotation-with-a-multi-vendor-approach: All validations passed
+2026-02-13 22:55:59 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/enhance-data-annotation-with-a-multi-vendor-approach | Status: 200 | Size: 114058 bytes
+2026-02-13 22:55:59 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/ethical-and-sustainable-sourcing
+2026-02-13 22:56:01 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/ethical-and-sustainable-sourcing: All validations passed
+2026-02-13 22:56:01 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/ethical-and-sustainable-sourcing | Status: 200 | Size: 116440 bytes
+2026-02-13 22:56:01 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/evops-tools-for-cloud-native-engineering
+2026-02-13 22:56:03 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/evops-tools-for-cloud-native-engineering: All validations passed
+2026-02-13 22:56:03 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/evops-tools-for-cloud-native-engineering | Status: 200 | Size: 109818 bytes
+2026-02-13 22:56:03 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/examples-of-how-poor-data-quality-impacts-ml
+2026-02-13 22:56:05 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/examples-of-how-poor-data-quality-impacts-ml: All validations passed
+2026-02-13 22:56:05 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/examples-of-how-poor-data-quality-impacts-ml | Status: 200 | Size: 113057 bytes
+2026-02-13 22:56:05 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/experiment-driven-approach-high-quality-data-labels
+2026-02-13 22:56:07 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/experiment-driven-approach-high-quality-data-labels: All validations passed
+2026-02-13 22:56:07 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/experiment-driven-approach-high-quality-data-labels | Status: 200 | Size: 111733 bytes
+2026-02-13 22:56:07 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/experiment-driven-development-part-2
+2026-02-13 22:56:10 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/experiment-driven-development-part-2: All validations passed
+2026-02-13 22:56:10 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/experiment-driven-development-part-2 | Status: 200 | Size: 111323 bytes
+2026-02-13 22:56:10 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/experiment-driven-development-part-3
+2026-02-13 22:56:12 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/experiment-driven-development-part-3: All validations passed
+2026-02-13 22:56:12 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/experiment-driven-development-part-3 | Status: 200 | Size: 113563 bytes
+2026-02-13 22:56:12 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/experts-biggest-roadblocks-ml-production
+2026-02-13 22:56:15 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/experts-biggest-roadblocks-ml-production: All validations passed
+2026-02-13 22:56:15 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/experts-biggest-roadblocks-ml-production | Status: 200 | Size: 112638 bytes
+2026-02-13 22:56:15 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/experts-high-quality-training-data-importance
+2026-02-13 22:56:17 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/experts-high-quality-training-data-importance: All validations passed
+2026-02-13 22:56:17 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/experts-high-quality-training-data-importance | Status: 200 | Size: 112785 bytes
+2026-02-13 22:56:17 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/faces-of-sama-erick-vukaya
+2026-02-13 22:56:20 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/faces-of-sama-erick-vukaya: All validations passed
+2026-02-13 22:56:20 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/faces-of-sama-erick-vukaya | Status: 200 | Size: 110754 bytes
+2026-02-13 22:56:20 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/faces-of-sama-frank-agalos-journey-from-the-streets-to-a-multi-talented-professional
+2026-02-13 22:56:22 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/faces-of-sama-frank-agalos-journey-from-the-streets-to-a-multi-talented-professional: All validations passed
+2026-02-13 22:56:22 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/faces-of-sama-frank-agalos-journey-from-the-streets-to-a-multi-talented-professional | Status: 200 | Size: 114816 bytes
+2026-02-13 22:56:22 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/faces-of-sama-pius-nashimalas-poetry-of-perseverance-now-provides-for-his-community
+2026-02-13 22:56:27 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/faces-of-sama-pius-nashimalas-poetry-of-perseverance-now-provides-for-his-community: All validations passed
+2026-02-13 22:56:27 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/faces-of-sama-pius-nashimalas-poetry-of-perseverance-now-provides-for-his-community | Status: 200 | Size: 116403 bytes
+2026-02-13 22:56:27 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/fast-company-next-best-things-tech-2021
+2026-02-13 22:56:31 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/fast-company-next-best-things-tech-2021: All validations passed
+2026-02-13 22:56:31 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/fast-company-next-best-things-tech-2021 | Status: 200 | Size: 110010 bytes
+2026-02-13 22:56:31 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/fast-vector-annotation
+2026-02-13 22:56:34 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/fast-vector-annotation: All validations passed
+2026-02-13 22:56:34 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/fast-vector-annotation | Status: 200 | Size: 115024 bytes
+2026-02-13 22:56:34 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/fighting-ai-bias-by-obtaining-high-quality-training-data
+2026-02-13 22:56:36 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/fighting-ai-bias-by-obtaining-high-quality-training-data: All validations passed
+2026-02-13 22:56:36 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/fighting-ai-bias-by-obtaining-high-quality-training-data | Status: 200 | Size: 111369 bytes
+2026-02-13 22:56:36 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/frequently-asked-data-annotation-challenges-for-retail-ebook
+2026-02-13 22:56:39 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/frequently-asked-data-annotation-challenges-for-retail-ebook: All validations passed
+2026-02-13 22:56:39 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/frequently-asked-data-annotation-challenges-for-retail-ebook | Status: 200 | Size: 107630 bytes
+2026-02-13 22:56:39 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/garbage-in-garbage-out-why-data-accuracy-matters-for-ai-models
+2026-02-13 22:56:42 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/garbage-in-garbage-out-why-data-accuracy-matters-for-ai-models: All validations passed
+2026-02-13 22:56:42 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/garbage-in-garbage-out-why-data-accuracy-matters-for-ai-models | Status: 200 | Size: 122094 bytes
+2026-02-13 22:56:42 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/hidden-costs-of-data-annotation-webinar-recap
+2026-02-13 22:56:45 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/hidden-costs-of-data-annotation-webinar-recap: All validations passed
+2026-02-13 22:56:45 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/hidden-costs-of-data-annotation-webinar-recap | Status: 200 | Size: 114542 bytes
+2026-02-13 22:56:45 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/highlights-from-cvpr-2019
+2026-02-13 22:56:48 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/highlights-from-cvpr-2019: All validations passed
+2026-02-13 22:56:48 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/highlights-from-cvpr-2019 | Status: 200 | Size: 108509 bytes
+2026-02-13 22:56:48 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/highlights-from-mcgill-codejam-2019
+2026-02-13 22:56:51 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/highlights-from-mcgill-codejam-2019: All validations passed
+2026-02-13 22:56:51 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/highlights-from-mcgill-codejam-2019 | Status: 200 | Size: 108543 bytes
+2026-02-13 22:56:51 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/highlights-from-the-2019-embedded-vision-summit
+2026-02-13 22:56:54 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/highlights-from-the-2019-embedded-vision-summit: All validations passed
+2026-02-13 22:56:54 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/highlights-from-the-2019-embedded-vision-summit | Status: 200 | Size: 110447 bytes
+2026-02-13 22:56:54 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/how-ai-helps-restaurants-reduce-food-waste-orbisk
+2026-02-13 22:56:58 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/how-ai-helps-restaurants-reduce-food-waste-orbisk: All validations passed
+2026-02-13 22:56:58 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/how-ai-helps-restaurants-reduce-food-waste-orbisk | Status: 200 | Size: 115432 bytes
+2026-02-13 22:56:58 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/how-businesses-can-navigate-ai-within-a-changing-regulatory-landscape
+2026-02-13 22:57:00 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/how-businesses-can-navigate-ai-within-a-changing-regulatory-landscape: All validations passed
+2026-02-13 22:57:00 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/how-businesses-can-navigate-ai-within-a-changing-regulatory-landscape | Status: 200 | Size: 120452 bytes
+2026-02-13 22:57:00 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/how-exactly-does-samasource-move-people-out-of-poverty
+2026-02-13 22:57:02 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/how-exactly-does-samasource-move-people-out-of-poverty: All validations passed
+2026-02-13 22:57:02 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/how-exactly-does-samasource-move-people-out-of-poverty | Status: 200 | Size: 108288 bytes
+2026-02-13 22:57:02 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/how-samasource-is-closing-the-gender-pay-gap-for-women-in-the-ai-supply-chain
+2026-02-13 22:57:04 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/how-samasource-is-closing-the-gender-pay-gap-for-women-in-the-ai-supply-chain: All validations passed
+2026-02-13 22:57:04 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/how-samasource-is-closing-the-gender-pay-gap-for-women-in-the-ai-supply-chain | Status: 200 | Size: 110752 bytes
+2026-02-13 22:57:05 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/how-should-ml-models-assist-labeling-and-annotation-workflows
+2026-02-13 22:57:07 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/how-should-ml-models-assist-labeling-and-annotation-workflows: All validations passed
+2026-02-13 22:57:07 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/how-should-ml-models-assist-labeling-and-annotation-workflows | Status: 200 | Size: 118383 bytes
+2026-02-13 22:57:07 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/how-to-select-image-annotation-tools-techniques
+2026-02-13 22:57:11 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/how-to-select-image-annotation-tools-techniques: All validations passed
+2026-02-13 22:57:11 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/how-to-select-image-annotation-tools-techniques | Status: 200 | Size: 129762 bytes
+2026-02-13 22:57:11 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/how-to-think-about-human-centered-machine-learning
+2026-02-13 22:57:14 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/how-to-think-about-human-centered-machine-learning: All validations passed
+2026-02-13 22:57:14 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/how-to-think-about-human-centered-machine-learning | Status: 200 | Size: 111696 bytes
+2026-02-13 22:57:14 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/how-vulcan-is-using-ai-for-wildlife-conservation
+2026-02-13 22:57:16 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/how-vulcan-is-using-ai-for-wildlife-conservation: All validations passed
+2026-02-13 22:57:16 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/how-vulcan-is-using-ai-for-wildlife-conservation | Status: 200 | Size: 113142 bytes
+2026-02-13 22:57:17 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/how-walmart-labs-used-ai-to-improve-retail-item-coverage
+2026-02-13 22:57:21 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/how-walmart-labs-used-ai-to-improve-retail-item-coverage: All validations passed
+2026-02-13 22:57:21 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/how-walmart-labs-used-ai-to-improve-retail-item-coverage | Status: 200 | Size: 110377 bytes
+2026-02-13 22:57:21 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/human-vs-ai-automation-striking-the-right-balance-for-accurate-data-labeling-and-annotation
+2026-02-13 22:57:24 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/human-vs-ai-automation-striking-the-right-balance-for-accurate-data-labeling-and-annotation: All validations passed
+2026-02-13 22:57:24 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/human-vs-ai-automation-striking-the-right-balance-for-accurate-data-labeling-and-annotation | Status: 200 | Size: 114463 bytes
+2026-02-13 22:57:24 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/iccv-2023-5-sessions-and-a-dataset-sama
+2026-02-13 22:57:27 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/iccv-2023-5-sessions-and-a-dataset-sama: All validations passed
+2026-02-13 22:57:27 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/iccv-2023-5-sessions-and-a-dataset-sama | Status: 200 | Size: 109985 bytes
+2026-02-13 22:57:27 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/image-annotation-guide
+2026-02-13 22:57:30 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/image-annotation-guide: All validations passed
+2026-02-13 22:57:30 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/image-annotation-guide | Status: 200 | Size: 136205 bytes
+2026-02-13 22:57:30 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/impact-business
+2026-02-13 22:57:32 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/impact-business: All validations passed
+2026-02-13 22:57:32 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/impact-business | Status: 200 | Size: 115134 bytes
+2026-02-13 22:57:32 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/in-house-vs-outsourcing-data-annotation-for-ml-pros-cons
+2026-02-13 22:57:34 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/in-house-vs-outsourcing-data-annotation-for-ml-pros-cons: All validations passed
+2026-02-13 22:57:34 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/in-house-vs-outsourcing-data-annotation-for-ml-pros-cons | Status: 200 | Size: 124451 bytes
+2026-02-13 22:57:34 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/inc-5000-list-third-year-in-a-row
+2026-02-13 22:57:38 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/inc-5000-list-third-year-in-a-row: All validations passed
+2026-02-13 22:57:38 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/inc-5000-list-third-year-in-a-row | Status: 200 | Size: 109706 bytes
+2026-02-13 22:57:38 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/infographics-for-computer-vision
+2026-02-13 22:57:41 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/infographics-for-computer-vision: All validations passed
+2026-02-13 22:57:41 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/infographics-for-computer-vision | Status: 200 | Size: 108122 bytes
+2026-02-13 22:57:41 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/innovation-week-2021
+2026-02-13 22:57:42 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/innovation-week-2021: All validations passed
+2026-02-13 22:57:42 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/innovation-week-2021 | Status: 200 | Size: 108430 bytes
+2026-02-13 22:57:42 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/instance-segmentation-techniques-computer-vision
+2026-02-13 22:57:45 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/instance-segmentation-techniques-computer-vision: All validations passed
+2026-02-13 22:57:45 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/instance-segmentation-techniques-computer-vision | Status: 200 | Size: 127252 bytes
+2026-02-13 22:57:45 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/introducing-sama-red-team-boosting-safety-and-reliability-for-generative-ai-models
+2026-02-13 22:57:49 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/introducing-sama-red-team-boosting-safety-and-reliability-for-generative-ai-models: All validations passed
+2026-02-13 22:57:49 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/introducing-sama-red-team-boosting-safety-and-reliability-for-generative-ai-models | Status: 200 | Size: 112554 bytes
+2026-02-13 22:57:49 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/keep-it-secret-keep-it-safe-announcing-the-pii-data-anonymizer
+2026-02-13 22:57:52 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/keep-it-secret-keep-it-safe-announcing-the-pii-data-anonymizer: All validations passed
+2026-02-13 22:57:52 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/keep-it-secret-keep-it-safe-announcing-the-pii-data-anonymizer | Status: 200 | Size: 108733 bytes
+2026-02-13 22:57:52 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/keypoint-annotation-guide-ai
+2026-02-13 22:57:54 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/keypoint-annotation-guide-ai: All validations passed
+2026-02-13 22:57:54 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/keypoint-annotation-guide-ai | Status: 200 | Size: 117249 bytes
+2026-02-13 22:57:54 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/lidar-technology-applications-retail
+2026-02-13 22:57:57 - scraper.www.sama.com - INFO - ✓ VALIDATION PASSED: https://www.sama.com/blog/lidar-technology-applications-retail: All validations passed
+2026-02-13 22:57:57 - scraper.www.sama.com - INFO - ✓ SUCCESS: https://www.sama.com/blog/lidar-technology-applications-retail | Status: 200 | Size: 113746 bytes
+2026-02-13 22:57:58 - scraper.www.sama.com - INFO - Starting scrape: https://www.sama.com/blog/machine-learning-101
+2026-02-14 03:25:25 - scraper.www.sama.com - WARNING - Scraping interrupted by user

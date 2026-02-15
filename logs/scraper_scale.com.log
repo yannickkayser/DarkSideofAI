@@ -1,0 +1,102 @@
+2026-02-13 05:07:06 - scraper.scale.com - INFO - Starting scrape of Scale AI
+2026-02-13 05:07:07 - scraper.scale.com - INFO - Starting scrape: https://scale.com/blog
+2026-02-13 05:07:13 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/blog | name 'Page' is not defined
+2026-02-13 05:07:13 - scraper.scale.com - INFO - Retrying https://scale.com/blog (attempt 2/3)
+2026-02-13 05:07:15 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/blog | Target page, context or browser has been closed
+2026-02-13 05:07:15 - scraper.scale.com - INFO - Retrying https://scale.com/blog (attempt 3/3)
+2026-02-13 05:07:19 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/blog | Target page, context or browser has been closed
+2026-02-13 05:07:19 - scraper.scale.com - INFO - Starting scrape: https://scale.com/builder-studio
+2026-02-13 05:07:21 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/builder-studio | Target page, context or browser has been closed
+2026-02-13 05:07:21 - scraper.scale.com - INFO - Retrying https://scale.com/builder-studio (attempt 2/3)
+2026-02-13 05:07:23 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/builder-studio | Target page, context or browser has been closed
+2026-02-13 05:07:23 - scraper.scale.com - INFO - Retrying https://scale.com/builder-studio (attempt 3/3)
+2026-02-13 05:07:27 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/builder-studio | Target page, context or browser has been closed
+2026-02-13 05:07:27 - scraper.scale.com - INFO - Starting scrape: https://scale.com/og
+2026-02-13 05:07:29 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/og | Target page, context or browser has been closed
+2026-02-13 05:07:29 - scraper.scale.com - INFO - Retrying https://scale.com/og (attempt 2/3)
+2026-02-13 05:07:31 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/og | Target page, context or browser has been closed
+2026-02-13 05:07:31 - scraper.scale.com - INFO - Retrying https://scale.com/og (attempt 3/3)
+2026-02-13 05:07:35 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/og | Target page, context or browser has been closed
+2026-02-13 05:07:35 - scraper.scale.com - INFO - Starting scrape: https://scale.com/plasmic-studio
+2026-02-13 05:07:38 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/plasmic-studio | Target page, context or browser has been closed
+2026-02-13 05:07:38 - scraper.scale.com - INFO - Retrying https://scale.com/plasmic-studio (attempt 2/3)
+2026-02-13 05:07:40 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/plasmic-studio | Target page, context or browser has been closed
+2026-02-13 05:07:40 - scraper.scale.com - INFO - Retrying https://scale.com/plasmic-studio (attempt 3/3)
+2026-02-13 05:07:44 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/plasmic-studio | Target page, context or browser has been closed
+2026-02-13 05:07:44 - scraper.scale.com - INFO - Starting scrape: https://scale.com/blog/moltbook-and-risk-matrix
+2026-02-13 05:07:46 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/blog/moltbook-and-risk-matrix | Target page, context or browser has been closed
+2026-02-13 05:07:46 - scraper.scale.com - INFO - Retrying https://scale.com/blog/moltbook-and-risk-matrix (attempt 2/3)
+2026-02-13 05:07:48 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/blog/moltbook-and-risk-matrix | Target page, context or browser has been closed
+2026-02-13 05:07:48 - scraper.scale.com - INFO - Retrying https://scale.com/blog/moltbook-and-risk-matrix (attempt 3/3)
+2026-02-13 05:07:52 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/blog/moltbook-and-risk-matrix | Target page, context or browser has been closed
+2026-02-13 05:07:52 - scraper.scale.com - INFO - Starting scrape: https://scale.com/blog/webster-university-technical-writing-partnership
+2026-02-13 05:07:54 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/blog/webster-university-technical-writing-partnership | Target page, context or browser has been closed
+2026-02-13 05:07:54 - scraper.scale.com - INFO - Retrying https://scale.com/blog/webster-university-technical-writing-partnership (attempt 2/3)
+2026-02-13 05:07:56 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/blog/webster-university-technical-writing-partnership | Target page, context or browser has been closed
+2026-02-13 05:07:56 - scraper.scale.com - INFO - Retrying https://scale.com/blog/webster-university-technical-writing-partnership (attempt 3/3)
+2026-02-13 05:08:00 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/blog/webster-university-technical-writing-partnership | Target page, context or browser has been closed
+2026-02-13 05:08:00 - scraper.scale.com - INFO - Starting scrape: https://scale.com/blog/meet-the-contributors-scott-oneil
+2026-02-13 05:08:02 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/blog/meet-the-contributors-scott-oneil | Target page, context or browser has been closed
+2026-02-13 05:08:02 - scraper.scale.com - INFO - Retrying https://scale.com/blog/meet-the-contributors-scott-oneil (attempt 2/3)
+2026-02-13 05:08:04 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/blog/meet-the-contributors-scott-oneil | Target page, context or browser has been closed
+2026-02-13 05:08:04 - scraper.scale.com - INFO - Retrying https://scale.com/blog/meet-the-contributors-scott-oneil (attempt 3/3)
+2026-02-13 05:08:08 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/blog/meet-the-contributors-scott-oneil | Target page, context or browser has been closed
+2026-02-13 05:08:08 - scraper.scale.com - INFO - Starting scrape: https://scale.com/blog/scales-next-era-building-for-2026
+2026-02-13 05:08:51 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/blog/scales-next-era-building-for-2026 | Target page, context or browser has been closed
+2026-02-13 05:08:51 - scraper.scale.com - INFO - Retrying https://scale.com/blog/scales-next-era-building-for-2026 (attempt 2/3)
+2026-02-13 05:08:53 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/blog/scales-next-era-building-for-2026 | Target page, context or browser has been closed
+2026-02-13 05:08:53 - scraper.scale.com - INFO - Retrying https://scale.com/blog/scales-next-era-building-for-2026 (attempt 3/3)
+2026-02-13 05:08:57 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/blog/scales-next-era-building-for-2026 | Target page, context or browser has been closed
+2026-02-13 05:08:57 - scraper.scale.com - INFO - Starting scrape: https://scale.com/blog/remotasks-overview
+2026-02-13 05:08:59 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/blog/remotasks-overview | Target page, context or browser has been closed
+2026-02-13 05:08:59 - scraper.scale.com - INFO - Retrying https://scale.com/blog/remotasks-overview (attempt 2/3)
+2026-02-13 05:09:01 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/blog/remotasks-overview | Target page, context or browser has been closed
+2026-02-13 05:09:01 - scraper.scale.com - INFO - Retrying https://scale.com/blog/remotasks-overview (attempt 3/3)
+2026-02-13 05:09:05 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/blog/remotasks-overview | Target page, context or browser has been closed
+2026-02-13 05:09:05 - scraper.scale.com - INFO - Starting scrape: https://scale.com/blog/scale-white-house-voluntary-commitments
+2026-02-13 05:09:08 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/blog/scale-white-house-voluntary-commitments | Target page, context or browser has been closed
+2026-02-13 05:09:08 - scraper.scale.com - INFO - Retrying https://scale.com/blog/scale-white-house-voluntary-commitments (attempt 2/3)
+2026-02-13 05:09:10 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/blog/scale-white-house-voluntary-commitments | Target page, context or browser has been closed
+2026-02-13 05:09:10 - scraper.scale.com - INFO - Retrying https://scale.com/blog/scale-white-house-voluntary-commitments (attempt 3/3)
+2026-02-13 05:09:14 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/blog/scale-white-house-voluntary-commitments | Target page, context or browser has been closed
+2026-02-13 05:09:14 - scraper.scale.com - INFO - Starting scrape: https://scale.com/blog/scale-framework-for-successful-government-ai-adoption
+2026-02-13 05:09:16 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/blog/scale-framework-for-successful-government-ai-adoption | Target page, context or browser has been closed
+2026-02-13 05:09:16 - scraper.scale.com - INFO - Retrying https://scale.com/blog/scale-framework-for-successful-government-ai-adoption (attempt 2/3)
+2026-02-13 05:09:18 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/blog/scale-framework-for-successful-government-ai-adoption | Target page, context or browser has been closed
+2026-02-13 05:09:18 - scraper.scale.com - INFO - Retrying https://scale.com/blog/scale-framework-for-successful-government-ai-adoption (attempt 3/3)
+2026-02-13 22:25:36 - scraper.scale.com - INFO - Starting scrape of Scale AI
+2026-02-13 22:25:38 - scraper.scale.com - INFO - Starting scrape: https://scale.com/blog
+2026-02-13 22:25:39 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/blog | Target page, context or browser has been closed
+2026-02-13 22:25:39 - scraper.scale.com - INFO - Retrying https://scale.com/blog (attempt 2/3)
+2026-02-13 22:25:41 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/blog | Target page, context or browser has been closed
+2026-02-13 22:25:41 - scraper.scale.com - INFO - Retrying https://scale.com/blog (attempt 3/3)
+2026-02-13 22:25:45 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/blog | Target page, context or browser has been closed
+2026-02-13 22:25:45 - scraper.scale.com - INFO - Starting scrape: https://scale.com/builder-studio
+2026-02-13 22:25:47 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/builder-studio | Target page, context or browser has been closed
+2026-02-13 22:25:47 - scraper.scale.com - INFO - Retrying https://scale.com/builder-studio (attempt 2/3)
+2026-02-13 22:25:49 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/builder-studio | Target page, context or browser has been closed
+2026-02-13 22:25:49 - scraper.scale.com - INFO - Retrying https://scale.com/builder-studio (attempt 3/3)
+2026-02-13 22:25:53 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/builder-studio | Target page, context or browser has been closed
+2026-02-13 22:25:53 - scraper.scale.com - INFO - Starting scrape: https://scale.com/og
+2026-02-13 22:25:55 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/og | Target page, context or browser has been closed
+2026-02-13 22:25:55 - scraper.scale.com - INFO - Retrying https://scale.com/og (attempt 2/3)
+2026-02-13 22:25:57 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/og | Target page, context or browser has been closed
+2026-02-13 22:25:57 - scraper.scale.com - INFO - Retrying https://scale.com/og (attempt 3/3)
+2026-02-13 22:26:01 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/og | Target page, context or browser has been closed
+2026-02-13 22:26:01 - scraper.scale.com - INFO - Starting scrape: https://scale.com/plasmic-studio
+2026-02-13 22:26:03 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/plasmic-studio | Target page, context or browser has been closed
+2026-02-13 22:26:03 - scraper.scale.com - INFO - Retrying https://scale.com/plasmic-studio (attempt 2/3)
+2026-02-13 22:26:05 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/plasmic-studio | Target page, context or browser has been closed
+2026-02-13 22:26:05 - scraper.scale.com - INFO - Retrying https://scale.com/plasmic-studio (attempt 3/3)
+2026-02-13 22:26:09 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/plasmic-studio | Target page, context or browser has been closed
+2026-02-13 22:26:09 - scraper.scale.com - INFO - Starting scrape: https://scale.com/blog/moltbook-and-risk-matrix
+2026-02-13 22:26:11 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/blog/moltbook-and-risk-matrix | Target page, context or browser has been closed
+2026-02-13 22:26:11 - scraper.scale.com - INFO - Retrying https://scale.com/blog/moltbook-and-risk-matrix (attempt 2/3)
+2026-02-13 22:26:13 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/blog/moltbook-and-risk-matrix | Target page, context or browser has been closed
+2026-02-13 22:26:13 - scraper.scale.com - INFO - Retrying https://scale.com/blog/moltbook-and-risk-matrix (attempt 3/3)
+2026-02-13 22:26:17 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/blog/moltbook-and-risk-matrix | Target page, context or browser has been closed
+2026-02-13 22:26:17 - scraper.scale.com - INFO - Starting scrape: https://scale.com/blog/webster-university-technical-writing-partnership
+2026-02-13 22:26:19 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/blog/webster-university-technical-writing-partnership | Target page, context or browser has been closed
+2026-02-13 22:26:19 - scraper.scale.com - INFO - Retrying https://scale.com/blog/webster-university-technical-writing-partnership (attempt 2/3)
+2026-02-13 22:26:21 - scraper.scale.com - ERROR - ✗ ERROR: https://scale.com/blog/webster-university-technical-writing-partnership | Target page, context or browser has been closed
+2026-02-13 22:26:21 - scraper.scale.com - INFO - Retrying https://scale.com/blog/webster-university-technical-writing-partnership (attempt 3/3)

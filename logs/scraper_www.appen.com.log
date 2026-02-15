@@ -1403,3 +1403,268 @@
 2026-02-13 02:06:15 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/case-studies/johns-hopkins-university-annotating-data-to-study-spider-web-building
 2026-02-13 02:06:16 - scraper.www.appen.com - ERROR - ✗ ERROR: https://www.appen.com/case-studies/johns-hopkins-university-annotating-data-to-study-spider-web-building | 'dict' object has no attribute '_object'
 2026-02-13 02:06:16 - scraper.www.appen.com - INFO - Retrying https://www.appen.com/case-studies/johns-hopkins-university-annotating-data-to-study-spider-web-building (attempt 2/3)
+2026-02-13 04:59:40 - scraper.www.appen.com - INFO - Starting scrape of Appen
+2026-02-13 04:59:41 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com
+2026-02-13 04:59:43 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com: All validations passed
+2026-02-13 04:59:43 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com | Status: 200 | Size: 205495 bytes
+2026-02-13 04:59:43 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/search
+2026-02-13 04:59:44 - scraper.www.appen.com - WARNING - ✗ VALIDATION FAILED: https://www.appen.com/search: Content too short (35 chars, minimum 50)
+2026-02-13 04:59:44 - scraper.www.appen.com - WARNING - Validation failed for https://www.appen.com/search: Content too short (35 chars, minimum 50)
+2026-02-13 04:59:44 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/case-studies/johns-hopkins-university-annotating-data-to-study-spider-web-building
+2026-02-13 04:59:46 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/case-studies/johns-hopkins-university-annotating-data-to-study-spider-web-building: All validations passed
+2026-02-13 04:59:46 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/case-studies/johns-hopkins-university-annotating-data-to-study-spider-web-building | Status: 200 | Size: 181706 bytes
+2026-02-13 04:59:46 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/case-studies/leading-social-media-company-improves-platform-with-data-collection
+2026-02-13 04:59:49 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/case-studies/leading-social-media-company-improves-platform-with-data-collection: All validations passed
+2026-02-13 04:59:49 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/case-studies/leading-social-media-company-improves-platform-with-data-collection | Status: 200 | Size: 175578 bytes
+2026-02-13 04:59:49 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/case-studies/llm-evaluation-complex-domains
+2026-02-13 04:59:50 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/case-studies/llm-evaluation-complex-domains: All validations passed
+2026-02-13 04:59:50 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/case-studies/llm-evaluation-complex-domains | Status: 200 | Size: 178128 bytes
+2026-02-13 04:59:50 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/case-studies/llm-image-generator-evaluation
+2026-02-13 04:59:52 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/case-studies/llm-image-generator-evaluation: All validations passed
+2026-02-13 04:59:52 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/case-studies/llm-image-generator-evaluation | Status: 200 | Size: 177580 bytes
+2026-02-13 04:59:52 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/case-studies/london-school-of-economics
+2026-02-13 04:59:54 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/case-studies/london-school-of-economics: All validations passed
+2026-02-13 04:59:54 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/case-studies/london-school-of-economics | Status: 200 | Size: 179710 bytes
+2026-02-13 04:59:54 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/case-studies/mediainterface-expands-to-france-with-pre-labeled-datasets
+2026-02-13 04:59:57 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/case-studies/mediainterface-expands-to-france-with-pre-labeled-datasets: All validations passed
+2026-02-13 04:59:57 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/case-studies/mediainterface-expands-to-france-with-pre-labeled-datasets | Status: 200 | Size: 177553 bytes
+2026-02-13 04:59:57 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/case-studies/microsoft-bing-improves-search-quality-in-multiple-markets
+2026-02-13 05:02:17 - scraper.www.appen.com - ERROR - ✗ ERROR: https://www.appen.com/case-studies/microsoft-bing-improves-search-quality-in-multiple-markets | Timeout 30000ms exceeded.
+2026-02-13 05:02:17 - scraper.www.appen.com - INFO - Retrying https://www.appen.com/case-studies/microsoft-bing-improves-search-quality-in-multiple-markets (attempt 2/3)
+2026-02-13 05:02:49 - scraper.www.appen.com - ERROR - ✗ ERROR: https://www.appen.com/case-studies/microsoft-bing-improves-search-quality-in-multiple-markets | Timeout 30000ms exceeded.
+2026-02-13 05:02:49 - scraper.www.appen.com - INFO - Retrying https://www.appen.com/case-studies/microsoft-bing-improves-search-quality-in-multiple-markets (attempt 3/3)
+2026-02-13 05:02:58 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/case-studies/microsoft-bing-improves-search-quality-in-multiple-markets: All validations passed
+2026-02-13 05:02:58 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/case-studies/microsoft-bing-improves-search-quality-in-multiple-markets | Status: 200 | Size: 51930 bytes
+2026-02-13 05:02:58 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/case-studies/microsoft-translator-making-knowledge-access-equitable
+2026-02-13 05:03:04 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/case-studies/microsoft-translator-making-knowledge-access-equitable: All validations passed
+2026-02-13 05:03:04 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/case-studies/microsoft-translator-making-knowledge-access-equitable | Status: 200 | Size: 60470 bytes
+2026-02-13 05:03:04 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/case-studies/multilingual-llm-fine-tuning
+2026-02-13 05:03:09 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/case-studies/multilingual-llm-fine-tuning: All validations passed
+2026-02-13 05:03:09 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/case-studies/multilingual-llm-fine-tuning | Status: 200 | Size: 54138 bytes
+2026-02-13 05:03:09 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/case-studies/music-generation
+2026-02-13 05:03:14 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/case-studies/music-generation: All validations passed
+2026-02-13 05:03:14 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/case-studies/music-generation | Status: 200 | Size: 52185 bytes
+2026-02-13 05:03:14 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/case-studies/optimizing-global-ecommerce-transaction-funnels
+2026-02-13 05:03:20 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/case-studies/optimizing-global-ecommerce-transaction-funnels: All validations passed
+2026-02-13 05:03:20 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/case-studies/optimizing-global-ecommerce-transaction-funnels | Status: 200 | Size: 51654 bytes
+2026-02-13 05:03:20 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/case-studies/preserving-language-through-useable-data
+2026-02-13 05:03:23 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/case-studies/preserving-language-through-useable-data: All validations passed
+2026-02-13 05:03:23 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/case-studies/preserving-language-through-useable-data | Status: 200 | Size: 177246 bytes
+2026-02-13 05:03:23 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/case-studies/realeyes-accelerates-video-attention-and-emotion-analysis-with-scalable-annotation-solution
+2026-02-13 05:03:24 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/case-studies/realeyes-accelerates-video-attention-and-emotion-analysis-with-scalable-annotation-solution: All validations passed
+2026-02-13 05:03:24 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/case-studies/realeyes-accelerates-video-attention-and-emotion-analysis-with-scalable-annotation-solution | Status: 200 | Size: 179487 bytes
+2026-02-13 05:03:24 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/case-studies/reflex-ai-mental-health-supports-veterans
+2026-02-13 05:03:26 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/case-studies/reflex-ai-mental-health-supports-veterans: All validations passed
+2026-02-13 05:03:26 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/case-studies/reflex-ai-mental-health-supports-veterans | Status: 200 | Size: 184185 bytes
+2026-02-13 05:03:26 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/case-studies/search-engine-expands-internationally-vendor-neutral-quality-analysts
+2026-02-13 05:03:28 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/case-studies/search-engine-expands-internationally-vendor-neutral-quality-analysts: All validations passed
+2026-02-13 05:03:28 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/case-studies/search-engine-expands-internationally-vendor-neutral-quality-analysts | Status: 200 | Size: 175829 bytes
+2026-02-13 05:03:28 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/case-studies/search-engine-improves-listings-with-local-search-content-evaluation
+2026-02-13 05:03:30 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/case-studies/search-engine-improves-listings-with-local-search-content-evaluation: All validations passed
+2026-02-13 05:03:30 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/case-studies/search-engine-improves-listings-with-local-search-content-evaluation | Status: 200 | Size: 176038 bytes
+2026-02-13 05:03:30 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/case-studies/shotzr-speeds-up-identifying-which-images-need-location-metadata
+2026-02-13 05:03:32 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/case-studies/shotzr-speeds-up-identifying-which-images-need-location-metadata: All validations passed
+2026-02-13 05:03:32 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/case-studies/shotzr-speeds-up-identifying-which-images-need-location-metadata | Status: 200 | Size: 176418 bytes
+2026-02-13 05:03:32 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/case-studies/social-network-improves-search-functionality-with-search-evaluation
+2026-02-13 05:03:34 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/case-studies/social-network-improves-search-functionality-with-search-evaluation: All validations passed
+2026-02-13 05:03:34 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/case-studies/social-network-improves-search-functionality-with-search-evaluation | Status: 200 | Size: 176084 bytes
+2026-02-13 05:03:34 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/case-studies/tier-1-automotive-software-provider-creates-smarter-in-car-infotainment-systems
+2026-02-13 05:03:37 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/case-studies/tier-1-automotive-software-provider-creates-smarter-in-car-infotainment-systems: All validations passed
+2026-02-13 05:03:37 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/case-studies/tier-1-automotive-software-provider-creates-smarter-in-car-infotainment-systems | Status: 200 | Size: 176590 bytes
+2026-02-13 05:03:37 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/case-studies/top-automotive-oem-uses-speech-training-data-to-power-its-connected-car
+2026-02-13 05:03:38 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/case-studies/top-automotive-oem-uses-speech-training-data-to-power-its-connected-car: All validations passed
+2026-02-13 05:03:38 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/case-studies/top-automotive-oem-uses-speech-training-data-to-power-its-connected-car | Status: 200 | Size: 177938 bytes
+2026-02-13 05:03:38 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/case-studies/top-gaming-company-strengthens-customer-support-capabilities-with-ai
+2026-02-13 05:03:40 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/case-studies/top-gaming-company-strengthens-customer-support-capabilities-with-ai: All validations passed
+2026-02-13 05:03:40 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/case-studies/top-gaming-company-strengthens-customer-support-capabilities-with-ai | Status: 200 | Size: 176781 bytes
+2026-02-13 05:03:40 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/case-studies/top-software-provider-develops-global-cldr-through-trusted-partnership
+2026-02-13 05:03:43 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/case-studies/top-software-provider-develops-global-cldr-through-trusted-partnership: All validations passed
+2026-02-13 05:03:43 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/case-studies/top-software-provider-develops-global-cldr-through-trusted-partnership | Status: 200 | Size: 176301 bytes
+2026-02-13 05:03:43 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/case-studies/wellio-turns-raw-data-sets-into-ai-training-data-for-nutrition-and-cooking
+2026-02-13 05:03:44 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/case-studies/wellio-turns-raw-data-sets-into-ai-training-data-for-nutrition-and-cooking: All validations passed
+2026-02-13 05:03:44 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/case-studies/wellio-turns-raw-data-sets-into-ai-training-data-for-nutrition-and-cooking | Status: 200 | Size: 176596 bytes
+2026-02-13 05:03:45 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/case-studies/zefr-improves-quality-increases-output-of-their-data-insights
+2026-02-13 05:03:50 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/case-studies/zefr-improves-quality-increases-output-of-their-data-insights: All validations passed
+2026-02-13 05:03:50 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/case-studies/zefr-improves-quality-increases-output-of-their-data-insights | Status: 200 | Size: 177057 bytes
+2026-02-13 05:03:51 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/data-sheets/appen-platform-quality-controls
+2026-02-13 05:03:52 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/data-sheets/appen-platform-quality-controls: All validations passed
+2026-02-13 05:03:52 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/data-sheets/appen-platform-quality-controls | Status: 200 | Size: 174838 bytes
+2026-02-13 05:03:52 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/data-sheets/appen-quality-controls-for-managed-services
+2026-02-13 05:03:54 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/data-sheets/appen-quality-controls-for-managed-services: All validations passed
+2026-02-13 05:03:54 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/data-sheets/appen-quality-controls-for-managed-services | Status: 200 | Size: 174539 bytes
+2026-02-13 05:03:54 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/data-sheets/appens-computer-vision-expertise
+2026-02-13 05:03:55 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/data-sheets/appens-computer-vision-expertise: All validations passed
+2026-02-13 05:03:55 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/data-sheets/appens-computer-vision-expertise | Status: 200 | Size: 174582 bytes
+2026-02-13 05:03:55 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/data-sheets/enterprise-data-llm
+2026-02-13 05:03:58 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/data-sheets/enterprise-data-llm: All validations passed
+2026-02-13 05:03:58 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/data-sheets/enterprise-data-llm | Status: 200 | Size: 174124 bytes
+2026-02-13 05:03:58 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/data-sheets/natural-language-processing-speech-technology-at-appen
+2026-02-13 05:04:00 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/data-sheets/natural-language-processing-speech-technology-at-appen: All validations passed
+2026-02-13 05:04:00 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/data-sheets/natural-language-processing-speech-technology-at-appen | Status: 200 | Size: 174974 bytes
+2026-02-13 05:04:00 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/whitepapers/2023-automotive-state-of-ai-and-machine-learning-report
+2026-02-13 05:04:29 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/whitepapers/2023-automotive-state-of-ai-and-machine-learning-report: All validations passed
+2026-02-13 05:04:29 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/whitepapers/2023-automotive-state-of-ai-and-machine-learning-report | Status: 200 | Size: 180158 bytes
+2026-02-13 05:04:29 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/whitepapers/adversarial-prompting
+2026-02-13 05:04:34 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/whitepapers/adversarial-prompting: All validations passed
+2026-02-13 05:04:34 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/whitepapers/adversarial-prompting | Status: 200 | Size: 184321 bytes
+2026-02-13 05:04:34 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/whitepapers/ai-safety
+2026-02-13 05:04:42 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/whitepapers/ai-safety: All validations passed
+2026-02-13 05:04:42 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/whitepapers/ai-safety | Status: 200 | Size: 181857 bytes
+2026-02-13 05:04:42 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/whitepapers/ai-solutions-for-automotive
+2026-02-13 05:04:43 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/whitepapers/ai-solutions-for-automotive: All validations passed
+2026-02-13 05:04:43 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/whitepapers/ai-solutions-for-automotive | Status: 200 | Size: 181555 bytes
+2026-02-13 05:04:43 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/whitepapers/ai-solutions-for-financial-services
+2026-02-13 05:04:46 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/whitepapers/ai-solutions-for-financial-services: All validations passed
+2026-02-13 05:04:46 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/whitepapers/ai-solutions-for-financial-services | Status: 200 | Size: 181826 bytes
+2026-02-13 05:04:46 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/whitepapers/ai-training-data-platforms
+2026-02-13 05:04:47 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/whitepapers/ai-training-data-platforms: All validations passed
+2026-02-13 05:04:47 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/whitepapers/ai-training-data-platforms | Status: 200 | Size: 180568 bytes
+2026-02-13 05:04:47 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/whitepapers/aiops-for-business-leaders
+2026-02-13 05:04:49 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/whitepapers/aiops-for-business-leaders: All validations passed
+2026-02-13 05:04:49 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/whitepapers/aiops-for-business-leaders | Status: 200 | Size: 180897 bytes
+2026-02-13 05:04:49 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/whitepapers/appens-2022-annual-state-of-ai-and-machine-learning-report
+2026-02-13 05:04:51 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/whitepapers/appens-2022-annual-state-of-ai-and-machine-learning-report: All validations passed
+2026-02-13 05:04:51 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/whitepapers/appens-2022-annual-state-of-ai-and-machine-learning-report | Status: 200 | Size: 179628 bytes
+2026-02-13 05:04:51 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/whitepapers/audio-data
+2026-02-13 05:04:53 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/whitepapers/audio-data: All validations passed
+2026-02-13 05:04:53 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/whitepapers/audio-data | Status: 200 | Size: 185131 bytes
+2026-02-13 05:04:53 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/whitepapers/chain-of-thought
+2026-02-13 05:04:55 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/whitepapers/chain-of-thought: All validations passed
+2026-02-13 05:04:55 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/whitepapers/chain-of-thought | Status: 200 | Size: 182141 bytes
+2026-02-13 05:04:56 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/whitepapers/data-centric-computer-vision
+2026-02-13 05:04:58 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/whitepapers/data-centric-computer-vision: All validations passed
+2026-02-13 05:04:58 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/whitepapers/data-centric-computer-vision | Status: 200 | Size: 182006 bytes
+2026-02-13 05:04:58 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/whitepapers/driving-roi-through-ai
+2026-02-13 05:04:59 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/whitepapers/driving-roi-through-ai: All validations passed
+2026-02-13 05:04:59 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/whitepapers/driving-roi-through-ai | Status: 200 | Size: 180417 bytes
+2026-02-13 05:04:59 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/whitepapers/how-to-create-an-ai-center-of-excellence-for-enterprise
+2026-02-13 05:05:01 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/whitepapers/how-to-create-an-ai-center-of-excellence-for-enterprise: All validations passed
+2026-02-13 05:05:01 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/whitepapers/how-to-create-an-ai-center-of-excellence-for-enterprise | Status: 200 | Size: 181595 bytes
+2026-02-13 05:05:01 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/whitepapers/mastering-llms
+2026-02-13 05:05:03 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/whitepapers/mastering-llms: All validations passed
+2026-02-13 05:05:03 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/whitepapers/mastering-llms | Status: 200 | Size: 183323 bytes
+2026-02-13 05:05:03 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/whitepapers/multilingual-cultural-nuance
+2026-02-13 05:05:05 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/whitepapers/multilingual-cultural-nuance: All validations passed
+2026-02-13 05:05:05 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/whitepapers/multilingual-cultural-nuance | Status: 200 | Size: 184050 bytes
+2026-02-13 05:05:05 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/whitepapers/optimize-ai-performance
+2026-02-13 05:05:07 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/whitepapers/optimize-ai-performance: All validations passed
+2026-02-13 05:05:07 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/whitepapers/optimize-ai-performance | Status: 200 | Size: 181581 bytes
+2026-02-13 05:05:07 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/whitepapers/red-teaming-multimodal-language-models
+2026-02-13 05:05:09 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/whitepapers/red-teaming-multimodal-language-models: All validations passed
+2026-02-13 05:05:09 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/whitepapers/red-teaming-multimodal-language-models | Status: 200 | Size: 184128 bytes
+2026-02-13 05:05:09 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/whitepapers/responsible-ai-from-pilot-to-production
+2026-02-13 05:05:11 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/whitepapers/responsible-ai-from-pilot-to-production: All validations passed
+2026-02-13 05:05:11 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/whitepapers/responsible-ai-from-pilot-to-production | Status: 200 | Size: 182996 bytes
+2026-02-13 05:05:11 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/whitepapers/retail-ai
+2026-02-13 05:05:13 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/whitepapers/retail-ai: All validations passed
+2026-02-13 05:05:13 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/whitepapers/retail-ai | Status: 200 | Size: 184265 bytes
+2026-02-13 05:05:13 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/whitepapers/state-of-ai-2024
+2026-02-13 05:05:15 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/whitepapers/state-of-ai-2024: All validations passed
+2026-02-13 05:05:15 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/whitepapers/state-of-ai-2024 | Status: 200 | Size: 180874 bytes
+2026-02-13 05:05:15 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/whitepapers/the-2021-state-of-ai-and-machine-learning-report
+2026-02-13 05:05:17 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/whitepapers/the-2021-state-of-ai-and-machine-learning-report: All validations passed
+2026-02-13 05:05:17 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/whitepapers/the-2021-state-of-ai-and-machine-learning-report | Status: 200 | Size: 180532 bytes
+2026-02-13 05:05:17 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/whitepapers/the-essential-guide-to-training-data
+2026-02-13 05:05:20 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/whitepapers/the-essential-guide-to-training-data: All validations passed
+2026-02-13 05:05:20 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/whitepapers/the-essential-guide-to-training-data | Status: 200 | Size: 182230 bytes
+2026-02-13 05:05:20 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/whitepapers/the-state-of-ai-and-machine-learning-report
+2026-02-13 05:05:22 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/whitepapers/the-state-of-ai-and-machine-learning-report: All validations passed
+2026-02-13 05:05:22 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/whitepapers/the-state-of-ai-and-machine-learning-report | Status: 200 | Size: 181218 bytes
+2026-02-13 05:05:22 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/webinars/2021-train-ai-emea
+2026-02-13 05:05:24 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/webinars/2021-train-ai-emea: All validations passed
+2026-02-13 05:05:24 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/webinars/2021-train-ai-emea | Status: 200 | Size: 186811 bytes
+2026-02-13 05:05:24 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/webinars/ai-safety-panel-discussion
+2026-02-13 05:05:26 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/webinars/ai-safety-panel-discussion: All validations passed
+2026-02-13 05:05:26 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/webinars/ai-safety-panel-discussion | Status: 200 | Size: 199022 bytes
+2026-02-13 05:05:26 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/webinars/ai-trends-2022-state-of-ai
+2026-02-13 05:05:57 - scraper.www.appen.com - ERROR - ✗ ERROR: https://www.appen.com/webinars/ai-trends-2022-state-of-ai | Timeout 30000ms exceeded.
+2026-02-13 05:05:57 - scraper.www.appen.com - INFO - Retrying https://www.appen.com/webinars/ai-trends-2022-state-of-ai (attempt 2/3)
+2026-02-13 05:06:07 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/webinars/ai-trends-2022-state-of-ai: All validations passed
+2026-02-13 05:06:07 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/webinars/ai-trends-2022-state-of-ai | Status: 200 | Size: 185543 bytes
+2026-02-13 05:06:07 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/webinars/bridging-research-and-real-world-ai-performance
+2026-02-13 05:06:08 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/webinars/bridging-research-and-real-world-ai-performance: All validations passed
+2026-02-13 05:06:08 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/webinars/bridging-research-and-real-world-ai-performance | Status: 200 | Size: 188407 bytes
+2026-02-13 05:06:08 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/webinars/clear-global-connecting-the-world-through-language
+2026-02-13 05:06:10 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/webinars/clear-global-connecting-the-world-through-language: All validations passed
+2026-02-13 05:06:10 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/webinars/clear-global-connecting-the-world-through-language | Status: 200 | Size: 185416 bytes
+2026-02-13 05:06:10 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/webinars/data-centric-computer-vision-wb
+2026-02-13 05:06:12 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/webinars/data-centric-computer-vision-wb: All validations passed
+2026-02-13 05:06:12 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/webinars/data-centric-computer-vision-wb | Status: 200 | Size: 186523 bytes
+2026-02-13 05:06:12 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/webinars/data-centric-real-world-ai
+2026-02-13 05:06:14 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/webinars/data-centric-real-world-ai: All validations passed
+2026-02-13 05:06:14 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/webinars/data-centric-real-world-ai | Status: 200 | Size: 183272 bytes
+2026-02-13 05:06:14 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/webinars/data-your-key-to-successful-autonomous-mobility
+2026-02-13 05:06:16 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/webinars/data-your-key-to-successful-autonomous-mobility: All validations passed
+2026-02-13 05:06:16 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/webinars/data-your-key-to-successful-autonomous-mobility | Status: 200 | Size: 187866 bytes
+2026-02-13 05:06:16 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/webinars/driving-quality-in-your-ai-training-data
+2026-02-13 05:06:19 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/webinars/driving-quality-in-your-ai-training-data: All validations passed
+2026-02-13 05:06:19 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/webinars/driving-quality-in-your-ai-training-data | Status: 200 | Size: 183701 bytes
+2026-02-13 05:06:19 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/webinars/embracing-responsible-ai-from-pilot-to-production
+2026-02-13 05:06:21 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/webinars/embracing-responsible-ai-from-pilot-to-production: All validations passed
+2026-02-13 05:06:21 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/webinars/embracing-responsible-ai-from-pilot-to-production | Status: 200 | Size: 186165 bytes
+2026-02-13 05:06:21 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/webinars/how-to-secure-your-data-for-ai
+2026-02-13 05:06:22 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/webinars/how-to-secure-your-data-for-ai: All validations passed
+2026-02-13 05:06:22 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/webinars/how-to-secure-your-data-for-ai | Status: 200 | Size: 183594 bytes
+2026-02-13 05:06:23 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/webinars/knowledge-engineering-the-technology-of-tracking-trends
+2026-02-13 05:06:25 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/webinars/knowledge-engineering-the-technology-of-tracking-trends: All validations passed
+2026-02-13 05:06:25 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/webinars/knowledge-engineering-the-technology-of-tracking-trends | Status: 200 | Size: 186726 bytes
+2026-02-13 05:06:25 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/webinars/machine-learning-for-finance-unlock-the-value-of-your-data
+2026-02-13 05:06:27 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/webinars/machine-learning-for-finance-unlock-the-value-of-your-data: All validations passed
+2026-02-13 05:06:27 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/webinars/machine-learning-for-finance-unlock-the-value-of-your-data | Status: 200 | Size: 185436 bytes
+2026-02-13 05:06:27 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/webinars/making-ai-work-in-the-real-world
+2026-02-13 05:06:29 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/webinars/making-ai-work-in-the-real-world: All validations passed
+2026-02-13 05:06:29 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/webinars/making-ai-work-in-the-real-world | Status: 200 | Size: 185300 bytes
+2026-02-13 05:06:29 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/webinars/mercedes-moving-the-world-through-innovation-and-data
+2026-02-13 05:06:32 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/webinars/mercedes-moving-the-world-through-innovation-and-data: All validations passed
+2026-02-13 05:06:32 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/webinars/mercedes-moving-the-world-through-innovation-and-data | Status: 200 | Size: 184907 bytes
+2026-02-13 05:06:32 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/webinars/navigating-challenges-to-ai-success
+2026-02-13 05:06:34 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/webinars/navigating-challenges-to-ai-success: All validations passed
+2026-02-13 05:06:34 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/webinars/navigating-challenges-to-ai-success | Status: 200 | Size: 188724 bytes
+2026-02-13 05:06:34 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/webinars/optimize-llm-performance-through-human-ai-collaboration
+2026-02-13 05:06:35 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/webinars/optimize-llm-performance-through-human-ai-collaboration: All validations passed
+2026-02-13 05:06:35 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/webinars/optimize-llm-performance-through-human-ai-collaboration | Status: 200 | Size: 189238 bytes
+2026-02-13 05:06:36 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/webinars/rag-system-accuracy
+2026-02-13 05:06:37 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/webinars/rag-system-accuracy: All validations passed
+2026-02-13 05:06:37 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/webinars/rag-system-accuracy | Status: 200 | Size: 187922 bytes
+2026-02-13 05:06:37 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/webinars/state-of-ai-2021-making-machine-learning-work-in-the-real-world
+2026-02-13 05:06:40 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/webinars/state-of-ai-2021-making-machine-learning-work-in-the-real-world: All validations passed
+2026-02-13 05:06:40 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/webinars/state-of-ai-2021-making-machine-learning-work-in-the-real-world | Status: 200 | Size: 184390 bytes
+2026-02-13 05:06:40 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/webinars/the-easiest-path-to-making-globally-loved-products-using-ai-ml
+2026-02-13 05:06:41 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/webinars/the-easiest-path-to-making-globally-loved-products-using-ai-ml: All validations passed
+2026-02-13 05:06:41 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/webinars/the-easiest-path-to-making-globally-loved-products-using-ai-ml | Status: 200 | Size: 186236 bytes
+2026-02-13 05:06:41 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/webinars/the-road-to-the-future-with-training-data-for-autonomous-vehicles
+2026-02-13 05:06:43 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/webinars/the-road-to-the-future-with-training-data-for-autonomous-vehicles: All validations passed
+2026-02-13 05:06:43 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/webinars/the-road-to-the-future-with-training-data-for-autonomous-vehicles | Status: 200 | Size: 186080 bytes
+2026-02-13 05:06:43 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/webinars/train-ai-summit-2020
+2026-02-13 05:06:46 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/webinars/train-ai-summit-2020: All validations passed
+2026-02-13 05:06:46 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/webinars/train-ai-summit-2020 | Status: 200 | Size: 188557 bytes
+2026-02-13 05:06:46 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/webinars/training-data-101
+2026-02-13 05:06:48 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/webinars/training-data-101: All validations passed
+2026-02-13 05:06:48 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/webinars/training-data-101 | Status: 200 | Size: 183735 bytes
+2026-02-13 05:06:48 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/webinars/webinar-getting-started-with-appen-platform
+2026-02-13 05:06:50 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/webinars/webinar-getting-started-with-appen-platform: All validations passed
+2026-02-13 05:06:50 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/webinars/webinar-getting-started-with-appen-platform | Status: 200 | Size: 183271 bytes
+2026-02-13 05:06:50 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/webinars/your-dream-vacation-made-easier-how-airbnb-delivers-on-hospitality-with-world-class-ai
+2026-02-13 05:06:52 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/webinars/your-dream-vacation-made-easier-how-airbnb-delivers-on-hospitality-with-world-class-ai: All validations passed
+2026-02-13 05:06:52 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/webinars/your-dream-vacation-made-easier-how-airbnb-delivers-on-hospitality-with-world-class-ai | Status: 200 | Size: 185042 bytes
+2026-02-13 05:06:52 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/events/ai-big-data-expo-north-america
+2026-02-13 05:06:53 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/events/ai-big-data-expo-north-america: All validations passed
+2026-02-13 05:06:53 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/events/ai-big-data-expo-north-america | Status: 200 | Size: 182413 bytes
+2026-02-13 05:06:53 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/events/ai4-2024
+2026-02-13 05:06:56 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/events/ai4-2024: All validations passed
+2026-02-13 05:06:56 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/events/ai4-2024 | Status: 200 | Size: 181146 bytes
+2026-02-13 05:06:56 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/events/appen-at-acl-2025
+2026-02-13 05:06:57 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/events/appen-at-acl-2025: All validations passed
+2026-02-13 05:06:57 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/events/appen-at-acl-2025 | Status: 200 | Size: 182300 bytes
+2026-02-13 05:06:58 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/events/appen-at-humanx-2025
+2026-02-13 05:07:00 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/events/appen-at-humanx-2025: All validations passed
+2026-02-13 05:07:00 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/events/appen-at-humanx-2025 | Status: 200 | Size: 182266 bytes
+2026-02-13 05:07:00 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/events/incabin-sensing-2024
+2026-02-13 05:07:03 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/events/incabin-sensing-2024: All validations passed
+2026-02-13 05:07:03 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/events/incabin-sensing-2024 | Status: 200 | Size: 180254 bytes
+2026-02-13 05:07:03 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/events/mlops-world-generative-ai-world-2024
+2026-02-13 05:07:04 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/events/mlops-world-generative-ai-world-2024: All validations passed
+2026-02-13 05:07:04 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/events/mlops-world-generative-ai-world-2024 | Status: 200 | Size: 181571 bytes
+2026-02-13 05:07:04 - scraper.www.appen.com - INFO - Starting scrape: https://www.appen.com/events/neurips-2025
+2026-02-13 05:07:06 - scraper.www.appen.com - INFO - ✓ VALIDATION PASSED: https://www.appen.com/events/neurips-2025: All validations passed
+2026-02-13 05:07:06 - scraper.www.appen.com - INFO - ✓ SUCCESS: https://www.appen.com/events/neurips-2025 | Status: 200 | Size: 180023 bytes
