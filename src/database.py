@@ -120,27 +120,34 @@ class Database:
         url_hash = hashlib.sha256(url.encode()).hexdigest()
         
         # Check if exists
-        cursor.execute("SELECT id FROM pages WHERE url_hash = ?", (url_hash,))
-        if cursor.fetchone():
-            return None  # Already exists
-        
+        # Replace with:
         cursor.execute("""
             INSERT INTO pages (
                 website_id, url, url_hash, title, text_content,
                 directory, html_element, page_depth, status_code, content_length, css_colors
             ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-        """, (website_id, url, url_hash, title, text_content, 
-              directory, html_element, depth, status_code, content_length, css_colors))
-        
+            ON CONFLICT(url_hash) DO UPDATE SET
+                title = excluded.title,
+                text_content = excluded.text_content,
+                scraped_at = CURRENT_TIMESTAMP,
+                status_code = excluded.status_code,
+                content_length = excluded.content_length,
+                css_colors = excluded.css_colors
+        """, (website_id, url, url_hash, title, text_content,
+            directory, html_element, depth, status_code, content_length, css_colors))
+
         conn.commit()
-        return cursor.lastrowid
+        cursor.execute("SELECT id FROM pages WHERE url_hash = ?", (url_hash,))
+        return cursor.fetchone()[0]
     
     def add_link(self, source_page_id: int, target_url: str, 
                  anchor_text: str, link_type: str):
+
         """Add link between pages"""
         conn = self.connect()
         cursor = conn.cursor()
         
+        cursor.execute("DELETE FROM links WHERE source_page_id = ?", (source_page_id,))
         cursor.execute("""
             INSERT INTO links (source_page_id, target_url, anchor_text, link_type)
             VALUES (?, ?, ?, ?)

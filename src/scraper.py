@@ -282,7 +282,7 @@ class WebScraper:
                 
                 return page_data
                 
-            except KeyboardInterrupt:  # ADD THIS
+            except KeyboardInterrupt:  
                 raise  # Re-raise to stop scraping
             except Exception as e:
                 error_msg = str(e)
@@ -290,7 +290,7 @@ class WebScraper:
                 # Don't retry if page/browser closed errors
                 if 'closed' in error_msg.lower() or 'target' in error_msg.lower():
                     log_scrape_error(self.logger, url, error_msg)
-                    return None
+                    raise RuntimeError(f"BROWSER_CRASHED: {error_msg}")
                 
                 log_scrape_error(self.logger, url, error_msg)
                 
@@ -381,15 +381,56 @@ class WebScraper:
                     
                     self.visited_urls.add(url)
                     
-                    # ADD: Check if page is still valid, recreate if needed
+                    # Check if page is still valid, recreate browser if needed
                     try:
-                        if page.is_closed():
+                        if page is None or page.is_closed():
                             page = context.new_page()
-                    except:
+                    except Exception:
+                        try:
+                            context.close()
+                        except Exception:
+                            pass
+                        try:
+                            browser.close()
+                        except Exception:
+                            pass
+                        browser = p.chromium.launch(
+                            headless=HEADLESS,
+                            args=[
+                                '--disable-blink-features=AutomationControlled',
+                                '--disable-dev-shm-usage',
+                                '--no-sandbox'
+                            ]
+                        )
+                        context = browser.new_context(
+                            user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                            viewport={'width': 1920, 'height': 1080},
+                            locale='en-US',
+                            timezone_id='America/New_York',
+                            extra_http_headers={
+                                'Accept-Language': 'en-US,en;q=0.9',
+                                'Accept-Encoding': 'gzip, deflate, br',
+                                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+                                'Connection': 'keep-alive',
+                                'Upgrade-Insecure-Requests': '1'
+                            }
+                        )
+                        context.add_init_script("""
+                            Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
+                        """)
+                        context.set_default_timeout(PAGE_WAIT_TIMEOUT)
                         page = context.new_page()
+                        self.logger.warning("Browser crashed and was restarted successfully")
                     
                     # Scrape page
-                    page_data = self.scrape_page(page, url, depth=0)
+                    try:
+                        page_data = self.scrape_page(page, url, depth=0)
+                    except RuntimeError as e:
+                        if "BROWSER_CRASHED" in str(e):
+                            self.logger.warning(f"Browser crash detected on {url}, will restart on next page")
+                            page = None  # Force the Fix 2 block to trigger on next iteration
+                        self.stats['pages_failed'] += 1
+                        continue
                     
                     if page_data:
                         # Save raw data backup
