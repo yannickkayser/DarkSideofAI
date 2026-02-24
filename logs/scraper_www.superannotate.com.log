@@ -1,0 +1,991 @@
+2026-02-24 18:06:35 - scraper.www.superannotate.com - INFO - Starting scrape of Super annotate
+2026-02-24 18:06:36 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/project-management
+2026-02-24 18:06:46 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/project-management: All validations passed
+2026-02-24 18:06:46 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/project-management | Status: 200 | Size: 1997999 bytes
+2026-02-24 18:06:46 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/annotation-tool
+2026-02-24 18:06:52 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/annotation-tool: All validations passed
+2026-02-24 18:06:52 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/annotation-tool | Status: 200 | Size: 77516 bytes
+2026-02-24 18:06:52 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/automation
+2026-02-24 18:06:58 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/automation: All validations passed
+2026-02-24 18:06:58 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/automation | Status: 200 | Size: 44787 bytes
+2026-02-24 18:06:58 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/orchestrate
+2026-02-24 18:07:07 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/orchestrate: All validations passed
+2026-02-24 18:07:07 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/orchestrate | Status: 200 | Size: 1679993 bytes
+2026-02-24 18:07:07 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/academic-program
+2026-02-24 18:07:13 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/academic-program: All validations passed
+2026-02-24 18:07:13 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/academic-program | Status: 200 | Size: 44994 bytes
+2026-02-24 18:07:13 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/privacy-policy
+2026-02-24 18:07:17 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/privacy-policy: All validations passed
+2026-02-24 18:07:17 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/privacy-policy | Status: 200 | Size: 64043 bytes
+2026-02-24 18:07:17 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/cookie-policy
+2026-02-24 18:07:23 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/cookie-policy: All validations passed
+2026-02-24 18:07:23 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/cookie-policy | Status: 200 | Size: 47663 bytes
+2026-02-24 18:07:23 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/press
+2026-02-24 18:07:27 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/press: All validations passed
+2026-02-24 18:07:27 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/press | Status: 200 | Size: 54653 bytes
+2026-02-24 18:07:27 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/video-annotation
+2026-02-24 18:07:35 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/video-annotation: All validations passed
+2026-02-24 18:07:35 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/video-annotation | Status: 200 | Size: 71052 bytes
+2026-02-24 18:07:36 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/quality-management
+2026-02-24 18:07:40 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/quality-management: All validations passed
+2026-02-24 18:07:40 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/quality-management | Status: 200 | Size: 45224 bytes
+2026-02-24 18:07:40 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/text-annotation
+2026-02-24 18:07:47 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/text-annotation: All validations passed
+2026-02-24 18:07:47 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/text-annotation | Status: 200 | Size: 71193 bytes
+2026-02-24 18:07:47 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com
+2026-02-24 18:07:52 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com: All validations passed
+2026-02-24 18:07:52 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com | Status: 200 | Size: 2582508 bytes
+2026-02-24 18:07:53 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/company
+2026-02-24 18:07:57 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/company: All validations passed
+2026-02-24 18:07:57 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/company | Status: 200 | Size: 50981 bytes
+2026-02-24 18:07:57 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/annotation-services
+2026-02-24 18:08:02 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/annotation-services: All validations passed
+2026-02-24 18:08:02 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/annotation-services | Status: 200 | Size: 82282 bytes
+2026-02-24 18:08:03 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/academic-form
+2026-02-24 18:08:10 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/academic-form: All validations passed
+2026-02-24 18:08:10 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/academic-form | Status: 200 | Size: 47314 bytes
+2026-02-24 18:08:10 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/pricing
+2026-02-24 18:08:15 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/pricing: All validations passed
+2026-02-24 18:08:15 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/pricing | Status: 200 | Size: 53878 bytes
+2026-02-24 18:08:15 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/request-demo
+2026-02-24 18:08:20 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/request-demo: All validations passed
+2026-02-24 18:08:20 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/request-demo | Status: 200 | Size: 99672 bytes
+2026-02-24 18:08:20 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/scale-annotation-pipeline
+2026-02-24 18:08:27 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/scale-annotation-pipeline: All validations passed
+2026-02-24 18:08:27 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/scale-annotation-pipeline | Status: 200 | Size: 67311 bytes
+2026-02-24 18:08:27 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/active-learning-whitepaper
+2026-02-24 18:08:33 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/active-learning-whitepaper: All validations passed
+2026-02-24 18:08:33 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/active-learning-whitepaper | Status: 200 | Size: 67423 bytes
+2026-02-24 18:08:33 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/webinar
+2026-02-24 18:08:37 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/webinar: All validations passed
+2026-02-24 18:08:37 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/webinar | Status: 200 | Size: 75747 bytes
+2026-02-24 18:08:37 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/agriculture
+2026-02-24 18:08:49 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/agriculture: All validations passed
+2026-02-24 18:08:49 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/agriculture | Status: 200 | Size: 55673 bytes
+2026-02-24 18:08:50 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/autonomous-driving
+2026-02-24 18:08:55 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/autonomous-driving: All validations passed
+2026-02-24 18:08:55 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/autonomous-driving | Status: 200 | Size: 50037 bytes
+2026-02-24 18:08:55 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/robotics
+2026-02-24 18:09:01 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/robotics: All validations passed
+2026-02-24 18:09:01 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/robotics | Status: 200 | Size: 47252 bytes
+2026-02-24 18:09:01 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/aerial-imagery
+2026-02-24 18:09:07 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/aerial-imagery: All validations passed
+2026-02-24 18:09:07 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/aerial-imagery | Status: 200 | Size: 54736 bytes
+2026-02-24 18:09:08 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/healthcare
+2026-02-24 18:09:12 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/healthcare: All validations passed
+2026-02-24 18:09:12 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/healthcare | Status: 200 | Size: 47348 bytes
+2026-02-24 18:09:12 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/sports
+2026-02-24 18:09:17 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/sports: All validations passed
+2026-02-24 18:09:17 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/sports | Status: 200 | Size: 49589 bytes
+2026-02-24 18:09:18 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/insurance
+2026-02-24 18:09:22 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/insurance: All validations passed
+2026-02-24 18:09:22 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/insurance | Status: 200 | Size: 47244 bytes
+2026-02-24 18:09:22 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/security
+2026-02-24 18:09:26 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/security: All validations passed
+2026-02-24 18:09:26 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/security | Status: 200 | Size: 47525 bytes
+2026-02-24 18:09:27 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/nlp
+2026-02-24 18:09:32 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/nlp: All validations passed
+2026-02-24 18:09:32 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/nlp | Status: 200 | Size: 48559 bytes
+2026-02-24 18:09:32 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/free-startup-plan
+2026-02-24 18:09:37 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/free-startup-plan: All validations passed
+2026-02-24 18:09:37 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/free-startup-plan | Status: 200 | Size: 100091 bytes
+2026-02-24 18:09:37 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/security-at-superannotate
+2026-02-24 18:09:42 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/security-at-superannotate: All validations passed
+2026-02-24 18:09:42 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/security-at-superannotate | Status: 200 | Size: 67961 bytes
+2026-02-24 18:09:42 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/careers
+2026-02-24 18:09:48 - scraper.www.superannotate.com - WARNING - ✗ VALIDATION FAILED: https://www.superannotate.com/careers: Missing required field: text_content
+2026-02-24 18:09:48 - scraper.www.superannotate.com - WARNING - Validation failed for https://www.superannotate.com/careers: Missing required field: text_content
+2026-02-24 18:09:48 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/live-product-demo
+2026-02-24 18:09:54 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/live-product-demo: All validations passed
+2026-02-24 18:09:54 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/live-product-demo | Status: 200 | Size: 65408 bytes
+2026-02-24 18:09:54 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/request-free-access
+2026-02-24 18:10:00 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/request-free-access: All validations passed
+2026-02-24 18:10:00 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/request-free-access | Status: 200 | Size: 65055 bytes
+2026-02-24 18:10:00 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/podcast
+2026-02-24 18:10:05 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/podcast: All validations passed
+2026-02-24 18:10:05 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/podcast | Status: 200 | Size: 67060 bytes
+2026-02-24 18:10:05 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog
+2026-02-24 18:10:11 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog: All validations passed
+2026-02-24 18:10:11 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog | Status: 200 | Size: 89013 bytes
+2026-02-24 18:10:11 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/request-free-pilot
+2026-02-24 18:10:21 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/request-free-pilot: All validations passed
+2026-02-24 18:10:21 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/request-free-pilot | Status: 200 | Size: 101982 bytes
+2026-02-24 18:10:21 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/image-annotation-tool
+2026-02-24 18:10:43 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/image-annotation-tool: All validations passed
+2026-02-24 18:10:43 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/image-annotation-tool | Status: 200 | Size: 74165 bytes
+2026-02-24 18:10:44 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/audio-annotation
+2026-02-24 18:10:50 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/audio-annotation: All validations passed
+2026-02-24 18:10:50 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/audio-annotation | Status: 200 | Size: 64366 bytes
+2026-02-24 18:10:50 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/llms
+2026-02-24 18:10:56 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/llms: All validations passed
+2026-02-24 18:10:56 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/llms | Status: 200 | Size: 78403 bytes
+2026-02-24 18:10:56 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/classification-tool
+2026-02-24 18:11:00 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/classification-tool: All validations passed
+2026-02-24 18:11:00 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/classification-tool | Status: 200 | Size: 60995 bytes
+2026-02-24 18:11:01 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/llms-genai-playground
+2026-02-24 18:11:06 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/llms-genai-playground: All validations passed
+2026-02-24 18:11:06 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/llms-genai-playground | Status: 200 | Size: 51389 bytes
+2026-02-24 18:11:06 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/sub-processors
+2026-02-24 18:11:12 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/sub-processors: All validations passed
+2026-02-24 18:11:12 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/sub-processors | Status: 200 | Size: 58081 bytes
+2026-02-24 18:11:12 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/llms-genai
+2026-02-24 18:11:17 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/llms-genai: All validations passed
+2026-02-24 18:11:17 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/llms-genai | Status: 200 | Size: 53137 bytes
+2026-02-24 18:11:17 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/ibm-partnership
+2026-02-24 18:11:23 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/ibm-partnership: All validations passed
+2026-02-24 18:11:23 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/ibm-partnership | Status: 200 | Size: 45394 bytes
+2026-02-24 18:11:23 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/databricks-partnership
+2026-02-24 18:11:29 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/databricks-partnership: All validations passed
+2026-02-24 18:11:29 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/databricks-partnership | Status: 200 | Size: 64901 bytes
+2026-02-24 18:11:29 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/snowflake-partnership
+2026-02-24 18:11:34 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/snowflake-partnership: All validations passed
+2026-02-24 18:11:34 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/snowflake-partnership | Status: 200 | Size: 44496 bytes
+2026-02-24 18:11:35 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/explore
+2026-02-24 18:11:41 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/explore: All validations passed
+2026-02-24 18:11:41 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/explore | Status: 200 | Size: 10311895 bytes
+2026-02-24 18:11:41 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/aws-partnership
+2026-02-24 18:11:45 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/aws-partnership: All validations passed
+2026-02-24 18:11:45 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/aws-partnership | Status: 200 | Size: 44578 bytes
+2026-02-24 18:11:45 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/fine-tune
+2026-02-24 18:11:52 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/fine-tune: All validations passed
+2026-02-24 18:11:52 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/fine-tune | Status: 200 | Size: 1874582 bytes
+2026-02-24 18:11:52 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/solutions-enterprise
+2026-02-24 18:11:56 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/solutions-enterprise: All validations passed
+2026-02-24 18:11:56 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/solutions-enterprise | Status: 200 | Size: 58304 bytes
+2026-02-24 18:11:57 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/solutions-foundation-models
+2026-02-24 18:12:01 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/solutions-foundation-models: All validations passed
+2026-02-24 18:12:01 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/solutions-foundation-models | Status: 200 | Size: 59068 bytes
+2026-02-24 18:12:02 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/solutions-rag
+2026-02-24 18:12:07 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/solutions-rag: All validations passed
+2026-02-24 18:12:07 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/solutions-rag | Status: 200 | Size: 57549 bytes
+2026-02-24 18:12:07 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/solutions-sft
+2026-02-24 18:12:12 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/solutions-sft: All validations passed
+2026-02-24 18:12:12 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/solutions-sft | Status: 200 | Size: 58367 bytes
+2026-02-24 18:12:12 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/solutions-agents
+2026-02-24 18:12:16 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/solutions-agents: All validations passed
+2026-02-24 18:12:16 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/solutions-agents | Status: 200 | Size: 57330 bytes
+2026-02-24 18:12:17 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/solutions-evaluation
+2026-02-24 18:12:21 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/solutions-evaluation: All validations passed
+2026-02-24 18:12:21 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/solutions-evaluation | Status: 200 | Size: 57681 bytes
+2026-02-24 18:12:21 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/solutions-rlhf
+2026-02-24 18:12:25 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/solutions-rlhf: All validations passed
+2026-02-24 18:12:25 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/solutions-rlhf | Status: 200 | Size: 57016 bytes
+2026-02-24 18:12:25 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/learning-hub
+2026-02-24 18:12:31 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/learning-hub: All validations passed
+2026-02-24 18:12:31 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/learning-hub | Status: 200 | Size: 100583 bytes
+2026-02-24 18:12:31 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/nvidia-partnership
+2026-02-24 18:12:35 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/nvidia-partnership: All validations passed
+2026-02-24 18:12:35 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/nvidia-partnership | Status: 200 | Size: 43618 bytes
+2026-02-24 18:12:36 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/builder
+2026-02-24 18:12:40 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/builder: All validations passed
+2026-02-24 18:12:40 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/builder | Status: 200 | Size: 644275 bytes
+2026-02-24 18:12:40 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/gcp-partnership
+2026-02-24 18:12:46 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/gcp-partnership: All validations passed
+2026-02-24 18:12:46 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/gcp-partnership | Status: 200 | Size: 43439 bytes
+2026-02-24 18:12:46 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/partners-integrations
+2026-02-24 18:12:51 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/partners-integrations: All validations passed
+2026-02-24 18:12:51 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/partners-integrations | Status: 200 | Size: 57015 bytes
+2026-02-24 18:12:52 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/persona-business-leaders
+2026-02-24 18:12:56 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/persona-business-leaders: All validations passed
+2026-02-24 18:12:56 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/persona-business-leaders | Status: 200 | Size: 54707 bytes
+2026-02-24 18:12:56 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/persona-ml-researchers
+2026-02-24 18:13:02 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/persona-ml-researchers: All validations passed
+2026-02-24 18:13:02 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/persona-ml-researchers | Status: 200 | Size: 54398 bytes
+2026-02-24 18:13:02 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/persona-data-engineers
+2026-02-24 18:13:08 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/persona-data-engineers: All validations passed
+2026-02-24 18:13:08 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/persona-data-engineers | Status: 200 | Size: 54282 bytes
+2026-02-24 18:13:08 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/persona-data-leaders
+2026-02-24 18:13:13 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/persona-data-leaders: All validations passed
+2026-02-24 18:13:13 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/persona-data-leaders | Status: 200 | Size: 54403 bytes
+2026-02-24 18:13:13 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/persona-data-trainers
+2026-02-24 18:13:19 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/persona-data-trainers: All validations passed
+2026-02-24 18:13:19 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/persona-data-trainers | Status: 200 | Size: 54054 bytes
+2026-02-24 18:13:19 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/persona-data-vendor
+2026-02-24 18:13:25 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/persona-data-vendor: All validations passed
+2026-02-24 18:13:25 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/persona-data-vendor | Status: 200 | Size: 54560 bytes
+2026-02-24 18:13:25 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/agent-hub
+2026-02-24 18:13:30 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/agent-hub: All validations passed
+2026-02-24 18:13:30 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/agent-hub | Status: 200 | Size: 4494873 bytes
+2026-02-24 18:13:30 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/podcast/episode-1-ai-talks-with-trevor-darrell
+2026-02-24 18:13:35 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/podcast/episode-1-ai-talks-with-trevor-darrell: All validations passed
+2026-02-24 18:13:35 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/podcast/episode-1-ai-talks-with-trevor-darrell | Status: 200 | Size: 60836 bytes
+2026-02-24 18:13:36 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/podcast/episode-2-how-aurora-solar-expanded-its-business-with-machine-learning
+2026-02-24 18:13:40 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/podcast/episode-2-how-aurora-solar-expanded-its-business-with-machine-learning: All validations passed
+2026-02-24 18:13:40 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/podcast/episode-2-how-aurora-solar-expanded-its-business-with-machine-learning | Status: 200 | Size: 59432 bytes
+2026-02-24 18:13:40 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/podcast/how-machine-learning-powers-noise-cancelation-software-krisp
+2026-02-24 18:13:45 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/podcast/how-machine-learning-powers-noise-cancelation-software-krisp: All validations passed
+2026-02-24 18:13:45 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/podcast/how-machine-learning-powers-noise-cancelation-software-krisp | Status: 200 | Size: 63216 bytes
+2026-02-24 18:13:45 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/accelerate-computer-vision-pipeline-superannotate-3lc
+2026-02-24 18:13:50 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/accelerate-computer-vision-pipeline-superannotate-3lc: All validations passed
+2026-02-24 18:13:50 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/accelerate-computer-vision-pipeline-superannotate-3lc | Status: 200 | Size: 84748 bytes
+2026-02-24 18:13:50 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/accuracy-and-runtime-tradeoff-in-modern-edge-detection-algorithms
+2026-02-24 18:13:55 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/accuracy-and-runtime-tradeoff-in-modern-edge-detection-algorithms: All validations passed
+2026-02-24 18:13:55 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/accuracy-and-runtime-tradeoff-in-modern-edge-detection-algorithms | Status: 200 | Size: 82955 bytes
+2026-02-24 18:13:55 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/activation-functions-in-neural-networks
+2026-02-24 18:13:59 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/activation-functions-in-neural-networks: All validations passed
+2026-02-24 18:13:59 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/activation-functions-in-neural-networks | Status: 200 | Size: 92503 bytes
+2026-02-24 18:14:00 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/active-learning-classification-models
+2026-02-24 18:14:04 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/active-learning-classification-models: All validations passed
+2026-02-24 18:14:04 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/active-learning-classification-models | Status: 200 | Size: 78793 bytes
+2026-02-24 18:14:04 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/active-learning-for-object-detection-and-human-pose-estimation
+2026-02-24 18:14:09 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/active-learning-for-object-detection-and-human-pose-estimation: All validations passed
+2026-02-24 18:14:09 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/active-learning-for-object-detection-and-human-pose-estimation | Status: 200 | Size: 74402 bytes
+2026-02-24 18:14:09 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/active-learning-semantic-segmentation
+2026-02-24 18:14:15 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/active-learning-semantic-segmentation: All validations passed
+2026-02-24 18:14:15 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/active-learning-semantic-segmentation | Status: 200 | Size: 78616 bytes
+2026-02-24 18:14:16 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/agent-hub-launch
+2026-02-24 18:14:20 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/agent-hub-launch: All validations passed
+2026-02-24 18:14:20 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/agent-hub-launch | Status: 200 | Size: 75669 bytes
+2026-02-24 18:14:20 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/agentic-ai
+2026-02-24 18:14:26 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/agentic-ai: All validations passed
+2026-02-24 18:14:26 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/agentic-ai | Status: 200 | Size: 113791 bytes
+2026-02-24 18:14:26 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/agentic-rag
+2026-02-24 18:14:31 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/agentic-rag: All validations passed
+2026-02-24 18:14:31 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/agentic-rag | Status: 200 | Size: 89898 bytes
+2026-02-24 18:14:31 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/ai-agent-evaluation
+2026-02-24 18:14:37 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/ai-agent-evaluation: All validations passed
+2026-02-24 18:14:37 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/ai-agent-evaluation | Status: 200 | Size: 102445 bytes
+2026-02-24 18:14:37 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/ai-and-computer-vision-in-government
+2026-02-24 18:14:42 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/ai-and-computer-vision-in-government: All validations passed
+2026-02-24 18:14:42 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/ai-and-computer-vision-in-government | Status: 200 | Size: 84682 bytes
+2026-02-24 18:14:42 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/ai-assisted-data-labeling
+2026-02-24 18:14:50 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/ai-assisted-data-labeling: All validations passed
+2026-02-24 18:14:50 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/ai-assisted-data-labeling | Status: 200 | Size: 88017 bytes
+2026-02-24 18:14:50 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/ai-content-detection-superannotate
+2026-02-24 18:14:55 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/ai-content-detection-superannotate: All validations passed
+2026-02-24 18:14:55 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/ai-content-detection-superannotate | Status: 200 | Size: 90484 bytes
+2026-02-24 18:14:55 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/ai-data-wall
+2026-02-24 18:15:01 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/ai-data-wall: All validations passed
+2026-02-24 18:15:01 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/ai-data-wall | Status: 200 | Size: 83577 bytes
+2026-02-24 18:15:01 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/ai-fire-detection
+2026-02-24 18:15:06 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/ai-fire-detection: All validations passed
+2026-02-24 18:15:06 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/ai-fire-detection | Status: 200 | Size: 83375 bytes
+2026-02-24 18:15:07 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/ai-hallucinations
+2026-02-24 18:15:11 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/ai-hallucinations: All validations passed
+2026-02-24 18:15:11 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/ai-hallucinations | Status: 200 | Size: 88283 bytes
+2026-02-24 18:15:11 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/ai-in-healthcare
+2026-02-24 18:15:25 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/ai-in-healthcare: All validations passed
+2026-02-24 18:15:25 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/ai-in-healthcare | Status: 200 | Size: 85717 bytes
+2026-02-24 18:15:25 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/ai-in-public-policy
+2026-02-24 18:15:30 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/ai-in-public-policy: All validations passed
+2026-02-24 18:15:30 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/ai-in-public-policy | Status: 200 | Size: 83087 bytes
+2026-02-24 18:15:30 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/annotate-online-updates-july-2020
+2026-02-24 18:15:37 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/annotate-online-updates-july-2020: All validations passed
+2026-02-24 18:15:37 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/annotate-online-updates-july-2020 | Status: 200 | Size: 75922 bytes
+2026-02-24 18:15:37 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/annotations-for-aerial-imagery-why-pixel-precision-will-be-the-new-norm
+2026-02-24 18:15:42 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/annotations-for-aerial-imagery-why-pixel-precision-will-be-the-new-norm: All validations passed
+2026-02-24 18:15:42 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/annotations-for-aerial-imagery-why-pixel-precision-will-be-the-new-norm | Status: 200 | Size: 78904 bytes
+2026-02-24 18:15:42 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/aua-collaboration-with-superannotate
+2026-02-24 18:15:49 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/aua-collaboration-with-superannotate: All validations passed
+2026-02-24 18:15:49 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/aua-collaboration-with-superannotate | Status: 200 | Size: 71068 bytes
+2026-02-24 18:15:49 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/automating-ocr-annotations
+2026-02-24 18:15:53 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/automating-ocr-annotations: All validations passed
+2026-02-24 18:15:53 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/automating-ocr-annotations | Status: 200 | Size: 79038 bytes
+2026-02-24 18:15:53 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/automl-guide
+2026-02-24 18:15:59 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/automl-guide: All validations passed
+2026-02-24 18:15:59 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/automl-guide | Status: 200 | Size: 85617 bytes
+2026-02-24 18:15:59 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/best-computer-vision-courses
+2026-02-24 18:16:05 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/best-computer-vision-courses: All validations passed
+2026-02-24 18:16:05 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/best-computer-vision-courses | Status: 200 | Size: 83479 bytes
+2026-02-24 18:16:05 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/best-data-labeling-tools
+2026-02-24 18:16:10 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/best-data-labeling-tools: All validations passed
+2026-02-24 18:16:10 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/best-data-labeling-tools | Status: 200 | Size: 135831 bytes
+2026-02-24 18:16:10 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/best-genai-fine-tuning-tools-for-enterprises
+2026-02-24 18:16:15 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/best-genai-fine-tuning-tools-for-enterprises: All validations passed
+2026-02-24 18:16:15 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/best-genai-fine-tuning-tools-for-enterprises | Status: 200 | Size: 90715 bytes
+2026-02-24 18:16:15 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/bias-in-machine-learning
+2026-02-24 18:16:20 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/bias-in-machine-learning: All validations passed
+2026-02-24 18:16:20 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/bias-in-machine-learning | Status: 200 | Size: 80814 bytes
+2026-02-24 18:16:20 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/build-automate-data-pipeline-chatbot
+2026-02-24 18:16:24 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/build-automate-data-pipeline-chatbot: All validations passed
+2026-02-24 18:16:24 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/build-automate-data-pipeline-chatbot | Status: 200 | Size: 91577 bytes
+2026-02-24 18:16:24 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/build-datasets-evaluate-models-faster-superannotate-aws
+2026-02-24 18:16:30 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/build-datasets-evaluate-models-faster-superannotate-aws: All validations passed
+2026-02-24 18:16:30 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/build-datasets-evaluate-models-faster-superannotate-aws | Status: 200 | Size: 80644 bytes
+2026-02-24 18:16:30 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/build-or-buy-genai-annotation-platform
+2026-02-24 18:16:37 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/build-or-buy-genai-annotation-platform: All validations passed
+2026-02-24 18:16:37 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/build-or-buy-genai-annotation-platform | Status: 200 | Size: 88011 bytes
+2026-02-24 18:16:37 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/cb-insights-ai-100
+2026-02-24 18:16:43 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/cb-insights-ai-100: All validations passed
+2026-02-24 18:16:43 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/cb-insights-ai-100 | Status: 200 | Size: 69798 bytes
+2026-02-24 18:16:43 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/chain-of-thought-cot-prompting
+2026-02-24 18:16:51 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/chain-of-thought-cot-prompting: All validations passed
+2026-02-24 18:16:51 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/chain-of-thought-cot-prompting | Status: 200 | Size: 92113 bytes
+2026-02-24 18:16:51 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/checklist-how-to-build-superdata-for-ai
+2026-02-24 18:17:20 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/checklist-how-to-build-superdata-for-ai: All validations passed
+2026-02-24 18:17:20 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/checklist-how-to-build-superdata-for-ai | Status: 200 | Size: 86583 bytes
+2026-02-24 18:17:20 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/coco-dataset-introduction
+2026-02-24 18:17:26 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/coco-dataset-introduction: All validations passed
+2026-02-24 18:17:26 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/coco-dataset-introduction | Status: 200 | Size: 77550 bytes
+2026-02-24 18:17:26 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/command-r-cohere
+2026-02-24 18:17:32 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/command-r-cohere: All validations passed
+2026-02-24 18:17:32 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/command-r-cohere | Status: 200 | Size: 77611 bytes
+2026-02-24 18:17:32 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/computer-vision-applications-in-retail
+2026-02-24 18:17:39 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/computer-vision-applications-in-retail: All validations passed
+2026-02-24 18:17:39 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/computer-vision-applications-in-retail | Status: 200 | Size: 81373 bytes
+2026-02-24 18:17:39 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/computer-vision-books
+2026-02-24 18:17:44 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/computer-vision-books: All validations passed
+2026-02-24 18:17:44 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/computer-vision-books | Status: 200 | Size: 96232 bytes
+2026-02-24 18:17:44 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/computer-vision-in-agriculture
+2026-02-24 18:17:49 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/computer-vision-in-agriculture: All validations passed
+2026-02-24 18:17:49 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/computer-vision-in-agriculture | Status: 200 | Size: 84338 bytes
+2026-02-24 18:17:49 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/computer-vision-in-ai-drones
+2026-02-24 18:17:54 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/computer-vision-in-ai-drones: All validations passed
+2026-02-24 18:17:54 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/computer-vision-in-ai-drones | Status: 200 | Size: 80883 bytes
+2026-02-24 18:17:54 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/computer-vision-in-autonomous-vehicles
+2026-02-24 18:17:59 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/computer-vision-in-autonomous-vehicles: All validations passed
+2026-02-24 18:17:59 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/computer-vision-in-autonomous-vehicles | Status: 200 | Size: 86993 bytes
+2026-02-24 18:18:00 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/computer-vision-in-financial-risk-assessment
+2026-02-24 18:18:05 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/computer-vision-in-financial-risk-assessment: All validations passed
+2026-02-24 18:18:05 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/computer-vision-in-financial-risk-assessment | Status: 200 | Size: 79549 bytes
+2026-02-24 18:18:05 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/computer-vision-in-insurance
+2026-02-24 18:18:11 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/computer-vision-in-insurance: All validations passed
+2026-02-24 18:18:11 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/computer-vision-in-insurance | Status: 200 | Size: 81269 bytes
+2026-02-24 18:18:11 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/computer-vision-in-manufacturing
+2026-02-24 18:18:16 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/computer-vision-in-manufacturing: All validations passed
+2026-02-24 18:18:16 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/computer-vision-in-manufacturing | Status: 200 | Size: 78845 bytes
+2026-02-24 18:18:16 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/computer-vision-in-security-and-surveillance
+2026-02-24 18:18:22 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/computer-vision-in-security-and-surveillance: All validations passed
+2026-02-24 18:18:22 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/computer-vision-in-security-and-surveillance | Status: 200 | Size: 81311 bytes
+2026-02-24 18:18:22 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/computer-vision-in-sports
+2026-02-24 18:18:28 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/computer-vision-in-sports: All validations passed
+2026-02-24 18:18:28 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/computer-vision-in-sports | Status: 200 | Size: 83987 bytes
+2026-02-24 18:18:28 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/computer-vision-libraries
+2026-02-24 18:18:33 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/computer-vision-libraries: All validations passed
+2026-02-24 18:18:33 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/computer-vision-libraries | Status: 200 | Size: 86198 bytes
+2026-02-24 18:18:33 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/computer-vision-robotics
+2026-02-24 18:18:39 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/computer-vision-robotics: All validations passed
+2026-02-24 18:18:39 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/computer-vision-robotics | Status: 200 | Size: 84024 bytes
+2026-02-24 18:18:39 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/computer-vision-trends
+2026-02-24 18:18:45 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/computer-vision-trends: All validations passed
+2026-02-24 18:18:45 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/computer-vision-trends | Status: 200 | Size: 78479 bytes
+2026-02-24 18:18:45 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/connect-ai-models-to-superannotate-with-agent-hub
+2026-02-24 18:18:50 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/connect-ai-models-to-superannotate-with-agent-hub: All validations passed
+2026-02-24 18:18:50 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/connect-ai-models-to-superannotate-with-agent-hub | Status: 200 | Size: 74678 bytes
+2026-02-24 18:18:50 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/cto-guide-sft-rlhf-projects
+2026-02-24 18:18:58 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/cto-guide-sft-rlhf-projects: All validations passed
+2026-02-24 18:18:58 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/cto-guide-sft-rlhf-projects | Status: 200 | Size: 84486 bytes
+2026-02-24 18:18:58 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/data-annotation-guide
+2026-02-24 18:19:05 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/data-annotation-guide: All validations passed
+2026-02-24 18:19:05 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/data-annotation-guide | Status: 200 | Size: 118157 bytes
+2026-02-24 18:19:05 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/data-curation-in-machine-learning
+2026-02-24 18:19:10 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/data-curation-in-machine-learning: All validations passed
+2026-02-24 18:19:10 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/data-curation-in-machine-learning | Status: 200 | Size: 78653 bytes
+2026-02-24 18:19:10 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/data-lakes-vs-data-swamps-vs-data-warehouse
+2026-02-24 18:19:15 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/data-lakes-vs-data-swamps-vs-data-warehouse: All validations passed
+2026-02-24 18:19:15 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/data-lakes-vs-data-swamps-vs-data-warehouse | Status: 200 | Size: 79732 bytes
+2026-02-24 18:19:15 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/data-to-model-workflow-automation-with-superannotate-fireworks-ai
+2026-02-24 18:19:20 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/data-to-model-workflow-automation-with-superannotate-fireworks-ai: All validations passed
+2026-02-24 18:19:20 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/data-to-model-workflow-automation-with-superannotate-fireworks-ai | Status: 200 | Size: 84918 bytes
+2026-02-24 18:19:20 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/databricks-case-study
+2026-02-24 18:19:26 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/databricks-case-study: All validations passed
+2026-02-24 18:19:26 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/databricks-case-study | Status: 200 | Size: 76773 bytes
+2026-02-24 18:19:26 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/dbrx-databricks
+2026-02-24 18:19:31 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/dbrx-databricks: All validations passed
+2026-02-24 18:19:31 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/dbrx-databricks | Status: 200 | Size: 78190 bytes
+2026-02-24 18:19:31 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/devin-ai
+2026-02-24 18:19:35 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/devin-ai: All validations passed
+2026-02-24 18:19:35 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/devin-ai | Status: 200 | Size: 79933 bytes
+2026-02-24 18:19:36 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/diffusion-models
+2026-02-24 18:19:57 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/diffusion-models: All validations passed
+2026-02-24 18:19:57 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/diffusion-models | Status: 200 | Size: 129396 bytes
+2026-02-24 18:19:57 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/direct-preference-optimization-dpo
+2026-02-24 18:20:03 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/direct-preference-optimization-dpo: All validations passed
+2026-02-24 18:20:03 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/direct-preference-optimization-dpo | Status: 200 | Size: 88148 bytes
+2026-02-24 18:20:03 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/domain-specific-llms
+2026-02-24 18:20:08 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/domain-specific-llms: All validations passed
+2026-02-24 18:20:08 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/domain-specific-llms | Status: 200 | Size: 96771 bytes
+2026-02-24 18:20:08 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/effective-data-governance-in-ai
+2026-02-24 18:20:14 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/effective-data-governance-in-ai: All validations passed
+2026-02-24 18:20:14 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/effective-data-governance-in-ai | Status: 200 | Size: 83138 bytes
+2026-02-24 18:20:14 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/embeddings-in-ml
+2026-02-24 18:20:21 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/embeddings-in-ml: All validations passed
+2026-02-24 18:20:21 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/embeddings-in-ml | Status: 200 | Size: 97608 bytes
+2026-02-24 18:20:21 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/enterprise-ai-overview
+2026-02-24 18:20:26 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/enterprise-ai-overview: All validations passed
+2026-02-24 18:20:26 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/enterprise-ai-overview | Status: 200 | Size: 102212 bytes
+2026-02-24 18:20:26 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/faq-by-customers
+2026-02-24 18:20:32 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/faq-by-customers: All validations passed
+2026-02-24 18:20:32 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/faq-by-customers | Status: 200 | Size: 83296 bytes
+2026-02-24 18:20:32 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/flo-case-study
+2026-02-24 18:20:37 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/flo-case-study: All validations passed
+2026-02-24 18:20:37 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/flo-case-study | Status: 200 | Size: 77241 bytes
+2026-02-24 18:20:37 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/fusellm
+2026-02-24 18:20:43 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/fusellm: All validations passed
+2026-02-24 18:20:43 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/fusellm | Status: 200 | Size: 80756 bytes
+2026-02-24 18:20:43 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/generative-ai-explained
+2026-02-24 18:20:49 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/generative-ai-explained: All validations passed
+2026-02-24 18:20:49 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/generative-ai-explained | Status: 200 | Size: 90874 bytes
+2026-02-24 18:20:49 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/generative-ai-trends
+2026-02-24 18:20:57 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/generative-ai-trends: All validations passed
+2026-02-24 18:20:57 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/generative-ai-trends | Status: 200 | Size: 81504 bytes
+2026-02-24 18:20:57 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/google-gemini-ai
+2026-02-24 18:21:02 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/google-gemini-ai: All validations passed
+2026-02-24 18:21:02 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/google-gemini-ai | Status: 200 | Size: 81038 bytes
+2026-02-24 18:21:03 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/google-gemma
+2026-02-24 18:21:07 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/google-gemma: All validations passed
+2026-02-24 18:21:07 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/google-gemma | Status: 200 | Size: 77172 bytes
+2026-02-24 18:21:07 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/gpt-4o-openai
+2026-02-24 18:21:14 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/gpt-4o-openai: All validations passed
+2026-02-24 18:21:14 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/gpt-4o-openai | Status: 200 | Size: 81462 bytes
+2026-02-24 18:21:14 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/gpt-agents
+2026-02-24 18:21:21 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/gpt-agents: All validations passed
+2026-02-24 18:21:21 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/gpt-agents | Status: 200 | Size: 85060 bytes
+2026-02-24 18:21:21 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/gpt4-turbo
+2026-02-24 18:21:25 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/gpt4-turbo: All validations passed
+2026-02-24 18:21:25 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/gpt4-turbo | Status: 200 | Size: 78726 bytes
+2026-02-24 18:21:25 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/grok-ai-elon-musk
+2026-02-24 18:21:31 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/grok-ai-elon-musk: All validations passed
+2026-02-24 18:21:31 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/grok-ai-elon-musk | Status: 200 | Size: 78828 bytes
+2026-02-24 18:21:31 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/ground-truth-data-for-ai
+2026-02-24 18:21:38 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/ground-truth-data-for-ai: All validations passed
+2026-02-24 18:21:38 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/ground-truth-data-for-ai | Status: 200 | Size: 91986 bytes
+2026-02-24 18:21:38 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/guide-to-convolutional-neural-networks
+2026-02-24 18:21:43 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/guide-to-convolutional-neural-networks: All validations passed
+2026-02-24 18:21:43 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/guide-to-convolutional-neural-networks | Status: 200 | Size: 104782 bytes
+2026-02-24 18:21:43 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/guide-to-data-labeling
+2026-02-24 18:21:48 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/guide-to-data-labeling: All validations passed
+2026-02-24 18:21:48 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/guide-to-data-labeling | Status: 200 | Size: 98189 bytes
+2026-02-24 18:21:48 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/guide-to-face-recognition
+2026-02-24 18:21:53 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/guide-to-face-recognition: All validations passed
+2026-02-24 18:21:53 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/guide-to-face-recognition | Status: 200 | Size: 78976 bytes
+2026-02-24 18:21:53 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/guide-to-gradient-descent-algorithms
+2026-02-24 18:21:58 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/guide-to-gradient-descent-algorithms: All validations passed
+2026-02-24 18:21:58 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/guide-to-gradient-descent-algorithms | Status: 200 | Size: 87478 bytes
+2026-02-24 18:21:58 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/guide-to-low-code-no-code-ai-platforms
+2026-02-24 18:22:05 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/guide-to-low-code-no-code-ai-platforms: All validations passed
+2026-02-24 18:22:05 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/guide-to-low-code-no-code-ai-platforms | Status: 200 | Size: 86142 bytes
+2026-02-24 18:22:05 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/guide-to-neural-networks-and-deep-learning
+2026-02-24 18:22:11 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/guide-to-neural-networks-and-deep-learning: All validations passed
+2026-02-24 18:22:11 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/guide-to-neural-networks-and-deep-learning | Status: 200 | Size: 79783 bytes
+2026-02-24 18:22:11 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/guide-to-semantic-segmentation
+2026-02-24 18:22:30 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/guide-to-semantic-segmentation: All validations passed
+2026-02-24 18:22:30 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/guide-to-semantic-segmentation | Status: 200 | Size: 100778 bytes
+2026-02-24 18:22:30 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/guide-to-training-data
+2026-02-24 18:22:36 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/guide-to-training-data: All validations passed
+2026-02-24 18:22:36 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/guide-to-training-data | Status: 200 | Size: 78079 bytes
+2026-02-24 18:22:36 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/gumgum-case-study
+2026-02-24 18:22:41 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/gumgum-case-study: All validations passed
+2026-02-24 18:22:41 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/gumgum-case-study | Status: 200 | Size: 77384 bytes
+2026-02-24 18:22:41 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/hinge-health-case-study
+2026-02-24 18:22:46 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/hinge-health-case-study: All validations passed
+2026-02-24 18:22:46 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/hinge-health-case-study | Status: 200 | Size: 80053 bytes
+2026-02-24 18:22:47 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/how-aedit-increased-model-accuracy-by-6-with-superannotate
+2026-02-24 18:22:51 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/how-aedit-increased-model-accuracy-by-6-with-superannotate: All validations passed
+2026-02-24 18:22:51 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/how-aedit-increased-model-accuracy-by-6-with-superannotate | Status: 200 | Size: 75135 bytes
+2026-02-24 18:22:51 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/how-altris-achieved-increase-model-accuracy-using-superannotate
+2026-02-24 18:22:57 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/how-altris-achieved-increase-model-accuracy-using-superannotate: All validations passed
+2026-02-24 18:22:57 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/how-altris-achieved-increase-model-accuracy-using-superannotate | Status: 200 | Size: 76463 bytes
+2026-02-24 18:22:57 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/how-intelinair-built-the-highest-quality-datasets-with-superannotate
+2026-02-24 18:23:04 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/how-intelinair-built-the-highest-quality-datasets-with-superannotate: All validations passed
+2026-02-24 18:23:04 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/how-intelinair-built-the-highest-quality-datasets-with-superannotate | Status: 200 | Size: 75558 bytes
+2026-02-24 18:23:04 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/how-software-simplifies-working-with-multiple-annotation-vendors
+2026-02-24 18:23:09 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/how-software-simplifies-working-with-multiple-annotation-vendors: All validations passed
+2026-02-24 18:23:09 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/how-software-simplifies-working-with-multiple-annotation-vendors | Status: 200 | Size: 81856 bytes
+2026-02-24 18:23:09 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/how-spacept-accelerated-annotation-projects-with-superannotate
+2026-02-24 18:23:15 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/how-spacept-accelerated-annotation-projects-with-superannotate: All validations passed
+2026-02-24 18:23:15 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/how-spacept-accelerated-annotation-projects-with-superannotate | Status: 200 | Size: 74583 bytes
+2026-02-24 18:23:16 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/how-superannotate-helped-percepto-cut-the-time-to-complete-annotation-projects
+2026-02-24 18:23:20 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/how-superannotate-helped-percepto-cut-the-time-to-complete-annotation-projects: All validations passed
+2026-02-24 18:23:20 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/how-superannotate-helped-percepto-cut-the-time-to-complete-annotation-projects | Status: 200 | Size: 76412 bytes
+2026-02-24 18:23:20 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/how-superannotate-helps-researchers-in-sweden-and-italy-speed-up-image-annotation
+2026-02-24 18:23:26 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/how-superannotate-helps-researchers-in-sweden-and-italy-speed-up-image-annotation: All validations passed
+2026-02-24 18:23:26 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/how-superannotate-helps-researchers-in-sweden-and-italy-speed-up-image-annotation | Status: 200 | Size: 80629 bytes
+2026-02-24 18:23:26 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/how-to-build-llm-judges-superannotate-aws
+2026-02-24 18:23:30 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/how-to-build-llm-judges-superannotate-aws: All validations passed
+2026-02-24 18:23:30 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/how-to-build-llm-judges-superannotate-aws | Status: 200 | Size: 73202 bytes
+2026-02-24 18:23:30 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/how-to-choose-data-annotation-services
+2026-02-24 18:23:37 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/how-to-choose-data-annotation-services: All validations passed
+2026-02-24 18:23:37 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/how-to-choose-data-annotation-services | Status: 200 | Size: 79294 bytes
+2026-02-24 18:23:37 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/how-to-detect-mislabeled-annotations
+2026-02-24 18:23:43 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/how-to-detect-mislabeled-annotations: All validations passed
+2026-02-24 18:23:43 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/how-to-detect-mislabeled-annotations | Status: 200 | Size: 81586 bytes
+2026-02-24 18:23:43 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/how-to-effectively-manage-annotation-teams-during-covid-19
+2026-02-24 18:23:51 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/how-to-effectively-manage-annotation-teams-during-covid-19: All validations passed
+2026-02-24 18:23:51 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/how-to-effectively-manage-annotation-teams-during-covid-19 | Status: 200 | Size: 81038 bytes
+2026-02-24 18:23:51 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/how-to-improve-llm-fine-tuning-dataset-quality
+2026-02-24 18:23:57 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/how-to-improve-llm-fine-tuning-dataset-quality: All validations passed
+2026-02-24 18:23:57 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/how-to-improve-llm-fine-tuning-dataset-quality | Status: 200 | Size: 89346 bytes
+2026-02-24 18:23:57 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/how-to-optimize-machine-learning-pipeline
+2026-02-24 18:24:04 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/how-to-optimize-machine-learning-pipeline: All validations passed
+2026-02-24 18:24:04 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/how-to-optimize-machine-learning-pipeline | Status: 200 | Size: 80406 bytes
+2026-02-24 18:24:04 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/how-to-write-data-annotation-style-guide
+2026-02-24 18:24:10 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/how-to-write-data-annotation-style-guide: All validations passed
+2026-02-24 18:24:10 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/how-to-write-data-annotation-style-guide | Status: 200 | Size: 85041 bytes
+2026-02-24 18:24:10 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/human-in-the-loop-hitl
+2026-02-24 18:24:15 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/human-in-the-loop-hitl: All validations passed
+2026-02-24 18:24:15 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/human-in-the-loop-hitl | Status: 200 | Size: 92671 bytes
+2026-02-24 18:24:15 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/human-pose-estimation-with-deep-learning
+2026-02-24 18:24:21 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/human-pose-estimation-with-deep-learning: All validations passed
+2026-02-24 18:24:21 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/human-pose-estimation-with-deep-learning | Status: 200 | Size: 81123 bytes
+2026-02-24 18:24:21 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/image-annotation-use-cases
+2026-02-24 18:24:29 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/image-annotation-use-cases: All validations passed
+2026-02-24 18:24:29 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/image-annotation-use-cases | Status: 200 | Size: 87226 bytes
+2026-02-24 18:24:29 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/image-classification-basics
+2026-02-24 18:24:33 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/image-classification-basics: All validations passed
+2026-02-24 18:24:33 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/image-classification-basics | Status: 200 | Size: 106530 bytes
+2026-02-24 18:24:33 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/image-segmentation-for-machine-learning
+2026-02-24 18:24:38 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/image-segmentation-for-machine-learning: All validations passed
+2026-02-24 18:24:38 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/image-segmentation-for-machine-learning | Status: 200 | Size: 97411 bytes
+2026-02-24 18:24:38 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/intersection-over-union-for-object-detection
+2026-02-24 18:24:43 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/intersection-over-union-for-object-detection: All validations passed
+2026-02-24 18:24:43 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/intersection-over-union-for-object-detection | Status: 200 | Size: 91223 bytes
+2026-02-24 18:24:44 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/introducing-superannotate
+2026-02-24 18:24:50 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/introducing-superannotate: All validations passed
+2026-02-24 18:24:50 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/introducing-superannotate | Status: 200 | Size: 77358 bytes
+2026-02-24 18:24:50 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/introduction-to-bounding-box-annotation-best-practices
+2026-02-24 18:24:57 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/introduction-to-bounding-box-annotation-best-practices: All validations passed
+2026-02-24 18:24:57 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/introduction-to-bounding-box-annotation-best-practices | Status: 200 | Size: 79974 bytes
+2026-02-24 18:24:57 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/introduction-to-computer-vision
+2026-02-24 18:25:03 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/introduction-to-computer-vision: All validations passed
+2026-02-24 18:25:03 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/introduction-to-computer-vision | Status: 200 | Size: 81232 bytes
+2026-02-24 18:25:03 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/introduction-to-human-centered-ai
+2026-02-24 18:25:09 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/introduction-to-human-centered-ai: All validations passed
+2026-02-24 18:25:09 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/introduction-to-human-centered-ai | Status: 200 | Size: 77086 bytes
+2026-02-24 18:25:09 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/introduction-to-image-annotation
+2026-02-24 18:25:15 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/introduction-to-image-annotation: All validations passed
+2026-02-24 18:25:15 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/introduction-to-image-annotation | Status: 200 | Size: 100541 bytes
+2026-02-24 18:25:15 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/invoice-annotation-automation
+2026-02-24 18:25:20 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/invoice-annotation-automation: All validations passed
+2026-02-24 18:25:20 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/invoice-annotation-automation | Status: 200 | Size: 75633 bytes
+2026-02-24 18:25:20 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/iot-in-ai-applications
+2026-02-24 18:25:24 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/iot-in-ai-applications: All validations passed
+2026-02-24 18:25:24 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/iot-in-ai-applications | Status: 200 | Size: 82894 bytes
+2026-02-24 18:25:24 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/korber-case-study
+2026-02-24 18:25:30 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/korber-case-study: All validations passed
+2026-02-24 18:25:30 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/korber-case-study | Status: 200 | Size: 81276 bytes
+2026-02-24 18:25:31 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/large-action-models
+2026-02-24 18:25:54 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/large-action-models: All validations passed
+2026-02-24 18:25:54 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/large-action-models | Status: 200 | Size: 89062 bytes
+2026-02-24 18:25:54 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/le-chat-mistral-large
+2026-02-24 18:25:59 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/le-chat-mistral-large: All validations passed
+2026-02-24 18:25:59 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/le-chat-mistral-large | Status: 200 | Size: 82189 bytes
+2026-02-24 18:26:00 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/llm-active-learning
+2026-02-24 18:26:04 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/llm-active-learning: All validations passed
+2026-02-24 18:26:04 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/llm-active-learning | Status: 200 | Size: 84929 bytes
+2026-02-24 18:26:04 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/llm-agents
+2026-02-24 18:26:13 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/llm-agents: All validations passed
+2026-02-24 18:26:13 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/llm-agents | Status: 200 | Size: 102329 bytes
+2026-02-24 18:26:13 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/llm-as-a-judge-vs-human-evaluation
+2026-02-24 18:26:19 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/llm-as-a-judge-vs-human-evaluation: All validations passed
+2026-02-24 18:26:19 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/llm-as-a-judge-vs-human-evaluation | Status: 200 | Size: 90978 bytes
+2026-02-24 18:26:19 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/llm-evaluation-guide
+2026-02-24 18:26:23 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/llm-evaluation-guide: All validations passed
+2026-02-24 18:26:23 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/llm-evaluation-guide | Status: 200 | Size: 110878 bytes
+2026-02-24 18:26:23 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/llm-fine-tuning
+2026-02-24 18:26:29 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/llm-fine-tuning: All validations passed
+2026-02-24 18:26:29 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/llm-fine-tuning | Status: 200 | Size: 112538 bytes
+2026-02-24 18:26:30 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/llm-fine-tuning-superannotate-databricks
+2026-02-24 18:26:35 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/llm-fine-tuning-superannotate-databricks: All validations passed
+2026-02-24 18:26:35 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/llm-fine-tuning-superannotate-databricks | Status: 200 | Size: 77465 bytes
+2026-02-24 18:26:35 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/llm-operations-llmops
+2026-02-24 18:26:40 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/llm-operations-llmops: All validations passed
+2026-02-24 18:26:40 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/llm-operations-llmops | Status: 200 | Size: 97003 bytes
+2026-02-24 18:26:40 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/llm-overview
+2026-02-24 18:26:46 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/llm-overview: All validations passed
+2026-02-24 18:26:46 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/llm-overview | Status: 200 | Size: 120406 bytes
+2026-02-24 18:26:46 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/llm-prompting-tricks
+2026-02-24 18:26:52 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/llm-prompting-tricks: All validations passed
+2026-02-24 18:26:52 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/llm-prompting-tricks | Status: 200 | Size: 80512 bytes
+2026-02-24 18:26:52 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/llm-pruning-distillation-minitron-approach
+2026-02-24 18:27:04 - scraper.www.superannotate.com - ERROR - ✗ ERROR: https://www.superannotate.com/blog/llm-pruning-distillation-minitron-approach | Page.goto: net::ERR_NETWORK_CHANGED at https://www.superannotate.com/blog/llm-pruning-distillation-minitron-approach
+Call log:
+  - navigating to "https://www.superannotate.com/blog/llm-pruning-distillation-minitron-approach", waiting until "load"
+
+2026-02-24 18:27:04 - scraper.www.superannotate.com - INFO - Retrying https://www.superannotate.com/blog/llm-pruning-distillation-minitron-approach (attempt 2/3)
+2026-02-24 18:27:06 - scraper.www.superannotate.com - ERROR - ✗ ERROR: https://www.superannotate.com/blog/llm-pruning-distillation-minitron-approach | Page.goto: net::ERR_INTERNET_DISCONNECTED at https://www.superannotate.com/blog/llm-pruning-distillation-minitron-approach
+Call log:
+  - navigating to "https://www.superannotate.com/blog/llm-pruning-distillation-minitron-approach", waiting until "load"
+
+2026-02-24 18:27:06 - scraper.www.superannotate.com - INFO - Retrying https://www.superannotate.com/blog/llm-pruning-distillation-minitron-approach (attempt 3/3)
+2026-02-24 18:27:10 - scraper.www.superannotate.com - ERROR - ✗ ERROR: https://www.superannotate.com/blog/llm-pruning-distillation-minitron-approach | Page.goto: net::ERR_INTERNET_DISCONNECTED at https://www.superannotate.com/blog/llm-pruning-distillation-minitron-approach
+Call log:
+  - navigating to "https://www.superannotate.com/blog/llm-pruning-distillation-minitron-approach", waiting until "load"
+
+2026-02-24 18:27:10 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/llm-red-teaming
+2026-02-24 18:27:20 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/llm-red-teaming: All validations passed
+2026-02-24 18:27:20 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/llm-red-teaming | Status: 200 | Size: 97024 bytes
+2026-02-24 18:27:20 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/llm-synthetic-data
+2026-02-24 18:27:25 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/llm-synthetic-data: All validations passed
+2026-02-24 18:27:25 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/llm-synthetic-data | Status: 200 | Size: 85594 bytes
+2026-02-24 18:27:25 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/llm-use-cases
+2026-02-24 18:27:34 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/llm-use-cases: All validations passed
+2026-02-24 18:27:34 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/llm-use-cases | Status: 200 | Size: 89258 bytes
+2026-02-24 18:27:34 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/machine-learning-computer-vision-terms
+2026-02-24 18:27:39 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/machine-learning-computer-vision-terms: All validations passed
+2026-02-24 18:27:39 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/machine-learning-computer-vision-terms | Status: 200 | Size: 83953 bytes
+2026-02-24 18:27:39 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/mean-average-precision-and-its-uses-in-object-detection
+2026-02-24 18:27:48 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/mean-average-precision-and-its-uses-in-object-detection: All validations passed
+2026-02-24 18:27:48 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/mean-average-precision-and-its-uses-in-object-detection | Status: 200 | Size: 98640 bytes
+2026-02-24 18:27:48 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/midjourney-v6
+2026-02-24 18:27:53 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/midjourney-v6: All validations passed
+2026-02-24 18:27:53 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/midjourney-v6 | Status: 200 | Size: 80913 bytes
+2026-02-24 18:27:54 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/mistral-ai-mixtral-of-experts
+2026-02-24 18:27:58 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/mistral-ai-mixtral-of-experts: All validations passed
+2026-02-24 18:27:58 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/mistral-ai-mixtral-of-experts | Status: 200 | Size: 87061 bytes
+2026-02-24 18:27:58 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/mixture-of-experts-vs-mixture-of-tokens
+2026-02-24 18:28:03 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/mixture-of-experts-vs-mixture-of-tokens: All validations passed
+2026-02-24 18:28:03 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/mixture-of-experts-vs-mixture-of-tokens | Status: 200 | Size: 84167 bytes
+2026-02-24 18:28:03 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/mlops-methods-and-tools-for-machine-learning
+2026-02-24 18:28:10 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/mlops-methods-and-tools-for-machine-learning: All validations passed
+2026-02-24 18:28:10 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/mlops-methods-and-tools-for-machine-learning | Status: 200 | Size: 98173 bytes
+2026-02-24 18:28:10 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/most-popular-ai-use-cases
+2026-02-24 18:28:17 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/most-popular-ai-use-cases: All validations passed
+2026-02-24 18:28:17 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/most-popular-ai-use-cases | Status: 200 | Size: 84432 bytes
+2026-02-24 18:28:17 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/multi-agent-llms
+2026-02-24 18:28:22 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/multi-agent-llms: All validations passed
+2026-02-24 18:28:22 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/multi-agent-llms | Status: 200 | Size: 98992 bytes
+2026-02-24 18:28:22 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/multimodal-ai
+2026-02-24 18:28:28 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/multimodal-ai: All validations passed
+2026-02-24 18:28:28 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/multimodal-ai | Status: 200 | Size: 98684 bytes
+2026-02-24 18:28:28 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/nvidia-blackwell
+2026-02-24 18:28:33 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/nvidia-blackwell: All validations passed
+2026-02-24 18:28:33 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/nvidia-blackwell | Status: 200 | Size: 78075 bytes
+2026-02-24 18:28:33 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/object-detection-with-deep-learning
+2026-02-24 18:28:38 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/object-detection-with-deep-learning: All validations passed
+2026-02-24 18:28:38 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/object-detection-with-deep-learning | Status: 200 | Size: 107641 bytes
+2026-02-24 18:28:39 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/ocr-overview-and-use-cases
+2026-02-24 18:28:44 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/ocr-overview-and-use-cases: All validations passed
+2026-02-24 18:28:44 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/ocr-overview-and-use-cases | Status: 200 | Size: 102118 bytes
+2026-02-24 18:28:44 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/one-shot-annotation
+2026-02-24 18:29:02 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/one-shot-annotation: All validations passed
+2026-02-24 18:29:02 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/one-shot-annotation | Status: 200 | Size: 85585 bytes
+2026-02-24 18:29:03 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/onecup-case-study
+2026-02-24 18:29:08 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/onecup-case-study: All validations passed
+2026-02-24 18:29:08 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/onecup-case-study | Status: 200 | Size: 79697 bytes
+2026-02-24 18:29:08 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/openai-sora
+2026-02-24 18:29:18 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/openai-sora: All validations passed
+2026-02-24 18:29:18 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/openai-sora | Status: 200 | Size: 85302 bytes
+2026-02-24 18:29:18 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/openai-whisper-automatic-speech-recognition-system
+2026-02-24 18:29:22 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/openai-whisper-automatic-speech-recognition-system: All validations passed
+2026-02-24 18:29:22 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/openai-whisper-automatic-speech-recognition-system | Status: 200 | Size: 86359 bytes
+2026-02-24 18:29:22 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/optimize-ai-data-pipelines-superannotate-ultihash
+2026-02-24 18:29:29 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/optimize-ai-data-pipelines-superannotate-ultihash: All validations passed
+2026-02-24 18:29:29 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/optimize-ai-data-pipelines-superannotate-ultihash | Status: 200 | Size: 78484 bytes
+2026-02-24 18:29:29 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/orsi-case-study
+2026-02-24 18:29:37 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/orsi-case-study: All validations passed
+2026-02-24 18:29:37 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/orsi-case-study | Status: 200 | Size: 79001 bytes
+2026-02-24 18:29:37 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/outsourcing-data-annotation-project
+2026-02-24 18:29:43 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/outsourcing-data-annotation-project: All validations passed
+2026-02-24 18:29:43 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/outsourcing-data-annotation-project | Status: 200 | Size: 78789 bytes
+2026-02-24 18:29:43 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/overfitting-and-underfitting-in-machine-learning
+2026-02-24 18:29:49 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/overfitting-and-underfitting-in-machine-learning: All validations passed
+2026-02-24 18:29:49 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/overfitting-and-underfitting-in-machine-learning | Status: 200 | Size: 102023 bytes
+2026-02-24 18:29:49 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/pattern-recognition-overview
+2026-02-24 18:29:54 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/pattern-recognition-overview: All validations passed
+2026-02-24 18:29:54 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/pattern-recognition-overview | Status: 200 | Size: 79838 bytes
+2026-02-24 18:29:54 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/post-chatgpt-ai-training-requirements
+2026-02-24 18:29:59 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/post-chatgpt-ai-training-requirements: All validations passed
+2026-02-24 18:29:59 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/post-chatgpt-ai-training-requirements | Status: 200 | Size: 82740 bytes
+2026-02-24 18:30:00 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/prairie-robotics-case-study
+2026-02-24 18:30:05 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/prairie-robotics-case-study: All validations passed
+2026-02-24 18:30:05 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/prairie-robotics-case-study | Status: 200 | Size: 80273 bytes
+2026-02-24 18:30:06 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/product-updates-april-2022
+2026-02-24 18:30:12 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/product-updates-april-2022: All validations passed
+2026-02-24 18:30:12 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/product-updates-april-2022 | Status: 200 | Size: 77979 bytes
+2026-02-24 18:30:12 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/product-updates-august-2022
+2026-02-24 18:30:17 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/product-updates-august-2022: All validations passed
+2026-02-24 18:30:17 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/product-updates-august-2022 | Status: 200 | Size: 76118 bytes
+2026-02-24 18:30:17 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/product-updates-december-1-2022
+2026-02-24 18:30:22 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/product-updates-december-1-2022: All validations passed
+2026-02-24 18:30:22 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/product-updates-december-1-2022 | Status: 200 | Size: 74511 bytes
+2026-02-24 18:30:22 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/product-updates-december-2-2022
+2026-02-24 18:30:29 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/product-updates-december-2-2022: All validations passed
+2026-02-24 18:30:29 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/product-updates-december-2-2022 | Status: 200 | Size: 75946 bytes
+2026-02-24 18:30:29 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/product-updates-july-1-2022
+2026-02-24 18:30:36 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/product-updates-july-1-2022: All validations passed
+2026-02-24 18:30:36 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/product-updates-july-1-2022 | Status: 200 | Size: 75450 bytes
+2026-02-24 18:30:36 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/product-updates-july-2-2022
+2026-02-24 18:30:42 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/product-updates-july-2-2022: All validations passed
+2026-02-24 18:30:42 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/product-updates-july-2-2022 | Status: 200 | Size: 76545 bytes
+2026-02-24 18:30:42 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/product-updates-june-2022
+2026-02-24 18:30:48 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/product-updates-june-2022: All validations passed
+2026-02-24 18:30:48 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/product-updates-june-2022 | Status: 200 | Size: 73477 bytes
+2026-02-24 18:30:48 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/product-updates-march-2022
+2026-02-24 18:30:55 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/product-updates-march-2022: All validations passed
+2026-02-24 18:30:55 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/product-updates-march-2022 | Status: 200 | Size: 80235 bytes
+2026-02-24 18:30:55 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/product-updates-may-1-2022
+2026-02-24 18:31:02 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/product-updates-may-1-2022: All validations passed
+2026-02-24 18:31:02 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/product-updates-may-1-2022 | Status: 200 | Size: 75438 bytes
+2026-02-24 18:31:02 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/product-updates-may-2-2022
+2026-02-24 18:31:08 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/product-updates-may-2-2022: All validations passed
+2026-02-24 18:31:08 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/product-updates-may-2-2022 | Status: 200 | Size: 76776 bytes
+2026-02-24 18:31:09 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/product-updates-november-2022
+2026-02-24 18:31:14 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/product-updates-november-2022: All validations passed
+2026-02-24 18:31:14 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/product-updates-november-2022 | Status: 200 | Size: 72469 bytes
+2026-02-24 18:31:14 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/product-updates-october-1-2022
+2026-02-24 18:31:20 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/product-updates-october-1-2022: All validations passed
+2026-02-24 18:31:20 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/product-updates-october-1-2022 | Status: 200 | Size: 72846 bytes
+2026-02-24 18:31:20 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/product-updates-october-2-2022
+2026-02-24 18:31:27 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/product-updates-october-2-2022: All validations passed
+2026-02-24 18:31:27 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/product-updates-october-2-2022 | Status: 200 | Size: 75083 bytes
+2026-02-24 18:31:27 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/product-updates-september-2022
+2026-02-24 18:31:34 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/product-updates-september-2022: All validations passed
+2026-02-24 18:31:34 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/product-updates-september-2022 | Status: 200 | Size: 73490 bytes
+2026-02-24 18:31:34 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/public-datasets-for-machine-learning
+2026-02-24 18:31:38 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/public-datasets-for-machine-learning: All validations passed
+2026-02-24 18:31:38 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/public-datasets-for-machine-learning | Status: 200 | Size: 108179 bytes
+2026-02-24 18:31:38 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/q-star-overview
+2026-02-24 18:31:44 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/q-star-overview: All validations passed
+2026-02-24 18:31:44 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/q-star-overview | Status: 200 | Size: 90001 bytes
+2026-02-24 18:31:45 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/raft-retrieval-augmented-fine-tuning
+2026-02-24 18:31:49 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/raft-retrieval-augmented-fine-tuning: All validations passed
+2026-02-24 18:31:49 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/raft-retrieval-augmented-fine-tuning | Status: 200 | Size: 85316 bytes
+2026-02-24 18:31:49 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/rag-evaluation
+2026-02-24 18:31:55 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/rag-evaluation: All validations passed
+2026-02-24 18:31:55 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/rag-evaluation | Status: 200 | Size: 83866 bytes
+2026-02-24 18:31:55 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/rag-explained
+2026-02-24 18:32:01 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/rag-explained: All validations passed
+2026-02-24 18:32:01 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/rag-explained | Status: 200 | Size: 92966 bytes
+2026-02-24 18:32:01 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/rag-fine-tuning
+2026-02-24 18:32:05 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/rag-fine-tuning: All validations passed
+2026-02-24 18:32:05 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/rag-fine-tuning | Status: 200 | Size: 86043 bytes
+2026-02-24 18:32:05 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/rag-vs-fine-tuning
+2026-02-24 18:32:10 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/rag-vs-fine-tuning: All validations passed
+2026-02-24 18:32:10 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/rag-vs-fine-tuning | Status: 200 | Size: 88075 bytes
+2026-02-24 18:32:10 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/rag-vs-long-context-llms
+2026-02-24 18:32:15 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/rag-vs-long-context-llms: All validations passed
+2026-02-24 18:32:15 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/rag-vs-long-context-llms | Status: 200 | Size: 84636 bytes
+2026-02-24 18:32:15 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/real-life-ai-podcast-launch
+2026-02-24 18:32:22 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/real-life-ai-podcast-launch: All validations passed
+2026-02-24 18:32:22 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/real-life-ai-podcast-launch | Status: 200 | Size: 69928 bytes
+2026-02-24 18:32:23 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/reinforced-fine-tuning
+2026-02-24 18:32:28 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/reinforced-fine-tuning: All validations passed
+2026-02-24 18:32:28 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/reinforced-fine-tuning | Status: 200 | Size: 85622 bytes
+2026-02-24 18:32:28 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/reinforcement-learning-from-ai-feedback-rlaif
+2026-02-24 18:32:32 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/reinforcement-learning-from-ai-feedback-rlaif: All validations passed
+2026-02-24 18:32:32 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/reinforcement-learning-from-ai-feedback-rlaif | Status: 200 | Size: 87707 bytes
+2026-02-24 18:32:32 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/rem-people-case-study
+2026-02-24 18:32:37 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/rem-people-case-study: All validations passed
+2026-02-24 18:32:37 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/rem-people-case-study | Status: 200 | Size: 77118 bytes
+2026-02-24 18:32:38 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/rlhf-for-llm
+2026-02-24 18:32:42 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/rlhf-for-llm: All validations passed
+2026-02-24 18:32:42 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/rlhf-for-llm | Status: 200 | Size: 102143 bytes
+2026-02-24 18:32:42 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/sam-integration-launch
+2026-02-24 18:32:47 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/sam-integration-launch: All validations passed
+2026-02-24 18:32:47 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/sam-integration-launch | Status: 200 | Size: 74257 bytes
+2026-02-24 18:32:47 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/scale-ai-alternatives
+2026-02-24 18:32:53 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/scale-ai-alternatives: All validations passed
+2026-02-24 18:32:53 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/scale-ai-alternatives | Status: 200 | Size: 81222 bytes
+2026-02-24 18:32:53 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/scale-annotation-pipeline
+2026-02-24 18:33:00 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/scale-annotation-pipeline: All validations passed
+2026-02-24 18:33:00 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/scale-annotation-pipeline | Status: 200 | Size: 83923 bytes
+2026-02-24 18:33:00 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/sentiment-analysis-explained
+2026-02-24 18:33:04 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/sentiment-analysis-explained: All validations passed
+2026-02-24 18:33:04 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/sentiment-analysis-explained | Status: 200 | Size: 100700 bytes
+2026-02-24 18:33:04 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/servicenow-case-study
+2026-02-24 18:33:11 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/servicenow-case-study: All validations passed
+2026-02-24 18:33:11 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/servicenow-case-study | Status: 200 | Size: 80831 bytes
+2026-02-24 18:33:11 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/small-language-models
+2026-02-24 18:33:17 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/small-language-models: All validations passed
+2026-02-24 18:33:17 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/small-language-models | Status: 200 | Size: 94811 bytes
+2026-02-24 18:33:17 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/speed-up-labeling-process-using-transfer-learning
+2026-02-24 18:33:23 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/speed-up-labeling-process-using-transfer-learning: All validations passed
+2026-02-24 18:33:23 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/speed-up-labeling-process-using-transfer-learning | Status: 200 | Size: 78923 bytes
+2026-02-24 18:33:23 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/spreadsheets-vs-annotation-tool
+2026-02-24 18:33:29 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/spreadsheets-vs-annotation-tool: All validations passed
+2026-02-24 18:33:29 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/spreadsheets-vs-annotation-tool | Status: 200 | Size: 86918 bytes
+2026-02-24 18:33:29 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/superannotate-2025-databricks-isv-customer-impact-partner-of-the-year
+2026-02-24 18:33:35 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/superannotate-2025-databricks-isv-customer-impact-partner-of-the-year: All validations passed
+2026-02-24 18:33:35 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/superannotate-2025-databricks-isv-customer-impact-partner-of-the-year | Status: 200 | Size: 71207 bytes
+2026-02-24 18:33:36 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/superannotate-36m-series-b-funding-round
+2026-02-24 18:33:40 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/superannotate-36m-series-b-funding-round: All validations passed
+2026-02-24 18:33:40 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/superannotate-36m-series-b-funding-round | Status: 200 | Size: 78680 bytes
+2026-02-24 18:33:40 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/superannotate-aimpoint-digital
+2026-02-24 18:33:44 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/superannotate-aimpoint-digital: All validations passed
+2026-02-24 18:33:44 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/superannotate-aimpoint-digital | Status: 200 | Size: 76683 bytes
+2026-02-24 18:33:45 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/superannotate-aws-sagemaker-partner-incubator
+2026-02-24 18:33:49 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/superannotate-aws-sagemaker-partner-incubator: All validations passed
+2026-02-24 18:33:49 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/superannotate-aws-sagemaker-partner-incubator | Status: 200 | Size: 80500 bytes
+2026-02-24 18:33:49 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/superannotate-databricks-collaboration
+2026-02-24 18:33:54 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/superannotate-databricks-collaboration: All validations passed
+2026-02-24 18:33:54 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/superannotate-databricks-collaboration | Status: 200 | Size: 76091 bytes
+2026-02-24 18:33:54 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/superannotate-fireworks-ai
+2026-02-24 18:33:59 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/superannotate-fireworks-ai: All validations passed
+2026-02-24 18:33:59 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/superannotate-fireworks-ai | Status: 200 | Size: 73443 bytes
+2026-02-24 18:34:00 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/superannotate-google-cloud
+2026-02-24 18:34:06 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/superannotate-google-cloud: All validations passed
+2026-02-24 18:34:06 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/superannotate-google-cloud | Status: 200 | Size: 76417 bytes
+2026-02-24 18:34:06 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/superannotate-ibm-watsonx
+2026-02-24 18:34:11 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/superannotate-ibm-watsonx: All validations passed
+2026-02-24 18:34:11 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/superannotate-ibm-watsonx | Status: 200 | Size: 76967 bytes
+2026-02-24 18:34:11 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/superannotate-joins-databricks-partner-connect
+2026-02-24 18:34:17 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/superannotate-joins-databricks-partner-connect: All validations passed
+2026-02-24 18:34:17 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/superannotate-joins-databricks-partner-connect | Status: 200 | Size: 78127 bytes
+2026-02-24 18:34:17 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/superannotate-nvidia
+2026-02-24 18:34:22 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/superannotate-nvidia: All validations passed
+2026-02-24 18:34:22 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/superannotate-nvidia | Status: 200 | Size: 77433 bytes
+2026-02-24 18:34:22 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/superannotate-nvidia-enterprise-ai-reference-architecture
+2026-02-24 18:34:28 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/superannotate-nvidia-enterprise-ai-reference-architecture: All validations passed
+2026-02-24 18:34:28 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/superannotate-nvidia-enterprise-ai-reference-architecture | Status: 200 | Size: 78057 bytes
+2026-02-24 18:34:28 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/superannotate-nvidia-enterprise-ai-solutions
+2026-02-24 18:34:32 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/superannotate-nvidia-enterprise-ai-solutions: All validations passed
+2026-02-24 18:34:32 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/superannotate-nvidia-enterprise-ai-solutions | Status: 200 | Size: 83546 bytes
+2026-02-24 18:34:32 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/superannotate-snowflake
+2026-02-24 18:34:39 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/superannotate-snowflake: All validations passed
+2026-02-24 18:34:39 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/superannotate-snowflake | Status: 200 | Size: 74683 bytes
+2026-02-24 18:34:39 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/supercharge-computer-vision-pipeline-with-active-learning
+2026-02-24 18:34:45 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/supercharge-computer-vision-pipeline-with-active-learning: All validations passed
+2026-02-24 18:34:45 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/supercharge-computer-vision-pipeline-with-active-learning | Status: 200 | Size: 78265 bytes
+2026-02-24 18:34:45 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/superdata-is-the-new-oil
+2026-02-24 18:34:50 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/superdata-is-the-new-oil: All validations passed
+2026-02-24 18:34:50 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/superdata-is-the-new-oil | Status: 200 | Size: 84246 bytes
+2026-02-24 18:34:51 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/supervised-learning-and-other-machine-learning-tasks
+2026-02-24 18:34:55 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/supervised-learning-and-other-machine-learning-tasks: All validations passed
+2026-02-24 18:34:55 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/supervised-learning-and-other-machine-learning-tasks | Status: 200 | Size: 107527 bytes
+2026-02-24 18:34:55 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/taranis-case-study
+2026-02-24 18:35:00 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/taranis-case-study: All validations passed
+2026-02-24 18:35:00 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/taranis-case-study | Status: 200 | Size: 77640 bytes
+2026-02-24 18:35:00 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/text-annotation-for-machine-learning
+2026-02-24 18:35:04 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/text-annotation-for-machine-learning: All validations passed
+2026-02-24 18:35:04 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/text-annotation-for-machine-learning | Status: 200 | Size: 99046 bytes
+2026-02-24 18:35:04 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/the-models-we-love
+2026-02-24 18:35:11 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/the-models-we-love: All validations passed
+2026-02-24 18:35:11 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/the-models-we-love | Status: 200 | Size: 81170 bytes
+2026-02-24 18:35:11 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/twelve-labs-case-study
+2026-02-24 18:35:17 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/twelve-labs-case-study: All validations passed
+2026-02-24 18:35:17 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/twelve-labs-case-study | Status: 200 | Size: 77898 bytes
+2026-02-24 18:35:17 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/u-net-based-building-footprint-pre-annotation
+2026-02-24 18:35:23 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/u-net-based-building-footprint-pre-annotation: All validations passed
+2026-02-24 18:35:23 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/u-net-based-building-footprint-pre-annotation | Status: 200 | Size: 70673 bytes
+2026-02-24 18:35:23 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/vertical-ai-agents
+2026-02-24 18:35:28 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/vertical-ai-agents: All validations passed
+2026-02-24 18:35:28 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/vertical-ai-agents | Status: 200 | Size: 86473 bytes
+2026-02-24 18:35:28 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/video-annotation-for-machine-learning
+2026-02-24 18:35:33 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/video-annotation-for-machine-learning: All validations passed
+2026-02-24 18:35:33 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/video-annotation-for-machine-learning | Status: 200 | Size: 78485 bytes
+2026-02-24 18:35:33 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/video-upload-and-image-panel-updates
+2026-02-24 18:35:39 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/video-upload-and-image-panel-updates: All validations passed
+2026-02-24 18:35:39 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/video-upload-and-image-panel-updates | Status: 200 | Size: 76846 bytes
+2026-02-24 18:35:39 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/webinar-data-powered-revolution-in-agtech
+2026-02-24 18:35:44 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/webinar-data-powered-revolution-in-agtech: All validations passed
+2026-02-24 18:35:44 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/webinar-data-powered-revolution-in-agtech | Status: 200 | Size: 73618 bytes
+2026-02-24 18:35:44 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/webinar-deriving-business-value-from-llms-and-rag
+2026-02-24 18:35:49 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/webinar-deriving-business-value-from-llms-and-rag: All validations passed
+2026-02-24 18:35:49 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/webinar-deriving-business-value-from-llms-and-rag | Status: 200 | Size: 74241 bytes
+2026-02-24 18:35:49 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/webinar-fine-tune-evaluate-llms-with-superannotate-databricks
+2026-02-24 18:35:54 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/webinar-fine-tune-evaluate-llms-with-superannotate-databricks: All validations passed
+2026-02-24 18:35:54 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/webinar-fine-tune-evaluate-llms-with-superannotate-databricks | Status: 200 | Size: 76720 bytes
+2026-02-24 18:35:54 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/webinar-fine-tuning-foundation-models-on-your-data-with-superannotate-aws
+2026-02-24 18:36:00 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/webinar-fine-tuning-foundation-models-on-your-data-with-superannotate-aws: All validations passed
+2026-02-24 18:36:00 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/webinar-fine-tuning-foundation-models-on-your-data-with-superannotate-aws | Status: 200 | Size: 73635 bytes
+2026-02-24 18:36:00 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/webinar-future-of-llms
+2026-02-24 18:36:06 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/webinar-future-of-llms: All validations passed
+2026-02-24 18:36:06 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/webinar-future-of-llms | Status: 200 | Size: 71209 bytes
+2026-02-24 18:36:06 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/webinar-how-to-deal-with-dataset-bias
+2026-02-24 18:36:11 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/webinar-how-to-deal-with-dataset-bias: All validations passed
+2026-02-24 18:36:11 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/webinar-how-to-deal-with-dataset-bias | Status: 200 | Size: 81109 bytes
+2026-02-24 18:36:11 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/webinar-ocr-anything
+2026-02-24 18:36:20 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/webinar-ocr-anything: All validations passed
+2026-02-24 18:36:20 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/webinar-ocr-anything | Status: 200 | Size: 72480 bytes
+2026-02-24 18:36:20 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/webinar-one-shot-annotation
+2026-02-24 18:36:25 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/webinar-one-shot-annotation: All validations passed
+2026-02-24 18:36:25 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/webinar-one-shot-annotation | Status: 200 | Size: 71469 bytes
+2026-02-24 18:36:25 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/webinar-scalable-annotation-pipelines
+2026-02-24 18:36:34 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/webinar-scalable-annotation-pipelines: All validations passed
+2026-02-24 18:36:34 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/webinar-scalable-annotation-pipelines | Status: 200 | Size: 74514 bytes
+2026-02-24 18:36:34 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/webinar-super-segment-anything
+2026-02-24 18:36:40 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/webinar-super-segment-anything: All validations passed
+2026-02-24 18:36:40 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/webinar-super-segment-anything | Status: 200 | Size: 71846 bytes
+2026-02-24 18:36:40 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/webinar-wrapping-up-computer-vision-in-2021
+2026-02-24 18:36:46 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/webinar-wrapping-up-computer-vision-in-2021: All validations passed
+2026-02-24 18:36:46 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/webinar-wrapping-up-computer-vision-in-2021 | Status: 200 | Size: 74714 bytes
+2026-02-24 18:36:46 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/what-is-edge-ai
+2026-02-24 18:36:51 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/what-is-edge-ai: All validations passed
+2026-02-24 18:36:51 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/what-is-edge-ai | Status: 200 | Size: 83940 bytes
+2026-02-24 18:36:51 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/what-is-lidar-annotation
+2026-02-24 18:36:58 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/what-is-lidar-annotation: All validations passed
+2026-02-24 18:36:58 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/what-is-lidar-annotation | Status: 200 | Size: 100389 bytes
+2026-02-24 18:36:58 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/what-is-natural-language-processing
+2026-02-24 18:37:04 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/what-is-natural-language-processing: All validations passed
+2026-02-24 18:37:04 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/what-is-natural-language-processing | Status: 200 | Size: 84498 bytes
+2026-02-24 18:37:04 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/what-is-panoptic-segmentation
+2026-02-24 18:37:08 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/what-is-panoptic-segmentation: All validations passed
+2026-02-24 18:37:08 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/what-is-panoptic-segmentation | Status: 200 | Size: 82386 bytes
+2026-02-24 18:37:08 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/whats-new-august-2020
+2026-02-24 18:37:15 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/whats-new-august-2020: All validations passed
+2026-02-24 18:37:15 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/whats-new-august-2020 | Status: 200 | Size: 75666 bytes
+2026-02-24 18:37:15 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/whats-new-september-2020
+2026-02-24 18:37:21 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/whats-new-september-2020: All validations passed
+2026-02-24 18:37:21 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/whats-new-september-2020 | Status: 200 | Size: 74336 bytes
+2026-02-24 18:37:21 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/where-to-get-public-datasets
+2026-02-24 18:37:26 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/where-to-get-public-datasets: All validations passed
+2026-02-24 18:37:26 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/where-to-get-public-datasets | Status: 200 | Size: 76716 bytes
+2026-02-24 18:37:27 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/wrapping-up-ai-trends-what-to-expect-next
+2026-02-24 18:37:32 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/wrapping-up-ai-trends-what-to-expect-next: All validations passed
+2026-02-24 18:37:32 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/wrapping-up-ai-trends-what-to-expect-next | Status: 200 | Size: 87491 bytes
+2026-02-24 18:37:32 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/yolo-object-detection
+2026-02-24 18:37:37 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/yolo-object-detection: All validations passed
+2026-02-24 18:37:37 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/yolo-object-detection | Status: 200 | Size: 120608 bytes
+2026-02-24 18:37:38 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog/yolov1-algorithm
+2026-02-24 18:37:42 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog/yolov1-algorithm: All validations passed
+2026-02-24 18:37:42 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog/yolov1-algorithm | Status: 200 | Size: 121702 bytes
+2026-02-24 18:37:43 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog-category/ai
+2026-02-24 18:37:49 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog-category/ai: All validations passed
+2026-02-24 18:37:49 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog-category/ai | Status: 200 | Size: 78396 bytes
+2026-02-24 18:37:49 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog-category/case-studies
+2026-02-24 18:37:55 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog-category/case-studies: All validations passed
+2026-02-24 18:37:55 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog-category/case-studies | Status: 200 | Size: 78070 bytes
+2026-02-24 18:37:55 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog-category/computer-vision
+2026-02-24 18:38:01 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog-category/computer-vision: All validations passed
+2026-02-24 18:38:01 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog-category/computer-vision | Status: 200 | Size: 78184 bytes
+2026-02-24 18:38:01 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog-category/llm
+2026-02-24 18:38:08 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog-category/llm: All validations passed
+2026-02-24 18:38:08 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog-category/llm | Status: 200 | Size: 78289 bytes
+2026-02-24 18:38:08 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog-category/machine-learning
+2026-02-24 18:38:14 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog-category/machine-learning: All validations passed
+2026-02-24 18:38:14 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog-category/machine-learning | Status: 200 | Size: 78305 bytes
+2026-02-24 18:38:14 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog-category/news
+2026-02-24 18:38:20 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog-category/news: All validations passed
+2026-02-24 18:38:20 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog-category/news | Status: 200 | Size: 68119 bytes
+2026-02-24 18:38:20 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog-category/partnerships
+2026-02-24 18:38:27 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog-category/partnerships: All validations passed
+2026-02-24 18:38:27 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog-category/partnerships | Status: 200 | Size: 79845 bytes
+2026-02-24 18:38:27 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog-category/product
+2026-02-24 18:38:33 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog-category/product: All validations passed
+2026-02-24 18:38:33 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog-category/product | Status: 200 | Size: 78263 bytes
+2026-02-24 18:38:34 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/blog-category/webinars
+2026-02-24 18:38:39 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/blog-category/webinars: All validations passed
+2026-02-24 18:38:39 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/blog-category/webinars | Status: 200 | Size: 78636 bytes
+2026-02-24 18:38:39 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/learning-hub/agent-hub-training
+2026-02-24 18:38:43 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/learning-hub/agent-hub-training: All validations passed
+2026-02-24 18:38:43 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/learning-hub/agent-hub-training | Status: 200 | Size: 62825 bytes
+2026-02-24 18:38:43 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/learning-hub/annotation-lead-guide
+2026-02-24 18:38:48 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/learning-hub/annotation-lead-guide: All validations passed
+2026-02-24 18:38:48 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/learning-hub/annotation-lead-guide | Status: 200 | Size: 63043 bytes
+2026-02-24 18:38:48 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/learning-hub/annotation-lead-playlist
+2026-02-24 18:38:52 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/learning-hub/annotation-lead-playlist: All validations passed
+2026-02-24 18:38:52 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/learning-hub/annotation-lead-playlist | Status: 200 | Size: 63376 bytes
+2026-02-24 18:38:52 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/learning-hub/best-practices-guide
+2026-02-24 18:38:57 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/learning-hub/best-practices-guide: All validations passed
+2026-02-24 18:38:57 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/learning-hub/best-practices-guide | Status: 200 | Size: 63107 bytes
+2026-02-24 18:38:57 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/learning-hub/computer-vision-annotator-playlist
+2026-02-24 18:39:02 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/learning-hub/computer-vision-annotator-playlist: All validations passed
+2026-02-24 18:39:02 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/learning-hub/computer-vision-annotator-playlist | Status: 200 | Size: 63341 bytes
+2026-02-24 18:39:02 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/learning-hub/computer-vision-designer-playlist
+2026-02-24 18:39:07 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/learning-hub/computer-vision-designer-playlist: All validations passed
+2026-02-24 18:39:07 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/learning-hub/computer-vision-designer-playlist | Status: 200 | Size: 63125 bytes
+2026-02-24 18:39:07 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/learning-hub/designer-guide
+2026-02-24 18:39:12 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/learning-hub/designer-guide: All validations passed
+2026-02-24 18:39:12 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/learning-hub/designer-guide | Status: 200 | Size: 62614 bytes
+2026-02-24 18:39:12 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/learning-hub/multimodal-annotator-playlist
+2026-02-24 18:39:17 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/learning-hub/multimodal-annotator-playlist: All validations passed
+2026-02-24 18:39:17 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/learning-hub/multimodal-annotator-playlist | Status: 200 | Size: 62862 bytes
+2026-02-24 18:39:17 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/learning-hub/multimodal-designer-playlist
+2026-02-24 18:39:23 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/learning-hub/multimodal-designer-playlist: All validations passed
+2026-02-24 18:39:23 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/learning-hub/multimodal-designer-playlist | Status: 200 | Size: 62963 bytes
+2026-02-24 18:39:23 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/learning-hub/organization-owner-playlist
+2026-02-24 18:39:29 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/learning-hub/organization-owner-playlist: All validations passed
+2026-02-24 18:39:29 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/learning-hub/organization-owner-playlist | Status: 200 | Size: 62796 bytes
+2026-02-24 18:39:29 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/learning-hub-categories/annotation-lead
+2026-02-24 18:39:34 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/learning-hub-categories/annotation-lead: All validations passed
+2026-02-24 18:39:34 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/learning-hub-categories/annotation-lead | Status: 200 | Size: 60887 bytes
+2026-02-24 18:39:34 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/learning-hub-categories/annotator
+2026-02-24 18:39:39 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/learning-hub-categories/annotator: All validations passed
+2026-02-24 18:39:39 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/learning-hub-categories/annotator | Status: 200 | Size: 60810 bytes
+2026-02-24 18:39:39 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/learning-hub-categories/organization-owner
+2026-02-24 18:39:44 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/learning-hub-categories/organization-owner: All validations passed
+2026-02-24 18:39:44 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/learning-hub-categories/organization-owner | Status: 200 | Size: 60817 bytes
+2026-02-24 18:39:44 - scraper.www.superannotate.com - INFO - Starting scrape: https://www.superannotate.com/learning-hub-categories/project-designer
+2026-02-24 18:39:49 - scraper.www.superannotate.com - INFO - ✓ VALIDATION PASSED: https://www.superannotate.com/learning-hub-categories/project-designer: All validations passed
+2026-02-24 18:39:49 - scraper.www.superannotate.com - INFO - ✓ SUCCESS: https://www.superannotate.com/learning-hub-categories/project-designer | Status: 200 | Size: 63397 bytes
