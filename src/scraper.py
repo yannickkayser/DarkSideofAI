@@ -4,6 +4,7 @@ Main scraper for JavaScript-heavy websites using Playwright
 import time
 import json
 import re
+import random
 import hashlib
 from datetime import datetime
 from urllib.parse import urlparse, urljoin
@@ -153,10 +154,24 @@ class WebScraper:
             Dictionary with page data
         """
         # Wait for page to be fully loaded
+        # FIX - wait for network idle, then wait for actual content to appear
         try:
             page.wait_for_load_state('networkidle', timeout=NETWORK_IDLE_TIMEOUT)
         except:
             pass  # Continue even if timeout
+
+
+        # Wait for Framer/JS frameworks to finish hydrating the DOM
+        try:
+            page.wait_for_function(
+                "() => document.body && document.body.innerText.trim().length > 200",
+                timeout=15000
+            )
+        except:
+            pass  # Use whatever is rendered so far
+
+        # Extra pause for late-rendering elements (Framer injects after JS resolves)
+        time.sleep(1.5)
         
         # Get page content
         html_content = page.content()
@@ -252,18 +267,21 @@ class WebScraper:
             try:
                 self._wait_for_rate_limit()
                 
-                # ADD: Check if page is valid
+                # Check if page is valid
                 if page.is_closed():
                     self.logger.error("Page is closed, cannot scrape")
                     return None
                 
                 # Navigate to page
-                response = page.goto(url, wait_until='domcontentloaded', timeout=PAGE_WAIT_TIMEOUT)
-                
+                response = page.goto(url, wait_until='load', timeout=PAGE_WAIT_TIMEOUT)
+
                 if not response:
                     raise Exception("No response from page")
-                
+
                 status_code = response.status
+
+                # Random human-like pause to avoid bot detection timing patterns
+                time.sleep(random.uniform(1.5, 3.5))
                 
                 # Extract content
                 page_data = self._extract_text_from_page(page)
@@ -276,7 +294,9 @@ class WebScraper:
                 
                 if not is_valid:
                     self.logger.warning(f"Validation failed for {url}: {message}")
-                    return None
+                    # Still return data so the URL gets saved to DB and isn't retried forever
+                    page_data['text_content'] = page_data.get('text_content') or '[content unavailable]'
+                    return page_data
                 
                 log_scrape_success(self.logger, url, status_code, page_data['content_length'])
                 
@@ -290,8 +310,8 @@ class WebScraper:
                 # Don't retry if page/browser closed errors
                 if 'closed' in error_msg.lower() or 'target' in error_msg.lower():
                     log_scrape_error(self.logger, url, error_msg)
-                    raise RuntimeError(f"BROWSER_CRASHED: {error_msg}")
-                
+                    return None
+                                
                 log_scrape_error(self.logger, url, error_msg)
                 
                 if attempt < RETRY_ATTEMPTS - 1:
@@ -334,9 +354,12 @@ class WebScraper:
             browser = p.chromium.launch(
                 headless=HEADLESS,
                 args=[
-                    '--disable-blink-features=AutomationControlled',  
+                    '--disable-blink-features=AutomationControlled',
                     '--disable-dev-shm-usage',
-                    '--no-sandbox'
+                    '--no-sandbox',
+                    '--disable-web-security',
+                    '--disable-features=IsolateOrigins,site-per-process',
+                    '--window-size=1920,1080'
                 ]
             )
             
@@ -358,8 +381,12 @@ class WebScraper:
             
             # Stealth settings
             context.add_init_script("""
-                Object.defineProperty(navigator, 'webdriver', {
-                    get: () => undefined
+                Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
+                Object.defineProperty(navigator, 'plugins', { get: () => [1, 2, 3, 4, 5] });
+                Object.defineProperty(navigator, 'languages', { get: () => ['en-US', 'en'] });
+                window.chrome = { runtime: {} };
+                Object.defineProperty(navigator, 'permissions', {
+                    get: () => ({ query: () => Promise.resolve({ state: 'granted' }) })
                 });
             """)
             
@@ -377,30 +404,27 @@ class WebScraper:
                     
                     # Skip if already visited
                     if url in self.visited_urls or self.db.page_exists(url):
+                        self.logger.debug(f"Skipping already scraped: {url}")
                         continue
                     
                     self.visited_urls.add(url)
                     
-                    # Check if page is still valid, recreate browser if needed
+                    # Use a fresh page per URL to avoid stale state triggering bot detection
+                    # Relaunch browser if it crashed (scale.com can kill the whole browser)
                     try:
-                        if page is None or page.is_closed():
-                            page = context.new_page()
+                        page = context.new_page()
                     except Exception:
-                        try:
-                            context.close()
-                        except Exception:
-                            pass
+                        self.logger.warning("Browser died, relaunching...")
                         try:
                             browser.close()
                         except Exception:
                             pass
                         browser = p.chromium.launch(
                             headless=HEADLESS,
-                            args=[
-                                '--disable-blink-features=AutomationControlled',
-                                '--disable-dev-shm-usage',
-                                '--no-sandbox'
-                            ]
+                            args=['--disable-blink-features=AutomationControlled',
+                                '--disable-dev-shm-usage', '--no-sandbox',
+                                '--disable-web-security',
+                                '--window-size=1920,1080']
                         )
                         context = browser.new_context(
                             user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
@@ -417,20 +441,30 @@ class WebScraper:
                         )
                         context.add_init_script("""
                             Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
+                            Object.defineProperty(navigator, 'plugins', { get: () => [1, 2, 3, 4, 5] });
+                            Object.defineProperty(navigator, 'languages', { get: () => ['en-US', 'en'] });
+                            window.chrome = { runtime: {} };
+                            Object.defineProperty(navigator, 'permissions', {
+                                get: () => ({ query: () => Promise.resolve({ state: 'granted' }) })
+                            });
                         """)
                         context.set_default_timeout(PAGE_WAIT_TIMEOUT)
                         page = context.new_page()
-                        self.logger.warning("Browser crashed and was restarted successfully")
-                    
+
                     # Scrape page
                     try:
                         page_data = self.scrape_page(page, url, depth=0)
-                    except RuntimeError as e:
-                        if "BROWSER_CRASHED" in str(e):
-                            self.logger.warning(f"Browser crash detected on {url}, will restart on next page")
-                            page = None  # Force the Fix 2 block to trigger on next iteration
+                    except (RuntimeError, Exception) as e:
+                        self.logger.warning(f"Failed {url}: {e}")
                         self.stats['pages_failed'] += 1
-                        continue
+                        page_data = None
+                    finally:
+                        try:
+                            page.close()
+                        except Exception:
+                            pass
+                        except KeyboardInterrupt:
+                            self.logger.warning("Scraping interrupted by user")
                     
                     if page_data:
                         # Save raw data backup
@@ -467,18 +501,16 @@ class WebScraper:
                     else:
                         self.stats['pages_failed'] += 1
             
-            except KeyboardInterrupt:  # ADD THIS
+            except KeyboardInterrupt:  
                 self.logger.warning("Scraping interrupted by user")
-            except Exception as e:  # ADD THIS
+            except Exception as e:  
                 self.logger.error(f"Unexpected error: {e}")
             finally:
                 try:
-                    if not page.is_closed():
-                        page.close()
                     context.close()
                     browser.close()
                 except:
-                    pass  # Ignore close errors
+                    pass  # 
         
         # Update website
         self.db.update_website_last_scraped(website_id)

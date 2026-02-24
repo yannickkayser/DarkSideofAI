@@ -1,0 +1,328 @@
+2026-02-23 21:26:06 - scraper.www.microworkers.com - INFO - Starting scrape of Microworkers
+2026-02-23 21:26:08 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/
+2026-02-23 21:26:13 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/: All validations passed
+2026-02-23 21:26:13 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/ | Status: 200 | Size: 313079 bytes
+2026-02-23 21:26:14 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/
+2026-02-23 21:26:22 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/: All validations passed
+2026-02-23 21:26:22 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/ | Status: 200 | Size: 45690 bytes
+2026-02-23 21:26:22 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/signup.php
+2026-02-23 21:26:27 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/signup.php: All validations passed
+2026-02-23 21:26:27 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/signup.php | Status: 200 | Size: 36676 bytes
+2026-02-23 21:26:27 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/terms.php
+2026-02-23 21:26:32 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/terms.php: All validations passed
+2026-02-23 21:26:32 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/terms.php | Status: 200 | Size: 38843 bytes
+2026-02-23 21:26:32 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/privacy.php
+2026-02-23 21:26:36 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/privacy.php: All validations passed
+2026-02-23 21:26:36 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/privacy.php | Status: 200 | Size: 29920 bytes
+2026-02-23 21:26:37 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/faq.php
+2026-02-23 21:26:42 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/faq.php: All validations passed
+2026-02-23 21:26:42 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/faq.php | Status: 200 | Size: 51236 bytes
+2026-02-23 21:26:42 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/contact.php
+2026-02-23 21:26:46 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/contact.php: All validations passed
+2026-02-23 21:26:46 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/contact.php | Status: 200 | Size: 15357 bytes
+2026-02-23 21:26:46 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/faq-guidelines.php
+2026-02-23 21:26:51 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/faq-guidelines.php: All validations passed
+2026-02-23 21:26:51 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/faq-guidelines.php | Status: 200 | Size: 32367 bytes
+2026-02-23 21:26:51 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/toon.php
+2026-02-23 21:26:56 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/toon.php: All validations passed
+2026-02-23 21:26:56 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/toon.php | Status: 200 | Size: 15259 bytes
+2026-02-23 21:26:57 - scraper.www.microworkers.com - INFO - Starting scrape: https://ttv.microworkers.com/
+2026-02-23 21:27:02 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://ttv.microworkers.com/: All validations passed
+2026-02-23 21:27:02 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://ttv.microworkers.com/ | Status: 200 | Size: 17033 bytes
+2026-02-23 21:27:02 - scraper.www.microworkers.com - INFO - Starting scrape: https://ttv.microworkers.com/documentation/api
+2026-02-23 21:27:10 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://ttv.microworkers.com/documentation/api: All validations passed
+2026-02-23 21:27:10 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://ttv.microworkers.com/documentation/api | Status: 200 | Size: 29523 bytes
+2026-02-23 21:27:10 - scraper.www.microworkers.com - INFO - Starting scrape: https://ttv.microworkers.com/documentation/submitProofURL
+2026-02-23 21:27:15 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://ttv.microworkers.com/documentation/submitProofURL: All validations passed
+2026-02-23 21:27:15 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://ttv.microworkers.com/documentation/submitProofURL | Status: 200 | Size: 32062 bytes
+2026-02-23 21:27:15 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/about-us/
+2026-02-23 21:27:22 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/about-us/: All validations passed
+2026-02-23 21:27:22 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/about-us/ | Status: 200 | Size: 34492 bytes
+2026-02-23 21:27:22 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/interesting-job-opportunity-for-native-german-speaking-microworkers/
+2026-02-23 21:27:29 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/interesting-job-opportunity-for-native-german-speaking-microworkers/: All validations passed
+2026-02-23 21:27:29 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/interesting-job-opportunity-for-native-german-speaking-microworkers/ | Status: 200 | Size: 50075 bytes
+2026-02-23 21:27:29 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/category/news/
+2026-02-23 21:27:36 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/category/news/: All validations passed
+2026-02-23 21:27:36 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/category/news/ | Status: 200 | Size: 46398 bytes
+2026-02-23 21:27:36 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/category/use-cases/
+2026-02-23 21:27:43 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/category/use-cases/: All validations passed
+2026-02-23 21:27:43 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/category/use-cases/ | Status: 200 | Size: 46278 bytes
+2026-02-23 21:27:44 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/great-job-opportunity-for-native-british-speaking-microworkers/
+2026-02-23 21:27:48 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/great-job-opportunity-for-native-british-speaking-microworkers/: All validations passed
+2026-02-23 21:27:48 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/great-job-opportunity-for-native-british-speaking-microworkers/ | Status: 200 | Size: 49559 bytes
+2026-02-23 21:27:48 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/the-includeexclude-list-and-remove-feature-for-workers/
+2026-02-23 21:27:55 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/the-includeexclude-list-and-remove-feature-for-workers/: All validations passed
+2026-02-23 21:27:55 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/the-includeexclude-list-and-remove-feature-for-workers/ | Status: 200 | Size: 52337 bytes
+2026-02-23 21:27:55 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/category/features/
+2026-02-23 21:28:01 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/category/features/: All validations passed
+2026-02-23 21:28:01 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/category/features/ | Status: 200 | Size: 46313 bytes
+2026-02-23 21:28:01 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/category/tutorials/
+2026-02-23 21:28:06 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/category/tutorials/: All validations passed
+2026-02-23 21:28:06 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/category/tutorials/ | Status: 200 | Size: 46575 bytes
+2026-02-23 21:28:06 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/the-guidelines-for-automatic-approval-campaigns/
+2026-02-23 21:28:11 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/the-guidelines-for-automatic-approval-campaigns/: All validations passed
+2026-02-23 21:28:11 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/the-guidelines-for-automatic-approval-campaigns/ | Status: 200 | Size: 51102 bytes
+2026-02-23 21:28:11 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/default-spreadsheet-templates/
+2026-02-23 21:28:17 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/default-spreadsheet-templates/: All validations passed
+2026-02-23 21:28:17 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/default-spreadsheet-templates/ | Status: 200 | Size: 55013 bytes
+2026-02-23 21:28:17 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/category/uncategorized/
+2026-02-23 21:28:22 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/category/uncategorized/: All validations passed
+2026-02-23 21:28:22 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/category/uncategorized/ | Status: 200 | Size: 45586 bytes
+2026-02-23 21:28:22 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/mw-things-to-know-withdrawals-fees-and-pins/
+2026-02-23 21:28:29 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/mw-things-to-know-withdrawals-fees-and-pins/: All validations passed
+2026-02-23 21:28:29 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/mw-things-to-know-withdrawals-fees-and-pins/ | Status: 200 | Size: 55994 bytes
+2026-02-23 21:28:29 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/mws-added-withdrawal-option/
+2026-02-23 21:28:35 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/mws-added-withdrawal-option/: All validations passed
+2026-02-23 21:28:35 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/mws-added-withdrawal-option/ | Status: 200 | Size: 61762 bytes
+2026-02-23 21:28:36 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/whats-new-in-mw-pin-requirement-waived-for-transpay/
+2026-02-23 21:28:41 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/whats-new-in-mw-pin-requirement-waived-for-transpay/: All validations passed
+2026-02-23 21:28:41 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/whats-new-in-mw-pin-requirement-waived-for-transpay/ | Status: 200 | Size: 51163 bytes
+2026-02-23 21:28:41 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/whats-new-in-microworkers-campaign-zone-retargeting/
+2026-02-23 21:28:48 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/whats-new-in-microworkers-campaign-zone-retargeting/: All validations passed
+2026-02-23 21:28:48 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/whats-new-in-microworkers-campaign-zone-retargeting/ | Status: 200 | Size: 55865 bytes
+2026-02-23 21:28:48 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/mw-things-to-know-ensuring-csv-format-compliance-in-campaign-setup/
+2026-02-23 21:28:56 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/mw-things-to-know-ensuring-csv-format-compliance-in-campaign-setup/: All validations passed
+2026-02-23 21:28:56 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/mw-things-to-know-ensuring-csv-format-compliance-in-campaign-setup/ | Status: 200 | Size: 54621 bytes
+2026-02-23 21:28:56 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/mw-things-to-know-display-tasks-in-random-collect-organized-results/
+2026-02-23 21:29:01 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/mw-things-to-know-display-tasks-in-random-collect-organized-results/: All validations passed
+2026-02-23 21:29:01 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/mw-things-to-know-display-tasks-in-random-collect-organized-results/ | Status: 200 | Size: 48824 bytes
+2026-02-23 21:29:01 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/how-to-rate-workers/
+2026-02-23 21:29:08 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/how-to-rate-workers/: All validations passed
+2026-02-23 21:29:08 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/how-to-rate-workers/ | Status: 200 | Size: 52398 bytes
+2026-02-23 21:29:08 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/checking-and-rating-submitted-tasks-in-ttv/
+2026-02-23 21:29:14 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/checking-and-rating-submitted-tasks-in-ttv/: All validations passed
+2026-02-23 21:29:14 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/checking-and-rating-submitted-tasks-in-ttv/ | Status: 200 | Size: 59772 bytes
+2026-02-23 21:29:14 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/rate-and-revise-tasks-by-csv-2/
+2026-02-23 21:29:21 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/rate-and-revise-tasks-by-csv-2/: All validations passed
+2026-02-23 21:29:21 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/rate-and-revise-tasks-by-csv-2/ | Status: 200 | Size: 58134 bytes
+2026-02-23 21:29:21 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/vcode-verification/
+2026-02-23 21:29:27 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/vcode-verification/: All validations passed
+2026-02-23 21:29:27 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/vcode-verification/ | Status: 200 | Size: 79408 bytes
+2026-02-23 21:29:27 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/whats-new-in-mw-vcode-testing-implemented/
+2026-02-23 21:29:33 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/whats-new-in-mw-vcode-testing-implemented/: All validations passed
+2026-02-23 21:29:33 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/whats-new-in-mw-vcode-testing-implemented/ | Status: 200 | Size: 47860 bytes
+2026-02-23 21:29:33 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/employers-guide-to-task-rating-and-revising-through-submitted-tasks/
+2026-02-23 21:29:39 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/employers-guide-to-task-rating-and-revising-through-submitted-tasks/: All validations passed
+2026-02-23 21:29:39 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/employers-guide-to-task-rating-and-revising-through-submitted-tasks/ | Status: 200 | Size: 51111 bytes
+2026-02-23 21:29:40 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/mw-must-knows-advanced-rating-option-for-tasks/
+2026-02-23 21:29:45 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/mw-must-knows-advanced-rating-option-for-tasks/: All validations passed
+2026-02-23 21:29:45 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/mw-must-knows-advanced-rating-option-for-tasks/ | Status: 200 | Size: 51439 bytes
+2026-02-23 21:29:45 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/whats-new-in-mw-refined-search-by-city/
+2026-02-23 21:29:53 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/whats-new-in-mw-refined-search-by-city/: All validations passed
+2026-02-23 21:29:53 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/whats-new-in-mw-refined-search-by-city/ | Status: 200 | Size: 49327 bytes
+2026-02-23 21:29:53 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/clone-and-edit-save-time-on-launching-multiple-campaigns/
+2026-02-23 21:30:00 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/clone-and-edit-save-time-on-launching-multiple-campaigns/: All validations passed
+2026-02-23 21:30:00 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/clone-and-edit-save-time-on-launching-multiple-campaigns/ | Status: 200 | Size: 50946 bytes
+2026-02-23 21:30:00 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/whats-new-in-microworkers-ttv-is-finally-here/
+2026-02-23 21:30:07 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/whats-new-in-microworkers-ttv-is-finally-here/: All validations passed
+2026-02-23 21:30:07 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/whats-new-in-microworkers-ttv-is-finally-here/ | Status: 200 | Size: 51779 bytes
+2026-02-23 21:30:07 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/whats-new-in-microworkers-ttv-external-template/
+2026-02-23 21:30:14 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/whats-new-in-microworkers-ttv-external-template/: All validations passed
+2026-02-23 21:30:14 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/whats-new-in-microworkers-ttv-external-template/ | Status: 200 | Size: 51407 bytes
+2026-02-23 21:30:14 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/submitting-proofs-for-your-external-campaign/
+2026-02-23 21:30:21 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/submitting-proofs-for-your-external-campaign/: All validations passed
+2026-02-23 21:30:21 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/submitting-proofs-for-your-external-campaign/ | Status: 200 | Size: 48696 bytes
+2026-02-23 21:30:21 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/creating-external-campaign-from-api/
+2026-02-23 21:30:27 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/creating-external-campaign-from-api/: All validations passed
+2026-02-23 21:30:27 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/creating-external-campaign-from-api/ | Status: 200 | Size: 49359 bytes
+2026-02-23 21:30:27 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/whats-new-in-mw-multiple-workers-in-one-task/
+2026-02-23 21:30:36 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/whats-new-in-mw-multiple-workers-in-one-task/: All validations passed
+2026-02-23 21:30:36 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/whats-new-in-mw-multiple-workers-in-one-task/ | Status: 200 | Size: 54640 bytes
+2026-02-23 21:30:36 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/whats-new-in-ttv-bonus-feature-added-2/
+2026-02-23 21:30:42 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/whats-new-in-ttv-bonus-feature-added-2/: All validations passed
+2026-02-23 21:30:42 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/whats-new-in-ttv-bonus-feature-added-2/ | Status: 200 | Size: 52835 bytes
+2026-02-23 21:30:43 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/mw-welcomes-new-users-from-hcomp-2018/
+2026-02-23 21:30:49 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/mw-welcomes-new-users-from-hcomp-2018/: All validations passed
+2026-02-23 21:30:49 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/mw-welcomes-new-users-from-hcomp-2018/ | Status: 200 | Size: 49530 bytes
+2026-02-23 21:30:49 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/mw-default-templates-for-artificial-intelligence-ai-campaign-projects/
+2026-02-23 21:30:56 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/mw-default-templates-for-artificial-intelligence-ai-campaign-projects/: All validations passed
+2026-02-23 21:30:56 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/mw-default-templates-for-artificial-intelligence-ai-campaign-projects/ | Status: 200 | Size: 54632 bytes
+2026-02-23 21:30:56 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/image-analysis-project-ideas/
+2026-02-23 21:31:03 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/image-analysis-project-ideas/: All validations passed
+2026-02-23 21:31:03 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/image-analysis-project-ideas/ | Status: 200 | Size: 57038 bytes
+2026-02-23 21:31:03 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/campaign-ideas-for-website-owners-online-marketers/
+2026-02-23 21:31:10 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/campaign-ideas-for-website-owners-online-marketers/: All validations passed
+2026-02-23 21:31:10 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/campaign-ideas-for-website-owners-online-marketers/ | Status: 200 | Size: 63125 bytes
+2026-02-23 21:31:10 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/interesting-job-for-cantonese-speaking-microworkers/
+2026-02-23 21:31:16 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/interesting-job-for-cantonese-speaking-microworkers/: All validations passed
+2026-02-23 21:31:16 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/interesting-job-for-cantonese-speaking-microworkers/ | Status: 200 | Size: 49230 bytes
+2026-02-23 21:31:16 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/exclude-list-feature/
+2026-02-23 21:31:23 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/exclude-list-feature/: All validations passed
+2026-02-23 21:31:23 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/exclude-list-feature/ | Status: 200 | Size: 52915 bytes
+2026-02-23 21:31:23 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/unique-answers-feature/
+2026-02-23 21:31:30 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/unique-answers-feature/: All validations passed
+2026-02-23 21:31:30 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/unique-answers-feature/ | Status: 200 | Size: 53184 bytes
+2026-02-23 21:31:30 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/whats-new-in-mw-qt-optional-feature/
+2026-02-23 21:31:38 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/whats-new-in-mw-qt-optional-feature/: All validations passed
+2026-02-23 21:31:38 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/whats-new-in-mw-qt-optional-feature/ | Status: 200 | Size: 50512 bytes
+2026-02-23 21:31:38 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/running-survey-projects-in-mw/
+2026-02-23 21:31:45 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/running-survey-projects-in-mw/: All validations passed
+2026-02-23 21:31:45 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/running-survey-projects-in-mw/ | Status: 200 | Size: 52141 bytes
+2026-02-23 21:31:46 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/getting-to-know-the-pre-defined-usa-groups-and-regions/
+2026-02-23 21:31:50 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/getting-to-know-the-pre-defined-usa-groups-and-regions/: All validations passed
+2026-02-23 21:31:50 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/getting-to-know-the-pre-defined-usa-groups-and-regions/ | Status: 200 | Size: 48378 bytes
+2026-02-23 21:31:50 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/the-microworkers-open-beta-has-started/
+2026-02-23 21:31:54 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/the-microworkers-open-beta-has-started/: All validations passed
+2026-02-23 21:31:54 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/the-microworkers-open-beta-has-started/ | Status: 200 | Size: 58539 bytes
+2026-02-23 21:31:55 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/help-test-a-software-and-earn-new-project-for-us-microworkers/
+2026-02-23 21:32:01 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/help-test-a-software-and-earn-new-project-for-us-microworkers/: All validations passed
+2026-02-23 21:32:01 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/help-test-a-software-and-earn-new-project-for-us-microworkers/ | Status: 200 | Size: 51195 bytes
+2026-02-23 21:32:01 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/mw-things-to-know-auto-refill-of-positions/
+2026-02-23 21:49:31 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/mw-things-to-know-auto-refill-of-positions/: All validations passed
+2026-02-23 21:49:31 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/mw-things-to-know-auto-refill-of-positions/ | Status: 200 | Size: 50074 bytes
+2026-02-23 21:49:32 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/using-an-external-template-for-your-campaign/
+2026-02-23 21:49:39 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/using-an-external-template-for-your-campaign/: All validations passed
+2026-02-23 21:49:39 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/using-an-external-template-for-your-campaign/ | Status: 200 | Size: 58062 bytes
+2026-02-23 21:49:39 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/more-new-default-templates/
+2026-02-23 21:49:46 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/more-new-default-templates/: All validations passed
+2026-02-23 21:49:46 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/more-new-default-templates/ | Status: 200 | Size: 66258 bytes
+2026-02-23 21:49:46 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/new-default-templates/
+2026-02-23 21:49:52 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/new-default-templates/: All validations passed
+2026-02-23 21:49:52 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/new-default-templates/ | Status: 200 | Size: 58367 bytes
+2026-02-23 21:49:52 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/javascript-and-css-supported-templates/
+2026-02-23 21:52:41 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/javascript-and-css-supported-templates/: All validations passed
+2026-02-23 21:52:41 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/javascript-and-css-supported-templates/ | Status: 200 | Size: 177176 bytes
+2026-02-23 21:52:41 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/applying-auto-rate-feature/
+2026-02-23 21:52:48 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/applying-auto-rate-feature/: All validations passed
+2026-02-23 21:52:48 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/applying-auto-rate-feature/ | Status: 200 | Size: 58577 bytes
+2026-02-23 21:52:48 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/whats-new-in-microworkers-ttv-task-rating-template/
+2026-02-23 21:52:55 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/whats-new-in-microworkers-ttv-task-rating-template/: All validations passed
+2026-02-23 21:52:55 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/whats-new-in-microworkers-ttv-task-rating-template/ | Status: 200 | Size: 52803 bytes
+2026-02-23 21:52:55 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/added-feature-in-auto-rate-tasks/
+2026-02-23 21:53:01 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/added-feature-in-auto-rate-tasks/: All validations passed
+2026-02-23 21:53:01 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/added-feature-in-auto-rate-tasks/ | Status: 200 | Size: 54006 bytes
+2026-02-23 21:53:01 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/template-form-builder-from-json-schema/
+2026-02-23 21:53:08 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/template-form-builder-from-json-schema/: All validations passed
+2026-02-23 21:53:08 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/template-form-builder-from-json-schema/ | Status: 200 | Size: 52324 bytes
+2026-02-23 21:53:08 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/secure-data-better-with-external-campaigns/
+2026-02-23 21:53:14 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/secure-data-better-with-external-campaigns/: All validations passed
+2026-02-23 21:53:14 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/secure-data-better-with-external-campaigns/ | Status: 200 | Size: 57244 bytes
+2026-02-23 21:53:14 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/adding-a-new-line-in-a-csv-file/
+2026-02-23 21:53:20 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/adding-a-new-line-in-a-csv-file/: All validations passed
+2026-02-23 21:53:20 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/adding-a-new-line-in-a-csv-file/ | Status: 200 | Size: 48448 bytes
+2026-02-23 21:53:20 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/populate-hg-groups-from-your-qualification-tests/
+2026-02-23 21:53:27 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/populate-hg-groups-from-your-qualification-tests/: All validations passed
+2026-02-23 21:53:27 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/populate-hg-groups-from-your-qualification-tests/ | Status: 200 | Size: 54512 bytes
+2026-02-23 21:53:27 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/whats-new-in-mw-microworkers-hosted-data-services-qualification-test/
+2026-02-23 21:53:33 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/whats-new-in-mw-microworkers-hosted-data-services-qualification-test/: All validations passed
+2026-02-23 21:53:33 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/whats-new-in-mw-microworkers-hosted-data-services-qualification-test/ | Status: 200 | Size: 60505 bytes
+2026-02-23 21:53:33 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/ttv-tutorial-setting-up-template-with-accordion/
+2026-02-23 21:53:39 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/ttv-tutorial-setting-up-template-with-accordion/: All validations passed
+2026-02-23 21:53:39 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/ttv-tutorial-setting-up-template-with-accordion/ | Status: 200 | Size: 52816 bytes
+2026-02-23 21:53:39 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/improve-the-way-you-get-paid-this-holiday-season/
+2026-02-23 21:53:46 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/improve-the-way-you-get-paid-this-holiday-season/: All validations passed
+2026-02-23 21:53:46 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/improve-the-way-you-get-paid-this-holiday-season/ | Status: 200 | Size: 51855 bytes
+2026-02-23 21:53:46 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/whats-new-in-microworkers-favorite-feature/
+2026-02-23 21:53:53 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/whats-new-in-microworkers-favorite-feature/: All validations passed
+2026-02-23 21:53:53 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/whats-new-in-microworkers-favorite-feature/ | Status: 200 | Size: 54168 bytes
+2026-02-23 21:53:53 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/whats-new-in-microworkers-payoneer-withdrawals/
+2026-02-23 21:54:01 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/whats-new-in-microworkers-payoneer-withdrawals/: All validations passed
+2026-02-23 21:54:01 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/whats-new-in-microworkers-payoneer-withdrawals/ | Status: 200 | Size: 52912 bytes
+2026-02-23 21:54:01 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/added-api-endpoints/
+2026-02-23 21:54:05 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/added-api-endpoints/: All validations passed
+2026-02-23 21:54:05 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/added-api-endpoints/ | Status: 200 | Size: 47121 bytes
+2026-02-23 21:54:06 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/qualifications-for-auto-approval-of-campaigns/
+2026-02-23 21:54:11 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/qualifications-for-auto-approval-of-campaigns/: All validations passed
+2026-02-23 21:54:11 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/qualifications-for-auto-approval-of-campaigns/ | Status: 200 | Size: 46382 bytes
+2026-02-23 21:54:12 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/whats-new-in-ttv-max-positions-per-day/
+2026-02-23 21:54:19 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/whats-new-in-ttv-max-positions-per-day/: All validations passed
+2026-02-23 21:54:19 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/whats-new-in-ttv-max-positions-per-day/ | Status: 200 | Size: 48744 bytes
+2026-02-23 21:54:19 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/auto-rate-tasks-feature/
+2026-02-23 21:54:26 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/auto-rate-tasks-feature/: All validations passed
+2026-02-23 21:54:26 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/auto-rate-tasks-feature/ | Status: 200 | Size: 52446 bytes
+2026-02-23 21:54:26 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/ttv-tutorial-audio-transcription-template/
+2026-02-23 21:54:34 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/ttv-tutorial-audio-transcription-template/: All validations passed
+2026-02-23 21:54:34 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/ttv-tutorial-audio-transcription-template/ | Status: 200 | Size: 51900 bytes
+2026-02-23 21:54:34 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/whats-new-in-mw-microworkers-hosted-qualification-exams/
+2026-02-23 21:54:39 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/whats-new-in-mw-microworkers-hosted-qualification-exams/: All validations passed
+2026-02-23 21:54:39 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/whats-new-in-mw-microworkers-hosted-qualification-exams/ | Status: 200 | Size: 50569 bytes
+2026-02-23 21:54:39 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/ttv-tutorial-image-categorization-template/
+2026-02-23 21:54:46 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/ttv-tutorial-image-categorization-template/: All validations passed
+2026-02-23 21:54:46 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/ttv-tutorial-image-categorization-template/ | Status: 200 | Size: 56649 bytes
+2026-02-23 21:54:46 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/ttv-tutorial-amount-validation/
+2026-02-23 21:54:52 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/ttv-tutorial-amount-validation/: All validations passed
+2026-02-23 21:54:52 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/ttv-tutorial-amount-validation/ | Status: 200 | Size: 51821 bytes
+2026-02-23 21:54:52 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/ttv-tutorial-date-and-number-validation/
+2026-02-23 21:54:59 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/ttv-tutorial-date-and-number-validation/: All validations passed
+2026-02-23 21:54:59 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/ttv-tutorial-date-and-number-validation/ | Status: 200 | Size: 57696 bytes
+2026-02-23 21:54:59 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/ttv-tutorial-web-data-collection-part-2-data-mining/
+2026-02-23 21:55:07 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/ttv-tutorial-web-data-collection-part-2-data-mining/: All validations passed
+2026-02-23 21:55:07 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/ttv-tutorial-web-data-collection-part-2-data-mining/ | Status: 200 | Size: 75114 bytes
+2026-02-23 21:55:07 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/ttv-tutorial-web-data-collection-part-1-data-extraction/
+2026-02-23 21:55:14 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/ttv-tutorial-web-data-collection-part-1-data-extraction/: All validations passed
+2026-02-23 21:55:14 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/ttv-tutorial-web-data-collection-part-1-data-extraction/ | Status: 200 | Size: 62652 bytes
+2026-02-23 21:55:15 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/ttv-tutorial-embedding-videos-in-template/
+2026-02-23 21:55:21 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/ttv-tutorial-embedding-videos-in-template/: All validations passed
+2026-02-23 21:55:21 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/ttv-tutorial-embedding-videos-in-template/ | Status: 200 | Size: 55603 bytes
+2026-02-23 21:55:22 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/ttv-tutorial-transcribe-data-from-image/
+2026-02-23 21:55:28 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/ttv-tutorial-transcribe-data-from-image/: All validations passed
+2026-02-23 21:55:28 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/ttv-tutorial-transcribe-data-from-image/ | Status: 200 | Size: 60360 bytes
+2026-02-23 21:55:28 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/creating-template-with-images/
+2026-02-23 21:55:35 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/creating-template-with-images/: All validations passed
+2026-02-23 21:55:35 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/creating-template-with-images/ | Status: 200 | Size: 53232 bytes
+2026-02-23 21:55:36 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/whats-new-in-mw-ttv-editor-upgrade/
+2026-02-23 21:55:42 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/whats-new-in-mw-ttv-editor-upgrade/: All validations passed
+2026-02-23 21:55:42 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/whats-new-in-mw-ttv-editor-upgrade/ | Status: 200 | Size: 48097 bytes
+2026-02-23 21:55:42 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/microworkers-things-to-know-qualification-exams/
+2026-02-23 21:55:49 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/microworkers-things-to-know-qualification-exams/: All validations passed
+2026-02-23 21:55:49 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/microworkers-things-to-know-qualification-exams/ | Status: 200 | Size: 52584 bytes
+2026-02-23 21:55:49 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/a-guide-to-running-review-campaigns-on-microworkers/
+2026-02-23 21:55:55 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/a-guide-to-running-review-campaigns-on-microworkers/: All validations passed
+2026-02-23 21:55:55 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/a-guide-to-running-review-campaigns-on-microworkers/ | Status: 200 | Size: 53298 bytes
+2026-02-23 21:55:55 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/whats-new-in-microworkers-assigning-unlimited-positions-in-hg/
+2026-02-23 21:56:02 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/whats-new-in-microworkers-assigning-unlimited-positions-in-hg/: All validations passed
+2026-02-23 21:56:02 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/whats-new-in-microworkers-assigning-unlimited-positions-in-hg/ | Status: 200 | Size: 49115 bytes
+2026-02-23 21:56:03 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/whats-new-in-microworkers-ttv-is-finally-here-2/
+2026-02-23 21:56:09 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/whats-new-in-microworkers-ttv-is-finally-here-2/: All validations passed
+2026-02-23 21:56:09 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/whats-new-in-microworkers-ttv-is-finally-here-2/ | Status: 200 | Size: 51658 bytes
+2026-02-23 21:56:09 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/ttv-tutorials/
+2026-02-23 21:56:13 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/ttv-tutorials/: All validations passed
+2026-02-23 21:56:13 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/ttv-tutorials/ | Status: 200 | Size: 47425 bytes
+2026-02-23 21:56:13 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/microworkers-introduces-ttv-a-ton-of-additional-improvements-2/
+2026-02-23 21:56:19 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/microworkers-introduces-ttv-a-ton-of-additional-improvements-2/: All validations passed
+2026-02-23 21:56:19 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/microworkers-introduces-ttv-a-ton-of-additional-improvements-2/ | Status: 200 | Size: 53911 bytes
+2026-02-23 21:56:19 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/2015/04/page/2/
+2026-02-23 21:56:25 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/2015/04/page/2/: All validations passed
+2026-02-23 21:56:25 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/2015/04/page/2/ | Status: 200 | Size: 39862 bytes
+2026-02-23 21:56:25 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/consistent-mw-experience-across-any-device/
+2026-02-23 21:56:31 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/consistent-mw-experience-across-any-device/: All validations passed
+2026-02-23 21:56:31 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/consistent-mw-experience-across-any-device/ | Status: 200 | Size: 57171 bytes
+2026-02-23 21:56:31 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/5-steps-to-successful-hg-campaigns/
+2026-02-23 21:56:38 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/5-steps-to-successful-hg-campaigns/: All validations passed
+2026-02-23 21:56:38 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/5-steps-to-successful-hg-campaigns/ | Status: 200 | Size: 51526 bytes
+2026-02-23 21:56:38 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/whats-new-in-microworkers-file-upload-feature-introduced/
+2026-02-23 21:56:44 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/whats-new-in-microworkers-file-upload-feature-introduced/: All validations passed
+2026-02-23 21:56:44 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/whats-new-in-microworkers-file-upload-feature-introduced/ | Status: 200 | Size: 62722 bytes
+2026-02-23 21:56:44 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/api-tutorial-part-iii/
+2026-02-23 21:56:50 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/api-tutorial-part-iii/: All validations passed
+2026-02-23 21:56:50 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/api-tutorial-part-iii/ | Status: 200 | Size: 55079 bytes
+2026-02-23 21:56:50 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/api-tutorial-part-ii/
+2026-02-23 21:56:55 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/api-tutorial-part-ii/: All validations passed
+2026-02-23 21:56:55 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/api-tutorial-part-ii/ | Status: 200 | Size: 52707 bytes
+2026-02-23 21:56:55 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/api-tutorial-part-i/
+2026-02-23 21:57:00 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/api-tutorial-part-i/: All validations passed
+2026-02-23 21:57:00 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/api-tutorial-part-i/ | Status: 200 | Size: 53579 bytes
+2026-02-23 21:57:01 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/api-tutorial-introduction/
+2026-02-23 21:57:07 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/api-tutorial-introduction/: All validations passed
+2026-02-23 21:57:07 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/api-tutorial-introduction/ | Status: 200 | Size: 57657 bytes
+2026-02-23 21:57:07 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/exhibition-at-crowconf-2013/
+2026-02-23 21:57:13 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/exhibition-at-crowconf-2013/: All validations passed
+2026-02-23 21:57:13 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/exhibition-at-crowconf-2013/ | Status: 200 | Size: 60845 bytes
+2026-02-23 21:57:13 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/new-features-deployed-to-the-beta-platform/
+2026-02-23 21:57:19 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/new-features-deployed-to-the-beta-platform/: All validations passed
+2026-02-23 21:57:19 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/new-features-deployed-to-the-beta-platform/ | Status: 200 | Size: 57959 bytes
+2026-02-23 21:57:19 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/getting-involved-as-beta-tester/
+2026-02-23 21:57:23 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/getting-involved-as-beta-tester/: All validations passed
+2026-02-23 21:57:23 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/getting-involved-as-beta-tester/ | Status: 200 | Size: 55921 bytes
+2026-02-23 21:57:23 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/microworkers-reloaded/
+2026-02-23 21:57:30 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/microworkers-reloaded/: All validations passed
+2026-02-23 21:57:30 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/microworkers-reloaded/ | Status: 200 | Size: 71365 bytes
+2026-02-23 21:57:30 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/welcome-to-the-microworkers-com-blog/
+2026-02-23 21:57:35 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/welcome-to-the-microworkers-com-blog/: All validations passed
+2026-02-23 21:57:35 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/welcome-to-the-microworkers-com-blog/ | Status: 200 | Size: 51254 bytes
+2026-02-23 21:57:35 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/specialized-workers-for-your-specialized-jobs/
+2026-02-23 21:57:39 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/specialized-workers-for-your-specialized-jobs/: All validations passed
+2026-02-23 21:57:40 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/specialized-workers-for-your-specialized-jobs/ | Status: 200 | Size: 51998 bytes
+2026-02-23 21:57:40 - scraper.www.microworkers.com - INFO - Starting scrape: https://www.microworkers.com/blog/whats-new-in-microworkers-hg-lock-task-api/
+2026-02-23 21:57:44 - scraper.www.microworkers.com - INFO - ✓ VALIDATION PASSED: https://www.microworkers.com/blog/whats-new-in-microworkers-hg-lock-task-api/: All validations passed
+2026-02-23 21:57:44 - scraper.www.microworkers.com - INFO - ✓ SUCCESS: https://www.microworkers.com/blog/whats-new-in-microworkers-hg-lock-task-api/ | Status: 200 | Size: 48156 bytes

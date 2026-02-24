@@ -1,0 +1,1284 @@
+2026-02-24 14:51:15 - scraper.humansintheloop.org - INFO - Starting scrape of Humans in the Loop
+2026-02-24 14:51:24 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/data-annotation-trends-2026-forecast-best-practices/
+2026-02-24 14:51:30 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/data-annotation-trends-2026-forecast-best-practices/: All validations passed
+2026-02-24 14:51:30 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/data-annotation-trends-2026-forecast-best-practices/ | Status: 200 | Size: 356368 bytes
+2026-02-24 14:51:30 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/a-practical-masterclass-with-career-business-coach-markos-korvesis/
+2026-02-24 14:51:35 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/a-practical-masterclass-with-career-business-coach-markos-korvesis/: All validations passed
+2026-02-24 14:51:35 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/a-practical-masterclass-with-career-business-coach-markos-korvesis/ | Status: 200 | Size: 319556 bytes
+2026-02-24 14:51:35 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/masterclass-for-social-entrepreneurs-building-a-strong-brand/
+2026-02-24 14:51:41 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/masterclass-for-social-entrepreneurs-building-a-strong-brand/: All validations passed
+2026-02-24 14:51:41 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/masterclass-for-social-entrepreneurs-building-a-strong-brand/ | Status: 200 | Size: 321623 bytes
+2026-02-24 14:51:41 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/3-ways-synthetic-data-breaks-models-and-how-human-validators-fix-them/
+2026-02-24 14:51:47 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/3-ways-synthetic-data-breaks-models-and-how-human-validators-fix-them/: All validations passed
+2026-02-24 14:51:47 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/3-ways-synthetic-data-breaks-models-and-how-human-validators-fix-them/ | Status: 200 | Size: 358479 bytes
+2026-02-24 14:51:47 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tess-valbuena-speaks-at-forbes-bulgaria-innovation-forum/
+2026-02-24 14:51:52 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tess-valbuena-speaks-at-forbes-bulgaria-innovation-forum/: All validations passed
+2026-02-24 14:51:52 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tess-valbuena-speaks-at-forbes-bulgaria-innovation-forum/ | Status: 200 | Size: 314322 bytes
+2026-02-24 14:51:52 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/preventing-ai-diagnostic-errors-healthcare/
+2026-02-24 14:51:57 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/preventing-ai-diagnostic-errors-healthcare/: All validations passed
+2026-02-24 14:51:57 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/preventing-ai-diagnostic-errors-healthcare/ | Status: 200 | Size: 370503 bytes
+2026-02-24 14:51:57 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/humans-in-the-loop-honored-at-unga-2025/
+2026-02-24 14:52:03 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/humans-in-the-loop-honored-at-unga-2025/: All validations passed
+2026-02-24 14:52:03 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/humans-in-the-loop-honored-at-unga-2025/ | Status: 200 | Size: 338014 bytes
+2026-02-24 14:52:03 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/building-ethical-ai-with-humans-in-the-loop-8-years-8-stories-of-impact/
+2026-02-24 14:52:03 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/building-ethical-ai-with-humans-in-the-loop-8-years-8-stories-of-impact/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/building-ethical-ai-with-humans-in-the-loop-8-years-8-stories-of-impact/
+Call log:
+  - navigating to "https://humansintheloop.org/building-ethical-ai-with-humans-in-the-loop-8-years-8-stories-of-impact/", waiting until "load"
+
+2026-02-24 14:52:03 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/building-ethical-ai-with-humans-in-the-loop-8-years-8-stories-of-impact/ (attempt 2/3)
+2026-02-24 14:52:11 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/building-ethical-ai-with-humans-in-the-loop-8-years-8-stories-of-impact/: All validations passed
+2026-02-24 14:52:11 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/building-ethical-ai-with-humans-in-the-loop-8-years-8-stories-of-impact/ | Status: 200 | Size: 318707 bytes
+2026-02-24 14:52:11 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/how-humans-in-the-loop-powers-responsible-ai-through-data-annotation/
+2026-02-24 14:52:16 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/how-humans-in-the-loop-powers-responsible-ai-through-data-annotation/: All validations passed
+2026-02-24 14:52:16 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/how-humans-in-the-loop-powers-responsible-ai-through-data-annotation/ | Status: 200 | Size: 355277 bytes
+2026-02-24 14:52:17 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/episode-9-building-a-scalable-lead-gen-funnel/
+2026-02-24 14:52:23 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/episode-9-building-a-scalable-lead-gen-funnel/: All validations passed
+2026-02-24 14:52:23 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/episode-9-building-a-scalable-lead-gen-funnel/ | Status: 200 | Size: 325157 bytes
+2026-02-24 14:52:23 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/what-is-model-collapse-and-why-its-a-2025-concern/
+2026-02-24 14:52:28 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/what-is-model-collapse-and-why-its-a-2025-concern/: All validations passed
+2026-02-24 14:52:28 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/what-is-model-collapse-and-why-its-a-2025-concern/ | Status: 200 | Size: 347389 bytes
+2026-02-24 14:52:28 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/why-synthetic-data-is-taking-over-in-2025-solving-ais-data-crisis/
+2026-02-24 14:52:34 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/why-synthetic-data-is-taking-over-in-2025-solving-ais-data-crisis/: All validations passed
+2026-02-24 14:52:34 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/why-synthetic-data-is-taking-over-in-2025-solving-ais-data-crisis/ | Status: 200 | Size: 349074 bytes
+2026-02-24 14:52:34 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/episode-9-social-impact-report-2024/
+2026-02-24 14:52:40 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/episode-9-social-impact-report-2024/: All validations passed
+2026-02-24 14:52:40 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/episode-9-social-impact-report-2024/ | Status: 200 | Size: 314584 bytes
+2026-02-24 14:52:40 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/how-hitl-video-annotation-reduces-ai-bias-in-models-2025/
+2026-02-24 14:52:46 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/how-hitl-video-annotation-reduces-ai-bias-in-models-2025/: All validations passed
+2026-02-24 14:52:46 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/how-hitl-video-annotation-reduces-ai-bias-in-models-2025/ | Status: 200 | Size: 350293 bytes
+2026-02-24 14:52:46 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/how-human-in-the-loop-annotation-improves-driver-monitoring/
+2026-02-24 14:52:54 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/how-human-in-the-loop-annotation-improves-driver-monitoring/: All validations passed
+2026-02-24 14:52:54 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/how-human-in-the-loop-annotation-improves-driver-monitoring/ | Status: 200 | Size: 343257 bytes
+2026-02-24 14:52:54 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/the-cost-of-bad-data/
+2026-02-24 14:52:59 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/the-cost-of-bad-data/: All validations passed
+2026-02-24 14:52:59 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/the-cost-of-bad-data/ | Status: 200 | Size: 324764 bytes
+2026-02-24 14:53:00 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/best-ai-training-datasets-2025/
+2026-02-24 14:53:00 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/best-ai-training-datasets-2025/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/best-ai-training-datasets-2025/
+Call log:
+  - navigating to "https://humansintheloop.org/best-ai-training-datasets-2025/", waiting until "load"
+
+2026-02-24 14:53:00 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/best-ai-training-datasets-2025/ (attempt 2/3)
+2026-02-24 14:53:06 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/best-ai-training-datasets-2025/: All validations passed
+2026-02-24 14:53:06 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/best-ai-training-datasets-2025/ | Status: 200 | Size: 350071 bytes
+2026-02-24 14:53:07 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/10-of-the-best-open-source-annotation-tools-for-computer-vision/
+2026-02-24 14:53:12 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/10-of-the-best-open-source-annotation-tools-for-computer-vision/: All validations passed
+2026-02-24 14:53:12 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/10-of-the-best-open-source-annotation-tools-for-computer-vision/ | Status: 200 | Size: 365039 bytes
+2026-02-24 14:53:12 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/5-things-you-need-to-know-about-live-monitoring-in-data-annotation/
+2026-02-24 14:53:17 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/5-things-you-need-to-know-about-live-monitoring-in-data-annotation/: All validations passed
+2026-02-24 14:53:17 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/5-things-you-need-to-know-about-live-monitoring-in-data-annotation/ | Status: 200 | Size: 347395 bytes
+2026-02-24 14:53:17 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/humans-behind-the-loop-interview-with-yalda/
+2026-02-24 14:53:22 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/humans-behind-the-loop-interview-with-yalda/: All validations passed
+2026-02-24 14:53:22 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/humans-behind-the-loop-interview-with-yalda/ | Status: 200 | Size: 324659 bytes
+2026-02-24 14:53:23 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/bridging-the-gap-empowering-women-through-tech-in-moldova/
+2026-02-24 14:53:29 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/bridging-the-gap-empowering-women-through-tech-in-moldova/: All validations passed
+2026-02-24 14:53:29 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/bridging-the-gap-empowering-women-through-tech-in-moldova/ | Status: 200 | Size: 321779 bytes
+2026-02-24 14:53:29 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/empowering-refugees-a-digital-journey-with-far-and-humans-in-the-loop-foundation/
+2026-02-24 14:53:35 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/empowering-refugees-a-digital-journey-with-far-and-humans-in-the-loop-foundation/: All validations passed
+2026-02-24 14:53:35 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/empowering-refugees-a-digital-journey-with-far-and-humans-in-the-loop-foundation/ | Status: 200 | Size: 330313 bytes
+2026-02-24 14:53:35 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/empowering-job-seekers-how-human-insights-enhance-career-decisions/
+2026-02-24 14:53:40 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/empowering-job-seekers-how-human-insights-enhance-career-decisions/: All validations passed
+2026-02-24 14:53:40 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/empowering-job-seekers-how-human-insights-enhance-career-decisions/ | Status: 200 | Size: 324604 bytes
+2026-02-24 14:53:40 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/the-role-of-human-in-the-loop-navigating-the-landscape-of-ai-systems/
+2026-02-24 14:53:46 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/the-role-of-human-in-the-loop-navigating-the-landscape-of-ai-systems/: All validations passed
+2026-02-24 14:53:46 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/the-role-of-human-in-the-loop-navigating-the-landscape-of-ai-systems/ | Status: 200 | Size: 340397 bytes
+2026-02-24 14:53:46 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/optimizing-active-learning-with-human-in-the-loop-unveiling-the-best-query-strategies-in-data-sampling/
+2026-02-24 14:53:52 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/optimizing-active-learning-with-human-in-the-loop-unveiling-the-best-query-strategies-in-data-sampling/: All validations passed
+2026-02-24 14:53:52 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/optimizing-active-learning-with-human-in-the-loop-unveiling-the-best-query-strategies-in-data-sampling/ | Status: 200 | Size: 322446 bytes
+2026-02-24 14:53:52 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/revolutionizing-medical-ai-the-power-of-expert-data-annotation/
+2026-02-24 14:53:57 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/revolutionizing-medical-ai-the-power-of-expert-data-annotation/: All validations passed
+2026-02-24 14:53:57 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/revolutionizing-medical-ai-the-power-of-expert-data-annotation/ | Status: 200 | Size: 344298 bytes
+2026-02-24 14:53:57 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/5-data-annotation-trends-to-keep-an-eye-on-in-2025/
+2026-02-24 14:54:02 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/5-data-annotation-trends-to-keep-an-eye-on-in-2025/: All validations passed
+2026-02-24 14:54:02 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/5-data-annotation-trends-to-keep-an-eye-on-in-2025/ | Status: 200 | Size: 348752 bytes
+2026-02-24 14:54:03 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/key-skills-for-a-career-in-data-annotation-data-work/
+2026-02-24 14:54:08 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/key-skills-for-a-career-in-data-annotation-data-work/: All validations passed
+2026-02-24 14:54:08 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/key-skills-for-a-career-in-data-annotation-data-work/ | Status: 200 | Size: 352540 bytes
+2026-02-24 14:54:08 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/human-input-in-medical-transcription-services-careers/
+2026-02-24 14:54:15 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/human-input-in-medical-transcription-services-careers/: All validations passed
+2026-02-24 14:54:15 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/human-input-in-medical-transcription-services-careers/ | Status: 200 | Size: 343892 bytes
+2026-02-24 14:54:15 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/ai-job-creation-refugees-2025/
+2026-02-24 14:54:21 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/ai-job-creation-refugees-2025/: All validations passed
+2026-02-24 14:54:21 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/ai-job-creation-refugees-2025/ | Status: 200 | Size: 336123 bytes
+2026-02-24 14:54:22 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/meet-mohamed-humans-in-the-loops-expert-of-medical-ai/
+2026-02-24 14:54:27 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/meet-mohamed-humans-in-the-loops-expert-of-medical-ai/: All validations passed
+2026-02-24 14:54:27 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/meet-mohamed-humans-in-the-loops-expert-of-medical-ai/ | Status: 200 | Size: 327897 bytes
+2026-02-24 14:54:27 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/the-synergy-of-human-in-the-loop-and-medical-ai-in-diagnosis-and-treatment/
+2026-02-24 14:54:31 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/the-synergy-of-human-in-the-loop-and-medical-ai-in-diagnosis-and-treatment/: All validations passed
+2026-02-24 14:54:31 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/the-synergy-of-human-in-the-loop-and-medical-ai-in-diagnosis-and-treatment/ | Status: 200 | Size: 360671 bytes
+2026-02-24 14:54:31 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/the-crucial-role-of-gdpr-compliant-data-annotation-for-the-procurement-persona/
+2026-02-24 14:54:37 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/the-crucial-role-of-gdpr-compliant-data-annotation-for-the-procurement-persona/: All validations passed
+2026-02-24 14:54:37 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/the-crucial-role-of-gdpr-compliant-data-annotation-for-the-procurement-persona/ | Status: 200 | Size: 315575 bytes
+2026-02-24 14:54:37 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/data-annotation-explained-to-grandma-unlocking-the-power-of-labeled-data-in-simple-terms/
+2026-02-24 14:54:42 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/data-annotation-explained-to-grandma-unlocking-the-power-of-labeled-data-in-simple-terms/: All validations passed
+2026-02-24 14:54:42 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/data-annotation-explained-to-grandma-unlocking-the-power-of-labeled-data-in-simple-terms/ | Status: 200 | Size: 320376 bytes
+2026-02-24 14:54:43 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/unraveling-data-edge-cases-enhancing-fire-monitoring-with-ai/
+2026-02-24 14:54:49 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/unraveling-data-edge-cases-enhancing-fire-monitoring-with-ai/: All validations passed
+2026-02-24 14:54:49 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/unraveling-data-edge-cases-enhancing-fire-monitoring-with-ai/ | Status: 200 | Size: 343989 bytes
+2026-02-24 14:54:49 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/how-ai-transforms-smart-cities-data-annotations-role/
+2026-02-24 14:54:56 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/how-ai-transforms-smart-cities-data-annotations-role/: All validations passed
+2026-02-24 14:54:56 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/how-ai-transforms-smart-cities-data-annotations-role/ | Status: 200 | Size: 348246 bytes
+2026-02-24 14:54:56 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/how-do-you-build-human-in-the-loop-ai-pipelines-using-active-learning/
+2026-02-24 14:55:00 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/how-do-you-build-human-in-the-loop-ai-pipelines-using-active-learning/: All validations passed
+2026-02-24 14:55:00 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/how-do-you-build-human-in-the-loop-ai-pipelines-using-active-learning/ | Status: 200 | Size: 325785 bytes
+2026-02-24 14:55:01 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/25-use-cases-for-computer-vision-with-a-human-in-the-loop/
+2026-02-24 14:55:06 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/25-use-cases-for-computer-vision-with-a-human-in-the-loop/: All validations passed
+2026-02-24 14:55:06 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/25-use-cases-for-computer-vision-with-a-human-in-the-loop/ | Status: 200 | Size: 394560 bytes
+2026-02-24 14:55:06 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/how-to-build-your-human-in-the-loop-pipeline-a-step-by-step-guide/
+2026-02-24 14:55:12 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/how-to-build-your-human-in-the-loop-pipeline-a-step-by-step-guide/: All validations passed
+2026-02-24 14:55:12 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/how-to-build-your-human-in-the-loop-pipeline-a-step-by-step-guide/ | Status: 200 | Size: 331943 bytes
+2026-02-24 14:55:12 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/4-things-to-look-for-when-choosing-a-human-in-the-loop-provider/
+2026-02-24 14:55:16 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/4-things-to-look-for-when-choosing-a-human-in-the-loop-provider/: All validations passed
+2026-02-24 14:55:16 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/4-things-to-look-for-when-choosing-a-human-in-the-loop-provider/ | Status: 200 | Size: 328264 bytes
+2026-02-24 14:55:16 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/edge-case-handling-in-real-time-with-a-human-in-the-loop/
+2026-02-24 14:55:23 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/edge-case-handling-in-real-time-with-a-human-in-the-loop/: All validations passed
+2026-02-24 14:55:23 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/edge-case-handling-in-real-time-with-a-human-in-the-loop/ | Status: 200 | Size: 357433 bytes
+2026-02-24 14:55:23 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/5-ways-to-avoid-bias-in-computer-vision-ai/
+2026-02-24 14:55:28 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/5-ways-to-avoid-bias-in-computer-vision-ai/: All validations passed
+2026-02-24 14:55:28 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/5-ways-to-avoid-bias-in-computer-vision-ai/ | Status: 200 | Size: 359189 bytes
+2026-02-24 14:55:28 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/whitepaper-series-on-bias-in-ai/
+2026-02-24 14:55:34 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/whitepaper-series-on-bias-in-ai/: All validations passed
+2026-02-24 14:55:34 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/whitepaper-series-on-bias-in-ai/ | Status: 200 | Size: 332293 bytes
+2026-02-24 14:55:35 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/what-is-a-human-in-the-loop/
+2026-02-24 14:55:39 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/what-is-a-human-in-the-loop/: All validations passed
+2026-02-24 14:55:39 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/what-is-a-human-in-the-loop/ | Status: 200 | Size: 317749 bytes
+2026-02-24 14:55:39 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/types-of-image-annotation/
+2026-02-24 14:55:56 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/types-of-image-annotation/: All validations passed
+2026-02-24 14:55:56 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/types-of-image-annotation/ | Status: 200 | Size: 318098 bytes
+2026-02-24 14:55:56 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/ai-sustainability-pioneering-a-greener-future/
+2026-02-24 14:56:02 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/ai-sustainability-pioneering-a-greener-future/: All validations passed
+2026-02-24 14:56:02 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/ai-sustainability-pioneering-a-greener-future/ | Status: 200 | Size: 336180 bytes
+2026-02-24 14:56:02 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/meet-our-annotators-live-monitoring-team/
+2026-02-24 14:56:13 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/meet-our-annotators-live-monitoring-team/: All validations passed
+2026-02-24 14:56:13 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/meet-our-annotators-live-monitoring-team/ | Status: 200 | Size: 349505 bytes
+2026-02-24 14:56:14 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/https-humansintheloop-org-demystifying-annotation-unlocking-the-power-of-tech-2/
+2026-02-24 14:56:19 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/https-humansintheloop-org-demystifying-annotation-unlocking-the-power-of-tech-2/: All validations passed
+2026-02-24 14:56:19 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/https-humansintheloop-org-demystifying-annotation-unlocking-the-power-of-tech-2/ | Status: 200 | Size: 320219 bytes
+2026-02-24 14:56:20 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/guide-to-navigating-the-competitive-job-market-step-by-step-with-expert-tips-from-professional-recruiters/
+2026-02-24 14:56:25 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/guide-to-navigating-the-competitive-job-market-step-by-step-with-expert-tips-from-professional-recruiters/: All validations passed
+2026-02-24 14:56:25 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/guide-to-navigating-the-competitive-job-market-step-by-step-with-expert-tips-from-professional-recruiters/ | Status: 200 | Size: 328522 bytes
+2026-02-24 14:56:25 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/bridge-to-success-approaching-job-interviews/
+2026-02-24 14:56:25 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/bridge-to-success-approaching-job-interviews/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/bridge-to-success-approaching-job-interviews/
+Call log:
+  - navigating to "https://humansintheloop.org/bridge-to-success-approaching-job-interviews/", waiting until "load"
+
+2026-02-24 14:56:25 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/bridge-to-success-approaching-job-interviews/ (attempt 2/3)
+2026-02-24 14:56:34 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/bridge-to-success-approaching-job-interviews/: All validations passed
+2026-02-24 14:56:34 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/bridge-to-success-approaching-job-interviews/ | Status: 200 | Size: 339575 bytes
+2026-02-24 14:56:35 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/powtoon-fueling-the-creator-economy/
+2026-02-24 14:56:41 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/powtoon-fueling-the-creator-economy/: All validations passed
+2026-02-24 14:56:41 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/powtoon-fueling-the-creator-economy/ | Status: 200 | Size: 320874 bytes
+2026-02-24 14:56:41 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/meet-our-annotators-hitl-stars/
+2026-02-24 14:56:47 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/meet-our-annotators-hitl-stars/: All validations passed
+2026-02-24 14:56:47 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/meet-our-annotators-hitl-stars/ | Status: 200 | Size: 324549 bytes
+2026-02-24 14:56:47 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/meet-our-annotators-retail-team/
+2026-02-24 14:56:54 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/meet-our-annotators-retail-team/: All validations passed
+2026-02-24 14:56:54 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/meet-our-annotators-retail-team/ | Status: 200 | Size: 321653 bytes
+2026-02-24 14:56:55 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/data-labeling-companies-with-a-social-impact/
+2026-02-24 14:56:59 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/data-labeling-companies-with-a-social-impact/: All validations passed
+2026-02-24 14:56:59 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/data-labeling-companies-with-a-social-impact/ | Status: 200 | Size: 324880 bytes
+2026-02-24 14:57:00 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/post-covid-19-world-how-ai-can-ensure-a-more-inclusive-digital-economy/
+2026-02-24 14:57:06 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/post-covid-19-world-how-ai-can-ensure-a-more-inclusive-digital-economy/: All validations passed
+2026-02-24 14:57:06 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/post-covid-19-world-how-ai-can-ensure-a-more-inclusive-digital-economy/ | Status: 200 | Size: 318542 bytes
+2026-02-24 14:57:06 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/meet-our-annotators-hitl-stars-2/
+2026-02-24 14:57:14 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/meet-our-annotators-hitl-stars-2/: All validations passed
+2026-02-24 14:57:14 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/meet-our-annotators-hitl-stars-2/ | Status: 200 | Size: 347597 bytes
+2026-02-24 14:57:14 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/language-partnership-program/
+2026-02-24 14:57:21 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/language-partnership-program/: All validations passed
+2026-02-24 14:57:21 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/language-partnership-program/ | Status: 200 | Size: 336184 bytes
+2026-02-24 14:57:22 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/ultimate-guide-to-image-annotation-for-retail-ai/
+2026-02-24 14:57:29 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/ultimate-guide-to-image-annotation-for-retail-ai/: All validations passed
+2026-02-24 14:57:29 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/ultimate-guide-to-image-annotation-for-retail-ai/ | Status: 200 | Size: 389589 bytes
+2026-02-24 14:57:29 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/ultimate-guide-to-document-annotation-for-ocr-ai/
+2026-02-24 14:57:35 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/ultimate-guide-to-document-annotation-for-ocr-ai/: All validations passed
+2026-02-24 14:57:35 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/ultimate-guide-to-document-annotation-for-ocr-ai/ | Status: 200 | Size: 392325 bytes
+2026-02-24 14:57:35 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/ultimate-guide-to-car-damage-annotation-for-visual-inspection-ai/
+2026-02-24 14:57:41 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/ultimate-guide-to-car-damage-annotation-for-visual-inspection-ai/: All validations passed
+2026-02-24 14:57:41 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/ultimate-guide-to-car-damage-annotation-for-visual-inspection-ai/ | Status: 200 | Size: 384987 bytes
+2026-02-24 14:57:41 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/ultimate-guide-to-keypoint-annotation-for-sports-ai/
+2026-02-24 14:57:49 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/ultimate-guide-to-keypoint-annotation-for-sports-ai/: All validations passed
+2026-02-24 14:57:49 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/ultimate-guide-to-keypoint-annotation-for-sports-ai/ | Status: 200 | Size: 394792 bytes
+2026-02-24 14:57:49 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/ultimate-guide-to-surgical-video-annotation-for-medical-ai/
+2026-02-24 14:57:55 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/ultimate-guide-to-surgical-video-annotation-for-medical-ai/: All validations passed
+2026-02-24 14:57:55 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/ultimate-guide-to-surgical-video-annotation-for-medical-ai/ | Status: 200 | Size: 393577 bytes
+2026-02-24 14:57:55 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/ultimate-guide-to-video-annotation-for-surveillance-ai/
+2026-02-24 14:58:02 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/ultimate-guide-to-video-annotation-for-surveillance-ai/: All validations passed
+2026-02-24 14:58:02 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/ultimate-guide-to-video-annotation-for-surveillance-ai/ | Status: 200 | Size: 383173 bytes
+2026-02-24 14:58:02 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/ultimate-guide-to-image-labeling-for-recycling-ai/
+2026-02-24 14:58:11 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/ultimate-guide-to-image-labeling-for-recycling-ai/: All validations passed
+2026-02-24 14:58:11 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/ultimate-guide-to-image-labeling-for-recycling-ai/ | Status: 200 | Size: 369767 bytes
+2026-02-24 14:58:11 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/ultimate-guide-for-outsourcing-data-annotation/
+2026-02-24 14:58:11 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/ultimate-guide-for-outsourcing-data-annotation/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/ultimate-guide-for-outsourcing-data-annotation/
+Call log:
+  - navigating to "https://humansintheloop.org/ultimate-guide-for-outsourcing-data-annotation/", waiting until "load"
+
+2026-02-24 14:58:11 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/ultimate-guide-for-outsourcing-data-annotation/ (attempt 2/3)
+2026-02-24 14:58:18 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/ultimate-guide-for-outsourcing-data-annotation/: All validations passed
+2026-02-24 14:58:18 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/ultimate-guide-for-outsourcing-data-annotation/ | Status: 200 | Size: 355536 bytes
+2026-02-24 14:58:18 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/the-best-image-annotation-platforms-an-honest-review/
+2026-02-24 14:58:43 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/the-best-image-annotation-platforms-an-honest-review/: All validations passed
+2026-02-24 14:58:43 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/the-best-image-annotation-platforms-an-honest-review/ | Status: 200 | Size: 319325 bytes
+2026-02-24 14:58:43 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/looking-for-an-image-labeling-tool-check-out-our-top-favorite-platforms/
+2026-02-24 14:59:13 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/looking-for-an-image-labeling-tool-check-out-our-top-favorite-platforms/ | Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://humansintheloop.org/looking-for-an-image-labeling-tool-check-out-our-top-favorite-platforms/", waiting until "load"
+
+2026-02-24 14:59:13 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/looking-for-an-image-labeling-tool-check-out-our-top-favorite-platforms/ (attempt 2/3)
+2026-02-24 14:59:45 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/looking-for-an-image-labeling-tool-check-out-our-top-favorite-platforms/ | Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://humansintheloop.org/looking-for-an-image-labeling-tool-check-out-our-top-favorite-platforms/", waiting until "load"
+
+2026-02-24 14:59:45 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/looking-for-an-image-labeling-tool-check-out-our-top-favorite-platforms/ (attempt 3/3)
+2026-02-24 15:00:19 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/looking-for-an-image-labeling-tool-check-out-our-top-favorite-platforms/ | Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://humansintheloop.org/looking-for-an-image-labeling-tool-check-out-our-top-favorite-platforms/", waiting until "load"
+
+2026-02-24 15:00:19 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/top-4-annotation-tools-for-computer-vision/
+2026-02-24 15:00:49 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/top-4-annotation-tools-for-computer-vision/ | Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://humansintheloop.org/top-4-annotation-tools-for-computer-vision/", waiting until "load"
+
+2026-02-24 15:00:49 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/top-4-annotation-tools-for-computer-vision/ (attempt 2/3)
+2026-02-24 15:01:23 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/top-4-annotation-tools-for-computer-vision/: All validations passed
+2026-02-24 15:01:23 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/top-4-annotation-tools-for-computer-vision/ | Status: 200 | Size: 340884 bytes
+2026-02-24 15:01:23 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tools-we-love-vol-1-supervise-ly/
+2026-02-24 15:01:30 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tools-we-love-vol-1-supervise-ly/: All validations passed
+2026-02-24 15:01:30 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tools-we-love-vol-1-supervise-ly/ | Status: 200 | Size: 324764 bytes
+2026-02-24 15:01:30 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tools-we-love-vol-2-trainingdata-io/
+2026-02-24 15:01:37 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tools-we-love-vol-2-trainingdata-io/: All validations passed
+2026-02-24 15:01:37 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tools-we-love-vol-2-trainingdata-io/ | Status: 200 | Size: 319755 bytes
+2026-02-24 15:01:37 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tools-we-love-vol-3-superannotate/
+2026-02-24 15:01:42 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tools-we-love-vol-3-superannotate/: All validations passed
+2026-02-24 15:01:42 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tools-we-love-vol-3-superannotate/ | Status: 200 | Size: 328372 bytes
+2026-02-24 15:01:42 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tools-we-love-vol-4-hasty-ai/
+2026-02-24 15:01:47 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tools-we-love-vol-4-hasty-ai/: All validations passed
+2026-02-24 15:01:47 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tools-we-love-vol-4-hasty-ai/ | Status: 200 | Size: 324707 bytes
+2026-02-24 15:01:48 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tools-we-love-vol-5-picterra/
+2026-02-24 15:01:53 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tools-we-love-vol-5-picterra/: All validations passed
+2026-02-24 15:01:53 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tools-we-love-vol-5-picterra/ | Status: 200 | Size: 323329 bytes
+2026-02-24 15:01:53 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tools-we-love-vol-6-segments-ai/
+2026-02-24 15:02:00 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tools-we-love-vol-6-segments-ai/: All validations passed
+2026-02-24 15:02:00 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tools-we-love-vol-6-segments-ai/ | Status: 200 | Size: 324625 bytes
+2026-02-24 15:02:00 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tools-we-love-vol-7-diffgram/
+2026-02-24 15:02:08 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tools-we-love-vol-7-diffgram/: All validations passed
+2026-02-24 15:02:08 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tools-we-love-vol-7-diffgram/ | Status: 200 | Size: 319500 bytes
+2026-02-24 15:02:08 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tools-we-love-vol-8-kili-technology/
+2026-02-24 15:02:13 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tools-we-love-vol-8-kili-technology/: All validations passed
+2026-02-24 15:02:13 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tools-we-love-vol-8-kili-technology/ | Status: 200 | Size: 320978 bytes
+2026-02-24 15:02:13 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tools-we-love-vol-9-darwin/
+2026-02-24 15:02:20 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tools-we-love-vol-9-darwin/: All validations passed
+2026-02-24 15:02:20 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tools-we-love-vol-9-darwin/ | Status: 200 | Size: 322830 bytes
+2026-02-24 15:02:20 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tools-we-love-vol-10-understand-ai/
+2026-02-24 15:02:25 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tools-we-love-vol-10-understand-ai/: All validations passed
+2026-02-24 15:02:25 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tools-we-love-vol-10-understand-ai/ | Status: 200 | Size: 323218 bytes
+2026-02-24 15:02:25 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/best-medical-annotation-tools-for-healthcare-ai/
+2026-02-24 15:02:25 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/best-medical-annotation-tools-for-healthcare-ai/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/best-medical-annotation-tools-for-healthcare-ai/
+Call log:
+  - navigating to "https://humansintheloop.org/best-medical-annotation-tools-for-healthcare-ai/", waiting until "load"
+
+2026-02-24 15:02:25 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/best-medical-annotation-tools-for-healthcare-ai/ (attempt 2/3)
+2026-02-24 15:02:34 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/best-medical-annotation-tools-for-healthcare-ai/: All validations passed
+2026-02-24 15:02:34 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/best-medical-annotation-tools-for-healthcare-ai/ | Status: 200 | Size: 330552 bytes
+2026-02-24 15:02:35 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/hitl-announces-new-partnership-in-iraq-meet-workwell/
+2026-02-24 15:02:42 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/hitl-announces-new-partnership-in-iraq-meet-workwell/: All validations passed
+2026-02-24 15:02:42 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/hitl-announces-new-partnership-in-iraq-meet-workwell/ | Status: 200 | Size: 330688 bytes
+2026-02-24 15:02:43 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/hitl-announces-new-partnership-in-syria-meet-roia/
+2026-02-24 15:02:48 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/hitl-announces-new-partnership-in-syria-meet-roia/: All validations passed
+2026-02-24 15:02:48 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/hitl-announces-new-partnership-in-syria-meet-roia/ | Status: 200 | Size: 326902 bytes
+2026-02-24 15:02:48 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/hitl-announces-new-partnership-in-afghanistan/
+2026-02-24 15:02:55 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/hitl-announces-new-partnership-in-afghanistan/: All validations passed
+2026-02-24 15:02:55 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/hitl-announces-new-partnership-in-afghanistan/ | Status: 200 | Size: 326757 bytes
+2026-02-24 15:02:55 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/hitl-announces-new-partnership-in-lebanon-meet-techfugees/
+2026-02-24 15:03:03 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/hitl-announces-new-partnership-in-lebanon-meet-techfugees/: All validations passed
+2026-02-24 15:03:03 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/hitl-announces-new-partnership-in-lebanon-meet-techfugees/ | Status: 200 | Size: 328871 bytes
+2026-02-24 15:03:04 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/hitl-announces-new-partnership-in-the-drc-meet-warchild/
+2026-02-24 15:03:17 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/hitl-announces-new-partnership-in-the-drc-meet-warchild/: All validations passed
+2026-02-24 15:03:17 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/hitl-announces-new-partnership-in-the-drc-meet-warchild/ | Status: 200 | Size: 333100 bytes
+2026-02-24 15:03:17 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/hitl-announces-new-partnership-in-ukraine-meet-beetroot/
+2026-02-24 15:03:24 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/hitl-announces-new-partnership-in-ukraine-meet-beetroot/: All validations passed
+2026-02-24 15:03:24 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/hitl-announces-new-partnership-in-ukraine-meet-beetroot/ | Status: 200 | Size: 324904 bytes
+2026-02-24 15:03:24 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/techfugees-global-summit/
+2026-02-24 15:03:30 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/techfugees-global-summit/: All validations passed
+2026-02-24 15:03:30 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/techfugees-global-summit/ | Status: 200 | Size: 311270 bytes
+2026-02-24 15:03:31 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/forbes-30-under-30/
+2026-02-24 15:03:35 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/forbes-30-under-30/: All validations passed
+2026-02-24 15:03:35 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/forbes-30-under-30/ | Status: 200 | Size: 309757 bytes
+2026-02-24 15:03:35 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/dubai-expo-live/
+2026-02-24 15:03:35 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/dubai-expo-live/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/dubai-expo-live/
+Call log:
+  - navigating to "https://humansintheloop.org/dubai-expo-live/", waiting until "load"
+
+2026-02-24 15:03:35 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/dubai-expo-live/ (attempt 2/3)
+2026-02-24 15:03:43 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/dubai-expo-live/: All validations passed
+2026-02-24 15:03:43 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/dubai-expo-live/ | Status: 200 | Size: 313615 bytes
+2026-02-24 15:03:43 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/mit-solve/
+2026-02-24 15:03:50 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/mit-solve/: All validations passed
+2026-02-24 15:03:50 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/mit-solve/ | Status: 200 | Size: 312670 bytes
+2026-02-24 15:03:50 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/announcing-the-launch-of-doctors-in-the-loop-a-new-brand-for-medical-ai-annotation/
+2026-02-24 15:03:57 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/announcing-the-launch-of-doctors-in-the-loop-a-new-brand-for-medical-ai-annotation/: All validations passed
+2026-02-24 15:03:57 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/announcing-the-launch-of-doctors-in-the-loop-a-new-brand-for-medical-ai-annotation/ | Status: 200 | Size: 341054 bytes
+2026-02-24 15:03:58 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/humans-in-the-loop-wins-1st-prize-at-the-cartier-womens-initiative-awards/
+2026-02-24 15:03:58 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/humans-in-the-loop-wins-1st-prize-at-the-cartier-womens-initiative-awards/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/humans-in-the-loop-wins-1st-prize-at-the-cartier-womens-initiative-awards/
+Call log:
+  - navigating to "https://humansintheloop.org/humans-in-the-loop-wins-1st-prize-at-the-cartier-womens-initiative-awards/", waiting until "load"
+
+2026-02-24 15:03:58 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/humans-in-the-loop-wins-1st-prize-at-the-cartier-womens-initiative-awards/ (attempt 2/3)
+2026-02-24 15:04:08 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/humans-in-the-loop-wins-1st-prize-at-the-cartier-womens-initiative-awards/: All validations passed
+2026-02-24 15:04:08 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/humans-in-the-loop-wins-1st-prize-at-the-cartier-womens-initiative-awards/ | Status: 200 | Size: 315558 bytes
+2026-02-24 15:04:08 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/humans-in-the-loop-proud-to-be-a-certified-b-corp/
+2026-02-24 15:04:13 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/humans-in-the-loop-proud-to-be-a-certified-b-corp/: All validations passed
+2026-02-24 15:04:13 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/humans-in-the-loop-proud-to-be-a-certified-b-corp/ | Status: 200 | Size: 341758 bytes
+2026-02-24 15:04:13 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/honored-with-the-sdg-digital-gamechanger-award-in-the-pioneer-category/
+2026-02-24 15:04:19 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/honored-with-the-sdg-digital-gamechanger-award-in-the-pioneer-category/: All validations passed
+2026-02-24 15:04:19 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/honored-with-the-sdg-digital-gamechanger-award-in-the-pioneer-category/ | Status: 200 | Size: 328463 bytes
+2026-02-24 15:04:19 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/episode-4-annotation-best-practices-for-computer-vision/
+2026-02-24 15:04:26 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/episode-4-annotation-best-practices-for-computer-vision/: All validations passed
+2026-02-24 15:04:26 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/episode-4-annotation-best-practices-for-computer-vision/ | Status: 200 | Size: 574136 bytes
+2026-02-24 15:04:27 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/episode-5-unpacking-the-influence-of-hitl-workers-identities/
+2026-02-24 15:04:32 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/episode-5-unpacking-the-influence-of-hitl-workers-identities/: All validations passed
+2026-02-24 15:04:32 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/episode-5-unpacking-the-influence-of-hitl-workers-identities/ | Status: 200 | Size: 325495 bytes
+2026-02-24 15:04:33 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/episode-6-social-impact-report-2023/
+2026-02-24 15:04:38 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/episode-6-social-impact-report-2023/: All validations passed
+2026-02-24 15:04:38 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/episode-6-social-impact-report-2023/ | Status: 200 | Size: 316351 bytes
+2026-02-24 15:04:38 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/episode-7-ai-and-thermography/
+2026-02-24 15:04:43 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/episode-7-ai-and-thermography/: All validations passed
+2026-02-24 15:04:43 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/episode-7-ai-and-thermography/ | Status: 200 | Size: 335589 bytes
+2026-02-24 15:04:43 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/episode-1-keeping-humans-in-the-loop-ft-robert-monarch-and-gary-gavrilov/
+2026-02-24 15:04:50 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/episode-1-keeping-humans-in-the-loop-ft-robert-monarch-and-gary-gavrilov/: All validations passed
+2026-02-24 15:04:50 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/episode-1-keeping-humans-in-the-loop-ft-robert-monarch-and-gary-gavrilov/ | Status: 200 | Size: 315434 bytes
+2026-02-24 15:04:50 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/episode-2-how-to-achieve-safe-and-trustworthy-ai-with-a-human-in-the-loop-ft-gary-gavrilov-and-clarisse-fenart/
+2026-02-24 15:04:56 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/episode-2-how-to-achieve-safe-and-trustworthy-ai-with-a-human-in-the-loop-ft-gary-gavrilov-and-clarisse-fenart/: All validations passed
+2026-02-24 15:04:56 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/episode-2-how-to-achieve-safe-and-trustworthy-ai-with-a-human-in-the-loop-ft-gary-gavrilov-and-clarisse-fenart/ | Status: 200 | Size: 316369 bytes
+2026-02-24 15:04:56 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/episode-3-bridging-the-gap-the-intersection-of-social-enterprise-and-data-annotation/
+2026-02-24 15:05:03 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/episode-3-bridging-the-gap-the-intersection-of-social-enterprise-and-data-annotation/: All validations passed
+2026-02-24 15:05:03 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/episode-3-bridging-the-gap-the-intersection-of-social-enterprise-and-data-annotation/ | Status: 200 | Size: 316567 bytes
+2026-02-24 15:05:03 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/
+2026-02-24 15:05:15 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/: All validations passed
+2026-02-24 15:05:15 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/ | Status: 200 | Size: 458512 bytes
+2026-02-24 15:05:15 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/impact/foundation/
+2026-02-24 15:05:21 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/impact/foundation/: All validations passed
+2026-02-24 15:05:21 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/impact/foundation/ | Status: 200 | Size: 389990 bytes
+2026-02-24 15:05:21 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/resources/datasets/
+2026-02-24 15:05:26 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/resources/datasets/: All validations passed
+2026-02-24 15:05:26 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/resources/datasets/ | Status: 200 | Size: 340648 bytes
+2026-02-24 15:05:26 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/solutions/dataset-collection/
+2026-02-24 15:05:34 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/solutions/dataset-collection/: All validations passed
+2026-02-24 15:05:34 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/solutions/dataset-collection/ | Status: 200 | Size: 472235 bytes
+2026-02-24 15:05:34 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/solutions/dataset-annotation/
+2026-02-24 15:05:39 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/solutions/dataset-annotation/: All validations passed
+2026-02-24 15:05:39 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/solutions/dataset-annotation/ | Status: 200 | Size: 475528 bytes
+2026-02-24 15:05:39 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/solutions/reinforcement-learning-with-human-feedback/
+2026-02-24 15:05:44 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/solutions/reinforcement-learning-with-human-feedback/: All validations passed
+2026-02-24 15:05:44 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/solutions/reinforcement-learning-with-human-feedback/ | Status: 200 | Size: 445423 bytes
+2026-02-24 15:05:45 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/solutions/real-time-edge-case-handling/
+2026-02-24 15:05:52 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/solutions/real-time-edge-case-handling/: All validations passed
+2026-02-24 15:05:52 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/solutions/real-time-edge-case-handling/ | Status: 200 | Size: 479459 bytes
+2026-02-24 15:05:52 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/solutions/human-in-the-loop-for-active-learning/
+2026-02-24 15:05:52 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/solutions/human-in-the-loop-for-active-learning/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/solutions/human-in-the-loop-for-active-learning/
+Call log:
+  - navigating to "https://humansintheloop.org/solutions/human-in-the-loop-for-active-learning/", waiting until "load"
+
+2026-02-24 15:05:52 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/solutions/human-in-the-loop-for-active-learning/ (attempt 2/3)
+2026-02-24 15:06:00 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/solutions/human-in-the-loop-for-active-learning/: All validations passed
+2026-02-24 15:06:00 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/solutions/human-in-the-loop-for-active-learning/ | Status: 200 | Size: 475223 bytes
+2026-02-24 15:06:01 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/about-us/awards/
+2026-02-24 15:06:06 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/about-us/awards/: All validations passed
+2026-02-24 15:06:06 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/about-us/awards/ | Status: 200 | Size: 413632 bytes
+2026-02-24 15:06:06 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/impact/case-studies/
+2026-02-24 15:06:11 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/impact/case-studies/: All validations passed
+2026-02-24 15:06:11 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/impact/case-studies/ | Status: 200 | Size: 446318 bytes
+2026-02-24 15:06:11 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/resources/whitepapers/
+2026-02-24 15:06:18 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/resources/whitepapers/: All validations passed
+2026-02-24 15:06:18 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/resources/whitepapers/ | Status: 200 | Size: 381461 bytes
+2026-02-24 15:06:18 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/impact/reports/impact-report-2023/
+2026-02-24 15:06:26 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/impact/reports/impact-report-2023/: All validations passed
+2026-02-24 15:06:26 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/impact/reports/impact-report-2023/ | Status: 200 | Size: 315119 bytes
+2026-02-24 15:06:26 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/impact/reports/impact-report-2020/
+2026-02-24 15:06:26 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/impact/reports/impact-report-2020/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/impact/reports/impact-report-2020/
+Call log:
+  - navigating to "https://humansintheloop.org/impact/reports/impact-report-2020/", waiting until "load"
+
+2026-02-24 15:06:26 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/impact/reports/impact-report-2020/ (attempt 2/3)
+2026-02-24 15:06:34 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/impact/reports/impact-report-2020/: All validations passed
+2026-02-24 15:06:34 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/impact/reports/impact-report-2020/ | Status: 200 | Size: 335739 bytes
+2026-02-24 15:06:34 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/impact/reports/impact-report-2021/
+2026-02-24 15:06:41 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/impact/reports/impact-report-2021/: All validations passed
+2026-02-24 15:06:41 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/impact/reports/impact-report-2021/ | Status: 200 | Size: 342641 bytes
+2026-02-24 15:06:41 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/impact/reports/impact-report-2019/
+2026-02-24 15:06:47 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/impact/reports/impact-report-2019/: All validations passed
+2026-02-24 15:06:47 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/impact/reports/impact-report-2019/ | Status: 200 | Size: 313566 bytes
+2026-02-24 15:06:47 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/impact/reports/impact-report-2022/
+2026-02-24 15:06:53 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/impact/reports/impact-report-2022/: All validations passed
+2026-02-24 15:06:53 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/impact/reports/impact-report-2022/ | Status: 200 | Size: 343636 bytes
+2026-02-24 15:06:53 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/impact/reports/
+2026-02-24 15:06:58 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/impact/reports/: All validations passed
+2026-02-24 15:06:58 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/impact/reports/ | Status: 200 | Size: 365545 bytes
+2026-02-24 15:06:58 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/impact/
+2026-02-24 15:07:02 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/impact/: All validations passed
+2026-02-24 15:07:02 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/impact/ | Status: 200 | Size: 417945 bytes
+2026-02-24 15:07:03 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/services/ethical-video-editing/
+2026-02-24 15:07:23 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/services/ethical-video-editing/: All validations passed
+2026-02-24 15:07:23 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/services/ethical-video-editing/ | Status: 200 | Size: 407032 bytes
+2026-02-24 15:07:23 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/services/medical-annotation/
+2026-02-24 15:07:24 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/services/medical-annotation/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/services/medical-annotation/
+Call log:
+  - navigating to "https://humansintheloop.org/services/medical-annotation/", waiting until "load"
+
+2026-02-24 15:07:24 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/services/medical-annotation/ (attempt 2/3)
+2026-02-24 15:07:32 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/services/medical-annotation/: All validations passed
+2026-02-24 15:07:32 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/services/medical-annotation/ | Status: 200 | Size: 473059 bytes
+2026-02-24 15:07:32 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/industries/medical-ai/
+2026-02-24 15:07:38 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/industries/medical-ai/: All validations passed
+2026-02-24 15:07:38 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/industries/medical-ai/ | Status: 200 | Size: 373121 bytes
+2026-02-24 15:07:38 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/submit-your-project/
+2026-02-24 15:07:38 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/submit-your-project/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/submit-your-project/
+Call log:
+  - navigating to "https://humansintheloop.org/submit-your-project/", waiting until "load"
+
+2026-02-24 15:07:38 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/submit-your-project/ (attempt 2/3)
+2026-02-24 15:07:45 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/submit-your-project/: All validations passed
+2026-02-24 15:07:45 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/submit-your-project/ | Status: 200 | Size: 389438 bytes
+2026-02-24 15:07:45 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/about-us/careers/
+2026-02-24 15:07:50 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/about-us/careers/: All validations passed
+2026-02-24 15:07:50 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/about-us/careers/ | Status: 200 | Size: 326125 bytes
+2026-02-24 15:07:50 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/resources/webinars/
+2026-02-24 15:07:55 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/resources/webinars/: All validations passed
+2026-02-24 15:07:55 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/resources/webinars/ | Status: 200 | Size: 476071 bytes
+2026-02-24 15:07:55 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/resources/blog/
+2026-02-24 15:08:02 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/resources/blog/: All validations passed
+2026-02-24 15:08:02 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/resources/blog/ | Status: 200 | Size: 530956 bytes
+2026-02-24 15:08:02 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/about-us/our-team/
+2026-02-24 15:08:08 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/about-us/our-team/: All validations passed
+2026-02-24 15:08:08 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/about-us/our-team/ | Status: 200 | Size: 406232 bytes
+2026-02-24 15:08:08 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/home-copy/
+2026-02-24 15:08:17 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/home-copy/: All validations passed
+2026-02-24 15:08:17 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/home-copy/ | Status: 200 | Size: 503615 bytes
+2026-02-24 15:08:17 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/wp-sandbox/
+2026-02-24 15:08:17 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/wp-sandbox/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/wp-sandbox/
+Call log:
+  - navigating to "https://humansintheloop.org/wp-sandbox/", waiting until "load"
+
+2026-02-24 15:08:17 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/wp-sandbox/ (attempt 2/3)
+2026-02-24 15:08:26 - scraper.humansintheloop.org - WARNING - ✗ VALIDATION FAILED: https://humansintheloop.org/wp-sandbox/: Content too short (36 chars, minimum 50)
+2026-02-24 15:08:26 - scraper.humansintheloop.org - WARNING - Validation failed for https://humansintheloop.org/wp-sandbox/: Content too short (36 chars, minimum 50)
+2026-02-24 15:08:26 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/about-us/
+2026-02-24 15:08:31 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/about-us/: All validations passed
+2026-02-24 15:08:31 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/about-us/ | Status: 200 | Size: 400886 bytes
+2026-02-24 15:08:31 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/impact/reports/impact-report-2024/
+2026-02-24 15:08:39 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/impact/reports/impact-report-2024/: All validations passed
+2026-02-24 15:08:39 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/impact/reports/impact-report-2024/ | Status: 200 | Size: 380655 bytes
+2026-02-24 15:08:39 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/impact/case-studies/participant-testimonial-suzan-suleiman/
+2026-02-24 15:08:46 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/impact/case-studies/participant-testimonial-suzan-suleiman/: All validations passed
+2026-02-24 15:08:46 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/impact/case-studies/participant-testimonial-suzan-suleiman/ | Status: 200 | Size: 385009 bytes
+2026-02-24 15:08:46 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/impact/case-studies/participant-testimonial-malehek-yik-bol/
+2026-02-24 15:08:55 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/impact/case-studies/participant-testimonial-malehek-yik-bol/: All validations passed
+2026-02-24 15:08:55 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/impact/case-studies/participant-testimonial-malehek-yik-bol/ | Status: 200 | Size: 385370 bytes
+2026-02-24 15:08:55 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/impact/case-studies/beneficiary-testimonials-roukaya-al-hammada/
+2026-02-24 15:09:02 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/impact/case-studies/beneficiary-testimonials-roukaya-al-hammada/: All validations passed
+2026-02-24 15:09:02 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/impact/case-studies/beneficiary-testimonials-roukaya-al-hammada/ | Status: 200 | Size: 385119 bytes
+2026-02-24 15:09:02 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/impact/case-studies/participant-testimonial-adla-abou-steiti/
+2026-02-24 15:09:11 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/impact/case-studies/participant-testimonial-adla-abou-steiti/: All validations passed
+2026-02-24 15:09:11 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/impact/case-studies/participant-testimonial-adla-abou-steiti/ | Status: 200 | Size: 385341 bytes
+2026-02-24 15:09:11 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/impact/case-studies/participant-testimonial-tamara-sergiienko/
+2026-02-24 15:09:19 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/impact/case-studies/participant-testimonial-tamara-sergiienko/: All validations passed
+2026-02-24 15:09:19 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/impact/case-studies/participant-testimonial-tamara-sergiienko/ | Status: 200 | Size: 394549 bytes
+2026-02-24 15:09:19 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/book-a-call/
+2026-02-24 15:09:19 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/book-a-call/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/book-a-call/
+Call log:
+  - navigating to "https://humansintheloop.org/book-a-call/", waiting until "load"
+
+2026-02-24 15:09:19 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/book-a-call/ (attempt 2/3)
+2026-02-24 15:09:27 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/book-a-call/: All validations passed
+2026-02-24 15:09:27 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/book-a-call/ | Status: 200 | Size: 299558 bytes
+2026-02-24 15:09:27 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/start-a-free-pilot-for-your-ai-project/
+2026-02-24 15:09:33 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/start-a-free-pilot-for-your-ai-project/: All validations passed
+2026-02-24 15:09:33 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/start-a-free-pilot-for-your-ai-project/ | Status: 200 | Size: 363604 bytes
+2026-02-24 15:09:33 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/impact/case-studies/beneficiary-testimonials-haya-alshekh/
+2026-02-24 15:09:40 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/impact/case-studies/beneficiary-testimonials-haya-alshekh/: All validations passed
+2026-02-24 15:09:40 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/impact/case-studies/beneficiary-testimonials-haya-alshekh/ | Status: 200 | Size: 393792 bytes
+2026-02-24 15:09:40 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/resources/datasets/car-parts-and-car-damages-dataset/
+2026-02-24 15:09:45 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/resources/datasets/car-parts-and-car-damages-dataset/: All validations passed
+2026-02-24 15:09:45 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/resources/datasets/car-parts-and-car-damages-dataset/ | Status: 200 | Size: 322656 bytes
+2026-02-24 15:09:45 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/services/keypoint-annotation/
+2026-02-24 15:09:45 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/services/keypoint-annotation/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/services/keypoint-annotation/
+Call log:
+  - navigating to "https://humansintheloop.org/services/keypoint-annotation/", waiting until "load"
+
+2026-02-24 15:09:45 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/services/keypoint-annotation/ (attempt 2/3)
+2026-02-24 15:09:55 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/services/keypoint-annotation/: All validations passed
+2026-02-24 15:09:55 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/services/keypoint-annotation/ | Status: 200 | Size: 367743 bytes
+2026-02-24 15:09:55 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/services/3d-annotation/
+2026-02-24 15:10:02 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/services/3d-annotation/: All validations passed
+2026-02-24 15:10:02 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/services/3d-annotation/ | Status: 200 | Size: 365892 bytes
+2026-02-24 15:10:02 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/about-us/funders/
+2026-02-24 15:10:09 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/about-us/funders/: All validations passed
+2026-02-24 15:10:09 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/about-us/funders/ | Status: 200 | Size: 415838 bytes
+2026-02-24 15:10:09 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/impact/reports/whitepaper-part-1-download/
+2026-02-24 15:10:18 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/impact/reports/whitepaper-part-1-download/: All validations passed
+2026-02-24 15:10:18 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/impact/reports/whitepaper-part-1-download/ | Status: 200 | Size: 336424 bytes
+2026-02-24 15:10:18 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/impact/reports/whitepaper-part-2-download-2/
+2026-02-24 15:10:25 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/impact/reports/whitepaper-part-2-download-2/: All validations passed
+2026-02-24 15:10:25 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/impact/reports/whitepaper-part-2-download-2/ | Status: 200 | Size: 335816 bytes
+2026-02-24 15:10:25 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/resources/datasets/dollar-street-download/
+2026-02-24 15:10:30 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/resources/datasets/dollar-street-download/: All validations passed
+2026-02-24 15:10:30 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/resources/datasets/dollar-street-download/ | Status: 200 | Size: 316725 bytes
+2026-02-24 15:10:30 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/services/semantic-segmentation/
+2026-02-24 15:10:37 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/services/semantic-segmentation/: All validations passed
+2026-02-24 15:10:37 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/services/semantic-segmentation/ | Status: 200 | Size: 373192 bytes
+2026-02-24 15:10:37 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/services/polygon-annotation/
+2026-02-24 15:10:37 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/services/polygon-annotation/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/services/polygon-annotation/
+Call log:
+  - navigating to "https://humansintheloop.org/services/polygon-annotation/", waiting until "load"
+
+2026-02-24 15:10:37 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/services/polygon-annotation/ (attempt 2/3)
+2026-02-24 15:10:45 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/services/polygon-annotation/: All validations passed
+2026-02-24 15:10:45 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/services/polygon-annotation/ | Status: 200 | Size: 371015 bytes
+2026-02-24 15:10:46 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/services/bounding-box-annotation/
+2026-02-24 15:10:51 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/services/bounding-box-annotation/: All validations passed
+2026-02-24 15:10:51 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/services/bounding-box-annotation/ | Status: 200 | Size: 371206 bytes
+2026-02-24 15:10:51 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/services/video-annotation/
+2026-02-24 15:11:24 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/services/video-annotation/: All validations passed
+2026-02-24 15:11:24 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/services/video-annotation/ | Status: 200 | Size: 366289 bytes
+2026-02-24 15:11:25 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/services/
+2026-02-24 15:11:29 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/services/: All validations passed
+2026-02-24 15:11:29 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/services/ | Status: 200 | Size: 322944 bytes
+2026-02-24 15:11:29 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/industries/geospatial-ai/
+2026-02-24 15:11:36 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/industries/geospatial-ai/: All validations passed
+2026-02-24 15:11:36 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/industries/geospatial-ai/ | Status: 200 | Size: 364852 bytes
+2026-02-24 15:11:36 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/industries/automotive-ai/
+2026-02-24 15:11:41 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/industries/automotive-ai/: All validations passed
+2026-02-24 15:11:41 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/industries/automotive-ai/ | Status: 200 | Size: 356176 bytes
+2026-02-24 15:11:42 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/industries/industrial-ai/
+2026-02-24 15:11:47 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/industries/industrial-ai/: All validations passed
+2026-02-24 15:11:47 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/industries/industrial-ai/ | Status: 200 | Size: 361041 bytes
+2026-02-24 15:11:47 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/industries/agricultural-ai/
+2026-02-24 15:11:56 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/industries/agricultural-ai/: All validations passed
+2026-02-24 15:11:56 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/industries/agricultural-ai/ | Status: 200 | Size: 361731 bytes
+2026-02-24 15:11:56 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/industries/retail-ai/
+2026-02-24 15:12:04 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/industries/retail-ai/: All validations passed
+2026-02-24 15:12:04 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/industries/retail-ai/ | Status: 200 | Size: 365257 bytes
+2026-02-24 15:12:04 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/industries/
+2026-02-24 15:12:10 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/industries/: All validations passed
+2026-02-24 15:12:10 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/industries/ | Status: 200 | Size: 325447 bytes
+2026-02-24 15:12:10 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/impact/reports/whitepaper-on-bias-part-2/
+2026-02-24 15:12:16 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/impact/reports/whitepaper-on-bias-part-2/: All validations passed
+2026-02-24 15:12:16 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/impact/reports/whitepaper-on-bias-part-2/ | Status: 200 | Size: 315561 bytes
+2026-02-24 15:12:16 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/impact/reports/whitepaper-on-bias-part-1/
+2026-02-24 15:12:22 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/impact/reports/whitepaper-on-bias-part-1/: All validations passed
+2026-02-24 15:12:22 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/impact/reports/whitepaper-on-bias-part-1/ | Status: 200 | Size: 315814 bytes
+2026-02-24 15:12:22 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/resources/datasets/free-receipt-ocr-dataset/
+2026-02-24 15:12:28 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/resources/datasets/free-receipt-ocr-dataset/: All validations passed
+2026-02-24 15:12:28 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/resources/datasets/free-receipt-ocr-dataset/ | Status: 200 | Size: 320964 bytes
+2026-02-24 15:12:28 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/resources/datasets/extreme-keypoints-dataset/
+2026-02-24 15:12:28 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/resources/datasets/extreme-keypoints-dataset/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/resources/datasets/extreme-keypoints-dataset/
+Call log:
+  - navigating to "https://humansintheloop.org/resources/datasets/extreme-keypoints-dataset/", waiting until "load"
+
+2026-02-24 15:12:28 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/resources/datasets/extreme-keypoints-dataset/ (attempt 2/3)
+2026-02-24 15:12:36 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/resources/datasets/extreme-keypoints-dataset/: All validations passed
+2026-02-24 15:12:36 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/resources/datasets/extreme-keypoints-dataset/ | Status: 200 | Size: 320249 bytes
+2026-02-24 15:12:36 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/resources/datasets/arabic-documents-ocr-dataset/
+2026-02-24 15:12:40 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/resources/datasets/arabic-documents-ocr-dataset/: All validations passed
+2026-02-24 15:12:40 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/resources/datasets/arabic-documents-ocr-dataset/ | Status: 200 | Size: 320310 bytes
+2026-02-24 15:12:41 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/resources/datasets/recycling-dataset/
+2026-02-24 15:12:46 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/resources/datasets/recycling-dataset/: All validations passed
+2026-02-24 15:12:46 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/resources/datasets/recycling-dataset/ | Status: 200 | Size: 319751 bytes
+2026-02-24 15:12:46 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/resources/datasets/teeth-segmentation-dataset/
+2026-02-24 15:12:46 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/resources/datasets/teeth-segmentation-dataset/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/resources/datasets/teeth-segmentation-dataset/
+Call log:
+  - navigating to "https://humansintheloop.org/resources/datasets/teeth-segmentation-dataset/", waiting until "load"
+
+2026-02-24 15:12:46 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/resources/datasets/teeth-segmentation-dataset/ (attempt 2/3)
+2026-02-24 15:12:53 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/resources/datasets/teeth-segmentation-dataset/: All validations passed
+2026-02-24 15:12:53 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/resources/datasets/teeth-segmentation-dataset/ | Status: 200 | Size: 319867 bytes
+2026-02-24 15:12:53 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/resources/datasets/supermarket-shelves-dataset/
+2026-02-24 15:12:53 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/resources/datasets/supermarket-shelves-dataset/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/resources/datasets/supermarket-shelves-dataset/
+Call log:
+  - navigating to "https://humansintheloop.org/resources/datasets/supermarket-shelves-dataset/", waiting until "load"
+
+2026-02-24 15:12:53 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/resources/datasets/supermarket-shelves-dataset/ (attempt 2/3)
+2026-02-24 15:13:01 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/resources/datasets/supermarket-shelves-dataset/: All validations passed
+2026-02-24 15:13:01 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/resources/datasets/supermarket-shelves-dataset/ | Status: 200 | Size: 320980 bytes
+2026-02-24 15:13:01 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/resources/datasets/plant-segmentation/
+2026-02-24 15:13:09 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/resources/datasets/plant-segmentation/: All validations passed
+2026-02-24 15:13:09 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/resources/datasets/plant-segmentation/ | Status: 200 | Size: 321825 bytes
+2026-02-24 15:13:09 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/resources/datasets/daily-objects-around-the-world-dataset/
+2026-02-24 15:13:15 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/resources/datasets/daily-objects-around-the-world-dataset/: All validations passed
+2026-02-24 15:13:15 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/resources/datasets/daily-objects-around-the-world-dataset/ | Status: 200 | Size: 322641 bytes
+2026-02-24 15:13:15 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/resources/datasets/semantic-segmentation-dataset-2/
+2026-02-24 15:13:21 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/resources/datasets/semantic-segmentation-dataset-2/: All validations passed
+2026-02-24 15:13:21 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/resources/datasets/semantic-segmentation-dataset-2/ | Status: 200 | Size: 320754 bytes
+2026-02-24 15:13:21 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/resources/datasets/medical-mask-dataset/
+2026-02-24 15:13:28 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/resources/datasets/medical-mask-dataset/: All validations passed
+2026-02-24 15:13:28 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/resources/datasets/medical-mask-dataset/ | Status: 200 | Size: 321770 bytes
+2026-02-24 15:13:28 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/contact-us/
+2026-02-24 15:13:33 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/contact-us/: All validations passed
+2026-02-24 15:13:33 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/contact-us/ | Status: 200 | Size: 327521 bytes
+2026-02-24 15:13:33 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/resources/success-stories/
+2026-02-24 15:13:38 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/resources/success-stories/: All validations passed
+2026-02-24 15:13:38 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/resources/success-stories/ | Status: 200 | Size: 349503 bytes
+2026-02-24 15:13:39 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/resources/success-stories/enhancing-clinical-trial-strategy-through-ai-annotation-with-trialhub/
+2026-02-24 15:13:46 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/resources/success-stories/enhancing-clinical-trial-strategy-through-ai-annotation-with-trialhub/: All validations passed
+2026-02-24 15:13:46 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/resources/success-stories/enhancing-clinical-trial-strategy-through-ai-annotation-with-trialhub/ | Status: 200 | Size: 343000 bytes
+2026-02-24 15:13:46 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/restor-empowering-sustainability-through-geospatial-image-instance-segmentation/
+2026-02-24 15:13:53 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/restor-empowering-sustainability-through-geospatial-image-instance-segmentation/: All validations passed
+2026-02-24 15:13:53 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/restor-empowering-sustainability-through-geospatial-image-instance-segmentation/ | Status: 200 | Size: 346512 bytes
+2026-02-24 15:13:53 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/enhancing-robotic-surgery-safety-through-precise-medical-image-annotation-imperial-college-london/
+2026-02-24 15:13:53 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/enhancing-robotic-surgery-safety-through-precise-medical-image-annotation-imperial-college-london/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/enhancing-robotic-surgery-safety-through-precise-medical-image-annotation-imperial-college-london/
+Call log:
+  - navigating to "https://humansintheloop.org/enhancing-robotic-surgery-safety-through-precise-medical-image-annotation-imperial-college-london/", waiting until "load"
+
+2026-02-24 15:13:53 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/enhancing-robotic-surgery-safety-through-precise-medical-image-annotation-imperial-college-london/ (attempt 2/3)
+2026-02-24 15:14:00 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/enhancing-robotic-surgery-safety-through-precise-medical-image-annotation-imperial-college-london/: All validations passed
+2026-02-24 15:14:00 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/enhancing-robotic-surgery-safety-through-precise-medical-image-annotation-imperial-college-london/ | Status: 200 | Size: 348133 bytes
+2026-02-24 15:14:01 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/using-thermography-and-medical-expert-annotations-for-home-diagnostic-ai-application/
+2026-02-24 15:14:07 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/using-thermography-and-medical-expert-annotations-for-home-diagnostic-ai-application/: All validations passed
+2026-02-24 15:14:07 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/using-thermography-and-medical-expert-annotations-for-home-diagnostic-ai-application/ | Status: 200 | Size: 346343 bytes
+2026-02-24 15:14:07 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/thermal-video-annotation-for-accurate-surveillance-despite-concept-drift/
+2026-02-24 15:14:20 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/thermal-video-annotation-for-accurate-surveillance-despite-concept-drift/: All validations passed
+2026-02-24 15:14:20 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/thermal-video-annotation-for-accurate-surveillance-despite-concept-drift/ | Status: 200 | Size: 352644 bytes
+2026-02-24 15:14:20 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/daedalean-case-study/
+2026-02-24 15:14:27 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/daedalean-case-study/: All validations passed
+2026-02-24 15:14:27 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/daedalean-case-study/ | Status: 200 | Size: 347892 bytes
+2026-02-24 15:14:27 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/resources/success-stories/unissey-case-study/
+2026-02-24 15:14:34 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/resources/success-stories/unissey-case-study/: All validations passed
+2026-02-24 15:14:34 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/resources/success-stories/unissey-case-study/ | Status: 200 | Size: 347289 bytes
+2026-02-24 15:14:34 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/picvisa-case-study/
+2026-02-24 15:14:43 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/picvisa-case-study/: All validations passed
+2026-02-24 15:14:43 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/picvisa-case-study/ | Status: 200 | Size: 351403 bytes
+2026-02-24 15:14:44 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/inrae-case-study/
+2026-02-24 15:14:50 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/inrae-case-study/: All validations passed
+2026-02-24 15:14:50 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/inrae-case-study/ | Status: 200 | Size: 328128 bytes
+2026-02-24 15:14:50 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/impact/career-development/
+2026-02-24 15:14:54 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/impact/career-development/: All validations passed
+2026-02-24 15:14:54 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/impact/career-development/ | Status: 200 | Size: 416653 bytes
+2026-02-24 15:14:55 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/impact/career-development/community-events/
+2026-02-24 15:15:02 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/impact/career-development/community-events/: All validations passed
+2026-02-24 15:15:02 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/impact/career-development/community-events/ | Status: 200 | Size: 420704 bytes
+2026-02-24 15:15:03 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/impact/career-development/personalized-counseling-sessions/
+2026-02-24 15:15:09 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/impact/career-development/personalized-counseling-sessions/: All validations passed
+2026-02-24 15:15:09 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/impact/career-development/personalized-counseling-sessions/ | Status: 200 | Size: 439055 bytes
+2026-02-24 15:15:09 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/impact/case-studies/beneficiary-testimonials-sameir-mohamed-fouad-yousif/
+2026-02-24 15:15:15 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/impact/case-studies/beneficiary-testimonials-sameir-mohamed-fouad-yousif/: All validations passed
+2026-02-24 15:15:15 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/impact/case-studies/beneficiary-testimonials-sameir-mohamed-fouad-yousif/ | Status: 200 | Size: 379865 bytes
+2026-02-24 15:15:16 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/impact/case-studies/beneficiary-testimonials-krystyna-kuzmenko/
+2026-02-24 15:15:22 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/impact/case-studies/beneficiary-testimonials-krystyna-kuzmenko/: All validations passed
+2026-02-24 15:15:22 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/impact/case-studies/beneficiary-testimonials-krystyna-kuzmenko/ | Status: 200 | Size: 382619 bytes
+2026-02-24 15:15:23 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/resources/
+2026-02-24 15:15:28 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/resources/: All validations passed
+2026-02-24 15:15:28 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/resources/ | Status: 200 | Size: 316544 bytes
+2026-02-24 15:15:28 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/impact/case-studies/beneficiary-testimonials-dobriyana-dimitrova/
+2026-02-24 15:15:36 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/impact/case-studies/beneficiary-testimonials-dobriyana-dimitrova/: All validations passed
+2026-02-24 15:15:36 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/impact/case-studies/beneficiary-testimonials-dobriyana-dimitrova/ | Status: 200 | Size: 386441 bytes
+2026-02-24 15:15:36 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/impact/case-studies/beneficiary-testimonials-diana-tsvetkova/
+2026-02-24 15:15:53 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/impact/case-studies/beneficiary-testimonials-diana-tsvetkova/: All validations passed
+2026-02-24 15:15:53 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/impact/case-studies/beneficiary-testimonials-diana-tsvetkova/ | Status: 200 | Size: 385626 bytes
+2026-02-24 15:15:53 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/impact/ethical-ai/
+2026-02-24 15:15:58 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/impact/ethical-ai/: All validations passed
+2026-02-24 15:15:58 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/impact/ethical-ai/ | Status: 200 | Size: 365712 bytes
+2026-02-24 15:15:58 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/impact/fair-work-policy/
+2026-02-24 15:16:06 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/impact/fair-work-policy/: All validations passed
+2026-02-24 15:16:06 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/impact/fair-work-policy/ | Status: 200 | Size: 380854 bytes
+2026-02-24 15:16:07 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/impact/partners-humans-in-the-loop/
+2026-02-24 15:16:15 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/impact/partners-humans-in-the-loop/: All validations passed
+2026-02-24 15:16:15 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/impact/partners-humans-in-the-loop/ | Status: 200 | Size: 375895 bytes
+2026-02-24 15:16:15 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/about-us/faq/
+2026-02-24 15:16:19 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/about-us/faq/: All validations passed
+2026-02-24 15:16:19 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/about-us/faq/ | Status: 200 | Size: 325673 bytes
+2026-02-24 15:16:19 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/how-it-works/
+2026-02-24 15:16:20 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/how-it-works/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/how-it-works/
+Call log:
+  - navigating to "https://humansintheloop.org/how-it-works/", waiting until "load"
+
+2026-02-24 15:16:20 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/how-it-works/ (attempt 2/3)
+2026-02-24 15:16:27 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/how-it-works/: All validations passed
+2026-02-24 15:16:27 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/how-it-works/ | Status: 200 | Size: 352750 bytes
+2026-02-24 15:16:28 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/about-us/privacy-policy/
+2026-02-24 15:16:33 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/about-us/privacy-policy/: All validations passed
+2026-02-24 15:16:33 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/about-us/privacy-policy/ | Status: 200 | Size: 453932 bytes
+2026-02-24 15:16:34 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/about-us/privacy-policy-1/
+2026-02-24 15:16:40 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/about-us/privacy-policy-1/: All validations passed
+2026-02-24 15:16:40 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/about-us/privacy-policy-1/ | Status: 200 | Size: 366560 bytes
+2026-02-24 15:16:40 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/impact-copy/
+2026-02-24 15:16:48 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/impact-copy/: All validations passed
+2026-02-24 15:16:48 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/impact-copy/ | Status: 200 | Size: 497239 bytes
+2026-02-24 15:16:48 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/impact/reports/impact-report-2022-3/
+2026-02-24 15:16:54 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/impact/reports/impact-report-2022-3/: All validations passed
+2026-02-24 15:16:54 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/impact/reports/impact-report-2022-3/ | Status: 200 | Size: 343116 bytes
+2026-02-24 15:16:54 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/contact-us-submission/
+2026-02-24 15:17:01 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/contact-us-submission/: All validations passed
+2026-02-24 15:17:01 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/contact-us-submission/ | Status: 200 | Size: 330494 bytes
+2026-02-24 15:17:01 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/solutions/
+2026-02-24 15:17:07 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/solutions/: All validations passed
+2026-02-24 15:17:07 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/solutions/ | Status: 200 | Size: 365561 bytes
+2026-02-24 15:17:07 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/cookie-policy/
+2026-02-24 15:17:07 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/cookie-policy/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/cookie-policy/
+Call log:
+  - navigating to "https://humansintheloop.org/cookie-policy/", waiting until "load"
+
+2026-02-24 15:17:07 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/cookie-policy/ (attempt 2/3)
+2026-02-24 15:17:16 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/cookie-policy/: All validations passed
+2026-02-24 15:17:16 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/cookie-policy/ | Status: 200 | Size: 356148 bytes
+2026-02-24 15:17:16 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/about-us/object-to-personal-data-processing/
+2026-02-24 15:17:23 - scraper.humansintheloop.org - WARNING - ✗ VALIDATION FAILED: https://humansintheloop.org/about-us/object-to-personal-data-processing/: Content too short (34 chars, minimum 50)
+2026-02-24 15:17:23 - scraper.humansintheloop.org - WARNING - Validation failed for https://humansintheloop.org/about-us/object-to-personal-data-processing/: Content too short (34 chars, minimum 50)
+2026-02-24 15:17:24 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/about-us/security-incident-response-plan/
+2026-02-24 15:17:29 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/about-us/security-incident-response-plan/: All validations passed
+2026-02-24 15:17:29 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/about-us/security-incident-response-plan/ | Status: 200 | Size: 353265 bytes
+2026-02-24 15:17:30 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/about-us/security-commitments/
+2026-02-24 15:17:36 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/about-us/security-commitments/: All validations passed
+2026-02-24 15:17:36 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/about-us/security-commitments/ | Status: 200 | Size: 334930 bytes
+2026-02-24 15:17:37 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/get-started-with-automotive-ai/
+2026-02-24 15:17:44 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/get-started-with-automotive-ai/: All validations passed
+2026-02-24 15:17:44 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/get-started-with-automotive-ai/ | Status: 200 | Size: 307268 bytes
+2026-02-24 15:17:44 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/request-a-quote-submission/
+2026-02-24 15:17:50 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/request-a-quote-submission/: All validations passed
+2026-02-24 15:17:50 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/request-a-quote-submission/ | Status: 200 | Size: 332613 bytes
+2026-02-24 15:17:50 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/meet-with-tess/
+2026-02-24 15:17:51 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/meet-with-tess/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/meet-with-tess/
+Call log:
+  - navigating to "https://humansintheloop.org/meet-with-tess/", waiting until "load"
+
+2026-02-24 15:17:51 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/meet-with-tess/ (attempt 2/3)
+2026-02-24 15:17:59 - scraper.humansintheloop.org - WARNING - ✗ VALIDATION FAILED: https://humansintheloop.org/meet-with-tess/: Missing required field: text_content
+2026-02-24 15:17:59 - scraper.humansintheloop.org - WARNING - Validation failed for https://humansintheloop.org/meet-with-tess/: Missing required field: text_content
+2026-02-24 15:18:00 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/meet-with-iva/
+2026-02-24 15:18:06 - scraper.humansintheloop.org - WARNING - ✗ VALIDATION FAILED: https://humansintheloop.org/meet-with-iva/: Missing required field: text_content
+2026-02-24 15:18:06 - scraper.humansintheloop.org - WARNING - Validation failed for https://humansintheloop.org/meet-with-iva/: Missing required field: text_content
+2026-02-24 15:18:06 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/impact/tools-and-platforms/
+2026-02-24 15:18:11 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/impact/tools-and-platforms/: All validations passed
+2026-02-24 15:18:11 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/impact/tools-and-platforms/ | Status: 200 | Size: 414588 bytes
+2026-02-24 15:18:11 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/resources/datasets/uae-dataset-download/
+2026-02-24 15:18:19 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/resources/datasets/uae-dataset-download/: All validations passed
+2026-02-24 15:18:19 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/resources/datasets/uae-dataset-download/ | Status: 200 | Size: 336064 bytes
+2026-02-24 15:18:19 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/request-a-quote/
+2026-02-24 15:18:24 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/request-a-quote/: All validations passed
+2026-02-24 15:18:24 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/request-a-quote/ | Status: 200 | Size: 332145 bytes
+2026-02-24 15:18:24 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/header/header-01/
+2026-02-24 15:18:44 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/header/header-01/: All validations passed
+2026-02-24 15:18:44 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/header/header-01/ | Status: 200 | Size: 259047 bytes
+2026-02-24 15:18:45 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/header/header-02/
+2026-02-24 15:18:50 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/header/header-02/: All validations passed
+2026-02-24 15:18:50 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/header/header-02/ | Status: 200 | Size: 239073 bytes
+2026-02-24 15:18:50 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/header/webinar-promo-header/
+2026-02-24 15:19:11 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/header/webinar-promo-header/: All validations passed
+2026-02-24 15:19:11 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/header/webinar-promo-header/ | Status: 200 | Size: 222847 bytes
+2026-02-24 15:19:11 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/footer/footer-04/
+2026-02-24 15:19:16 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/footer/footer-04/: All validations passed
+2026-02-24 15:19:16 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/footer/footer-04/ | Status: 200 | Size: 267379 bytes
+2026-02-24 15:19:16 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/footer/footer-05b/
+2026-02-24 15:19:22 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/footer/footer-05b/: All validations passed
+2026-02-24 15:19:22 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/footer/footer-05b/ | Status: 200 | Size: 244266 bytes
+2026-02-24 15:19:22 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/footer/footer-03/
+2026-02-24 15:19:42 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/footer/footer-03/: All validations passed
+2026-02-24 15:19:42 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/footer/footer-03/ | Status: 200 | Size: 231723 bytes
+2026-02-24 15:19:42 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/opal-menus/megamenu5495/
+2026-02-24 15:20:03 - scraper.humansintheloop.org - WARNING - ✗ VALIDATION FAILED: https://humansintheloop.org/opal-menus/megamenu5495/: Missing required field: text_content
+2026-02-24 15:20:03 - scraper.humansintheloop.org - WARNING - Validation failed for https://humansintheloop.org/opal-menus/megamenu5495/: Missing required field: text_content
+2026-02-24 15:20:03 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/metform-form/new-form-1742398048/
+2026-02-24 15:20:03 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/metform-form/new-form-1742398048/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/metform-form/new-form-1742398048/
+Call log:
+  - navigating to "https://humansintheloop.org/metform-form/new-form-1742398048/", waiting until "load"
+
+2026-02-24 15:20:03 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/metform-form/new-form-1742398048/ (attempt 2/3)
+2026-02-24 15:20:28 - scraper.humansintheloop.org - WARNING - ✗ VALIDATION FAILED: https://humansintheloop.org/metform-form/new-form-1742398048/: Missing required field: text_content
+2026-02-24 15:20:28 - scraper.humansintheloop.org - WARNING - Validation failed for https://humansintheloop.org/metform-form/new-form-1742398048/: Missing required field: text_content
+2026-02-24 15:20:28 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/metform-form/new-form-1742397978/
+2026-02-24 15:20:49 - scraper.humansintheloop.org - WARNING - ✗ VALIDATION FAILED: https://humansintheloop.org/metform-form/new-form-1742397978/: Missing required field: text_content
+2026-02-24 15:20:49 - scraper.humansintheloop.org - WARNING - Validation failed for https://humansintheloop.org/metform-form/new-form-1742397978/: Missing required field: text_content
+2026-02-24 15:20:49 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/header/
+2026-02-24 15:20:56 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/header/: All validations passed
+2026-02-24 15:20:56 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/header/ | Status: 200 | Size: 317531 bytes
+2026-02-24 15:20:56 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/footer/
+2026-02-24 15:21:02 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/footer/: All validations passed
+2026-02-24 15:21:02 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/footer/ | Status: 200 | Size: 313994 bytes
+2026-02-24 15:21:02 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/ai/
+2026-02-24 15:21:12 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/ai/: All validations passed
+2026-02-24 15:21:12 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/ai/ | Status: 200 | Size: 318140 bytes
+2026-02-24 15:21:12 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/ai-2/
+2026-02-24 15:21:18 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/ai-2/: All validations passed
+2026-02-24 15:21:18 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/ai-2/ | Status: 200 | Size: 331723 bytes
+2026-02-24 15:21:18 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/humansintheloop/
+2026-02-24 15:21:24 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/humansintheloop/: All validations passed
+2026-02-24 15:21:24 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/humansintheloop/ | Status: 200 | Size: 332137 bytes
+2026-02-24 15:21:24 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/humanintheloop/
+2026-02-24 15:21:30 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/humanintheloop/: All validations passed
+2026-02-24 15:21:30 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/humanintheloop/ | Status: 200 | Size: 331524 bytes
+2026-02-24 15:21:31 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/tools/
+2026-02-24 15:21:36 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/tools/: All validations passed
+2026-02-24 15:21:36 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/tools/ | Status: 200 | Size: 333116 bytes
+2026-02-24 15:21:36 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/tech/
+2026-02-24 15:21:41 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/tech/: All validations passed
+2026-02-24 15:21:41 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/tech/ | Status: 200 | Size: 318188 bytes
+2026-02-24 15:21:41 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/refugees/
+2026-02-24 15:21:47 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/refugees/: All validations passed
+2026-02-24 15:21:47 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/refugees/ | Status: 200 | Size: 330636 bytes
+2026-02-24 15:21:47 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/solutions/
+2026-02-24 15:21:52 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/solutions/: All validations passed
+2026-02-24 15:21:52 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/solutions/ | Status: 200 | Size: 318301 bytes
+2026-02-24 15:21:53 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/hitl-2/
+2026-02-24 15:21:58 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/hitl-2/: All validations passed
+2026-02-24 15:21:58 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/hitl-2/ | Status: 200 | Size: 332093 bytes
+2026-02-24 15:21:58 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/founder/
+2026-02-24 15:22:05 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/founder/: All validations passed
+2026-02-24 15:22:05 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/founder/ | Status: 200 | Size: 319527 bytes
+2026-02-24 15:22:05 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/ngo/
+2026-02-24 15:22:11 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/ngo/: All validations passed
+2026-02-24 15:22:11 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/ngo/ | Status: 200 | Size: 324662 bytes
+2026-02-24 15:22:11 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/30under30/
+2026-02-24 15:22:16 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/30under30/: All validations passed
+2026-02-24 15:22:16 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/30under30/ | Status: 200 | Size: 319565 bytes
+2026-02-24 15:22:16 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/forbes/
+2026-02-24 15:22:16 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/tag/forbes/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/tag/forbes/
+Call log:
+  - navigating to "https://humansintheloop.org/tag/forbes/", waiting until "load"
+
+2026-02-24 15:22:16 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/tag/forbes/ (attempt 2/3)
+2026-02-24 15:22:25 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/forbes/: All validations passed
+2026-02-24 15:22:25 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/forbes/ | Status: 200 | Size: 319502 bytes
+2026-02-24 15:22:25 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/annotators/
+2026-02-24 15:22:32 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/annotators/: All validations passed
+2026-02-24 15:22:32 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/annotators/ | Status: 200 | Size: 330156 bytes
+2026-02-24 15:22:32 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/mit/
+2026-02-24 15:22:38 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/mit/: All validations passed
+2026-02-24 15:22:38 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/mit/ | Status: 200 | Size: 317881 bytes
+2026-02-24 15:22:38 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/mitsolve/
+2026-02-24 15:22:44 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/mitsolve/: All validations passed
+2026-02-24 15:22:44 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/mitsolve/ | Status: 200 | Size: 318006 bytes
+2026-02-24 15:22:44 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/innovation/
+2026-02-24 15:22:51 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/innovation/: All validations passed
+2026-02-24 15:22:51 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/innovation/ | Status: 200 | Size: 321321 bytes
+2026-02-24 15:22:51 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/dubaiexpo/
+2026-02-24 15:22:56 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/dubaiexpo/: All validations passed
+2026-02-24 15:22:56 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/dubaiexpo/ | Status: 200 | Size: 318231 bytes
+2026-02-24 15:22:56 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/imageannotation/
+2026-02-24 15:23:03 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/imageannotation/: All validations passed
+2026-02-24 15:23:03 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/imageannotation/ | Status: 200 | Size: 331324 bytes
+2026-02-24 15:23:03 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/ultimateguide/
+2026-02-24 15:23:09 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/ultimateguide/: All validations passed
+2026-02-24 15:23:09 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/ultimateguide/ | Status: 200 | Size: 318155 bytes
+2026-02-24 15:23:09 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/imagelabeling/
+2026-02-24 15:23:15 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/imagelabeling/: All validations passed
+2026-02-24 15:23:15 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/imagelabeling/ | Status: 200 | Size: 330990 bytes
+2026-02-24 15:23:15 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/computervision/
+2026-02-24 15:23:15 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/tag/computervision/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/tag/computervision/
+Call log:
+  - navigating to "https://humansintheloop.org/tag/computervision/", waiting until "load"
+
+2026-02-24 15:23:15 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/tag/computervision/ (attempt 2/3)
+2026-02-24 15:23:24 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/computervision/: All validations passed
+2026-02-24 15:23:24 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/computervision/ | Status: 200 | Size: 325075 bytes
+2026-02-24 15:23:24 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/labeling/
+2026-02-24 15:23:31 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/labeling/: All validations passed
+2026-02-24 15:23:31 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/labeling/ | Status: 200 | Size: 322386 bytes
+2026-02-24 15:23:31 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/impactsourcing/
+2026-02-24 15:23:36 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/impactsourcing/: All validations passed
+2026-02-24 15:23:36 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/impactsourcing/ | Status: 200 | Size: 320541 bytes
+2026-02-24 15:23:36 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/datalabeling-imageannotation/
+2026-02-24 15:23:43 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/datalabeling-imageannotation/: All validations passed
+2026-02-24 15:23:43 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/datalabeling-imageannotation/ | Status: 200 | Size: 318763 bytes
+2026-02-24 15:23:43 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/annotation/
+2026-02-24 15:23:49 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/annotation/: All validations passed
+2026-02-24 15:23:49 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/annotation/ | Status: 200 | Size: 330850 bytes
+2026-02-24 15:23:49 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/annotationtools/
+2026-02-24 15:23:55 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/annotationtools/: All validations passed
+2026-02-24 15:23:55 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/annotationtools/ | Status: 200 | Size: 325010 bytes
+2026-02-24 15:23:56 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/workofthefuture/
+2026-02-24 15:24:05 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/workofthefuture/: All validations passed
+2026-02-24 15:24:05 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/workofthefuture/ | Status: 200 | Size: 318451 bytes
+2026-02-24 15:24:05 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/humanintheloop-humansintheloop-human-in-the-loop-artificialintelligence/
+2026-02-24 15:24:06 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/tag/humanintheloop-humansintheloop-human-in-the-loop-artificialintelligence/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/tag/humanintheloop-humansintheloop-human-in-the-loop-artificialintelligence/
+Call log:
+  - navigating to "https://humansintheloop.org/tag/humanintheloop-humansintheloop-human-in-the-loop-artificialintelligence/", waiting until "load"
+
+2026-02-24 15:24:06 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/tag/humanintheloop-humansintheloop-human-in-the-loop-artificialintelligence/ (attempt 2/3)
+2026-02-24 15:24:14 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/humanintheloop-humansintheloop-human-in-the-loop-artificialintelligence/: All validations passed
+2026-02-24 15:24:14 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/humanintheloop-humansintheloop-human-in-the-loop-artificialintelligence/ | Status: 200 | Size: 331734 bytes
+2026-02-24 15:24:14 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/covid-19/
+2026-02-24 15:24:20 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/covid-19/: All validations passed
+2026-02-24 15:24:20 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/covid-19/ | Status: 200 | Size: 318300 bytes
+2026-02-24 15:24:20 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/artificialintelligence/
+2026-02-24 15:24:26 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/artificialintelligence/: All validations passed
+2026-02-24 15:24:26 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/artificialintelligence/ | Status: 200 | Size: 324029 bytes
+2026-02-24 15:24:26 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/coronavirus/
+2026-02-24 15:24:31 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/coronavirus/: All validations passed
+2026-02-24 15:24:31 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/coronavirus/ | Status: 200 | Size: 318375 bytes
+2026-02-24 15:24:32 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/digitalinclusion/
+2026-02-24 15:24:38 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/digitalinclusion/: All validations passed
+2026-02-24 15:24:38 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/digitalinclusion/ | Status: 200 | Size: 318502 bytes
+2026-02-24 15:24:38 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/brightpoint/
+2026-02-24 15:24:43 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/brightpoint/: All validations passed
+2026-02-24 15:24:43 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/brightpoint/ | Status: 200 | Size: 318231 bytes
+2026-02-24 15:24:44 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/partnership/
+2026-02-24 15:24:49 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/partnership/: All validations passed
+2026-02-24 15:24:49 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/partnership/ | Status: 200 | Size: 331484 bytes
+2026-02-24 15:24:49 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/humansintheloop-foundation-humansintheloopfoundation-socialimpact/
+2026-02-24 15:24:49 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/tag/humansintheloop-foundation-humansintheloopfoundation-socialimpact/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/tag/humansintheloop-foundation-humansintheloopfoundation-socialimpact/
+Call log:
+  - navigating to "https://humansintheloop.org/tag/humansintheloop-foundation-humansintheloopfoundation-socialimpact/", waiting until "load"
+
+2026-02-24 15:24:49 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/tag/humansintheloop-foundation-humansintheloopfoundation-socialimpact/ (attempt 2/3)
+2026-02-24 15:24:57 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/humansintheloop-foundation-humansintheloopfoundation-socialimpact/: All validations passed
+2026-02-24 15:24:57 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/humansintheloop-foundation-humansintheloopfoundation-socialimpact/ | Status: 200 | Size: 332477 bytes
+2026-02-24 15:24:58 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/foundation/
+2026-02-24 15:25:03 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/foundation/: All validations passed
+2026-02-24 15:25:03 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/foundation/ | Status: 200 | Size: 319058 bytes
+2026-02-24 15:25:04 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/socialimpact/
+2026-02-24 15:25:10 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/socialimpact/: All validations passed
+2026-02-24 15:25:10 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/socialimpact/ | Status: 200 | Size: 328220 bytes
+2026-02-24 15:25:10 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/bias/
+2026-02-24 15:25:24 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/bias/: All validations passed
+2026-02-24 15:25:24 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/bias/ | Status: 200 | Size: 330565 bytes
+2026-02-24 15:25:24 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/biasinai/
+2026-02-24 15:25:29 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/biasinai/: All validations passed
+2026-02-24 15:25:29 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/biasinai/ | Status: 200 | Size: 318058 bytes
+2026-02-24 15:25:30 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/language/
+2026-02-24 15:25:38 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/language/: All validations passed
+2026-02-24 15:25:38 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/language/ | Status: 200 | Size: 318871 bytes
+2026-02-24 15:25:38 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/ethicalai/
+2026-02-24 15:25:44 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/ethicalai/: All validations passed
+2026-02-24 15:25:44 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/ethicalai/ | Status: 200 | Size: 330808 bytes
+2026-02-24 15:25:44 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/techfugees/
+2026-02-24 15:25:50 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/techfugees/: All validations passed
+2026-02-24 15:25:50 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/techfugees/ | Status: 200 | Size: 319421 bytes
+2026-02-24 15:25:50 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/lebanon/
+2026-02-24 15:25:55 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/lebanon/: All validations passed
+2026-02-24 15:25:55 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/lebanon/ | Status: 200 | Size: 319348 bytes
+2026-02-24 15:25:55 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/labelingtool/
+2026-02-24 15:26:02 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/labelingtool/: All validations passed
+2026-02-24 15:26:02 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/labelingtool/ | Status: 200 | Size: 318479 bytes
+2026-02-24 15:26:02 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/opensource/
+2026-02-24 15:26:10 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/opensource/: All validations passed
+2026-02-24 15:26:10 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/opensource/ | Status: 200 | Size: 318429 bytes
+2026-02-24 15:26:10 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/datasetcollection/
+2026-02-24 15:26:15 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/datasetcollection/: All validations passed
+2026-02-24 15:26:15 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/datasetcollection/ | Status: 200 | Size: 317737 bytes
+2026-02-24 15:26:16 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/dataset/
+2026-02-24 15:26:20 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/dataset/: All validations passed
+2026-02-24 15:26:20 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/dataset/ | Status: 200 | Size: 314195 bytes
+2026-02-24 15:26:21 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/roia/
+2026-02-24 15:26:21 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/tag/roia/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/tag/roia/
+Call log:
+  - navigating to "https://humansintheloop.org/tag/roia/", waiting until "load"
+
+2026-02-24 15:26:21 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/tag/roia/ (attempt 2/3)
+2026-02-24 15:26:28 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/roia/: All validations passed
+2026-02-24 15:26:28 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/roia/ | Status: 200 | Size: 318006 bytes
+2026-02-24 15:26:29 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/workwell/
+2026-02-24 15:26:34 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/workwell/: All validations passed
+2026-02-24 15:26:34 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/workwell/ | Status: 200 | Size: 318138 bytes
+2026-02-24 15:26:34 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/datalabeling/
+2026-02-24 15:26:41 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/datalabeling/: All validations passed
+2026-02-24 15:26:41 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/datalabeling/ | Status: 200 | Size: 332767 bytes
+2026-02-24 15:26:41 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/retailai/
+2026-02-24 15:26:46 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/retailai/: All validations passed
+2026-02-24 15:26:46 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/retailai/ | Status: 200 | Size: 322521 bytes
+2026-02-24 15:26:46 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/retailannotation/
+2026-02-24 15:26:53 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/retailannotation/: All validations passed
+2026-02-24 15:26:53 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/retailannotation/ | Status: 200 | Size: 322724 bytes
+2026-02-24 15:26:53 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/industrialai/
+2026-02-24 15:26:58 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/industrialai/: All validations passed
+2026-02-24 15:26:58 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/industrialai/ | Status: 200 | Size: 319172 bytes
+2026-02-24 15:26:58 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/visualinspection/
+2026-02-24 15:26:59 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/tag/visualinspection/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/tag/visualinspection/
+Call log:
+  - navigating to "https://humansintheloop.org/tag/visualinspection/", waiting until "load"
+
+2026-02-24 15:26:59 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/tag/visualinspection/ (attempt 2/3)
+2026-02-24 15:27:09 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/visualinspection/: All validations passed
+2026-02-24 15:27:09 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/visualinspection/ | Status: 200 | Size: 319272 bytes
+2026-02-24 15:27:09 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/cardamageannotation/
+2026-02-24 15:27:15 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/cardamageannotation/: All validations passed
+2026-02-24 15:27:15 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/cardamageannotation/ | Status: 200 | Size: 319347 bytes
+2026-02-24 15:27:15 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/damageannotation/
+2026-02-24 15:27:22 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/damageannotation/: All validations passed
+2026-02-24 15:27:22 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/damageannotation/ | Status: 200 | Size: 314842 bytes
+2026-02-24 15:27:22 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/sportsannotation/
+2026-02-24 15:27:27 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/sportsannotation/: All validations passed
+2026-02-24 15:27:27 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/sportsannotation/ | Status: 200 | Size: 319194 bytes
+2026-02-24 15:27:27 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/sportsai/
+2026-02-24 15:27:33 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/sportsai/: All validations passed
+2026-02-24 15:27:33 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/sportsai/ | Status: 200 | Size: 318994 bytes
+2026-02-24 15:27:33 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/keypointannotation/
+2026-02-24 15:27:39 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/keypointannotation/: All validations passed
+2026-02-24 15:27:39 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/keypointannotation/ | Status: 200 | Size: 319256 bytes
+2026-02-24 15:27:39 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/medical/
+2026-02-24 15:27:45 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/medical/: All validations passed
+2026-02-24 15:27:45 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/medical/ | Status: 200 | Size: 318329 bytes
+2026-02-24 15:27:46 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/doctorsintheloop/
+2026-02-24 15:27:52 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/doctorsintheloop/: All validations passed
+2026-02-24 15:27:52 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/doctorsintheloop/ | Status: 200 | Size: 318554 bytes
+2026-02-24 15:27:52 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/videoannotation/
+2026-02-24 15:27:58 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/videoannotation/: All validations passed
+2026-02-24 15:27:58 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/videoannotation/ | Status: 200 | Size: 321646 bytes
+2026-02-24 15:27:58 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/medicalai/
+2026-02-24 15:27:58 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/tag/medicalai/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/tag/medicalai/
+Call log:
+  - navigating to "https://humansintheloop.org/tag/medicalai/", waiting until "load"
+
+2026-02-24 15:27:58 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/tag/medicalai/ (attempt 2/3)
+2026-02-24 15:28:08 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/medicalai/: All validations passed
+2026-02-24 15:28:08 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/medicalai/ | Status: 200 | Size: 314318 bytes
+2026-02-24 15:28:08 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/medicalannotation/
+2026-02-24 15:28:08 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/tag/medicalannotation/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/tag/medicalannotation/
+Call log:
+  - navigating to "https://humansintheloop.org/tag/medicalannotation/", waiting until "load"
+
+2026-02-24 15:28:08 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/tag/medicalannotation/ (attempt 2/3)
+2026-02-24 15:28:16 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/medicalannotation/: All validations passed
+2026-02-24 15:28:16 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/medicalannotation/ | Status: 200 | Size: 318550 bytes
+2026-02-24 15:28:16 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/surveillanceai/
+2026-02-24 15:28:22 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/surveillanceai/: All validations passed
+2026-02-24 15:28:22 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/surveillanceai/ | Status: 200 | Size: 318654 bytes
+2026-02-24 15:28:22 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/surveillanceannotation/
+2026-02-24 15:28:28 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/surveillanceannotation/: All validations passed
+2026-02-24 15:28:28 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/surveillanceannotation/ | Status: 200 | Size: 319794 bytes
+2026-02-24 15:28:28 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/drc/
+2026-02-24 15:28:34 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/drc/: All validations passed
+2026-02-24 15:28:34 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/drc/ | Status: 200 | Size: 318054 bytes
+2026-02-24 15:28:34 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/warchild/
+2026-02-24 15:28:34 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/tag/warchild/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/tag/warchild/
+Call log:
+  - navigating to "https://humansintheloop.org/tag/warchild/", waiting until "load"
+
+2026-02-24 15:28:34 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/tag/warchild/ (attempt 2/3)
+2026-02-24 15:28:43 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/warchild/: All validations passed
+2026-02-24 15:28:43 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/warchild/ | Status: 200 | Size: 318181 bytes
+2026-02-24 15:28:43 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/fightyeight/
+2026-02-24 15:28:48 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/fightyeight/: All validations passed
+2026-02-24 15:28:48 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/fightyeight/ | Status: 200 | Size: 317600 bytes
+2026-02-24 15:28:48 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/beetrootacademy/
+2026-02-24 15:28:54 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/beetrootacademy/: All validations passed
+2026-02-24 15:28:54 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/beetrootacademy/ | Status: 200 | Size: 318423 bytes
+2026-02-24 15:28:55 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/ukraine/
+2026-02-24 15:29:01 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/ukraine/: All validations passed
+2026-02-24 15:29:01 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/ukraine/ | Status: 200 | Size: 318223 bytes
+2026-02-24 15:29:01 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/recycleai/
+2026-02-24 15:29:07 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/recycleai/: All validations passed
+2026-02-24 15:29:07 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/recycleai/ | Status: 200 | Size: 319092 bytes
+2026-02-24 15:29:07 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/recycling/
+2026-02-24 15:29:12 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/recycling/: All validations passed
+2026-02-24 15:29:12 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/recycling/ | Status: 200 | Size: 319090 bytes
+2026-02-24 15:29:13 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/livemonitoring/
+2026-02-24 15:29:13 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/tag/livemonitoring/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/tag/livemonitoring/
+Call log:
+  - navigating to "https://humansintheloop.org/tag/livemonitoring/", waiting until "load"
+
+2026-02-24 15:29:13 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/tag/livemonitoring/ (attempt 2/3)
+2026-02-24 15:29:20 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/livemonitoring/: All validations passed
+2026-02-24 15:29:20 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/livemonitoring/ | Status: 200 | Size: 319386 bytes
+2026-02-24 15:29:20 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/chatgpt/
+2026-02-24 15:29:27 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/chatgpt/: All validations passed
+2026-02-24 15:29:27 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/chatgpt/ | Status: 200 | Size: 318366 bytes
+2026-02-24 15:29:27 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/education/
+2026-02-24 15:29:27 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/tag/education/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/tag/education/
+Call log:
+  - navigating to "https://humansintheloop.org/tag/education/", waiting until "load"
+
+2026-02-24 15:29:27 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/tag/education/ (attempt 2/3)
+2026-02-24 15:29:35 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/education/: All validations passed
+2026-02-24 15:29:35 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/education/ | Status: 200 | Size: 322882 bytes
+2026-02-24 15:29:36 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/outsourcing/
+2026-02-24 15:29:42 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/outsourcing/: All validations passed
+2026-02-24 15:29:42 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/outsourcing/ | Status: 200 | Size: 317789 bytes
+2026-02-24 15:29:42 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/data/
+2026-02-24 15:29:42 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/tag/data/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/tag/data/
+Call log:
+  - navigating to "https://humansintheloop.org/tag/data/", waiting until "load"
+
+2026-02-24 15:29:42 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/tag/data/ (attempt 2/3)
+2026-02-24 15:29:51 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/data/: All validations passed
+2026-02-24 15:29:51 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/data/ | Status: 200 | Size: 318295 bytes
+2026-02-24 15:29:51 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/activelearning/
+2026-02-24 15:29:51 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/tag/activelearning/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/tag/activelearning/
+Call log:
+  - navigating to "https://humansintheloop.org/tag/activelearning/", waiting until "load"
+
+2026-02-24 15:29:51 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/tag/activelearning/ (attempt 2/3)
+2026-02-24 15:29:59 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/activelearning/: All validations passed
+2026-02-24 15:29:59 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/activelearning/ | Status: 200 | Size: 318745 bytes
+2026-02-24 15:30:00 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/pipelines/
+2026-02-24 15:30:00 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/tag/pipelines/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/tag/pipelines/
+Call log:
+  - navigating to "https://humansintheloop.org/tag/pipelines/", waiting until "load"
+
+2026-02-24 15:30:00 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/tag/pipelines/ (attempt 2/3)
+2026-02-24 15:30:08 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/pipelines/: All validations passed
+2026-02-24 15:30:08 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/pipelines/ | Status: 200 | Size: 317883 bytes
+2026-02-24 15:30:08 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/b-corp/
+2026-02-24 15:30:16 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/b-corp/: All validations passed
+2026-02-24 15:30:16 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/b-corp/ | Status: 200 | Size: 320303 bytes
+2026-02-24 15:30:16 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/social-enterprise/
+2026-02-24 15:30:23 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/social-enterprise/: All validations passed
+2026-02-24 15:30:23 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/social-enterprise/ | Status: 200 | Size: 324563 bytes
+2026-02-24 15:30:23 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/data-annotation/
+2026-02-24 15:30:29 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/data-annotation/: All validations passed
+2026-02-24 15:30:29 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/data-annotation/ | Status: 200 | Size: 321255 bytes
+2026-02-24 15:30:29 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/b-corp-certified/
+2026-02-24 15:30:29 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/tag/b-corp-certified/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/tag/b-corp-certified/
+Call log:
+  - navigating to "https://humansintheloop.org/tag/b-corp-certified/", waiting until "load"
+
+2026-02-24 15:30:29 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/tag/b-corp-certified/ (attempt 2/3)
+2026-02-24 15:30:37 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/b-corp-certified/: All validations passed
+2026-02-24 15:30:37 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/b-corp-certified/ | Status: 200 | Size: 321280 bytes
+2026-02-24 15:30:38 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/award/
+2026-02-24 15:30:43 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/award/: All validations passed
+2026-02-24 15:30:43 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/award/ | Status: 200 | Size: 318383 bytes
+2026-02-24 15:30:43 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/cartier/
+2026-02-24 15:30:49 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/cartier/: All validations passed
+2026-02-24 15:30:49 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/cartier/ | Status: 200 | Size: 319109 bytes
+2026-02-24 15:30:50 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/women/
+2026-02-24 15:30:55 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/women/: All validations passed
+2026-02-24 15:30:55 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/women/ | Status: 200 | Size: 319059 bytes
+2026-02-24 15:30:55 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/first-prize/
+2026-02-24 15:31:01 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/first-prize/: All validations passed
+2026-02-24 15:31:01 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/first-prize/ | Status: 200 | Size: 319209 bytes
+2026-02-24 15:31:01 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/dataannotation/
+2026-02-24 15:31:10 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/dataannotation/: All validations passed
+2026-02-24 15:31:10 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/dataannotation/ | Status: 200 | Size: 330708 bytes
+2026-02-24 15:31:10 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/smartcity/
+2026-02-24 15:31:10 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/tag/smartcity/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/tag/smartcity/
+Call log:
+  - navigating to "https://humansintheloop.org/tag/smartcity/", waiting until "load"
+
+2026-02-24 15:31:10 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/tag/smartcity/ (attempt 2/3)
+2026-02-24 15:31:19 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/smartcity/: All validations passed
+2026-02-24 15:31:19 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/smartcity/ | Status: 200 | Size: 317739 bytes
+2026-02-24 15:31:19 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/firemonitoring/
+2026-02-24 15:31:25 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/firemonitoring/: All validations passed
+2026-02-24 15:31:25 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/firemonitoring/ | Status: 200 | Size: 318623 bytes
+2026-02-24 15:31:25 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/dataannotation-2/
+2026-02-24 15:31:32 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/dataannotation-2/: All validations passed
+2026-02-24 15:31:32 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/dataannotation-2/ | Status: 200 | Size: 318660 bytes
+2026-02-24 15:31:32 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/machinelearning/
+2026-02-24 15:31:37 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/machinelearning/: All validations passed
+2026-02-24 15:31:37 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/machinelearning/ | Status: 200 | Size: 324831 bytes
+2026-02-24 15:31:37 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/datasampling/
+2026-02-24 15:31:42 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/datasampling/: All validations passed
+2026-02-24 15:31:42 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/datasampling/ | Status: 200 | Size: 321842 bytes
+2026-02-24 15:31:43 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/datasamplingstrategy/
+2026-02-24 15:31:43 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/tag/datasamplingstrategy/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/tag/datasamplingstrategy/
+Call log:
+  - navigating to "https://humansintheloop.org/tag/datasamplingstrategy/", waiting until "load"
+
+2026-02-24 15:31:43 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/tag/datasamplingstrategy/ (attempt 2/3)
+2026-02-24 15:31:50 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/datasamplingstrategy/: All validations passed
+2026-02-24 15:31:50 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/datasamplingstrategy/ | Status: 200 | Size: 321291 bytes
+2026-02-24 15:31:51 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/jobsearch/
+2026-02-24 15:31:57 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/jobsearch/: All validations passed
+2026-02-24 15:31:57 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/jobsearch/ | Status: 200 | Size: 324735 bytes
+2026-02-24 15:31:57 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/recruitmenttips/
+2026-02-24 15:32:02 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/recruitmenttips/: All validations passed
+2026-02-24 15:32:02 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/recruitmenttips/ | Status: 200 | Size: 324885 bytes
+2026-02-24 15:32:02 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/womenempowerment-techhubs-digitalskills-moldova/
+2026-02-24 15:32:09 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/womenempowerment-techhubs-digitalskills-moldova/: All validations passed
+2026-02-24 15:32:09 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/womenempowerment-techhubs-digitalskills-moldova/ | Status: 200 | Size: 319478 bytes
+2026-02-24 15:32:09 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/synthetic-data-for-machine-learning/
+2026-02-24 15:32:16 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/synthetic-data-for-machine-learning/: All validations passed
+2026-02-24 15:32:16 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/synthetic-data-for-machine-learning/ | Status: 200 | Size: 319019 bytes
+2026-02-24 15:32:16 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/aitrainingdata/
+2026-02-24 15:32:21 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/aitrainingdata/: All validations passed
+2026-02-24 15:32:21 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/aitrainingdata/ | Status: 200 | Size: 321378 bytes
+2026-02-24 15:32:21 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/syntheticdata/
+2026-02-24 15:32:26 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/syntheticdata/: All validations passed
+2026-02-24 15:32:26 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/syntheticdata/ | Status: 200 | Size: 318469 bytes
+2026-02-24 15:32:26 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/generativeai/
+2026-02-24 15:32:27 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/tag/generativeai/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/tag/generativeai/
+Call log:
+  - navigating to "https://humansintheloop.org/tag/generativeai/", waiting until "load"
+
+2026-02-24 15:32:27 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/tag/generativeai/ (attempt 2/3)
+2026-02-24 15:32:36 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/generativeai/: All validations passed
+2026-02-24 15:32:36 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/generativeai/ | Status: 200 | Size: 318444 bytes
+2026-02-24 15:32:36 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/machinelearning-2/
+2026-02-24 15:32:42 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/machinelearning-2/: All validations passed
+2026-02-24 15:32:42 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/machinelearning-2/ | Status: 200 | Size: 324416 bytes
+2026-02-24 15:32:42 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/aitrainingdatacrisis/
+2026-02-24 15:32:48 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/aitrainingdatacrisis/: All validations passed
+2026-02-24 15:32:48 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/aitrainingdatacrisis/ | Status: 200 | Size: 318644 bytes
+2026-02-24 15:32:48 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/human-in-the-loopannotation/
+2026-02-24 15:32:53 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/human-in-the-loopannotation/: All validations passed
+2026-02-24 15:32:53 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/human-in-the-loopannotation/ | Status: 200 | Size: 321609 bytes
+2026-02-24 15:32:53 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/modeldegradation/
+2026-02-24 15:32:53 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/tag/modeldegradation/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/tag/modeldegradation/
+Call log:
+  - navigating to "https://humansintheloop.org/tag/modeldegradation/", waiting until "load"
+
+2026-02-24 15:32:53 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/tag/modeldegradation/ (attempt 2/3)
+2026-02-24 15:33:01 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/modeldegradation/: All validations passed
+2026-02-24 15:33:01 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/modeldegradation/ | Status: 200 | Size: 318533 bytes
+2026-02-24 15:33:01 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/2025aitrends/
+2026-02-24 15:33:08 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/2025aitrends/: All validations passed
+2026-02-24 15:33:08 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/2025aitrends/ | Status: 200 | Size: 318433 bytes
+2026-02-24 15:33:09 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/mlops/
+2026-02-24 15:33:09 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/tag/mlops/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/tag/mlops/
+Call log:
+  - navigating to "https://humansintheloop.org/tag/mlops/", waiting until "load"
+
+2026-02-24 15:33:09 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/tag/mlops/ (attempt 2/3)
+2026-02-24 15:33:18 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/mlops/: All validations passed
+2026-02-24 15:33:18 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/mlops/ | Status: 200 | Size: 321158 bytes
+2026-02-24 15:33:18 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/leadgeneration/
+2026-02-24 15:33:23 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/leadgeneration/: All validations passed
+2026-02-24 15:33:23 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/leadgeneration/ | Status: 200 | Size: 318391 bytes
+2026-02-24 15:33:23 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/b2boutreach/
+2026-02-24 15:33:30 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/b2boutreach/: All validations passed
+2026-02-24 15:33:30 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/b2boutreach/ | Status: 200 | Size: 318330 bytes
+2026-02-24 15:33:30 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/outboundmarketing/
+2026-02-24 15:33:36 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/outboundmarketing/: All validations passed
+2026-02-24 15:33:36 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/outboundmarketing/ | Status: 200 | Size: 318478 bytes
+2026-02-24 15:33:37 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/salesautomation/
+2026-02-24 15:33:42 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/salesautomation/: All validations passed
+2026-02-24 15:33:42 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/salesautomation/ | Status: 200 | Size: 318428 bytes
+2026-02-24 15:33:43 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/aileadgen/
+2026-02-24 15:33:49 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/aileadgen/: All validations passed
+2026-02-24 15:33:49 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/aileadgen/ | Status: 200 | Size: 318278 bytes
+2026-02-24 15:33:49 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/businessgrowth/
+2026-02-24 15:33:56 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/businessgrowth/: All validations passed
+2026-02-24 15:33:56 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/businessgrowth/ | Status: 200 | Size: 318403 bytes
+2026-02-24 15:33:56 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/responsibleai/
+2026-02-24 15:33:56 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/tag/responsibleai/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/tag/responsibleai/
+Call log:
+  - navigating to "https://humansintheloop.org/tag/responsibleai/", waiting until "load"
+
+2026-02-24 15:33:56 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/tag/responsibleai/ (attempt 2/3)
+2026-02-24 15:34:04 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/responsibleai/: All validations passed
+2026-02-24 15:34:04 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/responsibleai/ | Status: 200 | Size: 318552 bytes
+2026-02-24 15:34:04 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/responsible-ai/
+2026-02-24 15:34:11 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/responsible-ai/: All validations passed
+2026-02-24 15:34:11 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/responsible-ai/ | Status: 200 | Size: 318744 bytes
+2026-02-24 15:34:11 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/aigovernance/
+2026-02-24 15:34:16 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/aigovernance/: All validations passed
+2026-02-24 15:34:16 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/aigovernance/ | Status: 200 | Size: 318704 bytes
+2026-02-24 15:34:16 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/biasmitigation/
+2026-02-24 15:34:22 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/biasmitigation/: All validations passed
+2026-02-24 15:34:22 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/biasmitigation/ | Status: 200 | Size: 318754 bytes
+2026-02-24 15:34:22 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/llms/
+2026-02-24 15:34:28 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/llms/: All validations passed
+2026-02-24 15:34:28 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/llms/ | Status: 200 | Size: 318504 bytes
+2026-02-24 15:34:28 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/aiaudit/
+2026-02-24 15:34:34 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/aiaudit/: All validations passed
+2026-02-24 15:34:34 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/aiaudit/ | Status: 200 | Size: 318579 bytes
+2026-02-24 15:34:34 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/healthcareai/
+2026-02-24 15:34:41 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/healthcareai/: All validations passed
+2026-02-24 15:34:41 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/healthcareai/ | Status: 200 | Size: 318558 bytes
+2026-02-24 15:34:41 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/aidiagnosticerrors/
+2026-02-24 15:34:41 - scraper.humansintheloop.org - ERROR - ✗ ERROR: https://humansintheloop.org/tag/aidiagnosticerrors/ | Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://humansintheloop.org/tag/aidiagnosticerrors/
+Call log:
+  - navigating to "https://humansintheloop.org/tag/aidiagnosticerrors/", waiting until "load"
+
+2026-02-24 15:34:41 - scraper.humansintheloop.org - INFO - Retrying https://humansintheloop.org/tag/aidiagnosticerrors/ (attempt 2/3)
+2026-02-24 15:34:48 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/aidiagnosticerrors/: All validations passed
+2026-02-24 15:34:48 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/aidiagnosticerrors/ | Status: 200 | Size: 318708 bytes
+2026-02-24 15:34:49 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/medicalimaging/
+2026-02-24 15:34:55 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/medicalimaging/: All validations passed
+2026-02-24 15:34:55 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/medicalimaging/ | Status: 200 | Size: 318608 bytes
+2026-02-24 15:34:55 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/aicompliancehealthcare/
+2026-02-24 15:35:01 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/aicompliancehealthcare/: All validations passed
+2026-02-24 15:35:01 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/aicompliancehealthcare/ | Status: 200 | Size: 318808 bytes
+2026-02-24 15:35:02 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/tag/aireliability/
+2026-02-24 15:35:09 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/tag/aireliability/: All validations passed
+2026-02-24 15:35:09 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/tag/aireliability/ | Status: 200 | Size: 318583 bytes
+2026-02-24 15:35:09 - scraper.humansintheloop.org - INFO - Starting scrape: https://humansintheloop.org/table_tags/unga80-fairdataeconomy-digitalinfrastructure/
+2026-02-24 15:35:14 - scraper.humansintheloop.org - INFO - ✓ VALIDATION PASSED: https://humansintheloop.org/table_tags/unga80-fairdataeconomy-digitalinfrastructure/: All validations passed
+2026-02-24 15:35:14 - scraper.humansintheloop.org - INFO - ✓ SUCCESS: https://humansintheloop.org/table_tags/unga80-fairdataeconomy-digitalinfrastructure/ | Status: 200 | Size: 386325 bytes

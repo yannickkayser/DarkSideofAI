@@ -1,0 +1,160 @@
+2026-02-24 13:43:04 - scraper.www.crowdworks.ai - INFO - Starting scrape of Crowdworks AI Inc.
+2026-02-24 13:43:06 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/
+2026-02-24 13:43:15 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/: All validations passed
+2026-02-24 13:43:15 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/ | Status: 200 | Size: 447688 bytes
+2026-02-24 13:43:15 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/ai/worksone
+2026-02-24 13:43:20 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/ai/worksone: All validations passed
+2026-02-24 13:43:20 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/ai/worksone | Status: 200 | Size: 353070 bytes
+2026-02-24 13:43:20 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/ai/alpy
+2026-02-24 13:43:25 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/ai/alpy: All validations passed
+2026-02-24 13:43:25 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/ai/alpy | Status: 200 | Size: 360510 bytes
+2026-02-24 13:43:25 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/datavoucher/2026
+2026-02-24 13:43:30 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/datavoucher/2026: All validations passed
+2026-02-24 13:43:30 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/datavoucher/2026 | Status: 200 | Size: 482997 bytes
+2026-02-24 13:43:30 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/ai/alpykc
+2026-02-24 13:43:35 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/ai/alpykc: All validations passed
+2026-02-24 13:43:35 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/ai/alpykc | Status: 200 | Size: 345806 bytes
+2026-02-24 13:43:35 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/data/labeling
+2026-02-24 13:43:41 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/data/labeling: All validations passed
+2026-02-24 13:43:41 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/data/labeling | Status: 200 | Size: 411070 bytes
+2026-02-24 13:43:41 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/data/datasets
+2026-02-24 13:43:46 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/data/datasets: All validations passed
+2026-02-24 13:43:46 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/data/datasets | Status: 200 | Size: 307535 bytes
+2026-02-24 13:43:46 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/data/workstage
+2026-02-24 13:44:01 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/data/workstage: All validations passed
+2026-02-24 13:44:01 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/data/workstage | Status: 200 | Size: 380730 bytes
+2026-02-24 13:44:01 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/data/autonomous
+2026-02-24 13:44:07 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/data/autonomous: All validations passed
+2026-02-24 13:44:07 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/data/autonomous | Status: 200 | Size: 388298 bytes
+2026-02-24 13:44:07 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/data/physicalai
+2026-02-24 13:44:13 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/data/physicalai: All validations passed
+2026-02-24 13:44:13 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/data/physicalai | Status: 200 | Size: 443121 bytes
+2026-02-24 13:44:13 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/data/healthcare
+2026-02-24 13:44:18 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/data/healthcare: All validations passed
+2026-02-24 13:44:18 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/data/healthcare | Status: 200 | Size: 347267 bytes
+2026-02-24 13:44:18 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/data/%08defense
+2026-02-24 13:44:23 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/data/%08defense: All validations passed
+2026-02-24 13:44:23 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/data/%08defense | Status: 200 | Size: 351172 bytes
+2026-02-24 13:44:23 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/data/academy
+2026-02-24 13:44:28 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/data/academy: All validations passed
+2026-02-24 13:44:28 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/data/academy | Status: 200 | Size: 348301 bytes
+2026-02-24 13:44:28 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/company/aboutus
+2026-02-24 13:44:33 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/company/aboutus: All validations passed
+2026-02-24 13:44:33 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/company/aboutus | Status: 200 | Size: 450026 bytes
+2026-02-24 13:44:33 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/company/%08security
+2026-02-24 13:44:40 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/company/%08security: All validations passed
+2026-02-24 13:44:40 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/company/%08security | Status: 200 | Size: 365231 bytes
+2026-02-24 13:44:40 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/resources/newsletter
+2026-02-24 13:44:44 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/resources/newsletter: All validations passed
+2026-02-24 13:44:44 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/resources/newsletter | Status: 200 | Size: 232768 bytes
+2026-02-24 13:44:44 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/company/contact
+2026-02-24 13:44:50 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/company/contact: All validations passed
+2026-02-24 13:44:50 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/company/contact | Status: 200 | Size: 308050 bytes
+2026-02-24 13:44:50 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/ethics/hotline
+2026-02-24 13:44:55 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/ethics/hotline: All validations passed
+2026-02-24 13:44:55 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/ethics/hotline | Status: 200 | Size: 238810 bytes
+2026-02-24 13:44:55 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/policies/privacypolicy
+2026-02-24 13:45:00 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/policies/privacypolicy: All validations passed
+2026-02-24 13:45:00 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/policies/privacypolicy | Status: 200 | Size: 118841 bytes
+2026-02-24 13:45:00 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/policies/optionalprivacy
+2026-02-24 13:45:06 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/policies/optionalprivacy: All validations passed
+2026-02-24 13:45:06 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/policies/optionalprivacy | Status: 200 | Size: 118986 bytes
+2026-02-24 13:45:06 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/policies/marketingconsent
+2026-02-24 13:45:11 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/policies/marketingconsent: All validations passed
+2026-02-24 13:45:11 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/policies/marketingconsent | Status: 200 | Size: 119279 bytes
+2026-02-24 13:45:11 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/data-type/image
+2026-02-24 13:45:15 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/data-type/image: All validations passed
+2026-02-24 13:45:15 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/data-type/image | Status: 200 | Size: 446785 bytes
+2026-02-24 13:45:15 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/data-type/video
+2026-02-24 13:45:25 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/data-type/video: All validations passed
+2026-02-24 13:45:25 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/data-type/video | Status: 200 | Size: 590171 bytes
+2026-02-24 13:45:25 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/data-type/audio
+2026-02-24 13:45:31 - scraper.www.crowdworks.ai - WARNING - ✗ VALIDATION FAILED: https://www.crowdworks.ai/data-type/audio: Missing required field: text_content
+2026-02-24 13:45:31 - scraper.www.crowdworks.ai - WARNING - Validation failed for https://www.crowdworks.ai/data-type/audio: Missing required field: text_content
+2026-02-24 13:45:31 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/data-type/text
+2026-02-24 13:45:36 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/data-type/text: All validations passed
+2026-02-24 13:45:36 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/data-type/text | Status: 200 | Size: 358576 bytes
+2026-02-24 13:45:36 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/data-type/pointcloud
+2026-02-24 13:45:41 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/data-type/pointcloud: All validations passed
+2026-02-24 13:45:41 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/data-type/pointcloud | Status: 200 | Size: 425978 bytes
+2026-02-24 13:45:41 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/ai/evaluation
+2026-02-24 13:45:46 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/ai/evaluation: All validations passed
+2026-02-24 13:45:46 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/ai/evaluation | Status: 200 | Size: 512036 bytes
+2026-02-24 13:45:46 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/ja/
+2026-02-24 13:45:51 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/ja/: All validations passed
+2026-02-24 13:45:51 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/ja/ | Status: 200 | Size: 443000 bytes
+2026-02-24 13:45:51 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/ja/ai/worksone
+2026-02-24 13:45:56 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/ja/ai/worksone: All validations passed
+2026-02-24 13:45:56 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/ja/ai/worksone | Status: 200 | Size: 348578 bytes
+2026-02-24 13:45:56 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/ja/ai/alpy
+2026-02-24 13:46:01 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/ja/ai/alpy: All validations passed
+2026-02-24 13:46:01 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/ja/ai/alpy | Status: 200 | Size: 356318 bytes
+2026-02-24 13:46:01 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/ja/datavoucher/2026
+2026-02-24 13:46:06 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/ja/datavoucher/2026: All validations passed
+2026-02-24 13:46:06 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/ja/datavoucher/2026 | Status: 200 | Size: 475291 bytes
+2026-02-24 13:46:06 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/ja/ai/alpykc
+2026-02-24 13:46:11 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/ja/ai/alpykc: All validations passed
+2026-02-24 13:46:11 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/ja/ai/alpykc | Status: 200 | Size: 342146 bytes
+2026-02-24 13:46:11 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/ja/data/labeling
+2026-02-24 13:46:17 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/ja/data/labeling: All validations passed
+2026-02-24 13:46:17 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/ja/data/labeling | Status: 200 | Size: 406354 bytes
+2026-02-24 13:46:17 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/ja/data/datasets
+2026-02-24 13:46:22 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/ja/data/datasets: All validations passed
+2026-02-24 13:46:22 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/ja/data/datasets | Status: 200 | Size: 345406 bytes
+2026-02-24 13:46:22 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/ja/data/workstage
+2026-02-24 13:46:29 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/ja/data/workstage: All validations passed
+2026-02-24 13:46:29 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/ja/data/workstage | Status: 200 | Size: 375772 bytes
+2026-02-24 13:46:29 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/ja/data/autonomous
+2026-02-24 13:46:34 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/ja/data/autonomous: All validations passed
+2026-02-24 13:46:34 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/ja/data/autonomous | Status: 200 | Size: 384674 bytes
+2026-02-24 13:46:34 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/ja/data/physicalai
+2026-02-24 13:46:39 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/ja/data/physicalai: All validations passed
+2026-02-24 13:46:39 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/ja/data/physicalai | Status: 200 | Size: 439590 bytes
+2026-02-24 13:46:39 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/ja/data/healthcare
+2026-02-24 13:46:45 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/ja/data/healthcare: All validations passed
+2026-02-24 13:46:45 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/ja/data/healthcare | Status: 200 | Size: 343670 bytes
+2026-02-24 13:46:45 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/ja/data/%08defense
+2026-02-24 13:46:50 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/ja/data/%08defense: All validations passed
+2026-02-24 13:46:50 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/ja/data/%08defense | Status: 200 | Size: 347080 bytes
+2026-02-24 13:46:50 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/ja/data/academy
+2026-02-24 13:46:56 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/ja/data/academy: All validations passed
+2026-02-24 13:46:56 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/ja/data/academy | Status: 200 | Size: 343928 bytes
+2026-02-24 13:46:56 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/ja/company/aboutus
+2026-02-24 13:47:00 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/ja/company/aboutus: All validations passed
+2026-02-24 13:47:00 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/ja/company/aboutus | Status: 200 | Size: 436181 bytes
+2026-02-24 13:47:00 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/ja/company/%08security
+2026-02-24 13:47:05 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/ja/company/%08security: All validations passed
+2026-02-24 13:47:05 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/ja/company/%08security | Status: 200 | Size: 361572 bytes
+2026-02-24 13:47:05 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/ja/resources/newsletter
+2026-02-24 13:47:11 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/ja/resources/newsletter: All validations passed
+2026-02-24 13:47:11 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/ja/resources/newsletter | Status: 200 | Size: 233424 bytes
+2026-02-24 13:47:11 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/ja/company/contact
+2026-02-24 13:47:17 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/ja/company/contact: All validations passed
+2026-02-24 13:47:17 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/ja/company/contact | Status: 200 | Size: 304774 bytes
+2026-02-24 13:47:17 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/ja/ethics/hotline
+2026-02-24 13:47:21 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/ja/ethics/hotline: All validations passed
+2026-02-24 13:47:21 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/ja/ethics/hotline | Status: 200 | Size: 238779 bytes
+2026-02-24 13:47:21 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/ja/policies/privacypolicy
+2026-02-24 13:47:27 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/ja/policies/privacypolicy: All validations passed
+2026-02-24 13:47:27 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/ja/policies/privacypolicy | Status: 200 | Size: 118965 bytes
+2026-02-24 13:47:27 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/ja/policies/optionalprivacy
+2026-02-24 13:47:31 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/ja/policies/optionalprivacy: All validations passed
+2026-02-24 13:47:31 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/ja/policies/optionalprivacy | Status: 200 | Size: 118898 bytes
+2026-02-24 13:47:31 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/ja/policies/marketingconsent
+2026-02-24 13:47:35 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/ja/policies/marketingconsent: All validations passed
+2026-02-24 13:47:35 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/ja/policies/marketingconsent | Status: 200 | Size: 118631 bytes
+2026-02-24 13:47:35 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/ja/data-type/image
+2026-02-24 13:47:41 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/ja/data-type/image: All validations passed
+2026-02-24 13:47:41 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/ja/data-type/image | Status: 200 | Size: 442824 bytes
+2026-02-24 13:47:41 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/ja/data-type/video
+2026-02-24 13:47:48 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/ja/data-type/video: All validations passed
+2026-02-24 13:47:48 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/ja/data-type/video | Status: 200 | Size: 586400 bytes
+2026-02-24 13:47:48 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/ja/data-type/audio
+2026-02-24 13:47:52 - scraper.www.crowdworks.ai - WARNING - ✗ VALIDATION FAILED: https://www.crowdworks.ai/ja/data-type/audio: Missing required field: text_content
+2026-02-24 13:47:52 - scraper.www.crowdworks.ai - WARNING - Validation failed for https://www.crowdworks.ai/ja/data-type/audio: Missing required field: text_content
+2026-02-24 13:47:52 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/ja/data-type/text
+2026-02-24 13:47:57 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/ja/data-type/text: All validations passed
+2026-02-24 13:47:57 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/ja/data-type/text | Status: 200 | Size: 354803 bytes
+2026-02-24 13:47:57 - scraper.www.crowdworks.ai - INFO - Starting scrape: https://www.crowdworks.ai/ja/data-type/pointcloud
+2026-02-24 13:48:01 - scraper.www.crowdworks.ai - INFO - ✓ VALIDATION PASSED: https://www.crowdworks.ai/ja/data-type/pointcloud: All validations passed
+2026-02-24 13:48:01 - scraper.www.crowdworks.ai - INFO - ✓ SUCCESS: https://www.crowdworks.ai/ja/data-type/pointcloud | Status: 200 | Size: 422211 bytes

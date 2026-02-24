@@ -1,0 +1,5 @@
+2026-02-24 00:46:46 - scraper.www.mturk.com - INFO - Starting scrape of Amazon Mechanical Turk
+2026-02-24 00:46:47 - scraper.www.mturk.com - WARNING - No sitemap found, scraping only base URL
+2026-02-24 00:46:48 - scraper.www.mturk.com - INFO - Starting scrape: https://www.mturk.com/
+2026-02-24 00:46:54 - scraper.www.mturk.com - INFO - ✓ VALIDATION PASSED: https://www.mturk.com/: All validations passed
+2026-02-24 00:46:54 - scraper.www.mturk.com - INFO - ✓ SUCCESS: https://www.mturk.com/ | Status: 200 | Size: 24852 bytes

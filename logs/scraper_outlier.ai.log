@@ -1,0 +1,685 @@
+2026-02-23 23:20:20 - scraper.outlier.ai - INFO - Starting scrape of Outlier AI
+2026-02-23 23:20:22 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/
+2026-02-23 23:20:44 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/: All validations passed
+2026-02-23 23:20:44 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/ | Status: 200 | Size: 630136 bytes
+2026-02-23 23:20:44 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/about-us
+2026-02-23 23:21:05 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/about-us: All validations passed
+2026-02-23 23:21:05 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/about-us | Status: 200 | Size: 725446 bytes
+2026-02-23 23:21:05 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/vision-ots
+2026-02-23 23:21:26 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/vision-ots: All validations passed
+2026-02-23 23:21:26 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/vision-ots | Status: 200 | Size: 382356 bytes
+2026-02-23 23:21:26 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/university/main
+2026-02-23 23:21:46 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/university/main: All validations passed
+2026-02-23 23:21:46 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/university/main | Status: 200 | Size: 236888 bytes
+2026-02-23 23:21:46 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/hle/stem
+2026-02-23 23:22:07 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/hle/stem: All validations passed
+2026-02-23 23:22:07 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/hle/stem | Status: 200 | Size: 636588 bytes
+2026-02-23 23:22:07 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/hle/business
+2026-02-23 23:22:27 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/hle/business: All validations passed
+2026-02-23 23:22:27 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/hle/business | Status: 200 | Size: 643329 bytes
+2026-02-23 23:22:28 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/hle/humanities
+2026-02-23 23:22:47 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/hle/humanities: All validations passed
+2026-02-23 23:22:47 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/hle/humanities | Status: 200 | Size: 289818 bytes
+2026-02-23 23:22:47 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/hle/campus
+2026-02-23 23:23:07 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/hle/campus: All validations passed
+2026-02-23 23:23:07 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/hle/campus | Status: 200 | Size: 352273 bytes
+2026-02-23 23:23:08 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/hle/campus/brown-university
+2026-02-23 23:23:28 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/hle/campus/brown-university: All validations passed
+2026-02-23 23:23:28 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/hle/campus/brown-university | Status: 200 | Size: 248000 bytes
+2026-02-23 23:23:28 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/coding/ml-engineer
+2026-02-23 23:23:48 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/coding/ml-engineer: All validations passed
+2026-02-23 23:23:48 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/coding/ml-engineer | Status: 200 | Size: 675230 bytes
+2026-02-23 23:23:48 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/meet-our-experts
+2026-02-23 23:24:08 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/meet-our-experts: All validations passed
+2026-02-23 23:24:08 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/meet-our-experts | Status: 200 | Size: 464013 bytes
+2026-02-23 23:24:09 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog
+2026-02-23 23:24:28 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog: All validations passed
+2026-02-23 23:24:28 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog | Status: 200 | Size: 388895 bytes
+2026-02-23 23:24:28 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/medicine
+2026-02-23 23:24:47 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/medicine: All validations passed
+2026-02-23 23:24:47 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/medicine | Status: 200 | Size: 705426 bytes
+2026-02-23 23:24:47 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/medicine-hvc
+2026-02-23 23:25:07 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/medicine-hvc: All validations passed
+2026-02-23 23:25:07 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/medicine-hvc | Status: 200 | Size: 688194 bytes
+2026-02-23 23:25:07 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/radiology
+2026-02-23 23:25:27 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/radiology: All validations passed
+2026-02-23 23:25:27 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/radiology | Status: 200 | Size: 758645 bytes
+2026-02-23 23:25:27 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/data-analyst/ai-agents
+2026-02-23 23:25:47 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/data-analyst/ai-agents: All validations passed
+2026-02-23 23:25:47 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/data-analyst/ai-agents | Status: 200 | Size: 597360 bytes
+2026-02-23 23:25:47 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/accounting/anshul-goyal
+2026-02-23 23:26:07 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/accounting/anshul-goyal: All validations passed
+2026-02-23 23:26:07 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/accounting/anshul-goyal | Status: 200 | Size: 255564 bytes
+2026-02-23 23:26:07 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/medicine-opt/anshul
+2026-02-23 23:26:28 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/medicine-opt/anshul: All validations passed
+2026-02-23 23:26:28 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/medicine-opt/anshul | Status: 200 | Size: 586053 bytes
+2026-02-23 23:26:28 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/medicine-opt/kamal
+2026-02-23 23:26:47 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/medicine-opt/kamal: All validations passed
+2026-02-23 23:26:47 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/medicine-opt/kamal | Status: 200 | Size: 256996 bytes
+2026-02-23 23:26:47 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/accounting/kamal-rastogi
+2026-02-23 23:27:07 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/accounting/kamal-rastogi: All validations passed
+2026-02-23 23:27:07 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/accounting/kamal-rastogi | Status: 200 | Size: 255560 bytes
+2026-02-23 23:27:07 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/finance/srushti
+2026-02-23 23:27:27 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/finance/srushti: All validations passed
+2026-02-23 23:27:27 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/finance/srushti | Status: 200 | Size: 255494 bytes
+2026-02-23 23:27:27 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/finance/raghav
+2026-02-23 23:27:47 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/finance/raghav: All validations passed
+2026-02-23 23:27:47 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/finance/raghav | Status: 200 | Size: 255519 bytes
+2026-02-23 23:27:47 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/medicine/latam
+2026-02-23 23:28:06 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/medicine/latam: All validations passed
+2026-02-23 23:28:06 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/medicine/latam | Status: 200 | Size: 700955 bytes
+2026-02-23 23:28:07 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/faq
+2026-02-23 23:28:27 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/faq: All validations passed
+2026-02-23 23:28:27 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/faq | Status: 200 | Size: 388798 bytes
+2026-02-23 23:28:27 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/404
+2026-02-23 23:28:47 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/404: All validations passed
+2026-02-23 23:28:47 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/404 | Status: 404 | Size: 460550 bytes
+2026-02-23 23:28:47 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/medicine-in/anshul-goyal
+2026-02-23 23:29:07 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/medicine-in/anshul-goyal: All validations passed
+2026-02-23 23:29:07 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/medicine-in/anshul-goyal | Status: 200 | Size: 266223 bytes
+2026-02-23 23:29:07 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/medicine-in/anuraj-jain
+2026-02-23 23:29:27 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/medicine-in/anuraj-jain: All validations passed
+2026-02-23 23:29:27 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/medicine-in/anuraj-jain | Status: 200 | Size: 266179 bytes
+2026-02-23 23:29:27 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/medicine-in/kamal-rastogi
+2026-02-23 23:29:47 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/medicine-in/kamal-rastogi: All validations passed
+2026-02-23 23:29:47 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/medicine-in/kamal-rastogi | Status: 200 | Size: 266179 bytes
+2026-02-23 23:29:47 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/medicine-in/raghav-arora
+2026-02-23 23:30:07 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/medicine-in/raghav-arora: All validations passed
+2026-02-23 23:30:07 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/medicine-in/raghav-arora | Status: 200 | Size: 266164 bytes
+2026-02-23 23:30:07 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/outlier-revolutionizing-how-we-work-with-ai-in-the-modern-era
+2026-02-23 23:30:27 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/outlier-revolutionizing-how-we-work-with-ai-in-the-modern-era: All validations passed
+2026-02-23 23:30:27 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/outlier-revolutionizing-how-we-work-with-ai-in-the-modern-era | Status: 200 | Size: 372553 bytes
+2026-02-23 23:30:27 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/ai-in-finance
+2026-02-23 23:30:48 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/ai-in-finance: All validations passed
+2026-02-23 23:30:48 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/ai-in-finance | Status: 200 | Size: 372690 bytes
+2026-02-23 23:30:48 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/top-reddit-communities-for-phd-students
+2026-02-23 23:31:07 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/top-reddit-communities-for-phd-students: All validations passed
+2026-02-23 23:31:07 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/top-reddit-communities-for-phd-students | Status: 200 | Size: 174981 bytes
+2026-02-23 23:31:07 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/find-a-remote-job
+2026-02-23 23:31:26 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/find-a-remote-job: All validations passed
+2026-02-23 23:31:26 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/find-a-remote-job | Status: 200 | Size: 179343 bytes
+2026-02-23 23:31:26 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/stem-ai
+2026-02-23 23:31:46 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/stem-ai: All validations passed
+2026-02-23 23:31:46 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/stem-ai | Status: 200 | Size: 177287 bytes
+2026-02-23 23:31:46 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/fine-tuning-llm
+2026-02-23 23:32:06 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/fine-tuning-llm: All validations passed
+2026-02-23 23:32:06 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/fine-tuning-llm | Status: 200 | Size: 179338 bytes
+2026-02-23 23:32:06 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/podcasts-newsletters-and-youtube-channels-every-phd-student-should-follow
+2026-02-23 23:32:26 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/podcasts-newsletters-and-youtube-channels-every-phd-student-should-follow: All validations passed
+2026-02-23 23:32:26 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/podcasts-newsletters-and-youtube-channels-every-phd-student-should-follow | Status: 200 | Size: 374227 bytes
+2026-02-23 23:32:26 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/your-expertise-your-choice-centering-the-contributor-experience-through-the-outlier-marketplace
+2026-02-23 23:32:46 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/your-expertise-your-choice-centering-the-contributor-experience-through-the-outlier-marketplace: All validations passed
+2026-02-23 23:32:46 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/your-expertise-your-choice-centering-the-contributor-experience-through-the-outlier-marketplace | Status: 200 | Size: 171074 bytes
+2026-02-23 23:32:46 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/how-outlier-contributors-are-celebrating-the-holidays
+2026-02-23 23:33:06 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/how-outlier-contributors-are-celebrating-the-holidays: All validations passed
+2026-02-23 23:33:06 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/how-outlier-contributors-are-celebrating-the-holidays | Status: 200 | Size: 174126 bytes
+2026-02-23 23:33:06 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/the-soundtrack-of-the-outlier-community
+2026-02-23 23:33:25 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/the-soundtrack-of-the-outlier-community: All validations passed
+2026-02-23 23:33:25 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/the-soundtrack-of-the-outlier-community | Status: 200 | Size: 362628 bytes
+2026-02-23 23:33:25 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/meet-justin-aether%E2%80%99s-20-000-grand-prize-winner
+2026-02-23 23:33:45 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/meet-justin-aether%E2%80%99s-20-000-grand-prize-winner: All validations passed
+2026-02-23 23:33:45 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/meet-justin-aether%E2%80%99s-20-000-grand-prize-winner | Status: 200 | Size: 364443 bytes
+2026-02-23 23:33:45 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/make-curiosity-your-side-hustle
+2026-02-23 23:34:05 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/make-curiosity-your-side-hustle: All validations passed
+2026-02-23 23:34:05 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/make-curiosity-your-side-hustle | Status: 200 | Size: 362412 bytes
+2026-02-23 23:34:05 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/a-better-way-to-work-on-outlier-marketplace-your-new-dashboard
+2026-02-23 23:34:26 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/a-better-way-to-work-on-outlier-marketplace-your-new-dashboard: All validations passed
+2026-02-23 23:34:26 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/a-better-way-to-work-on-outlier-marketplace-your-new-dashboard | Status: 200 | Size: 364673 bytes
+2026-02-23 23:34:26 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/get-to-know-aether-contributors-share-what-makes-this-project-shine
+2026-02-23 23:34:46 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/get-to-know-aether-contributors-share-what-makes-this-project-shine: All validations passed
+2026-02-23 23:34:46 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/get-to-know-aether-contributors-share-what-makes-this-project-shine | Status: 200 | Size: 364897 bytes
+2026-02-23 23:34:46 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/ai-safety-and-human-oversight
+2026-02-23 23:35:05 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/ai-safety-and-human-oversight: All validations passed
+2026-02-23 23:35:05 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/ai-safety-and-human-oversight | Status: 200 | Size: 173208 bytes
+2026-02-23 23:35:05 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/i-asked-an-ai-for-a-cat-video-it-rickrolled-me-then-it-got-weird
+2026-02-23 23:35:25 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/i-asked-an-ai-for-a-cat-video-it-rickrolled-me-then-it-got-weird: All validations passed
+2026-02-23 23:35:25 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/i-asked-an-ai-for-a-cat-video-it-rickrolled-me-then-it-got-weird | Status: 200 | Size: 396855 bytes
+2026-02-23 23:35:25 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/the-hidden-science-behind-ai-understanding-evals
+2026-02-23 23:35:46 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/the-hidden-science-behind-ai-understanding-evals: All validations passed
+2026-02-23 23:35:46 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/the-hidden-science-behind-ai-understanding-evals | Status: 200 | Size: 172850 bytes
+2026-02-23 23:35:46 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/why-are-professors-so-good-at-training-ai
+2026-02-23 23:36:06 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/why-are-professors-so-good-at-training-ai: All validations passed
+2026-02-23 23:36:06 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/why-are-professors-so-good-at-training-ai | Status: 200 | Size: 169882 bytes
+2026-02-23 23:36:06 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/remote-jobs-for-college-students-how-to-earn-online
+2026-02-23 23:36:26 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/remote-jobs-for-college-students-how-to-earn-online: All validations passed
+2026-02-23 23:36:26 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/remote-jobs-for-college-students-how-to-earn-online | Status: 200 | Size: 369254 bytes
+2026-02-23 23:36:27 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/would-you-rather-work-in-finance-or-ai
+2026-02-23 23:36:46 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/would-you-rather-work-in-finance-or-ai: All validations passed
+2026-02-23 23:36:46 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/would-you-rather-work-in-finance-or-ai | Status: 200 | Size: 365714 bytes
+2026-02-23 23:36:46 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/train-your-future-design-assistant-join-outlier-s-graphic-design-project-nwsltr
+2026-02-23 23:37:05 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/train-your-future-design-assistant-join-outlier-s-graphic-design-project-nwsltr: All validations passed
+2026-02-23 23:37:05 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/train-your-future-design-assistant-join-outlier-s-graphic-design-project-nwsltr | Status: 200 | Size: 172815 bytes
+2026-02-23 23:37:05 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/train-your-future-design-assistant-join-outlier-s-graphic-design-project
+2026-02-23 23:37:24 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/train-your-future-design-assistant-join-outlier-s-graphic-design-project: All validations passed
+2026-02-23 23:37:24 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/train-your-future-design-assistant-join-outlier-s-graphic-design-project | Status: 200 | Size: 172197 bytes
+2026-02-23 23:37:25 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/your-first-steps-on-outlier-what-to-expect-from-onboarding
+2026-02-23 23:37:45 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/your-first-steps-on-outlier-what-to-expect-from-onboarding: All validations passed
+2026-02-23 23:37:45 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/your-first-steps-on-outlier-what-to-expect-from-onboarding | Status: 200 | Size: 369615 bytes
+2026-02-23 23:37:45 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/work-on-outlier-medical-expert
+2026-02-23 23:38:06 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/work-on-outlier-medical-expert: All validations passed
+2026-02-23 23:38:06 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/work-on-outlier-medical-expert | Status: 200 | Size: 367634 bytes
+2026-02-23 23:38:06 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/the-ai-healthcare-gap-that-only-medical-experts-can-fill
+2026-02-23 23:38:26 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/the-ai-healthcare-gap-that-only-medical-experts-can-fill: All validations passed
+2026-02-23 23:38:26 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/the-ai-healthcare-gap-that-only-medical-experts-can-fill | Status: 200 | Size: 173491 bytes
+2026-02-23 23:38:26 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/introducing-playground
+2026-02-23 23:38:45 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/introducing-playground: All validations passed
+2026-02-23 23:38:45 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/introducing-playground | Status: 200 | Size: 366610 bytes
+2026-02-23 23:38:45 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/10-reason-to-work-on-outlier
+2026-02-23 23:39:05 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/10-reason-to-work-on-outlier: All validations passed
+2026-02-23 23:39:05 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/10-reason-to-work-on-outlier | Status: 200 | Size: 366603 bytes
+2026-02-23 23:39:06 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/learning-while-working-why-students-love-outlier
+2026-02-23 23:39:26 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/learning-while-working-why-students-love-outlier: All validations passed
+2026-02-23 23:39:26 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/learning-while-working-why-students-love-outlier | Status: 200 | Size: 366421 bytes
+2026-02-23 23:39:26 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/ai-voice-acting-how-professional-voice-actors-are-shaping-the-future-of-technology
+2026-02-23 23:39:47 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/ai-voice-acting-how-professional-voice-actors-are-shaping-the-future-of-technology: All validations passed
+2026-02-23 23:39:47 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/ai-voice-acting-how-professional-voice-actors-are-shaping-the-future-of-technology | Status: 200 | Size: 369825 bytes
+2026-02-23 23:39:47 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/working-with-ai-how-human-expertise-is-shaping-the-future
+2026-02-23 23:40:06 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/working-with-ai-how-human-expertise-is-shaping-the-future: All validations passed
+2026-02-23 23:40:06 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/working-with-ai-how-human-expertise-is-shaping-the-future | Status: 200 | Size: 175841 bytes
+2026-02-23 23:40:06 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/foundation-models
+2026-02-23 23:40:27 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/foundation-models: All validations passed
+2026-02-23 23:40:27 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/foundation-models | Status: 200 | Size: 378451 bytes
+2026-02-23 23:40:28 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/train-ai-back-end-developers
+2026-02-23 23:40:48 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/train-ai-back-end-developers: All validations passed
+2026-02-23 23:40:48 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/train-ai-back-end-developers | Status: 200 | Size: 374068 bytes
+2026-02-23 23:40:48 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/working-as-a-front-end-code-expert
+2026-02-23 23:41:09 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/working-as-a-front-end-code-expert: All validations passed
+2026-02-23 23:41:09 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/working-as-a-front-end-code-expert | Status: 200 | Size: 373192 bytes
+2026-02-23 23:41:09 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/work-remotely-with-biology-degree
+2026-02-23 23:41:28 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/work-remotely-with-biology-degree: All validations passed
+2026-02-23 23:41:28 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/work-remotely-with-biology-degree | Status: 200 | Size: 371262 bytes
+2026-02-23 23:41:28 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/train-ai-model
+2026-02-23 23:41:48 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/train-ai-model: All validations passed
+2026-02-23 23:41:48 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/train-ai-model | Status: 200 | Size: 368886 bytes
+2026-02-23 23:41:48 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/become-freelance-math-expert
+2026-02-23 23:42:08 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/become-freelance-math-expert: All validations passed
+2026-02-23 23:42:08 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/become-freelance-math-expert | Status: 200 | Size: 370148 bytes
+2026-02-23 23:42:08 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/benefits-of-working-remotely
+2026-02-23 23:42:27 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/benefits-of-working-remotely: All validations passed
+2026-02-23 23:42:27 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/benefits-of-working-remotely | Status: 200 | Size: 175753 bytes
+2026-02-23 23:42:28 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/what-is-an-ai-model
+2026-02-23 23:42:47 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/what-is-an-ai-model: All validations passed
+2026-02-23 23:42:47 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/what-is-an-ai-model | Status: 200 | Size: 175646 bytes
+2026-02-23 23:42:47 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/benefits-of-working-on-outlier-ai
+2026-02-23 23:43:07 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/benefits-of-working-on-outlier-ai: All validations passed
+2026-02-23 23:43:07 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/benefits-of-working-on-outlier-ai | Status: 200 | Size: 364132 bytes
+2026-02-23 23:43:07 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/how-to-become-a-freelance-coder
+2026-02-23 23:43:29 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/how-to-become-a-freelance-coder: All validations passed
+2026-02-23 23:43:29 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/how-to-become-a-freelance-coder | Status: 200 | Size: 366458 bytes
+2026-02-23 23:43:29 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/is-outlier-ai-legit
+2026-02-23 23:43:47 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/is-outlier-ai-legit: All validations passed
+2026-02-23 23:43:47 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/is-outlier-ai-legit | Status: 200 | Size: 368426 bytes
+2026-02-23 23:43:47 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/so-what-do-outlier-experts-actually-do
+2026-02-23 23:44:07 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/so-what-do-outlier-experts-actually-do: All validations passed
+2026-02-23 23:44:07 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/so-what-do-outlier-experts-actually-do | Status: 200 | Size: 368173 bytes
+2026-02-23 23:44:07 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/for-jan-s-outlier-paves-the-way-to-full-time-freelancing
+2026-02-23 23:44:27 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/for-jan-s-outlier-paves-the-way-to-full-time-freelancing: All validations passed
+2026-02-23 23:44:27 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/for-jan-s-outlier-paves-the-way-to-full-time-freelancing | Status: 200 | Size: 364553 bytes
+2026-02-23 23:44:27 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/how-outlier-helped-turn-enzo-d-b-s-digital-nomad-dream-into-a-reality
+2026-02-23 23:44:47 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/how-outlier-helped-turn-enzo-d-b-s-digital-nomad-dream-into-a-reality: All validations passed
+2026-02-23 23:44:47 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/how-outlier-helped-turn-enzo-d-b-s-digital-nomad-dream-into-a-reality | Status: 200 | Size: 174039 bytes
+2026-02-23 23:44:47 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/the-flexibility-work-pay-i-always-wanted-why-experts-love-outlier
+2026-02-23 23:45:08 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/the-flexibility-work-pay-i-always-wanted-why-experts-love-outlier: All validations passed
+2026-02-23 23:45:08 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/the-flexibility-work-pay-i-always-wanted-why-experts-love-outlier | Status: 200 | Size: 360148 bytes
+2026-02-23 23:45:08 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/klara-m-left-the-office-for-a-whole-new-world-of-remote-work
+2026-02-23 23:45:27 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/klara-m-left-the-office-for-a-whole-new-world-of-remote-work: All validations passed
+2026-02-23 23:45:27 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/klara-m-left-the-office-for-a-whole-new-world-of-remote-work | Status: 200 | Size: 173561 bytes
+2026-02-23 23:45:27 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/the-future-of-work-is-flexible
+2026-02-23 23:45:47 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/the-future-of-work-is-flexible: All validations passed
+2026-02-23 23:45:47 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/the-future-of-work-is-flexible | Status: 200 | Size: 364778 bytes
+2026-02-23 23:45:47 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/your-guide-to-working-on-outlier
+2026-02-23 23:46:06 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/your-guide-to-working-on-outlier: All validations passed
+2026-02-23 23:46:06 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/your-guide-to-working-on-outlier | Status: 200 | Size: 368955 bytes
+2026-02-23 23:46:06 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/for-wilhelm-s-outlier-is-a-tasty-side-dish
+2026-02-23 23:46:26 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/for-wilhelm-s-outlier-is-a-tasty-side-dish: All validations passed
+2026-02-23 23:46:26 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/for-wilhelm-s-outlier-is-a-tasty-side-dish | Status: 200 | Size: 363321 bytes
+2026-02-23 23:46:26 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/how-outlier-helps-amit-s-keep-his-problem-solving-skills-sharp
+2026-02-23 23:46:45 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/how-outlier-helps-amit-s-keep-his-problem-solving-skills-sharp: All validations passed
+2026-02-23 23:46:45 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/how-outlier-helps-amit-s-keep-his-problem-solving-skills-sharp | Status: 200 | Size: 170400 bytes
+2026-02-23 23:46:45 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/meet-the-team-jean
+2026-02-23 23:47:06 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/meet-the-team-jean: All validations passed
+2026-02-23 23:47:06 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/meet-the-team-jean | Status: 200 | Size: 367086 bytes
+2026-02-23 23:47:06 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/a-better-way-to-pay
+2026-02-23 23:47:26 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/a-better-way-to-pay: All validations passed
+2026-02-23 23:47:26 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/a-better-way-to-pay | Status: 200 | Size: 363087 bytes
+2026-02-23 23:47:26 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/how-mit-phd-candidate-daniel-z-earns-extra-income-on-outlier
+2026-02-23 23:47:46 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/how-mit-phd-candidate-daniel-z-earns-extra-income-on-outlier: All validations passed
+2026-02-23 23:47:46 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/how-mit-phd-candidate-daniel-z-earns-extra-income-on-outlier | Status: 200 | Size: 366395 bytes
+2026-02-23 23:47:46 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/how-carlson-balances-college-and-training-ai-with-outlier
+2026-02-23 23:48:06 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/how-carlson-balances-college-and-training-ai-with-outlier: All validations passed
+2026-02-23 23:48:06 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/how-carlson-balances-college-and-training-ai-with-outlier | Status: 200 | Size: 172720 bytes
+2026-02-23 23:48:06 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/blog/a-new-era-of-outlier
+2026-02-23 23:48:24 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/blog/a-new-era-of-outlier: All validations passed
+2026-02-23 23:48:24 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/blog/a-new-era-of-outlier | Status: 200 | Size: 172286 bytes
+2026-02-23 23:48:24 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/legal/community-guidelines
+2026-02-23 23:48:44 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/legal/community-guidelines: All validations passed
+2026-02-23 23:48:44 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/legal/community-guidelines | Status: 200 | Size: 325187 bytes
+2026-02-23 23:48:44 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/legal/cookies-policy
+2026-02-23 23:49:05 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/legal/cookies-policy: All validations passed
+2026-02-23 23:49:05 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/legal/cookies-policy | Status: 200 | Size: 328682 bytes
+2026-02-23 23:49:05 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/legal/data-processing-addendum
+2026-02-23 23:49:25 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/legal/data-processing-addendum: All validations passed
+2026-02-23 23:49:25 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/legal/data-processing-addendum | Status: 200 | Size: 396134 bytes
+2026-02-23 23:49:25 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/legal/privacy-policy
+2026-02-23 23:49:46 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/legal/privacy-policy: All validations passed
+2026-02-23 23:49:46 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/legal/privacy-policy | Status: 200 | Size: 361288 bytes
+2026-02-23 23:49:46 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/legal/terms-of-use
+2026-02-23 23:50:05 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/legal/terms-of-use: All validations passed
+2026-02-23 23:50:05 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/legal/terms-of-use | Status: 200 | Size: 386884 bytes
+2026-02-23 23:50:05 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/legal/working-location-policy
+2026-02-23 23:50:27 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/legal/working-location-policy: All validations passed
+2026-02-23 23:50:27 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/legal/working-location-policy | Status: 200 | Size: 313420 bytes
+2026-02-23 23:50:27 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/generalists/t1-nwsltr
+2026-02-23 23:50:46 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/generalists/t1-nwsltr: All validations passed
+2026-02-23 23:50:46 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/generalists/t1-nwsltr | Status: 200 | Size: 237294 bytes
+2026-02-23 23:50:46 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/generalists/t1
+2026-02-23 23:51:06 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/generalists/t1: All validations passed
+2026-02-23 23:51:06 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/generalists/t1 | Status: 200 | Size: 649447 bytes
+2026-02-23 23:51:06 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/generalists/en-t3-nwsltr
+2026-02-23 23:51:26 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/generalists/en-t3-nwsltr: All validations passed
+2026-02-23 23:51:26 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/generalists/en-t3-nwsltr | Status: 200 | Size: 645540 bytes
+2026-02-23 23:51:26 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/generalists/en-t2-nwsltr
+2026-02-23 23:51:45 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/generalists/en-t2-nwsltr: All validations passed
+2026-02-23 23:51:45 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/generalists/en-t2-nwsltr | Status: 200 | Size: 645697 bytes
+2026-02-23 23:51:45 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/generalists/en-in
+2026-02-23 23:52:04 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/generalists/en-in: All validations passed
+2026-02-23 23:52:04 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/generalists/en-in | Status: 200 | Size: 237373 bytes
+2026-02-23 23:52:04 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/generalists/en-t3
+2026-02-23 23:52:24 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/generalists/en-t3: All validations passed
+2026-02-23 23:52:24 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/generalists/en-t3 | Status: 200 | Size: 648447 bytes
+2026-02-23 23:52:24 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/generalists/en-t2
+2026-02-23 23:52:44 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/generalists/en-t2: All validations passed
+2026-02-23 23:52:44 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/generalists/en-t2 | Status: 200 | Size: 237501 bytes
+2026-02-23 23:52:44 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/generalists/en-t1
+2026-02-23 23:53:05 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/generalists/en-t1: All validations passed
+2026-02-23 23:53:05 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/generalists/en-t1 | Status: 200 | Size: 648333 bytes
+2026-02-23 23:53:05 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/generalists/en
+2026-02-23 23:53:26 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/generalists/en: All validations passed
+2026-02-23 23:53:26 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/generalists/en | Status: 200 | Size: 661758 bytes
+2026-02-23 23:53:26 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/accounting
+2026-02-23 23:53:47 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/accounting: All validations passed
+2026-02-23 23:53:47 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/accounting | Status: 200 | Size: 648615 bytes
+2026-02-23 23:53:47 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/all
+2026-02-23 23:54:08 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/all: All validations passed
+2026-02-23 23:54:08 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/all | Status: 200 | Size: 715198 bytes
+2026-02-23 23:54:08 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/b2b-digital-domain
+2026-02-23 23:54:28 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/b2b-digital-domain: All validations passed
+2026-02-23 23:54:28 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/b2b-digital-domain | Status: 200 | Size: 649549 bytes
+2026-02-23 23:54:28 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/b2c-digital-domain
+2026-02-23 23:54:48 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/b2c-digital-domain: All validations passed
+2026-02-23 23:54:48 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/b2c-digital-domain | Status: 200 | Size: 257957 bytes
+2026-02-23 23:54:48 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/biology
+2026-02-23 23:55:08 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/biology: All validations passed
+2026-02-23 23:55:08 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/biology | Status: 200 | Size: 648643 bytes
+2026-02-23 23:55:09 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/biomedical-engineering
+2026-02-23 23:55:27 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/biomedical-engineering: All validations passed
+2026-02-23 23:55:27 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/biomedical-engineering | Status: 200 | Size: 256342 bytes
+2026-02-23 23:55:27 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/chemical-engineering
+2026-02-23 23:55:49 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/chemical-engineering: All validations passed
+2026-02-23 23:55:49 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/chemical-engineering | Status: 200 | Size: 648454 bytes
+2026-02-23 23:55:49 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/chemistry
+2026-02-23 23:56:10 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/chemistry: All validations passed
+2026-02-23 23:56:10 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/chemistry | Status: 200 | Size: 648693 bytes
+2026-02-23 23:56:10 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/civil-engineering
+2026-02-23 23:56:29 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/civil-engineering: All validations passed
+2026-02-23 23:56:29 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/civil-engineering | Status: 200 | Size: 256901 bytes
+2026-02-23 23:56:29 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/data-analyst
+2026-02-23 23:56:49 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/data-analyst: All validations passed
+2026-02-23 23:56:49 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/data-analyst | Status: 200 | Size: 623396 bytes
+2026-02-23 23:56:49 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/earth-and-environmental-sciences
+2026-02-23 23:57:10 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/earth-and-environmental-sciences: All validations passed
+2026-02-23 23:57:10 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/earth-and-environmental-sciences | Status: 200 | Size: 648775 bytes
+2026-02-23 23:57:10 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/economics
+2026-02-23 23:57:31 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/economics: All validations passed
+2026-02-23 23:57:31 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/economics | Status: 200 | Size: 648406 bytes
+2026-02-23 23:57:31 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/electrical-engineering
+2026-02-23 23:57:51 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/electrical-engineering: All validations passed
+2026-02-23 23:57:51 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/electrical-engineering | Status: 200 | Size: 648425 bytes
+2026-02-23 23:57:51 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/finance
+2026-02-23 23:58:11 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/finance: All validations passed
+2026-02-23 23:58:11 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/finance | Status: 200 | Size: 648616 bytes
+2026-02-23 23:58:12 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/graphic-design
+2026-02-23 23:58:32 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/graphic-design: All validations passed
+2026-02-23 23:58:32 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/graphic-design | Status: 200 | Size: 257613 bytes
+2026-02-23 23:58:32 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/industrial-engineering
+2026-02-23 23:58:51 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/industrial-engineering: All validations passed
+2026-02-23 23:58:51 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/industrial-engineering | Status: 200 | Size: 648516 bytes
+2026-02-23 23:58:51 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/law
+2026-02-23 23:59:10 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/law: All validations passed
+2026-02-23 23:59:10 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/law | Status: 200 | Size: 648427 bytes
+2026-02-23 23:59:10 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/management
+2026-02-23 23:59:29 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/management: All validations passed
+2026-02-23 23:59:29 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/management | Status: 200 | Size: 257027 bytes
+2026-02-23 23:59:30 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/material-sciences
+2026-02-23 23:59:48 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/material-sciences: All validations passed
+2026-02-23 23:59:48 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/material-sciences | Status: 200 | Size: 256898 bytes
+2026-02-23 23:59:48 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/math
+2026-02-24 00:00:09 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/math: All validations passed
+2026-02-24 00:00:09 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/math | Status: 200 | Size: 648615 bytes
+2026-02-24 00:00:09 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/mechanical-engineering
+2026-02-24 00:00:29 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/mechanical-engineering: All validations passed
+2026-02-24 00:00:29 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/mechanical-engineering | Status: 200 | Size: 648424 bytes
+2026-02-24 00:00:29 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/medicine-in
+2026-02-24 00:00:50 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/medicine-in: All validations passed
+2026-02-24 00:00:50 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/medicine-in | Status: 200 | Size: 632890 bytes
+2026-02-24 00:00:50 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/neurologists
+2026-02-24 00:01:10 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/neurologists: All validations passed
+2026-02-24 00:01:10 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/neurologists | Status: 200 | Size: 258731 bytes
+2026-02-24 00:01:10 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/nutritionists
+2026-02-24 00:01:29 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/nutritionists: All validations passed
+2026-02-24 00:01:29 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/nutritionists | Status: 200 | Size: 259816 bytes
+2026-02-24 00:01:29 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/humanities
+2026-02-24 00:01:50 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/humanities: All validations passed
+2026-02-24 00:01:50 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/humanities | Status: 200 | Size: 661874 bytes
+2026-02-24 00:01:50 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/philosophy
+2026-02-24 00:02:08 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/philosophy: All validations passed
+2026-02-24 00:02:08 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/philosophy | Status: 200 | Size: 256990 bytes
+2026-02-24 00:02:08 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/physical-therapists
+2026-02-24 00:02:28 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/physical-therapists: All validations passed
+2026-02-24 00:02:28 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/physical-therapists | Status: 200 | Size: 259358 bytes
+2026-02-24 00:02:28 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/physics
+2026-02-24 00:02:48 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/physics: All validations passed
+2026-02-24 00:02:48 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/physics | Status: 200 | Size: 648656 bytes
+2026-02-24 00:02:48 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/psychology
+2026-02-24 00:03:07 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/psychology: All validations passed
+2026-02-24 00:03:07 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/psychology | Status: 200 | Size: 648405 bytes
+2026-02-24 00:03:07 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/public-health
+2026-02-24 00:03:27 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/public-health: All validations passed
+2026-02-24 00:03:27 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/public-health | Status: 200 | Size: 643715 bytes
+2026-02-24 00:03:27 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/sirradiologists
+2026-02-24 00:03:46 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/sirradiologists: All validations passed
+2026-02-24 00:03:46 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/sirradiologists | Status: 200 | Size: 259609 bytes
+2026-02-24 00:03:46 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/lucysradiologists
+2026-02-24 00:04:05 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/lucysradiologists: All validations passed
+2026-02-24 00:04:05 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/lucysradiologists | Status: 200 | Size: 259588 bytes
+2026-02-24 00:04:05 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/experts/stem
+2026-02-24 00:04:25 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/experts/stem: All validations passed
+2026-02-24 00:04:25 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/experts/stem | Status: 200 | Size: 688582 bytes
+2026-02-24 00:04:26 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/hle/engineering
+2026-02-24 00:04:47 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/hle/engineering: All validations passed
+2026-02-24 00:04:47 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/hle/engineering | Status: 200 | Size: 248253 bytes
+2026-02-24 00:04:47 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/hle/systems-engineering
+2026-02-24 00:05:08 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/hle/systems-engineering: All validations passed
+2026-02-24 00:05:08 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/hle/systems-engineering | Status: 200 | Size: 636764 bytes
+2026-02-24 00:05:08 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/hle/industrial-engineering
+2026-02-24 00:05:28 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/hle/industrial-engineering: All validations passed
+2026-02-24 00:05:28 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/hle/industrial-engineering | Status: 200 | Size: 248028 bytes
+2026-02-24 00:05:28 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/hle/computer-science
+2026-02-24 00:05:47 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/hle/computer-science: All validations passed
+2026-02-24 00:05:47 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/hle/computer-science | Status: 200 | Size: 247920 bytes
+2026-02-24 00:05:47 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/hle/medicine
+2026-02-24 00:06:07 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/hle/medicine: All validations passed
+2026-02-24 00:06:07 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/hle/medicine | Status: 200 | Size: 247822 bytes
+2026-02-24 00:06:07 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/hle/physics
+2026-02-24 00:06:26 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/hle/physics: All validations passed
+2026-02-24 00:06:26 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/hle/physics | Status: 200 | Size: 637097 bytes
+2026-02-24 00:06:26 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/hle/biology
+2026-02-24 00:06:46 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/hle/biology: All validations passed
+2026-02-24 00:06:46 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/hle/biology | Status: 200 | Size: 636332 bytes
+2026-02-24 00:06:46 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/hle/chemistry
+2026-02-24 00:07:05 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/hle/chemistry: All validations passed
+2026-02-24 00:07:05 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/hle/chemistry | Status: 200 | Size: 248004 bytes
+2026-02-24 00:07:05 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/hle/math
+2026-02-24 00:07:25 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/hle/math: All validations passed
+2026-02-24 00:07:25 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/hle/math | Status: 200 | Size: 636503 bytes
+2026-02-24 00:07:25 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/hle/sociology
+2026-02-24 00:07:44 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/hle/sociology: All validations passed
+2026-02-24 00:07:44 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/hle/sociology | Status: 200 | Size: 248101 bytes
+2026-02-24 00:07:44 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/hle/education
+2026-02-24 00:08:03 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/hle/education: All validations passed
+2026-02-24 00:08:03 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/hle/education | Status: 200 | Size: 247710 bytes
+2026-02-24 00:08:03 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/hle/psychology
+2026-02-24 00:08:23 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/hle/psychology: All validations passed
+2026-02-24 00:08:23 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/hle/psychology | Status: 200 | Size: 248488 bytes
+2026-02-24 00:08:23 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/hle/philosophy
+2026-02-24 00:08:43 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/hle/philosophy: All validations passed
+2026-02-24 00:08:43 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/hle/philosophy | Status: 200 | Size: 247928 bytes
+2026-02-24 00:08:43 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/hle/media-communications
+2026-02-24 00:09:03 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/hle/media-communications: All validations passed
+2026-02-24 00:09:03 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/hle/media-communications | Status: 200 | Size: 247931 bytes
+2026-02-24 00:09:03 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/hle/arts-humanities
+2026-02-24 00:09:23 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/hle/arts-humanities: All validations passed
+2026-02-24 00:09:23 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/hle/arts-humanities | Status: 200 | Size: 248028 bytes
+2026-02-24 00:09:23 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/hle/law
+2026-02-24 00:09:43 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/hle/law: All validations passed
+2026-02-24 00:09:43 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/hle/law | Status: 200 | Size: 247971 bytes
+2026-02-24 00:09:43 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/hle/design-architecture
+2026-02-24 00:10:03 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/hle/design-architecture: All validations passed
+2026-02-24 00:10:03 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/hle/design-architecture | Status: 200 | Size: 248051 bytes
+2026-02-24 00:10:04 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/hle/finance
+2026-02-24 00:10:22 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/hle/finance: All validations passed
+2026-02-24 00:10:22 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/hle/finance | Status: 200 | Size: 636535 bytes
+2026-02-24 00:10:22 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/hle/business-management
+2026-02-24 00:10:41 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/hle/business-management: All validations passed
+2026-02-24 00:10:41 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/hle/business-management | Status: 200 | Size: 248326 bytes
+2026-02-24 00:10:41 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/hle/economics
+2026-02-24 00:10:59 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/hle/economics: All validations passed
+2026-02-24 00:10:59 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/hle/economics | Status: 200 | Size: 247820 bytes
+2026-02-24 00:11:00 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/ar-acm
+2026-02-24 00:11:19 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/ar-acm: All validations passed
+2026-02-24 00:11:19 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/ar-acm | Status: 200 | Size: 670363 bytes
+2026-02-24 00:11:19 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/ar-acw
+2026-02-24 00:11:40 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/ar-acw: All validations passed
+2026-02-24 00:11:40 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/ar-acw | Status: 200 | Size: 670469 bytes
+2026-02-24 00:11:40 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/ar-ae
+2026-02-24 00:11:59 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/ar-ae: All validations passed
+2026-02-24 00:11:59 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/ar-ae | Status: 200 | Size: 259304 bytes
+2026-02-24 00:11:59 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/ar-afb
+2026-02-24 00:12:19 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/ar-afb: All validations passed
+2026-02-24 00:12:19 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/ar-afb | Status: 200 | Size: 670492 bytes
+2026-02-24 00:12:19 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/ar-apc
+2026-02-24 00:12:39 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/ar-apc: All validations passed
+2026-02-24 00:12:39 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/ar-apc | Status: 200 | Size: 670363 bytes
+2026-02-24 00:12:39 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/ar-ars
+2026-02-24 00:12:59 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/ar-ars: All validations passed
+2026-02-24 00:12:59 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/ar-ars | Status: 200 | Size: 259333 bytes
+2026-02-24 00:12:59 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/ar-eg
+2026-02-24 00:13:18 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/ar-eg: All validations passed
+2026-02-24 00:13:18 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/ar-eg | Status: 200 | Size: 670362 bytes
+2026-02-24 00:13:18 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/ar-sa
+2026-02-24 00:13:38 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/ar-sa: All validations passed
+2026-02-24 00:13:38 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/ar-sa | Status: 200 | Size: 670255 bytes
+2026-02-24 00:13:38 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/bn-in
+2026-02-24 00:13:58 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/bn-in: All validations passed
+2026-02-24 00:13:58 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/bn-in | Status: 200 | Size: 259294 bytes
+2026-02-24 00:13:59 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/ca-es
+2026-02-24 00:14:19 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/ca-es: All validations passed
+2026-02-24 00:14:19 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/ca-es | Status: 200 | Size: 670352 bytes
+2026-02-24 00:14:19 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/cs-cz
+2026-02-24 00:14:39 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/cs-cz: All validations passed
+2026-02-24 00:14:39 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/cs-cz | Status: 200 | Size: 259285 bytes
+2026-02-24 00:14:39 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/da-dk
+2026-02-24 00:14:59 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/da-dk: All validations passed
+2026-02-24 00:14:59 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/da-dk | Status: 200 | Size: 670310 bytes
+2026-02-24 00:14:59 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/de-at
+2026-02-24 00:15:18 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/de-at: All validations passed
+2026-02-24 00:15:18 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/de-at | Status: 200 | Size: 670393 bytes
+2026-02-24 00:15:18 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/de-ch
+2026-02-24 00:15:37 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/de-ch: All validations passed
+2026-02-24 00:15:37 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/de-ch | Status: 200 | Size: 670398 bytes
+2026-02-24 00:15:38 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/de-de
+2026-02-24 00:15:58 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/de-de: All validations passed
+2026-02-24 00:15:58 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/de-de | Status: 200 | Size: 670342 bytes
+2026-02-24 00:15:58 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/en-us
+2026-02-24 00:16:17 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/en-us: All validations passed
+2026-02-24 00:16:17 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/en-us | Status: 200 | Size: 670309 bytes
+2026-02-24 00:16:17 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/fa-ir
+2026-02-24 00:16:36 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/fa-ir: All validations passed
+2026-02-24 00:16:36 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/fa-ir | Status: 200 | Size: 670300 bytes
+2026-02-24 00:16:37 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/fi-fi
+2026-02-24 00:16:57 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/fi-fi: All validations passed
+2026-02-24 00:16:57 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/fi-fi | Status: 200 | Size: 670299 bytes
+2026-02-24 00:16:57 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/fr-be
+2026-02-24 00:17:17 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/fr-be: All validations passed
+2026-02-24 00:17:17 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/fr-be | Status: 200 | Size: 670341 bytes
+2026-02-24 00:17:17 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/fr-ca
+2026-02-24 00:17:37 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/fr-ca: All validations passed
+2026-02-24 00:17:37 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/fr-ca | Status: 200 | Size: 670964 bytes
+2026-02-24 00:17:37 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/fr-ch
+2026-02-24 00:17:57 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/fr-ch: All validations passed
+2026-02-24 00:17:57 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/fr-ch | Status: 200 | Size: 259368 bytes
+2026-02-24 00:17:57 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/fr-fr
+2026-02-24 00:18:17 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/fr-fr: All validations passed
+2026-02-24 00:18:17 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/fr-fr | Status: 200 | Size: 259244 bytes
+2026-02-24 00:18:17 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/gu-in
+2026-02-24 00:18:36 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/gu-in: All validations passed
+2026-02-24 00:18:36 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/gu-in | Status: 200 | Size: 259292 bytes
+2026-02-24 00:18:36 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/he-il
+2026-02-24 00:18:56 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/he-il: All validations passed
+2026-02-24 00:18:56 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/he-il | Status: 200 | Size: 670268 bytes
+2026-02-24 00:18:56 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/id-id
+2026-02-24 00:19:15 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/id-id: All validations passed
+2026-02-24 00:19:15 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/id-id | Status: 200 | Size: 670351 bytes
+2026-02-24 00:19:15 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/kn-in
+2026-02-24 00:19:35 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/kn-in: All validations passed
+2026-02-24 00:19:35 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/kn-in | Status: 200 | Size: 259269 bytes
+2026-02-24 00:19:35 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/ko-kr
+2026-02-24 00:19:54 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/ko-kr: All validations passed
+2026-02-24 00:19:54 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/ko-kr | Status: 200 | Size: 259317 bytes
+2026-02-24 00:19:54 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/ml-in
+2026-02-24 00:20:14 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/ml-in: All validations passed
+2026-02-24 00:20:14 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/ml-in | Status: 200 | Size: 259266 bytes
+2026-02-24 00:20:15 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/mr-in
+2026-02-24 00:20:35 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/mr-in: All validations passed
+2026-02-24 00:20:35 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/mr-in | Status: 200 | Size: 670599 bytes
+2026-02-24 00:20:35 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/ms-my
+2026-02-24 00:20:56 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/ms-my: All validations passed
+2026-02-24 00:20:56 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/ms-my | Status: 200 | Size: 259282 bytes
+2026-02-24 00:20:56 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/nl-be
+2026-02-24 00:21:16 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/nl-be: All validations passed
+2026-02-24 00:21:16 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/nl-be | Status: 200 | Size: 259298 bytes
+2026-02-24 00:21:16 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/nl-nl
+2026-02-24 00:21:36 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/nl-nl: All validations passed
+2026-02-24 00:21:36 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/nl-nl | Status: 200 | Size: 259286 bytes
+2026-02-24 00:21:36 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/no-no
+2026-02-24 00:21:56 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/no-no: All validations passed
+2026-02-24 00:21:56 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/no-no | Status: 200 | Size: 259260 bytes
+2026-02-24 00:21:56 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/or-in
+2026-02-24 00:22:15 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/or-in: All validations passed
+2026-02-24 00:22:15 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/or-in | Status: 200 | Size: 259276 bytes
+2026-02-24 00:22:15 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/pa-in
+2026-02-24 00:22:36 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/pa-in: All validations passed
+2026-02-24 00:22:36 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/pa-in | Status: 200 | Size: 670316 bytes
+2026-02-24 00:22:36 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/pl-pl
+2026-02-24 00:22:57 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/pl-pl: All validations passed
+2026-02-24 00:22:57 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/pl-pl | Status: 200 | Size: 670398 bytes
+2026-02-24 00:22:57 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/ro-ro
+2026-02-24 00:23:17 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/ro-ro: All validations passed
+2026-02-24 00:23:17 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/ro-ro | Status: 200 | Size: 259283 bytes
+2026-02-24 00:23:17 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/ru-ru
+2026-02-24 00:23:37 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/ru-ru: All validations passed
+2026-02-24 00:23:37 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/ru-ru | Status: 200 | Size: 259283 bytes
+2026-02-24 00:23:37 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/sv-se
+2026-02-24 00:23:57 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/sv-se: All validations passed
+2026-02-24 00:23:57 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/sv-se | Status: 200 | Size: 670357 bytes
+2026-02-24 00:23:57 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/th-th
+2026-02-24 00:24:17 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/th-th: All validations passed
+2026-02-24 00:24:17 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/th-th | Status: 200 | Size: 670057 bytes
+2026-02-24 00:24:17 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/uk-ua
+2026-02-24 00:24:37 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/uk-ua: All validations passed
+2026-02-24 00:24:37 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/uk-ua | Status: 200 | Size: 670361 bytes
+2026-02-24 00:24:37 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/ur-in
+2026-02-24 00:24:57 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/ur-in: All validations passed
+2026-02-24 00:24:57 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/ur-in | Status: 200 | Size: 259269 bytes
+2026-02-24 00:24:57 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/zh-cn
+2026-02-24 00:25:16 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/zh-cn: All validations passed
+2026-02-24 00:25:16 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/zh-cn | Status: 200 | Size: 259344 bytes
+2026-02-24 00:25:16 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/zh-hk
+2026-02-24 00:25:37 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/zh-hk: All validations passed
+2026-02-24 00:25:37 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/zh-hk | Status: 200 | Size: 669914 bytes
+2026-02-24 00:25:37 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/languages/zh-tw
+2026-02-24 00:25:58 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/languages/zh-tw: All validations passed
+2026-02-24 00:25:58 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/languages/zh-tw | Status: 200 | Size: 670425 bytes
+2026-02-24 00:25:58 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/speech/ar-afb
+2026-02-24 00:26:18 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/speech/ar-afb: All validations passed
+2026-02-24 00:26:18 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/speech/ar-afb | Status: 200 | Size: 716984 bytes
+2026-02-24 00:26:18 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/speech/ar-eg
+2026-02-24 00:26:38 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/speech/ar-eg: All validations passed
+2026-02-24 00:26:38 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/speech/ar-eg | Status: 200 | Size: 302671 bytes
+2026-02-24 00:26:38 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/speech/ar-sa
+2026-02-24 00:26:57 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/speech/ar-sa: All validations passed
+2026-02-24 00:26:57 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/speech/ar-sa | Status: 200 | Size: 302702 bytes
+2026-02-24 00:26:57 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/speech/ar-uae
+2026-02-24 00:27:16 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/speech/ar-uae: All validations passed
+2026-02-24 00:27:16 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/speech/ar-uae | Status: 200 | Size: 303064 bytes
+2026-02-24 00:27:16 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/speech/bn-in
+2026-02-24 00:27:36 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/speech/bn-in: All validations passed
+2026-02-24 00:27:36 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/speech/bn-in | Status: 200 | Size: 716710 bytes
+2026-02-24 00:27:36 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/speech/de-de
+2026-02-24 00:27:57 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/speech/de-de: All validations passed
+2026-02-24 00:27:57 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/speech/de-de | Status: 200 | Size: 716875 bytes
+2026-02-24 00:27:57 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/speech/en
+2026-02-24 00:28:17 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/speech/en: All validations passed
+2026-02-24 00:28:17 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/speech/en | Status: 200 | Size: 717016 bytes
+2026-02-24 00:28:17 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/speech/en-us
+2026-02-24 00:28:36 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/speech/en-us: All validations passed
+2026-02-24 00:28:36 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/speech/en-us | Status: 200 | Size: 716750 bytes
+2026-02-24 00:28:36 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/speech/es-es
+2026-02-24 00:28:56 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/speech/es-es: All validations passed
+2026-02-24 00:28:56 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/speech/es-es | Status: 200 | Size: 716805 bytes
+2026-02-24 00:28:56 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/speech/es-mx
+2026-02-24 00:29:16 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/speech/es-mx: All validations passed
+2026-02-24 00:29:16 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/speech/es-mx | Status: 200 | Size: 716806 bytes
+2026-02-24 00:29:16 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/speech/fr-fr
+2026-02-24 00:29:36 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/speech/fr-fr: All validations passed
+2026-02-24 00:29:36 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/speech/fr-fr | Status: 200 | Size: 716749 bytes
+2026-02-24 00:29:36 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/speech/gu-in
+2026-02-24 00:29:56 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/speech/gu-in: All validations passed
+2026-02-24 00:29:56 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/speech/gu-in | Status: 200 | Size: 302725 bytes
+2026-02-24 00:29:56 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/speech/hi-in
+2026-02-24 00:30:16 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/speech/hi-in: All validations passed
+2026-02-24 00:30:16 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/speech/hi-in | Status: 200 | Size: 716756 bytes
+2026-02-24 00:30:16 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/speech/id-id
+2026-02-24 00:30:36 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/speech/id-id: All validations passed
+2026-02-24 00:30:36 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/speech/id-id | Status: 200 | Size: 302703 bytes
+2026-02-24 00:30:36 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/speech/it-ch
+2026-02-24 00:30:55 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/speech/it-ch: All validations passed
+2026-02-24 00:30:55 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/speech/it-ch | Status: 200 | Size: 302711 bytes
+2026-02-24 00:30:55 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/speech/it-it
+2026-02-24 00:31:16 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/speech/it-it: All validations passed
+2026-02-24 00:31:16 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/speech/it-it | Status: 200 | Size: 302709 bytes
+2026-02-24 00:31:16 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/speech/ja-jp
+2026-02-24 00:31:35 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/speech/ja-jp: All validations passed
+2026-02-24 00:31:35 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/speech/ja-jp | Status: 200 | Size: 302695 bytes
+2026-02-24 00:31:35 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/speech/ko-kr
+2026-02-24 00:31:54 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/speech/ko-kr: All validations passed
+2026-02-24 00:31:54 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/speech/ko-kr | Status: 200 | Size: 302657 bytes
+2026-02-24 00:31:54 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/speech/mr-in
+2026-02-24 00:32:14 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/speech/mr-in: All validations passed
+2026-02-24 00:32:14 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/speech/mr-in | Status: 200 | Size: 716751 bytes
+2026-02-24 00:32:14 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/speech/pl-pl
+2026-02-24 00:32:35 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/speech/pl-pl: All validations passed
+2026-02-24 00:32:35 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/speech/pl-pl | Status: 200 | Size: 716703 bytes
+2026-02-24 00:32:35 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/speech/pt-br
+2026-02-24 00:32:54 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/speech/pt-br: All validations passed
+2026-02-24 00:32:54 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/speech/pt-br | Status: 200 | Size: 716821 bytes
+2026-02-24 00:32:54 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/speech/pt-pt
+2026-02-24 00:33:15 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/speech/pt-pt: All validations passed
+2026-02-24 00:33:15 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/speech/pt-pt | Status: 200 | Size: 716881 bytes
+2026-02-24 00:33:15 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/speech/ru-ru
+2026-02-24 00:33:36 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/speech/ru-ru: All validations passed
+2026-02-24 00:33:36 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/speech/ru-ru | Status: 200 | Size: 716773 bytes
+2026-02-24 00:33:36 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/speech/ta-in
+2026-02-24 00:33:56 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/speech/ta-in: All validations passed
+2026-02-24 00:33:56 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/speech/ta-in | Status: 200 | Size: 302697 bytes
+2026-02-24 00:33:56 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/speech/te-in
+2026-02-24 00:34:16 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/speech/te-in: All validations passed
+2026-02-24 00:34:16 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/speech/te-in | Status: 200 | Size: 302693 bytes
+2026-02-24 00:34:16 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/speech/th-th
+2026-02-24 00:34:35 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/speech/th-th: All validations passed
+2026-02-24 00:34:35 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/speech/th-th | Status: 200 | Size: 302646 bytes
+2026-02-24 00:34:35 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/speech/tl-ph
+2026-02-24 00:34:56 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/speech/tl-ph: All validations passed
+2026-02-24 00:34:56 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/speech/tl-ph | Status: 200 | Size: 302699 bytes
+2026-02-24 00:34:56 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/speech/tr-tr
+2026-02-24 00:35:15 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/speech/tr-tr: All validations passed
+2026-02-24 00:35:15 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/speech/tr-tr | Status: 200 | Size: 716778 bytes
+2026-02-24 00:35:15 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/speech/ur-in
+2026-02-24 00:35:35 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/speech/ur-in: All validations passed
+2026-02-24 00:35:35 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/speech/ur-in | Status: 200 | Size: 716782 bytes
+2026-02-24 00:35:35 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/speech/vi-vn
+2026-02-24 00:35:54 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/speech/vi-vn: All validations passed
+2026-02-24 00:35:54 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/speech/vi-vn | Status: 200 | Size: 302711 bytes
+2026-02-24 00:35:54 - scraper.outlier.ai - INFO - Starting scrape: https://outlier.ai/speech/zh-cn
+2026-02-24 00:36:13 - scraper.outlier.ai - INFO - ✓ VALIDATION PASSED: https://outlier.ai/speech/zh-cn: All validations passed
+2026-02-24 00:36:13 - scraper.outlier.ai - INFO - ✓ SUCCESS: https://outlier.ai/speech/zh-cn | Status: 200 | Size: 302754 bytes

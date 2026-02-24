@@ -1,0 +1,84 @@
+========================================================================
+  SCRAPED CONTENT — DATABASE STATISTICS REPORT
+  Database : data/scraping.db
+  Generated: 2026-02-24 02:54:25
+========================================================================
+
+WEBSITES PER CATEGORY
+────────────────────────────────────────
+  Category                   Websites
+  ------------------------------------
+  Test                              1
+  Managed Enterprise BPO / Data Marketplace (enterprise AI datasets & services)         1
+  Managed Enterprise BPO (high-skill data labeling and evaluation vendor)         1
+  Managed Enterprise BPO (global AI training data provider)         1
+  Managed Enterprise BPO (expert freelancer workforce for RLHF and AI data)         1
+  Managed Enterprise BPO (AI data services, B2B; uses CrowdGen as worker platform)         1
+  Managed Enterprise BPO (AI data & RLHF vendor; Remotasks as worker interface)         1
+  Impact-Sourcing Firm (ethical AI data BPO, Global South oriented)         1
+  Algorithmic Crowd Market (self-serve data labeling platform; Mindrift/Tolokers as worker portals)         1
+  Algorithmic Crowd Market (remote RLHF and data annotation gigs)         1
+  Algorithmic Crowd Market (participant recruitment for research and AI model tasks)         1
+  Algorithmic Crowd Market (microtask worker platform for Scale AI)         1
+  Algorithmic Crowd Market (microtask platform for AI data & surveys)         1
+  Algorithmic Crowd Market (global microtask and AI training data platform)         1
+  Algorithmic Crowd Market (expert AI tutor platform, integrated with Toloka)         1
+  Algorithmic Crowd Market (canonical microtask market with granular requester control)         1
+  Algorithmic Crowd Market (Centific worker platform for AI data projects)         1
+  Algorithmic Crowd Market (Appen contributor portal, B2W side of Appen)         1
+  ------------------------------------
+  TOTAL                            18
+
+URLS (PAGES) PER WEBSITE
+────────────────────────────────────────────────────────────
+  Domain                              Category          Pages
+  ----------------------------------------------------------
+  defined.ai                          Managed Enterprise BPO / Data Marketplace (enterprise AI datasets & services)     940
+  www.lxt.ai                          Managed Enterprise BPO (global AI training data provider)     762
+  www.appen.com                       Managed Enterprise BPO (AI data services, B2B; uses CrowdGen as worker platform)     551
+  www.clickworker.com                 Algorithmic Crowd Market (microtask platform for AI data & surveys)     410
+  www.sama.com                        Impact-Sourcing Firm (ethical AI data BPO, Global South oriented)     392
+  www.prolific.com                    Algorithmic Crowd Market (participant recruitment for research and AI model tasks)     377
+  outlier.ai                          Managed Enterprise BPO (expert freelancer workforce for RLHF and AI data)     227
+  www.dataannotation.tech             Algorithmic Crowd Market (remote RLHF and data annotation gigs)     171
+  www.oneforma.com                    Algorithmic Crowd Market (Centific worker platform for AI data projects)     143
+  mindrift.ai                         Algorithmic Crowd Market (expert AI tutor platform, integrated with Toloka)     113
+  www.microworkers.com                Algorithmic Crowd Market (global microtask and AI training data platform)     109
+  toloka.ai                           Algorithmic Crowd Market (self-serve data labeling platform; Mindrift/Tolokers as worker portals)      50
+  www.remotasks.com                   Algorithmic Crowd Market (microtask worker platform for Scale AI)      10
+  test.example.com                    Test                  1
+  crowdgen.com                        Algorithmic Crowd Market (Appen contributor portal, B2W side of Appen)       1
+  scale.com                           Managed Enterprise BPO (AI data & RLHF vendor; Remotasks as worker interface)       1
+  www.mturk.com                       Algorithmic Crowd Market (canonical microtask market with granular requester control)       1
+  surgehq.ai                          Managed Enterprise BPO (high-skill data labeling and evaluation vendor)       1
+  ----------------------------------------------------------
+  TOTAL                                                  4260
+
+WORD COUNT PER WEBSITE (full text corpus)
+────────────────────────────────────────────────────────────
+  Domain                              Category             Words
+  --------------------------------------------------------------
+  crowdgen.com                        Algorithmic Crowd Market (Appen contributor portal, B2W side of Appen)      1,500
+  defined.ai                          Managed Enterprise BPO / Data Marketplace (enterprise AI datasets & services)    605,648
+  mindrift.ai                         Algorithmic Crowd Market (expert AI tutor platform, integrated with Toloka)    234,767
+  outlier.ai                          Managed Enterprise BPO (expert freelancer workforce for RLHF and AI data)    243,785
+  scale.com                           Managed Enterprise BPO (AI data & RLHF vendor; Remotasks as worker interface)        392
+  surgehq.ai                          Managed Enterprise BPO (high-skill data labeling and evaluation vendor)        119
+  test.example.com                    Test                     6
+  toloka.ai                           Algorithmic Crowd Market (self-serve data labeling platform; Mindrift/Tolokers as worker portals)     31,122
+  www.appen.com                       Managed Enterprise BPO (AI data services, B2B; uses CrowdGen as worker platform)    490,809
+  www.clickworker.com                 Algorithmic Crowd Market (microtask platform for AI data & surveys)    736,496
+  www.dataannotation.tech             Algorithmic Crowd Market (remote RLHF and data annotation gigs)    334,681
+  www.lxt.ai                          Managed Enterprise BPO (global AI training data provider)  1,224,706
+  www.microworkers.com                Algorithmic Crowd Market (global microtask and AI training data platform)    116,710
+  www.mturk.com                       Algorithmic Crowd Market (canonical microtask market with granular requester control)        866
+  www.oneforma.com                    Algorithmic Crowd Market (Centific worker platform for AI data projects)    127,168
+  www.prolific.com                    Algorithmic Crowd Market (participant recruitment for research and AI model tasks)    383,600
+  www.remotasks.com                   Algorithmic Crowd Market (microtask worker platform for Scale AI)     22,690
+  www.sama.com                        Impact-Sourcing Firm (ethical AI data BPO, Global South oriented)  1,007,067
+  --------------------------------------------------------------
+  TOTAL                                                5,562,132
+
+========================================================================
+  END OF REPORT
+========================================================================

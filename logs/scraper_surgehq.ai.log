@@ -1,0 +1,5 @@
+2026-02-24 01:28:59 - scraper.surgehq.ai - INFO - Starting scrape of Surge AI
+2026-02-24 01:29:00 - scraper.surgehq.ai - WARNING - No sitemap found, scraping only base URL
+2026-02-24 01:29:01 - scraper.surgehq.ai - INFO - Starting scrape: https://surgehq.ai/
+2026-02-24 01:29:05 - scraper.surgehq.ai - INFO - ✓ VALIDATION PASSED: https://surgehq.ai/: All validations passed
+2026-02-24 01:29:05 - scraper.surgehq.ai - INFO - ✓ SUCCESS: https://surgehq.ai/ | Status: 200 | Size: 47737 bytes

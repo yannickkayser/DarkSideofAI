@@ -1,0 +1,586 @@
+2026-02-23 22:58:54 - scraper.www.dataannotation.tech - INFO - Starting scrape of DataAnnotation
+2026-02-23 22:58:56 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech
+2026-02-23 22:59:16 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech: All validations passed
+2026-02-23 22:59:16 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech | Status: 200 | Size: 105205 bytes
+2026-02-23 22:59:16 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/about
+2026-02-23 22:59:22 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/about: All validations passed
+2026-02-23 22:59:22 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/about | Status: 200 | Size: 83952 bytes
+2026-02-23 22:59:23 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/blog
+2026-02-23 22:59:29 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/blog: All validations passed
+2026-02-23 22:59:29 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/blog | Status: 200 | Size: 119633 bytes
+2026-02-23 22:59:30 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/expert-work
+2026-02-23 22:59:36 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/expert-work: All validations passed
+2026-02-23 22:59:36 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/expert-work | Status: 200 | Size: 90622 bytes
+2026-02-23 22:59:36 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/faq
+2026-02-23 22:59:40 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/faq: All validations passed
+2026-02-23 22:59:40 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/faq | Status: 200 | Size: 89110 bytes
+2026-02-23 22:59:40 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/generalist
+2026-02-23 22:59:43 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/generalist: All validations passed
+2026-02-23 22:59:43 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/generalist | Status: 200 | Size: 83080 bytes
+2026-02-23 22:59:44 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/programmers
+2026-02-23 22:59:48 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/programmers: All validations passed
+2026-02-23 22:59:48 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/programmers | Status: 200 | Size: 195564 bytes
+2026-02-23 22:59:48 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/programming
+2026-02-23 22:59:54 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/programming: All validations passed
+2026-02-23 22:59:54 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/programming | Status: 200 | Size: 92577 bytes
+2026-02-23 22:59:54 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/japanesebilingual-old
+2026-02-23 22:59:59 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/japanesebilingual-old: All validations passed
+2026-02-23 22:59:59 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/japanesebilingual-old | Status: 200 | Size: 63389 bytes
+2026-02-23 22:59:59 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/frenchbilingual
+2026-02-23 23:00:06 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/frenchbilingual: All validations passed
+2026-02-23 23:00:06 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/frenchbilingual | Status: 200 | Size: 159199 bytes
+2026-02-23 23:00:06 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/germanbilingual
+2026-02-23 23:00:12 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/germanbilingual: All validations passed
+2026-02-23 23:00:12 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/germanbilingual | Status: 200 | Size: 159599 bytes
+2026-02-23 23:00:12 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/brazil-portuguese
+2026-02-23 23:00:16 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/brazil-portuguese: All validations passed
+2026-02-23 23:00:16 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/brazil-portuguese | Status: 200 | Size: 158749 bytes
+2026-02-23 23:00:16 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/dataannotation-spain
+2026-02-23 23:00:22 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/dataannotation-spain: All validations passed
+2026-02-23 23:00:22 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/dataannotation-spain | Status: 200 | Size: 158852 bytes
+2026-02-23 23:00:22 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/japanese-bilingual
+2026-02-23 23:00:27 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/japanese-bilingual: All validations passed
+2026-02-23 23:00:27 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/japanese-bilingual | Status: 200 | Size: 153254 bytes
+2026-02-23 23:00:27 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/korean-bilingual
+2026-02-23 23:00:33 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/korean-bilingual: All validations passed
+2026-02-23 23:00:33 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/korean-bilingual | Status: 200 | Size: 114143 bytes
+2026-02-23 23:00:33 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/chinese-bilingual
+2026-02-23 23:00:37 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/chinese-bilingual: All validations passed
+2026-02-23 23:00:37 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/chinese-bilingual | Status: 200 | Size: 131719 bytes
+2026-02-23 23:00:37 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/german-switzerland-bilingual
+2026-02-23 23:00:42 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/german-switzerland-bilingual: All validations passed
+2026-02-23 23:00:42 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/german-switzerland-bilingual | Status: 200 | Size: 117706 bytes
+2026-02-23 23:00:42 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/french-switzerland-bilingual
+2026-02-23 23:00:46 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/french-switzerland-bilingual: All validations passed
+2026-02-23 23:00:46 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/french-switzerland-bilingual | Status: 200 | Size: 117613 bytes
+2026-02-23 23:00:46 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/italian-switzerland-bilingual
+2026-02-23 23:00:52 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/italian-switzerland-bilingual: All validations passed
+2026-02-23 23:00:52 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/italian-switzerland-bilingual | Status: 200 | Size: 117020 bytes
+2026-02-23 23:00:52 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/french-belgium-bilingual
+2026-02-23 23:00:56 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/french-belgium-bilingual: All validations passed
+2026-02-23 23:00:56 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/french-belgium-bilingual | Status: 200 | Size: 117628 bytes
+2026-02-23 23:00:56 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/german-austria-bilingual
+2026-02-23 23:01:02 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/german-austria-bilingual: All validations passed
+2026-02-23 23:01:02 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/german-austria-bilingual | Status: 200 | Size: 117588 bytes
+2026-02-23 23:01:02 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/indonesian-bilingual
+2026-02-23 23:01:09 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/indonesian-bilingual: All validations passed
+2026-02-23 23:01:09 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/indonesian-bilingual | Status: 200 | Size: 117108 bytes
+2026-02-23 23:01:09 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/danish-bilingual
+2026-02-23 23:01:13 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/danish-bilingual: All validations passed
+2026-02-23 23:01:13 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/danish-bilingual | Status: 200 | Size: 116695 bytes
+2026-02-23 23:01:14 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/turkish-bilingual
+2026-02-23 23:01:18 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/turkish-bilingual: All validations passed
+2026-02-23 23:01:18 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/turkish-bilingual | Status: 200 | Size: 116899 bytes
+2026-02-23 23:01:18 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/norwegian-bilingual
+2026-02-23 23:01:22 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/norwegian-bilingual: All validations passed
+2026-02-23 23:01:22 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/norwegian-bilingual | Status: 200 | Size: 116394 bytes
+2026-02-23 23:01:22 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/swedish-bilingual
+2026-02-23 23:01:27 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/swedish-bilingual: All validations passed
+2026-02-23 23:01:27 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/swedish-bilingual | Status: 200 | Size: 116622 bytes
+2026-02-23 23:01:28 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/dutch-bilingual
+2026-02-23 23:01:31 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/dutch-bilingual: All validations passed
+2026-02-23 23:01:31 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/dutch-bilingual | Status: 200 | Size: 116755 bytes
+2026-02-23 23:01:31 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/dutch-belgium-bilingual
+2026-02-23 23:01:37 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/dutch-belgium-bilingual: All validations passed
+2026-02-23 23:01:37 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/dutch-belgium-bilingual | Status: 200 | Size: 116538 bytes
+2026-02-23 23:01:37 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/malaysian-bilingual
+2026-02-23 23:01:42 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/malaysian-bilingual: All validations passed
+2026-02-23 23:01:42 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/malaysian-bilingual | Status: 200 | Size: 117177 bytes
+2026-02-23 23:01:43 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/finnish-bilingual
+2026-02-23 23:01:48 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/finnish-bilingual: All validations passed
+2026-02-23 23:01:48 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/finnish-bilingual | Status: 200 | Size: 115672 bytes
+2026-02-23 23:01:48 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/thai-bilingual
+2026-02-23 23:01:54 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/thai-bilingual: All validations passed
+2026-02-23 23:01:54 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/thai-bilingual | Status: 200 | Size: 159309 bytes
+2026-02-23 23:01:54 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/vietnamese-bilingual
+2026-02-23 23:01:59 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/vietnamese-bilingual: All validations passed
+2026-02-23 23:01:59 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/vietnamese-bilingual | Status: 200 | Size: 160628 bytes
+2026-02-23 23:02:00 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/hindi-bilingual
+2026-02-23 23:02:06 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/hindi-bilingual: All validations passed
+2026-02-23 23:02:06 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/hindi-bilingual | Status: 200 | Size: 116664 bytes
+2026-02-23 23:02:06 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/arabic-ae-bilingual
+2026-02-23 23:02:11 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/arabic-ae-bilingual: All validations passed
+2026-02-23 23:02:11 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/arabic-ae-bilingual | Status: 200 | Size: 115913 bytes
+2026-02-23 23:02:11 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/arabic-sa-bilingual
+2026-02-23 23:02:16 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/arabic-sa-bilingual: All validations passed
+2026-02-23 23:02:16 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/arabic-sa-bilingual | Status: 200 | Size: 116881 bytes
+2026-02-23 23:02:16 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/arabic-eg-bilingual
+2026-02-23 23:02:22 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/arabic-eg-bilingual: All validations passed
+2026-02-23 23:02:22 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/arabic-eg-bilingual | Status: 200 | Size: 116871 bytes
+2026-02-23 23:02:22 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/hebrew-bilingual
+2026-02-23 23:02:27 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/hebrew-bilingual: All validations passed
+2026-02-23 23:02:27 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/hebrew-bilingual | Status: 200 | Size: 116586 bytes
+2026-02-23 23:02:28 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/chinese-simplified
+2026-02-23 23:02:33 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/chinese-simplified: All validations passed
+2026-02-23 23:02:33 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/chinese-simplified | Status: 200 | Size: 113113 bytes
+2026-02-23 23:02:34 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/taiwan-bilingual
+2026-02-23 23:02:38 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/taiwan-bilingual: All validations passed
+2026-02-23 23:02:38 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/taiwan-bilingual | Status: 200 | Size: 113145 bytes
+2026-02-23 23:02:38 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/hongkong-bilingual
+2026-02-23 23:02:45 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/hongkong-bilingual: All validations passed
+2026-02-23 23:02:45 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/hongkong-bilingual | Status: 200 | Size: 113132 bytes
+2026-02-23 23:02:45 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/russian-bilingual
+2026-02-23 23:02:50 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/russian-bilingual: All validations passed
+2026-02-23 23:02:50 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/russian-bilingual | Status: 200 | Size: 116915 bytes
+2026-02-23 23:02:50 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/trust-safety
+2026-02-23 23:02:54 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/trust-safety: All validations passed
+2026-02-23 23:02:54 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/trust-safety | Status: 200 | Size: 55179 bytes
+2026-02-23 23:02:54 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/portugal
+2026-02-23 23:02:59 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/portugal: All validations passed
+2026-02-23 23:02:59 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/portugal | Status: 200 | Size: 159056 bytes
+2026-02-23 23:02:59 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/ukrainian-bilingual
+2026-02-23 23:03:03 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/ukrainian-bilingual: All validations passed
+2026-02-23 23:03:03 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/ukrainian-bilingual | Status: 200 | Size: 116738 bytes
+2026-02-23 23:03:03 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/polish-bilingual
+2026-02-23 23:03:10 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/polish-bilingual: All validations passed
+2026-02-23 23:03:10 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/polish-bilingual | Status: 200 | Size: 117042 bytes
+2026-02-23 23:03:10 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/language-directory
+2026-02-23 23:03:15 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/language-directory: All validations passed
+2026-02-23 23:03:15 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/language-directory | Status: 200 | Size: 292247 bytes
+2026-02-23 23:03:15 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/urdu-bilingual
+2026-02-23 23:03:38 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/urdu-bilingual: All validations passed
+2026-02-23 23:03:38 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/urdu-bilingual | Status: 200 | Size: 187121 bytes
+2026-02-23 23:03:38 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/india-directory
+2026-02-23 23:03:42 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/india-directory: All validations passed
+2026-02-23 23:03:42 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/india-directory | Status: 200 | Size: 281991 bytes
+2026-02-23 23:03:42 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/expertphysics
+2026-02-23 23:03:48 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/expertphysics: All validations passed
+2026-02-23 23:03:48 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/expertphysics | Status: 200 | Size: 65709 bytes
+2026-02-23 23:03:48 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/expertchemistry
+2026-02-23 23:03:54 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/expertchemistry: All validations passed
+2026-02-23 23:03:54 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/expertchemistry | Status: 200 | Size: 66389 bytes
+2026-02-23 23:03:54 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/expertmath
+2026-02-23 23:03:58 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/expertmath: All validations passed
+2026-02-23 23:03:58 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/expertmath | Status: 200 | Size: 65874 bytes
+2026-02-23 23:03:59 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/expertbiology
+2026-02-23 23:04:03 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/expertbiology: All validations passed
+2026-02-23 23:04:03 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/expertbiology | Status: 200 | Size: 66046 bytes
+2026-02-23 23:04:03 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/generalist-work
+2026-02-23 23:04:08 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/generalist-work: All validations passed
+2026-02-23 23:04:08 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/generalist-work | Status: 200 | Size: 83140 bytes
+2026-02-23 23:04:08 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/frenchbilingual-en
+2026-02-23 23:04:12 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/frenchbilingual-en: All validations passed
+2026-02-23 23:04:12 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/frenchbilingual-en | Status: 200 | Size: 147703 bytes
+2026-02-23 23:04:12 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/brazil-portuguese-en
+2026-02-23 23:04:19 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/brazil-portuguese-en: All validations passed
+2026-02-23 23:04:19 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/brazil-portuguese-en | Status: 200 | Size: 147658 bytes
+2026-02-23 23:04:19 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/portugal-en
+2026-02-23 23:04:24 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/portugal-en: All validations passed
+2026-02-23 23:04:24 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/portugal-en | Status: 200 | Size: 147721 bytes
+2026-02-23 23:04:25 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/dataannotation-spain-en
+2026-02-23 23:04:29 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/dataannotation-spain-en: All validations passed
+2026-02-23 23:04:29 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/dataannotation-spain-en | Status: 200 | Size: 147855 bytes
+2026-02-23 23:04:29 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/japanese-bilingual-en
+2026-02-23 23:04:35 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/japanese-bilingual-en: All validations passed
+2026-02-23 23:04:35 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/japanese-bilingual-en | Status: 200 | Size: 147806 bytes
+2026-02-23 23:04:35 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/chinese-bilingual-en
+2026-02-23 23:04:41 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/chinese-bilingual-en: All validations passed
+2026-02-23 23:04:41 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/chinese-bilingual-en | Status: 200 | Size: 147676 bytes
+2026-02-23 23:04:41 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/vietnamese-bilingual-en
+2026-02-23 23:04:47 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/vietnamese-bilingual-en: All validations passed
+2026-02-23 23:04:47 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/vietnamese-bilingual-en | Status: 200 | Size: 147768 bytes
+2026-02-23 23:04:47 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/thai-bilingual-en
+2026-02-23 23:04:54 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/thai-bilingual-en: All validations passed
+2026-02-23 23:04:54 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/thai-bilingual-en | Status: 200 | Size: 147660 bytes
+2026-02-23 23:04:54 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/germanbilingual-en
+2026-02-23 23:04:59 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/germanbilingual-en: All validations passed
+2026-02-23 23:04:59 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/germanbilingual-en | Status: 200 | Size: 147758 bytes
+2026-02-23 23:04:59 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/korean-bilingual-en
+2026-02-23 23:05:05 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/korean-bilingual-en: All validations passed
+2026-02-23 23:05:05 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/korean-bilingual-en | Status: 200 | Size: 116051 bytes
+2026-02-23 23:05:05 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/indonesian-bilingual-en
+2026-02-23 23:05:11 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/indonesian-bilingual-en: All validations passed
+2026-02-23 23:05:11 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/indonesian-bilingual-en | Status: 200 | Size: 116269 bytes
+2026-02-23 23:05:11 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/german-switzerland-bilingual-en
+2026-02-23 23:05:15 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/german-switzerland-bilingual-en: All validations passed
+2026-02-23 23:05:15 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/german-switzerland-bilingual-en | Status: 200 | Size: 116548 bytes
+2026-02-23 23:05:15 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/french-switzerland-bilingual-en
+2026-02-23 23:05:22 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/french-switzerland-bilingual-en: All validations passed
+2026-02-23 23:05:22 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/french-switzerland-bilingual-en | Status: 200 | Size: 116299 bytes
+2026-02-23 23:05:23 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/italian-switzerland-bilingual-en
+2026-02-23 23:05:27 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/italian-switzerland-bilingual-en: All validations passed
+2026-02-23 23:05:27 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/italian-switzerland-bilingual-en | Status: 200 | Size: 116251 bytes
+2026-02-23 23:05:27 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/french-belgium-bilingual-en
+2026-02-23 23:05:32 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/french-belgium-bilingual-en: All validations passed
+2026-02-23 23:05:32 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/french-belgium-bilingual-en | Status: 200 | Size: 116220 bytes
+2026-02-23 23:05:32 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/german-austria-bilingual-en
+2026-02-23 23:05:38 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/german-austria-bilingual-en: All validations passed
+2026-02-23 23:05:38 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/german-austria-bilingual-en | Status: 200 | Size: 116524 bytes
+2026-02-23 23:05:38 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/danish-bilingual-en
+2026-02-23 23:05:43 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/danish-bilingual-en: All validations passed
+2026-02-23 23:05:43 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/danish-bilingual-en | Status: 200 | Size: 116196 bytes
+2026-02-23 23:05:43 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/turkish-bilingual-en
+2026-02-23 23:05:49 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/turkish-bilingual-en: All validations passed
+2026-02-23 23:05:49 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/turkish-bilingual-en | Status: 200 | Size: 116207 bytes
+2026-02-23 23:05:49 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/norwegian-bilingual-en
+2026-02-23 23:05:54 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/norwegian-bilingual-en: All validations passed
+2026-02-23 23:05:54 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/norwegian-bilingual-en | Status: 200 | Size: 116239 bytes
+2026-02-23 23:05:54 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/swedish-bilingual-en
+2026-02-23 23:05:59 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/swedish-bilingual-en: All validations passed
+2026-02-23 23:05:59 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/swedish-bilingual-en | Status: 200 | Size: 116207 bytes
+2026-02-23 23:05:59 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/dutch-bilingual-en
+2026-02-23 23:06:05 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/dutch-bilingual-en: All validations passed
+2026-02-23 23:06:05 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/dutch-bilingual-en | Status: 200 | Size: 116185 bytes
+2026-02-23 23:06:05 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/dutch-belgium-bilingual-en
+2026-02-23 23:06:08 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/dutch-belgium-bilingual-en: All validations passed
+2026-02-23 23:06:08 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/dutch-belgium-bilingual-en | Status: 200 | Size: 116148 bytes
+2026-02-23 23:06:08 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/russian-bilingual-en
+2026-02-23 23:06:13 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/russian-bilingual-en: All validations passed
+2026-02-23 23:06:13 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/russian-bilingual-en | Status: 200 | Size: 116290 bytes
+2026-02-23 23:06:13 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/ukrainian-bilingual-en
+2026-02-23 23:06:18 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/ukrainian-bilingual-en: All validations passed
+2026-02-23 23:06:18 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/ukrainian-bilingual-en | Status: 200 | Size: 116238 bytes
+2026-02-23 23:06:18 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/polish-bilingual-en
+2026-02-23 23:06:22 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/polish-bilingual-en: All validations passed
+2026-02-23 23:06:22 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/polish-bilingual-en | Status: 200 | Size: 116208 bytes
+2026-02-23 23:06:22 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/hindi-bilingual-en
+2026-02-23 23:06:26 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/hindi-bilingual-en: All validations passed
+2026-02-23 23:06:26 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/hindi-bilingual-en | Status: 200 | Size: 116139 bytes
+2026-02-23 23:06:26 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/malaysian-bilingual-en
+2026-02-23 23:06:32 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/malaysian-bilingual-en: All validations passed
+2026-02-23 23:06:32 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/malaysian-bilingual-en | Status: 200 | Size: 116204 bytes
+2026-02-23 23:06:32 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/finnish-bilingual-en
+2026-02-23 23:06:38 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/finnish-bilingual-en: All validations passed
+2026-02-23 23:06:38 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/finnish-bilingual-en | Status: 200 | Size: 116197 bytes
+2026-02-23 23:06:38 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/taiwan-bilingual-en
+2026-02-23 23:06:43 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/taiwan-bilingual-en: All validations passed
+2026-02-23 23:06:43 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/taiwan-bilingual-en | Status: 200 | Size: 115845 bytes
+2026-02-23 23:06:43 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/hongkong-bilingual-en
+2026-02-23 23:06:49 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/hongkong-bilingual-en: All validations passed
+2026-02-23 23:06:49 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/hongkong-bilingual-en | Status: 200 | Size: 115918 bytes
+2026-02-23 23:06:49 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/chinese-simplified-en
+2026-02-23 23:06:55 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/chinese-simplified-en: All validations passed
+2026-02-23 23:06:55 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/chinese-simplified-en | Status: 200 | Size: 115824 bytes
+2026-02-23 23:06:55 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/italianbilingual
+2026-02-23 23:07:01 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/italianbilingual: All validations passed
+2026-02-23 23:07:01 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/italianbilingual | Status: 200 | Size: 116693 bytes
+2026-02-23 23:07:01 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/italianbilingual-en
+2026-02-23 23:07:08 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/italianbilingual-en: All validations passed
+2026-02-23 23:07:08 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/italianbilingual-en | Status: 200 | Size: 116250 bytes
+2026-02-23 23:07:08 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers
+2026-02-23 23:07:14 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers: All validations passed
+2026-02-23 23:07:14 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers | Status: 200 | Size: 304385 bytes
+2026-02-23 23:07:14 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/blog/adversarial-examples
+2026-02-23 23:07:19 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/blog/adversarial-examples: All validations passed
+2026-02-23 23:07:19 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/blog/adversarial-examples | Status: 200 | Size: 88375 bytes
+2026-02-23 23:07:19 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/blog/agi-in-ai
+2026-02-23 23:07:24 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/blog/agi-in-ai: All validations passed
+2026-02-23 23:07:24 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/blog/agi-in-ai | Status: 200 | Size: 102893 bytes
+2026-02-23 23:07:24 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/blog/ai-safety
+2026-02-23 23:07:28 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/blog/ai-safety: All validations passed
+2026-02-23 23:07:28 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/blog/ai-safety | Status: 200 | Size: 89808 bytes
+2026-02-23 23:07:29 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/blog/ai-trainer-career-paths
+2026-02-23 23:07:35 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/blog/ai-trainer-career-paths: All validations passed
+2026-02-23 23:07:35 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/blog/ai-trainer-career-paths | Status: 200 | Size: 105701 bytes
+2026-02-23 23:07:35 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/blog/ai-trainer-job-requirements
+2026-02-23 23:07:43 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/blog/ai-trainer-job-requirements: All validations passed
+2026-02-23 23:07:43 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/blog/ai-trainer-job-requirements | Status: 200 | Size: 97115 bytes
+2026-02-23 23:07:43 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/blog/ai-training-jobs-contributing-to-tech-that-matters
+2026-02-23 23:07:48 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/blog/ai-training-jobs-contributing-to-tech-that-matters: All validations passed
+2026-02-23 23:07:48 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/blog/ai-training-jobs-contributing-to-tech-that-matters | Status: 200 | Size: 95004 bytes
+2026-02-23 23:07:48 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/blog/ai-transparency
+2026-02-23 23:07:53 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/blog/ai-transparency: All validations passed
+2026-02-23 23:07:53 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/blog/ai-transparency | Status: 200 | Size: 91403 bytes
+2026-02-23 23:07:53 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/blog/best-reasons-to-work-from-home
+2026-02-23 23:07:59 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/blog/best-reasons-to-work-from-home: All validations passed
+2026-02-23 23:07:59 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/blog/best-reasons-to-work-from-home | Status: 200 | Size: 102388 bytes
+2026-02-23 23:07:59 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/blog/data-annotation-vs-data-labeling
+2026-02-23 23:08:06 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/blog/data-annotation-vs-data-labeling: All validations passed
+2026-02-23 23:08:06 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/blog/data-annotation-vs-data-labeling | Status: 200 | Size: 90287 bytes
+2026-02-23 23:08:06 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/blog/dataannotation-reviews
+2026-02-23 23:08:11 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/blog/dataannotation-reviews: All validations passed
+2026-02-23 23:08:11 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/blog/dataannotation-reviews | Status: 200 | Size: 94964 bytes
+2026-02-23 23:08:11 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/blog/explainable-ai-methods
+2026-02-23 23:08:24 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/blog/explainable-ai-methods: All validations passed
+2026-02-23 23:08:24 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/blog/explainable-ai-methods | Status: 200 | Size: 100795 bytes
+2026-02-23 23:08:24 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/blog/how-does-ai-training-work
+2026-02-23 23:08:30 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/blog/how-does-ai-training-work: All validations passed
+2026-02-23 23:08:30 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/blog/how-does-ai-training-work | Status: 200 | Size: 111188 bytes
+2026-02-23 23:08:30 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/blog/how-to-design-scalable-ai-systems
+2026-02-23 23:08:36 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/blog/how-to-design-scalable-ai-systems: All validations passed
+2026-02-23 23:08:36 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/blog/how-to-design-scalable-ai-systems | Status: 200 | Size: 101315 bytes
+2026-02-23 23:08:36 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/blog/how-to-get-data-annotation-jobs
+2026-02-23 23:08:43 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/blog/how-to-get-data-annotation-jobs: All validations passed
+2026-02-23 23:08:43 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/blog/how-to-get-data-annotation-jobs | Status: 200 | Size: 97220 bytes
+2026-02-23 23:08:43 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/blog/how-to-get-remote-data-annotation-jobs
+2026-02-23 23:08:49 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/blog/how-to-get-remote-data-annotation-jobs: All validations passed
+2026-02-23 23:08:49 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/blog/how-to-get-remote-data-annotation-jobs | Status: 200 | Size: 102217 bytes
+2026-02-23 23:08:49 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/blog/in-context-learning
+2026-02-23 23:08:55 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/blog/in-context-learning: All validations passed
+2026-02-23 23:08:55 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/blog/in-context-learning | Status: 200 | Size: 96534 bytes
+2026-02-23 23:08:55 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/blog/is-dataannotation-legit
+2026-02-23 23:08:59 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/blog/is-dataannotation-legit: All validations passed
+2026-02-23 23:08:59 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/blog/is-dataannotation-legit | Status: 200 | Size: 91843 bytes
+2026-02-23 23:08:59 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/blog/is-dataannotation-scam
+2026-02-23 23:09:05 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/blog/is-dataannotation-scam: All validations passed
+2026-02-23 23:09:05 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/blog/is-dataannotation-scam | Status: 200 | Size: 99320 bytes
+2026-02-23 23:09:05 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/blog/llm-context-window
+2026-02-23 23:09:10 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/blog/llm-context-window: All validations passed
+2026-02-23 23:09:10 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/blog/llm-context-window | Status: 200 | Size: 91267 bytes
+2026-02-23 23:09:10 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/blog/rag-vs-fine-tuning
+2026-02-23 23:09:16 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/blog/rag-vs-fine-tuning: All validations passed
+2026-02-23 23:09:16 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/blog/rag-vs-fine-tuning | Status: 200 | Size: 96779 bytes
+2026-02-23 23:09:16 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/blog/remote-ai-training-jobs-guide
+2026-02-23 23:09:23 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/blog/remote-ai-training-jobs-guide: All validations passed
+2026-02-23 23:09:23 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/blog/remote-ai-training-jobs-guide | Status: 200 | Size: 93883 bytes
+2026-02-23 23:09:23 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/blog/tech-layoffs-skills-opportunities
+2026-02-23 23:09:29 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/blog/tech-layoffs-skills-opportunities: All validations passed
+2026-02-23 23:09:29 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/blog/tech-layoffs-skills-opportunities | Status: 200 | Size: 89878 bytes
+2026-02-23 23:09:29 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/blog/top-k-sampling
+2026-02-23 23:09:34 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/blog/top-k-sampling: All validations passed
+2026-02-23 23:09:34 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/blog/top-k-sampling | Status: 200 | Size: 93332 bytes
+2026-02-23 23:09:34 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/blog/top-p-sampling
+2026-02-23 23:09:40 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/blog/top-p-sampling: All validations passed
+2026-02-23 23:09:40 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/blog/top-p-sampling | Status: 200 | Size: 94342 bytes
+2026-02-23 23:09:40 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/blog/what-is-context-length-in-ai
+2026-02-23 23:09:46 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/blog/what-is-context-length-in-ai: All validations passed
+2026-02-23 23:09:46 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/blog/what-is-context-length-in-ai | Status: 200 | Size: 94570 bytes
+2026-02-23 23:09:46 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/blog/what-is-data-annotation
+2026-02-23 23:09:52 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/blog/what-is-data-annotation: All validations passed
+2026-02-23 23:09:52 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/blog/what-is-data-annotation | Status: 200 | Size: 102060 bytes
+2026-02-23 23:09:52 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/blog/what-is-explainable-ai
+2026-02-23 23:09:59 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/blog/what-is-explainable-ai: All validations passed
+2026-02-23 23:09:59 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/blog/what-is-explainable-ai | Status: 200 | Size: 112310 bytes
+2026-02-23 23:09:59 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/blog/what-is-lora
+2026-02-23 23:10:04 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/blog/what-is-lora: All validations passed
+2026-02-23 23:10:04 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/blog/what-is-lora | Status: 200 | Size: 109905 bytes
+2026-02-23 23:10:04 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/blog/what-is-regularization-in-machine-learning
+2026-02-23 23:10:10 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/blog/what-is-regularization-in-machine-learning: All validations passed
+2026-02-23 23:10:10 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/blog/what-is-regularization-in-machine-learning | Status: 200 | Size: 93075 bytes
+2026-02-23 23:10:10 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/blog/what-is-transfer-learning
+2026-02-23 23:10:17 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/blog/what-is-transfer-learning: All validations passed
+2026-02-23 23:10:17 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/blog/what-is-transfer-learning | Status: 200 | Size: 90175 bytes
+2026-02-23 23:10:17 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/abstract-data-type-vs-data-structure
+2026-02-23 23:10:21 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/abstract-data-type-vs-data-structure: All validations passed
+2026-02-23 23:10:21 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/abstract-data-type-vs-data-structure | Status: 200 | Size: 91948 bytes
+2026-02-23 23:10:21 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/ai-code-review-best-practices
+2026-02-23 23:10:26 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/ai-code-review-best-practices: All validations passed
+2026-02-23 23:10:26 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/ai-code-review-best-practices | Status: 200 | Size: 92707 bytes
+2026-02-23 23:10:26 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/ai-tools-developers-code-generation-review
+2026-02-23 23:10:30 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/ai-tools-developers-code-generation-review: All validations passed
+2026-02-23 23:10:30 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/ai-tools-developers-code-generation-review | Status: 200 | Size: 110989 bytes
+2026-02-23 23:10:30 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/array-definition
+2026-02-23 23:10:36 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/array-definition: All validations passed
+2026-02-23 23:10:36 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/array-definition | Status: 200 | Size: 92222 bytes
+2026-02-23 23:10:36 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/best-freelance-websites-for-software-developers
+2026-02-23 23:10:40 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/best-freelance-websites-for-software-developers: All validations passed
+2026-02-23 23:10:40 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/best-freelance-websites-for-software-developers | Status: 200 | Size: 114101 bytes
+2026-02-23 23:10:41 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/best-llm-for-coding
+2026-02-23 23:10:46 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/best-llm-for-coding: All validations passed
+2026-02-23 23:10:46 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/best-llm-for-coding | Status: 200 | Size: 108361 bytes
+2026-02-23 23:10:46 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/best-side-hustles-for-developers
+2026-02-23 23:10:52 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/best-side-hustles-for-developers: All validations passed
+2026-02-23 23:10:52 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/best-side-hustles-for-developers | Status: 200 | Size: 104365 bytes
+2026-02-23 23:10:52 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/best-sites-for-coding-part-time-jobs
+2026-02-23 23:10:56 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/best-sites-for-coding-part-time-jobs: All validations passed
+2026-02-23 23:10:56 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/best-sites-for-coding-part-time-jobs | Status: 200 | Size: 106921 bytes
+2026-02-23 23:10:56 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/can-coding-be-flexible-work
+2026-02-23 23:11:02 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/can-coding-be-flexible-work: All validations passed
+2026-02-23 23:11:02 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/can-coding-be-flexible-work | Status: 200 | Size: 91131 bytes
+2026-02-23 23:11:02 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/can-i-generate-code-using-generative-ai
+2026-02-23 23:11:09 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/can-i-generate-code-using-generative-ai: All validations passed
+2026-02-23 23:11:09 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/can-i-generate-code-using-generative-ai | Status: 200 | Size: 93676 bytes
+2026-02-23 23:11:09 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/can-you-do-coding-as-a-side-job
+2026-02-23 23:11:14 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/can-you-do-coding-as-a-side-job: All validations passed
+2026-02-23 23:11:14 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/can-you-do-coding-as-a-side-job | Status: 200 | Size: 104973 bytes
+2026-02-23 23:11:14 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/can-you-work-as-a-part-time-software-developer
+2026-02-23 23:11:19 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/can-you-work-as-a-part-time-software-developer: All validations passed
+2026-02-23 23:11:19 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/can-you-work-as-a-part-time-software-developer | Status: 200 | Size: 104608 bytes
+2026-02-23 23:11:19 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/can-you-work-part-time-as-a-software-engineer
+2026-02-23 23:11:24 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/can-you-work-part-time-as-a-software-engineer: All validations passed
+2026-02-23 23:11:24 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/can-you-work-part-time-as-a-software-engineer | Status: 200 | Size: 116299 bytes
+2026-02-23 23:11:24 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/career-options-for-a-software-engineer
+2026-02-23 23:11:29 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/career-options-for-a-software-engineer: All validations passed
+2026-02-23 23:11:29 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/career-options-for-a-software-engineer | Status: 200 | Size: 105210 bytes
+2026-02-23 23:11:29 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/catastrophic-forgetting
+2026-02-23 23:11:35 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/catastrophic-forgetting: All validations passed
+2026-02-23 23:11:35 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/catastrophic-forgetting | Status: 200 | Size: 82907 bytes
+2026-02-23 23:11:35 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/code-refactoring-tools
+2026-02-23 23:11:39 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/code-refactoring-tools: All validations passed
+2026-02-23 23:11:39 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/code-refactoring-tools | Status: 200 | Size: 91956 bytes
+2026-02-23 23:11:39 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/code-review-checklist
+2026-02-23 23:11:44 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/code-review-checklist: All validations passed
+2026-02-23 23:11:44 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/code-review-checklist | Status: 200 | Size: 90792 bytes
+2026-02-23 23:11:44 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/coder-vs-programmer-vs-developer-vs-software-engineer
+2026-02-23 23:14:42 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/coder-vs-programmer-vs-developer-vs-software-engineer: All validations passed
+2026-02-23 23:14:42 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/coder-vs-programmer-vs-developer-vs-software-engineer | Status: 200 | Size: 100148 bytes
+2026-02-23 23:14:42 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/data-engineer-vs-software-developer
+2026-02-23 23:14:49 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/data-engineer-vs-software-developer: All validations passed
+2026-02-23 23:14:49 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/data-engineer-vs-software-developer | Status: 200 | Size: 99146 bytes
+2026-02-23 23:14:49 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/data-labeling-jobs-hiring-guide-2025
+2026-02-23 23:14:53 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/data-labeling-jobs-hiring-guide-2025: All validations passed
+2026-02-23 23:14:53 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/data-labeling-jobs-hiring-guide-2025 | Status: 200 | Size: 91757 bytes
+2026-02-23 23:14:53 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/database-deadlock-causes
+2026-02-23 23:15:00 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/database-deadlock-causes: All validations passed
+2026-02-23 23:15:00 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/database-deadlock-causes | Status: 200 | Size: 108437 bytes
+2026-02-23 23:15:00 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/database-deadlock-examples
+2026-02-23 23:15:07 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/database-deadlock-examples: All validations passed
+2026-02-23 23:15:07 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/database-deadlock-examples | Status: 200 | Size: 119170 bytes
+2026-02-23 23:15:07 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/developer-burnout-guide
+2026-02-23 23:15:11 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/developer-burnout-guide: All validations passed
+2026-02-23 23:15:11 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/developer-burnout-guide | Status: 200 | Size: 99262 bytes
+2026-02-23 23:15:11 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/developer-vs-programmer-vs-engineer
+2026-02-23 23:15:17 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/developer-vs-programmer-vs-engineer: All validations passed
+2026-02-23 23:15:17 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/developer-vs-programmer-vs-engineer | Status: 200 | Size: 102075 bytes
+2026-02-23 23:15:17 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/devops-engineer-work-life-balance
+2026-02-23 23:15:21 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/devops-engineer-work-life-balance: All validations passed
+2026-02-23 23:15:21 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/devops-engineer-work-life-balance | Status: 200 | Size: 99272 bytes
+2026-02-23 23:15:21 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/extra-income-for-software-engineers
+2026-02-23 23:15:26 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/extra-income-for-software-engineers: All validations passed
+2026-02-23 23:15:26 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/extra-income-for-software-engineers | Status: 200 | Size: 114454 bytes
+2026-02-23 23:15:26 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/faang-behavioral-interview-questions-star-method
+2026-02-23 23:15:33 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/faang-behavioral-interview-questions-star-method: All validations passed
+2026-02-23 23:15:33 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/faang-behavioral-interview-questions-star-method | Status: 200 | Size: 106199 bytes
+2026-02-23 23:15:33 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/faang-coding-interview-guide
+2026-02-23 23:15:38 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/faang-coding-interview-guide: All validations passed
+2026-02-23 23:15:38 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/faang-coding-interview-guide | Status: 200 | Size: 106141 bytes
+2026-02-23 23:15:38 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/freelance-developer-guide
+2026-02-23 23:15:43 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/freelance-developer-guide: All validations passed
+2026-02-23 23:15:43 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/freelance-developer-guide | Status: 200 | Size: 114111 bytes
+2026-02-23 23:15:43 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/freelance-programming-guide
+2026-02-23 23:15:48 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/freelance-programming-guide: All validations passed
+2026-02-23 23:15:48 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/freelance-programming-guide | Status: 200 | Size: 114091 bytes
+2026-02-23 23:15:48 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/freelance-software-developer-guide
+2026-02-23 23:15:54 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/freelance-software-developer-guide: All validations passed
+2026-02-23 23:15:54 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/freelance-software-developer-guide | Status: 200 | Size: 107012 bytes
+2026-02-23 23:15:54 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/freelance-software-engineer-rates
+2026-02-23 23:15:57 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/freelance-software-engineer-rates: All validations passed
+2026-02-23 23:15:57 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/freelance-software-engineer-rates | Status: 200 | Size: 114101 bytes
+2026-02-23 23:15:58 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/freelance-software-programmer-guide
+2026-02-23 23:16:03 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/freelance-software-programmer-guide: All validations passed
+2026-02-23 23:16:03 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/freelance-software-programmer-guide | Status: 200 | Size: 107002 bytes
+2026-02-23 23:16:03 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/freelancing-as-a-software-developer-guide
+2026-02-23 23:16:08 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/freelancing-as-a-software-developer-guide: All validations passed
+2026-02-23 23:16:08 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/freelancing-as-a-software-developer-guide | Status: 200 | Size: 107012 bytes
+2026-02-23 23:16:08 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/front-end-developer-vs-software-engineer
+2026-02-23 23:16:13 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/front-end-developer-vs-software-engineer: All validations passed
+2026-02-23 23:16:13 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/front-end-developer-vs-software-engineer | Status: 200 | Size: 95559 bytes
+2026-02-23 23:16:13 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/front-end-developer-work-life-balance
+2026-02-23 23:16:18 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/front-end-developer-work-life-balance: All validations passed
+2026-02-23 23:16:18 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/front-end-developer-work-life-balance | Status: 200 | Size: 99262 bytes
+2026-02-23 23:16:18 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/full-stack-developer-vs-full-stack-engineer
+2026-02-23 23:16:23 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/full-stack-developer-vs-full-stack-engineer: All validations passed
+2026-02-23 23:16:23 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/full-stack-developer-vs-full-stack-engineer | Status: 200 | Size: 94566 bytes
+2026-02-23 23:16:23 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/full-stack-developer-work-life-balance
+2026-02-23 23:16:28 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/full-stack-developer-work-life-balance: All validations passed
+2026-02-23 23:16:28 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/full-stack-developer-work-life-balance | Status: 200 | Size: 99262 bytes
+2026-02-23 23:16:28 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/graphs
+2026-02-23 23:16:34 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/graphs: All validations passed
+2026-02-23 23:16:34 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/graphs | Status: 200 | Size: 91263 bytes
+2026-02-23 23:16:34 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/how-ai-helps-with-code-reliability
+2026-02-23 23:16:39 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/how-ai-helps-with-code-reliability: All validations passed
+2026-02-23 23:16:39 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/how-ai-helps-with-code-reliability | Status: 200 | Size: 90612 bytes
+2026-02-23 23:16:39 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/how-hard-are-faang-interviews
+2026-02-23 23:16:44 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/how-hard-are-faang-interviews: All validations passed
+2026-02-23 23:16:44 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/how-hard-are-faang-interviews | Status: 200 | Size: 98502 bytes
+2026-02-23 23:16:44 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/how-to-be-a-freelance-app-developer
+2026-02-23 23:16:54 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/how-to-be-a-freelance-app-developer: All validations passed
+2026-02-23 23:16:54 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/how-to-be-a-freelance-app-developer | Status: 200 | Size: 107012 bytes
+2026-02-23 23:16:54 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/how-to-be-a-freelance-software-engineer
+2026-02-23 23:16:59 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/how-to-be-a-freelance-software-engineer: All validations passed
+2026-02-23 23:16:59 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/how-to-be-a-freelance-software-engineer | Status: 200 | Size: 107002 bytes
+2026-02-23 23:16:59 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/how-to-become-a-freelance-software-developer
+2026-02-23 23:17:04 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/how-to-become-a-freelance-software-developer: All validations passed
+2026-02-23 23:17:04 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/how-to-become-a-freelance-software-developer | Status: 200 | Size: 106992 bytes
+2026-02-23 23:17:04 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/how-to-design-scalable-systems
+2026-02-23 23:17:08 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/how-to-design-scalable-systems: All validations passed
+2026-02-23 23:17:08 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/how-to-design-scalable-systems | Status: 200 | Size: 119405 bytes
+2026-02-23 23:17:09 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/how-to-find-part-time-software-development-work
+2026-02-23 23:17:14 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/how-to-find-part-time-software-development-work: All validations passed
+2026-02-23 23:17:14 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/how-to-find-part-time-software-development-work | Status: 200 | Size: 116289 bytes
+2026-02-23 23:17:14 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/how-to-get-a-faang-interview
+2026-02-23 23:17:19 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/how-to-get-a-faang-interview: All validations passed
+2026-02-23 23:17:19 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/how-to-get-a-faang-interview | Status: 200 | Size: 102555 bytes
+2026-02-23 23:17:19 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/how-to-implement-distributed-tracing-in-microservices
+2026-02-23 23:17:26 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/how-to-implement-distributed-tracing-in-microservices: All validations passed
+2026-02-23 23:17:26 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/how-to-implement-distributed-tracing-in-microservices | Status: 200 | Size: 97976 bytes
+2026-02-23 23:17:26 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/microservices-best-practices
+2026-02-23 23:17:30 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/microservices-best-practices: All validations passed
+2026-02-23 23:17:30 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/microservices-best-practices | Status: 200 | Size: 119385 bytes
+2026-02-23 23:17:31 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/parameter-efficient-fine-tuning
+2026-02-23 23:17:37 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/parameter-efficient-fine-tuning: All validations passed
+2026-02-23 23:17:37 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/parameter-efficient-fine-tuning | Status: 200 | Size: 88313 bytes
+2026-02-23 23:17:37 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/part-time-coding-jobs-platforms
+2026-02-23 23:17:41 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/part-time-coding-jobs-platforms: All validations passed
+2026-02-23 23:17:41 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/part-time-coding-jobs-platforms | Status: 200 | Size: 106265 bytes
+2026-02-23 23:17:42 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/part-time-software-developer
+2026-02-23 23:17:45 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/part-time-software-developer: All validations passed
+2026-02-23 23:17:45 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/part-time-software-developer | Status: 200 | Size: 99252 bytes
+2026-02-23 23:17:45 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/patterns-of-distributed-systems
+2026-02-23 23:17:50 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/patterns-of-distributed-systems: All validations passed
+2026-02-23 23:17:50 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/patterns-of-distributed-systems | Status: 200 | Size: 109371 bytes
+2026-02-23 23:17:50 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/principal-vs-senior-engineer
+2026-02-23 23:17:56 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/principal-vs-senior-engineer: All validations passed
+2026-02-23 23:17:56 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/principal-vs-senior-engineer | Status: 200 | Size: 92046 bytes
+2026-02-23 23:17:56 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/programmer-work-life-balance
+2026-02-23 23:18:00 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/programmer-work-life-balance: All validations passed
+2026-02-23 23:18:00 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/programmer-work-life-balance | Status: 200 | Size: 99252 bytes
+2026-02-23 23:18:00 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/queue-implementations
+2026-02-23 23:18:07 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/queue-implementations: All validations passed
+2026-02-23 23:18:07 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/queue-implementations | Status: 200 | Size: 89111 bytes
+2026-02-23 23:18:07 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/remote-developer-work-tips
+2026-02-23 23:18:12 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/remote-developer-work-tips: All validations passed
+2026-02-23 23:18:12 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/remote-developer-work-tips | Status: 200 | Size: 107002 bytes
+2026-02-23 23:18:12 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/senior-software-engineer-behavioral-interview-questions
+2026-02-23 23:18:16 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/senior-software-engineer-behavioral-interview-questions: All validations passed
+2026-02-23 23:18:16 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/senior-software-engineer-behavioral-interview-questions | Status: 200 | Size: 106199 bytes
+2026-02-23 23:18:16 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/senior-software-engineer-system-design-interview-questions
+2026-02-23 23:18:22 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/senior-software-engineer-system-design-interview-questions: All validations passed
+2026-02-23 23:18:22 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/senior-software-engineer-system-design-interview-questions | Status: 200 | Size: 97644 bytes
+2026-02-23 23:18:22 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/sharding-vs-partitioning
+2026-02-23 23:18:27 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/sharding-vs-partitioning: All validations passed
+2026-02-23 23:18:27 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/sharding-vs-partitioning | Status: 200 | Size: 107430 bytes
+2026-02-23 23:18:28 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/side-jobs-for-software-developers
+2026-02-23 23:18:32 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/side-jobs-for-software-developers: All validations passed
+2026-02-23 23:18:32 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/side-jobs-for-software-developers | Status: 200 | Size: 106020 bytes
+2026-02-23 23:18:32 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/software-developer-vs-programmer
+2026-02-23 23:18:36 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/software-developer-vs-programmer: All validations passed
+2026-02-23 23:18:36 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/software-developer-vs-programmer | Status: 200 | Size: 100148 bytes
+2026-02-23 23:18:36 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/software-developer-work-life-balance
+2026-02-23 23:18:41 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/software-developer-work-life-balance: All validations passed
+2026-02-23 23:18:41 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/software-developer-work-life-balance | Status: 200 | Size: 99262 bytes
+2026-02-23 23:18:41 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/software-engineer-jobs
+2026-02-23 23:18:46 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/software-engineer-jobs: All validations passed
+2026-02-23 23:18:46 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/software-engineer-jobs | Status: 200 | Size: 95232 bytes
+2026-02-23 23:18:46 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/software-engineer-vs-developer
+2026-02-23 23:18:52 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/software-engineer-vs-developer: All validations passed
+2026-02-23 23:18:52 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/software-engineer-vs-developer | Status: 200 | Size: 94093 bytes
+2026-02-23 23:18:52 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/software-engineer-vs-programmer
+2026-02-23 23:18:57 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/software-engineer-vs-programmer: All validations passed
+2026-02-23 23:18:57 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/software-engineer-vs-programmer | Status: 200 | Size: 100148 bytes
+2026-02-23 23:18:57 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/software-engineer-work-life-balance
+2026-02-23 23:19:01 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/software-engineer-work-life-balance: All validations passed
+2026-02-23 23:19:01 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/software-engineer-work-life-balance | Status: 200 | Size: 99262 bytes
+2026-02-23 23:19:01 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/software-engineering-burnout-guide
+2026-02-23 23:19:07 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/software-engineering-burnout-guide: All validations passed
+2026-02-23 23:19:07 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/software-engineering-burnout-guide | Status: 200 | Size: 99262 bytes
+2026-02-23 23:19:07 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/staff-vs-senior-engineer
+2026-02-23 23:19:12 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/staff-vs-senior-engineer: All validations passed
+2026-02-23 23:19:12 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/staff-vs-senior-engineer | Status: 200 | Size: 96096 bytes
+2026-02-23 23:19:12 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/system-design-interview-questions-senior-engineers
+2026-02-23 23:19:18 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/system-design-interview-questions-senior-engineers: All validations passed
+2026-02-23 23:19:18 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/system-design-interview-questions-senior-engineers | Status: 200 | Size: 116833 bytes
+2026-02-23 23:19:18 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/technical-leadership-interview-questions
+2026-02-23 23:19:24 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/technical-leadership-interview-questions: All validations passed
+2026-02-23 23:19:24 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/technical-leadership-interview-questions | Status: 200 | Size: 99237 bytes
+2026-02-23 23:19:24 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/tree-data-structures-guide
+2026-02-23 23:19:31 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/tree-data-structures-guide: All validations passed
+2026-02-23 23:19:31 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/tree-data-structures-guide | Status: 200 | Size: 115846 bytes
+2026-02-23 23:19:31 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/types-of-graphs
+2026-02-23 23:19:37 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/types-of-graphs: All validations passed
+2026-02-23 23:19:37 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/types-of-graphs | Status: 200 | Size: 104439 bytes
+2026-02-23 23:19:37 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/typescript-advanced-types
+2026-02-23 23:19:43 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/typescript-advanced-types: All validations passed
+2026-02-23 23:19:43 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/typescript-advanced-types | Status: 200 | Size: 130422 bytes
+2026-02-23 23:19:43 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/web-developer-vs-software-engineer
+2026-02-23 23:19:47 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/web-developer-vs-software-engineer: All validations passed
+2026-02-23 23:19:47 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/web-developer-vs-software-engineer | Status: 200 | Size: 94103 bytes
+2026-02-23 23:19:47 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/web-developer-vs-software-programmer
+2026-02-23 23:19:54 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/web-developer-vs-software-programmer: All validations passed
+2026-02-23 23:19:54 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/web-developer-vs-software-programmer | Status: 200 | Size: 96491 bytes
+2026-02-23 23:19:54 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/what-is-breadth-first-search
+2026-02-23 23:19:59 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/what-is-breadth-first-search: All validations passed
+2026-02-23 23:19:59 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/what-is-breadth-first-search | Status: 200 | Size: 86507 bytes
+2026-02-23 23:19:59 - scraper.www.dataannotation.tech - INFO - Starting scrape: https://dataannotation.tech/developers/which-claude-model-is-best-for-coding
+2026-02-23 23:20:06 - scraper.www.dataannotation.tech - INFO - ✓ VALIDATION PASSED: https://dataannotation.tech/developers/which-claude-model-is-best-for-coding: All validations passed
+2026-02-23 23:20:06 - scraper.www.dataannotation.tech - INFO - ✓ SUCCESS: https://dataannotation.tech/developers/which-claude-model-is-best-for-coding | Status: 200 | Size: 95990 bytes

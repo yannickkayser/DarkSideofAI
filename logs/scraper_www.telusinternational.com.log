@@ -1,0 +1,5 @@
+2026-02-24 02:57:01 - scraper.www.telusinternational.com - INFO - Starting scrape of TELUS International AI Data Solutions
+2026-02-24 02:57:02 - scraper.www.telusinternational.com - WARNING - No sitemap found, scraping only base URL
+2026-02-24 02:57:03 - scraper.www.telusinternational.com - INFO - Starting scrape: https://www.telusinternational.com/
+2026-02-24 02:57:28 - scraper.www.telusinternational.com - INFO - ✓ VALIDATION PASSED: https://www.telusinternational.com/: All validations passed
+2026-02-24 02:57:28 - scraper.www.telusinternational.com - INFO - ✓ SUCCESS: https://www.telusinternational.com/ | Status: 200 | Size: 354598 bytes
