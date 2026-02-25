@@ -1,202 +1,119 @@
-# Simple Web Scraper
+# Web Scraper
 
-A clean, efficient web scraper for JavaScript-heavy websites with comprehensive logging and validation.
+My web scraper that collects, stores, and analyzes text content from AI data-labeling and crowdwork platforms (e.g. Appen, Scale AI, Toloka, Outlier, Prolific). 
 
-## Features
-
-✅ **Playwright-based** - Handles JavaScript-heavy sites  
-✅ **Sitemap parsing** - Automatically finds and uses sitemap.xml  
-✅ **Robots.txt compliance** - Respects crawl delays  
-✅ **Rich metadata** - Stores URL, title, text, directory, HTML element, links  
-✅ **SQLite database** - Simple, portable storage  
-✅ **Comprehensive logging** - Track all operations  
-✅ **Built-in validation** - Ensures data quality  
+---
 
 ## Project Structure
 
 ```
-scraper_simple/
-├── config.py              # All configuration in one place
-├── database.py            # SQLite database operations
-├── scraper.py             # Main scraping engine (Playwright)
-├── sitemap_robots.py      # Sitemap and robots.txt parsing
-├── validator.py           # Validation functions
-├── logger.py              # Logging setup
-├── main.py                # Entry point
-├── requirements.txt       # Dependencies
-├── data/                  # Database storage (auto-created)
-└── logs/                  # Log files (auto-created)
+├── src/
+│   ├── main.py               # Entry point — interactive menu or CLI
+│   ├── scraper.py            # Playwright-based scraper (JS-heavy sites)
+│   ├── database.py           # SQLite manager (websites, pages, links)
+│   ├── sitemap_robots.py     # Sitemap + robots.txt parser
+│   ├── preprocess.py         # NLP preprocessing → TF-IDF & embedding tables
+│   ├── tfidf_analysis.py     # TF-IDF analysis over scraped corpus
+│   ├── validator.py          # URL and content validation helpers
+│   ├── logger.py             # Logging setup
+│   ├── db_stats.py           # Database statistics report generator
+│   └── test.py               # Setup verification tests
+├── config/
+│   └── config.py             # Website configs, DB path, scraper settings
+├── data/
+│   └── scraping.db           # SQLite database (generated)
+└── logs/                     # Per-domain log files (generated)
 ```
 
-## Installation
+---
 
-1. **Install dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
+## Setup
 
-2. **Install Playwright browsers**:
-   ```bash
-   playwright install chromium
-   ```
+**Install dependencies:**
+```bash
+pip install -r requirements.txt
+python -m playwright install chromium
+python -m spacy download en_core_web_sm
+```
 
-## Quick Start
+**Verify setup:**
+```bash
+python test.py
+```
 
-### Interactive Mode
+---
+
+## Usage
+
+**Interactive mode:**
 ```bash
 python main.py
 ```
 
-### Command Line
-
-**Scrape single website**:
+**CLI mode:**
 ```bash
+# Scrape a single website
 python main.py mindrift.ai
-```
 
-**Scrape with page limit**:
-```bash
-python main.py mindrift.ai 20
-```
+# Scrape all configured websites (limit pages per site)
+python main.py --all 100
 
-**Scrape all websites**:
-```bash
-python main.py --all
-```
-
-**Show statistics**:
-```bash
+# Show database stats
 python main.py --stats
 ```
 
-## Configured Websites
+**Preprocess scraped text for NLP:**
+```bash
+python preprocess.py
+```
 
-Currently configured websites (edit `config.py` to add more):
-- mindrift.ai
-- crowdgen.com
-- appen.com
+**Generate a database statistics report:**
+```bash
+python db_stats.py data/scraping.db report.txt
+```
+
+---
+
+## Pipeline
+
+```
+config.py  →  sitemap_robots.py  →  scraper.py  →  database.py
+                                                         ↓
+                                                   preprocess.py
+                                                         ↓
+                                                  tfidf_analysis.py
+```
+
+1. **Scraper** reads site configs, fetches URLs from sitemaps, and uses Playwright to render JS-heavy pages.
+2. **Database** stores pages with full text, metadata, extracted links, and CSS color palettes.
+3. **Preprocessor** reads raw pages and writes two NLP-ready tables: `pages_tfidf` (lemmatized unigrams + bigrams) and `pages_embedding` (clean prose for sentence-transformers, tokenized text for Word2Vec/fastText).
+4. **TF-IDF analysis** runs over the processed corpus.
+
+---
 
 ## Database Schema
 
-The SQLite database stores:
+| Table | Description |
+|---|---|
+| `websites` | Domain, name, type/category, last scraped |
+| `pages` | URL, title, text content, depth, status, CSS colors |
+| `links` | Source page → target URL with anchor text |
+| `pages_tfidf` | Lemmatized tokens + filtered bigrams per page |
+| `pages_embedding` | Clean text and tokenized text for embeddings |
 
-### websites
-- domain, name, base_url, website_type
-- created_at, last_scraped
+---
 
-### pages
-- url, title, text_content
-- directory, html_element, page_depth
-- status_code, content_length
-- website_id (foreign key)
+## Current Data
 
-### links
-- source_page_id, target_url
-- anchor_text, link_type (internal/external)
+As of the latest scrape: **27 websites · 7802 pages · ~9.1M words**
 
-## How It Works
+Categories covered: Managed Enterprise BPO, Algorithmic Crowd Markets, Impact-Sourcing Firms.
 
-1. **Parse robots.txt** - Get crawl delay and find sitemap
-2. **Parse sitemap.xml** - Extract all URLs
-3. **Scrape pages** - Use Playwright to render JavaScript
-4. **Extract content** - Get text from main content areas
-5. **Store data** - Save to SQLite with metadata
-6. **Log & validate** - Track operations and validate data
+---
 
-## Configuration
+## Requirements
 
-Edit `config.py` to:
-- Add new websites
-- Adjust rate limits
-- Change timeout settings
-- Modify logging level
-
-Example:
-```python
-WEBSITES = {
-    "example.com": {
-        "name": "Example Site",
-        "base_url": "https://example.com/",
-        "type": "Example Type",
-        "rate_limit": 2.0,
-        "max_depth": 3,
-    },
-}
-```
-
-## Logging
-
-Logs are saved to `logs/` directory:
-- `scraper_{domain}.log` - Per-website logs
-- All operations are logged with timestamps
-
-## Validation
-
-Built-in validators check:
-- URL format
-- Content length (minimum 50 chars)
-- Required fields (url, title, text_content)
-- Sitemap and robots.txt format
-
-## Accessing Data
-
-```python
-from database import Database
-from config import DB_PATH
-
-db = Database(str(DB_PATH))
-
-# Get statistics
-stats = db.get_stats()
-print(f"Total pages: {stats['total_pages']}")
-
-# Check if URL exists
-exists = db.page_exists("https://example.com/page")
-
-db.close()
-```
-
-## Customization
-
-**Change rate limit**:
-Edit `config.py` → `RATE_LIMIT_DELAY`
-
-**Change logging level**:
-Edit `config.py` → `LOG_LEVEL` (DEBUG, INFO, WARNING, ERROR)
-
-**Add new website**:
-Edit `config.py` → Add to `WEBSITES` dictionary
-
-**Adjust timeouts**:
-Edit `config.py` → `PAGE_WAIT_TIMEOUT`, `NETWORK_IDLE_TIMEOUT`
-
-## Tips
-
-- Start with small page limits (`python main.py mindrift.ai 5`)
-- Check logs if scraping fails
-- Use `--stats` to monitor progress
-- Database is in `data/scraping.db`
-
-## Troubleshooting
-
-**No pages scraped**:
-- Check if sitemap exists for the website
-- Look at logs for errors
-- Try increasing timeouts
-
-**Validation failures**:
-- Pages may have little content
-- Check minimum content length in validator.py
-
-**Playwright errors**:
-- Run `playwright install` again
-- Check if browsers are installed
-
-## Next Steps
-
-To extend this scraper:
-1. Add custom content extractors
-2. Implement more sophisticated link following
-3. Add data export (CSV, JSON)
-4. Create analysis scripts
-5. Add scheduling/cron support
+- Python 3.10+
+- Playwright (Chromium)
+- spaCy `en_core_web_sm`
+- beautifulsoup4, requests, lxml

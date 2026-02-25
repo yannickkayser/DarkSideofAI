@@ -1,21 +1,29 @@
 ========================================================================
   SCRAPED CONTENT — DATABASE STATISTICS REPORT
   Database : data/scraping.db
-  Generated: 2026-02-24 02:54:25
+  Generated: 2026-02-25 16:30:11
 ========================================================================
 
 WEBSITES PER CATEGORY
 ────────────────────────────────────────
   Category                   Websites
   ------------------------------------
+  Managed Enterprise BPO            2
   Test                              1
   Managed Enterprise BPO / Data Marketplace (enterprise AI datasets & services)         1
+  Managed Enterprise BPO (high-skill data labeling)         1
   Managed Enterprise BPO (high-skill data labeling and evaluation vendor)         1
   Managed Enterprise BPO (global AI training data provider)         1
   Managed Enterprise BPO (expert freelancer workforce for RLHF and AI data)         1
+  Managed Enterprise BPO (Korean AI data platform with large managed crowd)         1
+  Managed Enterprise BPO (AI data solutions; uses telusinternational.ai as worker portal)         1
   Managed Enterprise BPO (AI data services, B2B; uses CrowdGen as worker platform)         1
   Managed Enterprise BPO (AI data & RLHF vendor; Remotasks as worker interface)         1
+  Impact-Sourcing Firm (social enterprise employing conflict-affected workers for AI data)         1
+  Impact-Sourcing Firm (managed workforce BPO; explicit impact-sourcing model)         1
   Impact-Sourcing Firm (ethical AI data BPO, Global South oriented)         1
+  Impact-Sourcing Firm (data annotation BPO with social-impact focus)         1
+  Impact-Sourcing Firm (BPO providing ML data services with Global South focus)         1
   Algorithmic Crowd Market (self-serve data labeling platform; Mindrift/Tolokers as worker portals)         1
   Algorithmic Crowd Market (remote RLHF and data annotation gigs)         1
   Algorithmic Crowd Market (participant recruitment for research and AI model tasks)         1
@@ -27,7 +35,7 @@ WEBSITES PER CATEGORY
   Algorithmic Crowd Market (Centific worker platform for AI data projects)         1
   Algorithmic Crowd Market (Appen contributor portal, B2W side of Appen)         1
   ------------------------------------
-  TOTAL                            18
+  TOTAL                            27
 
 URLS (PAGES) PER WEBSITE
 ────────────────────────────────────────────────────────────
@@ -35,24 +43,33 @@ URLS (PAGES) PER WEBSITE
   ----------------------------------------------------------
   defined.ai                          Managed Enterprise BPO / Data Marketplace (enterprise AI datasets & services)     940
   www.lxt.ai                          Managed Enterprise BPO (global AI training data provider)     762
+  imerit.net                          Impact-Sourcing Firm (data annotation BPO with social-impact focus)     726
+  mindy-support.com                   Managed Enterprise BPO     672
+  scale.com                           Managed Enterprise BPO (AI data & RLHF vendor; Remotasks as worker interface)     618
   www.appen.com                       Managed Enterprise BPO (AI data services, B2B; uses CrowdGen as worker platform)     551
+  www.cloudfactory.com                Impact-Sourcing Firm (managed workforce BPO; explicit impact-sourcing model)     440
+  www.digitaldividedata.com           Impact-Sourcing Firm (BPO providing ML data services with Global South focus)     415
   www.clickworker.com                 Algorithmic Crowd Market (microtask platform for AI data & surveys)     410
   www.sama.com                        Impact-Sourcing Firm (ethical AI data BPO, Global South oriented)     392
   www.prolific.com                    Algorithmic Crowd Market (participant recruitment for research and AI model tasks)     377
+  humansintheloop.org                 Impact-Sourcing Firm (social enterprise employing conflict-affected workers for AI data)     346
+  www.superannotate.com               Managed Enterprise BPO (high-skill data labeling)     325
   outlier.ai                          Managed Enterprise BPO (expert freelancer workforce for RLHF and AI data)     227
   www.dataannotation.tech             Algorithmic Crowd Market (remote RLHF and data annotation gigs)     171
   www.oneforma.com                    Algorithmic Crowd Market (Centific worker platform for AI data projects)     143
   mindrift.ai                         Algorithmic Crowd Market (expert AI tutor platform, integrated with Toloka)     113
   www.microworkers.com                Algorithmic Crowd Market (global microtask and AI training data platform)     109
+  www.crowdworks.ai                   Managed Enterprise BPO (Korean AI data platform with large managed crowd)      53
   toloka.ai                           Algorithmic Crowd Market (self-serve data labeling platform; Mindrift/Tolokers as worker portals)      50
+  flipside.ai                         Managed Enterprise BPO      17
   www.remotasks.com                   Algorithmic Crowd Market (microtask worker platform for Scale AI)      10
   test.example.com                    Test                  1
   crowdgen.com                        Algorithmic Crowd Market (Appen contributor portal, B2W side of Appen)       1
-  scale.com                           Managed Enterprise BPO (AI data & RLHF vendor; Remotasks as worker interface)       1
   www.mturk.com                       Algorithmic Crowd Market (canonical microtask market with granular requester control)       1
   surgehq.ai                          Managed Enterprise BPO (high-skill data labeling and evaluation vendor)       1
+  www.telusinternational.com          Managed Enterprise BPO (AI data solutions; uses telusinternational.ai as worker portal)       1
   ----------------------------------------------------------
-  TOTAL                                                  4260
+  TOTAL                                                  7872
 
 WORD COUNT PER WEBSITE (full text corpus)
 ────────────────────────────────────────────────────────────
@@ -60,15 +77,22 @@ WORD COUNT PER WEBSITE (full text corpus)
   --------------------------------------------------------------
   crowdgen.com                        Algorithmic Crowd Market (Appen contributor portal, B2W side of Appen)      1,500
   defined.ai                          Managed Enterprise BPO / Data Marketplace (enterprise AI datasets & services)    605,648
+  flipside.ai                         Managed Enterprise BPO      2,125
+  humansintheloop.org                 Impact-Sourcing Firm (social enterprise employing conflict-affected workers for AI data)    147,759
+  imerit.net                          Impact-Sourcing Firm (data annotation BPO with social-impact focus)    616,938
   mindrift.ai                         Algorithmic Crowd Market (expert AI tutor platform, integrated with Toloka)    234,767
+  mindy-support.com                   Managed Enterprise BPO    676,765
   outlier.ai                          Managed Enterprise BPO (expert freelancer workforce for RLHF and AI data)    243,785
-  scale.com                           Managed Enterprise BPO (AI data & RLHF vendor; Remotasks as worker interface)        392
+  scale.com                           Managed Enterprise BPO (AI data & RLHF vendor; Remotasks as worker interface)    615,294
   surgehq.ai                          Managed Enterprise BPO (high-skill data labeling and evaluation vendor)        119
   test.example.com                    Test                     6
   toloka.ai                           Algorithmic Crowd Market (self-serve data labeling platform; Mindrift/Tolokers as worker portals)     31,122
   www.appen.com                       Managed Enterprise BPO (AI data services, B2B; uses CrowdGen as worker platform)    490,809
   www.clickworker.com                 Algorithmic Crowd Market (microtask platform for AI data & surveys)    736,496
+  www.cloudfactory.com                Impact-Sourcing Firm (managed workforce BPO; explicit impact-sourcing model)    467,594
+  www.crowdworks.ai                   Managed Enterprise BPO (Korean AI data platform with large managed crowd)     66,477
   www.dataannotation.tech             Algorithmic Crowd Market (remote RLHF and data annotation gigs)    334,681
+  www.digitaldividedata.com           Impact-Sourcing Firm (BPO providing ML data services with Global South focus)    495,790
   www.lxt.ai                          Managed Enterprise BPO (global AI training data provider)  1,224,706
   www.microworkers.com                Algorithmic Crowd Market (global microtask and AI training data platform)    116,710
   www.mturk.com                       Algorithmic Crowd Market (canonical microtask market with granular requester control)        866
@@ -76,8 +100,79 @@ WORD COUNT PER WEBSITE (full text corpus)
   www.prolific.com                    Algorithmic Crowd Market (participant recruitment for research and AI model tasks)    383,600
   www.remotasks.com                   Algorithmic Crowd Market (microtask worker platform for Scale AI)     22,690
   www.sama.com                        Impact-Sourcing Firm (ethical AI data BPO, Global South oriented)  1,007,067
+  www.superannotate.com               Managed Enterprise BPO (high-skill data labeling)    503,692
+  www.telusinternational.com          Managed Enterprise BPO (AI data solutions; uses telusinternational.ai as worker portal)        781
   --------------------------------------------------------------
-  TOTAL                                                5,562,132
+  TOTAL                                                9,154,955
+
+========================================================================
+  PREPROCESSED DATA STATISTICS
+========================================================================
+
+PREPROCESSED CORPUS OVERVIEW (pages_tfidf)
+────────────────────────────────────────────────────────────
+  Total pages preprocessed :      7,183
+  Total tokens             :  5,264,734
+  Total bigrams            :  4,141,719
+  Avg tokens per page      :      732.9
+  Min tokens (single page) :          0
+  Max tokens (single page) :      9,012
+
+  Audience           Pages       Tokens  Avg tokens/page
+  ------------------------------------------------------
+  client             5,619    3,988,136            709.8
+  both                 782      649,288            830.3
+  worker               774      621,634            803.1
+  unknown                8        5,676            709.5
+
+TOKEN & BIGRAM COUNTS PER WEBSITE (pages_tfidf)
+────────────────────────────────────────────────────────────────────────
+  Domain                         Audience     Pages     Tokens    Bigrams Avg tok/pg
+  ----------------------------------------------------------------------
+  lxt.ai                         client         762    880,253    823,958     1155.2
+  sama.com                       client         392    634,881    577,698     1619.6
+  clickworker.com                both           410    436,609    317,631     1064.9
+  imerit.net                     client         726    406,928    282,668      560.5
+  defined.ai                     client         940    373,280    342,373      397.1
+  scale.com                      client         618    360,850    265,480      583.9
+  digitaldividedata.com          client         415    322,959    224,726      778.2
+  superannotate.com              client         325    308,161    218,090      948.2
+  cloudfactory.com               client         440    284,702    204,881      647.0
+  appen.com                      client         551    284,559    189,501      516.4
+  dataannotation.tech            worker         171    213,915    125,889     1251.0
+  prolific.com                   both           362    211,028    129,675      583.0
+  outlier.ai                     worker         227    137,926    124,039      607.6
+  mindrift.ai                    worker         113    128,318    105,117     1135.6
+  humansintheloop.org            client         346     83,646     56,355      241.8
+  oneforma.com                   worker         143     73,008     62,241      510.5
+  microworkers.com               worker         107     55,995     38,007      523.3
+  crowdworks.ai                  client          53     29,096     25,264      549.0
+  toloka.ai                      client          50     18,759     12,710      375.2
+  remotasks.com                  worker          10     11,368      9,091     1136.8
+  youtube.com                    unknown          6      5,103      4,171      850.5
+  resources.prolific.com         both             9      1,129        748      125.4
+  crowdgen.com                   worker           1        886        593      886.0
+  telusdigital.com               unknown          1        570        331      570.0
+  mturk.com                      both             1        522        351      522.0
+  ttv.microworkers.com           worker           2        218        113      109.0
+  surgehq.ai                     client           1         62         17       62.0
+  test.example.com               unknown          1          3          1        3.0
+  ----------------------------------------------------------------------
+  TOTAL                                       7,183  5,264,734  4,141,719      732.9
+
+EMBEDDING TABLE COVERAGE (pages_embedding)
+────────────────────────────────────────────────────────────────────────
+  Pages with both tfidf + embedding : 7,183 / 7,183  (100.0%)
+
+  Audience        Pages  Avg clean chars  Avg token chars  Empty clean  Empty tokens
+  --------------------------------------------------------------------------------
+  client          5,619             7356             5346            8             8
+  both              782             9212             6307            0             0
+  worker            774             8775             5976            0             0
+  unknown             8             6518             5027            0             0
+
+  Note: 'clean_text' = sentence-transformers input (punctuation intact)
+        'tokenized_text' = Word2Vec / fastText input (lemmas only)
 
 ========================================================================
   END OF REPORT
