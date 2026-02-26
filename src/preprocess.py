@@ -1,9 +1,9 @@
 """
 Preprocessing script for TF-IDF and word embedding analysis.
 Reads from existing 'pages' table and writes to two new tables:
-    - pages_tfidf    : lemmatized unigrams + bigrams, stopwords removed
-    - pages_embedding: lightly cleaned text (sentences preserved) for
-                    sentence-transformers AND tokenized text for Word2Vec/fastText
+  - pages_tfidf    : lemmatized unigrams + bigrams, stopwords removed
+  - pages_embedding: lightly cleaned text (sentences preserved) for
+                     sentence-transformers AND tokenized text for Word2Vec/fastText
 
 Processes in batches to handle large databases and isolate errors per batch.
 A failed batch is logged and skipped — processing continues with the next one.
@@ -17,25 +17,20 @@ import traceback
 from pathlib import Path
 from html.parser import HTMLParser
 
-
 import spacy
 import sys
 from pathlib import Path
-sys.path.append(str(Path(__file__).parent.parent))
 
+# Add project root to path so sibling config/ folder is reachable
+sys.path.append(str(Path(__file__).parent.parent))
 from config.config import WEBSITES
 
 # ---------------------------------------------------------------------------
 # Config
 # ---------------------------------------------------------------------------
 
-PROJECT_ROOT = Path(__file__).parent.parent
-DATA_DIR = PROJECT_ROOT / "data"
-DB_PATH = DATA_DIR / "scraping.db"
-RAW_DATA_DIR = DATA_DIR / "raw"  
-LOGS_DIR = PROJECT_ROOT / "logs"
-
-BATCH_SIZE     = 100            # pages per batch — lower if memory is tight
+DB_PATH        = "scraper.db"   # <-- change to your actual database path
+BATCH_SIZE     = 200            # pages per batch — lower if memory is tight
 MIN_BIGRAM_FREQ = 3             # minimum corpus frequency to keep a bigram
 
 # Derived from config.WEBSITES — no separate mapping needed.
@@ -60,12 +55,56 @@ STOPWORD_WHITELIST = {
     "collaboration", "assist", "assistance", "augment", "augmentation",
 }
 
+# Company name stopwords: platform names, product names, and generic brand terms
+# that would dominate TF-IDF scores without adding analytical value.
+# Derived from config.WEBSITES automatically, plus common brand variants.
+COMPANY_STOPWORDS: set[str] = set()
+
+def _build_company_stopwords() -> set[str]:
+    """
+    Automatically derive company stopwords from WEBSITES config.
+    Splits multi-word names, lowercases, and adds known brand variants.
+    """
+    terms = set()
+    for domain, site in WEBSITES.items():
+        # Domain parts: "mindrift.ai" → {"mindrift", "ai"} (skip "ai" — in whitelist)
+        for part in domain.replace(".", " ").replace("-", " ").split():
+            if len(part) > 2:
+                terms.add(part.lower())
+
+        # Name parts: "Scale AI" → {"scale"}, "TELUS International" → {"telus", "international"}
+        for part in site.get("name", "").replace("-", " ").split():
+            if len(part) > 2:
+                terms.add(part.lower())
+
+    # Additional brand/product variants not captured by config
+    extra = {
+        # Platform product names
+        "remotasks", "crowdgen", "mindrift", "toloker", "tolokers",
+        "alignerr", "oneforma", "mturk","dataannotation", "surgehq",
+        # Company name fragments that appear as tokens
+        "appen", "sama", "scale", "telus", "prolific", "outlier",
+        "cloudfactory", "imerit", "lxt", "defined", "superannotate",
+        "mindy", "flipside", "crowdworks", "digitaldivide",
+        "humansintheloop", "toloka",
+        # Generic legal/corporate suffixes that slip through
+        "inc", "llc", "ltd", "corp", "gmbh",
+    }
+    terms.update(extra)
+
+    # Remove any terms that are in the analytical whitelist
+    terms -= STOPWORD_WHITELIST
+    return terms
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s  %(levelname)-8s  %(message)s",
     datefmt="%Y-%m-%d %H:%M:%S",
 )
 log = logging.getLogger(__name__)
+
+# Build company stopwords now that WEBSITES is imported
+COMPANY_STOPWORDS = _build_company_stopwords()
 
 
 # ---------------------------------------------------------------------------
@@ -151,6 +190,9 @@ def tokenize_and_lemmatize(nlp, text: str) -> list[str]:
         if not lemma or len(lemma) < 2:
             continue
         if token.is_stop and lemma not in STOPWORD_WHITELIST:
+            continue
+        # Remove company/brand names that would inflate TF-IDF without meaning
+        if lemma in COMPANY_STOPWORDS:
             continue
         tokens.append(lemma)
     return tokens
@@ -329,6 +371,8 @@ def process(db_path: str, batch_size: int = BATCH_SIZE):
     log.info(f"  Batch size: {batch_size}")
     log.info(f"  Min bigram frequency: {MIN_BIGRAM_FREQ}")
     log.info(f"  Audience map loaded: {len(AUDIENCE_MAP)} domains")
+    log.info(f"  Company stopwords  : {len(COMPANY_STOPWORDS)} terms filtered")
+    log.info(f"  (terms: {', '.join(sorted(COMPANY_STOPWORDS)[:10])}...)")
     log.info("=" * 60)
 
     conn = sqlite3.connect(db_path)
