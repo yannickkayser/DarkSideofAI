@@ -1,0 +1,190 @@
+2026-02-27 17:22:27 - scraper.www.alignerr.com - INFO - Starting scrape of Alignerr
+2026-02-27 17:22:29 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/en
+2026-02-27 17:22:49 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/en: All validations passed
+2026-02-27 17:22:49 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/en | Status: 200 | Size: 138756 bytes
+2026-02-27 17:22:49 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/en/faqs
+2026-02-27 17:22:54 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/en/faqs: All validations passed
+2026-02-27 17:22:54 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/en/faqs | Status: 200 | Size: 103679 bytes
+2026-02-27 17:22:54 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/en/privacy
+2026-02-27 17:22:59 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/en/privacy: All validations passed
+2026-02-27 17:22:59 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/en/privacy | Status: 200 | Size: 314724 bytes
+2026-02-27 17:22:59 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/en/jobs
+2026-02-27 17:23:08 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/en/jobs: All validations passed
+2026-02-27 17:23:08 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/en/jobs | Status: 200 | Size: 9530860 bytes
+2026-02-27 17:23:11 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/en/rules
+2026-02-27 17:23:16 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/en/rules: All validations passed
+2026-02-27 17:23:16 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/en/rules | Status: 200 | Size: 43788 bytes
+2026-02-27 17:23:16 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/en/about
+2026-02-27 17:23:20 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/en/about: All validations passed
+2026-02-27 17:23:20 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/en/about | Status: 200 | Size: 96212 bytes
+2026-02-27 17:23:20 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/en/process
+2026-02-27 17:23:25 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/en/process: All validations passed
+2026-02-27 17:23:25 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/en/process | Status: 200 | Size: 101331 bytes
+2026-02-27 17:23:25 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/en/interviews
+2026-02-27 17:23:29 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/en/interviews: All validations passed
+2026-02-27 17:23:29 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/en/interviews | Status: 200 | Size: 152609 bytes
+2026-02-27 17:23:29 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/en/stories
+2026-02-27 17:23:47 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/en/stories: All validations passed
+2026-02-27 17:23:47 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/en/stories | Status: 200 | Size: 80371 bytes
+2026-02-27 17:23:47 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/zh
+2026-02-27 17:23:54 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/zh: All validations passed
+2026-02-27 17:23:54 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/zh | Status: 200 | Size: 131946 bytes
+2026-02-27 17:23:54 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/zh/faqs
+2026-02-27 17:23:59 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/zh/faqs: All validations passed
+2026-02-27 17:23:59 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/zh/faqs | Status: 200 | Size: 97548 bytes
+2026-02-27 17:23:59 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/zh/privacy
+2026-02-27 17:24:05 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/zh/privacy: All validations passed
+2026-02-27 17:24:05 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/zh/privacy | Status: 200 | Size: 315711 bytes
+2026-02-27 17:24:05 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/zh/jobs
+2026-02-27 17:24:13 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/zh/jobs: All validations passed
+2026-02-27 17:24:13 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/zh/jobs | Status: 200 | Size: 9545465 bytes
+2026-02-27 17:24:16 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/zh/rules
+2026-02-27 17:24:36 - scraper.www.alignerr.com - WARNING - ✗ VALIDATION FAILED: https://alignerr.com/zh/rules: Content too short (4 chars, minimum 50)
+2026-02-27 17:24:36 - scraper.www.alignerr.com - WARNING - Validation failed for https://alignerr.com/zh/rules: Content too short (4 chars, minimum 50)
+2026-02-27 17:24:36 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/zh/about
+2026-02-27 17:24:42 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/zh/about: All validations passed
+2026-02-27 17:24:42 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/zh/about | Status: 200 | Size: 93746 bytes
+2026-02-27 17:24:42 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/zh/process
+2026-02-27 17:24:47 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/zh/process: All validations passed
+2026-02-27 17:24:47 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/zh/process | Status: 200 | Size: 94654 bytes
+2026-02-27 17:24:47 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/zh/interviews
+2026-02-27 17:24:53 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/zh/interviews: All validations passed
+2026-02-27 17:24:53 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/zh/interviews | Status: 200 | Size: 152870 bytes
+2026-02-27 17:24:53 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/zh/stories
+2026-02-27 17:25:11 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/zh/stories: All validations passed
+2026-02-27 17:25:11 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/zh/stories | Status: 200 | Size: 80360 bytes
+2026-02-27 17:25:11 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/ja
+2026-02-27 17:25:19 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/ja: All validations passed
+2026-02-27 17:25:19 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/ja | Status: 200 | Size: 138854 bytes
+2026-02-27 17:25:19 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/ja/faqs
+2026-02-27 17:25:23 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/ja/faqs: All validations passed
+2026-02-27 17:25:23 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/ja/faqs | Status: 200 | Size: 104752 bytes
+2026-02-27 17:25:23 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/ja/privacy
+2026-02-27 17:25:28 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/ja/privacy: All validations passed
+2026-02-27 17:25:28 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/ja/privacy | Status: 200 | Size: 315784 bytes
+2026-02-27 17:25:28 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/ja/jobs
+2026-02-27 17:25:36 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/ja/jobs: All validations passed
+2026-02-27 17:25:36 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/ja/jobs | Status: 200 | Size: 9545533 bytes
+2026-02-27 17:25:39 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/ja/rules
+2026-02-27 17:25:42 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/ja/rules: All validations passed
+2026-02-27 17:25:42 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/ja/rules | Status: 200 | Size: 44810 bytes
+2026-02-27 17:25:43 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/ja/about
+2026-02-27 17:25:47 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/ja/about: All validations passed
+2026-02-27 17:25:47 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/ja/about | Status: 200 | Size: 94908 bytes
+2026-02-27 17:25:47 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/ja/process
+2026-02-27 17:25:52 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/ja/process: All validations passed
+2026-02-27 17:25:52 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/ja/process | Status: 200 | Size: 97277 bytes
+2026-02-27 17:25:52 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/ja/interviews
+2026-02-27 17:25:57 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/ja/interviews: All validations passed
+2026-02-27 17:25:57 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/ja/interviews | Status: 200 | Size: 154236 bytes
+2026-02-27 17:25:57 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/ja/stories
+2026-02-27 17:26:11 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/ja/stories: All validations passed
+2026-02-27 17:26:11 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/ja/stories | Status: 200 | Size: 81038 bytes
+2026-02-27 17:26:11 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/ar
+2026-02-27 17:26:17 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/ar: All validations passed
+2026-02-27 17:26:17 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/ar | Status: 200 | Size: 140569 bytes
+2026-02-27 17:26:17 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/ar/faqs
+2026-02-27 17:26:23 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/ar/faqs: All validations passed
+2026-02-27 17:26:23 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/ar/faqs | Status: 200 | Size: 105336 bytes
+2026-02-27 17:26:23 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/ar/privacy
+2026-02-27 17:26:28 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/ar/privacy: All validations passed
+2026-02-27 17:26:28 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/ar/privacy | Status: 200 | Size: 316149 bytes
+2026-02-27 17:26:28 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/ar/jobs
+2026-02-27 17:26:37 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/ar/jobs: All validations passed
+2026-02-27 17:26:37 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/ar/jobs | Status: 200 | Size: 9546070 bytes
+2026-02-27 17:26:40 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/ar/rules
+2026-02-27 17:26:44 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/ar/rules: All validations passed
+2026-02-27 17:26:44 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/ar/rules | Status: 200 | Size: 45165 bytes
+2026-02-27 17:26:44 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/ar/about
+2026-02-27 17:26:48 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/ar/about: All validations passed
+2026-02-27 17:26:48 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/ar/about | Status: 200 | Size: 97669 bytes
+2026-02-27 17:26:48 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/ar/process
+2026-02-27 17:26:53 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/ar/process: All validations passed
+2026-02-27 17:26:53 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/ar/process | Status: 200 | Size: 100163 bytes
+2026-02-27 17:26:53 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/ar/interviews
+2026-02-27 17:26:57 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/ar/interviews: All validations passed
+2026-02-27 17:26:57 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/ar/interviews | Status: 200 | Size: 154916 bytes
+2026-02-27 17:26:57 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/ar/stories
+2026-02-27 17:27:07 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/ar/stories: All validations passed
+2026-02-27 17:27:07 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/ar/stories | Status: 200 | Size: 81917 bytes
+2026-02-27 17:27:07 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/es
+2026-02-27 17:27:14 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/es: All validations passed
+2026-02-27 17:27:14 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/es | Status: 200 | Size: 141207 bytes
+2026-02-27 17:27:14 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/es/faqs
+2026-02-27 17:27:19 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/es/faqs: All validations passed
+2026-02-27 17:27:19 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/es/faqs | Status: 200 | Size: 105274 bytes
+2026-02-27 17:27:19 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/es/privacy
+2026-02-27 17:27:24 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/es/privacy: All validations passed
+2026-02-27 17:27:24 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/es/privacy | Status: 200 | Size: 316271 bytes
+2026-02-27 17:27:24 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/es/jobs
+2026-02-27 17:27:34 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/es/jobs: All validations passed
+2026-02-27 17:27:34 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/es/jobs | Status: 200 | Size: 9546072 bytes
+2026-02-27 17:27:37 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/es/rules
+2026-02-27 17:27:41 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/es/rules: All validations passed
+2026-02-27 17:27:41 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/es/rules | Status: 200 | Size: 45297 bytes
+2026-02-27 17:27:42 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/es/about
+2026-02-27 17:27:47 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/es/about: All validations passed
+2026-02-27 17:27:47 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/es/about | Status: 200 | Size: 98562 bytes
+2026-02-27 17:27:47 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/es/process
+2026-02-27 17:27:51 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/es/process: All validations passed
+2026-02-27 17:27:51 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/es/process | Status: 200 | Size: 102103 bytes
+2026-02-27 17:27:51 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/es/interviews
+2026-02-27 17:27:55 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/es/interviews: All validations passed
+2026-02-27 17:27:55 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/es/interviews | Status: 200 | Size: 155264 bytes
+2026-02-27 17:27:55 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/es/stories
+2026-02-27 17:28:07 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/es/stories: All validations passed
+2026-02-27 17:28:07 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/es/stories | Status: 200 | Size: 82586 bytes
+2026-02-27 17:28:07 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/de
+2026-02-27 17:28:14 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/de: All validations passed
+2026-02-27 17:28:14 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/de | Status: 200 | Size: 141712 bytes
+2026-02-27 17:28:14 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/de/faqs
+2026-02-27 17:28:19 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/de/faqs: All validations passed
+2026-02-27 17:28:19 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/de/faqs | Status: 200 | Size: 105076 bytes
+2026-02-27 17:28:19 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/de/privacy
+2026-02-27 17:28:24 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/de/privacy: All validations passed
+2026-02-27 17:28:24 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/de/privacy | Status: 200 | Size: 316243 bytes
+2026-02-27 17:28:25 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/de/jobs
+2026-02-27 17:28:33 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/de/jobs: All validations passed
+2026-02-27 17:28:33 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/de/jobs | Status: 200 | Size: 9546047 bytes
+2026-02-27 17:28:36 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/de/rules
+2026-02-27 17:28:42 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/de/rules: All validations passed
+2026-02-27 17:28:42 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/de/rules | Status: 200 | Size: 45249 bytes
+2026-02-27 17:28:42 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/de/about
+2026-02-27 17:28:47 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/de/about: All validations passed
+2026-02-27 17:28:47 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/de/about | Status: 200 | Size: 98723 bytes
+2026-02-27 17:28:48 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/de/process
+2026-02-27 17:28:52 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/de/process: All validations passed
+2026-02-27 17:28:52 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/de/process | Status: 200 | Size: 102657 bytes
+2026-02-27 17:28:52 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/de/interviews
+2026-02-27 17:28:57 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/de/interviews: All validations passed
+2026-02-27 17:28:57 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/de/interviews | Status: 200 | Size: 155299 bytes
+2026-02-27 17:28:57 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/de/stories
+2026-02-27 17:29:08 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/de/stories: All validations passed
+2026-02-27 17:29:08 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/de/stories | Status: 200 | Size: 82573 bytes
+2026-02-27 17:29:08 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/it
+2026-02-27 17:29:15 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/it: All validations passed
+2026-02-27 17:29:15 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/it | Status: 200 | Size: 141456 bytes
+2026-02-27 17:29:15 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/it/faqs
+2026-02-27 17:29:20 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/it/faqs: All validations passed
+2026-02-27 17:29:20 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/it/faqs | Status: 200 | Size: 105043 bytes
+2026-02-27 17:29:20 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/it/privacy
+2026-02-27 17:29:26 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/it/privacy: All validations passed
+2026-02-27 17:29:26 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/it/privacy | Status: 200 | Size: 316182 bytes
+2026-02-27 17:29:26 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/it/jobs
+2026-02-27 17:29:35 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/it/jobs: All validations passed
+2026-02-27 17:29:35 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/it/jobs | Status: 200 | Size: 9546483 bytes
+2026-02-27 17:29:38 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/it/rules
+2026-02-27 17:29:43 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/it/rules: All validations passed
+2026-02-27 17:29:43 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/it/rules | Status: 200 | Size: 45208 bytes
+2026-02-27 17:29:43 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/it/about
+2026-02-27 17:29:47 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/it/about: All validations passed
+2026-02-27 17:29:47 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/it/about | Status: 200 | Size: 98085 bytes
+2026-02-27 17:29:47 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/it/process
+2026-02-27 17:29:51 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/it/process: All validations passed
+2026-02-27 17:29:51 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/it/process | Status: 200 | Size: 102098 bytes
+2026-02-27 17:29:51 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/it/interviews
+2026-02-27 17:29:56 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/it/interviews: All validations passed
+2026-02-27 17:29:56 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/it/interviews | Status: 200 | Size: 155285 bytes
+2026-02-27 17:29:56 - scraper.www.alignerr.com - INFO - Starting scrape: https://alignerr.com/it/stories
+2026-02-27 17:30:10 - scraper.www.alignerr.com - INFO - ✓ VALIDATION PASSED: https://alignerr.com/it/stories: All validations passed
+2026-02-27 17:30:10 - scraper.www.alignerr.com - INFO - ✓ SUCCESS: https://alignerr.com/it/stories | Status: 200 | Size: 82599 bytes

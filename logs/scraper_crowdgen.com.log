@@ -3,3 +3,5 @@
 2026-02-23 15:45:36 - scraper.crowdgen.com - INFO - Starting scrape: https://crowdgen.com/
 2026-02-23 15:45:42 - scraper.crowdgen.com - INFO - ✓ VALIDATION PASSED: https://crowdgen.com/: All validations passed
 2026-02-23 15:45:42 - scraper.crowdgen.com - INFO - ✓ SUCCESS: https://crowdgen.com/ | Status: 200 | Size: 383714 bytes
+2026-02-27 17:21:40 - scraper.crowdgen.com - INFO - Starting scrape of CrowdGen
+2026-02-27 17:21:40 - scraper.crowdgen.com - WARNING - No sitemap found, scraping only base URL

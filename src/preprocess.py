@@ -1,9 +1,9 @@
 """
 Preprocessing script for TF-IDF and word embedding analysis.
 Reads from existing 'pages' table and writes to two new tables:
-  - pages_tfidf    : lemmatized unigrams + bigrams, stopwords removed
-  - pages_embedding: lightly cleaned text (sentences preserved) for
-                     sentence-transformers AND tokenized text for Word2Vec/fastText
+    - pages_tfidf    : lemmatized unigrams + bigrams, stopwords removed
+    - pages_embedding: lightly cleaned text (sentences preserved) for
+                    sentence-transformers AND tokenized text for Word2Vec/fastText
 
 Processes in batches to handle large databases and isolate errors per batch.
 A failed batch is logged and skipped — processing continues with the next one.
