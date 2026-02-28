@@ -260,7 +260,7 @@ def write_report(clusters: list[list[dict]], out_prefix: str):
 
 def main():
     db_path    = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_DB
-    out_prefix = sys.argv[2] if len(sys.argv) > 2 else "duplicate_report"
+    out_prefix = sys.argv[2] if len(sys.argv) > 2 else "/logs/duplicates/duplicate_report"
 
     if not Path(db_path).exists():
         log.error(f"Database not found: {db_path}")

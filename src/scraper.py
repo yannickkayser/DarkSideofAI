@@ -280,6 +280,13 @@ class WebScraper:
 
                 status_code = response.status
 
+                if status_code == 429:
+                    retry_after = response.headers.get('Retry-After')
+                    wait = int(retry_after) if retry_after and retry_after.isdigit() else 30 * (2 ** attempt)
+                    self.logger.warning(f"429 on {url} — waiting {wait}s before retry")
+                    time.sleep(wait)
+                    continue
+
                 # Random human-like pause to avoid bot detection timing patterns
                 time.sleep(random.uniform(1.5, 3.5))
                 

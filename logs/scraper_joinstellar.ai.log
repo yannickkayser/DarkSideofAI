@@ -1,0 +1,66 @@
+2026-02-28 03:34:44 - scraper.joinstellar.ai - INFO - Starting scrape of Joinstellar
+2026-02-28 03:34:45 - scraper.joinstellar.ai - WARNING - No sitemap found, scraping only base URL
+2026-02-28 03:34:46 - scraper.joinstellar.ai - INFO - Starting scrape: https://joinstellar.ai/
+2026-02-28 03:34:51 - scraper.joinstellar.ai - INFO - ✓ VALIDATION PASSED: https://joinstellar.ai/: All validations passed
+2026-02-28 03:34:51 - scraper.joinstellar.ai - INFO - ✓ SUCCESS: https://joinstellar.ai/ | Status: 200 | Size: 66999 bytes
+2026-02-28 03:35:47 - scraper.joinstellar.ai - INFO - Starting scrape of Joinstellar
+2026-02-28 03:35:48 - scraper.joinstellar.ai - INFO - Starting scrape: https://joinstellar.ai/accounts/password_reset
+2026-02-28 03:35:52 - scraper.joinstellar.ai - INFO - ✓ VALIDATION PASSED: https://joinstellar.ai/accounts/password_reset: All validations passed
+2026-02-28 03:35:52 - scraper.joinstellar.ai - INFO - ✓ SUCCESS: https://joinstellar.ai/accounts/password_reset | Status: 200 | Size: 5417 bytes
+2026-02-28 03:35:52 - scraper.joinstellar.ai - INFO - Starting scrape: https://joinstellar.ai/site/data-policy
+2026-02-28 03:36:11 - scraper.joinstellar.ai - INFO - ✓ VALIDATION PASSED: https://joinstellar.ai/site/data-policy: All validations passed
+2026-02-28 03:36:11 - scraper.joinstellar.ai - INFO - ✓ SUCCESS: https://joinstellar.ai/site/data-policy | Status: 404 | Size: 176 bytes
+2026-02-28 03:36:11 - scraper.joinstellar.ai - INFO - Starting scrape: https://joinstellar.ai/apply/junior-software-engineer/register
+2026-02-28 03:36:17 - scraper.joinstellar.ai - INFO - ✓ VALIDATION PASSED: https://joinstellar.ai/apply/junior-software-engineer/register: All validations passed
+2026-02-28 03:36:17 - scraper.joinstellar.ai - INFO - ✓ SUCCESS: https://joinstellar.ai/apply/junior-software-engineer/register | Status: 200 | Size: 37716 bytes
+2026-02-28 03:36:17 - scraper.joinstellar.ai - INFO - Starting scrape: https://joinstellar.ai/site/privacy
+2026-02-28 03:36:22 - scraper.joinstellar.ai - INFO - ✓ VALIDATION PASSED: https://joinstellar.ai/site/privacy: All validations passed
+2026-02-28 03:36:22 - scraper.joinstellar.ai - INFO - ✓ SUCCESS: https://joinstellar.ai/site/privacy | Status: 200 | Size: 25644 bytes
+2026-02-28 03:36:22 - scraper.joinstellar.ai - INFO - Starting scrape: https://joinstellar.ai
+2026-02-28 03:36:27 - scraper.joinstellar.ai - INFO - ✓ VALIDATION PASSED: https://joinstellar.ai: All validations passed
+2026-02-28 03:36:27 - scraper.joinstellar.ai - INFO - ✓ SUCCESS: https://joinstellar.ai | Status: 200 | Size: 66999 bytes
+2026-02-28 03:36:27 - scraper.joinstellar.ai - INFO - Starting scrape: https://joinstellar.ai/apply/senior-software-engineer
+2026-02-28 03:36:32 - scraper.joinstellar.ai - INFO - ✓ VALIDATION PASSED: https://joinstellar.ai/apply/senior-software-engineer: All validations passed
+2026-02-28 03:36:32 - scraper.joinstellar.ai - INFO - ✓ SUCCESS: https://joinstellar.ai/apply/senior-software-engineer | Status: 200 | Size: 21661 bytes
+2026-02-28 03:36:32 - scraper.joinstellar.ai - INFO - Starting scrape: https://joinstellar.ai/apply/machine-learning-engineer
+2026-02-28 03:36:36 - scraper.joinstellar.ai - INFO - ✓ VALIDATION PASSED: https://joinstellar.ai/apply/machine-learning-engineer: All validations passed
+2026-02-28 03:36:36 - scraper.joinstellar.ai - INFO - ✓ SUCCESS: https://joinstellar.ai/apply/machine-learning-engineer | Status: 200 | Size: 21523 bytes
+2026-02-28 03:36:36 - scraper.joinstellar.ai - INFO - Starting scrape: https://joinstellar.ai/apply
+2026-02-28 03:36:41 - scraper.joinstellar.ai - INFO - ✓ VALIDATION PASSED: https://joinstellar.ai/apply: All validations passed
+2026-02-28 03:36:41 - scraper.joinstellar.ai - INFO - ✓ SUCCESS: https://joinstellar.ai/apply | Status: 200 | Size: 21727 bytes
+2026-02-28 03:36:41 - scraper.joinstellar.ai - INFO - Starting scrape: https://joinstellar.ai/apply/junior-software-engineer
+2026-02-28 03:36:46 - scraper.joinstellar.ai - INFO - ✓ VALIDATION PASSED: https://joinstellar.ai/apply/junior-software-engineer: All validations passed
+2026-02-28 03:36:46 - scraper.joinstellar.ai - INFO - ✓ SUCCESS: https://joinstellar.ai/apply/junior-software-engineer | Status: 200 | Size: 21384 bytes
+2026-02-28 03:36:46 - scraper.joinstellar.ai - INFO - Starting scrape: https://joinstellar.ai/cdn-cgi/l/email-protection
+2026-02-28 03:36:49 - scraper.joinstellar.ai - INFO - ✓ VALIDATION PASSED: https://joinstellar.ai/cdn-cgi/l/email-protection: All validations passed
+2026-02-28 03:36:49 - scraper.joinstellar.ai - INFO - ✓ SUCCESS: https://joinstellar.ai/cdn-cgi/l/email-protection | Status: 404 | Size: 4437 bytes
+2026-02-28 03:36:49 - scraper.joinstellar.ai - INFO - Starting scrape: https://joinstellar.ai/accounts/login
+2026-02-28 03:36:53 - scraper.joinstellar.ai - INFO - ✓ VALIDATION PASSED: https://joinstellar.ai/accounts/login: All validations passed
+2026-02-28 03:36:53 - scraper.joinstellar.ai - INFO - ✓ SUCCESS: https://joinstellar.ai/accounts/login | Status: 200 | Size: 6763 bytes
+2026-02-28 03:36:53 - scraper.joinstellar.ai - INFO - Starting scrape: https://joinstellar.ai/apply/senior-software-engineer/register
+2026-02-28 03:36:57 - scraper.joinstellar.ai - INFO - ✓ VALIDATION PASSED: https://joinstellar.ai/apply/senior-software-engineer/register: All validations passed
+2026-02-28 03:36:57 - scraper.joinstellar.ai - INFO - ✓ SUCCESS: https://joinstellar.ai/apply/senior-software-engineer/register | Status: 200 | Size: 37717 bytes
+2026-02-28 03:36:57 - scraper.joinstellar.ai - INFO - Starting scrape: https://joinstellar.ai/apply/machine-learning-engineer/register
+2026-02-28 03:37:01 - scraper.joinstellar.ai - INFO - ✓ VALIDATION PASSED: https://joinstellar.ai/apply/machine-learning-engineer/register: All validations passed
+2026-02-28 03:37:01 - scraper.joinstellar.ai - INFO - ✓ SUCCESS: https://joinstellar.ai/apply/machine-learning-engineer/register | Status: 200 | Size: 37721 bytes
+2026-02-28 03:37:01 - scraper.joinstellar.ai - INFO - Starting scrape: https://joinstellar.ai/home
+2026-02-28 03:37:06 - scraper.joinstellar.ai - INFO - ✓ VALIDATION PASSED: https://joinstellar.ai/home: All validations passed
+2026-02-28 03:37:06 - scraper.joinstellar.ai - INFO - ✓ SUCCESS: https://joinstellar.ai/home | Status: 200 | Size: 6769 bytes
+2026-02-28 03:37:06 - scraper.joinstellar.ai - INFO - Starting scrape: https://joinstellar.ai/site/terms
+2026-02-28 03:37:11 - scraper.joinstellar.ai - INFO - ✓ VALIDATION PASSED: https://joinstellar.ai/site/terms: All validations passed
+2026-02-28 03:37:11 - scraper.joinstellar.ai - INFO - ✓ SUCCESS: https://joinstellar.ai/site/terms | Status: 200 | Size: 25868 bytes
+2026-02-28 03:37:11 - scraper.joinstellar.ai - INFO - Starting scrape: https://joinstellar.ai/register
+2026-02-28 03:37:15 - scraper.joinstellar.ai - INFO - ✓ VALIDATION PASSED: https://joinstellar.ai/register: All validations passed
+2026-02-28 03:37:15 - scraper.joinstellar.ai - INFO - ✓ SUCCESS: https://joinstellar.ai/register | Status: 200 | Size: 10788 bytes
+2026-02-28 03:37:15 - scraper.joinstellar.ai - INFO - Starting scrape: https://joinstellar.ai/site/tools.google.com/dlpage/gaoptout
+2026-02-28 03:37:35 - scraper.joinstellar.ai - INFO - ✓ VALIDATION PASSED: https://joinstellar.ai/site/tools.google.com/dlpage/gaoptout: All validations passed
+2026-02-28 03:37:35 - scraper.joinstellar.ai - INFO - ✓ SUCCESS: https://joinstellar.ai/site/tools.google.com/dlpage/gaoptout | Status: 404 | Size: 176 bytes
+2026-02-28 03:37:35 - scraper.joinstellar.ai - INFO - Starting scrape: https://joinstellar.ai/apply/generalist
+2026-02-28 03:37:39 - scraper.joinstellar.ai - INFO - ✓ VALIDATION PASSED: https://joinstellar.ai/apply/generalist: All validations passed
+2026-02-28 03:37:39 - scraper.joinstellar.ai - INFO - ✓ SUCCESS: https://joinstellar.ai/apply/generalist | Status: 200 | Size: 20358 bytes
+2026-02-28 03:37:39 - scraper.joinstellar.ai - INFO - Starting scrape: https://joinstellar.ai/site/cookies-policy
+2026-02-28 03:37:44 - scraper.joinstellar.ai - INFO - ✓ VALIDATION PASSED: https://joinstellar.ai/site/cookies-policy: All validations passed
+2026-02-28 03:37:44 - scraper.joinstellar.ai - INFO - ✓ SUCCESS: https://joinstellar.ai/site/cookies-policy | Status: 200 | Size: 10387 bytes
+2026-02-28 03:37:44 - scraper.joinstellar.ai - INFO - Starting scrape: https://joinstellar.ai/site/cookies
+2026-02-28 03:38:03 - scraper.joinstellar.ai - INFO - ✓ VALIDATION PASSED: https://joinstellar.ai/site/cookies: All validations passed
+2026-02-28 03:38:03 - scraper.joinstellar.ai - INFO - ✓ SUCCESS: https://joinstellar.ai/site/cookies | Status: 404 | Size: 176 bytes

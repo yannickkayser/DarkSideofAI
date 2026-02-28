@@ -1,9 +1,9 @@
 """
 Preprocessing script for TF-IDF and word embedding analysis.
 Reads from existing 'pages' table and writes to two new tables:
-    - pages_tfidf    : lemmatized unigrams + bigrams, stopwords removed
-    - pages_embedding: lightly cleaned text (sentences preserved) for
-                    sentence-transformers AND tokenized text for Word2Vec/fastText
+  - pages_tfidf    : lemmatized unigrams + bigrams, stopwords removed
+  - pages_embedding: lightly cleaned text (sentences preserved) for
+                     sentence-transformers AND tokenized text for Word2Vec/fastText
 
 Processes in batches to handle large databases and isolate errors per batch.
 A failed batch is logged and skipped — processing continues with the next one.
@@ -29,9 +29,14 @@ from config.config import WEBSITES
 # Config
 # ---------------------------------------------------------------------------
 
-DB_PATH        = "scraper.db"   # <-- change to your actual database path
-BATCH_SIZE     = 200            # pages per batch — lower if memory is tight
-MIN_BIGRAM_FREQ = 3             # minimum corpus frequency to keep a bigram
+DB_PATH         = "data/scraping.db"   # <-- change to your actual database path
+BATCH_SIZE      = 200            # pages per batch — lower if memory is tight
+MIN_BIGRAM_FREQ = 3              # minimum corpus frequency to keep a bigram
+
+# Path to duplicates.json produced by find_duplicates.py.
+# Set to None to skip duplicate exclusion entirely.
+# Per cluster, the page with the longest text_content is kept; all others excluded.
+DUPLICATES_FILE = str(Path(__file__).parent.parent / "logs/duplicate/duplicate_report.json")
 
 # Derived from config.WEBSITES — no separate mapping needed.
 # e.g. {"mindrift.ai": "worker", "appen.com": "client", ...}
@@ -80,12 +85,12 @@ def _build_company_stopwords() -> set[str]:
     # Additional brand/product variants not captured by config
     extra = {
         # Platform product names
-        "remotasks", "crowdgen", "mindrift", "toloker", "tolokers",
-        "alignerr", "oneforma", "mturk","dataannotation", "surgehq",
+        "remotask", "remotasks", "crowdgen", "mindrift", "toloker", "tolokers",
+        "alignerr", "oneforma", "mturk", "dataannotation", "surgehq",
         # Company name fragments that appear as tokens
         "appen", "sama", "scale", "telus", "prolific", "outlier",
         "cloudfactory", "imerit", "lxt", "defined", "superannotate",
-        "mindy", "flipside", "crowdworks", "digitaldivide",
+        "mindy", "flipside", "digitaldivide",
         "humansintheloop", "toloka",
         # Generic legal/corporate suffixes that slip through
         "inc", "llc", "ltd", "corp", "gmbh",
@@ -256,8 +261,60 @@ def init_tables(conn: sqlite3.Connection):
 # Batch helpers
 # ---------------------------------------------------------------------------
 
-def fetch_unprocessed_ids(conn: sqlite3.Connection) -> list[int]:
-    """Return IDs of all pages not yet in pages_tfidf, ordered for reproducibility."""
+def load_excluded_ids(db_path: str, duplicates_file: str | None) -> set[int]:
+    """
+    Read duplicates.json and return the set of page_ids to exclude.
+
+    Strategy: within each duplicate cluster, keep the page with the longest
+    text_content (most information) and exclude all others.
+    If the file doesn't exist or is None, returns an empty set.
+    """
+    if not duplicates_file or not Path(duplicates_file).exists():
+        if duplicates_file:
+            log.warning(f"  Duplicates file not found: {duplicates_file} — skipping exclusion.")
+        return set()
+
+    with open(duplicates_file, encoding="utf-8") as f:
+        clusters = json.load(f)
+
+    # For each cluster we need content_length to decide which page to keep.
+    # Fetch text lengths from the database.
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+
+    excluded: set[int] = set()
+    kept_count = 0
+
+    for cluster in clusters:
+        page_ids = [p["page_id"] for p in cluster["pages"]]
+        if len(page_ids) < 2:
+            continue
+
+        placeholders = ",".join("?" * len(page_ids))
+        cursor.execute(
+            f"SELECT id, LENGTH(COALESCE(text_content,'')) AS len "
+            f"FROM pages WHERE id IN ({placeholders})",
+            page_ids,
+        )
+        lengths = {row[0]: row[1] for row in cursor.fetchall()}
+
+        # Keep the page with the most content, exclude the rest
+        keep_id = max(lengths, key=lambda pid: lengths.get(pid, 0))
+        for pid in page_ids:
+            if pid != keep_id:
+                excluded.add(pid)
+        kept_count += 1
+
+    conn.close()
+
+    log.info(f"  Duplicate exclusion: {kept_count} clusters → "
+             f"{len(excluded)} pages excluded, 1 kept per cluster.")
+    return excluded
+
+
+def fetch_unprocessed_ids(conn: sqlite3.Connection, excluded_ids: set[int] = set()) -> list[int]:
+    """Return IDs of all pages not yet in pages_tfidf, ordered for reproducibility.
+    Excludes any page_ids flagged as near-duplicates."""
     cursor = conn.cursor()
     cursor.execute("""
         SELECT p.id
@@ -266,7 +323,14 @@ def fetch_unprocessed_ids(conn: sqlite3.Connection) -> list[int]:
           AND  p.id NOT IN (SELECT page_id FROM pages_tfidf)
         ORDER  BY p.id
     """)
-    return [row[0] for row in cursor.fetchall()]
+    all_ids = [row[0] for row in cursor.fetchall()]
+
+    if excluded_ids:
+        before = len(all_ids)
+        all_ids = [i for i in all_ids if i not in excluded_ids]
+        log.info(f"  Excluded {before - len(all_ids)} duplicate pages from processing.")
+
+    return all_ids
 
 
 def audience_from_url(url: str) -> str:
@@ -373,6 +437,7 @@ def process(db_path: str, batch_size: int = BATCH_SIZE):
     log.info(f"  Audience map loaded: {len(AUDIENCE_MAP)} domains")
     log.info(f"  Company stopwords  : {len(COMPANY_STOPWORDS)} terms filtered")
     log.info(f"  (terms: {', '.join(sorted(COMPANY_STOPWORDS)[:10])}...)")
+    log.info(f"  Duplicates file    : {DUPLICATES_FILE or 'not set — skipping'}")
     log.info("=" * 60)
 
     conn = sqlite3.connect(db_path)
@@ -381,9 +446,12 @@ def process(db_path: str, batch_size: int = BATCH_SIZE):
 
     nlp = load_nlp()
 
+    # --- Load duplicate exclusions ---
+    excluded_ids = load_excluded_ids(db_path, DUPLICATES_FILE)
+
     # --- Discover all unprocessed page IDs upfront ---
-    log.info("Scanning for unprocessed pages...")   # LOG: before ID query
-    all_ids = fetch_unprocessed_ids(conn)
+    log.info("Scanning for unprocessed pages...")
+    all_ids = fetch_unprocessed_ids(conn, excluded_ids)
     total   = len(all_ids)
 
     if total == 0:

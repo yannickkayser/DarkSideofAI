@@ -280,7 +280,7 @@ def main():
         sys.exit(1)
 
     db_path  = sys.argv[1]
-    out_path = sys.argv[2] if len(sys.argv) > 2 else "db_stats_report.txt"
+    out_path = sys.argv[2] if len(sys.argv) > 2 else "logs/db_stats/db_stats_report.txt"
 
     conn = sqlite3.connect(db_path)
 

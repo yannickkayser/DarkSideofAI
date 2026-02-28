@@ -26,8 +26,8 @@ class LinkCrawler:
     def __init__(
         self,
         base_url: str,
-        max_pages: int = 500,
-        max_depth: int = 3,
+        max_pages: int = 1000,
+        max_depth: int = 8,
         rate_limit: float = 1.5,
         user_agent: str = "Mozilla/5.0 (compatible; ScrapeBot/1.0)",
         exclude_extensions: Optional[Set[str]] = None,
