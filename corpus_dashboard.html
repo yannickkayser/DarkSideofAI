@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Web Corpus · Analysis Dashboard</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap');
+
+:root {
+  --bg:    #0d0f14;
+  --surf:  #13161e;
+  --surf2: #1a1e2a;
+  --bdr:   #252a38;
+  --acc:   #c8f060;
+  --acc2:  #60c8f0;
+  --acc3:  #f060c8;
+  --acc4:  #f0c860;
+  --text:  #e8eaf2;
+  --muted: #6b7280;
+  --serif: 'Instrument Serif', Georgia, serif;
+  --mono:  'DM Mono', monospace;
+  --sans:  'Outfit', sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-weight:300;line-height:1.6;min-height:100vh}
+body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:1000;opacity:.35}
+
+.shell{max-width:1340px;margin:0 auto;padding:0 2rem 6rem}
+
+header{padding:4rem 0 3rem;border-bottom:1px solid var(--bdr);margin-bottom:3rem;display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.h-title{font-family:var(--serif);font-size:clamp(2.2rem,5vw,3.8rem);font-weight:400;line-height:1.1}
+.h-title em{font-style:italic;color:var(--acc)}
+.h-meta{font-family:var(--mono);font-size:.72rem;color:var(--muted);text-align:right;line-height:2}
+
+.sl{font-family:var(--mono);font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);margin-bottom:1.4rem;display:flex;align-items:center;gap:.8rem}
+.sl::after{content:'';flex:1;height:1px;background:var(--bdr)}
+.sl sub{color:var(--muted);font-size:.6rem;letter-spacing:0;text-transform:none}
+
+.stat-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1px;background:var(--bdr);border:1px solid var(--bdr);border-radius:12px;overflow:hidden;margin-bottom:3.5rem}
+.stat-cell{background:var(--surf);padding:1.6rem 1.8rem;transition:background .2s}
+.stat-cell:hover{background:var(--surf2)}
+.stat-val{font-family:var(--serif);font-size:2.6rem;line-height:1;color:var(--acc);margin-bottom:.3rem}
+.stat-lbl{font-family:var(--mono);font-size:.68rem;color:var(--muted);letter-spacing:.08em}
+
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:3.5rem}
+@media(max-width:900px){.g2{grid-template-columns:1fr}}
+
+.card{background:var(--surf);border:1px solid var(--bdr);border-radius:12px;padding:1.8rem;position:relative;overflow:hidden}
+.card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--acc) 0%,transparent 100%);opacity:.6}
+.card-title{font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:1.4rem}
+.chart-wrap{position:relative}
+
+/* filter banner */
+.filter-banner{background:var(--surf2);border:1px solid var(--bdr);border-left:3px solid var(--acc);border-radius:8px;padding:1rem 1.4rem;margin-bottom:2rem;font-family:var(--mono);font-size:.75rem;color:var(--muted);display:flex;gap:2rem;flex-wrap:wrap;align-items:center}
+.filter-banner strong{color:var(--acc);font-weight:500}
+.filter-stat{display:flex;flex-direction:column;gap:.1rem}
+.filter-stat span:first-child{color:var(--text);font-size:.85rem}
+
+/* site table */
+.st{width:100%;border-collapse:collapse;font-size:.85rem}
+.st th{font-family:var(--mono);font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:left;padding:.5rem .8rem;border-bottom:1px solid var(--bdr)}
+.st td{padding:.7rem .8rem;border-bottom:1px solid rgba(255,255,255,.04);vertical-align:middle}
+.st tr:hover td{background:var(--surf2)}
+.dp{display:inline-block;background:var(--surf2);border:1px solid var(--bdr);border-radius:4px;padding:.1rem .5rem;font-family:var(--mono);font-size:.75rem}
+.tb{font-family:var(--mono);font-size:.65rem;padding:.15rem .5rem;border-radius:20px;background:rgba(200,240,96,.1);color:var(--acc);border:1px solid rgba(200,240,96,.25)}
+.mb{height:4px;background:var(--bdr);border-radius:2px;overflow:hidden;width:120px}
+.mf{height:100%;background:var(--acc);border-radius:2px}
+.nm{font-family:var(--mono);font-size:.8rem}
+
+/* audience tabs */
+.aud-tabs{display:flex;gap:.5rem;margin-bottom:1.5rem;flex-wrap:wrap}
+.aud-tab{font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;padding:.4rem 1rem;border-radius:6px;border:1px solid var(--bdr);background:var(--surf2);color:var(--muted);cursor:pointer;transition:all .15s}
+.aud-tab:hover{border-color:var(--acc2);color:var(--acc2)}
+.aud-tab.active{background:rgba(200,240,96,.1);border-color:var(--acc);color:var(--acc)}
+
+/* topic grid */
+.tg{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:1.2rem;margin-bottom:1rem}
+.tg.hidden{display:none}
+.tc{background:var(--surf);border:1px solid var(--bdr);border-radius:12px;padding:1.5rem;position:relative;overflow:hidden;transition:transform .2s,border-color .2s}
+.tc:hover{transform:translateY(-2px);border-color:rgba(200,240,96,.3)}
+.tc::after{content:attr(data-num);position:absolute;top:-.5rem;right:1rem;font-family:var(--serif);font-style:italic;font-size:5rem;color:rgba(255,255,255,.03);line-height:1;pointer-events:none}
+.tc-head{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:1rem;gap:.5rem}
+.tc-tag{font-family:var(--mono);font-size:.6rem;letter-spacing:.12em;padding:.25rem .6rem;border-radius:4px;background:rgba(96,200,240,.12);color:var(--acc2);border:1px solid rgba(96,200,240,.25);white-space:nowrap}
+.tc-purpose{font-size:.9rem;font-weight:500;color:var(--text);flex:1}
+.tc-pct{font-family:var(--mono);font-size:.78rem;color:var(--acc);white-space:nowrap}
+.kws{display:flex;flex-wrap:wrap;gap:.35rem;margin-bottom:1.1rem}
+.kw{font-family:var(--mono);font-size:.65rem;padding:.2rem .5rem;border-radius:4px;background:var(--surf2);border:1px solid var(--bdr);color:var(--muted)}
+.kw.k0{color:var(--acc2);border-color:rgba(96,200,240,.3)}
+.kw.k1{color:var(--acc);border-color:rgba(200,240,96,.25)}
+.ex{border-top:1px solid var(--bdr);padding-top:.9rem}
+.ex-lbl{font-family:var(--mono);font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:.5rem}
+.ex-item{font-size:.78rem;color:var(--muted);padding:.2rem 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ex-item a{color:inherit;text-decoration:none}
+.ex-item:hover{color:var(--text)}
+.aud-badge{font-family:var(--mono);font-size:.58rem;padding:.1rem .35rem;border-radius:3px;background:rgba(96,200,240,.12);color:var(--acc2);border:1px solid rgba(96,200,240,.2);margin-right:.35rem}
+.aud-badge.worker{background:rgba(200,240,96,.12);color:var(--acc);border-color:rgba(200,240,96,.2)}
+.aud-badge.client{background:rgba(240,96,200,.12);color:var(--acc3);border-color:rgba(240,96,200,.2)}
+
+/* heatmap */
+.hm-wrap{overflow-x:auto}
+.hm{border-collapse:collapse;font-size:.78rem;width:100%}
+.hm th{font-family:var(--mono);font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:.4rem .6rem;text-align:center}
+.hm th:first-child{text-align:left}
+.hm td{padding:.5rem .6rem;text-align:center;font-family:var(--mono);font-size:.72rem;border:1px solid rgba(255,255,255,.03)}
+.hm td:first-child{text-align:left;font-size:.75rem;white-space:nowrap;color:var(--muted)}
+
+footer{border-top:1px solid var(--bdr);padding-top:2rem;margin-top:2rem;font-family:var(--mono);font-size:.65rem;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.a{opacity:0;animation:fadeUp .5s ease forwards}
+
+/* ── word cloud section ────────────────────────────────────────────── */
+.wc-section{margin-bottom:3.5rem}
+.wc-picker{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:1.5rem}
+.wc-btn{font-family:var(--mono);font-size:.65rem;letter-spacing:.08em;padding:.35rem .9rem;border-radius:20px;border:1px solid var(--bdr);background:transparent;color:var(--muted);cursor:pointer;transition:all .18s;white-space:nowrap}
+.wc-btn:hover{border-color:var(--acc2);color:var(--acc2)}
+.wc-btn.active{background:var(--surf2);border-color:var(--acc);color:var(--acc)}
+.wc-stage{position:relative;background:var(--surf);border:1px solid var(--bdr);border-radius:16px;overflow:hidden}
+.wc-stage::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--acc),var(--acc2),var(--acc3));opacity:.7;z-index:2}
+.wc-canvas-wrap{position:relative;width:100%;height:420px}
+.wc-canvas-wrap canvas{position:absolute;inset:0;width:100%;height:100%}
+.wc-legend{display:flex;flex-wrap:wrap;gap:.5rem 1.2rem;padding:1rem 1.4rem 1.4rem;border-top:1px solid var(--bdr)}
+.wc-legend-item{display:flex;align-items:center;gap:.4rem;font-family:var(--mono);font-size:.65rem;color:var(--muted);cursor:pointer;transition:color .15s}
+.wc-legend-item:hover{color:var(--text)}
+.wc-legend-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.wc-info{position:absolute;bottom:1rem;right:1.2rem;font-family:var(--mono);font-size:.6rem;color:rgba(107,114,128,.4);pointer-events:none;z-index:3}
+.wc-tooltip{position:absolute;background:var(--surf2);border:1px solid var(--bdr);border-radius:6px;padding:.4rem .8rem;font-family:var(--mono);font-size:.72rem;color:var(--text);pointer-events:none;opacity:0;transition:opacity .15s;z-index:10;white-space:nowrap}
+</style>
+</head>
+<body>
+<div class="shell">
+
+<header>
+  <div><div class="h-title">Web Corpus<br><em>Analysis Dashboard</em></div></div>
+  <div class="h-meta" id="meta-stamp"></div>
+</header>
+
+<div class="sl">Overview</div>
+<div class="stat-row a" style="animation-delay:.1s" id="stat-row"></div>
+
+<div class="sl">Website Breakdown</div>
+<div class="card a" style="animation-delay:.2s;margin-bottom:3.5rem">
+  <div class="card-title">Pages per domain</div>
+  <table class="st" id="site-table"></table>
+</div>
+
+<div class="g2 a" style="animation-delay:.25s">
+  <div class="card">
+    <div class="card-title">URL depth distribution</div>
+    <div class="chart-wrap" style="height:220px"><canvas id="depthChart"></canvas></div>
+  </div>
+  <div class="card">
+    <div class="card-title">Content length buckets</div>
+    <div class="chart-wrap" style="height:220px"><canvas id="lenChart"></canvas></div>
+  </div>
+</div>
+
+<div class="g2 a" style="animation-delay:.3s">
+  <div class="card">
+    <div class="card-title">Top URL path segments</div>
+    <div class="chart-wrap" style="height:280px"><canvas id="segChart"></canvas></div>
+  </div>
+  <div class="card">
+    <div class="card-title">HTTP status codes</div>
+    <div class="chart-wrap" style="height:280px"><canvas id="statusChart"></canvas></div>
+  </div>
+</div>
+
+<div class="sl a" style="animation-delay:.35s">
+  Topic Modeling
+  <sub id="topic-src">LDA — latent dirichlet allocation</sub>
+</div>
+<div id="filter-banner-wrap" class="a" style="animation-delay:.37s"></div>
+<div class="aud-tabs a" style="animation-delay:.38s" id="aud-tabs"></div>
+<div id="topic-sections"></div>
+
+<div class="sl a" style="animation-delay:.45s">Domain &times; Topic Matrix</div>
+<div class="card a" style="animation-delay:.47s;margin-bottom:3.5rem">
+  <div class="card-title">Average topic probability per domain (combined model)</div>
+  <div class="hm-wrap"><table class="hm" id="heatmap"></table></div>
+</div>
+
+<div class="sl a" style="animation-delay:.5s">Word Landscape <sub>topic keyword visualisation — click a topic to explore</sub></div>
+<div class="wc-section a" style="animation-delay:.52s">
+  <div class="wc-picker" id="wc-picker"></div>
+  <div class="wc-stage">
+    <div class="wc-canvas-wrap">
+      <canvas id="wc-bg"></canvas>
+      <canvas id="wc-main"></canvas>
+      <div class="wc-tooltip" id="wc-tooltip"></div>
+      <div class="wc-info">hover a word for details</div>
+    </div>
+    <div class="wc-legend" id="wc-legend"></div>
+  </div>
+</div>
+
+<footer>
+  <span>Generated by analyze_db.py</span>
+  <span id="footer-stamp"></span>
+</footer>
+</div>
+
+<script>
+const D = {"n_sites": 33, "n_pages": 9197, "n_links": 9155, "total_mb": 2243.025063, "sites": [{"domain": "defined.ai", "website_type": "Managed Enterprise BPO / Data Marketplace (enterprise AI datasets & services)", "n_pages": 940, "avg_depth": 0.0, "avg_len": 435632.31276595744, "total_len": 409494374}, {"domain": "www.lxt.ai", "website_type": "Managed Enterprise BPO (global AI training data provider)", "n_pages": 762, "avg_depth": 0.0, "avg_len": 282724.9251968504, "total_len": 215436393}, {"domain": "imerit.net", "website_type": "Impact-Sourcing Firm (data annotation BPO with social-impact focus)", "n_pages": 726, "avg_depth": 0.0, "avg_len": 100083.97658402204, "total_len": 72660967}, {"domain": "mindy-support.com", "website_type": "Managed Enterprise BPO", "n_pages": 672, "avg_depth": 0.0, "avg_len": 139728.74107142858, "total_len": 93897714}, {"domain": "scale.com", "website_type": "Managed Enterprise BPO (AI data & RLHF vendor; Remotasks as worker interface)", "n_pages": 618, "avg_depth": 0.0, "avg_len": 280245.43203883496, "total_len": 173191677}, {"domain": "www.appen.com", "website_type": "Managed Enterprise BPO (AI data services, B2B; uses CrowdGen as worker platform)", "n_pages": 551, "avg_depth": 0.0, "avg_len": 58312.09618874773, "total_len": 32129965}, {"domain": "www.opentrain.ai", "website_type": "Managed Enterprise BPO", "n_pages": 517, "avg_depth": 0.0, "avg_len": 110481.7756286267, "total_len": 57119078}, {"domain": "crowdgen.com", "website_type": "Algorithmic Crowd Market (Appen contributor portal, B2W side of Appen)", "n_pages": 490, "avg_depth": 0.0, "avg_len": 565001.8632653061, "total_len": 276850913}, {"domain": "www.cloudfactory.com", "website_type": "Impact-Sourcing Firm (managed workforce BPO; explicit impact-sourcing model)", "n_pages": 440, "avg_depth": 0.0, "avg_len": 149367.66818181818, "total_len": 65721774}, {"domain": "www.digitaldividedata.com", "website_type": "Impact-Sourcing Firm (BPO providing ML data services with Global South focus)", "n_pages": 415, "avg_depth": 0.0, "avg_len": 324650.4337349398, "total_len": 134729930}, {"domain": "www.clickworker.com", "website_type": "Algorithmic Crowd Market (microtask platform for AI data & surveys)", "n_pages": 410, "avg_depth": 0.0, "avg_len": 84141.28536585366, "total_len": 34497927}, {"domain": "www.sama.com", "website_type": "Impact-Sourcing Firm (ethical AI data BPO, Global South oriented)", "n_pages": 392, "avg_depth": 0.0, "avg_len": 219737.97448979592, "total_len": 86137286}, {"domain": "www.prolific.com", "website_type": "Algorithmic Crowd Market (participant recruitment for research and AI model tasks)", "n_pages": 377, "avg_depth": 0.0, "avg_len": 188863.31299734747, "total_len": 71201469}, {"domain": "humansintheloop.org", "website_type": "Impact-Sourcing Firm (social enterprise employing conflict-affected workers for AI data)", "n_pages": 346, "avg_depth": 0.0, "avg_len": 339792.59537572257, "total_len": 117568238}, {"domain": "www.superannotate.com", "website_type": "Managed Enterprise BPO (high-skill data labeling)", "n_pages": 325, "avg_depth": 0.0, "avg_len": 149445.56923076924, "total_len": 48569810}, {"domain": "outlier.ai", "website_type": "Managed Enterprise BPO (expert freelancer workforce for RLHF and AI data)", "n_pages": 227, "avg_depth": 0.0, "avg_len": 430964.1321585903, "total_len": 97828858}, {"domain": "www.abaka.ai", "website_type": "Managed Enterprise BPO", "n_pages": 227, "avg_depth": 0.0, "avg_len": 230543.35242290748, "total_len": 52333341}, {"domain": "www.dataannotation.tech", "website_type": "Algorithmic Crowd Market (remote RLHF and data annotation gigs)", "n_pages": 171, "avg_depth": 0.0, "avg_len": 113137.5321637427, "total_len": 19346518}, {"domain": "www.oneforma.com", "website_type": "Algorithmic Crowd Market (Centific worker platform for AI data projects)", "n_pages": 143, "avg_depth": 0.0, "avg_len": 132345.2867132867, "total_len": 18925376}, {"domain": "mindrift.ai", "website_type": "Algorithmic Crowd Market (expert AI tutor platform, integrated with Toloka)", "n_pages": 113, "avg_depth": 0.0, "avg_len": 327137.3539823009, "total_len": 36966521}, {"domain": "www.microworkers.com", "website_type": "Algorithmic Crowd Market (global microtask and AI training data platform)", "n_pages": 109, "avg_depth": 0.0, "avg_len": 54796.48623853211, "total_len": 5972817}, {"domain": "www.alignerr.com", "website_type": "Algorithmic Crowd Market (AI Community)", "n_pages": 63, "avg_depth": 0.0, "avg_len": 1175512.0317460317, "total_len": 74057258}, {"domain": "www.crowdworks.ai", "website_type": "Managed Enterprise BPO (Korean AI data platform with large managed crowd)", "n_pages": 53, "avg_depth": 0.0, "avg_len": 351935.37735849054, "total_len": 18652575}, {"domain": "toloka.ai", "website_type": "Algorithmic Crowd Market (self-serve data labeling platform; Mindrift/Tolokers as worker portals)", "n_pages": 50, "avg_depth": 0.0, "avg_len": 291582.5, "total_len": 14579125}, {"domain": "joinstellar.ai", "website_type": "Algorithmic Crowd Market (AI Community)", "n_pages": 20, "avg_depth": 0.0, "avg_len": 19170.35, "total_len": 383407}, {"domain": "flipside.ai", "website_type": "Managed Enterprise BPO", "n_pages": 17, "avg_depth": 0.0, "avg_len": 150087.76470588235, "total_len": 2551492}, {"domain": "www.remotasks.com", "website_type": "Algorithmic Crowd Market (microtask worker platform for Scale AI)", "n_pages": 10, "avg_depth": 0.0, "avg_len": 120963.6, "total_len": 1209636}, {"domain": "remoter.me", "website_type": "Algorithmic Crowd Market (AI Community)", "n_pages": 8, "avg_depth": 0.0, "avg_len": 1311643.375, "total_len": 10493147}, {"domain": "test.example.com", "website_type": "Test", "n_pages": 1, "avg_depth": 0.0, "avg_len": 1000.0, "total_len": 1000}, {"domain": "www.mturk.com", "website_type": "Algorithmic Crowd Market (canonical microtask market with granular requester control)", "n_pages": 1, "avg_depth": 0.0, "avg_len": 24852.0, "total_len": 24852}, {"domain": "surgehq.ai", "website_type": "Managed Enterprise BPO (high-skill data labeling and evaluation vendor)", "n_pages": 1, "avg_depth": 0.0, "avg_len": 47737.0, "total_len": 47737}, {"domain": "www.telusinternational.com", "website_type": "Managed Enterprise BPO (AI data solutions; uses telusinternational.ai as worker portal)", "n_pages": 1, "avg_depth": 0.0, "avg_len": 33140.0, "total_len": 33140}, {"domain": "www.telusinternational.ai", "website_type": "Algorithmic Crowd Market (AI Community / contributor portal for TELUS BPO)", "n_pages": 1, "avg_depth": 0.0, "avg_len": 410748.0, "total_len": 410748}], "top_segments": [["blog", 2479], ["resources", 814], ["datasets", 769], ["news-post", 448], ["glossary", 441], ["careers", 185], ["customer-blog", 168], ["case-studies", 160], ["docs", 153], ["de", 153], ["case-post", 127], ["tag", 126], ["podcast", 123], ["content-marketing-glossary", 112], ["category", 94]], "depth_dist": [[0, 29], [1, 1880], [2, 6205], [3, 1009], [4, 72], [5, 2]], "len_stats": {"min": 139, "median": 148631, "mean": 243886, "max": 18087116}, "len_buckets": [{"label": "<500 B", "count": 25}, {"label": "0.5\u20135 KB", "count": 6}, {"label": "5\u201350 KB", "count": 129}, {"label": "50\u2013500 KB", "count": 8286}, {"label": ">500 KB", "count": 751}], "status_codes": [{"code": "200", "count": 9151}, {"code": "429", "count": 22}, {"code": "404", "count": 14}, {"code": "403", "count": 9}, {"code": "500", "count": 1}], "topic_source": "pages_tfidf", "topics": [{"label": "both", "index": 1, "keywords": ["participant", "study", "quality", "prolific", "human", "model", "people", "task", "read", "sample", "need", "help"], "purpose": {"label": "Editorial / Blog", "tag": "BLOG"}, "count": 431, "pct": 34.1, "examples": [{"title": "Building better AI: why human input matters at every step | Prolific", "url": "https://www.prolific.com/resources/building-better-ai-with-human-centered-development", "domain": "www.prolific.com", "audience": "both"}, {"title": "60 breakthroughs that relied on human participation | Prolific", "url": "https://www.prolific.com/resources/60-breakthroughs-that-relied-on-human-participation", "domain": "www.prolific.com", "audience": "both"}, {"title": "How to do market research | The complete guide | Prolific", "url": "https://www.prolific.com/resources/how-to-do-market-research-the-complete-guide", "domain": "www.prolific.com", "audience": "both"}, {"title": "9 AI trends to watch out for in 2023 | Prolific", "url": "https://www.prolific.com/resources/9-ai-trends-to-watch-out-for-in-2023", "domain": "www.prolific.com", "audience": "both"}, {"title": "Expert-validated data for enterprise AI development | Prolific", "url": "https://www.prolific.com/resources/building-enterprise-ai-a-guide-to-working-with-human-experts", "domain": "www.prolific.com", "audience": "both"}]}, {"label": "both", "index": 2, "keywords": ["handwriting", "tts", "handwritten", "handwriting_dataset", "markov", "training_set", "field_artificial", "field_ai", "system_design", "test_set", "dataset_contain", "application_service"], "purpose": {"label": "Client / Platform", "tag": "PLAT"}, "count": 0, "pct": 0.0, "examples": []}, {"label": "both", "index": 3, "keywords": ["cooky", "website", "service", "content", "customer", "marketing", "seo", "testing", "enable", "cooky_enable", "setting", "user"], "purpose": {"label": "Client / Platform", "tag": "PLAT"}, "count": 318, "pct": 25.2, "examples": [{"title": "Public Relation Service - clickworker", "url": "https://www.clickworker.com/press/", "domain": "www.clickworker.com", "audience": "both"}, {"title": "Login - Clickworker Workplace and Self-Service Marketplace", "url": "https://www.clickworker.com/login/", "domain": "www.clickworker.com", "audience": "both"}, {"title": "Terms & Privacy Policy at clickworker.com", "url": "https://www.clickworker.com/terms-privacy-policy/", "domain": "www.clickworker.com", "audience": "both"}, {"title": "mystery photographer - clickworker.com", "url": "https://www.clickworker.com/mysteryphotographer/", "domain": "www.clickworker.com", "audience": "both"}, {"title": "Web Research Jobs - clickworker.com", "url": "https://www.clickworker.com/web-research-jobs/", "domain": "www.clickworker.com", "audience": "both"}]}, {"label": "both", "index": 4, "keywords": ["superintelligence", "cognitive_ease", "general_intelligence", "agi", "alphago", "learning_method", "field_artificial", "learn_adapt", "cooperation", "ease", "watson", "common_example"], "purpose": {"label": "Worker / Earnings", "tag": "WORK"}, "count": 0, "pct": 0.0, "examples": []}, {"label": "both", "index": 5, "keywords": ["comedy", "tasker_nurse", "nurse_scientist", "javascript_product", "english_experience", "atheist", "soldier", "atheist_soldier", "product_designer", "python_javascript", "nurse", "fluent_english"], "purpose": {"label": "E-commerce", "tag": "SHOP"}, "count": 0, "pct": 0.0, "examples": []}, {"label": "both", "index": 6, "keywords": ["tool", "hire", "job", "manage", "platform", "project", "post_job", "label", "large", "annotation", "datum_label", "labeler"], "purpose": {"label": "Annotation / Tasks", "tag": "TASK"}, "count": 515, "pct": 40.7, "examples": [{"title": "Artificial Intelligence (AI) Definition | OpenTrain AI Glossary", "url": "https://www.opentrain.ai/glossary/artificial-intelligence-ai/", "domain": "www.opentrain.ai", "audience": "both"}, {"title": "Machine Learning (ML) Definition | OpenTrain AI Glossary", "url": "https://www.opentrain.ai/glossary/machine-learning-ml/", "domain": "www.opentrain.ai", "audience": "both"}, {"title": "Computational Intelligence Definition | OpenTrain AI Glossary", "url": "https://www.opentrain.ai/glossary/computational-intelligence/", "domain": "www.opentrain.ai", "audience": "both"}, {"title": "Multimodal Data Definition | OpenTrain AI Glossary", "url": "https://www.opentrain.ai/glossary/multimodal-data/", "domain": "www.opentrain.ai", "audience": "both"}, {"title": "Diagnosis Definition | OpenTrain AI Glossary", "url": "https://www.opentrain.ai/glossary/diagnosis/", "domain": "www.opentrain.ai", "audience": "both"}]}, {"label": "client", "index": 1, "keywords": ["model", "annotation", "human", "quality", "time", "data", "read", "dataset", "image", "customer", "machine", "company"], "purpose": {"label": "AI / Automation", "tag": "AI"}, "count": 3599, "pct": 73.9, "examples": [{"title": "Data Training - Digitaldividedata.com", "url": "https://www.digitaldividedata.com/blog/category/data-training", "domain": "www.digitaldividedata.com", "audience": "client"}, {"title": "AI Data Training Services - Digitaldividedata.com", "url": "https://www.digitaldividedata.com/blog/category/ai-data-training-services", "domain": "www.digitaldividedata.com", "audience": "client"}, {"title": "Data Quality - Digitaldividedata.com", "url": "https://www.digitaldividedata.com/blog/category/data-quality", "domain": "www.digitaldividedata.com", "audience": "client"}, {"title": "How To Design A Data Collection Strategy For AI Training - Digitaldivi", "url": "https://www.digitaldividedata.com/blog/data-collection-strategy-for-ai-training", "domain": "www.digitaldividedata.com", "audience": "client"}, {"title": "AI Data Training Services For Generative AI: Best Practices Challenges", "url": "https://www.digitaldividedata.com/blog/ai-data-training-services-for-generative-ai", "domain": "www.digitaldividedata.com", "audience": "client"}]}, {"label": "client", "index": 2, "keywords": ["annotation", "hub", "service", "case", "superannotate", "case_study", "annotation_service", "nvidia", "video", "databricks", "snowflake", "aws"], "purpose": {"label": "Annotation / Tasks", "tag": "TASK"}, "count": 296, "pct": 6.1, "examples": [{"title": "Medical AI Archives - iMerit", "url": "https://imerit.net/resources/blog/case-study-use-case/medical-ai/", "domain": "imerit.net", "audience": "client"}, {"title": "HEALTHCARE Archives - iMerit", "url": "https://imerit.net/resources/blog/case-study-category/healthcare/", "domain": "imerit.net", "audience": "client"}, {"title": "Image Annotation Archives - iMerit", "url": "https://imerit.net/resources/blog/case-study-use-case/image-annotation/", "domain": "imerit.net", "audience": "client"}, {"title": "New Archives - iMerit", "url": "https://imerit.net/resources/blog/case-study-layout/new/", "domain": "imerit.net", "audience": "client"}, {"title": "Ambient Scribe Archives - iMerit", "url": "https://imerit.net/resources/blog/case-study-use-case/ambient-scribe/", "domain": "imerit.net", "audience": "client"}]}, {"label": "client", "index": 3, "keywords": ["scale", "government", "product", "personal_datum", "guide", "enterprise_government", "demo", "book_demo", "public_sector", "applicant", "eligible", "salary"], "purpose": {"label": "E-commerce", "tag": "SHOP"}, "count": 189, "pct": 3.9, "examples": [{"title": "Staff Software Engineer, Enterprise GenAI | Careers | Scale AI | Scale", "url": "https://scale.com/careers/4569678005", "domain": "scale.com", "audience": "client"}, {"title": "Software Engineer, Full Stack \u2013 Scale GP | Careers | Scale AI | Scale ", "url": "https://scale.com/careers/4637485005", "domain": "scale.com", "audience": "client"}, {"title": "Revenue Operations Manager | Careers | Scale AI | Scale AI", "url": "https://scale.com/careers/4651538005", "domain": "scale.com", "audience": "client"}, {"title": "Strategic Projects Lead (Coding), Generative AI | Careers | Scale AI |", "url": "https://scale.com/careers/4526216005", "domain": "scale.com", "audience": "client"}, {"title": "Engineering Manager, GenAI | Careers | Scale AI | Scale AI", "url": "https://scale.com/careers/4661486005", "domain": "scale.com", "audience": "client"}]}, {"label": "client", "index": 4, "keywords": ["und", "die", "der", "zu", "sie", "von", "mit", "auf", "ber", "eine", "nnen", "ein"], "purpose": {"label": "General Content", "tag": "GEN"}, "count": 140, "pct": 2.9, "examples": [{"title": "Datenbeschriftungsdienste | Datenbeschriftungsunternehmen - Mindy Supp", "url": "https://mindy-support.com/de/services-post/datenbeschriftungsdienste/", "domain": "mindy-support.com", "audience": "client"}, {"title": "Customer Support Dienstleistung f\u00fcr einen Online-Marktplatz | Mindy Su", "url": "https://mindy-support.com/de/case-post/customer-support-dienstleistung-fuer-einen-online-marktplatz/", "domain": "mindy-support.com", "audience": "client"}, {"title": "ANNOTATION PERSONENBEZOGENER INFORMATIONEN IN 13 SPRACHEN | Mindy Supp", "url": "https://mindy-support.com/de/case-post/annotation-personenbezogener-informationen-in-13-sprachen/", "domain": "mindy-support.com", "audience": "client"}, {"title": "Datensammlung | Mindy Support Outsourcing", "url": "https://mindy-support.com/de/datensammlung/", "domain": "mindy-support.com", "audience": "client"}, {"title": "TRAINIEREN EINES KI-MODELLS ZUR KATEGORISIERUNG VON SPIELEBEWERTUNGEN ", "url": "https://mindy-support.com/de/case-post/trainieren-eines-ki-modells-zur-kategorisierung-von-spielebewertungen/", "domain": "mindy-support.com", "audience": "client"}]}, {"label": "client", "index": 5, "keywords": ["description", "duration", "session", "cooky", "youtube", "set", "user", "website", "yt_remote", "yt", "store", "month"], "purpose": {"label": "General Content", "tag": "GEN"}, "count": 369, "pct": 7.6, "examples": [{"title": "Prospitalia Group CEO Dr. Marcell Vollmer | Sama", "url": "https://www.sama.com/podcast/prospitalia-group-ceo-dr-marcell-vollmer", "domain": "www.sama.com", "audience": "client"}, {"title": "Adnan Khaleel: Speed vs. Accuracy | Sama", "url": "https://www.sama.com/podcast/adnan-khaleel-speed-vs-accuracy", "domain": "www.sama.com", "audience": "client"}, {"title": "An Ensemble Approach to Optimization with George Corugedo | Sama", "url": "https://www.sama.com/podcast/an-ensemble-approach-to-optimization-with-george-corugedo", "domain": "www.sama.com", "audience": "client"}, {"title": "Solving Supply & Demand in Healthcare with LeanTaaS CEO Mohan Giridhar", "url": "https://www.sama.com/podcast/podcast-episode-solving-supply-demand-in-healthcare-with-leantaas-ceo-mohan-giridharadas", "domain": "www.sama.com", "audience": "client"}, {"title": "Igor Susmelj: More Data is Not The Answer | Sama", "url": "https://www.sama.com/podcast/podcast-episode-igor-susmelj-more-data-is-not-the-answer", "domain": "www.sama.com", "audience": "client"}]}, {"label": "client", "index": 6, "keywords": ["speech", "transcription", "collection", "dataset", "wav", "datum_collection", "audio", "bit", "crowdworks", "khz", "file", "spontaneous"], "purpose": {"label": "General Content", "tag": "GEN"}, "count": 277, "pct": 5.7, "examples": [{"title": "Filipino accented English Podcasts", "url": "https://defined.ai/datasets/filipino-accented-english-podcasts", "domain": "defined.ai", "audience": "client"}, {"title": "Marathi Podcasts", "url": "https://defined.ai/datasets/marathi-podcasts-2", "domain": "defined.ai", "audience": "client"}, {"title": "Canadian English Podcasts", "url": "https://defined.ai/datasets/canadian-english-podcasts-1", "domain": "defined.ai", "audience": "client"}, {"title": "Norwegian Podcasts", "url": "https://defined.ai/datasets/norwegian-podcasts-2", "domain": "defined.ai", "audience": "client"}, {"title": "Dhundari Podcasts", "url": "https://defined.ai/datasets/dhundari-podcasts", "domain": "defined.ai", "audience": "client"}]}, {"label": "worker", "index": 1, "keywords": ["datum", "access", "level", "site", "datum_access", "high_level", "personal_datum", "personal", "rd", "data", "website", "profile"], "purpose": {"label": "General Content", "tag": "GEN"}, "count": 99, "pct": 11.4, "examples": [{"title": "Help Center | OneForma", "url": "https://www.oneforma.com/help-center/", "domain": "www.oneforma.com", "audience": "worker"}, {"title": "What To Do About Sudden Application Rejections | OneForma", "url": "https://www.oneforma.com/help-center/project-help/what-to-do-about-sudden-application-rejections/", "domain": "www.oneforma.com", "audience": "worker"}, {"title": "What To Do If It It's Been a While and Your Application is Still Pendi", "url": "https://www.oneforma.com/help-center/project-help/what-to-do-if-it-its-been-a-while-and-your-application-is-still-pending/", "domain": "www.oneforma.com", "audience": "worker"}, {"title": "I've Been Approved For a Project, But No One Has Contacted Me | OneFor", "url": "https://www.oneforma.com/help-center/project-help/ive-been-approved-for-a-project-but-no-one-has-contacted-me/", "domain": "www.oneforma.com", "audience": "worker"}, {"title": "How To Understand Project Approval Timelines | OneForma", "url": "https://www.oneforma.com/help-center/general-inquiries/how-to-understand-project-approval-timelines/", "domain": "www.oneforma.com", "audience": "worker"}]}, {"label": "worker", "index": 2, "keywords": ["ai", "work", "project", "model", "opportunity", "expert", "feb", "remote", "training", "apply", "datum", "quality"], "purpose": {"label": "AI / Automation", "tag": "AI"}, "count": 393, "pct": 45.1, "examples": [{"title": "10 Best Side Hustles for Developers To Earn Professional Rates", "url": "https://dataannotation.tech/developers/best-side-hustles-for-developers", "domain": "www.dataannotation.tech", "audience": "worker"}, {"title": "What are The Top Extra Income Options Available for Software Engineers", "url": "https://dataannotation.tech/developers/extra-income-for-software-engineers", "domain": "www.dataannotation.tech", "audience": "worker"}, {"title": "Which Premium Part-Time Work Can Experienced Engineers Explore for Mor", "url": "https://dataannotation.tech/developers/part-time-work-for-experienced-developers", "domain": "www.dataannotation.tech", "audience": "worker"}, {"title": "Which Flexible Side Jobs Can Software Engineers Explore for More Incom", "url": "https://dataannotation.tech/developers/side-jobs-for-software-developers", "domain": "www.dataannotation.tech", "audience": "worker"}, {"title": "How Data Annotation Powers Frontier Model Development", "url": "https://dataannotation.tech/blog/what-is-data-annotation", "domain": "www.dataannotation.tech", "audience": "worker"}]}, {"label": "worker", "index": 3, "keywords": ["enable", "website", "project", "microworker", "cooky", "campaign", "ai", "help", "faq", "faq_help", "help_desk", "desk"], "purpose": {"label": "Support / Help", "tag": "HELP"}, "count": 338, "pct": 38.8, "examples": [{"title": "Project A12863 \u2013 Get paid to record sentences in Pashto (ps-AE \ud83c\udde6\ud83c\uddea) \u2013 C", "url": "https://crowdgen.com/a12863-ps-ae/", "domain": "crowdgen.com", "audience": "worker"}, {"title": "Project Jigglypuff \u2013 Podcast Transcription (th-TH \ud83c\uddf9\ud83c\udded) \u2013 CrowdGen by Ap", "url": "https://crowdgen.com/jigglypuff-th-th/", "domain": "crowdgen.com", "audience": "worker"}, {"title": "Project A12270 \u2013 Review and record sentences in Kazakh \u2013 CrowdGen by A", "url": "https://crowdgen.com/a12270-ka-kz/", "domain": "crowdgen.com", "audience": "worker"}, {"title": "Project Garrus \u2013 Show AI what\u2019s funny or harmful in Arabic memes (ar-U", "url": "https://crowdgen.com/garrus-ar-uae-push/", "domain": "crowdgen.com", "audience": "worker"}, {"title": "Project Jigglypuff \u2013 Podcast Transcription (ru-KZ \ud83c\uddf0\ud83c\uddff) \u2013 CrowdGen by Ap", "url": "https://crowdgen.com/jigglypuff-ru-kz/", "domain": "crowdgen.com", "audience": "worker"}]}, {"label": "worker", "index": 4, "keywords": ["sampling", "dataannotation", "north_america", "ng", "philippines", "und", "sie", "ai", "nucleus", "nucleus_sampling", "matter", "token_selection"], "purpose": {"label": "Annotation / Tasks", "tag": "TASK"}, "count": 30, "pct": 3.4, "examples": [{"title": "DataAnnotation - Taiwan", "url": "https://dataannotation.tech/taiwan-bilingual", "domain": "www.dataannotation.tech", "audience": "worker"}, {"title": "DataAnnotation - Arabic (AE)", "url": "https://dataannotation.tech/arabic-ae-bilingual", "domain": "www.dataannotation.tech", "audience": "worker"}, {"title": "DataAnnotation - Hindi", "url": "https://dataannotation.tech/hindi-bilingual", "domain": "www.dataannotation.tech", "audience": "worker"}, {"title": "DataAnnotation - Russian", "url": "https://dataannotation.tech/russian-bilingual", "domain": "www.dataannotation.tech", "audience": "worker"}, {"title": "DataAnnotation - Ukrainian", "url": "https://dataannotation.tech/ukrainian-bilingual", "domain": "www.dataannotation.tech", "audience": "worker"}]}, {"label": "worker", "index": 5, "keywords": ["du", "og", "hr_remote", "remote_apply", "zara", "arbitration", "som", "shall", "til", "med", "din", "clause"], "purpose": {"label": "General Content", "tag": "GEN"}, "count": 6, "pct": 0.7, "examples": [{"title": "Remotasks", "url": "https://www.remotasks.com/en/legal/eu-dataprocessing", "domain": "www.remotasks.com", "audience": "worker"}, {"title": "Data Processing Addendum & Terms of Use - Outlier AI", "url": "https://outlier.ai/legal/data-processing-addendum", "domain": "outlier.ai", "audience": "worker"}, {"title": "DataAnnotation - Danish", "url": "https://dataannotation.tech/danish-bilingual", "domain": "www.dataannotation.tech", "audience": "worker"}, {"title": "DataAnnotation - Norwegian", "url": "https://dataannotation.tech/norwegian-bilingual", "domain": "www.dataannotation.tech", "audience": "worker"}, {"title": "User Agreement", "url": "https://mindrift.ai/legal/user-agreement-january-2025", "domain": "mindrift.ai", "audience": "worker"}]}, {"label": "worker", "index": 6, "keywords": ["remotely", "earn", "withdraw_earning", "earning", "work", "earn_remotely", "withdraw", "set_account", "preferred", "friendly_guide", "user_friendly", "yes"], "purpose": {"label": "Worker / Earnings", "tag": "WORK"}, "count": 5, "pct": 0.6, "examples": [{"title": "CrowdGen by Appen", "url": "https://crowdgen.com/test/", "domain": "crowdgen.com", "audience": "worker"}, {"title": "Project Mint \u2013 Italy STEM IQA Validator (Biology) \u2013 push \u2013 CrowdGen by", "url": "https://crowdgen.com/mint-italy-biology-push/", "domain": "crowdgen.com", "audience": "worker"}, {"title": "Frank code test \u2013 CrowdGen by Appen", "url": "https://crowdgen.com/code-test-frank/", "domain": "crowdgen.com", "audience": "worker"}, {"title": "Project Mint \u2013 French STEM IQA Validator (Multi-domain) \u2013 CrowdGen by ", "url": "https://crowdgen.com/mint-french-general/", "domain": "crowdgen.com", "audience": "worker"}, {"title": "Project Mint \u2013 German STEM IQA Validator (Math) B \u2013 CrowdGen by Appen", "url": "https://crowdgen.com/mint-mathematics-b/", "domain": "crowdgen.com", "audience": "worker"}]}], "domain_topic_matrix": [{"domain": "crowdgen.com", "dist": [0.13432089464839783, 0.7795098558109719, 0.021214490645422707, 0.027319842071697083, 0.01870435294330752, 0.01893056388020295], "n": 6}, {"domain": "defined.ai", "dist": [0.45183059064719144, 0.029448727261761738, 0.45916248997261744, 0.020441048716927222, 0.01870412824417397, 0.02041301515732858], "n": 6}, {"domain": "flipside.ai", "dist": [0.848391914420064, 0.030308911074223135, 0.030299250828589804, 0.030084902816617312, 0.030006782120096297, 0.030908238740409273], "n": 6}, {"domain": "humansintheloop.org", "dist": [0.905541209714447, 0.01737748295313656, 0.017593146489666915, 0.020770627787638846, 0.018692133864714956, 0.02002539919039476], "n": 6}, {"domain": "imerit.net", "dist": [0.9197638864661822, 0.015696730982339265, 0.016810939371652747, 0.01545592484078769, 0.016039987362505188, 0.01623253097653369], "n": 6}, {"domain": "joinstellar.ai", "dist": [0.7464208879018811, 0.01990977042858756, 0.06357456830079751, 0.01832121261507281, 0.0180913100366281, 0.133682250717033], "n": 6}, {"domain": "mindrift.ai", "dist": [0.5267319812990754, 0.017574243426177163, 0.3870554568973099, 0.02497761817683941, 0.01479924212299958, 0.028861458077598146], "n": 6}, {"domain": "mindy-support.com", "dist": [0.4609428978010515, 0.016816138001611747, 0.018460057926950695, 0.19022421182516658, 0.0162108154265559, 0.29734587901866444], "n": 6}, {"domain": "outlier.ai", "dist": [0.6634310741406484, 0.022528847697409662, 0.26130769765498885, 0.016813799595011607, 0.014953022527581409, 0.020965558384360233], "n": 6}, {"domain": "remoter.me", "dist": [0.45894592046892274, 0.3267839540559589, 0.04023063572608812, 0.0870066336068782, 0.04226402136735591, 0.044768834774796096], "n": 6}, {"domain": "scale.com", "dist": [0.914450076719271, 0.016691524327989364, 0.01748626412640279, 0.016756860952746172, 0.01609777766902074, 0.01851749620457082], "n": 6}, {"domain": "toloka.ai", "dist": [0.7550526333219383, 0.02865870333299429, 0.1312509446785687, 0.03266351243590911, 0.016520830090250453, 0.03585337614033913], "n": 6}, {"domain": "www.abaka.ai", "dist": [0.9211766177221657, 0.014662284589875254, 0.01723896545695713, 0.014989944004012351, 0.0164163685564321, 0.015515819670557334], "n": 6}, {"domain": "www.alignerr.com", "dist": [0.5100160474853436, 0.271960598499055, 0.0827595943426322, 0.0834245076734963, 0.02657679182110626, 0.0252624601783665], "n": 6}, {"domain": "www.appen.com", "dist": [0.9118452162728098, 0.017556357420587795, 0.020661290131990206, 0.01653834050640523, 0.01571584282391862, 0.017682952844288388], "n": 6}, {"domain": "www.clickworker.com", "dist": [0.25830069645105175, 0.012605541026437548, 0.01263944912614382, 0.011832541829514844, 0.011434366617227897, 0.6931874049496236], "n": 6}, {"domain": "www.cloudfactory.com", "dist": [0.9300046642849352, 0.013736078744479813, 0.013757198527600939, 0.014163993775036784, 0.014112199395097625, 0.014225865272849955], "n": 6}, {"domain": "www.crowdworks.ai", "dist": [0.5080664637375909, 0.040951232707311165, 0.159247358075364, 0.10901372224998043, 0.03479620980460642, 0.1479250134251471], "n": 6}, {"domain": "www.dataannotation.tech", "dist": [0.6892879715193128, 0.22412462740975722, 0.02208827419021219, 0.029732191152135684, 0.017491369389229766, 0.017275566339352486], "n": 6}, {"domain": "www.digitaldividedata.com", "dist": [0.9239815071674689, 0.014833842259190884, 0.014875735895054183, 0.015613855283905465, 0.01493485648911648, 0.015760202905264076], "n": 6}, {"domain": "www.lxt.ai", "dist": [0.71291151133196, 0.014937430637814915, 0.22545433030549858, 0.015917244008904066, 0.015381365973523253, 0.015398117742299294], "n": 6}, {"domain": "www.microworkers.com", "dist": [0.8743710325272323, 0.03150005234284251, 0.0233876345431159, 0.020716779994721927, 0.021114092302228233, 0.02891040828985913], "n": 6}, {"domain": "www.mturk.com", "dist": [0.9332302785241117, 0.012058622983280141, 0.012072970407699198, 0.01202043291847092, 0.0185249675152973, 0.012092727651140904], "n": 6}, {"domain": "www.oneforma.com", "dist": [0.38727167466474116, 0.024392787904145008, 0.12642128081567924, 0.42291506185199135, 0.017678294382748694, 0.021320900380694254], "n": 6}, {"domain": "www.opentrain.ai", "dist": [0.033545987900498245, 0.009665169788488448, 0.009828110736483783, 0.00973332722245214, 0.9271963038556205, 0.010031100496457206], "n": 6}, {"domain": "www.prolific.com", "dist": [0.9120051847472717, 0.01836922022250212, 0.017223752689845852, 0.01683360673477138, 0.018771871924031208, 0.016796363681577706], "n": 6}, {"domain": "www.remotasks.com", "dist": [0.6476314917649968, 0.12432767125070548, 0.07135679805873299, 0.11543306285009461, 0.02022152985908208, 0.021029446216388005], "n": 6}, {"domain": "www.sama.com", "dist": [0.09673253031369392, 0.010664781263648792, 0.011320916357515544, 0.010911608797684031, 0.0107406794011997, 0.8596294838662576], "n": 6}, {"domain": "www.superannotate.com", "dist": [0.4996298496337347, 0.012132910282815886, 0.4478884414337895, 0.012663529582497605, 0.012966927452728568, 0.01471834161443366], "n": 6}, {"domain": "www.telusinternational.ai", "dist": [0.722823070990739, 0.03136259784787624, 0.20807922339456694, 0.012396689213059094, 0.012491107255773305, 0.012847311297985517], "n": 6}], "filter_stats": {"before": 7529, "after": 7012, "removed": 517, "thresholds": {"min_tokens": 80, "min_bytes": 500, "depth_range": "0\u20135"}}};
+
+const ACC='#c8f060',ACC2='#60c8f0',ACC3='#f060c8',ACC4='#f0c860';
+const MUTED='#6b7280',BDR='#252a38';
+const PAL=['#c8f060','#60c8f0','#f060c8','#f0c860','#60f0c8','#c860f0','#f08060','#60f080'];
+
+Chart.defaults.color=MUTED;
+Chart.defaults.borderColor=BDR;
+Chart.defaults.font.family="'DM Mono', monospace";
+Chart.defaults.font.size=11;
+
+// ── stamps ────────────────────────────────────────────────────────────────
+const now=new Date();
+document.getElementById('meta-stamp').innerHTML=
+  `Generated<br>${now.toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'})}<br>`+
+  `${now.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'})}`;
+document.getElementById('footer-stamp').textContent=
+  `${D.n_pages.toLocaleString()} pages · ${D.n_sites} sites · ${D.total_mb.toFixed(2)} MB`;
+
+const srcEl=document.getElementById('topic-src');
+if(D.topic_source&&D.topic_source.includes('tfidf')){
+  srcEl.textContent='pages_tfidf — lemmatized · boilerplate filtered · stratified by audience';
+  srcEl.style.color='var(--acc)';
+}else{
+  srcEl.textContent='raw text — run preprocess.py for cleaner topics';
+  srcEl.style.color='var(--acc3)';
+}
+
+// ── overview stats ────────────────────────────────────────────────────────
+const topicCount=D.topics.length;
+[
+  [D.n_sites,                        'websites'     ],
+  [D.n_pages.toLocaleString(),        'pages scraped'],
+  [D.n_links.toLocaleString(),        'links found'  ],
+  [D.total_mb.toFixed(1)+' MB',       'total content'],
+  [topicCount,                        'topics found' ],
+].forEach(([v,l])=>{
+  document.getElementById('stat-row').innerHTML+=
+    `<div class="stat-cell"><div class="stat-val">${v}</div><div class="stat-lbl">${l}</div></div>`;
+});
+
+// ── filter banner ─────────────────────────────────────────────────────────
+if(D.filter_stats&&D.filter_stats.before){
+  const fs=D.filter_stats;
+  const pct=((fs.removed/fs.before)*100).toFixed(1);
+  document.getElementById('filter-banner-wrap').innerHTML=`
+  <div class="filter-banner">
+    <strong>Structural filter applied</strong>
+    <div class="filter-stat"><span>${fs.before.toLocaleString()}</span><span>pages before filter</span></div>
+    <div class="filter-stat"><span style="color:var(--acc)">${fs.after.toLocaleString()}</span><span>pages modeled</span></div>
+    <div class="filter-stat"><span style="color:var(--acc3)">${fs.removed.toLocaleString()} (${pct}%)</span><span>removed as stubs / boilerplate</span></div>
+    <div class="filter-stat"><span>${fs.thresholds.min_tokens} tokens</span><span>min token count</span></div>
+    <div class="filter-stat"><span>${fs.thresholds.min_bytes} B</span><span>min content size</span></div>
+    <div class="filter-stat"><span>depth ${fs.thresholds.depth_range}</span><span>URL depth range</span></div>
+  </div>`;
+}
+
+// ── site table ────────────────────────────────────────────────────────────
+const maxP=Math.max(...D.sites.map(s=>s.n_pages),1);
+const tbl=document.getElementById('site-table');
+tbl.innerHTML=`<thead><tr>
+  <th>Domain</th><th>Type</th><th>Pages</th><th style="width:130px"></th>
+  <th>Avg depth</th><th>Avg KB</th><th>Total MB</th>
+</tr></thead>`;
+const tb=document.createElement('tbody');
+D.sites.forEach(s=>{
+  tb.innerHTML+=`<tr>
+    <td><span class="dp">${s.domain}</span></td>
+    <td><span class="tb">${s.website_type||'n/a'}</span></td>
+    <td class="nm">${s.n_pages.toLocaleString()}</td>
+    <td><div class="mb"><div class="mf" style="width:${s.n_pages/maxP*100}%"></div></div></td>
+    <td class="nm">${s.avg_depth.toFixed(1)}</td>
+    <td class="nm">${(s.avg_len/1024).toFixed(1)}</td>
+    <td class="nm">${(s.total_len/1e6).toFixed(2)}</td>
+  </tr>`;
+});
+tbl.appendChild(tb);
+
+// ── chart helpers ─────────────────────────────────────────────────────────
+function bar(id,labels,values,color,horiz=false){
+  new Chart(document.getElementById(id),{
+    type:'bar',
+    data:{labels,datasets:[{data:values,backgroundColor:color+'33',borderColor:color,borderWidth:1,borderRadius:3}]},
+    options:{indexAxis:horiz?'y':'x',responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{display:false}},
+      scales:{x:{grid:{color:BDR},ticks:{color:MUTED}},y:{grid:{color:BDR},ticks:{color:MUTED}}}}
+  });
+}
+function donut(id,labels,values){
+  new Chart(document.getElementById(id),{
+    type:'doughnut',
+    data:{labels,datasets:[{data:values,backgroundColor:PAL.map(c=>c+'55'),borderColor:PAL,borderWidth:1,hoverOffset:6}]},
+    options:{responsive:true,maintainAspectRatio:false,cutout:'62%',
+      plugins:{legend:{position:'right',labels:{boxWidth:10,padding:12,color:MUTED,font:{size:10}}}}}
+  });
+}
+
+if(D.depth_dist.length)  bar('depthChart',D.depth_dist.map(d=>'depth '+d[0]),D.depth_dist.map(d=>d[1]),ACC2);
+if(D.len_buckets.length) bar('lenChart',D.len_buckets.map(b=>b.label),D.len_buckets.map(b=>b.count),ACC);
+if(D.top_segments.length)bar('segChart',D.top_segments.map(s=>s[0]),D.top_segments.map(s=>s[1]),ACC3,true);
+if(D.status_codes.length)donut('statusChart',D.status_codes.map(s=>s.code),D.status_codes.map(s=>s.count));
+
+// ── audience-stratified topic sections ────────────────────────────────────
+const audiences=[...new Set(D.topics.map(t=>t.label))].sort();
+const tabsEl=document.getElementById('aud-tabs');
+const sectEl=document.getElementById('topic-sections');
+
+const audColors={'worker':'var(--acc)','client':'var(--acc3)','all':'var(--acc2)'};
+
+audiences.forEach((aud,ai)=>{
+  // tab
+  const tab=document.createElement('button');
+  tab.className='aud-tab'+(ai===0?' active':'');
+  tab.dataset.aud=aud;
+  const audTopics=D.topics.filter(t=>t.label===aud);
+  tab.innerHTML=`${aud} <span style="opacity:.5">${audTopics.length} topics</span>`;
+  tab.style.setProperty('--tab-color', audColors[aud]||ACC2);
+  tabsEl.appendChild(tab);
+
+  // grid section
+  const section=document.createElement('div');
+  section.className='tg a'+(ai===0?'':' hidden');
+  section.id='tg-'+aud;
+  section.style.animationDelay='.4s';
+
+  audTopics.forEach((t,i)=>{
+    const kws=t.keywords.map((w,j)=>`<span class="kw ${j===0?'k0':j===1?'k1':''}">${w}</span>`).join('');
+    const exs=t.examples.map(e=>{
+      const aC=e.audience==='worker'?'worker':e.audience==='client'?'client':'';
+      const aBadge=e.audience?`<span class="aud-badge ${aC}">${e.audience}</span>`:'';
+      return `<div class="ex-item" title="${e.url}">${aBadge}<a href="${e.url}" target="_blank">${e.title||e.url}</a></div>`;
+    }).join('');
+    section.innerHTML+=`
+    <div class="tc" data-num="${t.index}">
+      <div class="tc-head">
+        <span class="tc-tag">${t.purpose.tag}</span>
+        <span class="tc-purpose">${t.purpose.label}</span>
+        <span class="tc-pct">${t.pct}%</span>
+      </div>
+      <div class="kws">${kws}</div>
+      <div class="ex">
+        <div class="ex-lbl">Top pages</div>
+        ${exs}
+      </div>
+    </div>`;
+  });
+  sectEl.appendChild(section);
+});
+
+// tab switching
+tabsEl.addEventListener('click',e=>{
+  const btn=e.target.closest('.aud-tab');
+  if(!btn) return;
+  tabsEl.querySelectorAll('.aud-tab').forEach(t=>t.classList.remove('active'));
+  btn.classList.add('active');
+  audiences.forEach(a=>{
+    const el=document.getElementById('tg-'+a);
+    if(el) el.classList.toggle('hidden', a!==btn.dataset.aud);
+  });
+});
+
+// ── heatmap ───────────────────────────────────────────────────────────────
+if(D.domain_topic_matrix.length){
+  const nT=D.domain_topic_matrix[0].dist.length;
+  const ht=document.getElementById('heatmap');
+  ht.innerHTML=`<thead><tr><th>Domain</th>${Array.from({length:nT},(_,i)=>`<th>T${i+1}</th>`).join('')}</tr></thead>`;
+  const colMax=Array(nT).fill(0);
+  D.domain_topic_matrix.forEach(r=>r.dist.forEach((v,j)=>{if(v>colMax[j])colMax[j]=v;}));
+  const htb=document.createElement('tbody');
+  D.domain_topic_matrix.forEach(row=>{
+    const cells=row.dist.map((v,j)=>{
+      const norm=colMax[j]?v/colMax[j]:0;
+      const alpha=Math.round(norm*180).toString(16).padStart(2,'0');
+      const fg=norm>.55?'#0d0f14':MUTED;
+      return `<td style="background:${PAL[j%PAL.length]+alpha};color:${fg}">${v.toFixed(2)}</td>`;
+    }).join('');
+    htb.innerHTML+=`<tr><td>${row.domain}</td>${cells}</tr>`;
+  });
+  ht.appendChild(htb);
+}
+// ══════════════════════════════════════════════════════════════════
+// WORD LANDSCAPE — animated canvas word cloud with physics
+// ══════════════════════════════════════════════════════════════════
+(function(){
+  if(!D.topics.length) return;
+
+  const bgCvs   = document.getElementById('wc-bg');
+  const cvs     = document.getElementById('wc-main');
+  const picker  = document.getElementById('wc-picker');
+  const legend  = document.getElementById('wc-legend');
+  const tooltip = document.getElementById('wc-tooltip');
+
+  // Per-topic palette — cycling through accent family
+  const T_COLORS = [
+    ['#c8f060','#a8d040','#88b020'],  // lime
+    ['#60c8f0','#40a8d0','#2088b0'],  // cyan
+    ['#f060c8','#d040a8','#b02088'],  // pink
+    ['#f0c860','#d0a840','#b08820'],  // gold
+    ['#60f0c8','#40d0a8','#20b088'],  // teal
+    ['#c860f0','#a840d0','#8820b0'],  // purple
+    ['#f08060','#d06040','#b04020'],  // orange
+    ['#60f080','#40d060','#20b040'],  // green
+  ];
+
+  // Assign a stable color palette per topic across all audiences
+  const topicColorMap = {};
+  D.topics.forEach((t,i)=>{
+    topicColorMap[`${t.label}_${t.index}`] = T_COLORS[i % T_COLORS.length];
+  });
+
+  // ── Word node class ────────────────────────────────────────────
+  class WordNode {
+    constructor(word, rank, topicIdx, colors, cx, cy, radius, angle){
+      this.word     = word;
+      this.rank     = rank;          // 0 = highest weight
+      this.colors   = colors;
+      this.topicIdx = topicIdx;
+      // font size: rank 0 → 32px, rank N → 11px
+      this.fontSize = Math.max(11, 32 - rank * 1.8);
+      // orbit radius with jitter
+      this.orbitR   = radius + (Math.random()-0.5)*28;
+      this.baseAngle= angle;
+      this.angle    = angle;
+      // slow individual drift speed
+      this.speed    = (0.00015 + Math.random()*0.00025) * (Math.random()<0.5?1:-1);
+      // gentle float offset
+      this.floatPhase = Math.random()*Math.PI*2;
+      this.floatAmp   = 2 + Math.random()*4;
+      // target & current position
+      this.tx = cx + Math.cos(angle)*this.orbitR;
+      this.ty = cy + Math.sin(angle)*this.orbitR;
+      this.x  = this.tx; this.y = this.ty;
+      this.cx = cx; this.cy = cy;
+      // interaction
+      this.alpha    = 0;
+      this.targeted = false;
+    }
+    update(t, cx, cy){
+      this.cx = cx; this.cy = cy;
+      this.angle += this.speed;
+      const float = Math.sin(t*0.0008 + this.floatPhase) * this.floatAmp;
+      this.tx = cx + Math.cos(this.angle)*this.orbitR;
+      this.ty = cy + Math.sin(this.angle)*this.orbitR + float;
+      // smooth lerp toward target
+      this.x += (this.tx - this.x) * 0.04;
+      this.y += (this.ty - this.y) * 0.04;
+      // fade in
+      this.alpha = Math.min(1, this.alpha + 0.015);
+    }
+    draw(ctx, hovered){
+      const a    = hovered===this ? 1 : (hovered ? 0.25 : this.alpha);
+      const col  = this.colors[Math.min(this.rank<3?0:this.rank<7?1:2, 2)];
+      ctx.save();
+      ctx.globalAlpha = a;
+      ctx.font        = `${this.rank<2?'500':'400'} ${this.fontSize}px 'DM Mono', monospace`;
+      ctx.fillStyle   = col;
+      // subtle glow for top words
+      if(this.rank < 3 && hovered !== this){
+        ctx.shadowColor = col;
+        ctx.shadowBlur  = 8;
+      }
+      if(hovered===this){
+        ctx.shadowColor = col;
+        ctx.shadowBlur  = 20;
+      }
+      ctx.textAlign    = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText(this.word, this.x, this.y);
+      ctx.restore();
+    }
+    // axis-aligned bounding box for hit testing
+    bbox(ctx){
+      ctx.font = `${this.fontSize}px 'DM Mono', monospace`;
+      const w  = ctx.measureText(this.word).width;
+      const h  = this.fontSize;
+      return {x:this.x-w/2, y:this.y-h/2, w, h};
+    }
+    contains(mx, my, ctx){
+      const b = this.bbox(ctx);
+      return mx>=b.x && mx<=b.x+b.w && my>=b.y && my<=b.y+b.h;
+    }
+  }
+
+  // ── Background renderer — constellation lines ──────────────────
+  function drawBackground(ctx, W, H, nodes, time){
+    ctx.clearRect(0,0,W,H);
+    // draw faint connector lines between nearby words of same topic
+    nodes.forEach((a,i)=>{
+      nodes.slice(i+1).forEach(b=>{
+        if(a.topicIdx!==b.topicIdx) return;
+        const dx=a.x-b.x, dy=a.y-b.y;
+        const d =Math.sqrt(dx*dx+dy*dy);
+        if(d>160) return;
+        const alpha=(1-d/160)*0.06*Math.min(a.alpha,b.alpha);
+        ctx.beginPath();
+        ctx.moveTo(a.x,a.y);
+        ctx.lineTo(b.x,b.y);
+        ctx.strokeStyle=a.colors[0];
+        ctx.globalAlpha=alpha;
+        ctx.lineWidth=1;
+        ctx.stroke();
+        ctx.globalAlpha=1;
+      });
+    });
+  }
+
+  // ── Layout builder ─────────────────────────────────────────────
+  function buildNodes(topics, W, H){
+    const nodes  = [];
+    const nT     = topics.length;
+    // place topic centres in a circle around the canvas centre
+    const cx0=W/2, cy0=H/2;
+    const layoutR = Math.min(W,H)*0.28;
+
+    topics.forEach((t,ti)=>{
+      const key    = `${t.label}_${t.index}`;
+      const colors = topicColorMap[key] || T_COLORS[ti%T_COLORS.length];
+      // centre of this topic cluster
+      const tAngle = (ti/nT)*Math.PI*2 - Math.PI/2;
+      const tcx    = nT===1 ? cx0 : cx0+Math.cos(tAngle)*layoutR;
+      const tcy    = nT===1 ? cy0 : cy0+Math.sin(tAngle)*layoutR;
+      const wordR  = Math.min(W,H)*(nT===1?0.36:0.22);
+
+      t.keywords.forEach((word,rank)=>{
+        // distribute words in a spiral around cluster centre
+        const wAngle = (rank/t.keywords.length)*Math.PI*2 + ti*(Math.PI*0.37);
+        const r      = wordR*(0.3 + (rank/t.keywords.length)*0.7);
+        nodes.push(new WordNode(word,rank,ti,colors,tcx,tcy,r,wAngle));
+      });
+    });
+    return nodes;
+  }
+
+  // ── State ──────────────────────────────────────────────────────
+  let activeTopics = [];
+  let nodes        = [];
+  let hoveredNode  = null;
+  let animId       = null;
+  let startTime    = performance.now();
+
+  function resize(){
+    const rect = cvs.parentElement.getBoundingClientRect();
+    const W=rect.width, H=rect.height;
+    [cvs, bgCvs].forEach(c=>{ c.width=W; c.height=H; });
+    nodes = buildNodes(activeTopics, W, H);
+  }
+
+  function loop(ts){
+    animId = requestAnimationFrame(loop);
+    const W=cvs.width, H=cvs.height;
+    if(!W||!H) return;
+    const t=ts-startTime;
+    const cx=W/2, cy=H/2;
+
+    // update
+    nodes.forEach(n=>n.update(t,
+      activeTopics.length===1 ? cx : n.cx,
+      activeTopics.length===1 ? cy : n.cy
+    ));
+
+    // draw bg (connection lines) — throttled
+    if(Math.round(t/16)%3===0){
+      const bgCtx=bgCvs.getContext('2d');
+      drawBackground(bgCtx,W,H,nodes,t);
+    }
+
+    // draw words
+    const ctx=cvs.getContext('2d');
+    ctx.clearRect(0,0,W,H);
+    // draw non-hovered first, hovered on top
+    nodes.filter(n=>n!==hoveredNode).forEach(n=>n.draw(ctx,hoveredNode));
+    if(hoveredNode) hoveredNode.draw(ctx,hoveredNode);
+  }
+
+  // ── Mouse interaction ──────────────────────────────────────────
+  cvs.addEventListener('mousemove',e=>{
+    const r=cvs.getBoundingClientRect();
+    const mx=(e.clientX-r.left)*(cvs.width/r.width);
+    const my=(e.clientY-r.top)*(cvs.height/r.height);
+    const ctx=cvs.getContext('2d');
+    const hit=nodes.find(n=>n.contains(mx,my,ctx))||null;
+    if(hit!==hoveredNode){
+      hoveredNode=hit;
+      cvs.style.cursor=hit?'pointer':'default';
+    }
+    if(hit){
+      const rank=hit.rank+1;
+      tooltip.style.opacity='1';
+      tooltip.style.left=(e.clientX-cvs.getBoundingClientRect().left+14)+'px';
+      tooltip.style.top =(e.clientY-cvs.getBoundingClientRect().top -10)+'px';
+      tooltip.textContent=`${hit.word}  ·  rank #${rank} in topic`;
+    } else {
+      tooltip.style.opacity='0';
+    }
+  });
+  cvs.addEventListener('mouseleave',()=>{
+    hoveredNode=null;
+    tooltip.style.opacity='0';
+    cvs.style.cursor='default';
+  });
+
+  // ── Topic picker ───────────────────────────────────────────────
+  function setActive(selectedTopics){
+    activeTopics=selectedTopics;
+    resize();
+    buildLegend(selectedTopics);
+  }
+
+  function buildLegend(topics){
+    legend.innerHTML='';
+    topics.forEach((t,i)=>{
+      const key=`${t.label}_${t.index}`;
+      const col=(topicColorMap[key]||T_COLORS[i%T_COLORS.length])[0];
+      const item=document.createElement('div');
+      item.className='wc-legend-item';
+      item.innerHTML=`<div class="wc-legend-dot" style="background:${col}"></div>
+        <span>${t.label} · T${t.index} · ${t.purpose.label}</span>`;
+      legend.appendChild(item);
+    });
+  }
+
+  // Build "All" + individual topic buttons
+  const allBtn=document.createElement('button');
+  allBtn.className='wc-btn active';
+  allBtn.textContent='All topics';
+  allBtn.onclick=()=>{
+    picker.querySelectorAll('.wc-btn').forEach(b=>b.classList.remove('active'));
+    allBtn.classList.add('active');
+    setActive(D.topics);
+  };
+  picker.appendChild(allBtn);
+
+  // Group by audience for labelling
+  const audGroups={};
+  D.topics.forEach(t=>{
+    if(!audGroups[t.label]) audGroups[t.label]=[];
+    audGroups[t.label].push(t);
+  });
+
+  // Audience group buttons
+  Object.entries(audGroups).forEach(([aud,tList])=>{
+    if(Object.keys(audGroups).length>1){
+      const gb=document.createElement('button');
+      gb.className='wc-btn';
+      gb.textContent=aud;
+      gb.onclick=()=>{
+        picker.querySelectorAll('.wc-btn').forEach(b=>b.classList.remove('active'));
+        gb.classList.add('active');
+        setActive(tList);
+      };
+      picker.appendChild(gb);
+    }
+    // Individual topic buttons
+    tList.forEach(t=>{
+      const key=`${t.label}_${t.index}`;
+      const col=(topicColorMap[key]||T_COLORS[0])[0];
+      const btn=document.createElement('button');
+      btn.className='wc-btn';
+      btn.style.borderColor=col+'55';
+      btn.innerHTML=`<span style="color:${col}">${t.purpose.tag}</span> ${t.label}·T${t.index}`;
+      btn.onclick=()=>{
+        picker.querySelectorAll('.wc-btn').forEach(b=>b.classList.remove('active'));
+        btn.classList.add('active');
+        setActive([t]);
+      };
+      picker.appendChild(btn);
+    });
+  });
+
+  // ── Init ───────────────────────────────────────────────────────
+  window.addEventListener('resize',()=>{ if(activeTopics.length) resize(); });
+  // Defer until element in viewport for perf
+  const obs=new IntersectionObserver(entries=>{
+    if(entries[0].isIntersecting){
+      obs.disconnect();
+      setActive(D.topics);
+      animId=requestAnimationFrame(loop);
+    }
+  },{threshold:0.1});
+  obs.observe(cvs.parentElement);
+})();
+</script>
+</body>
+</html>
