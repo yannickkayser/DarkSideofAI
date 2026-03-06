@@ -13,6 +13,7 @@ Improvements over previous version:
   - Coherence-guided topic count: tries N=4..10, picks the elbow on CV coherence
     (falls back to N_TOPICS if gensim is unavailable).
 
+
 Usage: python analyze_db.py <path_to_database.db> [output.html]
 """
 import sqlite3
