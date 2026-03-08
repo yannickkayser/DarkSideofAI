@@ -7,3 +7,7 @@
 2026-02-28 02:41:27 - scraper.www.telusinternational.com - INFO - Starting scrape: https://www.telusinternational.com
 2026-02-28 02:41:46 - scraper.www.telusinternational.com - INFO - ✓ VALIDATION PASSED: https://www.telusinternational.com: All validations passed
 2026-02-28 02:41:46 - scraper.www.telusinternational.com - INFO - ✓ SUCCESS: https://www.telusinternational.com | Status: 403 | Size: 33140 bytes
+2026-03-08 23:55:12 - scraper.www.telusinternational.com - INFO - Starting scrape of TELUS International AI Data Solutions
+2026-03-08 23:55:18 - scraper.www.telusinternational.com - INFO - Starting scrape: https://www.telusinternational.com
+2026-03-08 23:55:38 - scraper.www.telusinternational.com - INFO - ✓ VALIDATION PASSED: https://www.telusinternational.com: All validations passed
+2026-03-08 23:55:38 - scraper.www.telusinternational.com - INFO - ✓ SUCCESS: https://www.telusinternational.com | Status: 403 | Size: 32938 bytes

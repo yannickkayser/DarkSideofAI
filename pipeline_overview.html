@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Computational Grounded Theory — Three-Step Pipeline</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink:       #0f0e0d;
+    --paper:     #f5f2ed;
+    --paper2:    #ede9e2;
+    --rule:      #c8c0b4;
+    --rule-lt:   #ddd8d0;
+    --s1:        #1a3a5c;   /* step 1 — deep navy */
+    --s1-lt:     #e8eef5;
+    --s1-mid:    #4a7aab;
+    --s2:        #2d5016;   /* step 2 — forest */
+    --s2-lt:     #eaf2e6;
+    --s2-mid:    #5a8a38;
+    --s3:        #5c1a1a;   /* step 3 — deep crimson */
+    --s3-lt:     #f5e8e8;
+    --s3-mid:    #aa4040;
+    --hyp:       #3d2b00;   /* hypothesis thread — dark amber */
+    --hyp-lt:    #fdf3dc;
+    --hyp-mid:   #c8860a;
+    --mono:      'DM Mono', monospace;
+    --serif:     'DM Serif Display', serif;
+    --sans:      'Instrument Sans', sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 13px;
+    line-height: 1.55;
+    padding: 48px 32px 80px;
+  }
+
+  /* ── Page header ── */
+  .page-header {
+    max-width: 960px;
+    margin: 0 auto 56px;
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 24px;
+  }
+  .page-header .eyebrow {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  .page-header h1 {
+    font-family: var(--serif);
+    font-size: 32px;
+    line-height: 1.15;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  .page-header h1 em {
+    font-style: italic;
+    color: #555;
+  }
+  .page-header .subtitle {
+    font-size: 13px;
+    color: #555;
+    max-width: 680px;
+  }
+
+  /* ── Hypotheses bar (always visible) ── */
+  .hyp-bar {
+    max-width: 960px;
+    margin: 0 auto 48px;
+    background: var(--hyp-lt);
+    border: 1px solid var(--hyp-mid);
+    border-left: 4px solid var(--hyp-mid);
+    padding: 16px 20px;
+  }
+  .hyp-bar .hyp-label {
+    font-family: var(--mono);
+    font-size: 9.5px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--hyp);
+    margin-bottom: 10px;
+  }
+  .hyp-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+  .hyp-item {
+    background: white;
+    border: 1px solid #e0d4b0;
+    padding: 10px 12px;
+  }
+  .hyp-item .hcode {
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--hyp-mid);
+    display: block;
+    margin-bottom: 3px;
+  }
+  .hyp-item .hname {
+    font-weight: 600;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 3px;
+  }
+  .hyp-item .hdesc {
+    font-size: 11px;
+    color: #555;
+    line-height: 1.45;
+  }
+
+  /* ── Pipeline wrapper ── */
+  .pipeline {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  /* ── Step block ── */
+  .step {
+    position: relative;
+    border: 1.5px solid var(--rule);
+    background: white;
+  }
+  .step + .step { margin-top: 0; }
+
+  /* Step colour bars */
+  .step[data-step="1"] { border-top: 4px solid var(--s1); }
+  .step[data-step="2"] { border-top: 4px solid var(--s2); }
+  .step[data-step="3"] { border-top: 4px solid var(--s3); }
+
+  /* ── Step header ── */
+  .step-header {
+    display: grid;
+    grid-template-columns: 64px 1fr auto;
+    align-items: start;
+    gap: 0;
+    padding: 0;
+    border-bottom: 1px solid var(--rule-lt);
+  }
+  .step-num {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    border-right: 1px solid var(--rule-lt);
+  }
+  .step-num .n {
+    font-family: var(--serif);
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 400;
+  }
+  .step[data-step="1"] .step-num .n { color: var(--s1); }
+  .step[data-step="2"] .step-num .n { color: var(--s2); }
+  .step[data-step="3"] .step-num .n { color: var(--s3); }
+  .step-num .tag {
+    font-family: var(--mono);
+    font-size: 8px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #999;
+    margin-top: 2px;
+  }
+
+  .step-title-block {
+    padding: 18px 20px;
+  }
+  .step-title-block .role-tag {
+    font-family: var(--mono);
+    font-size: 9.5px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  .step[data-step="1"] .role-tag { color: var(--s1-mid); }
+  .step[data-step="2"] .role-tag { color: var(--s2-mid); }
+  .step[data-step="3"] .role-tag { color: var(--s3-mid); }
+
+  .step-title-block h2 {
+    font-family: var(--serif);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 5px;
+  }
+  .step-title-block .step-desc {
+    font-size: 12px;
+    color: #555;
+    max-width: 540px;
+    line-height: 1.5;
+  }
+
+  .step-meta {
+    padding: 18px 20px;
+    border-left: 1px solid var(--rule-lt);
+    min-width: 180px;
+    font-size: 11px;
+  }
+  .step-meta .meta-item {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    margin-bottom: 5px;
+    line-height: 1.4;
+  }
+  .step-meta .meta-label {
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #999;
+    min-width: 54px;
+    flex-shrink: 0;
+  }
+  .step-meta .meta-val {
+    color: #333;
+    font-size: 11px;
+  }
+
+  /* ── Step body ── */
+  .step-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+  }
+
+  .step-panel {
+    padding: 18px 18px 20px;
+    border-right: 1px solid var(--rule-lt);
+  }
+  .step-panel:last-child { border-right: none; }
+
+  .panel-heading {
+    font-family: var(--mono);
+    font-size: 9.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px dashed var(--rule-lt);
+  }
+
+  /* Method items */
+  .method-item {
+    margin-bottom: 12px;
+  }
+  .method-item .mname {
+    font-weight: 600;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 2px;
+  }
+  .method-item .mdesc {
+    font-size: 11px;
+    color: #555;
+    line-height: 1.45;
+  }
+  .method-item .mtag {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 9px;
+    padding: 1px 5px;
+    margin-top: 3px;
+    border-radius: 2px;
+  }
+  .step[data-step="1"] .mtag { background: var(--s1-lt); color: var(--s1); }
+  .step[data-step="2"] .mtag { background: var(--s2-lt); color: var(--s2); }
+  .step[data-step="3"] .mtag { background: var(--s3-lt); color: var(--s3); }
+
+  /* Output items */
+  .output-item {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+    align-items: flex-start;
+  }
+  .output-item .oicon {
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .step[data-step="1"] .oicon { background: var(--s1-lt); color: var(--s1); }
+  .step[data-step="2"] .oicon { background: var(--s2-lt); color: var(--s2); }
+  .step[data-step="3"] .oicon { background: var(--s3-lt); color: var(--s3); }
+  .output-item .otext .otitle {
+    font-weight: 600;
+    font-size: 12px;
+    display: block;
+  }
+  .output-item .otext .odesc {
+    font-size: 11px;
+    color: #555;
+    line-height: 1.4;
+  }
+
+  /* Constraint / note items */
+  .note-item {
+    border-left: 3px solid var(--rule);
+    padding: 6px 8px;
+    margin-bottom: 8px;
+    font-size: 11px;
+    color: #444;
+    line-height: 1.45;
+    background: var(--paper2);
+  }
+  .note-item strong { font-weight: 600; color: var(--ink); }
+
+  /* ── Feed arrow between steps ── */
+  .feed-arrow {
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    align-items: stretch;
+  }
+  .feed-arrow .fa-spine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .feed-arrow .fa-line {
+    width: 2px;
+    flex: 1;
+    background: var(--rule);
+  }
+  .feed-arrow .fa-arrowhead {
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 10px solid var(--rule);
+  }
+  .feed-arrow .fa-content {
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+  }
+  .feed-label {
+    font-family: var(--mono);
+    font-size: 9.5px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #888;
+    margin-right: 4px;
+  }
+  .feed-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 2px;
+    border: 1px solid var(--rule);
+    background: var(--paper2);
+    color: #333;
+  }
+  .feed-pill .pill-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  /* ── Hypothesis thread row (inside steps) ── */
+  .hyp-thread {
+    border-top: 1px solid var(--rule-lt);
+    padding: 12px 18px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #fdfbf8;
+  }
+  .hyp-thread-label {
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--hyp-mid);
+    margin-right: 4px;
+  }
+  .hyp-thread-item {
+    font-size: 11px;
+    padding: 2px 8px;
+    background: var(--hyp-lt);
+    border: 1px solid #e0d0a0;
+    color: var(--hyp);
+    border-radius: 2px;
+  }
+
+  /* ── Script reference row ── */
+  .script-row {
+    border-top: 1px solid var(--rule-lt);
+    padding: 10px 18px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background: var(--paper);
+    flex-wrap: wrap;
+  }
+  .script-row .sr-label {
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #888;
+    flex-shrink: 0;
+  }
+  .script-pill {
+    font-family: var(--mono);
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 2px;
+    border: 1px solid var(--rule);
+    background: white;
+    color: #333;
+  }
+  .step[data-step="1"] .script-pill { border-color: var(--s1-mid); color: var(--s1); }
+  .step[data-step="2"] .script-pill { border-color: var(--s2-mid); color: var(--s2); }
+  .step[data-step="3"] .script-pill { border-color: var(--s3-mid); color: var(--s3); }
+
+  /* ── Legend ── */
+  .legend {
+    max-width: 960px;
+    margin: 40px auto 0;
+    border-top: 1px solid var(--rule);
+    padding-top: 20px;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    font-size: 11px;
+    color: #666;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+  .legend-swatch {
+    width: 14px;
+    height: 14px;
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+
+  /* ── Epistemology callout ── */
+  .epist-callout {
+    max-width: 960px;
+    margin: 0 auto 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border: 1.5px solid var(--rule);
+  }
+  .epist-cell {
+    padding: 14px 16px;
+    border-right: 1px solid var(--rule-lt);
+  }
+  .epist-cell:last-child { border-right: none; }
+  .epist-cell .ec-label {
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 5px;
+  }
+  .epist-cell .ec-q {
+    font-family: var(--serif);
+    font-size: 14px;
+    font-style: italic;
+    line-height: 1.3;
+    margin-bottom: 5px;
+  }
+  .ec-q span { font-style: normal; font-weight: 600; }
+  .epist-cell .ec-method {
+    font-size: 11px;
+    color: #555;
+  }
+  .epist-cell[data-s="1"] { border-top: 3px solid var(--s1); }
+  .epist-cell[data-s="2"] { border-top: 3px solid var(--s2); }
+  .epist-cell[data-s="3"] { border-top: 3px solid var(--s3); }
+
+</style>
+</head>
+<body>
+
+<!-- PAGE HEADER -->
+<header class="page-header">
+  <p class="eyebrow">Nelson (2020) &nbsp;·&nbsp; Methodological Framework</p>
+  <h1>Computational Grounded Theory<br><em>Three-Step Analytical Pipeline</em></h1>
+  <p class="subtitle">AI data labour platform discourse · B2B vs B2W register analysis · Cross-platform corpus (28 domains, ~4.3M tokens)</p>
+</header>
+
+<!-- HYPOTHESES -->
+<div class="hyp-bar">
+  <div class="hyp-label">Research hypotheses — thread running through all three steps</div>
+  <div class="hyp-items">
+    <div class="hyp-item">
+      <span class="hcode">H1a</span>
+      <span class="hname">Labour Visibility Gap</span>
+      <span class="hdesc">Labour terms (worker, job, pay, earn) appear at lower relative frequency in B2B client-facing texts than in B2W worker-facing texts.</span>
+    </div>
+    <div class="hyp-item">
+      <span class="hcode">H1b</span>
+      <span class="hname">Automation Myth</span>
+      <span class="hdesc">B2B texts frame AI outputs as autonomous or machine-produced, suppressing mention of the human labour that generates training data.</span>
+    </div>
+    <div class="hyp-item">
+      <span class="hcode">H1c</span>
+      <span class="hname">Strategic Hypervisibility</span>
+      <span class="hdesc">Where B2B texts do foreground human labour, it appears as a quality signal (HITL, oversight, intervention) rather than as labour conditions.</span>
+    </div>
+  </div>
+</div>
+
+<!-- EPISTEMOLOGY ROW -->
+<div class="epist-callout">
+  <div class="epist-cell" data-s="1">
+    <div class="ec-label">Step 1 · Epistemic role</div>
+    <div class="ec-q">What does the corpus <span>actually</span> contain?</div>
+    <div class="ec-method">Unsupervised discovery. No theoretical categories imposed. The corpus speaks before hypotheses are applied.</div>
+  </div>
+  <div class="epist-cell" data-s="2">
+    <div class="ec-label">Step 2 · Epistemic role</div>
+    <div class="ec-q">What do those patterns <span>mean</span>?</div>
+    <div class="ec-method">Human interpretation. Close reading directed by Step 1 outputs. Builds the analytical vocabulary Step 3 will operationalise.</div>
+  </div>
+  <div class="epist-cell" data-s="3">
+    <div class="ec-label">Step 3 · Epistemic role</div>
+    <div class="ec-q">Do the patterns hold <span>at scale</span>?</div>
+    <div class="ec-method">Confirmatory testing. Dictionary classifiers and embeddings test whether Step 2 interpretations generalise across the full corpus.</div>
+  </div>
+</div>
+
+<div class="pipeline">
+
+  <!-- ═══════════════════════════════════════════════════ STEP 1 -->
+  <div class="step" data-step="1">
+
+    <div class="step-header">
+      <div class="step-num">
+        <span class="n">1</span>
+        <span class="tag">Step</span>
+      </div>
+      <div class="step-title-block">
+        <div class="role-tag">Unsupervised Discovery · Exploratory</div>
+        <h2>Pattern Detection through Keyness &amp; Co-occurrence</h2>
+        <p class="step-desc">The corpus is interrogated for what statistically distinguishes client-facing (B2B) from worker-facing (B2W) language. No theoretical categories are imposed. The analyst does not yet test H1a–c.</p>
+      </div>
+      <div class="step-meta">
+        <div class="meta-item"><span class="meta-label">Corpus</span><span class="meta-val">28 domains, 6,136 pages</span></div>
+        <div class="meta-item"><span class="meta-label">Tokens</span><span class="meta-val">3.57M client / 778K worker</span></div>
+        <div class="meta-item"><span class="meta-label">Statistic</span><span class="meta-val">Log-likelihood G²</span></div>
+        <div class="meta-item"><span class="meta-label">Assoc.</span><span class="meta-val">PMI (±5 token window)</span></div>
+        <div class="meta-item"><span class="meta-label">Levels</span><span class="meta-val">Cross-platform + within-pair</span></div>
+      </div>
+    </div>
+
+    <div class="step-body">
+
+      <div class="step-panel">
+        <div class="panel-heading">Methods</div>
+
+        <div class="method-item">
+          <span class="mname">Keyness Analysis (G²)</span>
+          <span class="mdesc">Identifies terms statistically overrepresented in one subcorpus relative to the other, controlling for overall frequency. Robust to the 6:1 size asymmetry between client and worker subcorpora.</span>
+          <span class="mtag">unigrams + bigrams (min freq 3)</span>
+        </div>
+
+        <div class="method-item">
+          <span class="mname">Co-occurrence Analysis (PMI)</span>
+          <span class="mdesc">For top key terms, computes collocate profiles within ±5 token window. Reveals the discursive neighbourhood of each term — whether 'human' clusters with quality-oversight vocabulary or with body/motion vocabulary.</span>
+          <span class="mtag">PMI · min cofreq 10 cross-platform</span>
+        </div>
+
+        <div class="method-item">
+          <span class="mname">Two Comparison Levels</span>
+          <span class="mdesc"><strong>Cross-platform:</strong> all B2B vs all B2W — tests structural register difference. <strong>Within-pair:</strong> appen.com vs crowdgen.com; toloka.ai vs mindrift.ai — controls for company-level style, isolates audience as the causal variable.</span>
+          <span class="mtag">cross-platform + appen + toloka</span>
+        </div>
+      </div>
+
+      <div class="step-panel">
+        <div class="panel-heading">Key Empirical Findings</div>
+
+        <div class="note-item"><strong>B2B top terms:</strong> annotation (8.47‰), datum (18.97‰), description, dataset, duration, image, video, vision, autonomous, model — a technical data-pipeline register devoid of labour vocabulary.</div>
+        <div class="note-item"><strong>B2W top terms:</strong> apply (9.17‰), remote (9.77‰), project, payment, earn, work, code, pay, job — a labour-market / job-seeking register.</div>
+        <div class="note-item"><strong>'human' co-occurrence (B2B):</strong> hitl, oversight, intervention, involvement, judgement, branch — quality-oversight architecture. Supports H1c.</div>
+        <div class="note-item"><strong>'human' co-occurrence (B2W):</strong> reinforcement, rlhf, brilliance, usefulness, verify — RLHF trainer framing (Mindrift-specific). Human as capability benchmark, not labour agent.</div>
+        <div class="note-item"><strong>Within-pair Appen:</strong> datum (G²=4502), model, human, machine, quality — all client-distinctive. project, earn, payment — worker-distinctive. Strong audience-driven asymmetry.</div>
+      </div>
+
+      <div class="step-panel">
+        <div class="panel-heading">Outputs → feeds Step 2</div>
+
+        <div class="output-item">
+          <div class="oicon">①</div>
+          <div class="otext">
+            <span class="otitle">Ranked Keyness Table</span>
+            <span class="odesc">Every unigram and bigram with G² score, frequency in each subcorpus, relative frequency. Positive = client-distinctive; negative = worker-distinctive. Directs Step 2 close reading toward top-ranked terms.</span>
+          </div>
+        </div>
+
+        <div class="output-item">
+          <div class="oicon">②</div>
+          <div class="otext">
+            <span class="otitle">Co-occurrence Profiles</span>
+            <span class="odesc">Top PMI collocates per key term, per audience. Reveals whether a term's keyness reflects theoretically expected patterns (e.g. human + oversight) or unexpected contexts requiring interpretive revision in Step 2.</span>
+          </div>
+        </div>
+
+        <div class="output-item">
+          <div class="oicon">③</div>
+          <div class="otext">
+            <span class="otitle">Platform-level Term Counts</span>
+            <span class="odesc">Per-domain frequency breakdowns for all key terms. Flags whether a keyness signal is corpus-wide or driven by one outlier platform. Within-pair comparisons isolate audience as causal variable.</span>
+          </div>
+        </div>
+
+        <div class="note-item" style="margin-top:10px"><strong>Critical constraint:</strong> None of these outputs are findings. They are empirical raw material. A high G² score is an invitation to read closely — not evidence for a hypothesis.</div>
+      </div>
+    </div>
+
+    <div class="hyp-thread">
+      <span class="hyp-thread-label">Hypothesis status at end of Step 1</span>
+      <span class="hyp-thread-item">H1a — Labour terms pattern visible but untested</span>
+      <span class="hyp-thread-item">H1b — Automation terms distinctive in B2B but mechanism unknown</span>
+      <span class="hyp-thread-item">H1c — human+oversight co-occurrence detected, interpretation pending</span>
+    </div>
+
+    <div class="script-row">
+      <span class="sr-label">Scripts</span>
+      <span class="script-pill">01_prepare.py</span>
+      <span class="script-pill">02_step1_frequency.py</span>
+      <span class="script-pill">03_visualise_step1.py</span>
+    </div>
+  </div>
+
+  <!-- FEED ARROW 1→2 -->
+  <div class="feed-arrow">
+    <div class="fa-spine">
+      <div class="fa-line"></div>
+      <div class="fa-arrowhead"></div>
+    </div>
+    <div class="fa-content">
+      <span class="feed-label">Feeds into Step 2 →</span>
+      <span class="feed-pill"><span class="pill-dot" style="background:var(--s1-mid)"></span>Keyness table (top-ranked terms per direction)</span>
+      <span class="feed-pill"><span class="pill-dot" style="background:var(--s1-mid)"></span>PMI co-occurrence profiles for 'human', 'annotation', 'autonomous'</span>
+      <span class="feed-pill"><span class="pill-dot" style="background:var(--s1-mid)"></span>Within-pair comparisons (appen / toloka)</span>
+      <span class="feed-pill"><span class="pill-dot" style="background:var(--s1-mid)"></span>Platform heatmap (identifies outlier platforms)</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════ STEP 2 -->
+  <div class="step" data-step="2">
+
+    <div class="step-header">
+      <div class="step-num">
+        <span class="n">2</span>
+        <span class="tag">Step</span>
+      </div>
+      <div class="step-title-block">
+        <div class="role-tag">Human Interpretation · Guided Close Reading</div>
+        <h2>Interpretive Analysis &amp; Codebook Construction</h2>
+        <p class="step-desc">The analyst reads the actual pages behind the Step 1 patterns, directed by keyness and co-occurrence results. The question shifts from what is distinctive to why — what are these terms doing rhetorically? This step builds the interpretive vocabulary that Step 3 will operationalise.</p>
+      </div>
+      <div class="step-meta">
+        <div class="meta-item"><span class="meta-label">Input</span><span class="meta-val">Step 1 outputs (3 types)</span></div>
+        <div class="meta-item"><span class="meta-label">Method</span><span class="meta-val">Systematic close reading</span></div>
+        <div class="meta-item"><span class="meta-label">Export A</span><span class="meta-val">Top-8 pages per key term</span></div>
+        <div class="meta-item"><span class="meta-label">Export B</span><span class="meta-val">KWIC concordance lines</span></div>
+        <div class="meta-item"><span class="meta-label">Export C</span><span class="meta-val">Within-pair page samples</span></div>
+      </div>
+    </div>
+
+    <div class="step-body">
+
+      <div class="step-panel">
+        <div class="panel-heading">Reading Corpus (04_step2_export.py)</div>
+
+        <div class="method-item">
+          <span class="mname">Export A — Top Pages per Term</span>
+          <span class="mdesc">The 8 pages with highest relative frequency for each key term. These pages are most responsible for the keyness signal. Reading reveals the typical discursive context — whether 'autonomous' appears in product capability claims or system architecture documentation.</span>
+          <span class="mtag">A/client/autonomous.txt, etc.</span>
+        </div>
+
+        <div class="method-item">
+          <span class="mname">Export B — KWIC Concordance</span>
+          <span class="mdesc">Every sentence containing each focus term, with ±2 sentence context, labelled by platform and audience. Reveals recurring rhetorical patterns across the full corpus. Read for saturation — patterns stabilise after ~50 lines.</span>
+          <span class="mtag">B/human_client.txt, etc.</span>
+        </div>
+
+        <div class="method-item">
+          <span class="mname">Export C — Within-Pair Samples</span>
+          <span class="mdesc">20-page samples from each side of each company pair. Same company, different audience. Differences cannot be attributed to corporate style — only to audience register. The strongest test of H1a–c at the level of individual text.</span>
+          <span class="mtag">C/appen_b2b.txt · appen_b2w.txt</span>
+        </div>
+      </div>
+
+      <div class="step-panel">
+        <div class="panel-heading">Interpretive Work</div>
+
+        <div class="note-item"><strong>For each term, establish:</strong> Who is the implied agent? What verbs frame the term? What subjects and objects co-occur? What is the rhetorical function (claim, guarantee, differentiator)?</div>
+
+        <div class="note-item"><strong>Term collapsing:</strong> Some Step 1 terms will collapse into one phenomenon. oversight + intervention + hitl → single HITL quality-assurance frame. These become one dictionary category in Step 3.</div>
+
+        <div class="note-item"><strong>Term splitting:</strong> Some terms will split. 'model' = AI model (H1b relevant) AND business model (not relevant). Step 2 distinguishes them; Step 3 implements the distinction via collocate-gated dictionaries.</div>
+
+        <div class="note-item"><strong>Unexpected findings:</strong> Patterns not predicted by H1a–c but visible in the corpus. Flag and describe. These may become additional hypotheses or qualifying observations in the thesis.</div>
+
+        <div class="note-item"><strong>Absence as finding:</strong> Keyness misses equally-present terms. Step 2 can notice that neither register dignifies workers — or that compensation language is systematically vague even when pay terms appear.</div>
+      </div>
+
+      <div class="step-panel">
+        <div class="panel-heading">Output → Codebook → feeds Step 3</div>
+
+        <div class="output-item">
+          <div class="oicon">①</div>
+          <div class="otext">
+            <span class="otitle">Named Discourse Patterns</span>
+            <span class="odesc">Each pattern has: a short name (e.g. 'HITL quality frame'), defining terms, 2–3 representative example sentences, hypothesis mapping (H1a/b/c), and a note on how it differs across audience registers.</span>
+          </div>
+        </div>
+
+        <div class="output-item">
+          <div class="oicon">②</div>
+          <div class="otext">
+            <span class="otitle">Refined Term Lists</span>
+            <span class="odesc">For each pattern, the specific lemmas that reliably index it, after splitting polysemous terms and collapsing synonymous ones. These lists become Step 3's dictionary categories — each category is one testable claim.</span>
+          </div>
+        </div>
+
+        <div class="output-item">
+          <div class="oicon">③</div>
+          <div class="otext">
+            <span class="otitle">Interpretive Claims</span>
+            <span class="odesc">Qualitative statements about rhetorical mechanism: 'human' is used in B2B texts to constitute workers as a quality-assurance infrastructure, not as labour agents. Step 3 tests whether this holds statistically across all 5,226 client pages.</span>
+          </div>
+        </div>
+
+        <div class="output-item">
+          <div class="oicon">④</div>
+          <div class="otext">
+            <span class="otitle">Embedding Hypotheses</span>
+            <span class="odesc">If B2B and B2W use words like 'human' and 'worker' in structurally different semantic neighbourhoods, word embeddings trained on each subcorpus should capture this. Step 2 names the dimensions; Step 3b tests them.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hyp-thread">
+      <span class="hyp-thread-label">Hypothesis refinement in Step 2</span>
+      <span class="hyp-thread-item">H1a — Labour vocabulary mapped to specific erasure mechanisms</span>
+      <span class="hyp-thread-item">H1b — Automation framing distinguished from technical documentation</span>
+      <span class="hyp-thread-item">H1c — HITL frame vs irreplaceability frame identified as two sub-mechanisms</span>
+    </div>
+
+    <div class="script-row">
+      <span class="sr-label">Scripts</span>
+      <span class="script-pill">04_step2_export.py</span>
+      <span class="sr-label" style="margin-left:8px">Analyst output</span>
+      <span class="script-pill">codebook.md (manual)</span>
+    </div>
+  </div>
+
+  <!-- FEED ARROW 2→3 -->
+  <div class="feed-arrow">
+    <div class="fa-spine">
+      <div class="fa-line"></div>
+      <div class="fa-arrowhead"></div>
+    </div>
+    <div class="fa-content">
+      <span class="feed-label">Feeds into Step 3 →</span>
+      <span class="feed-pill"><span class="pill-dot" style="background:var(--s2-mid)"></span>Codebook with named patterns and term lists</span>
+      <span class="feed-pill"><span class="pill-dot" style="background:var(--s2-mid)"></span>Dictionary categories (one per discursive pattern)</span>
+      <span class="feed-pill"><span class="pill-dot" style="background:var(--s2-mid)"></span>Interpretive claims to be confirmed/disconfirmed</span>
+      <span class="feed-pill"><span class="pill-dot" style="background:var(--s2-mid)"></span>Semantic axis definitions for embedding tests</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════ STEP 3 -->
+  <div class="step" data-step="3">
+
+    <div class="step-header">
+      <div class="step-num">
+        <span class="n">3</span>
+        <span class="tag">Step</span>
+      </div>
+      <div class="step-title-block">
+        <div class="role-tag">Confirmatory Testing · Hypothesis-Driven</div>
+        <h2>Dictionary Classification &amp; Semantic Embedding Tests</h2>
+        <p class="step-desc">The interpretive claims from Step 2 are tested at scale across the full corpus. Step 3 is split into two complementary methods: dictionary classifiers test lexical predictions directly; word embeddings test whether the semantic structure differs between registers beyond individual terms.</p>
+      </div>
+      <div class="step-meta">
+        <div class="meta-item"><span class="meta-label">Input</span><span class="meta-val">Step 2 codebook</span></div>
+        <div class="meta-item"><span class="meta-label">3a method</span><span class="meta-val">Dictionary indices + χ² / t-test</span></div>
+        <div class="meta-item"><span class="meta-label">3b method</span><span class="meta-val">word2vec per subcorpus</span></div>
+        <div class="meta-item"><span class="meta-label">Unit</span><span class="meta-val">Page-level scores</span></div>
+        <div class="meta-item"><span class="meta-label">Role</span><span class="meta-val">Confirmatory · findings</span></div>
+      </div>
+    </div>
+
+    <div class="step-body">
+
+      <div class="step-panel">
+        <div class="panel-heading">Step 3a — Dictionary Classifiers</div>
+
+        <div class="method-item">
+          <span class="mname">Dictionary Construction</span>
+          <span class="mdesc">One dictionary per codebook pattern, each containing the lemmas Step 2 identified as reliably indexing that pattern. Each page receives a score = sum of dictionary hits / page token count (relative frequency index).</span>
+          <span class="mtag">H1a: labour_visibility_dict</span>
+          <span class="mtag">H1b: automation_myth_dict</span>
+          <span class="mtag">H1c: hitl_quality_dict</span>
+        </div>
+
+        <div class="method-item">
+          <span class="mname">Statistical Tests</span>
+          <span class="mdesc">For each dictionary index: Mann-Whitney U test comparing B2B vs B2W page scores (non-parametric, appropriate for skewed frequency distributions). Effect size reported as rank-biserial correlation. Multiple comparison correction (Bonferroni) applied.</span>
+          <span class="mtag">α = 0.05 · effect size r</span>
+        </div>
+
+        <div class="method-item">
+          <span class="mname">Within-pair robustness check</span>
+          <span class="mdesc">Same dictionary tests run within appen and toloka pairs. A hypothesis confirmed cross-platform AND within-pair has strong evidence. Cross-platform only = possible confound. Within-pair only = idiosyncratic. Both = structural.</span>
+          <span class="mtag">appen · toloka · cross-platform</span>
+        </div>
+      </div>
+
+      <div class="step-panel">
+        <div class="panel-heading">Step 3b — Semantic Embeddings</div>
+
+        <div class="method-item">
+          <span class="mname">Subcorpus word2vec Models</span>
+          <span class="mdesc">Separate word2vec models trained on B2B and B2W subcorpora. If the same word (e.g. 'human') has structurally different nearest neighbours across models, the semantic difference is not just lexical — it is encoded in the distributional structure of each register.</span>
+          <span class="mtag">SGNS · window 5 · dim 100–200</span>
+        </div>
+
+        <div class="method-item">
+          <span class="mname">Semantic Axis Projection</span>
+          <span class="mdesc">Following Kozlowski et al. (2019): define a semantic axis (e.g. labour–capital) as the vector difference between pole words. Project 'human', 'worker', 'annotation' onto this axis in B2B vs B2W models. A significant shift confirms the register encodes different relational positioning of these concepts.</span>
+          <span class="mtag">Kozlowski et al. 2019 method</span>
+        </div>
+
+        <div class="method-item">
+          <span class="mname">Confirmatory role</span>
+          <span class="mdesc">Embeddings do not generate new hypotheses here — that was Step 1's role. They confirm that Step 2's interpretations reflect genuine semantic structure, not cherry-picked collocations. A pattern confirmed by both dictionary indices and embedding geometry is robust.</span>
+          <span class="mtag">3b confirms 3a · not exploratory</span>
+        </div>
+      </div>
+
+      <div class="step-panel">
+        <div class="panel-heading">Outputs → Thesis Findings</div>
+
+        <div class="output-item">
+          <div class="oicon">①</div>
+          <div class="otext">
+            <span class="otitle">H1a Result</span>
+            <span class="odesc">Labour visibility index: B2B pages score significantly lower than B2W on combined labour vocabulary. Expected direction: B2B &lt;&lt; B2W. Confirmed cross-platform + within-pair = strong evidence for systematic erasure.</span>
+          </div>
+        </div>
+
+        <div class="output-item">
+          <div class="oicon">②</div>
+          <div class="otext">
+            <span class="otitle">H1b Result</span>
+            <span class="odesc">Automation myth index: B2B pages score higher on autonomous/automate/machine vocabulary while suppressing human/worker terms. Tests the asymmetric framing claim — output sounds autonomous; production is hidden.</span>
+          </div>
+        </div>
+
+        <div class="output-item">
+          <div class="oicon">③</div>
+          <div class="otext">
+            <span class="otitle">H1c Result</span>
+            <span class="odesc">HITL quality index: B2B pages score higher on human+oversight collocations. Embedding test: 'human' projects toward quality/control axis in B2B models, toward labour/compensation axis in B2W models.</span>
+          </div>
+        </div>
+
+        <div class="output-item">
+          <div class="oicon">④</div>
+          <div class="otext">
+            <span class="otitle">Platform-type breakdown</span>
+            <span class="odesc">Results disaggregated by platform type (crowd market vs enterprise BPO vs impact sourcing) and HQ region (north vs south). Tests whether the discourse patterns vary across the structural diversity of AI data labour markets.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hyp-thread">
+      <span class="hyp-thread-label">Hypothesis resolution in Step 3</span>
+      <span class="hyp-thread-item">H1a — Confirmed / disconfirmed / qualified by dictionary index test</span>
+      <span class="hyp-thread-item">H1b — Confirmed / disconfirmed / qualified by automation index test</span>
+      <span class="hyp-thread-item">H1c — Confirmed at lexical level (3a) + semantic level (3b)</span>
+    </div>
+
+    <div class="script-row">
+      <span class="sr-label">Scripts</span>
+      <span class="script-pill">05_step3_classifiers.py</span>
+      <span class="script-pill">06_step3_embeddings.py</span>
+    </div>
+  </div>
+
+</div><!-- /pipeline -->
+
+<!-- LEGEND -->
+<div class="legend">
+  <div class="legend-item"><div class="legend-swatch" style="background:var(--s1)"></div>Step 1 — Exploratory / unsupervised</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:var(--s2)"></div>Step 2 — Interpretive / human-led</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:var(--s3)"></div>Step 3 — Confirmatory / hypothesis-testing</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:var(--hyp-mid)"></div>Hypothesis thread (H1a / H1b / H1c)</div>
+  <div class="legend-item" style="color:#aaa">Nelson (2020) · Computational Grounded Theory · Sociological Methods &amp; Research 49(1)</div>
+</div>
+
+</body>
+</html>
