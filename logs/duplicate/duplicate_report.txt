@@ -1,8 +1,8 @@
 ========================================================================
   NEAR-DUPLICATE PAGE DETECTION REPORT
   Similarity threshold : 95%
-  Total clusters found : 258
-  Total pages flagged  : 1,926
+  Total clusters found : 260
+  Total pages flagged  : 1,941
 ========================================================================
 
   HOW TO USE THIS REPORT
@@ -3410,7 +3410,50 @@
       URL     : https://crowdgen.com/twingate/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 18  (12 pages)
+  CLUSTER 18  (13 pages)
+  --------------------------------------------------------------------
+  Estimated similarity (pages 1–2): 100.0%
+  [1] page_id=9557  domain=www.centific.com
+      URL     : https://www.centific.com/contact/book-a-demo
+      Preview : Security Robust data security and confidentiality across enterprise, regulated, and mission-critical AI systems. Disciplined security and privacy practices aligned with...
+  [2] page_id=9560  domain=www.centific.com
+      URL     : https://www.centific.com/leaderboard
+      Preview : Security Robust data security and confidentiality across enterprise, regulated, and mission-critical AI systems. Disciplined security and privacy practices aligned with...
+  [3] page_id=9561  domain=www.centific.com
+      URL     : https://www.centific.com/file-repo
+      Preview : Security Robust data security and confidentiality across enterprise, regulated, and mission-critical AI systems. Disciplined security and privacy practices aligned with...
+  [4] page_id=9753  domain=www.centific.com
+      URL     : https://www.centific.com/client-repo/client-aws
+      Preview : Security Robust data security and confidentiality across enterprise, regulated, and mission-critical AI systems. Disciplined security and privacy practices aligned with...
+  [5] page_id=9754  domain=www.centific.com
+      URL     : https://www.centific.com/client-repo/client-microsoft
+      Preview : Security Robust data security and confidentiality across enterprise, regulated, and mission-critical AI systems. Disciplined security and privacy practices aligned with...
+  [6] page_id=9755  domain=www.centific.com
+      URL     : https://www.centific.com/client-repo/client-nvidia
+      Preview : Security Robust data security and confidentiality across enterprise, regulated, and mission-critical AI systems. Disciplined security and privacy practices aligned with...
+  [7] page_id=9756  domain=www.centific.com
+      URL     : https://www.centific.com/client-repo/client-intel
+      Preview : Security Robust data security and confidentiality across enterprise, regulated, and mission-critical AI systems. Disciplined security and privacy practices aligned with...
+  [8] page_id=9757  domain=www.centific.com
+      URL     : https://www.centific.com/client-repo/client-adobe
+      Preview : Security Robust data security and confidentiality across enterprise, regulated, and mission-critical AI systems. Disciplined security and privacy practices aligned with...
+  [9] page_id=9758  domain=www.centific.com
+      URL     : https://www.centific.com/client-repo/client-google
+      Preview : Security Robust data security and confidentiality across enterprise, regulated, and mission-critical AI systems. Disciplined security and privacy practices aligned with...
+  [10] page_id=9759  domain=www.centific.com
+      URL     : https://www.centific.com/client-repo/client-meta
+      Preview : Security Robust data security and confidentiality across enterprise, regulated, and mission-critical AI systems. Disciplined security and privacy practices aligned with...
+  [11] page_id=9760  domain=www.centific.com
+      URL     : https://www.centific.com/client-repo/client-salesforce
+      Preview : Security Robust data security and confidentiality across enterprise, regulated, and mission-critical AI systems. Disciplined security and privacy practices aligned with...
+  [12] page_id=9761  domain=www.centific.com
+      URL     : https://www.centific.com/client-repo/client-servicenow
+      Preview : Security Robust data security and confidentiality across enterprise, regulated, and mission-critical AI systems. Disciplined security and privacy practices aligned with...
+  [13] page_id=9762  domain=www.centific.com
+      URL     : https://www.centific.com/client-repo/client-openai
+      Preview : Security Robust data security and confidentiality across enterprise, regulated, and mission-critical AI systems. Disciplined security and privacy practices aligned with...
+
+  CLUSTER 19  (12 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 99.2%
   [1] page_id=3979  domain=defined.ai
@@ -3450,7 +3493,7 @@
       URL     : https://defined.ai/datasets/modern-standard-arabic-scripted-monologue-telco
       Preview : Modern Standard Arabic Scripted Monologue, telco Start training, testing or fine-tuning your speech models with 15 hours of Modern Standard...
 
-  CLUSTER 19  (12 pages)
+  CLUSTER 20  (12 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 99.2%
   [1] page_id=7144  domain=scale.com
@@ -3490,7 +3533,7 @@
       URL     : https://scale.com/leaderboard/tool_use_enterprise/samples
       Preview : ⌘K Toggle Sidebar ⌘K Agentic LBs Safety LBs Frontier LBs Legacy LBs Humanity's Last Exam Text Only (Preview) Humanity's Last...
 
-  CLUSTER 20  (12 pages)
+  CLUSTER 21  (12 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 95.3%
   [1] page_id=8268  domain=crowdgen.com
@@ -3530,7 +3573,7 @@
       URL     : https://crowdgen.com/mint-french-physics-a/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 21  (12 pages)
+  CLUSTER 22  (12 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 99.2%
   [1] page_id=8310  domain=crowdgen.com
@@ -3570,7 +3613,7 @@
       URL     : https://crowdgen.com/fireweed-es-hn-localised-push/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 22  (11 pages)
+  CLUSTER 23  (11 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 98.4%
   [1] page_id=8307  domain=crowdgen.com
@@ -3607,7 +3650,7 @@
       URL     : https://crowdgen.com/aristotle-philosophy-english-push/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 23  (11 pages)
+  CLUSTER 24  (11 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 95.3%
   [1] page_id=8322  domain=crowdgen.com
@@ -3644,7 +3687,7 @@
       URL     : https://crowdgen.com/babel-slovak-b/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 24  (10 pages)
+  CLUSTER 25  (10 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 96.1%
   [1] page_id=3820  domain=defined.ai
@@ -3678,7 +3721,7 @@
       URL     : https://defined.ai/datasets/stock-images-nature-landscapes
       Preview : Stock Images - Nature & Landscapes If you are looking for large amounts of high-quality stock images, this dataset with...
 
-  CLUSTER 25  (10 pages)
+  CLUSTER 26  (10 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 93.8%
   [1] page_id=4302  domain=defined.ai
@@ -3712,7 +3755,7 @@
       URL     : https://defined.ai/datasets/music-classical-chamber-music
       Preview : Music - classical - chamber music Start training or fine-tuning your generative AI and music classification models with 1600 tracks...
 
-  CLUSTER 26  (10 pages)
+  CLUSTER 27  (10 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 99.2%
   [1] page_id=8269  domain=crowdgen.com
@@ -3746,7 +3789,7 @@
       URL     : https://crowdgen.com/a11956-vi-ca/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 27  (9 pages)
+  CLUSTER 28  (9 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 89.1%
   [1] page_id=747  domain=www.sama.com
@@ -3777,7 +3820,7 @@
       URL     : https://www.sama.com/podcast/representation-in-ai-with-walmart-global-tech-leaders-anshu-bhardwaj-desiree-gosby
       Preview : We value your privacy We use cookies to enhance your browsing experience, serve personalised ads or content, and analyse our...
 
-  CLUSTER 28  (9 pages)
+  CLUSTER 29  (9 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 99.2%
   [1] page_id=2874  domain=www.dataannotation.tech
@@ -3808,7 +3851,7 @@
       URL     : https://dataannotation.tech/germanbilingual-en
       Preview : I operate a part-time business I’m trying to grow and the flexibility to work on AI projects when I choose...
 
-  CLUSTER 29  (9 pages)
+  CLUSTER 30  (9 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 94.5%
   [1] page_id=8314  domain=crowdgen.com
@@ -3839,7 +3882,7 @@
       URL     : https://crowdgen.com/babel-italian-a/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 30  (8 pages)
+  CLUSTER 31  (8 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 94.5%
   [1] page_id=3652  domain=defined.ai
@@ -3867,7 +3910,7 @@
       URL     : https://defined.ai/datasets/sound-effects-music-loops
       Preview : Sound Effects - music loops Start training or fine-tuning your generative AI and SFX classification models with 13tracks in the...
 
-  CLUSTER 31  (8 pages)
+  CLUSTER 32  (8 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=4228  domain=defined.ai
@@ -3895,7 +3938,7 @@
       URL     : https://defined.ai/datasets/music-instrumental
       Preview : Music - Instrumental Start training or fine-tuning your generative AI and music classification models with 6000 tracks in the Instrumental...
 
-  CLUSTER 32  (8 pages)
+  CLUSTER 33  (8 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 96.9%
   [1] page_id=4396  domain=defined.ai
@@ -3923,7 +3966,7 @@
       URL     : https://defined.ai/datasets/sudanian-arabicsd-podcasts-2
       Preview : Sudanian Arabic Podcasts Start training, testing or fine-tuning your speech models with 5 hours of Moroccan Arabicsd live, non-simulated podcasts...
 
-  CLUSTER 33  (8 pages)
+  CLUSTER 34  (8 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 97.7%
   [1] page_id=8311  domain=crowdgen.com
@@ -3951,7 +3994,7 @@
       URL     : https://crowdgen.com/babel-chinese-malaysia-c/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 34  (7 pages)
+  CLUSTER 35  (7 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 97.7%
   [1] page_id=3792  domain=defined.ai
@@ -3976,7 +4019,7 @@
       URL     : https://defined.ai/datasets/medical-imaging-ct-mri-x-ray-others
       Preview : Medical Imaging - CT, MRI, X-ray, others Start training, fine tuning or testing your Medical analysis files with 7,162 medical...
 
-  CLUSTER 35  (7 pages)
+  CLUSTER 36  (7 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 99.2%
   [1] page_id=5005  domain=imerit.net
@@ -4001,7 +4044,7 @@
       URL     : https://imerit.net/resources/blog/case-study-use-case/visionlanguagemodel/
       Preview : Skip to content Main Navigation Contact Us MENU Products Ango Hub 3D Multi Sensor Fusion Deep Reasoning Lab Radiology Annotation...
 
-  CLUSTER 36  (7 pages)
+  CLUSTER 37  (7 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8200  domain=www.alignerr.com
@@ -4026,7 +4069,7 @@
       URL     : https://www.alignerr.com/it/privacy
       Preview : Terms of Use and Alignerr Applicant Privacy Notice Terms of Use Effective date: September 11, 2025 Welcome to Alignerr. Please...
 
-  CLUSTER 37  (7 pages)
+  CLUSTER 38  (7 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 99.2%
   [1] page_id=8201  domain=www.alignerr.com
@@ -4051,7 +4094,7 @@
       URL     : https://www.alignerr.com/it/jobs
       Preview : Open Roles Join our community of experts and help shape the future of AI. All Audio Coding General Stem AI...
 
-  CLUSTER 38  (7 pages)
+  CLUSTER 39  (7 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 93.8%
   [1] page_id=8274  domain=crowdgen.com
@@ -4076,7 +4119,7 @@
       URL     : https://crowdgen.com/aristotle-biology-en-ca/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 39  (7 pages)
+  CLUSTER 40  (7 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 96.9%
   [1] page_id=8278  domain=crowdgen.com
@@ -4101,7 +4144,7 @@
       URL     : https://crowdgen.com/babel-ca-es-push/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 40  (7 pages)
+  CLUSTER 41  (7 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 98.4%
   [1] page_id=8299  domain=crowdgen.com
@@ -4126,7 +4169,7 @@
       URL     : https://crowdgen.com/mint-italy-chemistry-b/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 41  (7 pages)
+  CLUSTER 42  (7 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 99.2%
   [1] page_id=8366  domain=crowdgen.com
@@ -4151,7 +4194,7 @@
       URL     : https://crowdgen.com/aristotle-puzzles-en-us/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 42  (7 pages)
+  CLUSTER 43  (7 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 96.9%
   [1] page_id=8386  domain=crowdgen.com
@@ -4176,7 +4219,7 @@
       URL     : https://crowdgen.com/mint-german-biology-c/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 43  (7 pages)
+  CLUSTER 44  (7 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8395  domain=crowdgen.com
@@ -4201,7 +4244,7 @@
       URL     : https://crowdgen.com/fireweed-ru-kz-localised-push/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 44  (6 pages)
+  CLUSTER 45  (6 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=1077  domain=toloka.ai
@@ -4223,7 +4266,7 @@
       URL     : https://toloka.ai/tolokers/get-started/
       Preview : Data Solutions Platform β Resource Hub Company Log in Talk to us 404 Sorry! The page you’re looking for can’t...
 
-  CLUSTER 45  (6 pages)
+  CLUSTER 46  (6 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 96.9%
   [1] page_id=3793  domain=defined.ai
@@ -4245,7 +4288,7 @@
       URL     : https://defined.ai/datasets/named-entity-tagged-sentences-in-modern-standard-arabic
       Preview : Named Entity Tagged Sentences in Modern Standard Arabic Named Entity Recognition is an important part of many NLP applications, but...
 
-  CLUSTER 46  (6 pages)
+  CLUSTER 47  (6 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 98.4%
   [1] page_id=4139  domain=defined.ai
@@ -4267,7 +4310,7 @@
       URL     : https://defined.ai/datasets/iraqi-arabiciq-podcasts
       Preview : Iraqi Arabic Podcasts Start training, testing or fine-tuning your speech models with 2 hours of Moroccan Arabiciq simulated single-person podcasts....
 
-  CLUSTER 47  (6 pages)
+  CLUSTER 48  (6 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=6117  domain=humansintheloop.org
@@ -4289,7 +4332,7 @@
       URL     : https://humansintheloop.org/tag/businessgrowth/
       Preview : Categories Webinar Episode 10 – Building a scalable lead gen funnel by Elene Peradze July 7, 2025 July 7, 2025...
 
-  CLUSTER 48  (6 pages)
+  CLUSTER 49  (6 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 98.4%
   [1] page_id=8199  domain=www.alignerr.com
@@ -4311,7 +4354,7 @@
       URL     : https://www.alignerr.com/it/faqs
       Preview : Domande frequenti Find answers to common questions about Alignerr General FAQs Hubstaff FAQs What is Alignerr? Who are Alignerrs? What...
 
-  CLUSTER 49  (6 pages)
+  CLUSTER 50  (6 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8202  domain=www.alignerr.com
@@ -4333,7 +4376,7 @@
       URL     : https://www.alignerr.com/it/rules
       Preview : Community rules Alignerr is a community of subject matter experts who align AI models by creating high-quality data in their...
 
-  CLUSTER 50  (6 pages)
+  CLUSTER 51  (6 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8205  domain=www.alignerr.com
@@ -4355,7 +4398,7 @@
       URL     : https://www.alignerr.com/it/interviews
       Preview : Interviews Complete AI-powered interviews to verify your skills and unlock more opportunities. All Business Consulting Design Engineering Science Software Statistics...
 
-  CLUSTER 51  (6 pages)
+  CLUSTER 52  (6 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 99.2%
   [1] page_id=8262  domain=crowdgen.com
@@ -4377,7 +4420,7 @@
       URL     : https://crowdgen.com/aristotle-history-en-gb/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 52  (6 pages)
+  CLUSTER 53  (6 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 99.2%
   [1] page_id=8288  domain=crowdgen.com
@@ -4399,7 +4442,7 @@
       URL     : https://crowdgen.com/aristotle-legal-en-gb/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 53  (6 pages)
+  CLUSTER 54  (6 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 99.2%
   [1] page_id=8300  domain=crowdgen.com
@@ -4421,7 +4464,7 @@
       URL     : https://crowdgen.com/aristotle-games-en-us/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 54  (6 pages)
+  CLUSTER 55  (6 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 99.2%
   [1] page_id=8313  domain=crowdgen.com
@@ -4443,7 +4486,7 @@
       URL     : https://crowdgen.com/aristotle-physics-en-ca/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 55  (6 pages)
+  CLUSTER 56  (6 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 97.7%
   [1] page_id=8329  domain=crowdgen.com
@@ -4465,7 +4508,7 @@
       URL     : https://crowdgen.com/aristotle-philosophy-en-us/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 56  (6 pages)
+  CLUSTER 57  (6 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 97.7%
   [1] page_id=8369  domain=crowdgen.com
@@ -4487,7 +4530,7 @@
       URL     : https://crowdgen.com/coffee-en-ie/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 57  (5 pages)
+  CLUSTER 58  (5 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 96.1%
   [1] page_id=3662  domain=defined.ai
@@ -4506,7 +4549,7 @@
       URL     : https://defined.ai/datasets/german-legal-templates
       Preview : German legal templates If you are looking for a collection of legal document templates, this dataset is what you need....
 
-  CLUSTER 58  (5 pages)
+  CLUSTER 59  (5 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 97.7%
   [1] page_id=3879  domain=defined.ai
@@ -4525,7 +4568,7 @@
       URL     : https://defined.ai/datasets/aspect-based-sentiment-annotations-in-european-spanish
       Preview : Aspect-Based Sentiment Annotations in European Spanish Understanding customer sentiment is not an easy task, especially not if you only have...
 
-  CLUSTER 59  (5 pages)
+  CLUSTER 60  (5 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 94.5%
   [1] page_id=3980  domain=defined.ai
@@ -4544,7 +4587,7 @@
       URL     : https://defined.ai/datasets/brazilian-portuguese-scripted-monologue-generic
       Preview : Brazilian Portuguese Scripted Monologue, generic Start training, testing or fine-tuning your speech models with 150 hours of Brazilian Portuguese recorded...
 
-  CLUSTER 60  (5 pages)
+  CLUSTER 61  (5 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 96.1%
   [1] page_id=4000  domain=defined.ai
@@ -4563,7 +4606,7 @@
       URL     : https://defined.ai/datasets/canadian-french-scripted-monologue-telco
       Preview : Canadian French Scripted Monologue, telco Start training, testing or fine-tuning your speech models with 115 hours of Canadian French recorded...
 
-  CLUSTER 61  (5 pages)
+  CLUSTER 62  (5 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 95.3%
   [1] page_id=4124  domain=defined.ai
@@ -4582,7 +4625,7 @@
       URL     : https://defined.ai/datasets/moroccan-arabic-podcasts
       Preview : Moroccan Arabic Podcasts Start training, testing or fine-tuning your speech models with 7 hours of Moroccan Arabic simulated single-person podcasts....
 
-  CLUSTER 62  (5 pages)
+  CLUSTER 63  (5 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=6124  domain=humansintheloop.org
@@ -4601,7 +4644,7 @@
       URL     : https://humansintheloop.org/tag/aiaudit/
       Preview : Categories Computer vision How Human-in-the-Loop Powers Responsible AI Through Data Annotation by Elene Peradze July 30, 2025 August 1, 2025...
 
-  CLUSTER 63  (5 pages)
+  CLUSTER 64  (5 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=6129  domain=humansintheloop.org
@@ -4620,7 +4663,7 @@
       URL     : https://humansintheloop.org/tag/aireliability/
       Preview : Categories Computer vision Preventing Diagnostic Errors in Healthcare AI with Human-in-the-Loop Annotation by Elene Peradze October 20, 2025 October 20,...
 
-  CLUSTER 64  (5 pages)
+  CLUSTER 65  (5 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 96.9%
   [1] page_id=7149  domain=scale.com
@@ -4639,7 +4682,7 @@
       URL     : https://scale.com/leaderboard/visual_language_understanding/samples
       Preview : ⌘K Toggle Sidebar ⌘K Agentic LBs Safety LBs Frontier LBs SciPredict Humanity's Last Exam Humanity's Last Exam (Text Only) AudioMultiChallenge...
 
-  CLUSTER 65  (5 pages)
+  CLUSTER 66  (5 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 99.2%
   [1] page_id=8261  domain=crowdgen.com
@@ -4658,7 +4701,7 @@
       URL     : https://crowdgen.com/aristotle-chemistry-english/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 66  (5 pages)
+  CLUSTER 67  (5 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 98.4%
   [1] page_id=8264  domain=crowdgen.com
@@ -4677,7 +4720,7 @@
       URL     : https://crowdgen.com/fireweed-de-remote-push/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 67  (5 pages)
+  CLUSTER 68  (5 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8282  domain=crowdgen.com
@@ -4696,7 +4739,7 @@
       URL     : https://crowdgen.com/babel-danish-a/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 68  (5 pages)
+  CLUSTER 69  (5 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 96.1%
   [1] page_id=8323  domain=crowdgen.com
@@ -4715,7 +4758,7 @@
       URL     : https://crowdgen.com/fireweed-zh-yue-hk-translated/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 69  (4 pages)
+  CLUSTER 70  (4 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 98.4%
   [1] page_id=934  domain=www.sama.com
@@ -4731,7 +4774,7 @@
       URL     : https://www.sama.com/ebook/the-rise-of-conversational-commerce
       Preview : We value your privacy We use cookies to enhance your browsing experience, serve personalised ads or content, and analyse our...
 
-  CLUSTER 70  (4 pages)
+  CLUSTER 71  (4 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 90.6%
   [1] page_id=2805  domain=www.oneforma.com
@@ -4747,7 +4790,7 @@
       URL     : https://www.oneforma.com/help-center-new/online-safety-and-cybersecurity/
       Preview : Skip to content Log in Project Help General Inquiries Online Safety and Cybersecurity Troubleshooting My Account and Profile Payment Issues...
 
-  CLUSTER 71  (4 pages)
+  CLUSTER 72  (4 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=3032  domain=outlier.ai
@@ -4763,7 +4806,7 @@
       URL     : https://outlier.ai/experts/finance/raghav
       Preview : Apply Now Outsmart Artificial Intelligence with Your Human Brilliance Join the top 1% of finance experts worldwide to shape the...
 
-  CLUSTER 72  (4 pages)
+  CLUSTER 73  (4 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=3041  domain=outlier.ai
@@ -4779,7 +4822,7 @@
       URL     : https://outlier.ai/experts/medicine-in/raghav-arora
       Preview : Apply Now Outsmart Artificial Intelligence with Your Human Brilliance Join the top 1% of medical experts worldwide to shape the...
 
-  CLUSTER 73  (4 pages)
+  CLUSTER 74  (4 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=3106  domain=outlier.ai
@@ -4795,7 +4838,7 @@
       URL     : https://outlier.ai/generalists/en-t3
       Preview : APPLY NOW Outsmart Artificial Intelligence with Your Human Brilliance Join a global community of talented professionals to shape the future...
 
-  CLUSTER 74  (4 pages)
+  CLUSTER 75  (4 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 97.7%
   [1] page_id=3869  domain=defined.ai
@@ -4811,7 +4854,7 @@
       URL     : https://defined.ai/datasets/canadian-french-spontaneous-dialogue-insurance
       Preview : Canadian French Spontaneous Dialogue, insurance Start training, testing or fine-tuning your models with 128 hours of Canadian French simulated call...
 
-  CLUSTER 75  (4 pages)
+  CLUSTER 76  (4 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 97.7%
   [1] page_id=3928  domain=defined.ai
@@ -4827,7 +4870,7 @@
       URL     : https://defined.ai/datasets/italian-spontaneous-dialogue-telco
       Preview : Italian Spontaneous Dialogue, telco Start training, testing or fine-tuning your models with 351 hours of Italian simulated call center conversations...
 
-  CLUSTER 76  (4 pages)
+  CLUSTER 77  (4 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 97.7%
   [1] page_id=3932  domain=defined.ai
@@ -4843,7 +4886,7 @@
       URL     : https://defined.ai/datasets/czech-spontaneous-dialogue-retail
       Preview : Czech Spontaneous Dialogue, retail Start training, testing or fine-tuning your models with 116 hours of Czech simulated call center conversations...
 
-  CLUSTER 77  (4 pages)
+  CLUSTER 78  (4 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 98.4%
   [1] page_id=3939  domain=defined.ai
@@ -4859,7 +4902,7 @@
       URL     : https://defined.ai/datasets/norwegian-spontaneous-dialogue-telco
       Preview : Norwegian Spontaneous Dialogue, telco Start training, testing or fine-tuning your models with 4 hours of Norwegian simulated call center conversations...
 
-  CLUSTER 78  (4 pages)
+  CLUSTER 79  (4 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 98.4%
   [1] page_id=3958  domain=defined.ai
@@ -4875,7 +4918,7 @@
       URL     : https://defined.ai/datasets/swedish-spontaneous-dialogue-banking
       Preview : Swedish Spontaneous Dialogue, banking Start training, testing or fine-tuning your models with 124 hours of Swedish simulated call center conversations...
 
-  CLUSTER 79  (4 pages)
+  CLUSTER 80  (4 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 96.9%
   [1] page_id=3966  domain=defined.ai
@@ -4891,7 +4934,7 @@
       URL     : https://defined.ai/datasets/yemeni-arabic-spontaneous-dialogue-telco
       Preview : Yemeni Arabic Spontaneous Dialogue, telco Start training, testing or fine-tuning your models with 16 hours of Yemeni Arabic simulated call...
 
-  CLUSTER 80  (4 pages)
+  CLUSTER 81  (4 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 96.9%
   [1] page_id=4015  domain=defined.ai
@@ -4907,7 +4950,7 @@
       URL     : https://defined.ai/datasets/tagalog-spontaneous-dialogue-insurance
       Preview : Tagalog Spontaneous Dialogue, insurance Start training, testing or fine-tuning your models with 27 hours of Tagalog simulated call center conversations...
 
-  CLUSTER 81  (4 pages)
+  CLUSTER 82  (4 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 94.5%
   [1] page_id=4113  domain=defined.ai
@@ -4923,7 +4966,7 @@
       URL     : https://defined.ai/datasets/yemeni-arabic-scripted-monologue-retail
       Preview : Yemeni Arabic Scripted Monologue, retail Start training, testing or fine-tuning your speech models with 47 hours of Yemeni Arabic recorded...
 
-  CLUSTER 82  (4 pages)
+  CLUSTER 83  (4 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 91.4%
   [1] page_id=5292  domain=www.crowdworks.ai
@@ -4939,7 +4982,7 @@
       URL     : https://www.crowdworks.ai/en/company/contact
       Preview : KOR ENG JPN AI Data Resources Company Contact Sales Inquiry has been received. We will get back to you shortly....
 
-  CLUSTER 83  (4 pages)
+  CLUSTER 84  (4 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=6008  domain=humansintheloop.org
@@ -4955,7 +4998,7 @@
       URL     : https://humansintheloop.org/tag/digitalinclusion/
       Preview : Categories Impact Post Covid-19 world: How AI can ensure a more inclusive digital economy by Humans in the Loop April...
 
-  CLUSTER 84  (4 pages)
+  CLUSTER 85  (4 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=6061  domain=humansintheloop.org
@@ -4971,7 +5014,7 @@
       URL     : https://humansintheloop.org/tag/damageannotation/
       Preview : Categories Ultimate guides Ultimate Guide to Car Damage Annotation for Visual Inspection AI by Humans in the Loop September 12,...
 
-  CLUSTER 85  (4 pages)
+  CLUSTER 86  (4 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=6093  domain=humansintheloop.org
@@ -4987,7 +5030,7 @@
       URL     : https://humansintheloop.org/tag/first-prize/
       Preview : Categories News Humans in the Loop wins 1st prize at the Cartier Women’s Initiative awards by Elene Peradze May 15,...
 
-  CLUSTER 86  (4 pages)
+  CLUSTER 87  (4 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=6107  domain=humansintheloop.org
@@ -5003,7 +5046,7 @@
       URL     : https://humansintheloop.org/tag/aitrainingdatacrisis/
       Preview : Categories Computer vision Why Synthetic Data Is Taking Over in 2025: Solving AI’s Data Crisis by Elene Peradze June 24,...
 
-  CLUSTER 87  (4 pages)
+  CLUSTER 88  (4 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=6324  domain=www.digitaldividedata.com
@@ -5019,7 +5062,7 @@
       URL     : https://www.digitaldividedata.com/physical-ai/scenario-data-services/edge-case-curation-services
       Preview : Data Annotation Techniques for Voice, Text, Image, and Video In this blog, we will explore how data annotation works across...
 
-  CLUSTER 88  (4 pages)
+  CLUSTER 89  (4 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=6379  domain=www.digitaldividedata.com
@@ -5035,7 +5078,7 @@
       URL     : https://www.digitaldividedata.com/agentic-ai/autonomous-task-execution
       Preview : Building Trustworthy Agentic AI with Human Oversight Author: Umang Dayal When a system makes decisions across steps,... Read More...
 
-  CLUSTER 89  (4 pages)
+  CLUSTER 90  (4 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 99.2%
   [1] page_id=8286  domain=crowdgen.com
@@ -5051,7 +5094,7 @@
       URL     : https://crowdgen.com/heather-pt-br/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 90  (3 pages)
+  CLUSTER 91  (3 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=19  domain=mindrift.ai
@@ -5064,7 +5107,7 @@
       URL     : https://mindrift.ai/app/google
       Preview : Cookies give you a personalised experience We are gathering cookies to ensure you get the best experience at Mindrift. Learn...
 
-  CLUSTER 91  (3 pages)
+  CLUSTER 92  (3 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 99.2%
   [1] page_id=2848  domain=www.dataannotation.tech
@@ -5077,7 +5120,7 @@
       URL     : https://dataannotation.tech/arabic-eg-bilingual
       Preview : I operate a part-time business I’m trying to grow and the flexibility to work on AI projects when I choose...
 
-  CLUSTER 92  (3 pages)
+  CLUSTER 93  (3 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 97.7%
   [1] page_id=3028  domain=outlier.ai
@@ -5090,7 +5133,7 @@
       URL     : https://outlier.ai/experts/medicine/latam
       Preview : Apply Now Outsmart Artificial Intelligence with Your Human Brilliance Join the top 1% of medical experts worldwide to shape the...
 
-  CLUSTER 93  (3 pages)
+  CLUSTER 94  (3 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 99.2%
   [1] page_id=3121  domain=outlier.ai
@@ -5103,7 +5146,7 @@
       URL     : https://outlier.ai/experts/material-sciences
       Preview : Apply Now Outsmart Artificial Intelligence with Your Human Brilliance Join the top 1% of material sciences experts worldwide to shape...
 
-  CLUSTER 94  (3 pages)
+  CLUSTER 95  (3 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 97.7%
   [1] page_id=3256  domain=www.prolific.com
@@ -5116,7 +5159,7 @@
       URL     : https://www.prolific.com/build-llm-research
       Preview : Skip to main content Build AI Research Resources Pricing Get paid to participate Get started for free Don’t let outsourcing...
 
-  CLUSTER 95  (3 pages)
+  CLUSTER 96  (3 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=3275  domain=www.prolific.com
@@ -5129,7 +5172,7 @@
       URL     : https://www.prolific.com/online-survey-panels
       Preview : Skip to main content Build AI Research Resources Pricing Get paid to participate Get started for free Don't let participant...
 
-  CLUSTER 96  (3 pages)
+  CLUSTER 97  (3 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 98.4%
   [1] page_id=3936  domain=defined.ai
@@ -5142,7 +5185,7 @@
       URL     : https://defined.ai/datasets/brazilian-portuguese-spontaneous-dialogue-banking
       Preview : Brazilian Portuguese Spontaneous Dialogue, banking Start training, testing or fine-tuning your models with 88 hours of Brazilian Portuguese simulated call...
 
-  CLUSTER 97  (3 pages)
+  CLUSTER 98  (3 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 98.4%
   [1] page_id=3938  domain=defined.ai
@@ -5155,7 +5198,7 @@
       URL     : https://defined.ai/datasets/tamil-spontaneous-dialogue-insurance
       Preview : Tamil Spontaneous Dialogue, insurance Start training, testing or fine-tuning your models with 83 hours of Tamil simulated call center conversations...
 
-  CLUSTER 98  (3 pages)
+  CLUSTER 99  (3 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 97.7%
   [1] page_id=4063  domain=defined.ai
@@ -5168,7 +5211,7 @@
       URL     : https://defined.ai/datasets/italian-ivr-banking
       Preview : Italian IVR, banking Start training, testing or fine-tuning your models with 46 hours of Italian Queries from people to an...
 
-  CLUSTER 99  (3 pages)
+  CLUSTER 100  (3 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 97.7%
   [1] page_id=4101  domain=defined.ai
@@ -5181,7 +5224,7 @@
       URL     : https://defined.ai/datasets/canadian-french-ivr-banking
       Preview : Canadian French IVR, banking Start training, testing or fine-tuning your models with 13 hours of Canadian French Queries from people...
 
-  CLUSTER 100  (3 pages)
+  CLUSTER 101  (3 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 95.3%
   [1] page_id=4120  domain=defined.ai
@@ -5194,7 +5237,7 @@
       URL     : https://defined.ai/datasets/modern-standard-arabic-scripted-monologue-automotive
       Preview : Modern Standard Arabic Scripted Monologue, automotive Start training, testing or fine-tuning your speech models with 10 hours of Modern Standard...
 
-  CLUSTER 101  (3 pages)
+  CLUSTER 102  (3 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 93.0%
   [1] page_id=4130  domain=defined.ai
@@ -5207,7 +5250,7 @@
       URL     : https://defined.ai/datasets/gujarati-scripted-monologue-generic
       Preview : Gujarati Scripted Monologue, generic Start training, testing or fine-tuning your speech models with 209 hours of Gujarati recorded on device....
 
-  CLUSTER 102  (3 pages)
+  CLUSTER 103  (3 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 85.9%
   [1] page_id=4211  domain=defined.ai
@@ -5220,7 +5263,7 @@
       URL     : https://defined.ai/datasets/argentinian-spanish-podcasts-2
       Preview : Argentinian Spanish Podcasts Start training, testing or fine-tuning your speech models with 1032 hours of Argentinian Spanish live, non-simulated podcasts...
 
-  CLUSTER 103  (3 pages)
+  CLUSTER 104  (3 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 97.7%
   [1] page_id=4294  domain=defined.ai
@@ -5233,7 +5276,7 @@
       URL     : https://defined.ai/datasets/greek-podcasts-2
       Preview : Greek Podcasts Start training, testing or fine-tuning your speech models with 168 hours of Greek live, non-simulated podcasts recorded by...
 
-  CLUSTER 104  (3 pages)
+  CLUSTER 105  (3 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 97.7%
   [1] page_id=4298  domain=defined.ai
@@ -5246,7 +5289,7 @@
       URL     : https://defined.ai/datasets/music-novelty-comedy
       Preview : Music - novelty - comedy Start training or fine-tuning your generative AI and music classification models with 156 tracks in...
 
-  CLUSTER 105  (3 pages)
+  CLUSTER 106  (3 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=6013  domain=humansintheloop.org
@@ -5259,7 +5302,7 @@
       URL     : https://humansintheloop.org/tag/workofthefuture/
       Preview : Categories News Humans in the Loop on the main stage of Techfugees Global Summit by Humans in the Loop October...
 
-  CLUSTER 106  (3 pages)
+  CLUSTER 107  (3 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=6017  domain=humansintheloop.org
@@ -5272,7 +5315,7 @@
       URL     : https://humansintheloop.org/tag/forbes/
       Preview : Categories News Humans in the Loop founder named Forbes 30 under 30 by Humans in the Loop October 1, 2018...
 
-  CLUSTER 107  (3 pages)
+  CLUSTER 108  (3 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=6065  domain=humansintheloop.org
@@ -5285,7 +5328,7 @@
       URL     : https://humansintheloop.org/tag/keypointannotation/
       Preview : Categories Ultimate guides Ultimate guide to keypoint annotation for sports AI by Humans in the Loop November 22, 2022 February...
 
-  CLUSTER 108  (3 pages)
+  CLUSTER 109  (3 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=6075  domain=humansintheloop.org
@@ -5298,7 +5341,7 @@
       URL     : https://humansintheloop.org/tag/fightyeight/
       Preview : Categories Partners HITL announces new partnership in the DRC: meet WarChild by Humans in the Loop January 18, 2023 February...
 
-  CLUSTER 109  (3 pages)
+  CLUSTER 110  (3 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=6089  domain=humansintheloop.org
@@ -5311,7 +5354,7 @@
       URL     : https://humansintheloop.org/tag/b-corp-certified/
       Preview : Categories News SDG Digital GameChanger Award, Pioneer category by Elene Peradze September 21, 2023 February 10, 2025 Categories News Humans...
 
-  CLUSTER 110  (3 pages)
+  CLUSTER 111  (3 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=6335  domain=www.digitaldividedata.com
@@ -5324,7 +5367,7 @@
       URL     : https://www.digitaldividedata.com/physical-ai/product-verification-and-validation/safety-case-analysis
       Preview : How Data Labeling and Real‑World Testing Build Autonomous Vehicle Intelligence This blog outlines how data labeling and real-world testing complement...
 
-  CLUSTER 111  (3 pages)
+  CLUSTER 112  (3 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 99.2%
   [1] page_id=6912  domain=scale.com
@@ -5337,7 +5380,7 @@
       URL     : https://scale.com/careers/4660340005
       Preview : Scale AI logo Products Leaderboards Enterprise Government Customers Resources Book a Demo → Log In Back to Open Positions Department...
 
-  CLUSTER 112  (3 pages)
+  CLUSTER 113  (3 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 96.9%
   [1] page_id=7146  domain=scale.com
@@ -5350,7 +5393,7 @@
       URL     : https://scale.com/leaderboard/humanitys_last_exam_text_only/samples
       Preview : ⌘K Toggle Sidebar ⌘K Agentic LBs Safety LBs Frontier LBs SciPredict Humanity's Last Exam Humanity's Last Exam (Text Only) AudioMultiChallenge...
 
-  CLUSTER 113  (3 pages)
+  CLUSTER 114  (3 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 98.4%
   [1] page_id=8336  domain=crowdgen.com
@@ -5363,7 +5406,7 @@
       URL     : https://crowdgen.com/coffee-en-ph/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 114  (3 pages)
+  CLUSTER 115  (3 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8411  domain=crowdgen.com
@@ -5376,7 +5419,7 @@
       URL     : https://crowdgen.com/project-jigglypuff-podcast-transcription-english-main/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 115  (3 pages)
+  CLUSTER 116  (3 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 96.9%
   [1] page_id=8464  domain=crowdgen.com
@@ -5389,7 +5432,7 @@
       URL     : https://crowdgen.com/avatara-registration/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 116  (3 pages)
+  CLUSTER 117  (3 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 97.7%
   [1] page_id=8529  domain=crowdgen.com
@@ -5402,7 +5445,7 @@
       URL     : https://crowdgen.com/babel-danish-c/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 117  (2 pages)
+  CLUSTER 118  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 98.4%
   [1] page_id=280  domain=www.appen.com
@@ -5412,7 +5455,7 @@
       URL     : https://www.appen.com/blog/data-labeling-2
       Preview : Resources Blog What is Data Labeling? Published on June 14, 2021 Author Authors Appen No items found. Share Labeling data...
 
-  CLUSTER 118  (2 pages)
+  CLUSTER 119  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 92.2%
   [1] page_id=677  domain=www.remotasks.com
@@ -5422,7 +5465,7 @@
       URL     : https://outlier.ai/legal/privacy-policy
       Preview : About Us Our Experts Blog FAQ Login View Opportunities Privacy Policy Effective Date: Sep 26, 2025 Your privacy is important...
 
-  CLUSTER 119  (2 pages)
+  CLUSTER 120  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 95.3%
   [1] page_id=714  domain=www.sama.com
@@ -5432,7 +5475,7 @@
       URL     : https://www.sama.com/lines-and-arrows-annotation
       Preview : We value your privacy We use cookies to enhance your browsing experience, serve personalised ads or content, and analyse our...
 
-  CLUSTER 120  (2 pages)
+  CLUSTER 121  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 93.8%
   [1] page_id=942  domain=www.sama.com
@@ -5442,7 +5485,7 @@
       URL     : https://www.sama.com/ebook/quality-ground-truth-labels-for-autonomous-driving-applications
       Preview : We value your privacy We use cookies to enhance your browsing experience, serve personalised ads or content, and analyse our...
 
-  CLUSTER 121  (2 pages)
+  CLUSTER 122  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=1017  domain=www.sama.com
@@ -5452,7 +5495,7 @@
       URL     : https://www.sama.com/podcast/moxie-the-robot-teaches-children-kindness-conversational-ai-child-development-2122a
       Preview : We value your privacy We use cookies to enhance your browsing experience, serve personalised ads or content, and analyse our...
 
-  CLUSTER 122  (2 pages)
+  CLUSTER 123  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 93.8%
   [1] page_id=1031  domain=www.sama.com
@@ -5462,7 +5505,7 @@
       URL     : https://www.sama.com/podcast/turning-expertise-into-algorithms-with-mavenoid-ceo-shahan-lilja
       Preview : We value your privacy We use cookies to enhance your browsing experience, serve personalised ads or content, and analyse our...
 
-  CLUSTER 123  (2 pages)
+  CLUSTER 124  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=1498  domain=www.lxt.ai
@@ -5472,7 +5515,7 @@
       URL     : https://www.lxt.ai/path-ai-maturity-2024/
       Preview : The Path to AI Maturity 2024 An Executive Survey Introduction AI investment AI trends by maturity level AI data trends...
 
-  CLUSTER 124  (2 pages)
+  CLUSTER 125  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 95.3%
   [1] page_id=2470  domain=www.clickworker.com
@@ -5482,7 +5525,7 @@
       URL     : https://www.clickworker.com/apply-via-the-clickworker-app/
       Preview : Login For Customers For Clickworkers Register For Customers For Clickworkers Clickworker GmbH Clickworker-Job The Term Clickworker Distribution of Tasks The...
 
-  CLUSTER 125  (2 pages)
+  CLUSTER 126  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=2801  domain=www.oneforma.com
@@ -5492,7 +5535,7 @@
       URL     : https://www.oneforma.com/author/miguel-mendonca/
       Preview : You don’t need a background in training AI to join OneForma—each project has its own unique skill requirements, making our...
 
-  CLUSTER 126  (2 pages)
+  CLUSTER 127  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 92.2%
   [1] page_id=2803  domain=www.oneforma.com
@@ -5502,7 +5545,7 @@
       URL     : https://www.oneforma.com/help-center-new/general-inquiries/
       Preview : Skip to content Log in Project Help General Inquiries Online Safety and Cybersecurity Troubleshooting My Account and Profile Payment Issues...
 
-  CLUSTER 127  (2 pages)
+  CLUSTER 128  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 95.3%
   [1] page_id=2806  domain=www.oneforma.com
@@ -5512,7 +5555,7 @@
       URL     : https://www.oneforma.com/help-center-new/payment-issues-and-finance/
       Preview : Skip to content Log in Project Help General Inquiries Online Safety and Cybersecurity Troubleshooting My Account and Profile Payment Issues...
 
-  CLUSTER 128  (2 pages)
+  CLUSTER 129  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 93.0%
   [1] page_id=2807  domain=www.oneforma.com
@@ -5522,7 +5565,7 @@
       URL     : https://www.oneforma.com/help-center-new/project-help/
       Preview : Skip to content Log in Project Help General Inquiries Online Safety and Cybersecurity Troubleshooting My Account and Profile Payment Issues...
 
-  CLUSTER 129  (2 pages)
+  CLUSTER 130  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 98.4%
   [1] page_id=2837  domain=www.dataannotation.tech
@@ -5532,7 +5575,7 @@
       URL     : https://dataannotation.tech/german-austria-bilingual
       Preview : I operate a part-time business I’m trying to grow and the flexibility to work on AI projects when I choose...
 
-  CLUSTER 130  (2 pages)
+  CLUSTER 131  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 99.2%
   [1] page_id=2838  domain=www.dataannotation.tech
@@ -5542,7 +5585,7 @@
       URL     : https://dataannotation.tech/french-belgium-bilingual
       Preview : I operate a part-time business I’m trying to grow and the flexibility to work on AI projects when I choose...
 
-  CLUSTER 131  (2 pages)
+  CLUSTER 132  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=2885  domain=www.dataannotation.tech
@@ -5552,7 +5595,7 @@
       URL     : https://dataannotation.tech/german-austria-bilingual-en
       Preview : I operate a part-time business I’m trying to grow and the flexibility to work on AI projects when I choose...
 
-  CLUSTER 132  (2 pages)
+  CLUSTER 133  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=3021  domain=outlier.ai
@@ -5562,7 +5605,7 @@
       URL     : https://outlier.ai/hle/humanities
       Preview : Choose Your Expertise Outsmart Artificial Intelligence with Your Human Brilliance Join the top 1% of scholars in shaping the future...
 
-  CLUSTER 133  (2 pages)
+  CLUSTER 134  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=3033  domain=outlier.ai
@@ -5572,7 +5615,7 @@
       URL     : https://outlier.ai/experts/medicine-opt/kamal
       Preview : Apply Now Outsmart Artificial Intelligence with Your Human Brilliance Join the top 1% of ophthalmologists worldwide to shape the future...
 
-  CLUSTER 134  (2 pages)
+  CLUSTER 135  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=3065  domain=outlier.ai
@@ -5582,7 +5625,7 @@
       URL     : https://outlier.ai/blog/train-your-future-design-assistant-join-outlier-s-graphic-design-project
       Preview : About Us Our Experts Blog FAQ Login View Opportunities Blog / Aug 20, 2025 Train your future design assistant: join...
 
-  CLUSTER 135  (2 pages)
+  CLUSTER 136  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 99.2%
   [1] page_id=3109  domain=outlier.ai
@@ -5592,7 +5635,7 @@
       URL     : https://outlier.ai/generalists/en-t2
       Preview : APPLY NOW Outsmart Artificial Intelligence with Your Human Brilliance Join a global community of talented writers to shape the future...
 
-  CLUSTER 136  (2 pages)
+  CLUSTER 137  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 98.4%
   [1] page_id=3117  domain=outlier.ai
@@ -5602,7 +5645,7 @@
       URL     : https://outlier.ai/experts/b2c-digital-domain
       Preview : Apply Now Outsmart Artificial Intelligence with Your Human Brilliance Join the top 1% of B2C Digital experts worldwide to shape...
 
-  CLUSTER 137  (2 pages)
+  CLUSTER 138  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=3145  domain=outlier.ai
@@ -5612,7 +5655,7 @@
       URL     : https://outlier.ai/experts/lucysradiologists
       Preview : Apply Now Shape the future of diagnostic AI with your clinical expertise Join an elite cohort of radiologists performing high-level...
 
-  CLUSTER 138  (2 pages)
+  CLUSTER 139  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=3268  domain=www.prolific.com
@@ -5622,7 +5665,7 @@
       URL     : https://www.prolific.com/prolific-vs-mturk
       Preview : Skip to main content Build AI Research Resources Pricing Get paid to participate Get started for free Prolific vs. MTurk...
 
-  CLUSTER 139  (2 pages)
+  CLUSTER 140  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 99.2%
   [1] page_id=3271  domain=www.prolific.com
@@ -5632,7 +5675,7 @@
       URL     : https://www.prolific.com/tldr-ai
       Preview : Skip to main content Build AI Research Resources Pricing Get paid to participate Get started for free Make your AI...
 
-  CLUSTER 140  (2 pages)
+  CLUSTER 141  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 98.4%
   [1] page_id=3689  domain=defined.ai
@@ -5642,7 +5685,7 @@
       URL     : https://defined.ai/datasets/english-question-answer-pairs-3
       Preview : English Question-Answer pairs Large Language Model builders looking to improve the ability of their models to answer questions with included...
 
-  CLUSTER 141  (2 pages)
+  CLUSTER 142  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 93.8%
   [1] page_id=3691  domain=defined.ai
@@ -5652,7 +5695,7 @@
       URL     : https://defined.ai/datasets/named-entity-tagged-sentences-in-norwegian
       Preview : Named Entity Tagged Sentences in Norwegian Named Entity Recognition is an important part of many NLP applications, but finding data...
 
-  CLUSTER 142  (2 pages)
+  CLUSTER 143  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=3699  domain=defined.ai
@@ -5662,7 +5705,7 @@
       URL     : https://defined.ai/thank-you-contact-us
       Preview : Thank you for reaching out to us! We have received your inquiry and are already on it. Should you need...
 
-  CLUSTER 143  (2 pages)
+  CLUSTER 144  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 93.8%
   [1] page_id=3705  domain=defined.ai
@@ -5672,7 +5715,7 @@
       URL     : https://defined.ai/datasets/european-spanish-books
       Preview : European Spanish books If you are looking for large amount of restored knowledge corpus derived from textbooks, this digitization of...
 
-  CLUSTER 144  (2 pages)
+  CLUSTER 145  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 96.9%
   [1] page_id=3754  domain=defined.ai
@@ -5682,7 +5725,7 @@
       URL     : https://defined.ai/datasets/hindi-documentary-videos
       Preview : Hindi Documentary Videos Start training, fine-tuning or testing your multimedia understanding, video classification, or content analysis models with this diverse...
 
-  CLUSTER 145  (2 pages)
+  CLUSTER 146  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 97.7%
   [1] page_id=3769  domain=defined.ai
@@ -5692,7 +5735,7 @@
       URL     : https://defined.ai/datasets/brazilian-portuguese-media-content-videos
       Preview : Brazilian Portuguese Media Content Videos Start training, fine-tuning or testing your multimedia understanding, video classification, or content analysis models with...
 
-  CLUSTER 146  (2 pages)
+  CLUSTER 147  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 97.7%
   [1] page_id=4049  domain=defined.ai
@@ -5702,7 +5745,7 @@
       URL     : https://defined.ai/datasets/norwegian-podcasts-1
       Preview : Norwegian Podcasts Start training, testing or fine-tuning your speech models with 3500 hours of Norwegian live, non-simulated podcasts recorded by...
 
-  CLUSTER 147  (2 pages)
+  CLUSTER 148  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 93.8%
   [1] page_id=4109  domain=defined.ai
@@ -5712,7 +5755,7 @@
       URL     : https://defined.ai/datasets/american-english-scripted-monologue-emotions
       Preview : American English Scripted Monologue, emotions Start training, testing or fine-tuning your speech models with 1927 hours of American English recorded...
 
-  CLUSTER 148  (2 pages)
+  CLUSTER 149  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 96.1%
   [1] page_id=4111  domain=defined.ai
@@ -5722,7 +5765,7 @@
       URL     : https://defined.ai/datasets/spanish-podcasts
       Preview : Spanish Podcasts Start training, testing or fine-tuning your speech models with 35833 hours of Spanish live, non-simulated podcasts recorded by...
 
-  CLUSTER 149  (2 pages)
+  CLUSTER 150  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 94.5%
   [1] page_id=4152  domain=defined.ai
@@ -5732,7 +5775,7 @@
       URL     : https://defined.ai/datasets/canadian-french-podcasts
       Preview : Canadian French Podcasts Start training, testing or fine-tuning your speech models with 796 hours of Canadian French live, non-simulated podcasts...
 
-  CLUSTER 150  (2 pages)
+  CLUSTER 151  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 98.4%
   [1] page_id=4164  domain=defined.ai
@@ -5742,7 +5785,7 @@
       URL     : https://defined.ai/datasets/moroccan-arabic-podcasts-1
       Preview : Moroccan Arabic Podcasts Start training, testing or fine-tuning your speech models with 7 hours of Moroccan Arabicma simulated single-person podcasts....
 
-  CLUSTER 151  (2 pages)
+  CLUSTER 152  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 93.8%
   [1] page_id=4169  domain=defined.ai
@@ -5752,7 +5795,7 @@
       URL     : https://defined.ai/datasets/urdu-podcasts-1
       Preview : Urdu Podcasts Start training, testing or fine-tuning your speech models with 7222 hours of Urdu live, non-simulated podcasts recorded by...
 
-  CLUSTER 152  (2 pages)
+  CLUSTER 153  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 95.3%
   [1] page_id=4193  domain=defined.ai
@@ -5762,7 +5805,7 @@
       URL     : https://defined.ai/datasets/mandarin-chinese-call-center
       Preview : Mandarin Chinese Call Center Start training, testing or fine-tuning your speech models with 5000 hours of Mandarin Chinese live, non-simulated...
 
-  CLUSTER 153  (2 pages)
+  CLUSTER 154  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 96.9%
   [1] page_id=4426  domain=defined.ai
@@ -5772,7 +5815,7 @@
       URL     : https://defined.ai/datasets/latin-american-spanish-podcasts-2
       Preview : Latin American Spanish Podcasts Start training, testing or fine-tuning your speech models with 1751 hours of Latin American Spanish live,...
 
-  CLUSTER 154  (2 pages)
+  CLUSTER 155  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 95.3%
   [1] page_id=4476  domain=defined.ai
@@ -5782,7 +5825,7 @@
       URL     : https://defined.ai/datasets/italian-podcasts-3
       Preview : Italian Podcasts Start training, testing or fine-tuning your speech models with 5544 hours of Italian live, non-simulated podcasts recorded by...
 
-  CLUSTER 155  (2 pages)
+  CLUSTER 156  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 98.4%
   [1] page_id=4553  domain=defined.ai
@@ -5792,7 +5835,7 @@
       URL     : https://defined.ai/datasets/english-stem-articles-1
       Preview : English STEM articles Large Language Model builders, take a look at this dataset! This collection of academic articles and journals...
 
-  CLUSTER 156  (2 pages)
+  CLUSTER 157  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 97.7%
   [1] page_id=5057  domain=imerit.net
@@ -5802,7 +5845,7 @@
       URL     : https://imerit.net/ai-in-the-dust-building-trustworthy-models-for-the-physical-world-techcrunch-form/
       Preview : Skip to content Main Navigation Contact Us MENU Products Ango Hub 3D Multi Sensor Fusion Deep Reasoning Lab Radiology Annotation...
 
-  CLUSTER 157  (2 pages)
+  CLUSTER 158  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 99.2%
   [1] page_id=5101  domain=imerit.net
@@ -5812,7 +5855,7 @@
       URL     : https://imerit.net/resources/case-studies/vision-language-action-model-for-autonomous-mobility/
       Preview : Skip to content Main Navigation Contact Us MENU Products Ango Hub 3D Multi Sensor Fusion Deep Reasoning Lab Radiology Annotation...
 
-  CLUSTER 158  (2 pages)
+  CLUSTER 159  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 95.3%
   [1] page_id=5266  domain=imerit.net
@@ -5822,7 +5865,7 @@
       URL     : https://imerit.net/resources/blog/case-study-use-case/multisensor-fusion/
       Preview : Skip to content Main Navigation Contact Us MENU Products Ango Hub 3D Multi Sensor Fusion Deep Reasoning Lab Radiology Annotation...
 
-  CLUSTER 159  (2 pages)
+  CLUSTER 160  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 96.9%
   [1] page_id=5282  domain=imerit.net
@@ -5832,7 +5875,7 @@
       URL     : https://imerit.net/resources/blog/case-study-use-case/robotics/
       Preview : Skip to content Main Navigation Contact Us MENU Products Ango Hub 3D Multi Sensor Fusion Deep Reasoning Lab Radiology Annotation...
 
-  CLUSTER 160  (2 pages)
+  CLUSTER 161  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=5283  domain=imerit.net
@@ -5842,7 +5885,7 @@
       URL     : https://imerit.net/resources/blog/case-study-use-case/scholars/
       Preview : Skip to content Main Navigation Contact Us MENU Products Ango Hub 3D Multi Sensor Fusion Deep Reasoning Lab Radiology Annotation...
 
-  CLUSTER 161  (2 pages)
+  CLUSTER 162  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 97.7%
   [1] page_id=5330  domain=www.crowdworks.ai
@@ -5852,7 +5895,7 @@
       URL     : https://www.crowdworks.ai/ja/company/contact
       Preview : KOR ENG JPN AI Data リソース 会社 お問い合わせ お問い合わせを承りました。 速やかに返答いたします。 会社紹介書はメールでご確認くださいいただけます。 確認 広告情報の受信に同意する（任意） （株）クラウドワークスは、情報通信網の利用促進及び情報保護等に関する法律第50条第1項に基づき、広告性情報を送信するために受信者の事前同意を得ており、受信同意の有無を定期的に確認しています。 広告性情報の受信に同意される場合、（株）クラウドワークスが提供するイベントと特典等の様々な情報やその他有用な広告性情報が電子的な送信媒体（メール、テキストメッセージ）を通じて送信されます。 本広告性情報受信同意項目は選択事項であり、同意を拒否する場合で（株）クラウドワークスのサービス利用には影響がありません。ただし、拒否した場合は同意を通じて提供可能な各種特典イベントの案内を受けることができません。受信同意の意思表示の後でも、お客様センターを通じて利用者の意思に従って受信同意の状態を変更（同意又は撤回）することができます。 確認 個人情報の収集および利用に同意する（必須）* ○ 個人情報の収集および利用目的...
 
-  CLUSTER 162  (2 pages)
+  CLUSTER 163  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 94.5%
   [1] page_id=5340  domain=www.crowdworks.ai
@@ -5862,7 +5905,7 @@
       URL     : https://www.crowdworks.ai/ja/data-type/pointcloud
       Preview : KOR ENG JPN AI Data リソース 会社 お問い合わせ ポイントクラウド 自動運転とロボット工学のための3Dラベリングをサポートします。 How We Work アノテーションタイプ 3D Lidarベースのポイントクラウドデータからキュボイド作業を提供します。 Apply Please press the...
 
-  CLUSTER 163  (2 pages)
+  CLUSTER 164  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 93.0%
   [1] page_id=5546  domain=www.cloudfactory.com
@@ -5872,7 +5915,7 @@
       URL     : https://www.cloudfactory.com/news
       Preview : FEATURED NEWS CloudFactory Strengthens Leadership Team with Three C-Level Appointments Read More News Releases CloudFactory Strengthens Leadership Team with Three...
 
-  CLUSTER 164  (2 pages)
+  CLUSTER 165  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 98.4%
   [1] page_id=5899  domain=humansintheloop.org
@@ -5882,7 +5925,7 @@
       URL     : https://humansintheloop.org/impact/reports/impact-report-2022-3/
       Preview : Monitoring and Evaluation Impact report 2023 Empowering Change in Conflict-Affected Communities We are proud to present the Impact Report 2023,...
 
-  CLUSTER 165  (2 pages)
+  CLUSTER 166  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=5907  domain=humansintheloop.org
@@ -5892,7 +5935,7 @@
       URL     : https://humansintheloop.org/industries/medical-ai/
       Preview : Medical AI Label your medical data with the expert medical teams of Humans in the Loop We have a roster...
 
-  CLUSTER 166  (2 pages)
+  CLUSTER 167  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=5923  domain=humansintheloop.org
@@ -5902,7 +5945,7 @@
       URL     : https://humansintheloop.org/contact-us/
       Preview : Get In Touch Book a call with our expert! Share your details, and our team will be in touch with...
 
-  CLUSTER 167  (2 pages)
+  CLUSTER 168  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=6022  domain=humansintheloop.org
@@ -5912,7 +5955,7 @@
       URL     : https://humansintheloop.org/tag/mitsolve/
       Preview : Categories News Humans in the Loop is selected as one of the winners of MIT Solve by Humans in the...
 
-  CLUSTER 168  (2 pages)
+  CLUSTER 169  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 98.4%
   [1] page_id=6033  domain=humansintheloop.org
@@ -5922,7 +5965,7 @@
       URL     : https://humansintheloop.org/tag/annotationtools/
       Preview : Categories Computer vision 3 Ways Synthetic Data Breaks Models and How Human Validators Fix Them by Yuliia Tatarets November 18,...
 
-  CLUSTER 169  (2 pages)
+  CLUSTER 170  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=6050  domain=humansintheloop.org
@@ -5932,7 +5975,7 @@
       URL     : https://humansintheloop.org/tag/lebanon/
       Preview : Categories Partners HITL announces new partnership in Lebanon: meet Techfugees by Humans in the Loop September 7, 2021 February 10,...
 
-  CLUSTER 170  (2 pages)
+  CLUSTER 171  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=6052  domain=humansintheloop.org
@@ -5942,7 +5985,7 @@
       URL     : https://humansintheloop.org/tag/opensource/
       Preview : Categories Best labeling tools 10 of the best open-source annotation tools for computer vision by Humans in the Loop September...
 
-  CLUSTER 171  (2 pages)
+  CLUSTER 172  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=6054  domain=humansintheloop.org
@@ -5952,7 +5995,7 @@
       URL     : https://humansintheloop.org/tag/dataset/
       Preview : Categories Computer vision Best AI Training Datasets for Machine Learning & Deep Learning (2025 Guide) by Elene Peradze March 17,...
 
-  CLUSTER 172  (2 pages)
+  CLUSTER 173  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=6059  domain=humansintheloop.org
@@ -5962,7 +6005,7 @@
       URL     : https://humansintheloop.org/tag/retailannotation/
       Preview : Categories Ultimate guides Ultimate Guide to Document Annotation for OCR AI by Humans in the Loop August 25, 2022 February...
 
-  CLUSTER 173  (2 pages)
+  CLUSTER 174  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=6068  domain=humansintheloop.org
@@ -5972,7 +6015,7 @@
       URL     : https://humansintheloop.org/tag/doctorsintheloop/
       Preview : Categories News Announcing the launch of Doctors in the Loop: a new brand for Medical AI annotation by Humans in...
 
-  CLUSTER 174  (2 pages)
+  CLUSTER 175  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=6071  domain=humansintheloop.org
@@ -5982,7 +6025,7 @@
       URL     : https://humansintheloop.org/tag/medicalannotation/
       Preview : Categories Ultimate guides Ultimate guide to surgical video annotation for medical AI by Humans in the Loop December 9, 2022...
 
-  CLUSTER 175  (2 pages)
+  CLUSTER 176  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=6073  domain=humansintheloop.org
@@ -5992,7 +6035,7 @@
       URL     : https://humansintheloop.org/tag/surveillanceannotation/
       Preview : Categories Ultimate guides Ultimate guide to video annotation for surveillance AI by Humans in the Loop December 23, 2022 February...
 
-  CLUSTER 176  (2 pages)
+  CLUSTER 177  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=6078  domain=humansintheloop.org
@@ -6002,7 +6045,7 @@
       URL     : https://humansintheloop.org/tag/ukraine/
       Preview : Categories Partners HITL announces new partnership in Ukraine: meet Beetroot by Humans in the Loop February 13, 2023 February 10,...
 
-  CLUSTER 177  (2 pages)
+  CLUSTER 178  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=6080  domain=humansintheloop.org
@@ -6012,7 +6055,7 @@
       URL     : https://humansintheloop.org/tag/recycling/
       Preview : Categories Ultimate guides Ultimate guide to image labeling for Recycling AI by Humans in the Loop March 10, 2023 February...
 
-  CLUSTER 178  (2 pages)
+  CLUSTER 179  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=6085  domain=humansintheloop.org
@@ -6022,7 +6065,7 @@
       URL     : https://humansintheloop.org/tag/data/
       Preview : Categories Ultimate guides Ultimate Guide for Outsourcing Data Annotation by Elene Peradze September 7, 2023 February 10, 2025...
 
-  CLUSTER 179  (2 pages)
+  CLUSTER 180  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=6087  domain=humansintheloop.org
@@ -6032,7 +6075,7 @@
       URL     : https://humansintheloop.org/tag/pipelines/
       Preview : Categories Computer vision How do you build Human-in-the-Loop AI pipelines using active learning ? by Elene Peradze July 14, 2023...
 
-  CLUSTER 180  (2 pages)
+  CLUSTER 181  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=6102  domain=humansintheloop.org
@@ -6042,7 +6085,7 @@
       URL     : https://humansintheloop.org/tag/datasamplingstrategy/
       Preview : Categories Computer vision The Crucial Role of GDPR-Compliant Data AI Annotation by Elene Peradze February 19, 2024 February 10, 2025...
 
-  CLUSTER 181  (2 pages)
+  CLUSTER 182  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=6104  domain=humansintheloop.org
@@ -6052,7 +6095,7 @@
       URL     : https://humansintheloop.org/tag/recruitmenttips/
       Preview : Categories Impact PowToon: Fueling the Creator economy by Yuliia Tatarets March 26, 2024 February 10, 2025 Categories Impact Bridge to...
 
-  CLUSTER 182  (2 pages)
+  CLUSTER 183  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=6114  domain=humansintheloop.org
@@ -6062,7 +6105,7 @@
       URL     : https://humansintheloop.org/tag/2025aitrends/
       Preview : Categories Computer vision Preventing Model Collapse in 2025 with Human-in-the-Loop Annotation by Elene Peradze June 30, 2025 June 30, 2025...
 
-  CLUSTER 183  (2 pages)
+  CLUSTER 184  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=6140  domain=www.digitaldividedata.com
@@ -6072,7 +6115,7 @@
       URL     : https://www.digitaldividedata.com/blog/training-data-autonomous-vehicles-2
       Preview : TABLE OF CONTENTS What is meant by Training Data? Importance of Training Data for Autonomous Vehicles Where does Training Data...
 
-  CLUSTER 184  (2 pages)
+  CLUSTER 185  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=6341  domain=www.digitaldividedata.com
@@ -6082,7 +6125,7 @@
       URL     : https://www.digitaldividedata.com/physical-ai/scenario-data-services
       Preview : Integrating AI with Geospatial Data for Autonomous Defense Systems: Trends, Applications, and Global Perspectives This blog explores how AI and...
 
-  CLUSTER 185  (2 pages)
+  CLUSTER 186  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=6349  domain=www.digitaldividedata.com
@@ -6092,7 +6135,7 @@
       URL     : https://www.digitaldividedata.com/physical-ai/autonomous-driving
       Preview : Vision-Language-Action Models: How Foundation Models are Transforming Autonomy In this blog, we explore how Vision-Language-Action models are transforming... Read More...
 
-  CLUSTER 186  (2 pages)
+  CLUSTER 187  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=6351  domain=www.digitaldividedata.com
@@ -6102,7 +6145,7 @@
       URL     : https://www.digitaldividedata.com/content-and-data-services/language-data-services/multilingual-nlp
       Preview : Data Annotation Techniques for Voice, Text, Image, and Video In this blog, we will explore how data annotation works... Read...
 
-  CLUSTER 187  (2 pages)
+  CLUSTER 188  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=6386  domain=www.digitaldividedata.com
@@ -6112,7 +6155,7 @@
       URL     : https://www.digitaldividedata.com/physical-ai/scenario-data-services/digital-twin-validation
       Preview : Building Digital Twins for Autonomous Vehicles: Architecture, Workflows, and Challenges In this blog, we will explore how digital twins are...
 
-  CLUSTER 188  (2 pages)
+  CLUSTER 189  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=6387  domain=www.digitaldividedata.com
@@ -6122,7 +6165,7 @@
       URL     : https://www.digitaldividedata.com/physical-ai/in-cabin-and-driver-monitoring-data-annotation-solutions/driver-condition-behavior-annotation
       Preview : In-Cabin Monitoring Solutions for Autonomous Vehicles This blog explores in-cabin monitoring solutions for autonomous vehicles and highlights the key functions,...
 
-  CLUSTER 189  (2 pages)
+  CLUSTER 190  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 97.7%
   [1] page_id=6504  domain=www.digitaldividedata.com
@@ -6132,7 +6175,7 @@
       URL     : https://www.digitaldividedata.com/blog/category/multimodal-data-collection
       Preview : 3D Point Cloud Annotation , Data Annotation , Data Training , Multi-Modal Data Annotation , Multi-Sensor Data , Multimodal Data...
 
-  CLUSTER 190  (2 pages)
+  CLUSTER 191  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 96.9%
   [1] page_id=6733  domain=scale.com
@@ -6142,7 +6185,7 @@
       URL     : https://scale.com/legal/ai-leadership-summit
       Preview : Scale AI logo Products Leaderboards Enterprise Government Customers Resources Book a Demo → Log In Scale Main Services Agreement Scale...
 
-  CLUSTER 191  (2 pages)
+  CLUSTER 192  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=6736  domain=scale.com
@@ -6152,7 +6195,7 @@
       URL     : https://scale.com/legal/msa
       Preview : Scale AI logo Products Leaderboards Enterprise Government Customers Resources Book a Demo → Log In Scale Main Services Agreement Scale...
 
-  CLUSTER 192  (2 pages)
+  CLUSTER 193  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 99.2%
   [1] page_id=6892  domain=scale.com
@@ -6162,7 +6205,7 @@
       URL     : https://scale.com/careers/4565836005
       Preview : Scale AI logo Products Leaderboards Enterprise Government Customers Resources Book a Demo → Log In Back to Open Positions Department...
 
-  CLUSTER 193  (2 pages)
+  CLUSTER 194  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 98.4%
   [1] page_id=6894  domain=scale.com
@@ -6172,7 +6215,7 @@
       URL     : https://scale.com/careers/4602177005
       Preview : Scale AI logo Products Leaderboards Enterprise Government Customers Resources Book a Demo → Log In Back to Open Positions Department...
 
-  CLUSTER 194  (2 pages)
+  CLUSTER 195  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 99.2%
   [1] page_id=6909  domain=scale.com
@@ -6182,7 +6225,7 @@
       URL     : https://scale.com/careers/4565834005
       Preview : Scale AI logo Products Leaderboards Enterprise Government Customers Resources Book a Demo → Log In Back to Open Positions Department...
 
-  CLUSTER 195  (2 pages)
+  CLUSTER 196  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 93.8%
   [1] page_id=6916  domain=scale.com
@@ -6192,7 +6235,7 @@
       URL     : https://scale.com/careers/4625337005
       Preview : Scale AI logo Products Leaderboards Enterprise Government Customers Resources Book a Demo → Log In Back to Open Positions Department...
 
-  CLUSTER 196  (2 pages)
+  CLUSTER 197  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 99.2%
   [1] page_id=6925  domain=scale.com
@@ -6202,7 +6245,7 @@
       URL     : https://scale.com/careers/4591782005
       Preview : Scale AI logo Products Leaderboards Enterprise Government Customers Resources Book a Demo → Log In Back to Open Positions Department...
 
-  CLUSTER 197  (2 pages)
+  CLUSTER 198  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 99.2%
   [1] page_id=6938  domain=scale.com
@@ -6212,7 +6255,7 @@
       URL     : https://scale.com/careers/4565768005
       Preview : Scale AI logo Products Leaderboards Enterprise Government Customers Resources Book a Demo → Log In Back to Open Positions Department...
 
-  CLUSTER 198  (2 pages)
+  CLUSTER 199  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=6943  domain=scale.com
@@ -6222,7 +6265,7 @@
       URL     : https://scale.com/careers/4589749005
       Preview : Scale AI logo Products Leaderboards Enterprise Government Customers Resources Book a Demo → Log In Back to Open Positions Department...
 
-  CLUSTER 199  (2 pages)
+  CLUSTER 200  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 99.2%
   [1] page_id=6967  domain=scale.com
@@ -6232,7 +6275,7 @@
       URL     : https://scale.com/careers/4637485005
       Preview : Scale AI logo Products Leaderboards Enterprise Government Customers Resources Book a Demo → Log In Back to Open Positions Department...
 
-  CLUSTER 200  (2 pages)
+  CLUSTER 201  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=6975  domain=scale.com
@@ -6242,7 +6285,7 @@
       URL     : https://scale.com/careers/4569678005
       Preview : Scale AI logo Products Leaderboards Enterprise Government Customers Resources Book a Demo → Log In Back to Open Positions Department...
 
-  CLUSTER 201  (2 pages)
+  CLUSTER 202  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 98.4%
   [1] page_id=6983  domain=scale.com
@@ -6252,7 +6295,7 @@
       URL     : https://scale.com/careers/4655050005
       Preview : Scale AI logo Products Leaderboards Enterprise Government Customers Resources Book a Demo → Log In Back to Open Positions Department...
 
-  CLUSTER 202  (2 pages)
+  CLUSTER 203  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 98.4%
   [1] page_id=7002  domain=scale.com
@@ -6262,7 +6305,7 @@
       URL     : https://scale.com/careers/4574113005
       Preview : Scale AI logo Products Leaderboards Enterprise Government Customers Resources Book a Demo → Log In Back to Open Positions Department...
 
-  CLUSTER 203  (2 pages)
+  CLUSTER 204  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 99.2%
   [1] page_id=7026  domain=scale.com
@@ -6272,7 +6315,7 @@
       URL     : https://scale.com/docs/pro-or-manage-account
       Preview : Manage your Account Overview Customers can add new users, change user roles, and manage their team defaults by clicking the...
 
-  CLUSTER 204  (2 pages)
+  CLUSTER 205  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=7029  domain=scale.com
@@ -6282,7 +6325,7 @@
       URL     : https://scale.com/docs/rapid-or-dynamic
       Preview : Dynamic / Per Task Parameters The current setup for Rapid utilizes project level taxonomy and instructions. However, Scale natively supports...
 
-  CLUSTER 205  (2 pages)
+  CLUSTER 206  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 95.3%
   [1] page_id=7032  domain=scale.com
@@ -6292,7 +6335,7 @@
       URL     : https://scale.com/docs/api-reference/genai-platform
       Preview : Getting Started The Scale GenAI Platform empowers modern enterprises to rapidly develop, test and deploy Generative AI applications for custom...
 
-  CLUSTER 206  (2 pages)
+  CLUSTER 207  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=7038  domain=scale.com
@@ -6302,7 +6345,7 @@
       URL     : https://scale.com/docs/pro-or-overview-tab
       Preview : Overview Tab Overview The Overview tab allows you to view a summary of your submissions over time and the batch...
 
-  CLUSTER 207  (2 pages)
+  CLUSTER 208  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 94.5%
   [1] page_id=7150  domain=scale.com
@@ -6312,7 +6355,7 @@
       URL     : https://scale.com/leaderboard/mask/samples
       Preview : ⌘K Toggle Sidebar ⌘K Agentic LBs Safety LBs PropensityBench Fortress MASK Frontier LBs Legacy LBs 2025 Scale AI. All rights...
 
-  CLUSTER 208  (2 pages)
+  CLUSTER 209  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=7171  domain=scale.com
@@ -6322,7 +6365,7 @@
       URL     : https://scale.com/leaderboard/swe_bench_pro_public/samples
       Preview : ⌘K Toggle Sidebar ⌘K Agentic LBs MCP Atlas SWE-Bench Pro (Public Dataset) SWE-Bench Pro (Private Dataset) Remote Labor Index (RLI)...
 
-  CLUSTER 209  (2 pages)
+  CLUSTER 210  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 94.5%
   [1] page_id=7212  domain=www.superannotate.com
@@ -6332,7 +6375,7 @@
       URL     : https://www.superannotate.com/request-free-pilot
       Preview : What We Do AI Data Services Monitor and track your project progress. Expert Talent Network Hire vetted and professionally-managed annotation...
 
-  CLUSTER 210  (2 pages)
+  CLUSTER 211  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8266  domain=crowdgen.com
@@ -6342,7 +6385,7 @@
       URL     : https://crowdgen.com/voice-collection-kurmanji-push-v2/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 211  (2 pages)
+  CLUSTER 212  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8283  domain=crowdgen.com
@@ -6352,7 +6395,7 @@
       URL     : https://crowdgen.com/fireweed-javanese-remote/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 212  (2 pages)
+  CLUSTER 213  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8287  domain=crowdgen.com
@@ -6362,7 +6405,7 @@
       URL     : https://crowdgen.com/fireweed-nepali-remote/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 213  (2 pages)
+  CLUSTER 214  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8290  domain=crowdgen.com
@@ -6372,7 +6415,7 @@
       URL     : https://crowdgen.com/hyperion-birmingham-polish-push/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 214  (2 pages)
+  CLUSTER 215  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8294  domain=crowdgen.com
@@ -6382,7 +6425,7 @@
       URL     : https://crowdgen.com/babel-lv-lv/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 215  (2 pages)
+  CLUSTER 216  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8297  domain=crowdgen.com
@@ -6392,7 +6435,7 @@
       URL     : https://crowdgen.com/fireweed-khmer-remote-push/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 216  (2 pages)
+  CLUSTER 217  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8301  domain=crowdgen.com
@@ -6402,7 +6445,7 @@
       URL     : https://crowdgen.com/aristoxenus-biology-hi-in/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 217  (2 pages)
+  CLUSTER 218  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8305  domain=crowdgen.com
@@ -6412,7 +6455,7 @@
       URL     : https://crowdgen.com/fireweed-ukrainian-remote/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 218  (2 pages)
+  CLUSTER 219  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 98.4%
   [1] page_id=8324  domain=crowdgen.com
@@ -6422,7 +6465,7 @@
       URL     : https://crowdgen.com/babel-slovene-push/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 219  (2 pages)
+  CLUSTER 220  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8330  domain=crowdgen.com
@@ -6432,7 +6475,7 @@
       URL     : https://crowdgen.com/aristoxenus-biology-es-mx/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 220  (2 pages)
+  CLUSTER 221  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8332  domain=crowdgen.com
@@ -6442,7 +6485,7 @@
       URL     : https://crowdgen.com/babel-portuguese-push/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 221  (2 pages)
+  CLUSTER 222  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8334  domain=crowdgen.com
@@ -6452,7 +6495,7 @@
       URL     : https://crowdgen.com/a12270-ka-kz-push/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 222  (2 pages)
+  CLUSTER 223  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 99.2%
   [1] page_id=8337  domain=crowdgen.com
@@ -6462,7 +6505,7 @@
       URL     : https://crowdgen.com/avatara-en-us-push/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 223  (2 pages)
+  CLUSTER 224  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8351  domain=crowdgen.com
@@ -6472,7 +6515,7 @@
       URL     : https://crowdgen.com/aristoxenus-mathematics-es-mx-push/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 224  (2 pages)
+  CLUSTER 225  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8359  domain=crowdgen.com
@@ -6482,7 +6525,7 @@
       URL     : https://crowdgen.com/garrus-nl-be-b/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 225  (2 pages)
+  CLUSTER 226  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 97.7%
   [1] page_id=8361  domain=crowdgen.com
@@ -6492,7 +6535,7 @@
       URL     : https://crowdgen.com/istone-fr-ca/
       Preview : Skip to content FAQ Help desk FAQ Help desk Recevez ~55 $ CA pour environ 30 minutes Aidez l'IA à...
 
-  CLUSTER 226  (2 pages)
+  CLUSTER 227  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8362  domain=crowdgen.com
@@ -6502,7 +6545,7 @@
       URL     : https://crowdgen.com/fireweed-swedish-remote-push/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 227  (2 pages)
+  CLUSTER 228  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8378  domain=crowdgen.com
@@ -6512,7 +6555,7 @@
       URL     : https://crowdgen.com/collection-transcription-lingala/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 228  (2 pages)
+  CLUSTER 229  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 98.4%
   [1] page_id=8379  domain=crowdgen.com
@@ -6522,7 +6565,7 @@
       URL     : https://crowdgen.com/avatara-2025-push/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 229  (2 pages)
+  CLUSTER 230  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8391  domain=crowdgen.com
@@ -6532,7 +6575,7 @@
       URL     : https://crowdgen.com/transcription-mongolian/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 230  (2 pages)
+  CLUSTER 231  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8397  domain=crowdgen.com
@@ -6542,7 +6585,7 @@
       URL     : https://crowdgen.com/fireweed-thai-remote-push/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 231  (2 pages)
+  CLUSTER 232  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8400  domain=crowdgen.com
@@ -6552,7 +6595,7 @@
       URL     : https://crowdgen.com/fireweed-czech-remote/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 232  (2 pages)
+  CLUSTER 233  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8401  domain=crowdgen.com
@@ -6562,7 +6605,7 @@
       URL     : https://crowdgen.com/hyperion-birmingham-romanian-push/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 233  (2 pages)
+  CLUSTER 234  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8413  domain=crowdgen.com
@@ -6572,7 +6615,7 @@
       URL     : https://crowdgen.com/a11350-yue-my-push/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 234  (2 pages)
+  CLUSTER 235  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8417  domain=crowdgen.com
@@ -6582,7 +6625,7 @@
       URL     : https://crowdgen.com/mint-italy-biology-c/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 235  (2 pages)
+  CLUSTER 236  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8419  domain=crowdgen.com
@@ -6592,7 +6635,7 @@
       URL     : https://crowdgen.com/collection-transcription-haitian/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 236  (2 pages)
+  CLUSTER 237  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8420  domain=crowdgen.com
@@ -6602,7 +6645,7 @@
       URL     : https://crowdgen.com/fireweed-zh-cn-localised-push/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 237  (2 pages)
+  CLUSTER 238  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8423  domain=crowdgen.com
@@ -6612,7 +6655,7 @@
       URL     : https://crowdgen.com/garrus-fr-ca/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 238  (2 pages)
+  CLUSTER 239  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8436  domain=crowdgen.com
@@ -6622,7 +6665,7 @@
       URL     : https://crowdgen.com/heather-fr-fr-push/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 239  (2 pages)
+  CLUSTER 240  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8441  domain=crowdgen.com
@@ -6632,7 +6675,7 @@
       URL     : https://crowdgen.com/garrus-ar-uae-b/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 240  (2 pages)
+  CLUSTER 241  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 98.4%
   [1] page_id=8443  domain=crowdgen.com
@@ -6642,7 +6685,7 @@
       URL     : https://crowdgen.com/coffee-en-eg/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 241  (2 pages)
+  CLUSTER 242  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8446  domain=crowdgen.com
@@ -6652,7 +6695,7 @@
       URL     : https://crowdgen.com/fireweed-bahasa-remote/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 242  (2 pages)
+  CLUSTER 243  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8447  domain=crowdgen.com
@@ -6662,7 +6705,7 @@
       URL     : https://crowdgen.com/hermes-a/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 243  (2 pages)
+  CLUSTER 244  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8463  domain=crowdgen.com
@@ -6672,7 +6715,7 @@
       URL     : https://crowdgen.com/garrus-sv-se-push/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 244  (2 pages)
+  CLUSTER 245  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8472  domain=crowdgen.com
@@ -6682,7 +6725,7 @@
       URL     : https://crowdgen.com/aristoxenus-mathematics-vi-vn/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 245  (2 pages)
+  CLUSTER 246  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8519  domain=crowdgen.com
@@ -6692,7 +6735,7 @@
       URL     : https://crowdgen.com/fireweed-malay-remote-push/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 246  (2 pages)
+  CLUSTER 247  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8525  domain=crowdgen.com
@@ -6702,7 +6745,7 @@
       URL     : https://crowdgen.com/babel-en-ee-push/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 247  (2 pages)
+  CLUSTER 248  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8559  domain=crowdgen.com
@@ -6712,7 +6755,7 @@
       URL     : https://crowdgen.com/fireweed-de-de-translated/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 248  (2 pages)
+  CLUSTER 249  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8560  domain=crowdgen.com
@@ -6722,7 +6765,7 @@
       URL     : https://crowdgen.com/fireweed-hebrew-remote-push/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 249  (2 pages)
+  CLUSTER 250  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8563  domain=crowdgen.com
@@ -6732,7 +6775,7 @@
       URL     : https://crowdgen.com/aristoxenus-biology-vi-vn-push/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 250  (2 pages)
+  CLUSTER 251  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8588  domain=crowdgen.com
@@ -6742,7 +6785,7 @@
       URL     : https://crowdgen.com/hawthorn-zh-tw-push/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 251  (2 pages)
+  CLUSTER 252  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 99.2%
   [1] page_id=8639  domain=crowdgen.com
@@ -6752,7 +6795,7 @@
       URL     : https://crowdgen.com/fireweed-korean-remote/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 252  (2 pages)
+  CLUSTER 253  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8641  domain=crowdgen.com
@@ -6762,7 +6805,7 @@
       URL     : https://crowdgen.com/aristoxenus-mathematics-hi-in-push/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 253  (2 pages)
+  CLUSTER 254  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8697  domain=crowdgen.com
@@ -6772,7 +6815,7 @@
       URL     : https://crowdgen.com/fireweed-croatian-remote-push/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 254  (2 pages)
+  CLUSTER 255  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8699  domain=crowdgen.com
@@ -6782,7 +6825,7 @@
       URL     : https://crowdgen.com/heather-it-it-push/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 255  (2 pages)
+  CLUSTER 256  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8710  domain=crowdgen.com
@@ -6792,7 +6835,7 @@
       URL     : https://crowdgen.com/fireweed-dutch-remote-push/
       Preview : Skip to content FAQ Help desk Sign in View projects FAQ Help desk Sign in View projects FAQ Help desk...
 
-  CLUSTER 256  (2 pages)
+  CLUSTER 257  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=8788  domain=www.abaka.ai
@@ -6802,7 +6845,7 @@
       URL     : https://www.abaka.ai/blog/image-datasets-machine-learning-2025
       Preview : Blogs 2025-08-15 / General Image Datasets For Machine Learning In 2025 Agnese Cipollone, AI Product Sales Specialist In 2025, machine...
 
-  CLUSTER 257  (2 pages)
+  CLUSTER 258  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 97.7%
   [1] page_id=9001  domain=joinstellar.ai
@@ -6812,7 +6855,7 @@
       URL     : https://joinstellar.ai/apply/senior-software-engineer/register/
       Preview : About Benefits How it Works FAQs Dashboard ← Back to position details Apply for Senior Software Engineer Complete your application...
 
-  CLUSTER 258  (2 pages)
+  CLUSTER 259  (2 pages)
   --------------------------------------------------------------------
   Estimated similarity (pages 1–2): 100.0%
   [1] page_id=9009  domain=joinstellar.ai
@@ -6822,6 +6865,16 @@
       URL     : https://joinstellar.ai/accounts/login/?next=/home/
       Preview : Stellar Sign in to your account Email address (case sensitive) Password Forgot password? Sign in Not a member? Create an...
 
+  CLUSTER 260  (2 pages)
+  --------------------------------------------------------------------
+  Estimated similarity (pages 1–2): 100.0%
+  [1] page_id=9553  domain=www.centific.com
+      URL     : https://www.centific.com/contact/contact
+      Preview : The Enterprise Platform for A I D a t a . Platforms Data Marketplace Data Canvas AI Data Foundry OneForma...
+  [2] page_id=9556  domain=www.centific.com
+      URL     : https://www.centific.com/contact/newsletter
+      Preview : The Enterprise Platform for A I D a t a . Platforms Data Marketplace Data Canvas AI Data Foundry OneForma...
+
 ========================================================================
-  END OF REPORT — 258 clusters, 1926 pages flagged
+  END OF REPORT — 260 clusters, 1941 pages flagged
 ========================================================================

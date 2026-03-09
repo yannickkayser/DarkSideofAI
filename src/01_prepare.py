@@ -62,13 +62,14 @@ PLATFORM_TYPE_RULES = [
 # short canonical company identifier.
 # Example: appen.com and crowdgen.com both map to "appen"
 PAIR_RULES = {
-    "appen":       "appen",
-    "crowdgen":    "appen",
+    "appen":        "appen",
+    "crowdgen":     "appen",
     "toloka":      "toloka",
-    "mindrift":    "toloka",     # mindrift.ai is Toloka's worker portal
-    # Add more pairs here as needed:
-    # "labelbox":  "labelbox",
-    # "alignerr":  "labelbox",
+    "mindrift":    "toloka",     
+    "centific":  "centific",
+    "oneforma":  "centific",
+    "labelbox":  "labelbox",
+    "alignerr":  "labelbox"
 }
 
 # Maps domain fragments to headquarters region.

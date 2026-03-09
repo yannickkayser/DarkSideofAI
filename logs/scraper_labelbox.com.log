@@ -1,0 +1,148 @@
+2026-03-09 16:43:47 - scraper.labelbox.com - INFO - Starting scrape of labelbox
+2026-03-09 16:43:51 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/blueprint/
+2026-03-09 16:44:14 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/blueprint/: All validations passed
+2026-03-09 16:44:14 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/blueprint/ | Status: 200 | Size: 84357 bytes
+2026-03-09 16:44:14 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/education/
+2026-03-09 16:44:37 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/education/: All validations passed
+2026-03-09 16:44:37 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/education/ | Status: 200 | Size: 93316 bytes
+2026-03-09 16:44:37 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/faqs/
+2026-03-09 16:44:58 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/faqs/: All validations passed
+2026-03-09 16:44:58 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/faqs/ | Status: 200 | Size: 123763 bytes
+2026-03-09 16:44:58 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/generate/
+2026-03-09 16:45:34 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/generate/: All validations passed
+2026-03-09 16:45:34 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/generate/ | Status: 200 | Size: 50975 bytes
+2026-03-09 16:45:35 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/
+2026-03-09 16:45:56 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/: All validations passed
+2026-03-09 16:45:56 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/ | Status: 200 | Size: 158587 bytes
+2026-03-09 16:45:56 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/recorded-demo/
+2026-03-09 16:46:17 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/recorded-demo/: All validations passed
+2026-03-09 16:46:17 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/recorded-demo/ | Status: 200 | Size: 66052 bytes
+2026-03-09 16:46:17 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/sales/
+2026-03-09 16:46:38 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/sales/: All validations passed
+2026-03-09 16:46:38 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/sales/ | Status: 200 | Size: 85738 bytes
+2026-03-09 16:46:38 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/product/annotate/
+2026-03-09 16:47:01 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/product/annotate/: All validations passed
+2026-03-09 16:47:01 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/product/annotate/ | Status: 200 | Size: 199402 bytes
+2026-03-09 16:47:01 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/product/catalog/
+2026-03-09 16:47:30 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/product/catalog/: All validations passed
+2026-03-09 16:47:30 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/product/catalog/ | Status: 200 | Size: 155859 bytes
+2026-03-09 16:47:31 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/product/data-curation/
+2026-03-09 16:47:51 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/product/data-curation/: All validations passed
+2026-03-09 16:47:51 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/product/data-curation/ | Status: 200 | Size: 98423 bytes
+2026-03-09 16:47:52 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/product/evals/
+2026-03-09 16:48:14 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/product/evals/: All validations passed
+2026-03-09 16:48:14 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/product/evals/ | Status: 200 | Size: 126405 bytes
+2026-03-09 16:48:14 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/product/frontier-models/
+2026-03-09 16:48:35 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/product/frontier-models/: All validations passed
+2026-03-09 16:48:35 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/product/frontier-models/ | Status: 200 | Size: 156786 bytes
+2026-03-09 16:48:35 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/product/platform/
+2026-03-09 16:48:57 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/product/platform/: All validations passed
+2026-03-09 16:48:57 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/product/platform/ | Status: 200 | Size: 422172 bytes
+2026-03-09 16:48:58 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/product/task-specific-models/
+2026-03-09 16:49:19 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/product/task-specific-models/: All validations passed
+2026-03-09 16:49:19 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/product/task-specific-models/ | Status: 200 | Size: 213569 bytes
+2026-03-09 16:49:19 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/blog//
+2026-03-09 16:49:39 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/blog//: All validations passed
+2026-03-09 16:49:39 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/blog// | Status: 200 | Size: 2523660 bytes
+2026-03-09 16:49:40 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/research//
+2026-03-09 16:50:02 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/research//: All validations passed
+2026-03-09 16:50:02 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/research// | Status: 200 | Size: 373242 bytes
+2026-03-09 16:50:02 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/product/annotate/ai-assistance/
+2026-03-09 16:50:24 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/product/annotate/ai-assistance/: All validations passed
+2026-03-09 16:50:24 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/product/annotate/ai-assistance/ | Status: 200 | Size: 433517 bytes
+2026-03-09 16:50:24 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/product/annotate/audio/
+2026-03-09 16:50:45 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/product/annotate/audio/: All validations passed
+2026-03-09 16:50:45 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/product/annotate/audio/ | Status: 200 | Size: 102115 bytes
+2026-03-09 16:50:45 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/product/annotate/chat/
+2026-03-09 16:51:08 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/product/annotate/chat/: All validations passed
+2026-03-09 16:51:08 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/product/annotate/chat/ | Status: 200 | Size: 99166 bytes
+2026-03-09 16:51:08 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/product/annotate/collaboration/
+2026-03-09 16:51:31 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/product/annotate/collaboration/: All validations passed
+2026-03-09 16:51:31 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/product/annotate/collaboration/ | Status: 200 | Size: 88071 bytes
+2026-03-09 16:51:31 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/product/annotate/document/
+2026-03-09 16:51:53 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/product/annotate/document/: All validations passed
+2026-03-09 16:51:53 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/product/annotate/document/ | Status: 200 | Size: 100676 bytes
+2026-03-09 16:51:53 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/product/annotate/geospatial/
+2026-03-09 16:52:13 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/product/annotate/geospatial/: All validations passed
+2026-03-09 16:52:13 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/product/annotate/geospatial/ | Status: 200 | Size: 106991 bytes
+2026-03-09 16:52:13 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/product/annotate/image/
+2026-03-09 16:52:34 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/product/annotate/image/: All validations passed
+2026-03-09 16:52:34 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/product/annotate/image/ | Status: 200 | Size: 105742 bytes
+2026-03-09 16:52:34 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/product/annotate/medical/
+2026-03-09 16:52:55 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/product/annotate/medical/: All validations passed
+2026-03-09 16:52:55 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/product/annotate/medical/ | Status: 200 | Size: 99231 bytes
+2026-03-09 16:52:56 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/product/annotate/quality/
+2026-03-09 16:53:16 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/product/annotate/quality/: All validations passed
+2026-03-09 16:53:16 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/product/annotate/quality/ | Status: 200 | Size: 91849 bytes
+2026-03-09 16:53:16 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/product/annotate/rlhf/
+2026-03-09 16:53:38 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/product/annotate/rlhf/: All validations passed
+2026-03-09 16:53:38 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/product/annotate/rlhf/ | Status: 200 | Size: 100604 bytes
+2026-03-09 16:53:38 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/product/annotate/tasks/
+2026-03-09 16:54:00 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/product/annotate/tasks/: All validations passed
+2026-03-09 16:54:00 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/product/annotate/tasks/ | Status: 200 | Size: 121821 bytes
+2026-03-09 16:54:00 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/product/annotate/text/
+2026-03-09 16:54:22 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/product/annotate/text/: All validations passed
+2026-03-09 16:54:22 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/product/annotate/text/ | Status: 200 | Size: 102513 bytes
+2026-03-09 16:54:22 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/product/annotate/throughput/
+2026-03-09 16:54:45 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/product/annotate/throughput/: All validations passed
+2026-03-09 16:54:45 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/product/annotate/throughput/ | Status: 200 | Size: 87976 bytes
+2026-03-09 16:54:45 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/product/annotate/video/
+2026-03-09 16:55:13 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/product/annotate/video/: All validations passed
+2026-03-09 16:55:13 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/product/annotate/video/ | Status: 200 | Size: 108544 bytes
+2026-03-09 16:55:13 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/company/about/
+2026-03-09 16:55:35 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/company/about/: All validations passed
+2026-03-09 16:55:35 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/company/about/ | Status: 200 | Size: 431160 bytes
+2026-03-09 16:55:35 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/company/careers/
+2026-03-09 16:55:57 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/company/careers/: All validations passed
+2026-03-09 16:55:57 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/company/careers/ | Status: 200 | Size: 410259 bytes
+2026-03-09 16:55:57 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/company/jobs/
+2026-03-09 16:56:18 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/company/jobs/: All validations passed
+2026-03-09 16:56:18 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/company/jobs/ | Status: 200 | Size: 75205 bytes
+2026-03-09 16:56:18 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/company/partnerships/
+2026-03-09 16:56:39 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/company/partnerships/: All validations passed
+2026-03-09 16:56:39 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/company/partnerships/ | Status: 200 | Size: 129306 bytes
+2026-03-09 16:56:39 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/company/press/
+2026-03-09 16:57:01 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/company/press/: All validations passed
+2026-03-09 16:57:01 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/company/press/ | Status: 200 | Size: 94702 bytes
+2026-03-09 16:57:01 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/company/security/
+2026-03-09 16:57:23 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/company/security/: All validations passed
+2026-03-09 16:57:23 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/company/security/ | Status: 200 | Size: 158456 bytes
+2026-03-09 16:57:23 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/solutions/supervised-fine-tuning-datasets/
+2026-03-09 16:57:45 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/solutions/supervised-fine-tuning-datasets/: All validations passed
+2026-03-09 16:57:45 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/solutions/supervised-fine-tuning-datasets/ | Status: 404 | Size: 116229 bytes
+2026-03-09 16:57:46 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/compare/scale-alternative/
+2026-03-09 16:58:06 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/compare/scale-alternative/: All validations passed
+2026-03-09 16:58:06 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/compare/scale-alternative/ | Status: 200 | Size: 131697 bytes
+2026-03-09 16:58:07 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/compare/labelbox-vs-v7/
+2026-03-09 16:58:27 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/compare/labelbox-vs-v7/: All validations passed
+2026-03-09 16:58:27 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/compare/labelbox-vs-v7/ | Status: 200 | Size: 108517 bytes
+2026-03-09 16:58:27 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/compare/labelbox-vs-surge/
+2026-03-09 16:58:48 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/compare/labelbox-vs-surge/: All validations passed
+2026-03-09 16:58:48 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/compare/labelbox-vs-surge/ | Status: 200 | Size: 126403 bytes
+2026-03-09 16:58:48 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/compare/labelbox-vs-superannotate/
+2026-03-09 16:59:10 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/compare/labelbox-vs-superannotate/: All validations passed
+2026-03-09 16:59:10 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/compare/labelbox-vs-superannotate/ | Status: 200 | Size: 114151 bytes
+2026-03-09 16:59:10 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/compare/labelbox-vs-scale/
+2026-03-09 16:59:32 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/compare/labelbox-vs-scale/: All validations passed
+2026-03-09 16:59:32 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/compare/labelbox-vs-scale/ | Status: 200 | Size: 136189 bytes
+2026-03-09 16:59:32 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/compare/labelbox-vs-dataloop/
+2026-03-09 16:59:53 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/compare/labelbox-vs-dataloop/: All validations passed
+2026-03-09 16:59:53 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/compare/labelbox-vs-dataloop/ | Status: 200 | Size: 125035 bytes
+2026-03-09 16:59:53 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/compare/cvat-alternative/
+2026-03-09 17:00:14 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/compare/cvat-alternative/: All validations passed
+2026-03-09 17:00:14 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/compare/cvat-alternative/ | Status: 200 | Size: 119871 bytes
+2026-03-09 17:00:14 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/compare/labelbox-vs-amazon-sagemaker/
+2026-03-09 17:00:36 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/compare/labelbox-vs-amazon-sagemaker/: All validations passed
+2026-03-09 17:00:36 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/compare/labelbox-vs-amazon-sagemaker/ | Status: 200 | Size: 118835 bytes
+2026-03-09 17:00:36 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/compare/labelbox-vs-appen/
+2026-03-09 17:00:57 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/compare/labelbox-vs-appen/: All validations passed
+2026-03-09 17:00:57 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/compare/labelbox-vs-appen/ | Status: 200 | Size: 120353 bytes
+2026-03-09 17:00:57 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/compare/amazon-sagemaker-alternative/
+2026-03-09 17:01:19 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/compare/amazon-sagemaker-alternative/: All validations passed
+2026-03-09 17:01:19 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/compare/amazon-sagemaker-alternative/ | Status: 200 | Size: 120277 bytes
+2026-03-09 17:01:19 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/compare/appen-alternative/
+2026-03-09 17:01:41 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/compare/appen-alternative/: All validations passed
+2026-03-09 17:01:41 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/compare/appen-alternative/ | Status: 200 | Size: 120145 bytes
+2026-03-09 17:01:41 - scraper.labelbox.com - INFO - Starting scrape: https://labelbox.com/compare/v7-alternative/
+2026-03-09 17:02:02 - scraper.labelbox.com - INFO - ✓ VALIDATION PASSED: https://labelbox.com/compare/v7-alternative/: All validations passed
+2026-03-09 17:02:02 - scraper.labelbox.com - INFO - ✓ SUCCESS: https://labelbox.com/compare/v7-alternative/ | Status: 200 | Size: 125877 bytes

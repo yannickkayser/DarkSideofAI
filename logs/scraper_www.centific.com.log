@@ -1,0 +1,721 @@
+2026-03-09 03:19:50 - scraper.www.centific.com - INFO - Starting scrape of Centific
+2026-03-09 03:19:51 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/
+2026-03-09 03:19:57 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/: All validations passed
+2026-03-09 03:19:57 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/ | Status: 200 | Size: 948259 bytes
+2026-03-09 03:19:57 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/company/about
+2026-03-09 03:20:03 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/company/about: All validations passed
+2026-03-09 03:20:03 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/company/about | Status: 200 | Size: 625523 bytes
+2026-03-09 03:20:03 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/company/careers
+2026-03-09 03:20:12 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/company/careers: All validations passed
+2026-03-09 03:20:12 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/company/careers | Status: 200 | Size: 624424 bytes
+2026-03-09 03:20:12 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/company/leadership
+2026-03-09 03:20:17 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/company/leadership: All validations passed
+2026-03-09 03:20:17 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/company/leadership | Status: 200 | Size: 584769 bytes
+2026-03-09 03:20:17 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog
+2026-03-09 03:20:27 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog: All validations passed
+2026-03-09 03:20:27 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog | Status: 200 | Size: 1464485 bytes
+2026-03-09 03:20:27 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/news
+2026-03-09 03:20:36 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/news: All validations passed
+2026-03-09 03:20:36 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/news | Status: 200 | Size: 795491 bytes
+2026-03-09 03:20:36 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/company/locations
+2026-03-09 03:20:40 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/company/locations: All validations passed
+2026-03-09 03:20:40 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/company/locations | Status: 200 | Size: 640747 bytes
+2026-03-09 03:20:40 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/customer-stories
+2026-03-09 03:20:47 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/customer-stories: All validations passed
+2026-03-09 03:20:47 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/customer-stories | Status: 200 | Size: 1002737 bytes
+2026-03-09 03:20:47 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/contact/contact
+2026-03-09 03:20:52 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/contact/contact: All validations passed
+2026-03-09 03:20:52 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/contact/contact | Status: 200 | Size: 774640 bytes
+2026-03-09 03:20:52 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/contact/meet-us
+2026-03-09 03:21:11 - scraper.www.centific.com - WARNING - ✗ VALIDATION FAILED: https://www.centific.com/contact/meet-us: Missing required field: text_content
+2026-03-09 03:21:11 - scraper.www.centific.com - WARNING - Validation failed for https://www.centific.com/contact/meet-us: Missing required field: text_content
+2026-03-09 03:21:11 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/contact/become-a-partner
+2026-03-09 03:21:11 - scraper.www.centific.com - ERROR - ✗ ERROR: https://www.centific.com/contact/become-a-partner | Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.centific.com/contact/become-a-partner
+Call log:
+  - navigating to "https://www.centific.com/contact/become-a-partner", waiting until "load"
+
+2026-03-09 03:21:11 - scraper.www.centific.com - INFO - Retrying https://www.centific.com/contact/become-a-partner (attempt 2/3)
+2026-03-09 03:21:18 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/contact/become-a-partner: All validations passed
+2026-03-09 03:21:18 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/contact/become-a-partner | Status: 200 | Size: 181585 bytes
+2026-03-09 03:21:19 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/contact/newsletter
+2026-03-09 03:21:23 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/contact/newsletter: All validations passed
+2026-03-09 03:21:23 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/contact/newsletter | Status: 200 | Size: 203480 bytes
+2026-03-09 03:21:23 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/contact/book-a-demo
+2026-03-09 03:21:27 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/contact/book-a-demo: All validations passed
+2026-03-09 03:21:27 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/contact/book-a-demo | Status: 200 | Size: 919718 bytes
+2026-03-09 03:21:28 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/events
+2026-03-09 03:21:31 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/events: All validations passed
+2026-03-09 03:21:31 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/events | Status: 200 | Size: 224232 bytes
+2026-03-09 03:21:31 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/partners
+2026-03-09 03:21:36 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/partners: All validations passed
+2026-03-09 03:21:36 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/partners | Status: 200 | Size: 912776 bytes
+2026-03-09 03:21:36 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/leaderboard
+2026-03-09 03:21:40 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/leaderboard: All validations passed
+2026-03-09 03:21:40 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/leaderboard | Status: 200 | Size: 366327 bytes
+2026-03-09 03:21:41 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/file-repo
+2026-03-09 03:21:46 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/file-repo: All validations passed
+2026-03-09 03:21:46 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/file-repo | Status: 200 | Size: 282455 bytes
+2026-03-09 03:21:46 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/products/ai-data-marketplace
+2026-03-09 03:21:52 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/products/ai-data-marketplace: All validations passed
+2026-03-09 03:21:52 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/products/ai-data-marketplace | Status: 200 | Size: 921361 bytes
+2026-03-09 03:21:52 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/products/data-canvas
+2026-03-09 03:21:57 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/products/data-canvas: All validations passed
+2026-03-09 03:21:57 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/products/data-canvas | Status: 200 | Size: 927708 bytes
+2026-03-09 03:21:57 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/products/ai-data-foundry
+2026-03-09 03:22:03 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/products/ai-data-foundry: All validations passed
+2026-03-09 03:22:03 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/products/ai-data-foundry | Status: 200 | Size: 954435 bytes
+2026-03-09 03:22:03 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/products/oneforma
+2026-03-09 03:22:09 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/products/oneforma: All validations passed
+2026-03-09 03:22:09 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/products/oneforma | Status: 200 | Size: 748306 bytes
+2026-03-09 03:22:09 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/solution/data-collection-creation
+2026-03-09 03:22:14 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/solution/data-collection-creation: All validations passed
+2026-03-09 03:22:14 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/solution/data-collection-creation | Status: 200 | Size: 888845 bytes
+2026-03-09 03:22:14 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/solution/rlhf-preference-optimization
+2026-03-09 03:22:18 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/solution/rlhf-preference-optimization: All validations passed
+2026-03-09 03:22:18 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/solution/rlhf-preference-optimization | Status: 200 | Size: 291213 bytes
+2026-03-09 03:22:19 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/solution/supervised-fine-tuning
+2026-03-09 03:22:24 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/solution/supervised-fine-tuning: All validations passed
+2026-03-09 03:22:24 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/solution/supervised-fine-tuning | Status: 200 | Size: 293073 bytes
+2026-03-09 03:22:24 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/solution/model-safety-evaluation-red-teaming
+2026-03-09 03:22:30 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/solution/model-safety-evaluation-red-teaming: All validations passed
+2026-03-09 03:22:30 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/solution/model-safety-evaluation-red-teaming | Status: 200 | Size: 880150 bytes
+2026-03-09 03:22:30 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/solution/llm-localization
+2026-03-09 03:22:36 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/solution/llm-localization: All validations passed
+2026-03-09 03:22:36 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/solution/llm-localization | Status: 200 | Size: 295005 bytes
+2026-03-09 03:22:36 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/vertical/physical-ai
+2026-03-09 03:22:56 - scraper.www.centific.com - WARNING - ✗ VALIDATION FAILED: https://www.centific.com/vertical/physical-ai: Missing required field: text_content
+2026-03-09 03:22:56 - scraper.www.centific.com - WARNING - Validation failed for https://www.centific.com/vertical/physical-ai: Missing required field: text_content
+2026-03-09 03:22:56 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/vertical/healthcare-ai
+2026-03-09 03:23:02 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/vertical/healthcare-ai: All validations passed
+2026-03-09 03:23:02 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/vertical/healthcare-ai | Status: 200 | Size: 280198 bytes
+2026-03-09 03:23:02 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/vertical/vision-ai
+2026-03-09 03:23:09 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/vertical/vision-ai: All validations passed
+2026-03-09 03:23:09 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/vertical/vision-ai | Status: 200 | Size: 977019 bytes
+2026-03-09 03:23:09 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/customer-stories/microsoft
+2026-03-09 03:23:16 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/customer-stories/microsoft: All validations passed
+2026-03-09 03:23:16 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/customer-stories/microsoft | Status: 200 | Size: 222886 bytes
+2026-03-09 03:23:16 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/customer-stories/world-s-largest-software-maker
+2026-03-09 03:23:21 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/customer-stories/world-s-largest-software-maker: All validations passed
+2026-03-09 03:23:21 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/customer-stories/world-s-largest-software-maker | Status: 200 | Size: 228628 bytes
+2026-03-09 03:23:21 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/customer-stories/leading-multinational-technology-company
+2026-03-09 03:23:27 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/customer-stories/leading-multinational-technology-company: All validations passed
+2026-03-09 03:23:27 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/customer-stories/leading-multinational-technology-company | Status: 200 | Size: 222099 bytes
+2026-03-09 03:23:27 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/customer-stories/world-s-largest-ecommerce-company
+2026-03-09 03:23:36 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/customer-stories/world-s-largest-ecommerce-company: All validations passed
+2026-03-09 03:23:36 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/customer-stories/world-s-largest-ecommerce-company | Status: 200 | Size: 658594 bytes
+2026-03-09 03:23:36 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/customer-stories/global-leader-in-smartphones-tablets-and-music
+2026-03-09 03:23:59 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/customer-stories/global-leader-in-smartphones-tablets-and-music: All validations passed
+2026-03-09 03:23:59 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/customer-stories/global-leader-in-smartphones-tablets-and-music | Status: 200 | Size: 657921 bytes
+2026-03-09 03:23:59 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/customer-stories/the-world-s-largest-home-improvement-retailer
+2026-03-09 03:24:09 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/customer-stories/the-world-s-largest-home-improvement-retailer: All validations passed
+2026-03-09 03:24:09 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/customer-stories/the-world-s-largest-home-improvement-retailer | Status: 200 | Size: 659105 bytes
+2026-03-09 03:24:09 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/customer-stories/global-non-profit-organization-ai-voice-generation
+2026-03-09 03:24:16 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/customer-stories/global-non-profit-organization-ai-voice-generation: All validations passed
+2026-03-09 03:24:16 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/customer-stories/global-non-profit-organization-ai-voice-generation | Status: 200 | Size: 230165 bytes
+2026-03-09 03:24:17 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/customer-stories/global-music-streaming-platform
+2026-03-09 03:24:22 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/customer-stories/global-music-streaming-platform: All validations passed
+2026-03-09 03:24:22 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/customer-stories/global-music-streaming-platform | Status: 200 | Size: 231548 bytes
+2026-03-09 03:24:22 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/customer-stories/world-s-second-largest-smartphone-manufacturer
+2026-03-09 03:24:37 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/customer-stories/world-s-second-largest-smartphone-manufacturer: All validations passed
+2026-03-09 03:24:37 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/customer-stories/world-s-second-largest-smartphone-manufacturer | Status: 200 | Size: 222387 bytes
+2026-03-09 03:24:37 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/customer-stories/leading-provider-of-virtualization-software
+2026-03-09 03:24:42 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/customer-stories/leading-provider-of-virtualization-software: All validations passed
+2026-03-09 03:24:42 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/customer-stories/leading-provider-of-virtualization-software | Status: 200 | Size: 658222 bytes
+2026-03-09 03:24:42 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/customer-stories/global-design-and-engineering-software-company
+2026-03-09 03:24:50 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/customer-stories/global-design-and-engineering-software-company: All validations passed
+2026-03-09 03:24:50 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/customer-stories/global-design-and-engineering-software-company | Status: 200 | Size: 229048 bytes
+2026-03-09 03:24:50 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/customer-stories/premier-global-platform-for-secure-online-payments
+2026-03-09 03:24:50 - scraper.www.centific.com - ERROR - ✗ ERROR: https://www.centific.com/customer-stories/premier-global-platform-for-secure-online-payments | Page.goto: net::ERR_NETWORK_CHANGED at https://www.centific.com/customer-stories/premier-global-platform-for-secure-online-payments
+Call log:
+  - navigating to "https://www.centific.com/customer-stories/premier-global-platform-for-secure-online-payments", waiting until "load"
+
+2026-03-09 03:24:50 - scraper.www.centific.com - INFO - Retrying https://www.centific.com/customer-stories/premier-global-platform-for-secure-online-payments (attempt 2/3)
+2026-03-09 03:24:57 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/customer-stories/premier-global-platform-for-secure-online-payments: All validations passed
+2026-03-09 03:24:57 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/customer-stories/premier-global-platform-for-secure-online-payments | Status: 200 | Size: 656138 bytes
+2026-03-09 03:24:58 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/customer-stories/global-leader-in-logistics-and-package-delivery
+2026-03-09 03:25:07 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/customer-stories/global-leader-in-logistics-and-package-delivery: All validations passed
+2026-03-09 03:25:07 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/customer-stories/global-leader-in-logistics-and-package-delivery | Status: 200 | Size: 656866 bytes
+2026-03-09 03:25:07 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/customer-stories/innovative-ridesharing-and-mobility-platform
+2026-03-09 03:25:13 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/customer-stories/innovative-ridesharing-and-mobility-platform: All validations passed
+2026-03-09 03:25:13 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/customer-stories/innovative-ridesharing-and-mobility-platform | Status: 200 | Size: 222448 bytes
+2026-03-09 03:25:13 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/customer-stories/world-s-largest-retailer
+2026-03-09 03:25:20 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/customer-stories/world-s-largest-retailer: All validations passed
+2026-03-09 03:25:20 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/customer-stories/world-s-largest-retailer | Status: 200 | Size: 222249 bytes
+2026-03-09 03:25:20 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/customer-stories/leading-home-improvement-retailer
+2026-03-09 03:25:25 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/customer-stories/leading-home-improvement-retailer: All validations passed
+2026-03-09 03:25:25 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/customer-stories/leading-home-improvement-retailer | Status: 200 | Size: 221993 bytes
+2026-03-09 03:25:25 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/customer-stories/global-consumer-packaged-goods-company
+2026-03-09 03:25:29 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/customer-stories/global-consumer-packaged-goods-company: All validations passed
+2026-03-09 03:25:29 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/customer-stories/global-consumer-packaged-goods-company | Status: 200 | Size: 221430 bytes
+2026-03-09 03:25:29 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/customer-stories/leading-enterprise-transportation-management-system-provider
+2026-03-09 03:25:41 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/customer-stories/leading-enterprise-transportation-management-system-provider: All validations passed
+2026-03-09 03:25:41 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/customer-stories/leading-enterprise-transportation-management-system-provider | Status: 200 | Size: 220065 bytes
+2026-03-09 03:25:41 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/customer-stories/leading-developer-of-genai-hardware-and-software
+2026-03-09 03:25:45 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/customer-stories/leading-developer-of-genai-hardware-and-software: All validations passed
+2026-03-09 03:25:45 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/customer-stories/leading-developer-of-genai-hardware-and-software | Status: 200 | Size: 221071 bytes
+2026-03-09 03:25:45 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/customer-stories/innovative-music-streaming-platform
+2026-03-09 03:25:50 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/customer-stories/innovative-music-streaming-platform: All validations passed
+2026-03-09 03:25:50 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/customer-stories/innovative-music-streaming-platform | Status: 200 | Size: 646935 bytes
+2026-03-09 03:25:50 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/research/ai-research
+2026-03-09 03:25:55 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/research/ai-research: All validations passed
+2026-03-09 03:25:55 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/research/ai-research | Status: 200 | Size: 287092 bytes
+2026-03-09 03:25:55 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/domain-specific-llm-fine-tuning-workflow
+2026-03-09 03:26:01 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/domain-specific-llm-fine-tuning-workflow: All validations passed
+2026-03-09 03:26:01 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/domain-specific-llm-fine-tuning-workflow | Status: 200 | Size: 273834 bytes
+2026-03-09 03:26:01 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/openclaw-agentic-ai-security
+2026-03-09 03:26:01 - scraper.www.centific.com - ERROR - ✗ ERROR: https://www.centific.com/blog/openclaw-agentic-ai-security | Page.goto: net::ERR_NETWORK_CHANGED at https://www.centific.com/blog/openclaw-agentic-ai-security
+Call log:
+  - navigating to "https://www.centific.com/blog/openclaw-agentic-ai-security", waiting until "load"
+
+2026-03-09 03:26:01 - scraper.www.centific.com - INFO - Retrying https://www.centific.com/blog/openclaw-agentic-ai-security (attempt 2/3)
+2026-03-09 03:26:10 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/openclaw-agentic-ai-security: All validations passed
+2026-03-09 03:26:10 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/openclaw-agentic-ai-security | Status: 200 | Size: 800789 bytes
+2026-03-09 03:26:10 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/multilingual-ai-video-localization
+2026-03-09 03:26:14 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/multilingual-ai-video-localization: All validations passed
+2026-03-09 03:26:14 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/multilingual-ai-video-localization | Status: 200 | Size: 801812 bytes
+2026-03-09 03:26:14 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/localizing-empathy-multilingual-ai-mental-health
+2026-03-09 03:26:19 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/localizing-empathy-multilingual-ai-mental-health: All validations passed
+2026-03-09 03:26:19 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/localizing-empathy-multilingual-ai-mental-health | Status: 200 | Size: 242175 bytes
+2026-03-09 03:26:19 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/multi-turn-ai-safety-evaluation
+2026-03-09 03:26:24 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/multi-turn-ai-safety-evaluation: All validations passed
+2026-03-09 03:26:24 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/multi-turn-ai-safety-evaluation | Status: 200 | Size: 807962 bytes
+2026-03-09 03:26:24 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/enterprise-ai-governance-moltbook
+2026-03-09 03:26:28 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/enterprise-ai-governance-moltbook: All validations passed
+2026-03-09 03:26:28 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/enterprise-ai-governance-moltbook | Status: 200 | Size: 237811 bytes
+2026-03-09 03:26:29 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/ai-dubbing-elearning-localization-multilingual-ai
+2026-03-09 03:26:34 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/ai-dubbing-elearning-localization-multilingual-ai: All validations passed
+2026-03-09 03:26:34 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/ai-dubbing-elearning-localization-multilingual-ai | Status: 200 | Size: 803101 bytes
+2026-03-09 03:26:34 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/human-in-the-loop-ai-evaluation
+2026-03-09 03:30:16 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/human-in-the-loop-ai-evaluation: All validations passed
+2026-03-09 03:30:16 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/human-in-the-loop-ai-evaluation | Status: 200 | Size: 244366 bytes
+2026-03-09 03:30:16 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/why-multi-agent-systems-fail-in-production-and-how-enterprises-can-avoid-it
+2026-03-09 03:30:21 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/why-multi-agent-systems-fail-in-production-and-how-enterprises-can-avoid-it: All validations passed
+2026-03-09 03:30:21 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/why-multi-agent-systems-fail-in-production-and-how-enterprises-can-avoid-it | Status: 200 | Size: 249352 bytes
+2026-03-09 03:30:21 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/how-small-language-model-governance-differs-from-large-language-model-governance
+2026-03-09 03:30:51 - scraper.www.centific.com - ERROR - ✗ ERROR: https://www.centific.com/blog/how-small-language-model-governance-differs-from-large-language-model-governance | Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.centific.com/blog/how-small-language-model-governance-differs-from-large-language-model-governance", waiting until "load"
+
+2026-03-09 03:30:51 - scraper.www.centific.com - INFO - Retrying https://www.centific.com/blog/how-small-language-model-governance-differs-from-large-language-model-governance (attempt 2/3)
+2026-03-09 03:30:59 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/how-small-language-model-governance-differs-from-large-language-model-governance: All validations passed
+2026-03-09 03:30:59 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/how-small-language-model-governance-differs-from-large-language-model-governance | Status: 200 | Size: 811583 bytes
+2026-03-09 03:30:59 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/we%E2%80%99re-grading-ai-on-puzzles-not-real-work.-it-s-time-for-a-change
+2026-03-09 03:31:05 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/we%E2%80%99re-grading-ai-on-puzzles-not-real-work.-it-s-time-for-a-change: All validations passed
+2026-03-09 03:31:05 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/we%E2%80%99re-grading-ai-on-puzzles-not-real-work.-it-s-time-for-a-change | Status: 200 | Size: 913127 bytes
+2026-03-09 03:31:05 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/automation-made-work-faster.-ai-agents-will-change-who-is-responsible
+2026-03-09 03:31:07 - scraper.www.centific.com - ERROR - ✗ ERROR: https://www.centific.com/blog/automation-made-work-faster.-ai-agents-will-change-who-is-responsible | Page.goto: net::ERR_NETWORK_CHANGED at https://www.centific.com/blog/automation-made-work-faster.-ai-agents-will-change-who-is-responsible
+Call log:
+  - navigating to "https://www.centific.com/blog/automation-made-work-faster.-ai-agents-will-change-who-is-responsible", waiting until "load"
+
+2026-03-09 03:31:07 - scraper.www.centific.com - INFO - Retrying https://www.centific.com/blog/automation-made-work-faster.-ai-agents-will-change-who-is-responsible (attempt 2/3)
+2026-03-09 03:31:14 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/automation-made-work-faster.-ai-agents-will-change-who-is-responsible: All validations passed
+2026-03-09 03:31:14 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/automation-made-work-faster.-ai-agents-will-change-who-is-responsible | Status: 200 | Size: 806916 bytes
+2026-03-09 03:31:14 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/why-small-language-models-require-stronger-security-and-privacy-controls-at-scale
+2026-03-09 03:31:19 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/why-small-language-models-require-stronger-security-and-privacy-controls-at-scale: All validations passed
+2026-03-09 03:31:19 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/why-small-language-models-require-stronger-security-and-privacy-controls-at-scale | Status: 200 | Size: 240838 bytes
+2026-03-09 03:31:19 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/why-small-language-models-are-gaining-ground-as-agentic-ai-goes-mainstream
+2026-03-09 03:31:25 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/why-small-language-models-are-gaining-ground-as-agentic-ai-goes-mainstream: All validations passed
+2026-03-09 03:31:25 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/why-small-language-models-are-gaining-ground-as-agentic-ai-goes-mainstream | Status: 200 | Size: 806263 bytes
+2026-03-09 03:31:25 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/how-agentic-ai-and-people-improve-out-of-distribution-detection
+2026-03-09 03:31:30 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/how-agentic-ai-and-people-improve-out-of-distribution-detection: All validations passed
+2026-03-09 03:31:30 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/how-agentic-ai-and-people-improve-out-of-distribution-detection | Status: 200 | Size: 816470 bytes
+2026-03-09 03:31:30 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/to-scale-agentic-ai-build-for-sustainability
+2026-03-09 03:31:34 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/to-scale-agentic-ai-build-for-sustainability: All validations passed
+2026-03-09 03:31:34 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/to-scale-agentic-ai-build-for-sustainability | Status: 200 | Size: 249797 bytes
+2026-03-09 03:31:35 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/how-supervised-synthetic-data-combines-human-expertise-with-machine-scale
+2026-03-09 03:31:40 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/how-supervised-synthetic-data-combines-human-expertise-with-machine-scale: All validations passed
+2026-03-09 03:31:40 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/how-supervised-synthetic-data-combines-human-expertise-with-machine-scale | Status: 200 | Size: 820674 bytes
+2026-03-09 03:31:40 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/nvidia-expands-the-boundaries-of-ai-at-gtc-2025
+2026-03-09 03:31:50 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/nvidia-expands-the-boundaries-of-ai-at-gtc-2025: All validations passed
+2026-03-09 03:31:50 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/nvidia-expands-the-boundaries-of-ai-at-gtc-2025 | Status: 200 | Size: 791139 bytes
+2026-03-09 03:31:50 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/bridging-data-and-localization-in-the-age-of-multilingual-ai
+2026-03-09 03:31:54 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/bridging-data-and-localization-in-the-age-of-multilingual-ai: All validations passed
+2026-03-09 03:31:54 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/bridging-data-and-localization-in-the-age-of-multilingual-ai | Status: 200 | Size: 786051 bytes
+2026-03-09 03:31:54 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/the-hidden-risk-of-agentic-ai
+2026-03-09 03:32:00 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/the-hidden-risk-of-agentic-ai: All validations passed
+2026-03-09 03:32:00 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/the-hidden-risk-of-agentic-ai | Status: 200 | Size: 787500 bytes
+2026-03-09 03:32:00 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/why-it-s-time-to-rethink-synthetic-data
+2026-03-09 03:32:05 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/why-it-s-time-to-rethink-synthetic-data: All validations passed
+2026-03-09 03:32:05 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/why-it-s-time-to-rethink-synthetic-data | Status: 200 | Size: 231736 bytes
+2026-03-09 03:32:05 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/how-men-can-be-allies-women-at-centific-ama-recap
+2026-03-09 03:32:10 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/how-men-can-be-allies-women-at-centific-ama-recap: All validations passed
+2026-03-09 03:32:10 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/how-men-can-be-allies-women-at-centific-ama-recap | Status: 200 | Size: 782290 bytes
+2026-03-09 03:32:10 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/reflections-on-the-openai-dev-day-2025-building-beyond-the-poc-plateau
+2026-03-09 03:32:16 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/reflections-on-the-openai-dev-day-2025-building-beyond-the-poc-plateau: All validations passed
+2026-03-09 03:32:16 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/reflections-on-the-openai-dev-day-2025-building-beyond-the-poc-plateau | Status: 200 | Size: 788076 bytes
+2026-03-09 03:32:16 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/chatgpt-s-next-act-from-ai-assistant-to-app-platform
+2026-03-09 03:32:24 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/chatgpt-s-next-act-from-ai-assistant-to-app-platform: All validations passed
+2026-03-09 03:32:24 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/chatgpt-s-next-act-from-ai-assistant-to-app-platform | Status: 200 | Size: 231226 bytes
+2026-03-09 03:32:24 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/5-multimodal-data-strategies-to-win-in-the-ai-native-commerce-era
+2026-03-09 03:32:32 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/5-multimodal-data-strategies-to-win-in-the-ai-native-commerce-era: All validations passed
+2026-03-09 03:32:32 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/5-multimodal-data-strategies-to-win-in-the-ai-native-commerce-era | Status: 200 | Size: 233034 bytes
+2026-03-09 03:32:32 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/how-ai-governance-turns-ai-investments-into-roi
+2026-03-09 03:32:37 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/how-ai-governance-turns-ai-investments-into-roi: All validations passed
+2026-03-09 03:32:37 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/how-ai-governance-turns-ai-investments-into-roi | Status: 200 | Size: 789119 bytes
+2026-03-09 03:32:37 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/what-openai-s-new-chatgpt-usage-report-means-to-you
+2026-03-09 03:32:43 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/what-openai-s-new-chatgpt-usage-report-means-to-you: All validations passed
+2026-03-09 03:32:43 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/what-openai-s-new-chatgpt-usage-report-means-to-you | Status: 200 | Size: 230507 bytes
+2026-03-09 03:32:43 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/understanding-the-world-through-video-how-vision-ai-enables-safer-smarter-physical-ai
+2026-03-09 03:32:47 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/understanding-the-world-through-video-how-vision-ai-enables-safer-smarter-physical-ai: All validations passed
+2026-03-09 03:32:47 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/understanding-the-world-through-video-how-vision-ai-enables-safer-smarter-physical-ai | Status: 200 | Size: 807977 bytes
+2026-03-09 03:32:47 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/ai-turns-translators-into-cultural-experts
+2026-03-09 03:32:52 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/ai-turns-translators-into-cultural-experts: All validations passed
+2026-03-09 03:32:52 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/ai-turns-translators-into-cultural-experts | Status: 200 | Size: 789282 bytes
+2026-03-09 03:32:52 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/amazon-doubles-down-on-agentic-ai
+2026-03-09 03:32:59 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/amazon-doubles-down-on-agentic-ai: All validations passed
+2026-03-09 03:32:59 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/amazon-doubles-down-on-agentic-ai | Status: 200 | Size: 781563 bytes
+2026-03-09 03:32:59 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/centific-disrupts-ai-data-market-with-industry-s-first-unified-marketplace-delivering-production-ready-datasets-at-10x-speed
+2026-03-09 03:33:04 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/centific-disrupts-ai-data-market-with-industry-s-first-unified-marketplace-delivering-production-ready-datasets-at-10x-speed: All validations passed
+2026-03-09 03:33:04 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/centific-disrupts-ai-data-market-with-industry-s-first-unified-marketplace-delivering-production-ready-datasets-at-10x-speed | Status: 200 | Size: 231969 bytes
+2026-03-09 03:33:04 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/your-dark-data-is-valuable-if-you-know-how-to-unlock-it
+2026-03-09 03:33:10 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/your-dark-data-is-valuable-if-you-know-how-to-unlock-it: All validations passed
+2026-03-09 03:33:10 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/your-dark-data-is-valuable-if-you-know-how-to-unlock-it | Status: 200 | Size: 232404 bytes
+2026-03-09 03:33:10 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/centific-announces-availability-of-flow-in-the-new-aws-marketplace-ai-agents-and-tools-category
+2026-03-09 03:33:14 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/centific-announces-availability-of-flow-in-the-new-aws-marketplace-ai-agents-and-tools-category: All validations passed
+2026-03-09 03:33:14 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/centific-announces-availability-of-flow-in-the-new-aws-marketplace-ai-agents-and-tools-category | Status: 200 | Size: 228857 bytes
+2026-03-09 03:33:14 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/you-need-more-than-a-data-catalog-to-get-quality-ai-data
+2026-03-09 03:33:18 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/you-need-more-than-a-data-catalog-to-get-quality-ai-data: All validations passed
+2026-03-09 03:33:18 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/you-need-more-than-a-data-catalog-to-get-quality-ai-data | Status: 200 | Size: 229740 bytes
+2026-03-09 03:33:18 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/big-tech-is-powering-the-age-of-agentic-ai-innovation
+2026-03-09 03:33:25 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/big-tech-is-powering-the-age-of-agentic-ai-innovation: All validations passed
+2026-03-09 03:33:25 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/big-tech-is-powering-the-age-of-agentic-ai-innovation | Status: 200 | Size: 227712 bytes
+2026-03-09 03:33:25 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/train-vision-ai-for-high-quality-outcomes
+2026-03-09 03:33:30 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/train-vision-ai-for-high-quality-outcomes: All validations passed
+2026-03-09 03:33:30 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/train-vision-ai-for-high-quality-outcomes | Status: 200 | Size: 789271 bytes
+2026-03-09 03:33:30 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/building-smarter-safer-cities-centific-joins-nsf-s-center-for-smart-streetscapes
+2026-03-09 03:33:35 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/building-smarter-safer-cities-centific-joins-nsf-s-center-for-smart-streetscapes: All validations passed
+2026-03-09 03:33:35 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/building-smarter-safer-cities-centific-joins-nsf-s-center-for-smart-streetscapes | Status: 200 | Size: 229808 bytes
+2026-03-09 03:33:35 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/corporate-ai-is-experiencing-growing-pains
+2026-03-09 03:33:43 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/corporate-ai-is-experiencing-growing-pains: All validations passed
+2026-03-09 03:33:43 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/corporate-ai-is-experiencing-growing-pains | Status: 200 | Size: 226375 bytes
+2026-03-09 03:33:43 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/genai-is-moving-fast-why-isnt-the-language-services-industry
+2026-03-09 03:33:48 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/genai-is-moving-fast-why-isnt-the-language-services-industry: All validations passed
+2026-03-09 03:33:48 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/genai-is-moving-fast-why-isnt-the-language-services-industry | Status: 200 | Size: 785549 bytes
+2026-03-09 03:33:48 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/healthcare-faces-ai-infrastructure-crisis-as-investments-surge
+2026-03-09 03:33:56 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/healthcare-faces-ai-infrastructure-crisis-as-investments-surge: All validations passed
+2026-03-09 03:33:56 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/healthcare-faces-ai-infrastructure-crisis-as-investments-surge | Status: 200 | Size: 228441 bytes
+2026-03-09 03:33:56 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/googles-gemini-deep-think-marks-era-advanced-ai-reasoning
+2026-03-09 03:34:04 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/googles-gemini-deep-think-marks-era-advanced-ai-reasoning: All validations passed
+2026-03-09 03:34:04 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/googles-gemini-deep-think-marks-era-advanced-ai-reasoning | Status: 200 | Size: 786789 bytes
+2026-03-09 03:34:04 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/ai-agents-need-the-right-foundation-to-deliver-quality-results
+2026-03-09 03:34:09 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/ai-agents-need-the-right-foundation-to-deliver-quality-results: All validations passed
+2026-03-09 03:34:09 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/ai-agents-need-the-right-foundation-to-deliver-quality-results | Status: 200 | Size: 236916 bytes
+2026-03-09 03:34:09 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/walmart-gets-head-start-with-genai-ai-agents
+2026-03-09 03:34:15 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/walmart-gets-head-start-with-genai-ai-agents: All validations passed
+2026-03-09 03:34:15 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/walmart-gets-head-start-with-genai-ai-agents | Status: 200 | Size: 783858 bytes
+2026-03-09 03:34:15 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/openai-brings-agentic-ai-to-the-masses
+2026-03-09 03:34:21 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/openai-brings-agentic-ai-to-the-masses: All validations passed
+2026-03-09 03:34:21 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/openai-brings-agentic-ai-to-the-masses | Status: 200 | Size: 784019 bytes
+2026-03-09 03:34:21 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/localization-needs-subject-matter-experts-to-succeed
+2026-03-09 03:34:25 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/localization-needs-subject-matter-experts-to-succeed: All validations passed
+2026-03-09 03:34:25 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/localization-needs-subject-matter-experts-to-succeed | Status: 200 | Size: 232472 bytes
+2026-03-09 03:34:26 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/deploy-smarter-vision-ai-to-manage-public-safety-effectively
+2026-03-09 03:34:29 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/deploy-smarter-vision-ai-to-manage-public-safety-effectively: All validations passed
+2026-03-09 03:34:29 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/deploy-smarter-vision-ai-to-manage-public-safety-effectively | Status: 200 | Size: 228254 bytes
+2026-03-09 03:34:29 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/vertical-market-ai-needs-industry-domain-expertise
+2026-03-09 03:34:32 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/vertical-market-ai-needs-industry-domain-expertise: All validations passed
+2026-03-09 03:34:32 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/vertical-market-ai-needs-industry-domain-expertise | Status: 200 | Size: 237543 bytes
+2026-03-09 03:34:33 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/global-cpg-companies-join-generative-and-agentic-ai-rush
+2026-03-09 03:34:38 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/global-cpg-companies-join-generative-and-agentic-ai-rush: All validations passed
+2026-03-09 03:34:38 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/global-cpg-companies-join-generative-and-agentic-ai-rush | Status: 200 | Size: 226586 bytes
+2026-03-09 03:34:38 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/grok-4-raises-the-ai-benchmark-imperfectly
+2026-03-09 03:34:43 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/grok-4-raises-the-ai-benchmark-imperfectly: All validations passed
+2026-03-09 03:34:43 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/grok-4-raises-the-ai-benchmark-imperfectly | Status: 200 | Size: 797007 bytes
+2026-03-09 03:34:43 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/ai-assisted-annotation-scaling-human-led-prompt-generation-across-13-languages-using-llm-as-a-judge
+2026-03-09 03:34:47 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/ai-assisted-annotation-scaling-human-led-prompt-generation-across-13-languages-using-llm-as-a-judge: All validations passed
+2026-03-09 03:34:47 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/ai-assisted-annotation-scaling-human-led-prompt-generation-across-13-languages-using-llm-as-a-judge | Status: 200 | Size: 231783 bytes
+2026-03-09 03:34:47 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/a-lack-of-quality-will-kill-more-than-40-of-agentic-ai-projects
+2026-03-09 03:34:54 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/a-lack-of-quality-will-kill-more-than-40-of-agentic-ai-projects: All validations passed
+2026-03-09 03:34:54 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/a-lack-of-quality-will-kill-more-than-40-of-agentic-ai-projects | Status: 200 | Size: 782900 bytes
+2026-03-09 03:34:54 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/google-s-search-live-will-need-high-quality-data-to-succeed
+2026-03-09 03:35:00 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/google-s-search-live-will-need-high-quality-data-to-succeed: All validations passed
+2026-03-09 03:35:00 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/google-s-search-live-will-need-high-quality-data-to-succeed | Status: 200 | Size: 225321 bytes
+2026-03-09 03:35:00 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/responsible-ai-needs-a-responsible-approach
+2026-03-09 03:35:05 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/responsible-ai-needs-a-responsible-approach: All validations passed
+2026-03-09 03:35:05 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/responsible-ai-needs-a-responsible-approach | Status: 200 | Size: 229883 bytes
+2026-03-09 03:35:05 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/to-train-better-ai-start-with-human-experts
+2026-03-09 03:35:10 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/to-train-better-ai-start-with-human-experts: All validations passed
+2026-03-09 03:35:10 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/to-train-better-ai-start-with-human-experts | Status: 200 | Size: 788042 bytes
+2026-03-09 03:35:10 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/amazon-is-all-in-on-genai-and-ai-agents
+2026-03-09 03:35:14 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/amazon-is-all-in-on-genai-and-ai-agents: All validations passed
+2026-03-09 03:35:14 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/amazon-is-all-in-on-genai-and-ai-agents | Status: 200 | Size: 224253 bytes
+2026-03-09 03:35:14 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/centific-raises-60m-series-a-to-power-the-next-wave-of-global-agentic-ai-systems
+2026-03-09 03:35:23 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/centific-raises-60m-series-a-to-power-the-next-wave-of-global-agentic-ai-systems: All validations passed
+2026-03-09 03:35:23 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/centific-raises-60m-series-a-to-power-the-next-wave-of-global-agentic-ai-systems | Status: 200 | Size: 786968 bytes
+2026-03-09 03:35:23 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/centific-partners-with-virtue-ai-to-deliver-responsible-ai-by-design
+2026-03-09 03:35:28 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/centific-partners-with-virtue-ai-to-deliver-responsible-ai-by-design: All validations passed
+2026-03-09 03:35:28 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/centific-partners-with-virtue-ai-to-deliver-responsible-ai-by-design | Status: 200 | Size: 784636 bytes
+2026-03-09 03:35:28 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/anthropic-s-multi-agent-research-system-raises-the-bar-for-open-ended-ai-reasoning
+2026-03-09 03:35:34 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/anthropic-s-multi-agent-research-system-raises-the-bar-for-open-ended-ai-reasoning: All validations passed
+2026-03-09 03:35:34 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/anthropic-s-multi-agent-research-system-raises-the-bar-for-open-ended-ai-reasoning | Status: 200 | Size: 785707 bytes
+2026-03-09 03:35:34 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/transform-ai-from-mimicry-to-meaning
+2026-03-09 03:35:37 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/transform-ai-from-mimicry-to-meaning: All validations passed
+2026-03-09 03:35:37 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/transform-ai-from-mimicry-to-meaning | Status: 200 | Size: 228033 bytes
+2026-03-09 03:35:38 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/incorporate-ai-agents-into-your-localization-project
+2026-03-09 03:35:42 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/incorporate-ai-agents-into-your-localization-project: All validations passed
+2026-03-09 03:35:42 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/incorporate-ai-agents-into-your-localization-project | Status: 200 | Size: 234210 bytes
+2026-03-09 03:35:42 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/locworld-2025-shows-the-rising-need-for-inclusivity-in-localization
+2026-03-09 03:35:46 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/locworld-2025-shows-the-rising-need-for-inclusivity-in-localization: All validations passed
+2026-03-09 03:35:46 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/locworld-2025-shows-the-rising-need-for-inclusivity-in-localization | Status: 200 | Size: 227622 bytes
+2026-03-09 03:35:47 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/vision-language-models-help-cities-get-safer
+2026-03-09 03:35:51 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/vision-language-models-help-cities-get-safer: All validations passed
+2026-03-09 03:35:51 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/vision-language-models-help-cities-get-safer | Status: 200 | Size: 231303 bytes
+2026-03-09 03:35:51 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/nvidia-s-momentum-is-fueling-a-stronger-ai-ecosystem
+2026-03-09 03:35:59 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/nvidia-s-momentum-is-fueling-a-stronger-ai-ecosystem: All validations passed
+2026-03-09 03:35:59 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/nvidia-s-momentum-is-fueling-a-stronger-ai-ecosystem | Status: 200 | Size: 783807 bytes
+2026-03-09 03:35:59 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/fight-physician-burnout-with-ai-agents
+2026-03-09 03:36:03 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/fight-physician-burnout-with-ai-agents: All validations passed
+2026-03-09 03:36:03 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/fight-physician-burnout-with-ai-agents | Status: 200 | Size: 235176 bytes
+2026-03-09 03:36:03 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/openai-s-move-into-hardware-could-change-how-ai-is-trained
+2026-03-09 03:36:11 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/openai-s-move-into-hardware-could-change-how-ai-is-trained: All validations passed
+2026-03-09 03:36:11 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/openai-s-move-into-hardware-could-change-how-ai-is-trained | Status: 200 | Size: 787425 bytes
+2026-03-09 03:36:11 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/localization-gets-better-with-agentic-translation
+2026-03-09 03:36:16 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/localization-gets-better-with-agentic-translation: All validations passed
+2026-03-09 03:36:16 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/localization-gets-better-with-agentic-translation | Status: 200 | Size: 242215 bytes
+2026-03-09 03:36:16 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/microsoft-unveils-a-bold-vision-for-enterprise-wide-ai-agents
+2026-03-09 03:36:23 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/microsoft-unveils-a-bold-vision-for-enterprise-wide-ai-agents: All validations passed
+2026-03-09 03:36:23 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/microsoft-unveils-a-bold-vision-for-enterprise-wide-ai-agents | Status: 200 | Size: 787356 bytes
+2026-03-09 03:36:23 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/genai-presents-hidden-challenges-for-chief-data-officers
+2026-03-09 03:36:28 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/genai-presents-hidden-challenges-for-chief-data-officers: All validations passed
+2026-03-09 03:36:28 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/genai-presents-hidden-challenges-for-chief-data-officers | Status: 200 | Size: 793577 bytes
+2026-03-09 03:36:28 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/transform-healthcare-administration-with-ai-agents
+2026-03-09 03:36:33 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/transform-healthcare-administration-with-ai-agents: All validations passed
+2026-03-09 03:36:33 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/transform-healthcare-administration-with-ai-agents | Status: 200 | Size: 793002 bytes
+2026-03-09 03:36:33 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/the-frontier-firm-is-on-the-rise
+2026-03-09 03:36:39 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/the-frontier-firm-is-on-the-rise: All validations passed
+2026-03-09 03:36:39 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/the-frontier-firm-is-on-the-rise | Status: 200 | Size: 226291 bytes
+2026-03-09 03:36:39 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/genai-is-the-key-to-cx-improvement-in-retail-banking
+2026-03-09 03:36:44 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/genai-is-the-key-to-cx-improvement-in-retail-banking: All validations passed
+2026-03-09 03:36:44 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/genai-is-the-key-to-cx-improvement-in-retail-banking | Status: 200 | Size: 235065 bytes
+2026-03-09 03:36:44 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/jpmorgan-taps-genai-to-navigate-market-turmoil-and-scale-for-growth
+2026-03-09 03:36:51 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/jpmorgan-taps-genai-to-navigate-market-turmoil-and-scale-for-growth: All validations passed
+2026-03-09 03:36:51 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/jpmorgan-taps-genai-to-navigate-market-turmoil-and-scale-for-growth | Status: 200 | Size: 781945 bytes
+2026-03-09 03:36:51 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/without-process-mapping-ai-may-miss-the-road-to-real-value
+2026-03-09 03:36:56 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/without-process-mapping-ai-may-miss-the-road-to-real-value: All validations passed
+2026-03-09 03:36:56 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/without-process-mapping-ai-may-miss-the-road-to-real-value | Status: 200 | Size: 233314 bytes
+2026-03-09 03:36:56 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/ai-hallucinations-are-getting-worse
+2026-03-09 03:37:08 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/ai-hallucinations-are-getting-worse: All validations passed
+2026-03-09 03:37:08 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/ai-hallucinations-are-getting-worse | Status: 200 | Size: 782803 bytes
+2026-03-09 03:37:08 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/fight-service-delays-in-retail-banking-with-genai
+2026-03-09 03:37:12 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/fight-service-delays-in-retail-banking-with-genai: All validations passed
+2026-03-09 03:37:12 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/fight-service-delays-in-retail-banking-with-genai | Status: 200 | Size: 234193 bytes
+2026-03-09 03:37:12 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/improve-customer-support-in-retail-banking-with-ai-driven-chat
+2026-03-09 03:37:16 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/improve-customer-support-in-retail-banking-with-ai-driven-chat: All validations passed
+2026-03-09 03:37:16 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/improve-customer-support-in-retail-banking-with-ai-driven-chat | Status: 200 | Size: 239440 bytes
+2026-03-09 03:37:16 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/ai-investments-accelerate-trust-and-risk-weigh-heavily
+2026-03-09 03:37:22 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/ai-investments-accelerate-trust-and-risk-weigh-heavily: All validations passed
+2026-03-09 03:37:22 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/ai-investments-accelerate-trust-and-risk-weigh-heavily | Status: 200 | Size: 229104 bytes
+2026-03-09 03:37:22 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/johnson-johnson-pivots-on-genai-to-deliver-business-value
+2026-03-09 03:37:27 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/johnson-johnson-pivots-on-genai-to-deliver-business-value: All validations passed
+2026-03-09 03:37:27 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/johnson-johnson-pivots-on-genai-to-deliver-business-value | Status: 200 | Size: 227391 bytes
+2026-03-09 03:37:27 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/model-context-protocol-can-improve-ai-adoption-if-you-take-the-right-steps
+2026-03-09 03:37:31 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/model-context-protocol-can-improve-ai-adoption-if-you-take-the-right-steps: All validations passed
+2026-03-09 03:37:31 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/model-context-protocol-can-improve-ai-adoption-if-you-take-the-right-steps | Status: 200 | Size: 235997 bytes
+2026-03-09 03:37:32 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/computer-vision-for-planogram-compliance-needs-a-frontier-ai-data-foundry-to-manage-store-inventory
+2026-03-09 03:37:37 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/computer-vision-for-planogram-compliance-needs-a-frontier-ai-data-foundry-to-manage-store-inventory: All validations passed
+2026-03-09 03:37:37 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/computer-vision-for-planogram-compliance-needs-a-frontier-ai-data-foundry-to-manage-store-inventory | Status: 200 | Size: 236468 bytes
+2026-03-09 03:37:37 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/are-vision-language-models-closing-the-gap-with-human-perception
+2026-03-09 03:37:43 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/are-vision-language-models-closing-the-gap-with-human-perception: All validations passed
+2026-03-09 03:37:43 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/are-vision-language-models-closing-the-gap-with-human-perception | Status: 200 | Size: 790281 bytes
+2026-03-09 03:37:43 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/this-women-s-day-we-turned-the-tables-and-kept-the-seats
+2026-03-09 03:37:47 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/this-women-s-day-we-turned-the-tables-and-kept-the-seats: All validations passed
+2026-03-09 03:37:47 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/this-women-s-day-we-turned-the-tables-and-kept-the-seats | Status: 200 | Size: 782648 bytes
+2026-03-09 03:37:47 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/keep-correctional-facilities-safe-with-ai-driven-computer-vision
+2026-03-09 03:37:53 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/keep-correctional-facilities-safe-with-ai-driven-computer-vision: All validations passed
+2026-03-09 03:37:53 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/keep-correctional-facilities-safe-with-ai-driven-computer-vision | Status: 200 | Size: 798483 bytes
+2026-03-09 03:37:53 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/the-google-a2a-protocol-could-redefine-ai-ecosystems-for-enterprises
+2026-03-09 03:37:59 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/the-google-a2a-protocol-could-redefine-ai-ecosystems-for-enterprises: All validations passed
+2026-03-09 03:37:59 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/the-google-a2a-protocol-could-redefine-ai-ecosystems-for-enterprises | Status: 200 | Size: 777600 bytes
+2026-03-09 03:37:59 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/deepseek-is-changing-the-rules-of-enterprise-ai
+2026-03-09 03:38:04 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/deepseek-is-changing-the-rules-of-enterprise-ai: All validations passed
+2026-03-09 03:38:04 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/deepseek-is-changing-the-rules-of-enterprise-ai | Status: 200 | Size: 777345 bytes
+2026-03-09 03:38:04 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/ai-engineering-is-the-foundation-for-enterprise-scale-success
+2026-03-09 03:38:10 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/ai-engineering-is-the-foundation-for-enterprise-scale-success: All validations passed
+2026-03-09 03:38:10 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/ai-engineering-is-the-foundation-for-enterprise-scale-success | Status: 200 | Size: 220315 bytes
+2026-03-09 03:38:10 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/now-is-the-time-to-move-beyond-cost-centric-procurement
+2026-03-09 03:38:14 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/now-is-the-time-to-move-beyond-cost-centric-procurement: All validations passed
+2026-03-09 03:38:14 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/now-is-the-time-to-move-beyond-cost-centric-procurement | Status: 200 | Size: 231047 bytes
+2026-03-09 03:38:14 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/centific-and-lenovo-showcase-ai-innovations-at-nvidia-gtc
+2026-03-09 03:38:19 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/centific-and-lenovo-showcase-ai-innovations-at-nvidia-gtc: All validations passed
+2026-03-09 03:38:19 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/centific-and-lenovo-showcase-ai-innovations-at-nvidia-gtc | Status: 200 | Size: 220277 bytes
+2026-03-09 03:38:19 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/at-gtc-2025-nvidia-powers-the-future-of-ai
+2026-03-09 03:38:23 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/at-gtc-2025-nvidia-powers-the-future-of-ai: All validations passed
+2026-03-09 03:38:23 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/at-gtc-2025-nvidia-powers-the-future-of-ai | Status: 200 | Size: 787763 bytes
+2026-03-09 03:38:23 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/accelerate-and-simplify-ai-deployment
+2026-03-09 03:38:29 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/accelerate-and-simplify-ai-deployment: All validations passed
+2026-03-09 03:38:29 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/accelerate-and-simplify-ai-deployment | Status: 200 | Size: 777355 bytes
+2026-03-09 03:38:29 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/centific-and-mimik-partner-to-revolutionize-ai-powered-smart-spaces-with-edge-intelligence
+2026-03-09 03:38:29 - scraper.www.centific.com - ERROR - ✗ ERROR: https://www.centific.com/blog/centific-and-mimik-partner-to-revolutionize-ai-powered-smart-spaces-with-edge-intelligence | Page.goto: net::ERR_NETWORK_CHANGED at https://www.centific.com/blog/centific-and-mimik-partner-to-revolutionize-ai-powered-smart-spaces-with-edge-intelligence
+Call log:
+  - navigating to "https://www.centific.com/blog/centific-and-mimik-partner-to-revolutionize-ai-powered-smart-spaces-with-edge-intelligence", waiting until "load"
+
+2026-03-09 03:38:29 - scraper.www.centific.com - INFO - Retrying https://www.centific.com/blog/centific-and-mimik-partner-to-revolutionize-ai-powered-smart-spaces-with-edge-intelligence (attempt 2/3)
+2026-03-09 03:38:35 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/centific-and-mimik-partner-to-revolutionize-ai-powered-smart-spaces-with-edge-intelligence: All validations passed
+2026-03-09 03:38:35 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/centific-and-mimik-partner-to-revolutionize-ai-powered-smart-spaces-with-edge-intelligence | Status: 200 | Size: 226364 bytes
+2026-03-09 03:38:35 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/should-you-fine-tune-your-large-language-models-or-let-rag-do-the-heavy-lifting
+2026-03-09 03:38:40 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/should-you-fine-tune-your-large-language-models-or-let-rag-do-the-heavy-lifting: All validations passed
+2026-03-09 03:38:40 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/should-you-fine-tune-your-large-language-models-or-let-rag-do-the-heavy-lifting | Status: 200 | Size: 811398 bytes
+2026-03-09 03:38:40 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/adopt-synthetic-visual-data-to-improve-ai-models
+2026-03-09 03:38:45 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/adopt-synthetic-visual-data-to-improve-ai-models: All validations passed
+2026-03-09 03:38:45 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/adopt-synthetic-visual-data-to-improve-ai-models | Status: 200 | Size: 801459 bytes
+2026-03-09 03:38:45 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/medical-device-manufacturing-needs-computer-vision-to-protect-your-health
+2026-03-09 03:38:51 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/medical-device-manufacturing-needs-computer-vision-to-protect-your-health: All validations passed
+2026-03-09 03:38:51 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/medical-device-manufacturing-needs-computer-vision-to-protect-your-health | Status: 200 | Size: 796037 bytes
+2026-03-09 03:38:51 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/the-state-of-financial-services-genai-in-2025
+2026-03-09 03:38:55 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/the-state-of-financial-services-genai-in-2025: All validations passed
+2026-03-09 03:38:55 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/the-state-of-financial-services-genai-in-2025 | Status: 200 | Size: 807445 bytes
+2026-03-09 03:38:55 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/your-next-financial-advisor-might-be-a-genai-agent
+2026-03-09 03:38:59 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/your-next-financial-advisor-might-be-a-genai-agent: All validations passed
+2026-03-09 03:38:59 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/your-next-financial-advisor-might-be-a-genai-agent | Status: 200 | Size: 229303 bytes
+2026-03-09 03:39:00 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/agentic-ai-can-transform-the-sports-and-tourism-industry
+2026-03-09 03:54:21 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/agentic-ai-can-transform-the-sports-and-tourism-industry: All validations passed
+2026-03-09 03:54:21 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/agentic-ai-can-transform-the-sports-and-tourism-industry | Status: 200 | Size: 778535 bytes
+2026-03-09 03:54:21 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/empower-agentic-ai-with-a-frontier-ai-data-foundry-platform
+2026-03-09 03:54:26 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/empower-agentic-ai-with-a-frontier-ai-data-foundry-platform: All validations passed
+2026-03-09 03:54:26 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/empower-agentic-ai-with-a-frontier-ai-data-foundry-platform | Status: 200 | Size: 820073 bytes
+2026-03-09 03:54:26 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/crack-down-on-retail-inventory-shrinkage-with-computer-vision
+2026-03-09 03:54:31 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/crack-down-on-retail-inventory-shrinkage-with-computer-vision: All validations passed
+2026-03-09 03:54:31 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/crack-down-on-retail-inventory-shrinkage-with-computer-vision | Status: 200 | Size: 797545 bytes
+2026-03-09 03:54:32 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/genai-is-a-potent-weapon-to-fight-fraud-in-financial-services
+2026-03-09 03:54:36 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/genai-is-a-potent-weapon-to-fight-fraud-in-financial-services: All validations passed
+2026-03-09 03:54:36 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/genai-is-a-potent-weapon-to-fight-fraud-in-financial-services | Status: 200 | Size: 234804 bytes
+2026-03-09 03:54:36 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/with-genai-retailers-can-see-beyond-the-sale
+2026-03-09 03:54:40 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/with-genai-retailers-can-see-beyond-the-sale: All validations passed
+2026-03-09 03:54:40 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/with-genai-retailers-can-see-beyond-the-sale | Status: 200 | Size: 786593 bytes
+2026-03-09 03:54:40 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/maximize-the-value-of-deepseek-with-a-frontier-ai-data-foundry-platform
+2026-03-09 03:54:46 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/maximize-the-value-of-deepseek-with-a-frontier-ai-data-foundry-platform: All validations passed
+2026-03-09 03:54:46 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/maximize-the-value-of-deepseek-with-a-frontier-ai-data-foundry-platform | Status: 200 | Size: 791268 bytes
+2026-03-09 03:54:46 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/close-more-and-chase-less-with-genai-powered-sales
+2026-03-09 04:11:11 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/close-more-and-chase-less-with-genai-powered-sales: All validations passed
+2026-03-09 04:11:11 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/close-more-and-chase-less-with-genai-powered-sales | Status: 200 | Size: 233830 bytes
+2026-03-09 04:11:11 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/how-might-computer-vision-in-retail-drive-customer-loyalty
+2026-03-09 04:11:17 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/how-might-computer-vision-in-retail-drive-customer-loyalty: All validations passed
+2026-03-09 04:11:17 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/how-might-computer-vision-in-retail-drive-customer-loyalty | Status: 200 | Size: 230289 bytes
+2026-03-09 04:11:17 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/computer-vision-keeps-an-eye-on-retail-workplace-safety
+2026-03-09 04:11:23 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/computer-vision-keeps-an-eye-on-retail-workplace-safety: All validations passed
+2026-03-09 04:11:23 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/computer-vision-keeps-an-eye-on-retail-workplace-safety | Status: 200 | Size: 785180 bytes
+2026-03-09 04:11:23 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/pharmacovigilance-is-going-proactive-with-genai-s-data-power
+2026-03-09 04:11:27 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/pharmacovigilance-is-going-proactive-with-genai-s-data-power: All validations passed
+2026-03-09 04:11:27 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/pharmacovigilance-is-going-proactive-with-genai-s-data-power | Status: 200 | Size: 232535 bytes
+2026-03-09 04:11:27 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/break-the-ehr-bottleneck-with-genai-innovation
+2026-03-09 04:11:33 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/break-the-ehr-bottleneck-with-genai-innovation: All validations passed
+2026-03-09 04:11:33 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/break-the-ehr-bottleneck-with-genai-innovation | Status: 200 | Size: 794789 bytes
+2026-03-09 04:11:33 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/genai-s-got-talent-and-recruiters-have-some-catching-up-to-do
+2026-03-09 04:11:37 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/genai-s-got-talent-and-recruiters-have-some-catching-up-to-do: All validations passed
+2026-03-09 04:11:37 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/genai-s-got-talent-and-recruiters-have-some-catching-up-to-do | Status: 200 | Size: 789703 bytes
+2026-03-09 04:11:37 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/centific-launches-flow-to-drive-ai-localization-at-scale
+2026-03-09 04:26:21 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/centific-launches-flow-to-drive-ai-localization-at-scale: All validations passed
+2026-03-09 04:26:21 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/centific-launches-flow-to-drive-ai-localization-at-scale | Status: 200 | Size: 785819 bytes
+2026-03-09 04:26:21 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/deepseek-v3-makes-enterprise-ai-smarter-faster-and-more-affordable
+2026-03-09 04:26:27 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/deepseek-v3-makes-enterprise-ai-smarter-faster-and-more-affordable: All validations passed
+2026-03-09 04:26:27 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/deepseek-v3-makes-enterprise-ai-smarter-faster-and-more-affordable | Status: 200 | Size: 787683 bytes
+2026-03-09 04:26:27 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/high-tech-contract-management-is-a-genai-proving-ground
+2026-03-09 04:26:32 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/high-tech-contract-management-is-a-genai-proving-ground: All validations passed
+2026-03-09 04:26:32 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/high-tech-contract-management-is-a-genai-proving-ground | Status: 200 | Size: 792233 bytes
+2026-03-09 04:26:32 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/successful-localization-starts-with-genai
+2026-03-09 04:26:36 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/successful-localization-starts-with-genai: All validations passed
+2026-03-09 04:26:36 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/successful-localization-starts-with-genai | Status: 200 | Size: 225506 bytes
+2026-03-09 04:26:36 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/with-genai-defi-becomes-more-than-just-decentralization
+2026-03-09 04:26:42 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/with-genai-defi-becomes-more-than-just-decentralization: All validations passed
+2026-03-09 04:26:42 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/with-genai-defi-becomes-more-than-just-decentralization | Status: 200 | Size: 789220 bytes
+2026-03-09 04:26:42 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/ai-driven-procurement-in-healthcare-tames-complex-supply-chains
+2026-03-09 04:44:10 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/ai-driven-procurement-in-healthcare-tames-complex-supply-chains: All validations passed
+2026-03-09 04:44:10 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/ai-driven-procurement-in-healthcare-tames-complex-supply-chains | Status: 200 | Size: 795296 bytes
+2026-03-09 04:44:10 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/smart-cities-and-hospitality-present-a-5-trillion-ai-opportunity
+2026-03-09 04:44:17 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/smart-cities-and-hospitality-present-a-5-trillion-ai-opportunity: All validations passed
+2026-03-09 04:44:17 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/smart-cities-and-hospitality-present-a-5-trillion-ai-opportunity | Status: 200 | Size: 220549 bytes
+2026-03-09 04:44:17 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/centific-to-redefine-ai-powered-video-intelligence-using-nvidia-ai
+2026-03-09 04:44:21 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/centific-to-redefine-ai-powered-video-intelligence-using-nvidia-ai: All validations passed
+2026-03-09 04:44:21 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/centific-to-redefine-ai-powered-video-intelligence-using-nvidia-ai | Status: 200 | Size: 783487 bytes
+2026-03-09 04:44:21 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/ai-democratization-bridges-the-gap-between-ai-creators-and-users
+2026-03-09 04:44:25 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/ai-democratization-bridges-the-gap-between-ai-creators-and-users: All validations passed
+2026-03-09 04:44:25 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/ai-democratization-bridges-the-gap-between-ai-creators-and-users | Status: 200 | Size: 788832 bytes
+2026-03-09 04:44:26 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/retailers-a-frontier-ai-data-foundry-platform-will-show-you-what-shoppers-really-want
+2026-03-09 04:44:31 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/retailers-a-frontier-ai-data-foundry-platform-will-show-you-what-shoppers-really-want: All validations passed
+2026-03-09 04:44:31 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/retailers-a-frontier-ai-data-foundry-platform-will-show-you-what-shoppers-really-want | Status: 200 | Size: 790046 bytes
+2026-03-09 04:44:31 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/rethink-your-data-strategy-as-the-data-center-crisis-unfolds
+2026-03-09 04:44:36 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/rethink-your-data-strategy-as-the-data-center-crisis-unfolds: All validations passed
+2026-03-09 04:44:36 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/rethink-your-data-strategy-as-the-data-center-crisis-unfolds | Status: 200 | Size: 790614 bytes
+2026-03-09 04:44:37 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/here-s-why-your-ai-models-aren-t-meeting-roi-requirements
+2026-03-09 04:50:20 - scraper.www.centific.com - ERROR - ✗ ERROR: https://www.centific.com/blog/here-s-why-your-ai-models-aren-t-meeting-roi-requirements | Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.centific.com/blog/here-s-why-your-ai-models-aren-t-meeting-roi-requirements", waiting until "load"
+
+2026-03-09 04:50:20 - scraper.www.centific.com - INFO - Retrying https://www.centific.com/blog/here-s-why-your-ai-models-aren-t-meeting-roi-requirements (attempt 2/3)
+2026-03-09 04:50:29 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/here-s-why-your-ai-models-aren-t-meeting-roi-requirements: All validations passed
+2026-03-09 04:50:29 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/here-s-why-your-ai-models-aren-t-meeting-roi-requirements | Status: 200 | Size: 785368 bytes
+2026-03-09 04:50:29 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/centific-awarded-ai-agent-agreement-with-premier-inc
+2026-03-09 04:50:33 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/centific-awarded-ai-agent-agreement-with-premier-inc: All validations passed
+2026-03-09 04:50:33 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/centific-awarded-ai-agent-agreement-with-premier-inc | Status: 200 | Size: 221679 bytes
+2026-03-09 04:50:34 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/multilingual-genai-beats-monolingual-ai-every-time
+2026-03-09 04:50:38 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/multilingual-genai-beats-monolingual-ai-every-time: All validations passed
+2026-03-09 04:50:38 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/multilingual-genai-beats-monolingual-ai-every-time | Status: 200 | Size: 234842 bytes
+2026-03-09 04:50:38 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/when-ai-meets-multi-agent-systems-intelligence-multiplies
+2026-03-09 04:50:43 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/when-ai-meets-multi-agent-systems-intelligence-multiplies: All validations passed
+2026-03-09 04:50:43 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/when-ai-meets-multi-agent-systems-intelligence-multiplies | Status: 200 | Size: 788939 bytes
+2026-03-09 04:50:43 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/a-frontier-ai-data-foundry-maximizes-the-value-of-your-data
+2026-03-09 04:50:49 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/a-frontier-ai-data-foundry-maximizes-the-value-of-your-data: All validations passed
+2026-03-09 04:50:49 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/a-frontier-ai-data-foundry-maximizes-the-value-of-your-data | Status: 200 | Size: 790729 bytes
+2026-03-09 04:50:49 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/fight-ai-bias-by-tackling-bad-data
+2026-03-09 05:07:24 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/fight-ai-bias-by-tackling-bad-data: All validations passed
+2026-03-09 05:07:24 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/fight-ai-bias-by-tackling-bad-data | Status: 200 | Size: 235679 bytes
+2026-03-09 05:07:25 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/your-llm-is-only-as-strong-as-your-ai-governance-platform
+2026-03-09 05:07:25 - scraper.www.centific.com - ERROR - ✗ ERROR: https://www.centific.com/blog/your-llm-is-only-as-strong-as-your-ai-governance-platform | Page.goto: net::ERR_NETWORK_CHANGED at https://www.centific.com/blog/your-llm-is-only-as-strong-as-your-ai-governance-platform
+Call log:
+  - navigating to "https://www.centific.com/blog/your-llm-is-only-as-strong-as-your-ai-governance-platform", waiting until "load"
+
+2026-03-09 05:07:25 - scraper.www.centific.com - INFO - Retrying https://www.centific.com/blog/your-llm-is-only-as-strong-as-your-ai-governance-platform (attempt 2/3)
+2026-03-09 05:07:32 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/your-llm-is-only-as-strong-as-your-ai-governance-platform: All validations passed
+2026-03-09 05:07:32 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/your-llm-is-only-as-strong-as-your-ai-governance-platform | Status: 200 | Size: 788595 bytes
+2026-03-09 05:07:32 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/how-is-your-business-using-ai-agents-centific
+2026-03-09 05:07:37 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/how-is-your-business-using-ai-agents-centific: All validations passed
+2026-03-09 05:07:37 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/how-is-your-business-using-ai-agents-centific | Status: 200 | Size: 234669 bytes
+2026-03-09 05:07:37 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/get-to-know-the-centific-frontier-ai-data-foundry-platform
+2026-03-09 05:07:41 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/get-to-know-the-centific-frontier-ai-data-foundry-platform: All validations passed
+2026-03-09 05:07:41 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/get-to-know-the-centific-frontier-ai-data-foundry-platform | Status: 200 | Size: 782922 bytes
+2026-03-09 05:07:41 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/learn-and-succeed-as-the-genai-market-grows
+2026-03-09 05:07:46 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/learn-and-succeed-as-the-genai-market-grows: All validations passed
+2026-03-09 05:07:46 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/learn-and-succeed-as-the-genai-market-grows | Status: 200 | Size: 223840 bytes
+2026-03-09 05:07:46 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/ai-makes-personalization-feel-more-personal
+2026-03-09 05:07:51 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/ai-makes-personalization-feel-more-personal: All validations passed
+2026-03-09 05:07:51 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/ai-makes-personalization-feel-more-personal | Status: 200 | Size: 228361 bytes
+2026-03-09 05:07:51 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/llms-could-be-your-new-business-accelerator
+2026-03-09 05:24:44 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/llms-could-be-your-new-business-accelerator: All validations passed
+2026-03-09 05:24:44 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/llms-could-be-your-new-business-accelerator | Status: 200 | Size: 238217 bytes
+2026-03-09 05:24:45 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/understanding-gartner-s-genai-hype-cycle-is-critical-for-success-with-ai
+2026-03-09 05:24:45 - scraper.www.centific.com - ERROR - ✗ ERROR: https://www.centific.com/blog/understanding-gartner-s-genai-hype-cycle-is-critical-for-success-with-ai | Page.goto: net::ERR_NETWORK_CHANGED at https://www.centific.com/blog/understanding-gartner-s-genai-hype-cycle-is-critical-for-success-with-ai
+Call log:
+  - navigating to "https://www.centific.com/blog/understanding-gartner-s-genai-hype-cycle-is-critical-for-success-with-ai", waiting until "load"
+
+2026-03-09 05:24:45 - scraper.www.centific.com - INFO - Retrying https://www.centific.com/blog/understanding-gartner-s-genai-hype-cycle-is-critical-for-success-with-ai (attempt 2/3)
+2026-03-09 05:24:53 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/understanding-gartner-s-genai-hype-cycle-is-critical-for-success-with-ai: All validations passed
+2026-03-09 05:24:53 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/understanding-gartner-s-genai-hype-cycle-is-critical-for-success-with-ai | Status: 200 | Size: 233878 bytes
+2026-03-09 05:24:53 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/is-your-approach-to-ai-in-healthcare-responsible
+2026-03-09 05:24:58 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/is-your-approach-to-ai-in-healthcare-responsible: All validations passed
+2026-03-09 05:24:58 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/is-your-approach-to-ai-in-healthcare-responsible | Status: 200 | Size: 236885 bytes
+2026-03-09 05:24:58 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/centific-s-experience-is-guiding-enterprises-to-success-with-genai
+2026-03-09 05:25:02 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/centific-s-experience-is-guiding-enterprises-to-success-with-genai: All validations passed
+2026-03-09 05:25:02 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/centific-s-experience-is-guiding-enterprises-to-success-with-genai | Status: 200 | Size: 221150 bytes
+2026-03-09 05:25:03 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/genai-use-cases-will-transform-your-business
+2026-03-09 05:25:07 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/genai-use-cases-will-transform-your-business: All validations passed
+2026-03-09 05:25:07 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/genai-use-cases-will-transform-your-business | Status: 200 | Size: 806797 bytes
+2026-03-09 05:25:07 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/centific-and-vmware-pioneering-ai-driven-international-experiences
+2026-03-09 05:25:12 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/centific-and-vmware-pioneering-ai-driven-international-experiences: All validations passed
+2026-03-09 05:25:12 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/centific-and-vmware-pioneering-ai-driven-international-experiences | Status: 200 | Size: 792134 bytes
+2026-03-09 05:25:13 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/business-leaders-can-t-afford-to-ignore-mlops-for-ai
+2026-03-09 05:39:32 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/business-leaders-can-t-afford-to-ignore-mlops-for-ai: All validations passed
+2026-03-09 05:39:32 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/business-leaders-can-t-afford-to-ignore-mlops-for-ai | Status: 200 | Size: 231242 bytes
+2026-03-09 05:39:32 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/safe-ai-requires-a-10-tenet-approach
+2026-03-09 05:39:37 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/safe-ai-requires-a-10-tenet-approach: All validations passed
+2026-03-09 05:39:37 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/safe-ai-requires-a-10-tenet-approach | Status: 200 | Size: 232480 bytes
+2026-03-09 05:39:37 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/inclusive-ai-is-critical-for-your-business
+2026-03-09 05:39:41 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/inclusive-ai-is-critical-for-your-business: All validations passed
+2026-03-09 05:39:41 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/inclusive-ai-is-critical-for-your-business | Status: 200 | Size: 231755 bytes
+2026-03-09 05:39:42 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/responsible-ai-is-crucial-for-conversational-model-development
+2026-03-09 05:39:46 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/responsible-ai-is-crucial-for-conversational-model-development: All validations passed
+2026-03-09 05:39:46 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/responsible-ai-is-crucial-for-conversational-model-development | Status: 200 | Size: 229930 bytes
+2026-03-09 05:39:46 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/look-beyond-public-opinion-on-ai-to-determine-its-potential
+2026-03-09 05:39:52 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/look-beyond-public-opinion-on-ai-to-determine-its-potential: All validations passed
+2026-03-09 05:39:52 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/look-beyond-public-opinion-on-ai-to-determine-its-potential | Status: 200 | Size: 787938 bytes
+2026-03-09 05:39:52 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/design-intelligent-products-for-emotional-trust
+2026-03-09 05:39:58 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/design-intelligent-products-for-emotional-trust: All validations passed
+2026-03-09 05:39:58 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/design-intelligent-products-for-emotional-trust | Status: 200 | Size: 232002 bytes
+2026-03-09 05:39:58 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/centific-and-denvr-dataworks-in-collaboration-with-intel-revolutionize-enterprise-ai-with-centific-frontier-ai-data-platform-on-intel-gaudi-3
+2026-03-09 05:40:02 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/centific-and-denvr-dataworks-in-collaboration-with-intel-revolutionize-enterprise-ai-with-centific-frontier-ai-data-platform-on-intel-gaudi-3: All validations passed
+2026-03-09 05:40:02 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/centific-and-denvr-dataworks-in-collaboration-with-intel-revolutionize-enterprise-ai-with-centific-frontier-ai-data-platform-on-intel-gaudi-3 | Status: 200 | Size: 223135 bytes
+2026-03-09 05:40:02 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/a-cmo-s-guide-to-genai-in-marketing
+2026-03-09 05:55:15 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/a-cmo-s-guide-to-genai-in-marketing: All validations passed
+2026-03-09 05:55:15 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/a-cmo-s-guide-to-genai-in-marketing | Status: 200 | Size: 236555 bytes
+2026-03-09 05:55:15 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/ai-regulation-requires-public-and-private-collaboration
+2026-03-09 05:55:15 - scraper.www.centific.com - ERROR - ✗ ERROR: https://www.centific.com/blog/ai-regulation-requires-public-and-private-collaboration | Page.goto: net::ERR_NETWORK_CHANGED at https://www.centific.com/blog/ai-regulation-requires-public-and-private-collaboration
+Call log:
+  - navigating to "https://www.centific.com/blog/ai-regulation-requires-public-and-private-collaboration", waiting until "load"
+
+2026-03-09 05:55:15 - scraper.www.centific.com - INFO - Retrying https://www.centific.com/blog/ai-regulation-requires-public-and-private-collaboration (attempt 2/3)
+2026-03-09 05:55:23 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/ai-regulation-requires-public-and-private-collaboration: All validations passed
+2026-03-09 05:55:23 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/ai-regulation-requires-public-and-private-collaboration | Status: 200 | Size: 784254 bytes
+2026-03-09 05:55:23 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/close-the-gap-between-genai-expectations-and-reality
+2026-03-09 05:55:27 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/close-the-gap-between-genai-expectations-and-reality: All validations passed
+2026-03-09 05:55:27 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/close-the-gap-between-genai-expectations-and-reality | Status: 200 | Size: 794391 bytes
+2026-03-09 05:55:27 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/building-trust-in-ai-means-putting-people-first
+2026-03-09 05:55:32 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/building-trust-in-ai-means-putting-people-first: All validations passed
+2026-03-09 05:55:32 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/building-trust-in-ai-means-putting-people-first | Status: 200 | Size: 782153 bytes
+2026-03-09 05:55:32 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/take-ownership-of-your-genai-models
+2026-03-09 05:55:37 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/take-ownership-of-your-genai-models: All validations passed
+2026-03-09 05:55:37 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/take-ownership-of-your-genai-models | Status: 200 | Size: 787651 bytes
+2026-03-09 05:55:37 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/nvidia-ai-summit
+2026-03-09 05:55:41 - scraper.www.centific.com - WARNING - ✗ VALIDATION FAILED: https://www.centific.com/blog/nvidia-ai-summit: Content too short (37 chars, minimum 50)
+2026-03-09 05:55:41 - scraper.www.centific.com - WARNING - Validation failed for https://www.centific.com/blog/nvidia-ai-summit: Content too short (37 chars, minimum 50)
+2026-03-09 05:55:41 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/blog/centific-premier-hackathon
+2026-03-09 06:13:10 - scraper.www.centific.com - ERROR - ✗ ERROR: https://www.centific.com/blog/centific-premier-hackathon | Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.centific.com/blog/centific-premier-hackathon", waiting until "load"
+
+2026-03-09 06:13:10 - scraper.www.centific.com - INFO - Retrying https://www.centific.com/blog/centific-premier-hackathon (attempt 2/3)
+2026-03-09 06:13:18 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/blog/centific-premier-hackathon: All validations passed
+2026-03-09 06:13:18 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/blog/centific-premier-hackathon | Status: 200 | Size: 789769 bytes
+2026-03-09 06:13:18 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/leaderboard/flint-benchmark
+2026-03-09 06:13:23 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/leaderboard/flint-benchmark: All validations passed
+2026-03-09 06:13:23 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/leaderboard/flint-benchmark | Status: 200 | Size: 400510 bytes
+2026-03-09 06:13:23 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/leaderboard/clinical-audio-reasoning-benchmark
+2026-03-09 06:13:27 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/leaderboard/clinical-audio-reasoning-benchmark: All validations passed
+2026-03-09 06:13:27 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/leaderboard/clinical-audio-reasoning-benchmark | Status: 200 | Size: 400415 bytes
+2026-03-09 06:13:27 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/leaderboard/medart-benchmark
+2026-03-09 06:13:31 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/leaderboard/medart-benchmark: All validations passed
+2026-03-09 06:13:31 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/leaderboard/medart-benchmark | Status: 200 | Size: 402814 bytes
+2026-03-09 06:13:31 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/partners/aws
+2026-03-09 06:13:37 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/partners/aws: All validations passed
+2026-03-09 06:13:37 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/partners/aws | Status: 200 | Size: 615330 bytes
+2026-03-09 06:13:37 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/partners/microsoft
+2026-03-09 06:28:51 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/partners/microsoft: All validations passed
+2026-03-09 06:28:51 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/partners/microsoft | Status: 200 | Size: 241219 bytes
+2026-03-09 06:28:51 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/legal/terms-of-use
+2026-03-09 06:28:57 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/legal/terms-of-use: All validations passed
+2026-03-09 06:28:57 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/legal/terms-of-use | Status: 200 | Size: 636761 bytes
+2026-03-09 06:28:57 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/legal/privacy-policy
+2026-03-09 06:29:01 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/legal/privacy-policy: All validations passed
+2026-03-09 06:29:01 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/legal/privacy-policy | Status: 200 | Size: 660950 bytes
+2026-03-09 06:29:01 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/legal/cookies-policy
+2026-03-09 06:29:05 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/legal/cookies-policy: All validations passed
+2026-03-09 06:29:05 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/legal/cookies-policy | Status: 200 | Size: 629156 bytes
+2026-03-09 06:29:05 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/client-repo/client-aws
+2026-03-09 06:29:10 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/client-repo/client-aws: All validations passed
+2026-03-09 06:29:10 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/client-repo/client-aws | Status: 200 | Size: 955774 bytes
+2026-03-09 06:29:10 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/client-repo/client-microsoft
+2026-03-09 06:29:15 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/client-repo/client-microsoft: All validations passed
+2026-03-09 06:29:15 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/client-repo/client-microsoft | Status: 200 | Size: 955765 bytes
+2026-03-09 06:29:15 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/client-repo/client-nvidia
+2026-03-09 06:29:20 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/client-repo/client-nvidia: All validations passed
+2026-03-09 06:29:20 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/client-repo/client-nvidia | Status: 200 | Size: 955718 bytes
+2026-03-09 06:29:20 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/client-repo/client-intel
+2026-03-09 06:40:30 - scraper.www.centific.com - ERROR - ✗ ERROR: https://www.centific.com/client-repo/client-intel | Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.centific.com/client-repo/client-intel", waiting until "load"
+
+2026-03-09 06:40:30 - scraper.www.centific.com - INFO - Retrying https://www.centific.com/client-repo/client-intel (attempt 2/3)
+2026-03-09 06:40:37 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/client-repo/client-intel: All validations passed
+2026-03-09 06:40:37 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/client-repo/client-intel | Status: 200 | Size: 955634 bytes
+2026-03-09 06:40:37 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/client-repo/client-adobe
+2026-03-09 06:40:42 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/client-repo/client-adobe: All validations passed
+2026-03-09 06:40:42 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/client-repo/client-adobe | Status: 200 | Size: 955635 bytes
+2026-03-09 06:40:42 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/client-repo/client-google
+2026-03-09 06:40:47 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/client-repo/client-google: All validations passed
+2026-03-09 06:40:47 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/client-repo/client-google | Status: 200 | Size: 955717 bytes
+2026-03-09 06:40:47 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/client-repo/client-meta
+2026-03-09 06:40:52 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/client-repo/client-meta: All validations passed
+2026-03-09 06:40:52 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/client-repo/client-meta | Status: 200 | Size: 955707 bytes
+2026-03-09 06:40:52 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/client-repo/client-salesforce
+2026-03-09 06:40:58 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/client-repo/client-salesforce: All validations passed
+2026-03-09 06:40:58 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/client-repo/client-salesforce | Status: 200 | Size: 957822 bytes
+2026-03-09 06:40:58 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/client-repo/client-servicenow
+2026-03-09 06:41:02 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/client-repo/client-servicenow: All validations passed
+2026-03-09 06:41:02 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/client-repo/client-servicenow | Status: 200 | Size: 955744 bytes
+2026-03-09 06:41:02 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/client-repo/client-openai
+2026-03-09 06:55:58 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/client-repo/client-openai: All validations passed
+2026-03-09 06:55:58 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/client-repo/client-openai | Status: 200 | Size: 957596 bytes
+2026-03-09 06:55:58 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/events/smart-cities-connect-2026
+2026-03-09 06:56:03 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/events/smart-cities-connect-2026: All validations passed
+2026-03-09 06:56:03 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/events/smart-cities-connect-2026 | Status: 200 | Size: 788567 bytes
+2026-03-09 06:56:03 - scraper.www.centific.com - INFO - Starting scrape: https://www.centific.com/events/nvidia-gtc-2026
+2026-03-09 06:56:09 - scraper.www.centific.com - INFO - ✓ VALIDATION PASSED: https://www.centific.com/events/nvidia-gtc-2026: All validations passed
+2026-03-09 06:56:09 - scraper.www.centific.com - INFO - ✓ SUCCESS: https://www.centific.com/events/nvidia-gtc-2026 | Status: 200 | Size: 812833 bytes

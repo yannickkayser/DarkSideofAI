@@ -107,6 +107,8 @@ WORKER_TERMS = {
 PAIRS = [
     ("appen",  "appen.com",    "crowdgen.com"),
     ("toloka", "toloka.ai",    "mindrift.ai"),
+    ("scale",  "scale.com",   "remotetaks.com"),
+    ("centific","centific.com",  "oneforma.com")
 ]
 
 # ---------------------------------------------------------------------------
