@@ -1,0 +1,10 @@
+/output
+/outputs
+/data
+/config
+venv/
+__pycache__/
+*.pyc
+*.html
+*_report.txt
+*_report.json
