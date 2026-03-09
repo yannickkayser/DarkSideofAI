@@ -69,7 +69,9 @@ PAIR_RULES = {
     "centific":  "centific",
     "oneforma":  "centific",
     "labelbox":  "labelbox",
-    "alignerr":  "labelbox"
+    "alignerr":  "labelbox",
+    "scale":      "scale",
+    "remotasks":  "scale"
 }
 
 # Maps domain fragments to headquarters region.

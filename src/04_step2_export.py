@@ -59,7 +59,7 @@ from datetime import datetime
 # Config
 # ---------------------------------------------------------------------------
 DB_PATH     = "data/scraping.db"
-OUTPUT_DIR  = Path("outputs/step2")
+OUTPUT_DIR  = Path("output/step_2")
 
 # Export A: how many pages per term
 TOP_PAGES_N = 8
@@ -107,8 +107,9 @@ WORKER_TERMS = {
 PAIRS = [
     ("appen",  "appen.com",    "crowdgen.com"),
     ("toloka", "toloka.ai",    "mindrift.ai"),
-    ("scale",  "scale.com",   "remotetaks.com"),
-    ("centific","centific.com",  "oneforma.com")
+    ("scale",  "scale.com",   "remotasks.com"),
+    ("centific","centific.com",  "oneforma.com"),
+    ("labelbox", "labelbox.com", "alignerr.com")
 ]
 
 # ---------------------------------------------------------------------------
