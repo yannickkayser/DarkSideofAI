@@ -35,10 +35,26 @@ sys.path.append(str(Path(__file__).parent.parent))
 # Config
 # ---------------------------------------------------------------------------
 DB_PATH        = "data/scraping.db"
-TOP_N_COOC     = 150     # compute co-occurrence profiles for top N key terms
+TOP_N_COOC     = 150     # compute co-occurrence profiles for top N key terms by LL
 MIN_TERM_FREQ  = 5      # ignore terms appearing fewer than N times total
 WINDOW_SIZE    = 5      # ±5 token window for co-occurrence
 MIN_PMI_COFREQ = 10      # minimum co-occurrence count to compute PMI
+
+# Theoretically motivated terms to include in co-occurrence analysis
+# regardless of their LL rank. These are terms central to H1a-c that may
+# appear on BOTH sides of the corpus (low keyness) but whose collocate
+# profiles are analytically important for Step 2 close reading.
+# H1a — labour visibility:         worker, labour, task, job, pay, earn
+# H1b — automation myth:           autonomous, machine, automate, intelligent
+# H1c — strategic hypervisibility: human, quality, oversight, annotation, label
+THEORY_FOCUS_TERMS = {
+    # H1a
+    "worker", "labour", "task", "job", "pay", "earn",
+    # H1b
+    "autonomous", "machine", "automate", "intelligent", "automation",
+    # H1c
+    "human", "quality", "oversight", "annotation", "label",
+}
 
 logging.basicConfig(
     level=logging.INFO,
@@ -358,11 +374,24 @@ def compute_cooccurrence_for_top_terms(
     Profiles are computed separately for client and worker subcorpora.
     """
     # Extract top N terms by absolute LL score
-    top_terms = set(
+    ll_terms = set(
         r["term"] for r in keyness_results[:TOP_N_COOC]
         if r["term_type"] == "unigram"   # co-occurrence on unigrams only
     )
-    log.info(f"  Computing co-occurrence for {len(top_terms)} focus terms...")
+
+    # Add theoretically motivated terms regardless of LL rank.
+    # These are terms central to H1a-c whose collocate profiles matter for
+    # Step 2 even if they are not strongly key (i.e. they appear on both sides).
+    # Only include terms that actually appear in the corpus (present in keyness).
+    corpus_terms = set(r["term"] for r in keyness_results if r["term_type"] == "unigram")
+    theory_terms = THEORY_FOCUS_TERMS & corpus_terms
+    missing = THEORY_FOCUS_TERMS - corpus_terms
+    if missing:
+        log.warning(f"  Theory terms absent from corpus: {missing}")
+
+    top_terms = ll_terms | theory_terms
+    log.info(f"  Computing co-occurrence for {len(top_terms)} focus terms "
+             f"({len(ll_terms)} by LL + {len(theory_terms)} theory-driven)...")
 
     all_results = []
 

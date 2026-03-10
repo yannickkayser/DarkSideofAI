@@ -10,9 +10,9 @@ Fixes applied over v1:
   - Heatmap colour scale capped at 95th percentile so datum doesn't dominate
   - Extended artifact filter covers residual noise terms from v1
 
-Five figures, each in two styles (pub = clean thesis, exp = annotated):
+Six figures, each in two styles (pub = clean thesis, exp = annotated):
   1. fig1_keyness_bar         — top client vs worker distinctive terms
-  2. fig2_cooccurrence_network — 'human' collocates in client vs worker
+  2. fig2_cooccurrence_network — PMI collocate profiles for top key terms
   3. fig3_frequency_comparison — key terms grouped by H1a / H1b / H1c
   4. fig4_within_pair         — appen and toloka diverging bar
   5. fig5_platform_heatmap    — term frequency across all platforms
@@ -31,7 +31,6 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import numpy as np
-import networkx as nx
 
 # ---------------------------------------------------------------------------
 # Config
@@ -40,10 +39,20 @@ DB_PATH    = "data/scraping.db"
 OUTPUT_DIR = Path("output/step_1/")
 TOP_N      = 20      # terms per direction in keyness bar charts
 TOP_PAIR_N = 12      # terms per direction in within-pair charts
-MIN_COFREQ = 15      # minimum co-occurrence frequency for network edges
+MIN_COFREQ = 10      # minimum co-occurrence frequency (= DB minimum)
 NETWORK_N  = 18      # max collocates shown per side in network
 
-# Artifact terms — scraping noise identified during Step 1 interpretation
+# Focus terms for fig2 co-occurrence profiles.
+# Selected because they (a) exist as focus_term in cooccurrence_results for
+# both audiences and (b) produce theoretically contrasting collocate profiles:
+#   human      - H1c: human-in-the-loop / oversight framing vs worker-centric use
+#   annotation - H1c: core data-labour task; rich client side, sparse worker side
+#   autonomous - H1b: automation myth vocabulary, almost absent on worker side
+#   earn       - H1a: labour visibility; appears primarily in worker-facing register
+COOC_FOCUS_TERMS = ["human", "annotation", "autonomous", "earn"]
+COOC_TOP_N       = 8    # collocates shown per focus term per audience
+
+# Artifact terms - scraping noise identified during Step 1 interpretation
 ARTIFACT_TERMS = {
     "cookie", "set_cookie", "cooky",
     "/hr", "/hr_remote", "remote_apply", "feb", "opportunity_feb",
@@ -57,6 +66,10 @@ ARTIFACT_TERMS = {
     "slash", "500", "pickup", "loophole", "conceptually", "housing",
     "firefighting", "sidestep", "wary", "downward", "jira", "voluman",
     "squeeze", "retrofit", "yt", "ml",
+    # Noise visible in co-occurrence profiles (scraping artefacts / proper nouns)
+    "deciphering", "trafficking", "recap", "ueberwinden", "bildbearbeitung",
+    "sicherstellung", "kunst", "human-le", "pto", "generous",
+    "dhanesh", "ramachandram", "outlet", "daniela", "braga", "forbe",
 }
 
 # ---------------------------------------------------------------------------
@@ -239,74 +252,83 @@ def fig_keyness_bar(conn, style):
 
 
 # ---------------------------------------------------------------------------
-# Figure 2: Co-occurrence network for 'human'
+# Figure 2: Co-occurrence PMI profiles for top key terms
 # ---------------------------------------------------------------------------
+#
+# Replaces the single-term network: shows the top PMI collocates for each of
+# the most theoretically important key terms, side-by-side for B2B vs B2W.
+# This directly serves the Step 1 function described in Nelson (2020): the
+# analyst can see at a glance whether a term's distinctiveness arises from
+# theoretically relevant collocations (e.g. 'human' + 'oversight') or
+# theoretically neutral ones (e.g. 'human' + 'resources'), and use that to
+# direct Step 2 close reading.
+#
+# Layout: one row per focus term, two sub-bars per row (B2B left, B2W right).
+# Each sub-bar is a ranked horizontal bar of PMI-scored collocates.
+
 
 def fig_cooccurrence_network(conn, style):
-    log.info(f"Figure 2 — Co-occurrence network ({style})")
-
-    client_cooc = fetch_cooccurrence(conn, "cross_platform", "client", "human")
-    worker_cooc = fetch_cooccurrence(conn, "cross_platform", "worker", "human")
+    log.info(f"Figure 2 — Co-occurrence PMI profiles ({style})")
 
     bg  = C_BG_PUB if style == "pub" else C_BG_EXP
-    fig, axes = plt.subplots(1, 2, figsize=(16, 8), facecolor=bg)
+    n_terms = len(COOC_FOCUS_TERMS)
 
-    for ax, cooc, colour, title in [
-        (axes[0], client_cooc, C_CLIENT, '"human" in Client texts (B2B)'),
-        (axes[1], worker_cooc, C_WORKER, '"human" in Worker texts (B2W)'),
-    ]:
-        ax.set_facecolor(bg)
-        ax.set_title(title, **FONT_TITLE, pad=12)
-        ax.axis("off")
+    fig, axes = plt.subplots(n_terms, 2,
+                             figsize=(16, n_terms * 3.2),
+                             facecolor=bg)
+    fig.subplots_adjust(hspace=0.55, wspace=0.55)
 
-        if not cooc:
-            ax.text(0.5, 0.5, "No collocates above threshold",
-                    ha="center", va="center",
-                    transform=ax.transAxes, **FONT_LABEL)
-            continue
+    for row_idx, focus in enumerate(COOC_FOCUS_TERMS):
+        for col_idx, (audience, colour, reg_label) in enumerate([
+            ("client", C_CLIENT, "B2B"),
+            ("worker", C_WORKER, "B2W"),
+        ]):
+            ax = axes[row_idx, col_idx]
+            ax.set_facecolor(bg)
 
-        G = nx.Graph()
-        G.add_node("human")
-        for row in cooc:
-            G.add_node(row["collocate"])
-            G.add_edge("human", row["collocate"],
-                       weight=row["pmi"], freq=row["cofreq"])
+            cooc = fetch_cooccurrence(conn, "cross_platform", audience,
+                                      focus, min_freq=MIN_COFREQ)
+            cooc = cooc[:COOC_TOP_N]
 
-        pos = nx.spring_layout(G, seed=42, k=2.5)
+            title = f'"{focus}"  —  {reg_label}'
+            ax.set_title(title, fontsize=10, fontweight="bold",
+                         color=colour, pad=8)
 
-        edge_widths = [G[u][v]["weight"] * 0.35 for u, v in G.edges()]
-        nx.draw_networkx_edges(G, pos, ax=ax, width=edge_widths,
-                               edge_color=colour + "88", alpha=0.8)
+            if not cooc:
+                ax.text(0.5, 0.5, "No collocates above threshold",
+                        ha="center", va="center",
+                        transform=ax.transAxes, **FONT_LABEL)
+                ax.axis("off")
+                continue
 
-        node_sizes = [2000 if n == "human" else
-                      300 + G["human"][n]["freq"] * 0.25
-                      if G.has_edge("human", n) else 300
-                      for n in G.nodes()]
-        node_colors = [colour if n == "human" else colour + "44"
-                       for n in G.nodes()]
-        nx.draw_networkx_nodes(G, pos, ax=ax, node_size=node_sizes,
-                               node_color=node_colors,
-                               edgecolors=colour, linewidths=1.0)
+            collocates = [r["collocate"] for r in reversed(cooc)]
+            pmi_vals   = [r["pmi"]       for r in reversed(cooc)]
+            y_pos      = np.arange(len(collocates))
 
-        for node, (x, y) in pos.items():
-            ax.text(x, y, node,
-                    fontsize=11 if node == "human" else 8,
-                    fontweight="bold" if node == "human" else "normal",
-                    ha="center", va="center",
-                    color="white" if node == "human" else C_TEXT,
-                    zorder=5)
+            bars = ax.barh(y_pos, pmi_vals, color=colour, alpha=0.80,
+                           edgecolor="white", linewidth=0.4, height=0.65)
 
-        if style == "exp":
-            for u, v, d in G.edges(data=True):
-                mx, my = (pos[u] + pos[v]) / 2
-                ax.text(mx, my, f"{d['weight']:.1f}",
-                        fontsize=6, color=C_SUBTEXT, ha="center", zorder=6)
+            ax.set_yticks(y_pos)
+            ax.set_yticklabels(collocates, fontsize=8.5, color=C_TEXT)
+            ax.set_xlabel("PMI score", **FONT_LABEL)
+            ax.xaxis.grid(True, color=C_GRID, linewidth=0.5, linestyle="--")
+            apply_base_style(ax, bg)
 
-    fig.suptitle("Co-occurrence Network: 'human' Collocates by Audience Register",
-                 **FONT_TITLE, y=1.01)
-    fig.text(0.5, -0.01,
-             f"Edge weight = PMI score  •  Node size ∝ co-occurrence frequency  •  Min freq={MIN_COFREQ}",
-             ha="center", **FONT_ANNOT)
+            if style == "exp":
+                for bar, row in zip(bars, reversed(cooc)):
+                    ax.text(bar.get_width() + max(pmi_vals) * 0.02,
+                            bar.get_y() + bar.get_height() / 2,
+                            f"f={row['cofreq']}",
+                            va="center", fontsize=6.5, color=C_SUBTEXT)
+
+    fig.suptitle(
+        "Co-occurrence Profiles: Top PMI Collocates for Key Terms by Audience Register",
+        **FONT_TITLE, y=1.01)
+    fig.text(
+        0.5, -0.01,
+        "PMI = Pointwise Mutual Information  •  Reveals discursive neighbourhood of each key term"
+        f"  •  Min co-freq={MIN_COFREQ}  •  Directed to Step 2 close reading",
+        ha="center", **FONT_ANNOT)
     save(fig, "fig2_cooccurrence_network", style)
 
 
@@ -562,6 +584,136 @@ def fig_platform_heatmap(conn, style):
     save(fig, "fig5_platform_heatmap", style)
 
 
+
+# ---------------------------------------------------------------------------
+# Figure 6: Co-occurrence PMI profiles — theory-driven terms
+# ---------------------------------------------------------------------------
+#
+# Complements fig2 (which shows the top LL-ranked key terms). Fig6 shows
+# terms selected for theoretical reasons rather than statistical keyness:
+# terms central to H1a-c that may appear on both sides of the corpus and
+# therefore score low on LL, but whose collocate profiles reveal how the
+# SAME word is used in radically different discursive contexts depending on
+# audience. This is precisely the gap between theoretical expectation and
+# empirical reality that Step 1 is designed to surface.
+#
+# Layout mirrors fig2: one row per focus term, B2B left / B2W right.
+
+# Grouped by hypothesis for readability — edit freely if re-running with
+# different terms. Terms absent from cooccurrence_results are silently skipped.
+FIG6_GROUPS = {
+    "H1a — Labour visibility":         ["worker", "labour", "task", "earn", "pay"],
+    "H1b — Automation myth":           ["autonomous", "machine", "automation", "intelligent"],
+    "H1c — Strategic hypervisibility": ["human", "quality", "oversight", "annotation", "label"],
+}
+FIG6_TOP_N = 8   # collocates per panel
+
+
+def fig_theory_cooccurrence(conn, style):
+    log.info(f"Figure 6 — Theory-driven co-occurrence profiles ({style})")
+
+    bg = C_BG_PUB if style == "pub" else C_BG_EXP
+
+    # Flatten ordered term list; skip any not in DB
+    ordered_terms = [t for terms in FIG6_GROUPS.values() for t in terms]
+    available = {
+        r[0] for r in conn.execute(
+            "SELECT DISTINCT focus_term FROM cooccurrence_results "
+            "WHERE comparison = 'cross_platform'"
+        ).fetchall()
+    }
+    focus_terms = [t for t in ordered_terms if t in available]
+
+    if not focus_terms:
+        log.warning("  No theory-driven focus terms found in DB — "
+                    "re-run 02_step1_frequency.py first.")
+        return
+
+    skipped = [t for t in ordered_terms if t not in available]
+    if skipped:
+        log.warning(f"  Terms not yet in DB (re-run 02): {skipped}")
+
+    n_terms = len(focus_terms)
+    fig, axes = plt.subplots(n_terms, 2,
+                             figsize=(16, n_terms * 3.2),
+                             facecolor=bg)
+    if n_terms == 1:
+        axes = [axes]   # ensure iterable
+    fig.subplots_adjust(hspace=0.55, wspace=0.55)
+
+    # Build group label positions for left margin annotations
+    group_row_map = {}
+    for group_label, terms in FIG6_GROUPS.items():
+        rows = [i for i, t in enumerate(focus_terms) if t in terms]
+        if rows:
+            group_row_map[group_label] = (rows[0], rows[-1])
+
+    for row_idx, focus in enumerate(focus_terms):
+        for col_idx, (audience, colour, reg_label) in enumerate([
+            ("client", C_CLIENT, "B2B"),
+            ("worker", C_WORKER, "B2W"),
+        ]):
+            ax = axes[row_idx][col_idx] if n_terms > 1 else axes[col_idx]
+            ax.set_facecolor(bg)
+
+            cooc = fetch_cooccurrence(conn, "cross_platform", audience,
+                                      focus, min_freq=MIN_COFREQ)
+            cooc = cooc[:FIG6_TOP_N]
+
+            # Determine hypothesis group for subtitle
+            group_short = next(
+                (k.split("—")[0].strip() for k, v in FIG6_GROUPS.items()
+                 if focus in v), "")
+            ax.set_title(f'"{focus}"  —  {reg_label}  [{group_short}]',
+                         fontsize=10, fontweight="bold", color=colour, pad=8)
+
+            if not cooc:
+                ax.text(0.5, 0.5,
+                        "No collocates above threshold\n(re-run 02_step1_frequency.py)",
+                        ha="center", va="center",
+                        transform=ax.transAxes, **FONT_LABEL)
+                ax.axis("off")
+                continue
+
+            collocates = [r["collocate"] for r in reversed(cooc)]
+            pmi_vals   = [r["pmi"]       for r in reversed(cooc)]
+            y_pos      = np.arange(len(collocates))
+
+            bars = ax.barh(y_pos, pmi_vals, color=colour, alpha=0.80,
+                           edgecolor="white", linewidth=0.4, height=0.65)
+            ax.set_yticks(y_pos)
+            ax.set_yticklabels(collocates, fontsize=8.5, color=C_TEXT)
+            ax.set_xlabel("PMI score", **FONT_LABEL)
+            ax.xaxis.grid(True, color=C_GRID, linewidth=0.5, linestyle="--")
+            apply_base_style(ax, bg)
+
+            if style == "exp":
+                for bar, row in zip(bars, reversed(cooc)):
+                    ax.text(bar.get_width() + max(pmi_vals) * 0.02,
+                            bar.get_y() + bar.get_height() / 2,
+                            f"f={row['cofreq']}",
+                            va="center", fontsize=6.5, color=C_SUBTEXT)
+
+    # Group boundary lines between hypothesis blocks
+    if n_terms > 1:
+        for group_label, (first_row, last_row) in group_row_map.items():
+            if last_row < n_terms - 1:
+                for col_idx in range(2):
+                    ax = axes[last_row][col_idx]
+                    ax.axhline(-0.5, color=C_GRID, linewidth=1.2,
+                               linestyle="--")
+
+    fig.suptitle(
+        "Theory-Driven Co-occurrence Profiles: Terms Central to H1a–H1c",
+        **FONT_TITLE, y=1.01)
+    fig.text(
+        0.5, -0.01,
+        "Terms selected for theoretical relevance, not statistical keyness  •  "
+        "Same term, different discursive neighbourhood by audience register  •  "
+        f"PMI, min co-freq={MIN_COFREQ}",
+        ha="center", **FONT_ANNOT)
+    save(fig, "fig6_theory_cooccurrence", style)
+
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
@@ -590,10 +742,11 @@ def main():
         fig_frequency_comparison(conn, style)
         fig_within_pair(conn, style)
         fig_platform_heatmap(conn, style)
+        fig_theory_cooccurrence(conn, style)
 
     conn.close()
     log.info("=" * 60)
-    log.info(f"All 10 figures saved to {OUTPUT_DIR.resolve()}")
+    log.info(f"All 12 figures saved to {OUTPUT_DIR.resolve()}")
     log.info("=" * 60)
 
 
