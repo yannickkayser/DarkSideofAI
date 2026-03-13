@@ -1,5 +1,7 @@
 """
-Main entry point for the web scraper
+main.py 
+
+main function to use the webscraper, with interactive menu and CLI usage
 """
 
 import sys
@@ -14,10 +16,10 @@ from crawler import LinkCrawler
 
 def scrape_website(domain: str, max_pages: int = None, use_crawler: bool = False):
     """
-    Scrape a single website
+    General function to scrape a single website
 
     Args:
-        domain: Domain name (e.g., 'crowdgen.com')
+        domain: Domain name
         max_pages: Maximum number of pages to scrape (None for unlimited)
         use_crawler: Use BFS link crawler instead of sitemap discovery
     """
@@ -31,7 +33,7 @@ def scrape_website(domain: str, max_pages: int = None, use_crawler: bool = False
     scraper = WebScraper(config, db)
 
     if use_crawler:
-        # Discover URLs via BFS crawl, then inject into scraper
+        # Discover URLs via BFS crawl, then inject into scraper when sitemap is not available
         crawler = LinkCrawler(
             base_url=config["base_url"],
             max_pages=max_pages or 500,
