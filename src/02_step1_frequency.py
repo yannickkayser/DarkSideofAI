@@ -15,7 +15,18 @@ Outputs written to three SQLite tables:
   - cooccurrence_results  : PMI collocate profiles for top 50 terms
   - platform_term_counts  : per-domain term frequencies for pair analysis
 
-Prerequisites: 01_prepare.py must have been run (corpus_view must exist).
+Prerequisites:
+  - 01_prepare.py must have been run (corpus_view must exist)
+  - 01_prepare_additions.py should have been run to populate
+    excluded_pages and excluded_terms; if those tables are absent the
+    script degrades gracefully (logs a warning and proceeds unfiltered).
+
+Exclusion filtering (applied at corpus-load time, not display time):
+  - Pages listed in excluded_pages are skipped entirely
+  - Terms listed in excluded_terms are removed from every page's
+    unigrams and bigrams before any frequency or PMI counting
+  - THEORY_FOCUS_TERMS are never excluded even if they appear in
+    excluded_terms (belt-and-suspenders guard)
 
 Usage:
     python3 src/02_step1_frequency.py
@@ -122,12 +133,70 @@ def init_output_tables(conn: sqlite3.Connection):
 
 
 # ---------------------------------------------------------------------------
+# Exclusion loading (mirrors pattern in 02b / 02c)
+# ---------------------------------------------------------------------------
+
+def load_exclusions(conn: sqlite3.Connection) -> tuple[set[int], set[str]]:
+    """
+    Load excluded page IDs and excluded terms from the DB tables created
+    by 01_prepare_additions.py.
+
+    Returns:
+        excluded_page_ids : set of page_id integers to skip
+        excluded_terms    : set of term strings to remove from token lists
+
+    Gracefully returns empty sets if the tables do not exist yet, so the
+    script can still run (without cleaning) even if 01_prepare_additions.py
+    has not been run.  A warning is logged in that case.
+    """
+    # Check whether the exclusion tables exist
+    tables = {
+        r[0] for r in conn.execute(
+            "SELECT name FROM sqlite_master WHERE type='table'"
+        ).fetchall()
+    }
+
+    excluded_page_ids: set[int] = set()
+    excluded_terms: set[str]    = set()
+
+    if "excluded_pages" not in tables or "excluded_terms" not in tables:
+        log.warning(
+            "excluded_pages / excluded_terms tables not found. "
+            "Run 01_prepare_additions.py first for clean-corpus analysis. "
+            "Proceeding without exclusion filtering."
+        )
+        return excluded_page_ids, excluded_terms
+
+    excluded_page_ids = {
+        r[0] for r in conn.execute("SELECT page_id FROM excluded_pages").fetchall()
+    }
+    # Never exclude theory-focus terms even if they ended up in excluded_terms
+    raw_excluded_terms = {
+        r[0] for r in conn.execute("SELECT term FROM excluded_terms").fetchall()
+    }
+    excluded_terms = raw_excluded_terms - THEORY_FOCUS_TERMS
+
+    log.info(
+        f"Loaded exclusions: {len(excluded_page_ids)} pages, "
+        f"{len(excluded_terms)} terms "
+        f"({len(raw_excluded_terms - excluded_terms)} theory-focus terms protected)."
+    )
+    return excluded_page_ids, excluded_terms
+
+
+# ---------------------------------------------------------------------------
 # Step 1: Load corpus from corpus_view
 # ---------------------------------------------------------------------------
 
-def load_corpus(conn: sqlite3.Connection) -> dict:
+def load_corpus(conn: sqlite3.Connection,
+                excluded_page_ids: set[int],
+                excluded_terms: set[str]) -> dict:
     """
-    Load token lists from corpus_view.
+    Load token lists from corpus_view, applying exclusion filters.
+
+    Pages listed in excluded_page_ids are skipped entirely.
+    Terms listed in excluded_terms are removed from each page's
+    unigram and bigram lists before any downstream counting.
 
     Returns a dict with:
       'cross': {'client': [[tokens], ...], 'worker': [[tokens], ...]}
@@ -144,7 +213,11 @@ def load_corpus(conn: sqlite3.Connection) -> dict:
           AND token_count >= 10
     """).fetchall()
 
-    log.info(f"  Loaded {len(rows)} pages.")
+    log.info(f"  Raw rows fetched: {len(rows)}")
+
+    # Apply page-level exclusions
+    rows = [r for r in rows if r["page_id"] not in excluded_page_ids]
+    log.info(f"  After page exclusions: {len(rows)} pages.")
 
     cross   = defaultdict(list)   # audience → list of token lists
     pairs   = defaultdict(lambda: defaultdict(list))  # company_id → audience → pages
@@ -156,10 +229,15 @@ def load_corpus(conn: sqlite3.Connection) -> dict:
         company_id = row["company_id"]
         domain     = row["domain"]
 
-        # Parse token lists — combine unigrams and bigrams into one list per page
+        # Parse token lists
         unigrams = json.loads(row["unigrams"]) if row["unigrams"] else []
         bigrams  = json.loads(row["bigrams"])  if row["bigrams"]  else []
-        tokens   = unigrams + bigrams
+
+        # Apply term-level exclusions: strip artifact / non-English / boilerplate terms
+        unigrams = [t for t in unigrams if t not in excluded_terms]
+        bigrams  = [t for t in bigrams  if t not in excluded_terms]
+
+        tokens = unigrams + bigrams
 
         # Cross-platform: pool all pages by audience
         cross[audience].append(tokens)
@@ -535,8 +613,11 @@ def main():
 
     init_output_tables(conn)
 
-    # --- Load corpus ---
-    corpus = load_corpus(conn)
+    # --- Load exclusion lists (from 01_prepare_additions.py) ---
+    excluded_page_ids, excluded_terms = load_exclusions(conn)
+
+    # --- Load corpus (with exclusions applied at token level) ---
+    corpus = load_corpus(conn, excluded_page_ids, excluded_terms)
 
     all_keyness     = []
     all_cooccurrence = []
@@ -620,6 +701,8 @@ def main():
     # -----------------------------------------------------------------------
     log.info("=" * 60)
     log.info("STEP 1 COMPLETE")
+    log.info(f"  Corpus filtered: {len(excluded_page_ids)} pages excluded, "
+             f"{len(excluded_terms)} terms excluded.")
     log.info("Outputs are in your database. Query examples:")
     log.info("  -- Top client-distinctive terms (cross-platform):")
     log.info("  SELECT term, ll_score, rel_freq_client, rel_freq_worker")

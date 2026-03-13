@@ -211,10 +211,10 @@ def fig_distinctiveness_heatmap(conn, style):
     cbar.set_label("Jensen-Shannon Divergence (normalised)", fontsize=8, color=C_SUBTEXT)
     cbar.ax.tick_params(labelsize=7)
 
-    ax.set_title("Cross-Domain Linguistic Distinctiveness",
+    ax.set_title("Cross-Domain Linguistic Distinctiveness (High-Variance Terms)",
                  **FONT_TITLE, pad=12)
     fig.text(0.5, -0.02,
-             "JSD ∈ [0, 1]  •  0 = identical vocabulary distributions  •  "
+             "JSD computed on high-variance terms only (above-median cross-domain variance)  •  "
              "Blue labels = B2B  •  Red labels = B2W",
              ha="center", **FONT_ANNOT)
     save(fig, "fig7_distinctiveness_heatmap", style)

@@ -23,12 +23,21 @@ Complements 02_step1_frequency.py with three additional analyses:
      interesting for discourse analysis precisely because the same term
      gets different collocate frames on each side.
 
+Revision notes (v2):
+  - Filters excluded pages and excluded terms from 01_prepare_additions.py
+  - JSD computed on HIGH-VARIANCE terms only (terms whose relative
+    frequency variance across domains exceeds the median).  This strips
+    out the shared-vocabulary baseline that compressed the JSD range
+    in v1, letting genuinely distinctive terms drive the distance metric.
+
 Outputs written to three SQLite tables:
   - distinctiveness_matrix   : domain×domain JSD + cosine
   - aggregate_distance       : single-row B2B-vs-B2W JSD
   - term_exclusivity         : per-term exclusivity index and category
 
-Prerequisites: 01_prepare.py must have been run (corpus_view must exist).
+Prerequisites:
+  - 01_prepare.py  (corpus_view must exist)
+  - 01_prepare_additions.py  (excluded_pages, excluded_terms — optional but recommended)
 
 Usage:
     python3 src/02b_step1_distinctiveness.py
@@ -54,6 +63,11 @@ MIN_TERM_FREQ = 5          # ignore terms below this total corpus frequency
 # that audience where the term occurs at least once.
 EXCLUSIVITY_THRESHOLD = 0.70   # high end
 SHARED_BAND           = 0.25   # terms within ±0.25 of centre are "shared"
+
+# High-variance vocabulary: only terms above median cross-domain variance
+# are used for JSD.  This prevents the large shared-vocabulary baseline
+# from compressing all JSD values into a narrow band.
+HIGH_VARIANCE_PERCENTILE = 50  # keep terms above this percentile of variance
 
 logging.basicConfig(
     level=logging.INFO,
@@ -119,6 +133,28 @@ def init_output_tables(conn: sqlite3.Connection):
 # Corpus loading (reuses corpus_view from 01_prepare.py)
 # ---------------------------------------------------------------------------
 
+def load_exclusions(conn: sqlite3.Connection) -> tuple:
+    """Load excluded page IDs and terms from 01_prepare_additions tables."""
+    excluded_pages = set()
+    excluded_terms = set()
+
+    if conn.execute("SELECT name FROM sqlite_master WHERE type='table' "
+                     "AND name='excluded_pages'").fetchone():
+        excluded_pages = {
+            r[0] for r in conn.execute("SELECT page_id FROM excluded_pages").fetchall()
+        }
+        log.info(f"  Loaded {len(excluded_pages)} excluded pages.")
+
+    if conn.execute("SELECT name FROM sqlite_master WHERE type='table' "
+                     "AND name='excluded_terms'").fetchone():
+        excluded_terms = {
+            r[0] for r in conn.execute("SELECT term FROM excluded_terms").fetchall()
+        }
+        log.info(f"  Loaded {len(excluded_terms)} excluded terms.")
+
+    return excluded_pages, excluded_terms
+
+
 def load_corpus(conn: sqlite3.Connection) -> dict:
     """
     Returns:
@@ -127,6 +163,8 @@ def load_corpus(conn: sqlite3.Connection) -> dict:
     """
     log.info("Loading corpus from corpus_view...")
 
+    excluded_pages, excluded_terms = load_exclusions(conn)
+
     rows = conn.execute("""
         SELECT page_id, audience, domain, unigrams, bigrams, token_count
         FROM corpus_view
@@ -134,7 +172,7 @@ def load_corpus(conn: sqlite3.Connection) -> dict:
           AND token_count >= 10
     """).fetchall()
 
-    log.info(f"  Loaded {len(rows)} pages.")
+    log.info(f"  Loaded {len(rows)} pages (before exclusions).")
 
     # Per-domain accumulators
     platform_freq   = defaultdict(Counter)
@@ -145,12 +183,23 @@ def load_corpus(conn: sqlite3.Connection) -> dict:
     cross_freq   = defaultdict(Counter)
     cross_tokens = defaultdict(int)
 
+    skipped = 0
     for row in rows:
+        if row["page_id"] in excluded_pages:
+            skipped += 1
+            continue
+
         audience = row["audience"]
         domain   = row["domain"]
 
         unigrams = json.loads(row["unigrams"]) if row["unigrams"] else []
         bigrams  = json.loads(row["bigrams"])  if row["bigrams"]  else []
+
+        # Filter excluded terms
+        if excluded_terms:
+            unigrams = [t for t in unigrams if t not in excluded_terms]
+            bigrams  = [t for t in bigrams  if t not in excluded_terms]
+
         tokens   = unigrams + bigrams
         n_uni    = len(unigrams)
 
@@ -160,6 +209,9 @@ def load_corpus(conn: sqlite3.Connection) -> dict:
 
         cross_freq[audience].update(tokens)
         cross_tokens[audience] += n_uni
+
+    if skipped:
+        log.info(f"  Skipped {skipped} excluded pages.")
 
     platform = {
         d: {
@@ -337,14 +389,36 @@ def main():
     log.info("-" * 60)
 
     domains = sorted(platform.keys())
+    n_domains = len(domains)
+
     # Build shared vocabulary (terms occurring in at least 2 domains)
     term_domain_count = Counter()
     for d in domains:
         for t in platform[d]["freq"]:
             term_domain_count[t] += 1
-    vocab = {t for t, c in term_domain_count.items() if c >= 2 and
-             sum(platform[d]["freq"].get(t, 0) for d in domains) >= MIN_TERM_FREQ}
-    log.info(f"  Shared vocabulary size: {len(vocab):,} terms")
+    base_vocab = {t for t, c in term_domain_count.items() if c >= 2 and
+                  sum(platform[d]["freq"].get(t, 0) for d in domains) >= MIN_TERM_FREQ}
+    log.info(f"  Base vocabulary size: {len(base_vocab):,} terms")
+
+    # HIGH-VARIANCE FILTERING: compute relative-frequency variance per term
+    # across domains, keep only terms above the median.  This strips out
+    # the shared baseline that compressed JSD in v1.
+    import numpy as _np
+    term_variances = {}
+    for t in base_vocab:
+        rel_freqs = []
+        for d in domains:
+            n_tok = platform[d]["n_tokens"]
+            freq  = platform[d]["freq"].get(t, 0)
+            rel_freqs.append(freq / n_tok if n_tok > 0 else 0)
+        term_variances[t] = _np.var(rel_freqs)
+
+    variance_threshold = _np.percentile(
+        list(term_variances.values()), HIGH_VARIANCE_PERCENTILE
+    )
+    vocab = {t for t, v in term_variances.items() if v >= variance_threshold}
+    log.info(f"  High-variance vocabulary (p{HIGH_VARIANCE_PERCENTILE}): "
+             f"{len(vocab):,} terms  (variance threshold: {variance_threshold:.2e})")
 
     matrix_rows = []
     for i, da in enumerate(domains):

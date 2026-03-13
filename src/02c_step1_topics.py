@@ -14,11 +14,12 @@ Pipeline:
      client-leaning, worker-leaning, or shared.
   3. PCA on the document-topic matrix — reduces K dimensions to 2–3
      principal components for visualisation and clustering.
-  4. Sampling strategy for Step 2: selects pages from SHARED topics
-     where the collocate profiles (from 02_step1_frequency.py) diverge
-     most between B2B and B2W.  These are the texts where the same
-     theme gets different discursive framing — the analytically richest
-     site for close reading.
+  4. Hypothesis-stratified sampling for Step 2: for each hypothesis
+     (H1a visibility, H1b automation, H1c hypervisibility), identifies
+     the 2-3 most relevant topics by term overlap, then samples top
+     pages per audience scored by topic weight × collocate divergence ×
+     hypothesis term density.  This produces ~50-60 pages with explicit
+     theoretical justification for every selection.
 
 Outputs written to four SQLite tables:
   - topic_terms            : top terms per topic + coherence
@@ -55,12 +56,47 @@ MAX_ITER       = 50         # LDA iterations (increase for final run)
 RANDOM_STATE   = 42
 MIN_DF         = 5          # minimum document frequency for vectoriser
 MAX_DF_FRAC    = 0.85       # maximum document fraction for vectoriser
-SAMPLE_PER_TOPIC = 5        # pages to sample per shared topic for Step 2
 MIN_TOKEN_COUNT  = 30       # minimum tokens for a page to enter the model
 
 # Shared-topic threshold: a topic is "shared" if neither audience accounts
 # for more than this fraction of the topic's total weight.
 SHARED_THRESHOLD = 0.65
+
+# ---------------------------------------------------------------------------
+# Hypothesis-stratified sampling config
+# ---------------------------------------------------------------------------
+# For each hypothesis, the sampling strategy identifies the 2-3 most
+# relevant topics (by term overlap with hypothesis vocabulary), then
+# samples the top pages from each audience within those topics.
+# This gives ~15-20 pages per hypothesis with clear theoretical
+# justification for every selection.
+
+HYPOTHESIS_TERMS = {
+    "H1a_visibility": {
+        "terms": {"worker", "labour", "task", "job", "pay", "earn", "payment",
+                  "work", "annotator", "labeller", "moderator", "freelance",
+                  "gig", "contractor", "wage", "income", "employment"},
+        "description": "Labour visibility — explicit references to human labour",
+        "n_topics": 3,       # top N topics per hypothesis
+        "n_pages_per_topic_per_audience": 5,
+    },
+    "H1b_automation": {
+        "terms": {"autonomous", "machine", "automate", "intelligent", "automation",
+                  "model", "algorithm", "pipeline", "scalable", "engine",
+                  "deploy", "inference", "prediction", "neural", "llm"},
+        "description": "Automation myth — framing as autonomous/intelligent systems",
+        "n_topics": 3,
+        "n_pages_per_topic_per_audience": 5,
+    },
+    "H1c_hypervisibility": {
+        "terms": {"human", "quality", "oversight", "annotation", "label",
+                  "datum", "accuracy", "review", "expert", "curate",
+                  "human-in-the-loop", "verification", "audit", "check"},
+        "description": "Strategic hypervisibility — human labour as quality feature",
+        "n_topics": 3,
+        "n_pages_per_topic_per_audience": 5,
+    },
+}
 
 logging.basicConfig(
     level=logging.INFO,
@@ -168,13 +204,38 @@ def init_output_tables(conn: sqlite3.Connection):
 # Step 1: Load corpus — return page metadata + token strings for sklearn
 # ---------------------------------------------------------------------------
 
+def load_exclusions(conn: sqlite3.Connection) -> tuple:
+    """Load excluded page IDs and terms from 01_prepare_additions tables."""
+    excluded_pages = set()
+    excluded_terms = set()
+
+    if conn.execute("SELECT name FROM sqlite_master WHERE type='table' "
+                     "AND name='excluded_pages'").fetchone():
+        excluded_pages = {
+            r[0] for r in conn.execute("SELECT page_id FROM excluded_pages").fetchall()
+        }
+        log.info(f"  Loaded {len(excluded_pages)} excluded pages.")
+
+    if conn.execute("SELECT name FROM sqlite_master WHERE type='table' "
+                     "AND name='excluded_terms'").fetchone():
+        excluded_terms = {
+            r[0] for r in conn.execute("SELECT term FROM excluded_terms").fetchall()
+        }
+        log.info(f"  Loaded {len(excluded_terms)} excluded terms.")
+
+    return excluded_pages, excluded_terms
+
+
 def load_corpus(conn: sqlite3.Connection) -> tuple:
     """
     Returns:
       docs     : list of str — space-joined token strings per page
       metadata : list of dict — {page_id, domain, audience, url, token_count}
+      excluded_terms : set — terms to exclude (passed to vectoriser stop_words)
     """
     log.info("Loading corpus from corpus_view...")
+
+    excluded_pages, excluded_terms = load_exclusions(conn)
 
     rows = conn.execute(f"""
         SELECT page_id, url, audience, domain, unigrams, token_count
@@ -185,11 +246,22 @@ def load_corpus(conn: sqlite3.Connection) -> tuple:
 
     docs     = []
     metadata = []
+    skipped  = 0
 
     for row in rows:
+        if row["page_id"] in excluded_pages:
+            skipped += 1
+            continue
+
         unigrams = json.loads(row["unigrams"]) if row["unigrams"] else []
         if not unigrams:
             continue
+
+        # Filter excluded terms before passing to vectoriser
+        if excluded_terms:
+            unigrams = [t for t in unigrams if t not in excluded_terms]
+            if not unigrams:
+                continue
 
         # sklearn CountVectorizer expects space-separated strings
         docs.append(" ".join(unigrams))
@@ -201,22 +273,29 @@ def load_corpus(conn: sqlite3.Connection) -> tuple:
             "token_count": row["token_count"],
         })
 
-    log.info(f"  {len(docs)} pages loaded (min {MIN_TOKEN_COUNT} tokens).")
-    return docs, metadata
+    log.info(f"  {len(docs)} pages loaded (min {MIN_TOKEN_COUNT} tokens, "
+             f"{skipped} excluded pages skipped, "
+             f"{len(excluded_terms)} terms filtered).")
+    return docs, metadata, excluded_terms
 
 
 # ---------------------------------------------------------------------------
 # Step 2: Fit LDA
 # ---------------------------------------------------------------------------
 
-def fit_lda(docs, np, CountVectorizer, LatentDirichletAllocation):
+def fit_lda(docs, np, CountVectorizer, LatentDirichletAllocation,
+            excluded_terms=None):
     """
     Vectorise → LDA → return model, vectoriser, document-topic matrix.
+    excluded_terms are passed as stop_words to prevent boilerplate/noise
+    from forming their own topics.
     """
     log.info("Vectorising corpus...")
+    stop_words = list(excluded_terms) if excluded_terms else None
     vectoriser = CountVectorizer(
         min_df=MIN_DF,
         max_df=MAX_DF_FRAC,
+        stop_words=stop_words,
         # tokens are already clean unigrams — no extra preprocessing
         token_pattern=r"(?u)\S+",
     )
@@ -425,44 +504,81 @@ def compute_collocate_divergence(conn: sqlite3.Connection) -> dict:
 # Step 7: Build Step 2 sampling table
 # ---------------------------------------------------------------------------
 
+def compute_topic_hypothesis_relevance(
+    topic_terms_list: list[dict],
+) -> dict:
+    """
+    For each hypothesis, compute a relevance score for each topic based on
+    the overlap between the topic's top terms and the hypothesis vocabulary.
+
+    Returns: {hypothesis_key: [(topic_id, overlap_score, matching_terms), ...]}
+    sorted by overlap descending.
+    """
+    # Build topic → top terms mapping
+    topic_top = defaultdict(set)
+    for r in topic_terms_list:
+        if r["rank"] <= 15:   # consider top 15 terms per topic
+            topic_top[r["topic_id"]].add(r["term"])
+
+    result = {}
+    for hyp_key, hyp_config in HYPOTHESIS_TERMS.items():
+        hyp_terms = hyp_config["terms"]
+        scored = []
+        for topic_id, top_terms in topic_top.items():
+            overlap = top_terms & hyp_terms
+            if overlap:
+                # Score: number of matching terms weighted by their rank
+                score = len(overlap)
+                scored.append((topic_id, score, overlap))
+        scored.sort(key=lambda x: x[1], reverse=True)
+        result[hyp_key] = scored
+
+    return result
+
+
 def build_step2_sample(
     doc_topics: list[dict],
     topic_profiles: list[dict],
+    topic_terms_list: list[dict],
     divergences: dict,
     metadata: list[dict],
     conn: sqlite3.Connection,
 ) -> list[dict]:
     """
-    Sampling strategy: from each SHARED topic, pick pages where:
-      (a) the topic weight is highest (the page is a clear exemplar), AND
-      (b) the page contains focus terms whose collocate profiles diverge
-          most between B2B and B2W.
+    HYPOTHESIS-STRATIFIED sampling strategy.
 
-    This selects texts where the same theme gets the most different
-    discursive treatment — the analytically richest material for Step 2.
+    For each hypothesis (H1a, H1b, H1c):
+      1. Identify the 2-3 most relevant topics (by term overlap with
+         hypothesis vocabulary)
+      2. From those topics, sample top pages per audience, scored by
+         topic weight × collocate divergence
+
+    This ensures coverage of each hypothesis domain with clear
+    theoretical justification for every selection.
     """
-    log.info("Building Step 2 sampling table...")
+    log.info("Building hypothesis-stratified Step 2 sampling table...")
 
-    shared_topic_ids = {
-        p["topic_id"] for p in topic_profiles if p["category"] == "shared"
-    }
-    log.info(f"  {len(shared_topic_ids)} shared topics identified.")
+    # --- Compute topic-hypothesis relevance ---
+    relevance = compute_topic_hypothesis_relevance(topic_terms_list)
 
-    if not shared_topic_ids:
-        log.warning("  No shared topics found — relaxing threshold.")
-        # Fall back: use all topics
-        shared_topic_ids = {p["topic_id"] for p in topic_profiles}
+    for hyp_key, scored_topics in relevance.items():
+        hyp_config = HYPOTHESIS_TERMS[hyp_key]
+        log.info(f"  {hyp_key} ({hyp_config['description']}):")
+        for topic_id, score, terms in scored_topics[:5]:
+            profile = next((p for p in topic_profiles if p["topic_id"] == topic_id), {})
+            cat = profile.get("category", "?")
+            log.info(f"    Topic {topic_id} [{cat}]  overlap={score}  "
+                     f"terms: {', '.join(sorted(terms))}")
 
-    # Build metadata lookup
+    # --- Build metadata lookup ---
     meta_by_page = {m["page_id"]: m for m in metadata}
 
-    # Group document-topic entries by topic
+    # --- Group document-topic entries by topic ---
     by_topic = defaultdict(list)
     for dt in doc_topics:
-        if dt["dominant_topic"] in shared_topic_ids:
-            by_topic[dt["dominant_topic"]].append(dt)
+        by_topic[dt["dominant_topic"]].append(dt)
 
-    # For divergence scoring, load page unigrams to check which focus terms appear
+    # --- Page-level divergence scoring ---
     page_terms_cache = {}
 
     def get_page_terms(page_id):
@@ -476,72 +592,96 @@ def build_step2_sample(
                 page_terms_cache[page_id] = set()
         return page_terms_cache[page_id]
 
-    results = []
-    global_rank = 0
+    def score_page(dt, hyp_terms):
+        """Score a page by topic weight, collocate divergence, and hypothesis term density."""
+        page_id = dt["page_id"]
+        terms = get_page_terms(page_id)
 
-    for topic_id in sorted(shared_topic_ids):
-        candidates = by_topic.get(topic_id, [])
-        if not candidates:
+        # Collocate divergence: average divergence of focus terms on this page
+        if divergences:
+            matching_divs = [divergences[t] for t in terms if t in divergences]
+            avg_div = (sum(matching_divs) / len(matching_divs)) if matching_divs else 0
+        else:
+            avg_div = 0
+
+        # Hypothesis term density: fraction of page terms that are hypothesis-relevant
+        hyp_count = len(terms & hyp_terms)
+        hyp_density = hyp_count / len(terms) if terms else 0
+
+        # Combined: topic_weight × (1 + divergence) × (1 + hyp_density × 10)
+        combined = dt["topic_weight"] * (1 + avg_div) * (1 + hyp_density * 10)
+
+        return {
+            "page_id":              page_id,
+            "url":                  meta_by_page.get(page_id, {}).get("url", ""),
+            "domain":               dt["domain"],
+            "audience":             dt["audience"],
+            "dominant_topic":       dt["dominant_topic"],
+            "topic_weight":         dt["topic_weight"],
+            "collocate_divergence": round(avg_div, 6),
+            "hyp_density":          round(hyp_density, 6),
+            "combined_score":       combined,
+        }
+
+    results = []
+    seen_pages = set()   # avoid duplicate sampling across hypotheses
+
+    for hyp_key, scored_topics in relevance.items():
+        hyp_config = HYPOTHESIS_TERMS[hyp_key]
+        hyp_terms  = hyp_config["terms"]
+        n_topics   = hyp_config["n_topics"]
+        n_per      = hyp_config["n_pages_per_topic_per_audience"]
+
+        # Select top N topics for this hypothesis
+        selected_topics = scored_topics[:n_topics]
+        if not selected_topics:
+            log.warning(f"  No relevant topics for {hyp_key} — skipping.")
             continue
 
-        # Score each candidate: topic_weight + mean divergence of focus terms present
-        scored = []
-        for dt in candidates:
-            page_id = dt["page_id"]
-            meta    = meta_by_page.get(page_id, {})
+        log.info(f"  Sampling for {hyp_key}: topics "
+                 f"{[t[0] for t in selected_topics]}")
 
-            # Divergence score: average divergence of high-divergence terms on this page
-            if divergences:
-                terms = get_page_terms(page_id)
-                matching_divs = [
-                    divergences[t] for t in terms if t in divergences
-                ]
-                avg_div = (sum(matching_divs) / len(matching_divs)) if matching_divs else 0
-            else:
-                avg_div = 0
+        for topic_id, overlap_score, matching_terms in selected_topics:
+            candidates = by_topic.get(topic_id, [])
+            if not candidates:
+                continue
 
-            # Combined score: topic weight × (1 + divergence)
-            # Pages with high topic loading AND high collocate divergence rank first
-            combined = dt["topic_weight"] * (1 + avg_div)
+            scored = [score_page(dt, hyp_terms) for dt in candidates]
+            scored.sort(key=lambda x: x["combined_score"], reverse=True)
 
-            scored.append({
-                "page_id":              page_id,
-                "url":                  meta.get("url", ""),
-                "domain":               dt["domain"],
-                "audience":             dt["audience"],
-                "dominant_topic":       topic_id,
-                "topic_weight":         dt["topic_weight"],
-                "collocate_divergence": round(avg_div, 6),
-                "combined_score":       combined,
-            })
+            for aud in ("client", "worker"):
+                aud_cands = [s for s in scored
+                             if s["audience"] == aud
+                             and s["page_id"] not in seen_pages]
+                for s in aud_cands[:n_per]:
+                    seen_pages.add(s["page_id"])
+                    results.append({
+                        "page_id":              s["page_id"],
+                        "url":                  s["url"],
+                        "domain":               s["domain"],
+                        "audience":             s["audience"],
+                        "dominant_topic":       s["dominant_topic"],
+                        "topic_weight":         s["topic_weight"],
+                        "sampling_reason":      (f"{hyp_key}_topic_{topic_id}_"
+                                                 f"overlap={overlap_score}_"
+                                                 f"terms={','.join(sorted(matching_terms))}"),
+                        "collocate_divergence": s["collocate_divergence"],
+                        "priority_rank":        0,   # set below
+                    })
 
-        # Sort by combined score, take top N per audience per topic
-        scored.sort(key=lambda x: x["combined_score"], reverse=True)
-
-        # Sample from both audiences to enable comparison
-        for aud in ("client", "worker"):
-            aud_candidates = [s for s in scored if s["audience"] == aud]
-            for s in aud_candidates[:SAMPLE_PER_TOPIC]:
-                global_rank += 1
-                results.append({
-                    "page_id":              s["page_id"],
-                    "url":                  s["url"],
-                    "domain":               s["domain"],
-                    "audience":             s["audience"],
-                    "dominant_topic":       s["dominant_topic"],
-                    "topic_weight":         s["topic_weight"],
-                    "sampling_reason":      f"shared_topic_{topic_id}_high_divergence",
-                    "collocate_divergence": s["collocate_divergence"],
-                    "priority_rank":        global_rank,
-                })
-
-    # Re-rank globally by combined analytical interest
+    # Global ranking by combined analytical interest
     results.sort(key=lambda x: (x["topic_weight"] * (1 + x["collocate_divergence"])),
                  reverse=True)
     for i, r in enumerate(results):
         r["priority_rank"] = i + 1
 
-    log.info(f"  {len(results)} pages selected for Step 2.")
+    # Summary
+    hyp_counts = Counter(r["sampling_reason"].split("_topic_")[0] for r in results)
+    aud_counts = Counter(r["audience"] for r in results)
+    log.info(f"  {len(results)} pages selected for Step 2:")
+    log.info(f"    By hypothesis: {dict(hyp_counts)}")
+    log.info(f"    By audience:   {dict(aud_counts)}")
+
     return results
 
 
@@ -621,14 +761,15 @@ def main():
     init_output_tables(conn)
 
     # --- Load ---
-    docs, metadata = load_corpus(conn)
+    docs, metadata, excluded_terms = load_corpus(conn)
 
     # --- LDA ---
     log.info("-" * 60)
     log.info("TOPIC MODELLING (LDA)")
     log.info("-" * 60)
     lda, vectoriser, doc_topic_matrix, vocab = fit_lda(
-        docs, np, CountVectorizer, LatentDirichletAllocation
+        docs, np, CountVectorizer, LatentDirichletAllocation,
+        excluded_terms=excluded_terms
     )
 
     # --- Topic terms ---
@@ -674,7 +815,8 @@ def main():
     log.info("-" * 60)
     log.info("STEP 2 SAMPLING STRATEGY")
     log.info("-" * 60)
-    sample = build_step2_sample(doc_topics, topic_profiles, divergences, metadata, conn)
+    sample = build_step2_sample(doc_topics, topic_profiles, topic_terms,
+                                divergences, metadata, conn)
 
     # Log sample summary
     if sample:
