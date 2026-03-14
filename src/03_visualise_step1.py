@@ -1,24 +1,91 @@
 """
 03_visualise_step1.py
 =====================
-Produces visualisations of Step 1 keyness and co-occurrence results.
+Produces all Step 1 visualisations for keyness and co-occurrence results.
 
-Fixes applied over v1:
-  - fetch_top_client / fetch_top_worker query correctly in opposite directions
-  - Within-pair (fig4) now shows worker-distinctive terms on the left
-  - Heatmap columns reordered by hypothesis group (H1a / H1b / H1c)
-  - Heatmap colour scale capped at 95th percentile so datum doesn't dominate
-  - Extended artifact filter covers residual noise terms from v1
+Pipeline position:
+  Stage 3a — Visualisation (run after 02_step1_frequency.py)
+  Prerequisites: keyness_results, cooccurrence_results, platform_term_counts
+  Output: 12 .png files (6 figures × 2 styles) in output/step_1/
 
-Six figures, each in two styles (pub = clean thesis, exp = annotated):
-  1. fig1_keyness_bar         — top client vs worker distinctive terms
-  2. fig2_cooccurrence_network — PMI collocate profiles for top key terms
-  3. fig3_frequency_comparison — key terms grouped by H1a / H1b / H1c
-  4. fig4_within_pair         — appen and toloka diverging bar
-  5. fig5_platform_heatmap    — term frequency across all platforms
+What this script does:
+  Generates six figures, each exported in two styles:
+    pub  — clean thesis-quality figure (white background, no annotations)
+    exp  — exploratory/annotated figure with frequency labels and values
+           (used during analysis; not included in thesis)
+
+  Figure overview:
+    fig1_keyness_bar
+      Horizontal bar charts showing the top 20 B2B-distinctive and top 20
+      B2W-distinctive unigrams ranked by Log-Likelihood G².  The primary
+      evidence for H1b and H1c (client side) and H1a (worker side).
+
+    fig2_cooccurrence_network
+      PMI collocate profiles for four theory-selected focus terms
+      (human, annotation, autonomous, earn).  Shows how the same term's
+      discursive neighbourhood differs between B2B and B2W registers.
+      These were selected because they produce theoretically contrasting
+      profiles (e.g. "human" + "oversight" in B2B vs "human" + "task"
+      in B2W).
+
+    fig3_frequency_comparison
+      Grouped bar chart of relative frequencies for hypothesis terms,
+      grouped by H1a / H1b / H1c.  Directly visualises the magnitude of
+      register differences for the theory-focus vocabulary.
+
+    fig4_within_pair
+      Diverging bar charts for appen/crowdgen and toloka/mindrift within-
+      pair comparisons.  Controls for company-level style variation —
+      differences are attributable to audience alone.
+
+    fig5_platform_heatmap
+      Heatmap of term frequencies across all platforms, columns ordered
+      by hypothesis group.  Visualises which platforms are most strongly
+      associated with each hypothesis-relevant term.
+
+    fig6_theory_cooccurrence
+      Co-occurrence PMI profiles for the full H1a/H1b/H1c theory
+      vocabulary (14 terms).  Complements fig2 (which showed 4 terms
+      selected by LL rank) by showing all theoretically motivated terms
+      regardless of keyness score.
+
+Dual-style rationale:
+  The 'pub' style produces clean, thesis-ready figures at 150 dpi.
+  The 'exp' style adds value annotations, frequency labels, and a grey
+  background — useful during the analysis phase to read exact values
+  without querying the database.
+
+Artifact filtering:
+  ARTIFACT_TERMS contains scraping noise identified during interpretation:
+  UI boilerplate, proper nouns, German scraping residue.  These are
+  filtered from all figure queries at display time (not from the DB
+  tables themselves, which retain the raw statistical values for
+  reference).  The DB-level filtering in 01_prepare_additions.py is
+  more thorough; ARTIFACT_TERMS here is a secondary display filter.
+
+Input (from data/scraping.db):
+  keyness_results       — term, ll_score, rel_freq_client, rel_freq_worker
+  cooccurrence_results  — focus_term, collocate, pmi, cofreq
+  platform_term_counts  — domain, term, rel_freq
+
+Output:
+  output/step_1/fig1_keyness_bar_pub.png
+  output/step_1/fig1_keyness_bar_exp.png
+  output/step_1/fig2_cooccurrence_network_pub.png
+  output/step_1/fig2_cooccurrence_network_exp.png
+  ... (12 files total)
 
 Usage:
     python3 src/03_visualise_step1.py
+
+Fixes applied over v1:
+  - fetch_top_client / fetch_top_worker query correctly in opposite
+    directions (LL > 0 for client, LL < 0 for worker)
+  - Within-pair (fig4) now shows worker-distinctive terms on the left
+  - Heatmap columns reordered by hypothesis group (H1a / H1b / H1c)
+  - Heatmap colour scale capped at 95th percentile so 'datum' doesn't
+    dominate the colour range
+  - Extended ARTIFACT_TERMS covers residual noise terms from v1
 """
 
 import sqlite3
@@ -52,7 +119,10 @@ NETWORK_N  = 18      # max collocates shown per side in network
 COOC_FOCUS_TERMS = ["human", "annotation", "autonomous", "earn"]
 COOC_TOP_N       = 8    # collocates shown per focus term per audience
 
-# Artifact terms - scraping noise identified during Step 1 interpretation
+# Artifact terms — scraping noise identified during Step 1 interpretation.
+# These are filtered from figure queries at display time.
+# Note: the DB-level exclusion in 01_prepare_additions.py is more thorough;
+# this list handles display-time residual noise not caught before analysis.
 ARTIFACT_TERMS = {
     "cookie", "set_cookie", "cooky",
     "/hr", "/hr_remote", "remote_apply", "feb", "opportunity_feb",
@@ -75,13 +145,13 @@ ARTIFACT_TERMS = {
 # ---------------------------------------------------------------------------
 # Colour palette
 # ---------------------------------------------------------------------------
-C_CLIENT  = "#1B4F8A"
-C_WORKER  = "#C0392B"
-C_BG_PUB  = "#FFFFFF"
-C_BG_EXP  = "#F7F9FC"
-C_GRID    = "#DEE2E6"
-C_TEXT    = "#1A1A2E"
-C_SUBTEXT = "#6C757D"
+C_CLIENT  = "#1B4F8A"   # dark blue — client (B2B) register
+C_WORKER  = "#C0392B"   # dark red  — worker (B2W) register
+C_BG_PUB  = "#FFFFFF"   # white background for pub style
+C_BG_EXP  = "#F7F9FC"   # light grey background for exp style
+C_GRID    = "#DEE2E6"   # grid line colour
+C_TEXT    = "#1A1A2E"   # primary text
+C_SUBTEXT = "#6C757D"   # secondary / annotation text
 
 FONT_TITLE = {"fontsize": 13, "fontweight": "bold",   "color": C_TEXT}
 FONT_LABEL = {"fontsize": 10, "fontweight": "normal", "color": C_SUBTEXT}
@@ -97,16 +167,30 @@ log = logging.getLogger(__name__)
 # ---------------------------------------------------------------------------
 
 def get_conn():
+    """Open a SQLite connection with row_factory for dict-like access."""
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     return conn
 
 
 def _ph():
+    """Build a parameterised NOT IN placeholder string for ARTIFACT_TERMS."""
     return ",".join("?" * len(ARTIFACT_TERMS))
 
 
 def fetch_top_client(conn, comparison, n=TOP_N):
+    """
+    Fetch the top N client-distinctive terms (positive LL score) for a
+    comparison, excluding ARTIFACT_TERMS.
+
+    Args:
+        comparison : 'cross_platform' or a company_id for within-pair.
+        n          : number of terms to return.
+
+    Returns:
+        List of row dicts with keys: term, ll_score, rel_freq_client,
+        rel_freq_worker.
+    """
     rows = conn.execute(f"""
         SELECT term, ll_score, rel_freq_client, rel_freq_worker
         FROM keyness_results
@@ -121,6 +205,17 @@ def fetch_top_client(conn, comparison, n=TOP_N):
 
 
 def fetch_top_worker(conn, comparison, n=TOP_N):
+    """
+    Fetch the top N worker-distinctive terms (negative LL score) for a
+    comparison, excluding ARTIFACT_TERMS.
+
+    Args:
+        comparison : 'cross_platform' or a company_id for within-pair.
+        n          : number of terms to return.
+
+    Returns:
+        List of row dicts sorted by LL score ASC (most negative first).
+    """
     rows = conn.execute(f"""
         SELECT term, ll_score, rel_freq_client, rel_freq_worker
         FROM keyness_results
@@ -135,6 +230,19 @@ def fetch_top_worker(conn, comparison, n=TOP_N):
 
 
 def fetch_cooccurrence(conn, comparison, audience, focus, min_freq=MIN_COFREQ):
+    """
+    Fetch collocates for a focus term in a specific comparison and audience.
+
+    Args:
+        comparison : 'cross_platform' or company_id.
+        audience   : 'client' or 'worker'.
+        focus      : focus term string.
+        min_freq   : minimum co-occurrence count (= minimum from 02 config).
+
+    Returns:
+        List of row dicts with keys: collocate, pmi, cofreq.
+        Sorted by pmi DESC.
+    """
     rows = conn.execute(f"""
         SELECT collocate, pmi, cofreq
         FROM cooccurrence_results
@@ -149,6 +257,18 @@ def fetch_cooccurrence(conn, comparison, audience, focus, min_freq=MIN_COFREQ):
 
 
 def fetch_term_freqs(conn, terms, comparison="cross_platform"):
+    """
+    Fetch relative frequencies for a list of terms.
+
+    Used by fig3 to look up frequencies for the hypothesis-grouped term list.
+
+    Args:
+        terms      : list of term strings to look up.
+        comparison : which comparison to query (default cross_platform).
+
+    Returns:
+        Dict {term: {rel_freq_client, rel_freq_worker}}.
+    """
     placeholders = ",".join("?" * len(terms))
     rows = conn.execute(f"""
         SELECT term, rel_freq_client, rel_freq_worker
@@ -161,6 +281,19 @@ def fetch_term_freqs(conn, terms, comparison="cross_platform"):
 
 
 def fetch_platform_terms(conn, terms):
+    """
+    Fetch per-domain relative frequencies for a list of terms.
+
+    Used by fig5 heatmap to build the platform × term frequency matrix.
+
+    Args:
+        terms: list of term strings to look up.
+
+    Returns:
+        Tuple (result, audiences) where:
+          result    : {domain: {term: rel_freq}}
+          audiences : {domain: audience}
+    """
     placeholders = ",".join("?" * len(terms))
     rows = conn.execute(f"""
         SELECT domain, audience, term, rel_freq
@@ -180,6 +313,13 @@ def fetch_platform_terms(conn, terms):
 # ---------------------------------------------------------------------------
 
 def apply_base_style(ax, bg):
+    """
+    Apply consistent base styling to an Axes object.
+
+    Removes top/right spines, colours remaining spines with C_GRID,
+    and sets the axes background.  Called on every subplot before adding
+    figure-specific elements.
+    """
     ax.set_facecolor(bg)
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
@@ -190,6 +330,17 @@ def apply_base_style(ax, bg):
 
 
 def save(fig, name, style):
+    """
+    Save a figure to OUTPUT_DIR/<name>_<style>.png at 150 dpi.
+
+    Creates OUTPUT_DIR if it does not exist.  Closes the figure after
+    saving to release memory.
+
+    Args:
+        fig   : matplotlib Figure object.
+        name  : base filename (without _style.png suffix).
+        style : 'pub' or 'exp'.
+    """
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     path = OUTPUT_DIR / f"{name}_{style}.png"
     fig.savefig(path, dpi=150, bbox_inches="tight", facecolor=fig.get_facecolor())
@@ -202,6 +353,23 @@ def save(fig, name, style):
 # ---------------------------------------------------------------------------
 
 def fig_keyness_bar(conn, style):
+    """
+    Figure 1 — Cross-platform keyness: top B2B and B2W distinctive terms.
+
+    Two horizontal bar charts side by side:
+      Left:  Top N client-distinctive terms (positive LL, B2B register)
+      Right: Top N worker-distinctive terms (negative LL, B2W register)
+
+    Both panels show absolute |LL| so bars extend in the same direction
+    for visual symmetry.  The side-by-side layout invites direct
+    comparison of what each register foregrounds.
+
+    In exp style: each bar is annotated with the raw relative frequencies
+    (per 1,000 tokens) for both sides, allowing the analyst to see the
+    magnitude of the difference without querying the DB.
+
+    Saves to: fig1_keyness_bar_{style}.png
+    """
     log.info(f"Figure 1 — Keyness bar chart ({style})")
 
     client_top = fetch_top_client(conn, "cross_platform", TOP_N)
@@ -254,20 +422,26 @@ def fig_keyness_bar(conn, style):
 # ---------------------------------------------------------------------------
 # Figure 2: Co-occurrence PMI profiles for top key terms
 # ---------------------------------------------------------------------------
-#
-# Replaces the single-term network: shows the top PMI collocates for each of
-# the most theoretically important key terms, side-by-side for B2B vs B2W.
-# This directly serves the Step 1 function described in Nelson (2020): the
-# analyst can see at a glance whether a term's distinctiveness arises from
-# theoretically relevant collocations (e.g. 'human' + 'oversight') or
-# theoretically neutral ones (e.g. 'human' + 'resources'), and use that to
-# direct Step 2 close reading.
-#
-# Layout: one row per focus term, two sub-bars per row (B2B left, B2W right).
-# Each sub-bar is a ranked horizontal bar of PMI-scored collocates.
-
 
 def fig_cooccurrence_network(conn, style):
+    """
+    Figure 2 — PMI collocate profiles for theory-selected key terms.
+
+    One row per focus term (human, annotation, autonomous, earn), two
+    columns (B2B left, B2W right).  Each panel shows the top PMI-scored
+    collocates for the focus term in that register.
+
+    Interpretation guide:
+      - If the collocate profiles diverge strongly, the focus term is
+        doing different rhetorical work in each register.
+      - If they converge, the term has a shared discursive function.
+      - Diverging profiles are the strongest candidates for Step 2 close
+        reading investigation.
+
+    In exp style: co-occurrence counts are annotated on each bar.
+
+    Saves to: fig2_cooccurrence_network_{style}.png
+    """
     log.info(f"Figure 2 — Co-occurrence PMI profiles ({style})")
 
     bg  = C_BG_PUB if style == "pub" else C_BG_EXP
@@ -337,6 +511,21 @@ def fig_cooccurrence_network(conn, style):
 # ---------------------------------------------------------------------------
 
 def fig_frequency_comparison(conn, style):
+    """
+    Figure 3 — Relative frequencies of hypothesis terms grouped by H1a/b/c.
+
+    Grouped bar chart showing client and worker relative frequencies for
+    the theory-focus vocabulary, arranged by hypothesis group.  Vertical
+    dividers mark hypothesis boundaries.
+
+    This figure directly visualises whether the hypothesis predictions are
+    borne out in the frequency data:
+      H1a: labour vocabulary (worker, job, earn) should be higher in B2W
+      H1b: automation vocabulary (autonomous, machine) should be higher in B2B
+      H1c: quality vocabulary (human, oversight) should be higher in B2B
+
+    Saves to: fig3_frequency_comparison_{style}.png
+    """
     log.info(f"Figure 3 — Frequency comparison ({style})")
 
     groups = {
@@ -407,6 +596,21 @@ def fig_frequency_comparison(conn, style):
 # ---------------------------------------------------------------------------
 
 def fig_within_pair(conn, style):
+    """
+    Figure 4 — Within-pair keyness for appen and toloka platform pairs.
+
+    Diverging bar charts: worker-distinctive terms on the left (negative
+    LL), client-distinctive terms on the right (positive LL).  One panel
+    per pair.
+
+    The within-pair design controls for company-level language variation:
+    since both platforms in each pair belong to the same company, any
+    vocabulary difference is attributable to audience rather than to
+    different corporate cultures or industries.  This strengthens the
+    causal attribution of register differences to audience-targeting.
+
+    Saves to: fig4_within_pair_{style}.png
+    """
     log.info(f"Figure 4 — Within-pair comparison ({style})")
 
     bg  = C_BG_PUB if style == "pub" else C_BG_EXP
@@ -479,10 +683,27 @@ def fig_within_pair(conn, style):
 
 
 # ---------------------------------------------------------------------------
-# Figure 5: Platform heatmap — columns ordered by hypothesis
+# Figure 5: Platform heatmap
 # ---------------------------------------------------------------------------
 
 def fig_platform_heatmap(conn, style):
+    """
+    Figure 5 — Heatmap of term frequencies across all platforms.
+
+    Columns are hypothesis-grouped (H1a / H1b / H1c), rows are platforms
+    sorted client-first then worker.  A horizontal dashed line separates
+    client from worker platforms.
+
+    In pub style: values are row-normalised (max=1) to make within-platform
+    patterns visible regardless of absolute frequency level.
+    In exp style: raw clipped values with actual numbers annotated.
+
+    Heatmap colour scale is capped at the 95th percentile to prevent
+    high-frequency terms (like 'datum') from collapsing all other values
+    into the bottom of the colour range.
+
+    Saves to: fig5_platform_heatmap_{style}.png
+    """
     log.info(f"Figure 5 — Platform heatmap ({style})")
 
     # Columns ordered by hypothesis group — mirrors fig3
@@ -584,32 +805,36 @@ def fig_platform_heatmap(conn, style):
     save(fig, "fig5_platform_heatmap", style)
 
 
-
 # ---------------------------------------------------------------------------
-# Figure 6: Co-occurrence PMI profiles — theory-driven terms
+# Figure 6: Theory-driven co-occurrence profiles
 # ---------------------------------------------------------------------------
-#
-# Complements fig2 (which shows the top LL-ranked key terms). Fig6 shows
-# terms selected for theoretical reasons rather than statistical keyness:
-# terms central to H1a-c that may appear on both sides of the corpus and
-# therefore score low on LL, but whose collocate profiles reveal how the
-# SAME word is used in radically different discursive contexts depending on
-# audience. This is precisely the gap between theoretical expectation and
-# empirical reality that Step 1 is designed to surface.
-#
-# Layout mirrors fig2: one row per focus term, B2B left / B2W right.
 
-# Grouped by hypothesis for readability — edit freely if re-running with
-# different terms. Terms absent from cooccurrence_results are silently skipped.
+# Full H1a/H1b/H1c vocabulary for theory-driven co-occurrence panels.
+# Grouped by hypothesis for readability in the figure.
+# Terms absent from cooccurrence_results are silently skipped.
 FIG6_GROUPS = {
     "H1a — Labour visibility":         ["worker", "labour", "task", "earn", "pay"],
     "H1b — Automation myth":           ["autonomous", "machine", "automation", "intelligent"],
     "H1c — Strategic hypervisibility": ["human", "quality", "oversight", "annotation", "label"],
 }
-FIG6_TOP_N = 8   # collocates per panel
+FIG6_TOP_N = 8   # collocates shown per panel
 
 
 def fig_theory_cooccurrence(conn, style):
+    """
+    Figure 6 — Theory-driven co-occurrence profiles for all H1a-c terms.
+
+    Complements fig2 (which showed 4 terms selected by LL rank) by
+    showing all theoretically motivated terms regardless of keyness score.
+    Some H1c terms like "human" may appear on both sides with low LL but
+    have strongly divergent collocate profiles that reveal the rhetorical
+    difference.
+
+    Layout: one row per focus term, B2B left / B2W right, with hypothesis
+    group labels.  Horizontal dividers separate hypothesis groups.
+
+    Saves to: fig6_theory_cooccurrence_{style}.png
+    """
     log.info(f"Figure 6 — Theory-driven co-occurrence profiles ({style})")
 
     bg = C_BG_PUB if style == "pub" else C_BG_EXP
@@ -700,8 +925,7 @@ def fig_theory_cooccurrence(conn, style):
             if last_row < n_terms - 1:
                 for col_idx in range(2):
                     ax = axes[last_row][col_idx]
-                    ax.axhline(-0.5, color=C_GRID, linewidth=1.2,
-                               linestyle="--")
+                    ax.axhline(-0.5, color=C_GRID, linewidth=1.2, linestyle="--")
 
     fig.suptitle(
         "Theory-Driven Co-occurrence Profiles: Terms Central to H1a–H1c",
@@ -714,11 +938,18 @@ def fig_theory_cooccurrence(conn, style):
         ha="center", **FONT_ANNOT)
     save(fig, "fig6_theory_cooccurrence", style)
 
+
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
 def main():
+    """
+    Generate all 12 Step 1 figures (6 × 2 styles).
+
+    Verifies required DB tables exist before generating any figures.
+    Iterates over both styles (pub, exp) and calls each figure function.
+    """
     if not Path(DB_PATH).exists():
         raise FileNotFoundError(f"Database not found: {DB_PATH}")
 

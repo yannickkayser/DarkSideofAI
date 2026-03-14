@@ -1,0 +1,208 @@
+2026-03-14 02:18:58 - scraper.keymakr.com - INFO - Starting scrape of keymakr
+2026-03-14 02:19:05 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/
+2026-03-14 02:19:15 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/: All validations passed
+2026-03-14 02:19:15 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/ | Status: 200 | Size: 269290 bytes
+2026-03-14 02:19:15 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/our-services.html
+2026-03-14 02:19:24 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/our-services.html: All validations passed
+2026-03-14 02:19:24 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/our-services.html | Status: 200 | Size: 233225 bytes
+2026-03-14 02:19:24 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/image-annotation-overview.html
+2026-03-14 02:19:32 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/image-annotation-overview.html: All validations passed
+2026-03-14 02:19:32 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/image-annotation-overview.html | Status: 200 | Size: 343543 bytes
+2026-03-14 02:19:32 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/video-annotation.html
+2026-03-14 02:19:39 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/video-annotation.html: All validations passed
+2026-03-14 02:19:39 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/video-annotation.html | Status: 200 | Size: 315639 bytes
+2026-03-14 02:19:39 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/point-cloud.html
+2026-03-14 02:19:44 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/point-cloud.html: All validations passed
+2026-03-14 02:19:44 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/point-cloud.html | Status: 200 | Size: 177132 bytes
+2026-03-14 02:19:44 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/automatic-annotation.html
+2026-03-14 02:19:49 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/automatic-annotation.html: All validations passed
+2026-03-14 02:19:49 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/automatic-annotation.html | Status: 200 | Size: 156602 bytes
+2026-03-14 02:19:49 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/data-validation.html
+2026-03-14 02:19:54 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/data-validation.html: All validations passed
+2026-03-14 02:19:54 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/data-validation.html | Status: 200 | Size: 217287 bytes
+2026-03-14 02:19:55 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/semantic-segmentation.html
+2026-03-14 02:20:00 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/semantic-segmentation.html: All validations passed
+2026-03-14 02:20:00 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/semantic-segmentation.html | Status: 200 | Size: 153568 bytes
+2026-03-14 02:20:00 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/data-creation.html
+2026-03-14 02:20:05 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/data-creation.html: All validations passed
+2026-03-14 02:20:05 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/data-creation.html | Status: 200 | Size: 170349 bytes
+2026-03-14 02:20:06 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/data-collection.html
+2026-03-14 02:20:10 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/data-collection.html: All validations passed
+2026-03-14 02:20:10 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/data-collection.html | Status: 200 | Size: 156262 bytes
+2026-03-14 02:20:10 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/generative-ai.html
+2026-03-14 02:20:14 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/generative-ai.html: All validations passed
+2026-03-14 02:20:14 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/generative-ai.html | Status: 200 | Size: 233112 bytes
+2026-03-14 02:20:15 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/custom-ai-model.html
+2026-03-14 02:20:19 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/custom-ai-model.html: All validations passed
+2026-03-14 02:20:19 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/custom-ai-model.html | Status: 200 | Size: 215159 bytes
+2026-03-14 02:20:19 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/training-data.html
+2026-03-14 02:20:24 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/training-data.html: All validations passed
+2026-03-14 02:20:24 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/training-data.html | Status: 200 | Size: 214656 bytes
+2026-03-14 02:20:25 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/llm-agent-training.html
+2026-03-14 02:20:31 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/llm-agent-training.html: All validations passed
+2026-03-14 02:20:31 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/llm-agent-training.html | Status: 200 | Size: 185294 bytes
+2026-03-14 02:20:31 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/autonomous-vehicle.html
+2026-03-14 02:20:41 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/autonomous-vehicle.html: All validations passed
+2026-03-14 02:20:41 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/autonomous-vehicle.html | Status: 200 | Size: 210369 bytes
+2026-03-14 02:20:41 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/aerial.html
+2026-03-14 02:20:48 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/aerial.html: All validations passed
+2026-03-14 02:20:48 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/aerial.html | Status: 200 | Size: 207130 bytes
+2026-03-14 02:20:48 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/agriculture.html
+2026-03-14 02:20:53 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/agriculture.html: All validations passed
+2026-03-14 02:20:53 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/agriculture.html | Status: 200 | Size: 203685 bytes
+2026-03-14 02:20:54 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/construction.html
+2026-03-14 02:20:59 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/construction.html: All validations passed
+2026-03-14 02:20:59 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/construction.html | Status: 200 | Size: 194725 bytes
+2026-03-14 02:20:59 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/document-annotation.html
+2026-03-14 02:21:03 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/document-annotation.html: All validations passed
+2026-03-14 02:21:03 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/document-annotation.html | Status: 200 | Size: 179324 bytes
+2026-03-14 02:21:03 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/fashion.html
+2026-03-14 02:21:08 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/fashion.html: All validations passed
+2026-03-14 02:21:08 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/fashion.html | Status: 200 | Size: 188626 bytes
+2026-03-14 02:21:08 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/livestock.html
+2026-03-14 02:21:14 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/livestock.html: All validations passed
+2026-03-14 02:21:14 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/livestock.html | Status: 200 | Size: 200695 bytes
+2026-03-14 02:21:14 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/logistics.html
+2026-03-14 02:21:19 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/logistics.html: All validations passed
+2026-03-14 02:21:19 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/logistics.html | Status: 200 | Size: 195207 bytes
+2026-03-14 02:21:20 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/manufacturing.html
+2026-03-14 02:21:25 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/manufacturing.html: All validations passed
+2026-03-14 02:21:25 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/manufacturing.html | Status: 200 | Size: 194500 bytes
+2026-03-14 02:21:25 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/maritime.html
+2026-03-14 02:21:45 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/maritime.html: All validations passed
+2026-03-14 02:21:45 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/maritime.html | Status: 200 | Size: 188425 bytes
+2026-03-14 02:21:45 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/medical.html
+2026-03-14 02:21:50 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/medical.html: All validations passed
+2026-03-14 02:21:50 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/medical.html | Status: 200 | Size: 193209 bytes
+2026-03-14 02:21:50 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/retail.html
+2026-03-14 02:21:55 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/retail.html: All validations passed
+2026-03-14 02:21:55 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/retail.html | Status: 200 | Size: 199524 bytes
+2026-03-14 02:21:55 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/robotics.html
+2026-03-14 02:22:01 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/robotics.html: All validations passed
+2026-03-14 02:22:01 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/robotics.html | Status: 200 | Size: 199021 bytes
+2026-03-14 02:22:01 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/security.html
+2026-03-14 02:22:07 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/security.html: All validations passed
+2026-03-14 02:22:07 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/security.html | Status: 200 | Size: 202722 bytes
+2026-03-14 02:22:07 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/sport.html
+2026-03-14 02:22:12 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/sport.html: All validations passed
+2026-03-14 02:22:12 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/sport.html | Status: 200 | Size: 195149 bytes
+2026-03-14 02:22:12 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/waste.html
+2026-03-14 02:22:17 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/waste.html: All validations passed
+2026-03-14 02:22:17 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/waste.html | Status: 200 | Size: 198737 bytes
+2026-03-14 02:22:17 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/who-we-are.html
+2026-03-14 02:22:21 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/who-we-are.html: All validations passed
+2026-03-14 02:22:21 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/who-we-are.html | Status: 200 | Size: 159169 bytes
+2026-03-14 02:22:22 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/blog/
+2026-03-14 02:22:27 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/blog/: All validations passed
+2026-03-14 02:22:27 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/blog/ | Status: 200 | Size: 32169 bytes
+2026-03-14 02:22:27 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/annotation-tool.html
+2026-03-14 02:22:32 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/annotation-tool.html: All validations passed
+2026-03-14 02:22:32 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/annotation-tool.html | Status: 200 | Size: 192101 bytes
+2026-03-14 02:22:32 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/privacypolicy.html
+2026-03-14 02:22:37 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/privacypolicy.html: All validations passed
+2026-03-14 02:22:37 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/privacypolicy.html | Status: 200 | Size: 165361 bytes
+2026-03-14 02:22:37 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/conferences.html
+2026-03-14 02:22:41 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/conferences.html: All validations passed
+2026-03-14 02:22:41 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/conferences.html | Status: 200 | Size: 294293 bytes
+2026-03-14 02:22:42 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/media.html
+2026-03-14 02:22:47 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/media.html: All validations passed
+2026-03-14 02:22:47 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/media.html | Status: 200 | Size: 177749 bytes
+2026-03-14 02:22:47 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/cases.html
+2026-03-14 02:22:52 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/cases.html: All validations passed
+2026-03-14 02:22:52 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/cases.html | Status: 200 | Size: 160281 bytes
+2026-03-14 02:22:52 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/faq.html
+2026-03-14 02:22:58 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/faq.html: All validations passed
+2026-03-14 02:22:58 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/faq.html | Status: 200 | Size: 166506 bytes
+2026-03-14 02:22:58 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/image-segmentation.html
+2026-03-14 02:23:02 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/image-segmentation.html: All validations passed
+2026-03-14 02:23:02 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/image-segmentation.html | Status: 200 | Size: 188101 bytes
+2026-03-14 02:23:03 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/llm-agriculture.html
+2026-03-14 02:23:08 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/llm-agriculture.html: All validations passed
+2026-03-14 02:23:08 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/llm-agriculture.html | Status: 200 | Size: 202498 bytes
+2026-03-14 02:23:08 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/llm-automotive.html
+2026-03-14 02:23:13 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/llm-automotive.html: All validations passed
+2026-03-14 02:23:13 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/llm-automotive.html | Status: 200 | Size: 198984 bytes
+2026-03-14 02:23:13 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/llm-business.html
+2026-03-14 02:23:18 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/llm-business.html: All validations passed
+2026-03-14 02:23:18 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/llm-business.html | Status: 200 | Size: 201093 bytes
+2026-03-14 02:23:19 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/llm-education.html
+2026-03-14 02:23:23 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/llm-education.html: All validations passed
+2026-03-14 02:23:23 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/llm-education.html | Status: 200 | Size: 200633 bytes
+2026-03-14 02:23:23 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/llm-finance.html
+2026-03-14 02:23:29 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/llm-finance.html: All validations passed
+2026-03-14 02:23:29 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/llm-finance.html | Status: 200 | Size: 198824 bytes
+2026-03-14 02:23:30 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/llm-gaming.html
+2026-03-14 02:23:35 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/llm-gaming.html: All validations passed
+2026-03-14 02:23:35 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/llm-gaming.html | Status: 200 | Size: 204303 bytes
+2026-03-14 02:23:35 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/llm-human-resources.html
+2026-03-14 02:23:40 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/llm-human-resources.html: All validations passed
+2026-03-14 02:23:40 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/llm-human-resources.html | Status: 200 | Size: 200964 bytes
+2026-03-14 02:23:40 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/llm-marketing.html
+2026-03-14 02:23:45 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/llm-marketing.html: All validations passed
+2026-03-14 02:23:45 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/llm-marketing.html | Status: 200 | Size: 201882 bytes
+2026-03-14 02:23:45 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/llm-medical.html
+2026-03-14 02:23:51 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/llm-medical.html: All validations passed
+2026-03-14 02:23:51 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/llm-medical.html | Status: 200 | Size: 197666 bytes
+2026-03-14 02:23:51 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/llm-real-estate.html
+2026-03-14 02:23:55 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/llm-real-estate.html: All validations passed
+2026-03-14 02:23:55 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/llm-real-estate.html | Status: 200 | Size: 198177 bytes
+2026-03-14 02:23:55 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/llm-retail.html
+2026-03-14 02:24:00 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/llm-retail.html: All validations passed
+2026-03-14 02:24:00 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/llm-retail.html | Status: 200 | Size: 199979 bytes
+2026-03-14 02:24:00 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/llm-robotics.html
+2026-03-14 02:24:05 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/llm-robotics.html: All validations passed
+2026-03-14 02:24:05 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/llm-robotics.html | Status: 200 | Size: 199771 bytes
+2026-03-14 02:24:06 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/llm-security.html
+2026-03-14 02:24:10 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/llm-security.html: All validations passed
+2026-03-14 02:24:10 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/llm-security.html | Status: 200 | Size: 198973 bytes
+2026-03-14 02:24:10 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/llm-software.html
+2026-03-14 02:24:15 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/llm-software.html: All validations passed
+2026-03-14 02:24:15 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/llm-software.html | Status: 200 | Size: 198118 bytes
+2026-03-14 02:24:15 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/llm-sport.html
+2026-03-14 02:24:20 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/llm-sport.html: All validations passed
+2026-03-14 02:24:20 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/llm-sport.html | Status: 200 | Size: 197304 bytes
+2026-03-14 02:24:20 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/evinced-case.html
+2026-03-14 02:24:26 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/evinced-case.html: All validations passed
+2026-03-14 02:24:26 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/evinced-case.html | Status: 200 | Size: 186988 bytes
+2026-03-14 02:24:26 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/agwa-case.html
+2026-03-14 02:24:31 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/agwa-case.html: All validations passed
+2026-03-14 02:24:31 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/agwa-case.html | Status: 200 | Size: 179369 bytes
+2026-03-14 02:24:31 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/automotive-case.html
+2026-03-14 02:24:35 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/automotive-case.html: All validations passed
+2026-03-14 02:24:35 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/automotive-case.html | Status: 200 | Size: 199572 bytes
+2026-03-14 02:24:35 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/bluewhite-case.html
+2026-03-14 02:24:40 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/bluewhite-case.html: All validations passed
+2026-03-14 02:24:40 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/bluewhite-case.html | Status: 200 | Size: 186953 bytes
+2026-03-14 02:24:40 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/nda-case.html
+2026-03-14 02:24:45 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/nda-case.html: All validations passed
+2026-03-14 02:24:45 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/nda-case.html | Status: 200 | Size: 185557 bytes
+2026-03-14 02:24:45 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/soundaware-case.html
+2026-03-14 02:24:51 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/soundaware-case.html: All validations passed
+2026-03-14 02:24:51 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/soundaware-case.html | Status: 200 | Size: 181376 bytes
+2026-03-14 02:24:51 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/cognex-case.html
+2026-03-14 02:24:57 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/cognex-case.html: All validations passed
+2026-03-14 02:24:57 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/cognex-case.html | Status: 200 | Size: 182388 bytes
+2026-03-14 02:24:57 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/data-for-creative-ai.html
+2026-03-14 02:25:02 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/data-for-creative-ai.html: All validations passed
+2026-03-14 02:25:02 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/data-for-creative-ai.html | Status: 200 | Size: 184669 bytes
+2026-03-14 02:25:02 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/data-for-reasoning-skills.html
+2026-03-14 02:25:07 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/data-for-reasoning-skills.html: All validations passed
+2026-03-14 02:25:07 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/data-for-reasoning-skills.html | Status: 200 | Size: 186404 bytes
+2026-03-14 02:25:07 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/ai-safety-red-teaming.html
+2026-03-14 02:25:14 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/ai-safety-red-teaming.html: All validations passed
+2026-03-14 02:25:14 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/ai-safety-red-teaming.html | Status: 200 | Size: 187141 bytes
+2026-03-14 02:25:14 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/vlm-multimodal-ai-solutions.html
+2026-03-14 02:25:19 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/vlm-multimodal-ai-solutions.html: All validations passed
+2026-03-14 02:25:19 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/vlm-multimodal-ai-solutions.html | Status: 200 | Size: 187080 bytes
+2026-03-14 02:25:20 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/physical-ai-robotics-data.html
+2026-03-14 02:25:25 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/physical-ai-robotics-data.html: All validations passed
+2026-03-14 02:25:25 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/physical-ai-robotics-data.html | Status: 200 | Size: 185406 bytes
+2026-03-14 02:25:25 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/solutions-for-coding-agents.html
+2026-03-14 02:25:30 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/solutions-for-coding-agents.html: All validations passed
+2026-03-14 02:25:30 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/solutions-for-coding-agents.html | Status: 200 | Size: 186713 bytes
+2026-03-14 02:25:30 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/data-for-agentic-ai.html
+2026-03-14 02:25:35 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/data-for-agentic-ai.html: All validations passed
+2026-03-14 02:25:35 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/data-for-agentic-ai.html | Status: 200 | Size: 186525 bytes
+2026-03-14 02:25:35 - scraper.keymakr.com - INFO - Starting scrape: https://keymakr.com/virtual-environments.html
+2026-03-14 02:25:40 - scraper.keymakr.com - INFO - ✓ VALIDATION PASSED: https://keymakr.com/virtual-environments.html: All validations passed
+2026-03-14 02:25:40 - scraper.keymakr.com - INFO - ✓ SUCCESS: https://keymakr.com/virtual-environments.html | Status: 200 | Size: 186687 bytes

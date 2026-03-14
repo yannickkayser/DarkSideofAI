@@ -1,23 +1,57 @@
 """
 01_prepare.py
 =============
-Enriches the existing SQLite database with a `platforms` table and a
-`corpus_view` derived from WEBSITES config, then validates the corpus.
+Enriches the scraping database with platform metadata and creates the
+canonical corpus view used by all downstream analysis scripts.
+
+Pipeline position:
+  Stage 1 — Corpus Preparation (runs ONCE after the full scraping pass
+  and preprocessing step are complete)
+  Prerequisites: main.py (scraping), preprocess.py (tokenisation)
+  Next step:     01_prepare_additions.py (exclusion tables)
 
 What this script does:
-  1. Parses WEBSITES config → platform_type, company_id, hq_region
-  2. Creates and populates the `platforms` table
-  3. Creates `corpus_view` — the single join all analysis scripts use
-  4. Runs corpus diagnostics and flags problems
+  1. Reads WEBSITES config from config/config.py and derives structured
+     platform metadata (platform_type, company_id, hq_region) via rule
+     tables defined in this file.
+  2. Creates and populates the `platforms` table in the DB.
+  3. Creates `corpus_view` — the single SQL view that joins
+     pages_tfidf (token data from preprocess.py) to platform metadata.
+     All scripts from 02 onward query this view instead of rewriting
+     the join.
+  4. Runs corpus diagnostics and flags any pages that could not be
+     joined to a platform (which would make their audience field
+     unresolvable).
 
 IMPORTANT — audience source of truth:
-  The audience column in pages_tfidf is unreliable (unknown values from
-  URL matching failures in preprocess.py). This script ignores it entirely.
-  All scripts derive audience from platforms via:
-    pages_tfidf → pages → websites → platforms
-  corpus_view encodes this join once so no script repeats it.
+  The audience column in pages_tfidf is unreliable.  preprocess.py
+  derives audience by matching page URLs against patterns, and pages
+  whose URLs do not match any pattern end up as 'unknown'.  This
+  script ignores that column entirely.
+  All analysis scripts derive audience via:
+    pages_tfidf → pages → websites → platforms (from config)
+  corpus_view encodes this join once so it is never repeated in
+  individual analysis scripts.
 
-Run this ONCE before any analysis script.
+Output tables / views written to data/scraping.db:
+  platforms   : one row per domain with canonical metadata
+  corpus_view : SQL VIEW joining pages_tfidf to platform metadata
+
+Run order:
+  python3 src/main.py (scraping)        →
+  python3 src/preprocess.py             →
+  python3 src/01_prepare.py             ← this script
+  python3 src/01_prepare_additions.py   →
+  python3 src/02_step1_frequency.py     → ...
+
+Configuration to edit before running:
+  DB_PATH         — path to the SQLite database
+  PLATFORM_TYPE_RULES — map type strings → canonical platform_type
+  PAIR_RULES          — map domain fragments → shared company_id for
+                        sites belonging to the same company but
+                        addressing different audiences
+  HQ_REGION_RULES     — map domain fragments → 'north' | 'south' for
+                        headquarters region analysis
 """
 
 import sqlite3
@@ -50,6 +84,11 @@ log = logging.getLogger(__name__)
 # ---------------------------------------------------------------------------
 
 # Maps fragments found in the type string to canonical platform_type values.
+# These canonical values are used to group sites by business model in
+# analysis:
+#   crowd_market   — Algorithmic Crowd Market platforms (MTurk-style)
+#   enterprise_bpo — Managed Enterprise BPO platforms (B2B outsourcing)
+#   impact_sourcing — Impact Sourcing platforms (Global South focus)
 # Edit this if your type strings use different wording.
 PLATFORM_TYPE_RULES = [
     ("Algorithmic Crowd Market", "crowd_market"),
@@ -58,14 +97,20 @@ PLATFORM_TYPE_RULES = [
 ]
 
 # Maps domain fragments to company_id for linking pairs.
-# Add your pairs here — key is any substring of the domain, value is a
-# short canonical company identifier.
-# Example: appen.com and crowdgen.com both map to "appen"
+# A "pair" is two domains owned by the same company that address
+# different audiences: one B2B (client-facing) and one B2W
+# (worker-facing).  company_id links them so within-pair analyses can
+# compare the same company's language across audiences, controlling for
+# company-level style variation.
+#
+# Key: any substring of the domain name (lowercase)
+# Value: canonical company identifier string
+# Example: appen.com (B2B) and crowdgen.com (B2W) both map to "appen"
 PAIR_RULES = {
     "appen":        "appen",
     "crowdgen":     "appen",
     "toloka":      "toloka",
-    "mindrift":    "toloka",     
+    "mindrift":    "toloka",
     "centific":  "centific",
     "oneforma":  "centific",
     "labelbox":  "labelbox",
@@ -75,7 +120,10 @@ PAIR_RULES = {
 }
 
 # Maps domain fragments to headquarters region.
-# Expand this list to cover all your platforms.
+# 'south' = Global South (Africa, South Asia) — impact sourcing focus
+# 'north' = Global North (North America, Europe) — default
+# This variable is available for potential Global North/South comparison
+# analyses (not the primary focus of the H1a-c theses).
 HQ_REGION_RULES = {
     "sama":          "south",   # Kenya-focused impact sourcing
     "imerit":        "south",   # India-headquartered
@@ -86,7 +134,19 @@ HQ_REGION_RULES = {
 
 
 def parse_platform_type(type_str: str) -> str:
-    """Extract canonical platform_type from the free-text type field."""
+    """
+    Extract canonical platform_type from the free-text type field in config.
+
+    Iterates PLATFORM_TYPE_RULES in order and returns the canonical value
+    for the first matching fragment.  Case-insensitive comparison.
+
+    Args:
+        type_str: The raw type string from config (e.g. "Algorithmic
+                  Crowd Market — Microtask").
+
+    Returns:
+        Canonical platform_type string, or "unknown" if no rule matches.
+    """
     for fragment, canonical in PLATFORM_TYPE_RULES:
         if fragment.lower() in type_str.lower():
             return canonical
@@ -96,7 +156,20 @@ def parse_platform_type(type_str: str) -> str:
 def parse_company_id(domain: str) -> str:
     """
     Return a company_id that links paired domains to the same company.
-    Falls back to the domain itself if no pair rule matches.
+
+    Used to group appen.com (B2B) and crowdgen.com (B2W) under the same
+    company_id = "appen" so corpus_view can filter:
+        WHERE company_id = 'appen'   -- both paired domains
+    enabling within-pair comparisons that control for company-level
+    language variation.
+
+    Args:
+        domain: Domain string as in WEBSITES config (e.g. "crowdgen.com").
+
+    Returns:
+        company_id string (e.g. "appen"), or the domain itself if no
+        PAIR_RULES entry matches.  Using the domain as fallback means
+        single-domain platforms still work in platform-level analyses.
     """
     for fragment, company_id in PAIR_RULES.items():
         if fragment in domain.lower():
@@ -106,7 +179,15 @@ def parse_company_id(domain: str) -> str:
 
 
 def parse_hq_region(domain: str) -> str:
-    """Return 'north' or 'south' based on domain fragment matching."""
+    """
+    Return 'north' or 'south' based on domain fragment matching.
+
+    Args:
+        domain: Domain string.
+
+    Returns:
+        'south' if a HQ_REGION_RULES fragment matches, otherwise 'north'.
+    """
     for fragment, region in HQ_REGION_RULES.items():
         if fragment in domain.lower():
             return region
@@ -116,7 +197,15 @@ def parse_hq_region(domain: str) -> str:
 def build_platforms_records() -> list[dict]:
     """
     Convert WEBSITES config into a list of platform metadata dicts.
-    Each dict becomes one row in the platforms table.
+
+    Each dict becomes one row in the platforms table.  Logs the derived
+    metadata for manual verification before any DB writes so errors in
+    PAIR_RULES or PLATFORM_TYPE_RULES can be caught before they
+    propagate.
+
+    Returns:
+        List of dicts with keys: domain, name, audience, platform_type,
+        company_id, hq_region, type_raw.
     """
     records = []
     for domain, site in WEBSITES.items():
@@ -151,6 +240,8 @@ CREATE TABLE IF NOT EXISTS platforms (
 )
 """
 
+# INSERT OR REPLACE so re-running this script updates stale metadata
+# without leaving orphaned rows
 INSERT_PLATFORM_SQL = """
 INSERT OR REPLACE INTO platforms
     (domain, name, audience, platform_type, company_id, hq_region, type_raw)
@@ -160,12 +251,23 @@ VALUES
 
 
 def create_platforms_table(conn: sqlite3.Connection):
+    """Create the platforms table if it does not yet exist."""
     conn.execute(CREATE_PLATFORMS_SQL)
     conn.commit()
     log.info("platforms table ready.")
 
 
 def populate_platforms(conn: sqlite3.Connection, records: list[dict]):
+    """
+    Insert or update platform records.
+
+    Uses INSERT OR REPLACE so the script is safely re-runnable — any
+    metadata changes in PAIR_RULES or PLATFORM_TYPE_RULES are applied
+    on the next run.
+
+    Args:
+        records: List of dicts from build_platforms_records().
+    """
     conn.executemany(INSERT_PLATFORM_SQL, records)
     conn.commit()
     log.info(f"Inserted/updated {len(records)} platform records.")
@@ -177,15 +279,44 @@ def populate_platforms(conn: sqlite3.Connection, records: list[dict]):
 
 def create_corpus_view(conn: sqlite3.Connection):
     """
-    A single reusable view that joins pages_tfidf to platform metadata.
+    Create (or recreate) the canonical corpus_view SQL view.
 
-    Audience is derived from platforms (config), NOT from pages_tfidf.audience,
-    which contains unreliable 'unknown' values from URL-matching failures.
+    corpus_view is the single authoritative source for token data with
+    platform metadata.  Every analysis script (02, 02b, 02c, 03, 03b,
+    04) queries it directly rather than re-joining the underlying tables.
 
-    All analysis scripts query this view directly:
-        SELECT * FROM corpus_view WHERE audience = 'worker'
-        SELECT * FROM corpus_view WHERE platform_type = 'crowd_market'
-        SELECT * FROM corpus_view WHERE company_id = 'appen'  -- pair analysis
+    Why a view and not a table?
+      A view ensures that any new pages added to pages_tfidf (from a
+      supplementary scraping run) automatically appear in the corpus
+      without needing to re-run this script.  The join is evaluated at
+      query time.
+
+    Audience derivation:
+      The view joins platforms.audience (from config) rather than
+      pages_tfidf.audience (from URL pattern matching in preprocess.py).
+      This is critical: pages_tfidf.audience contains many 'unknown'
+      values for pages whose URLs did not match the pattern rules.
+      The config-derived audience is 100% reliable.
+
+    Key columns:
+      page_id        : primary key from pages_tfidf — used to join back
+                       to raw text in Export B/C (04_step2_export.py)
+      url            : page URL for close reading (Step 2)
+      unigrams       : JSON array of lemmatised unigrams (from preprocess.py)
+      bigrams        : JSON array of lemmatised bigrams (from preprocess.py)
+      token_count    : total unigram count — used for MIN_TOKEN_COUNT
+                       filters and relative-frequency normalisation
+      audience       : 'client' | 'worker' (from platforms, authoritative)
+      platform_type  : 'crowd_market' | 'enterprise_bpo' | 'impact_sourcing'
+      company_id     : shared key for paired platforms (e.g. 'appen')
+      hq_region      : 'north' | 'south'
+      platform_name  : human-readable site name (from config)
+      domain         : domain string (e.g. 'appen.com')
+
+    Typical queries:
+      SELECT * FROM corpus_view WHERE audience = 'worker'
+      SELECT * FROM corpus_view WHERE platform_type = 'crowd_market'
+      SELECT * FROM corpus_view WHERE company_id = 'appen'  -- pair analysis
     """
     conn.execute("DROP VIEW IF EXISTS corpus_view")
     conn.execute("""
@@ -218,8 +349,30 @@ def create_corpus_view(conn: sqlite3.Connection):
 
 def run_diagnostics(conn: sqlite3.Connection):
     """
-    Validates corpus_view and shows what changed vs pages_tfidf.audience.
-    Flags any pages that could not be joined to platforms (unresolvable audience).
+    Validate corpus_view and surface potential data quality issues.
+
+    Compares pages_tfidf.audience (unreliable, URL-derived) to
+    corpus_view.audience (reliable, config-derived) to quantify how
+    many pages had 'unknown' audience that are now correctly resolved.
+
+    Also reports:
+      - Pages dropped between pages_tfidf and corpus_view (no matching
+        platform in config — these pages have no derivable audience and
+        are excluded from all analysis).
+      - Pages-per-platform table with token counts.
+      - Platform pairs (company_id groups with > 1 domain).
+      - Corpus-wide token statistics.
+      - Platform type distribution.
+
+    This output should be reviewed manually before proceeding to
+    02_step1_frequency.py to verify:
+      - All expected platforms appear
+      - Audience assignments look correct
+      - Pairs are linked correctly
+      - No large unexplained drops in page count
+
+    Args:
+        conn: Open SQLite connection with corpus_view already created.
     """
     log.info("=" * 60)
     log.info("CORPUS DIAGNOSTICS")
@@ -325,6 +478,19 @@ def run_diagnostics(conn: sqlite3.Connection):
 # ---------------------------------------------------------------------------
 
 def main():
+    """
+    Orchestrate platform enrichment and corpus view creation.
+
+    Exits with FileNotFoundError if the database does not exist — this
+    script should only be run after the scraping and preprocessing stages
+    have created the DB.
+
+    Steps:
+      1. Parse WEBSITES config and log derived metadata for review
+      2. Create/update platforms table
+      3. Create corpus_view (DROP + CREATE for clean re-runs)
+      4. Run diagnostics — review before proceeding to analysis scripts
+    """
     if not Path(DB_PATH).exists():
         raise FileNotFoundError(f"Database not found: {DB_PATH}")
 
@@ -359,7 +525,7 @@ def main():
     run_diagnostics(conn)
 
     conn.close()
-    log.info("Done. Run 02_step1_frequency.py next.")
+    log.info("Done. Run 01_prepare_additions.py next, then 02_step1_frequency.py.")
 
 
 if __name__ == "__main__":

@@ -3,41 +3,65 @@
 ============================
 Nelson (2020) Step 1 — extension: Distinctiveness & Overlap
 
-Complements 02_step1_frequency.py with three additional analyses:
+Pipeline position:
+  Stage 2b — Distinctiveness Analysis (run after 02_step1_frequency.py,
+  can run in parallel with 02c_step1_topics.py)
+  Prerequisites: 01_prepare.py (corpus_view), 01_prepare_additions.py
+  Next step:     03b_visualise_distinctiveness_topics.py (figures 7–12)
 
-  1. Company-level distinctiveness
-     Jensen-Shannon Divergence (JSD) and cosine similarity between every
-     pair of domains.  Answers: how similar/different is each company's
-     language from every other company's?
+What this script does:
+  Complements 02_step1_frequency.py with three additional perspectives
+  on vocabulary divergence between B2B and B2W registers:
+
+  1. Company-level distinctiveness matrix
+     For every pair of domains, computes Jensen-Shannon Divergence (JSD)
+     and cosine similarity over the high-variance vocabulary.  Answers:
+     "How linguistically similar/different is each platform from every
+     other?"  The matrix reveals whether B2B platforms cluster together,
+     whether B2W platforms cluster together, and whether within-pair
+     domains (same company, different audience) are more similar to each
+     other than to cross-company domains.
 
   2. Aggregate B2B-vs-B2W distance
-     A single JSD score summarising the overall vocabulary distance
-     between client-facing and worker-facing subcorpora — the "one number"
-     that captures how distinct the two registers are.
+     A single JSD and cosine score summarising the overall vocabulary
+     distance between the client and worker subcorpora.  This is the
+     "one number" that quantifies register divergence for the thesis
+     argument.  Used in the findings chapter as evidence that B2B and
+     B2W language is substantially divergent.
 
   3. Term exclusivity scores
-     For each term: in what fraction of B2B platforms does it appear,
-     vs what fraction of B2W platforms?  Produces a continuous
-     exclusivity index from –1 (exclusively worker) to +1 (exclusively
-     client), plus a categorical label.  Words near 0 are "shared" —
-     interesting for discourse analysis precisely because the same term
-     gets different collocate frames on each side.
+     For each term: in what fraction of B2B platforms does it appear
+     (prevalence_client) and in what fraction of B2W platforms
+     (prevalence_worker)?  The difference gives an exclusivity_index
+     from +1 (only on B2B platforms) to -1 (only on B2W platforms).
+     Terms near 0 are "shared" — analytically important because the
+     same term occurs on both sides but in different rhetorical contexts.
+     These are prime candidates for Step 2 close reading.
 
-Revision notes (v2):
-  - Filters excluded pages and excluded terms from 01_prepare_additions.py
-  - JSD computed on HIGH-VARIANCE terms only (terms whose relative
-    frequency variance across domains exceeds the median).  This strips
-    out the shared-vocabulary baseline that compressed the JSD range
-    in v1, letting genuinely distinctive terms drive the distance metric.
+Revision notes (v2 vs v1):
+  - Applies exclusion filtering from 01_prepare_additions.py
+  - JSD now computed on HIGH-VARIANCE terms only (above-median
+    cross-domain variance percentile).  In v1 the large shared-
+    vocabulary baseline (very common words appearing at similar rates
+    everywhere) compressed all JSD values into a narrow range near zero.
+    Filtering to high-variance terms reveals genuine distinctiveness.
 
-Outputs written to three SQLite tables:
-  - distinctiveness_matrix   : domain×domain JSD + cosine
-  - aggregate_distance       : single-row B2B-vs-B2W JSD
-  - term_exclusivity         : per-term exclusivity index and category
+Input (from data/scraping.db):
+  corpus_view           — token data with platform metadata
+  excluded_pages        — pages to skip (from 01_prepare_additions.py)
+  excluded_terms        — terms to filter out before computing stats
 
-Prerequisites:
-  - 01_prepare.py  (corpus_view must exist)
-  - 01_prepare_additions.py  (excluded_pages, excluded_terms — optional but recommended)
+Output tables written to data/scraping.db:
+  distinctiveness_matrix : N×N domain pairs, each with JSD + cosine
+  aggregate_distance     : single-row B2B-vs-B2W JSD + cosine
+  term_exclusivity       : per-term exclusivity_index and category
+
+Output used by:
+  03b_visualise_distinctiveness_topics.py
+    fig7_distinctiveness_heatmap — JSD matrix heatmap
+    fig8_exclusivity_volcano     — exclusivity index scatter plot
+  Thesis findings chapter: aggregate JSD as evidence of register
+  divergence; exclusivity index to identify shared terms for Step 2.
 
 Usage:
     python3 src/02b_step1_distinctiveness.py
@@ -61,12 +85,19 @@ MIN_TERM_FREQ = 5          # ignore terms below this total corpus frequency
 # Exclusivity thresholds — a term is "exclusive" to one audience if its
 # prevalence ratio exceeds these.  Prevalence = fraction of platforms in
 # that audience where the term occurs at least once.
+# EXCLUSIVITY_THRESHOLD = 0.70 means: appears on ≥70% of one audience's
+# platforms and is flagged as exclusive to that side.
 EXCLUSIVITY_THRESHOLD = 0.70   # high end
-SHARED_BAND           = 0.25   # terms within ±0.25 of centre are "shared"
+# Terms within ±SHARED_BAND of 0 exclusivity are labelled "shared".
+# 0.25 means: if |prevalence_client - prevalence_worker| ≤ 0.25, "shared".
+SHARED_BAND           = 0.25
 
-# High-variance vocabulary: only terms above median cross-domain variance
-# are used for JSD.  This prevents the large shared-vocabulary baseline
-# from compressing all JSD values into a narrow band.
+# High-variance vocabulary filter:
+# Only terms above this percentile of cross-domain relative-frequency
+# variance are used for JSD computation.  This strips the shared-
+# vocabulary baseline (words like "use", "provide" that appear at
+# similar rates everywhere) which compressed all JSD values near zero
+# in v1.  Setting to 50 keeps the top half of terms by variance.
 HIGH_VARIANCE_PERCENTILE = 50  # keep terms above this percentile of variance
 
 logging.basicConfig(
@@ -82,6 +113,14 @@ log = logging.getLogger(__name__)
 # ---------------------------------------------------------------------------
 
 def init_output_tables(conn: sqlite3.Connection):
+    """
+    Create output tables, dropping previous versions for clean re-runs.
+
+    Tables created:
+      distinctiveness_matrix — domain × domain JSD and cosine similarity
+      aggregate_distance     — single B2B vs B2W aggregate distance row
+      term_exclusivity       — per-term exclusivity index and category
+    """
     conn.executescript("""
         DROP TABLE IF EXISTS distinctiveness_matrix;
         DROP TABLE IF EXISTS aggregate_distance;
@@ -130,11 +169,22 @@ def init_output_tables(conn: sqlite3.Connection):
 
 
 # ---------------------------------------------------------------------------
-# Corpus loading (reuses corpus_view from 01_prepare.py)
+# Corpus loading
 # ---------------------------------------------------------------------------
 
 def load_exclusions(conn: sqlite3.Connection) -> tuple:
-    """Load excluded page IDs and terms from 01_prepare_additions tables."""
+    """
+    Load excluded page IDs and excluded terms from 01_prepare_additions tables.
+
+    Gracefully handles the case where the tables do not yet exist (e.g. if
+    01_prepare_additions.py has not been run), returning empty sets and
+    logging a warning.  The analysis still runs, just without exclusion
+    filtering.
+
+    Returns:
+        excluded_pages : set of int page_ids to skip
+        excluded_terms : set of str terms to remove from token lists
+    """
     excluded_pages = set()
     excluded_terms = set()
 
@@ -157,9 +207,26 @@ def load_exclusions(conn: sqlite3.Connection) -> tuple:
 
 def load_corpus(conn: sqlite3.Connection) -> dict:
     """
+    Load the corpus from corpus_view and apply exclusion filters.
+
+    Builds two data structures:
+      platform: per-domain frequency Counter and token count.  Used for
+                JSD/cosine pairwise matrix and term exclusivity.
+      cross:    per-audience aggregate frequency Counter and token count.
+                Used for aggregate B2B-vs-B2W distance.
+
+    Exclusion is applied at row level (page_id in excluded_pages) and at
+    token level (term in excluded_terms).
+
+    Args:
+        conn: Open SQLite connection.
+
     Returns:
-      'platform': {domain: {'audience': str, 'freq': Counter, 'n_tokens': int}}
-      'cross':    {'client': (Counter, n_tokens), 'worker': (Counter, n_tokens)}
+        Dict with keys:
+          'platform': {domain: {'audience': str, 'freq': Counter,
+                                'n_tokens': int}}
+          'cross':    {'client': (Counter, n_tokens),
+                       'worker': (Counter, n_tokens)}
     """
     log.info("Loading corpus from corpus_view...")
 
@@ -195,7 +262,7 @@ def load_corpus(conn: sqlite3.Connection) -> dict:
         unigrams = json.loads(row["unigrams"]) if row["unigrams"] else []
         bigrams  = json.loads(row["bigrams"])  if row["bigrams"]  else []
 
-        # Filter excluded terms
+        # Filter excluded terms before counting
         if excluded_terms:
             unigrams = [t for t in unigrams if t not in excluded_terms]
             bigrams  = [t for t in bigrams  if t not in excluded_terms]
@@ -237,9 +304,20 @@ def load_corpus(conn: sqlite3.Connection) -> dict:
 
 def to_prob_dist(freq: Counter, vocab: set) -> dict:
     """
-    Convert a frequency counter into a probability distribution over vocab.
-    Uses additive (Laplace) smoothing with alpha=1 to handle zero counts,
-    which is necessary for well-defined KL divergence.
+    Convert a frequency counter to a probability distribution over vocab.
+
+    Uses additive (Laplace) smoothing with alpha=1 to handle zero counts.
+    Smoothing is required for well-defined KL divergence — without it,
+    any term in vocab that has count 0 for a domain would produce
+    log(0) = -infinity in the KL calculation.
+
+    Args:
+        freq  : Counter of term frequencies for one domain.
+        vocab : Set of terms to include in the distribution.
+
+    Returns:
+        Dict {term: probability} where probabilities sum to 1.
+        Every term in vocab has a positive probability (minimum 1/(total+|V|)).
     """
     alpha = 1
     total = sum(freq.get(t, 0) for t in vocab) + alpha * len(vocab)
@@ -251,18 +329,54 @@ def to_prob_dist(freq: Counter, vocab: set) -> dict:
 # ---------------------------------------------------------------------------
 
 def kl_divergence(p: dict, q: dict) -> float:
-    """KL(P || Q) — both dists must share the same key set."""
+    """
+    Compute KL divergence KL(P || Q).
+
+    Both distributions must share the same key set (guaranteed by the
+    Laplace-smoothed to_prob_dist).
+
+    Args:
+        p : Probability distribution dict.
+        q : Probability distribution dict (reference).
+
+    Returns:
+        KL(P || Q) in nats.  Always >= 0.
+    """
     return sum(p[t] * math.log(p[t] / q[t]) for t in p if p[t] > 0 and q[t] > 0)
 
 
 def jsd(p: dict, q: dict) -> float:
-    """Jensen-Shannon Divergence — symmetric, bounded [0, ln2]."""
+    """
+    Compute Jensen-Shannon Divergence (symmetric, bounded [0, ln2]).
+
+    JSD = 0.5 * KL(P || M) + 0.5 * KL(Q || M) where M = 0.5*(P+Q).
+    Unlike KL divergence, JSD is symmetric and always finite even when
+    one distribution has zeros (prevented here by Laplace smoothing).
+
+    Args:
+        p, q : Probability distributions over the same vocabulary.
+
+    Returns:
+        JSD in nats, in [0, ln(2)].
+    """
     m = {t: 0.5 * (p[t] + q[t]) for t in p}
     return 0.5 * kl_divergence(p, m) + 0.5 * kl_divergence(q, m)
 
 
 def jsd_normalised(p: dict, q: dict) -> float:
-    """JSD normalised to [0, 1] by dividing by ln(2)."""
+    """
+    JSD normalised to [0, 1] by dividing by ln(2).
+
+    0 means the distributions are identical; 1 means they are completely
+    disjoint.  Normalised JSD is easier to interpret and compare across
+    different vocabulary sizes.
+
+    Args:
+        p, q : Probability distributions over the same vocabulary.
+
+    Returns:
+        Normalised JSD in [0, 1].
+    """
     return jsd(p, q) / math.log(2)
 
 
@@ -271,7 +385,22 @@ def jsd_normalised(p: dict, q: dict) -> float:
 # ---------------------------------------------------------------------------
 
 def cosine_similarity(freq_a: Counter, freq_b: Counter, vocab: set) -> float:
-    """Cosine similarity on raw frequency vectors over shared vocab."""
+    """
+    Compute cosine similarity of raw frequency vectors over shared vocab.
+
+    Uses raw counts (not tf-idf or probability weights) because the goal
+    is to compare raw frequency profiles, not re-weight by document
+    frequency.  Cosine similarity is the complement to JSD: JSD measures
+    distributional divergence; cosine measures vector angle regardless
+    of magnitude.
+
+    Args:
+        freq_a, freq_b : Frequency counters for two domains.
+        vocab          : Shared vocabulary to compare over.
+
+    Returns:
+        Cosine similarity in [0, 1], or 0.0 if either vector is all zeros.
+    """
     dot = sum(freq_a.get(t, 0) * freq_b.get(t, 0) for t in vocab)
     mag_a = math.sqrt(sum(freq_a.get(t, 0) ** 2 for t in vocab))
     mag_b = math.sqrt(sum(freq_b.get(t, 0) ** 2 for t in vocab))
@@ -286,13 +415,38 @@ def cosine_similarity(freq_a: Counter, freq_b: Counter, vocab: set) -> float:
 
 def compute_term_exclusivity(platform: dict) -> list[dict]:
     """
-    For each term, compute:
+    Compute a prevalence-based exclusivity index for each term.
+
+    For each term:
       prevalence_client = fraction of client platforms where term appears
       prevalence_worker = fraction of worker platforms where term appears
-      exclusivity_index = prevalence_client - prevalence_worker  (in [-1, +1])
+      exclusivity_index = prevalence_client - prevalence_worker
 
-    A term with exclusivity_index near +1 appears only on client platforms;
-    near -1 only on worker platforms; near 0 it is "shared".
+    Interpretation:
+      +1.0 : term appears on ALL client platforms and NO worker platforms
+      -1.0 : term appears on NO client platforms and ALL worker platforms
+       0.0 : term appears at equal rates on both sides ("shared")
+
+    Categories assigned by EXCLUSIVITY_THRESHOLD and SHARED_BAND:
+      client_exclusive  : exclusivity > EXCLUSIVITY_THRESHOLD (0.70)
+      worker_exclusive  : exclusivity < -EXCLUSIVITY_THRESHOLD (-0.70)
+      shared            : |exclusivity| ≤ SHARED_BAND (0.25)
+      leaning_client    : 0.25 < exclusivity ≤ 0.70
+      leaning_worker    : -0.70 ≤ exclusivity < -0.25
+
+    The "shared" category is analytically important for the thesis:
+    these are terms that appear on both B2B and B2W platforms but may
+    be used in different rhetorical contexts.  They are prime candidates
+    for Step 2 close reading to investigate context-dependent meaning.
+
+    Args:
+        platform: Dict from load_corpus()['platform'].
+
+    Returns:
+        List of dicts with keys: term, term_type, prevalence_client,
+        prevalence_worker, exclusivity_index, category, total_freq.
+        Sorted by |exclusivity_index| descending.
+        Returns [] if either audience has no platforms.
     """
     client_domains = [d for d, v in platform.items() if v["audience"] == "client"]
     worker_domains = [d for d, v in platform.items() if v["audience"] == "worker"]
@@ -360,6 +514,20 @@ def compute_term_exclusivity(platform: dict) -> list[dict]:
 # ---------------------------------------------------------------------------
 
 def main():
+    """
+    Orchestrate the distinctiveness analysis pipeline.
+
+    Steps:
+      1. Load corpus with exclusion filtering
+      2. Build high-variance vocabulary filter (above-median variance)
+      3. Compute pairwise JSD + cosine for all domain pairs (matrix)
+      4. Compute aggregate B2B-vs-B2W JSD + cosine (single row)
+      5. Compute term exclusivity scores
+      6. Save all results to DB
+      7. Log summary with query examples
+
+    Re-run safe: all output tables are dropped and recreated at the start.
+    """
     if not Path(DB_PATH).exists():
         raise FileNotFoundError(f"Database not found: {DB_PATH}")
 
@@ -392,6 +560,7 @@ def main():
     n_domains = len(domains)
 
     # Build shared vocabulary (terms occurring in at least 2 domains)
+    # using the global corpus minimum frequency filter
     term_domain_count = Counter()
     for d in domains:
         for t in platform[d]["freq"]:
@@ -401,8 +570,9 @@ def main():
     log.info(f"  Base vocabulary size: {len(base_vocab):,} terms")
 
     # HIGH-VARIANCE FILTERING: compute relative-frequency variance per term
-    # across domains, keep only terms above the median.  This strips out
-    # the shared baseline that compressed JSD in v1.
+    # across domains.  Only terms above the median variance are kept for JSD.
+    # This filters out the baseline shared vocabulary (function words, common
+    # nouns at similar rates everywhere) that compressed JSD in v1.
     import numpy as _np
     term_variances = {}
     for t in base_vocab:
@@ -420,6 +590,7 @@ def main():
     log.info(f"  High-variance vocabulary (p{HIGH_VARIANCE_PERCENTILE}): "
              f"{len(vocab):,} terms  (variance threshold: {variance_threshold:.2e})")
 
+    # Compute JSD + cosine for every domain pair (upper triangle only)
     matrix_rows = []
     for i, da in enumerate(domains):
         pa = to_prob_dist(platform[da]["freq"], vocab)
@@ -441,7 +612,7 @@ def main():
 
     log.info(f"  {len(matrix_rows)} domain pairs computed.")
 
-    # Log most/least similar pairs
+    # Log most/least similar pairs for quick interpretation
     by_jsd = sorted(matrix_rows, key=lambda x: x["jsd"])
     log.info("  Most SIMILAR domain pairs (lowest JSD):")
     for r in by_jsd[:5]:

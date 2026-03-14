@@ -1,7 +1,55 @@
 """
-main.py 
+main.py
+=======
+Entry point for the web scraping layer of the DarkSideofAI corpus pipeline.
 
-main function to use the webscraper, with interactive menu and CLI usage
+Pipeline position:
+  Stage 0 — Data Collection (runs BEFORE all analysis scripts)
+  Output: populates the `websites`, `pages`, and `links` tables in
+          data/scraping.db, which all downstream scripts read from.
+
+What this script does:
+  Provides two modes for scraping the platform websites configured in
+  config/config.py:
+
+    Sitemap mode (default):
+      Discovers URLs via the site's XML sitemap (via sitemap_robots.py),
+      then scrapes each URL with Playwright (via scraper.py).
+      Used for sites that publish a complete sitemap (e.g. appen.com, scale.com).
+
+    Crawler mode (--crawl flag):
+      Discovers URLs via a BFS link-following crawl (via crawler.py),
+      then injects those URLs into the scraper's sitemap step via
+      monkey-patching.  Used for sites without a sitemap
+      (e.g. crowdgen.com, telusinternational.ai).
+
+Usage examples:
+    # Interactive menu
+    python main.py
+
+    # Scrape one site (sitemap)
+    python main.py appen.com
+
+    # Scrape one site (BFS crawler, max 200 pages)
+    python main.py --crawl crowdgen.com 200
+
+    # Scrape all configured sites
+    python main.py --all
+
+    # Print current DB stats
+    python main.py --stats
+
+Dependencies:
+  - config/config.py (WEBSITES dict, DB_PATH)
+  - database.py
+  - scraper.py (Playwright-based scraper)
+  - crawler.py (BFS URL discovery)
+  - sitemap_robots.py (sitemap + robots.txt parser)
+
+Thesis note:
+  Not cited directly. The scraping methodology (Playwright, rate limiting,
+  stealth settings, sitemap vs crawler mode) is described in the Data
+  Collection section of the methodology chapter.
 """
 
 import sys
@@ -16,12 +64,20 @@ from crawler import LinkCrawler
 
 def scrape_website(domain: str, max_pages: int = None, use_crawler: bool = False):
     """
-    General function to scrape a single website
+    Scrape a single website and persist results to the database.
+
+    For sitemap mode, the WebScraper queries sitemap_robots.py for URLs,
+    then loads each one in a Playwright browser.  For crawler mode, a BFS
+    LinkCrawler discovers URLs first, and those URLs are injected into the
+    WebScraper by temporarily monkey-patching SitemapRobotsParser.get_all_urls.
 
     Args:
-        domain: Domain name
-        max_pages: Maximum number of pages to scrape (None for unlimited)
-        use_crawler: Use BFS link crawler instead of sitemap discovery
+        domain:      Domain name as configured in config/config.py
+                     (e.g. 'appen.com', 'crowdgen.com').
+        max_pages:   Maximum number of pages to scrape per run.
+                     None means scrape all discovered URLs.
+        use_crawler: If True, use BFS link-following instead of the sitemap.
+                     Use for sites without an XML sitemap.
     """
     config = get_website_config(domain)
     if not config:
@@ -33,7 +89,8 @@ def scrape_website(domain: str, max_pages: int = None, use_crawler: bool = False
     scraper = WebScraper(config, db)
 
     if use_crawler:
-        # Discover URLs via BFS crawl, then inject into scraper when sitemap is not available
+        # Discover URLs via BFS crawl, then inject into scraper
+        # when a sitemap is not available for the site.
         crawler = LinkCrawler(
             base_url=config["base_url"],
             max_pages=max_pages or 500,
@@ -47,7 +104,7 @@ def scrape_website(domain: str, max_pages: int = None, use_crawler: bool = False
             db.close()
             return
 
-        # Patch sitemap step to use crawled URLs instead
+        # Monkey-patch the sitemap step so the scraper uses crawled URLs
         original_get_all = SitemapRobotsParser.get_all_urls
 
         def patched_get_all(self_inner):
@@ -59,6 +116,7 @@ def scrape_website(domain: str, max_pages: int = None, use_crawler: bool = False
         try:
             stats = scraper.scrape_website(max_pages=max_pages)
         finally:
+            # Always restore the original method, even on error
             SitemapRobotsParser.get_all_urls = original_get_all
     else:
         stats = scraper.scrape_website(max_pages=max_pages)
@@ -68,7 +126,15 @@ def scrape_website(domain: str, max_pages: int = None, use_crawler: bool = False
 
 
 def scrape_all_websites(max_pages: int = None):
-    """Scrape all configured websites using sitemap discovery"""
+    """
+    Scrape all sites in config/config.py using sitemap mode.
+
+    Errors on a single site do not abort the batch — the loop continues
+    to the next domain after logging the failure.
+
+    Args:
+        max_pages: Maximum pages to scrape per website.  None = unlimited.
+    """
     websites = list_websites()
     print(f"\nScraping {len(websites)} websites...\n")
 
@@ -84,14 +150,19 @@ def scrape_all_websites(max_pages: int = None):
 
 
 def show_database_stats():
-    """Show current database statistics"""
+    """Print total page count and data volume for the current corpus."""
     db = Database(str(DB_PATH))
     db.print_stats()
     db.close()
 
 
 def interactive_menu():
-    """Interactive menu"""
+    """
+    Interactive command-line menu for one-off scraping tasks.
+
+    Options mirror the CLI flags but guide the user through prompts.
+    For automated/scripted use, the CLI flags are preferred.
+    """
     while True:
         print("\n" + "="*60)
         print("WEB SCRAPER - MAIN MENU")

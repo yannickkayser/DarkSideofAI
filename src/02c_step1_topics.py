@@ -3,33 +3,81 @@
 ===================
 Nelson (2020) Step 1 — extension: Topic Modelling & Step 2 Sampling
 
-Bridges Step 1 (computational pattern detection) to Step 2 (interpretive
-close reading) by identifying latent topics in the corpus and using them
-to build a principled sampling strategy.
+Pipeline position:
+  Stage 2c — Topic Modelling and Sampling Strategy (run after
+  02_step1_frequency.py; can run in parallel with 02b)
+  Prerequisites:
+    01_prepare.py           (corpus_view)
+    01_prepare_additions.py (excluded pages / terms)
+    02_step1_frequency.py   (cooccurrence_results for divergence scoring)
+  Next step:
+    03b_visualise_distinctiveness_topics.py (figures 9, 10, 11, 12)
+    Step 2 close reading (the step2_sample table produced here guides
+    which pages to read)
 
-Pipeline:
-  1. LDA topic model (sklearn) on the full corpus — extracts K topics
-  2. Per-topic audience profile: how much does each topic appear in
-     B2B (client) vs B2W (worker) pages?  Classifies topics as
-     client-leaning, worker-leaning, or shared.
-  3. PCA on the document-topic matrix — reduces K dimensions to 2–3
-     principal components for visualisation and clustering.
-  4. Hypothesis-stratified sampling for Step 2: for each hypothesis
-     (H1a visibility, H1b automation, H1c hypervisibility), identifies
-     the 2-3 most relevant topics by term overlap, then samples top
-     pages per audience scored by topic weight × collocate divergence ×
-     hypothesis term density.  This produces ~50-60 pages with explicit
-     theoretical justification for every selection.
+What this script does:
+  Bridges Step 1 (computational pattern detection) to Step 2 (interpretive
+  close reading) by:
 
-Outputs written to four SQLite tables:
-  - topic_terms            : top terms per topic + coherence
-  - document_topics        : per-page topic assignments + PCA coords
-  - topic_audience_profile : per-topic B2B vs B2W prominence
-  - step2_sample           : ranked page_ids for Step 2 close reading
+  1. LDA topic model (sklearn LatentDirichletAllocation) on the full
+     corpus.  Extracts N_TOPICS latent topics, each characterised by a
+     probability distribution over the vocabulary.  N_TOPICS = 40 was
+     chosen after testing 20/30/40/50 and inspecting topic coherence and
+     separation.
 
-Prerequisites:
-  - 01_prepare.py  (corpus_view must exist)
-  - 02_step1_frequency.py  (cooccurrence_results used for divergence scoring)
+  2. Per-topic audience profile: for each topic, what fraction of its
+     total weight comes from client pages vs worker pages?  Topics are
+     classified as client_leaning (>65% client), worker_leaning (>65%
+     worker), or shared.  The threshold SHARED_THRESHOLD = 0.65 is
+     configurable.
+
+  3. PCA on the document-topic matrix: reduces the 40-dimensional topic
+     space to 2–3 principal components for visualisation.  PC1 typically
+     separates client from worker pages, providing visual evidence that
+     audience is a dominant structural axis of the corpus.
+
+  4. Hypothesis-stratified sampling for Step 2:
+     For each hypothesis (H1a visibility, H1b automation, H1c
+     hypervisibility), identifies the 2–3 most topic-relevant LDA topics
+     (by term overlap with HYPOTHESIS_TERMS vocabulary), then samples the
+     top pages per audience within those topics.  Pages are scored by:
+       combined = topic_weight × (1 + collocate_divergence) × (1 + hyp_density × 10)
+     where:
+       topic_weight         = LDA weight of the dominant topic for the page
+       collocate_divergence = how differently the page's key terms are
+                              framed in B2B vs B2W (from 02 co-occurrence)
+       hyp_density          = fraction of page tokens that are hypothesis-
+                              relevant terms
+     This produces ~50–60 pages with explicit theoretical justification
+     for every selection (stored in step2_sample.sampling_reason).
+
+Input (from data/scraping.db):
+  corpus_view          — unigrams, audience, domain, token_count
+  excluded_pages       — pages to skip
+  excluded_terms       — terms to filter out AND pass as stop_words
+                         to sklearn CountVectorizer
+  cooccurrence_results — from 02_step1_frequency.py; used to compute
+                         per-page collocate divergence scores
+
+Output tables written to data/scraping.db:
+  topic_terms            : top N_TOP_TERMS per topic + weights + rank
+  document_topics        : per-page dominant topic, weight, PCA coords
+  topic_audience_profile : per-topic B2B/B2W balance and category
+  step2_sample           : ranked page_ids for Step 2 close reading
+
+Output used by:
+  03b_visualise_distinctiveness_topics.py
+    fig9_pca_scatter         — PCA scatter coloured by audience
+    fig10_topic_audience_profile — per-topic B2B/B2W bar chart
+    fig11_collocate_divergence   — divergence ranking chart
+    fig12_step2_sample_map       — PCA with sampled pages highlighted
+  Thesis Step 2 methodology: step2_sample drives the close-reading corpus
+  exported by 04_step2_export.py
+
+Configuration to tune:
+  N_TOPICS      — start with 30-50; increase until topics are coherent
+  MAX_ITER      — increase to 100 for final runs (slow but better model)
+  HYPOTHESIS_TERMS — review and update if analytical focus shifts
 
 Usage:
     python3 src/02c_step1_topics.py
@@ -50,35 +98,54 @@ sys.path.append(str(Path(__file__).parent.parent))
 # ---------------------------------------------------------------------------
 DB_PATH        = "data/scraping.db"
 N_TOPICS       = 40         # LDA topics to extract (tune between 30-50)
-N_TOP_TERMS    = 20         # top terms per topic to store
-N_PCA_DIMS     = 3          # PCA components to keep
-MAX_ITER       = 50         # LDA iterations (increase for final run)
-RANDOM_STATE   = 42
-MIN_DF         = 5          # minimum document frequency for vectoriser
-MAX_DF_FRAC    = 0.85       # maximum document fraction for vectoriser
+N_TOP_TERMS    = 20         # top terms per topic to store in topic_terms
+N_PCA_DIMS     = 3          # PCA components to keep (3 stored, 2 plotted)
+MAX_ITER       = 50         # LDA iterations (increase to 100 for final run)
+RANDOM_STATE   = 42         # fixed seed for reproducibility
+MIN_DF         = 5          # minimum document frequency for CountVectorizer
+MAX_DF_FRAC    = 0.85       # maximum document fraction for CountVectorizer
+                             # (removes terms in >85% of documents — likely
+                             # function words not caught by stop_words)
 MIN_TOKEN_COUNT  = 30       # minimum tokens for a page to enter the model
+                             # (short pages produce noisy topic assignments)
 
 # Shared-topic threshold: a topic is "shared" if neither audience accounts
 # for more than this fraction of the topic's total weight.
+# 0.65 means: if client_share is between 0.35 and 0.65, the topic is shared.
+# Lower values = more topics classified as shared.
 SHARED_THRESHOLD = 0.65
 
 # ---------------------------------------------------------------------------
 # Hypothesis-stratified sampling config
 # ---------------------------------------------------------------------------
-# For each hypothesis, the sampling strategy identifies the 2-3 most
-# relevant topics (by term overlap with hypothesis vocabulary), then
-# samples the top pages from each audience within those topics.
-# This gives ~15-20 pages per hypothesis with clear theoretical
-# justification for every selection.
-
+# HYPOTHESIS_TERMS defines the analytical vocabulary for each of the three
+# core hypotheses.  These sets are used to:
+#   (a) Identify which LDA topics are most relevant to each hypothesis
+#       (by term overlap with topic_terms).
+#   (b) Score candidate pages by hypothesis term density.
+#
+# H1a — Labour visibility gap:
+#   Workers in AI data labour are systematically rendered invisible in B2B
+#   communications.  Labour vocabulary (worker, task, pay) should appear
+#   less frequently or be framed more abstractly in B2B texts.
+#
+# H1b — Automation myth:
+#   B2B communications frame AI outputs as autonomous / intelligent to
+#   obscure the human labour behind them.  Automation vocabulary
+#   (autonomous, pipeline, deploy) should be B2B-distinctive.
+#
+# H1c — Strategic hypervisibility:
+#   When human labour is mentioned in B2B texts, it is foregrounded as a
+#   quality/accuracy signal (human-in-the-loop, expert reviewers).  This
+#   is strategically visible — human labour as product feature, not worker.
 HYPOTHESIS_TERMS = {
     "H1a_visibility": {
         "terms": {"worker", "labour", "task", "job", "pay", "earn", "payment",
                   "work", "annotator", "labeller", "moderator", "freelance",
                   "gig", "contractor", "wage", "income", "employment"},
         "description": "Labour visibility — explicit references to human labour",
-        "n_topics": 3,       # top N topics per hypothesis
-        "n_pages_per_topic_per_audience": 5,
+        "n_topics": 3,       # top N topics per hypothesis for sampling
+        "n_pages_per_topic_per_audience": 5,  # pages sampled per topic per audience
     },
     "H1b_automation": {
         "terms": {"autonomous", "machine", "automate", "intelligent", "automation",
@@ -111,7 +178,19 @@ log = logging.getLogger(__name__)
 # ---------------------------------------------------------------------------
 
 def _import_ml():
-    """Import ML dependencies with a helpful error if missing."""
+    """
+    Import scikit-learn and numpy with a helpful error message if missing.
+
+    These are heavy dependencies not required by other pipeline scripts,
+    so they are imported lazily (only when this script runs) rather than
+    at module level.
+
+    Returns:
+        Tuple of (LatentDirichletAllocation, PCA, CountVectorizer, numpy)
+
+    Raises:
+        SystemExit if scikit-learn or numpy is not installed.
+    """
     try:
         from sklearn.decomposition import LatentDirichletAllocation, PCA
         from sklearn.feature_extraction.text import CountVectorizer
@@ -130,6 +209,15 @@ def _import_ml():
 # ---------------------------------------------------------------------------
 
 def init_output_tables(conn: sqlite3.Connection):
+    """
+    Create output tables, dropping previous versions for clean re-runs.
+
+    Tables:
+      topic_terms            : vocabulary of each LDA topic
+      document_topics        : per-page topic assignment + PCA coordinates
+      topic_audience_profile : B2B vs B2W balance per topic
+      step2_sample           : sampling table guiding Step 2 close reading
+    """
     conn.executescript("""
         DROP TABLE IF EXISTS topic_terms;
         DROP TABLE IF EXISTS document_topics;
@@ -141,8 +229,8 @@ def init_output_tables(conn: sqlite3.Connection):
             topic_id    INTEGER NOT NULL,
             topic_label TEXT,               -- optional human label (filled later)
             term        TEXT NOT NULL,
-            weight      REAL NOT NULL,       -- term weight in topic
-            rank        INTEGER NOT NULL,    -- 1 = highest weight
+            weight      REAL NOT NULL,       -- term weight in topic (from LDA components_)
+            rank        INTEGER NOT NULL,    -- 1 = highest weight term
             created_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         );
 
@@ -151,12 +239,12 @@ def init_output_tables(conn: sqlite3.Connection):
             page_id         INTEGER NOT NULL,
             domain          TEXT,
             audience        TEXT,
-            dominant_topic   INTEGER NOT NULL,  -- topic with highest weight
-            topic_weight    REAL NOT NULL,      -- weight of dominant topic
-            topic_vector    TEXT,               -- full topic vector as JSON
-            pca_1           REAL,
-            pca_2           REAL,
-            pca_3           REAL,
+            dominant_topic   INTEGER NOT NULL,  -- topic with highest weight for this page
+            topic_weight    REAL NOT NULL,      -- weight of dominant topic [0,1]
+            topic_vector    TEXT,               -- full 40-dim topic distribution as JSON
+            pca_1           REAL,               -- PC1 coordinate
+            pca_2           REAL,               -- PC2 coordinate
+            pca_3           REAL,               -- PC3 coordinate
             created_at      TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         );
 
@@ -168,7 +256,7 @@ def init_output_tables(conn: sqlite3.Connection):
             avg_weight_worker REAL,     -- mean topic weight across worker pages
             client_share    REAL,       -- client_sum / (client_sum + worker_sum)
             category        TEXT,       -- 'client_leaning' | 'worker_leaning' | 'shared'
-            n_dominant_client INTEGER,  -- pages where this is the dominant topic (client)
+            n_dominant_client INTEGER,  -- pages where this is dominant topic (client)
             n_dominant_worker INTEGER,
             created_at      TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         );
@@ -181,31 +269,36 @@ def init_output_tables(conn: sqlite3.Connection):
             audience        TEXT,
             dominant_topic  INTEGER,
             topic_weight    REAL,
-            sampling_reason TEXT,        -- why this page was selected
-            collocate_divergence REAL,   -- PMI profile divergence score (if available)
+            sampling_reason TEXT,        -- encodes hypothesis + topic + overlap terms
+            collocate_divergence REAL,   -- divergence of key terms' PMI profiles
             priority_rank   INTEGER,     -- 1 = most analytically interesting
             created_at      TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         );
 
-        CREATE INDEX IF NOT EXISTS idx_dt_page
-            ON document_topics(page_id);
-        CREATE INDEX IF NOT EXISTS idx_dt_topic
-            ON document_topics(dominant_topic);
-        CREATE INDEX IF NOT EXISTS idx_tap_cat
-            ON topic_audience_profile(category);
-        CREATE INDEX IF NOT EXISTS idx_s2_rank
-            ON step2_sample(priority_rank);
+        CREATE INDEX IF NOT EXISTS idx_dt_page   ON document_topics(page_id);
+        CREATE INDEX IF NOT EXISTS idx_dt_topic  ON document_topics(dominant_topic);
+        CREATE INDEX IF NOT EXISTS idx_tap_cat   ON topic_audience_profile(category);
+        CREATE INDEX IF NOT EXISTS idx_s2_rank   ON step2_sample(priority_rank);
     """)
     conn.commit()
     log.info("Output tables created.")
 
 
 # ---------------------------------------------------------------------------
-# Step 1: Load corpus — return page metadata + token strings for sklearn
+# Step 1: Load corpus
 # ---------------------------------------------------------------------------
 
 def load_exclusions(conn: sqlite3.Connection) -> tuple:
-    """Load excluded page IDs and terms from 01_prepare_additions tables."""
+    """
+    Load excluded page IDs and terms from 01_prepare_additions tables.
+
+    Gracefully returns empty sets if the tables do not exist yet.
+
+    Returns:
+        excluded_pages : set of int page_ids to skip entirely
+        excluded_terms : set of str terms to filter from token lists
+                         AND pass as stop_words to CountVectorizer
+    """
     excluded_pages = set()
     excluded_terms = set()
 
@@ -228,10 +321,25 @@ def load_exclusions(conn: sqlite3.Connection) -> tuple:
 
 def load_corpus(conn: sqlite3.Connection) -> tuple:
     """
+    Load the corpus for LDA modelling.
+
+    Returns documents as space-joined token strings (expected by sklearn
+    CountVectorizer) along with per-page metadata.
+
+    Unlike the frequency analysis in 02_step1_frequency.py, this function
+    uses ONLY unigrams for LDA (bigrams are sparse and make topic
+    interpretation harder; LDA already learns multi-word patterns from
+    co-occurrence).
+
+    Args:
+        conn: Open SQLite connection.
+
     Returns:
-      docs     : list of str — space-joined token strings per page
-      metadata : list of dict — {page_id, domain, audience, url, token_count}
-      excluded_terms : set — terms to exclude (passed to vectoriser stop_words)
+        docs           : list of str — space-joined unigram sequences
+        metadata       : list of dict — {page_id, url, domain, audience,
+                         token_count} aligned with docs
+        excluded_terms : set of str — passed to CountVectorizer stop_words
+                         so excluded terms cannot contribute to LDA topics
     """
     log.info("Loading corpus from corpus_view...")
 
@@ -286,9 +394,35 @@ def load_corpus(conn: sqlite3.Connection) -> tuple:
 def fit_lda(docs, np, CountVectorizer, LatentDirichletAllocation,
             excluded_terms=None):
     """
-    Vectorise → LDA → return model, vectoriser, document-topic matrix.
-    excluded_terms are passed as stop_words to prevent boilerplate/noise
-    from forming their own topics.
+    Vectorise corpus and fit LDA topic model.
+
+    Two-stage process:
+      1. CountVectorizer: converts docs (space-joined strings) to a
+         document-term matrix (DTM).  MIN_DF=5 removes terms appearing
+         in fewer than 5 documents; MAX_DF_FRAC=0.85 removes terms in
+         more than 85% of documents.  excluded_terms are also passed as
+         stop_words so they cannot contribute to any topic.
+         token_pattern=r"(?u)\S+" accepts tokens with underscores and
+         special characters (lemmatised compound forms).
+      2. LDA: fits N_TOPICS topics on the DTM using online batch learning.
+         n_jobs=-1 uses all CPU cores for parallel computation.
+
+    After fitting, logs perplexity and log-likelihood for model evaluation.
+    Lower perplexity = better model fit.  Compare across N_TOPICS values
+    when tuning.
+
+    Args:
+        docs              : list of str from load_corpus().
+        np                : numpy module (passed in to avoid re-import).
+        CountVectorizer   : sklearn class.
+        LatentDirichletAllocation: sklearn class.
+        excluded_terms    : set of terms to pass as stop_words.
+
+    Returns:
+        lda              : fitted LDA model
+        vectoriser       : fitted CountVectorizer
+        doc_topic_matrix : ndarray shape (n_docs, N_TOPICS)
+        vocab            : ndarray of vocabulary terms
     """
     log.info("Vectorising corpus...")
     stop_words = list(excluded_terms) if excluded_terms else None
@@ -324,7 +458,26 @@ def fit_lda(docs, np, CountVectorizer, LatentDirichletAllocation,
 # ---------------------------------------------------------------------------
 
 def extract_topic_terms(lda, vocab, np) -> list[dict]:
-    """Top N_TOP_TERMS per topic."""
+    """
+    Extract the top N_TOP_TERMS terms per topic.
+
+    Uses lda.components_ (shape: n_topics × vocab_size) — each row is
+    the unnormalised topic distribution over the vocabulary.  Higher
+    component values = higher topic weight for that term.
+
+    The topic_label column is left as None — it can be filled manually
+    after inspecting the topic terms.  For the thesis, topic labels were
+    assigned manually to the most analytically relevant topics.
+
+    Args:
+        lda   : fitted LDA model.
+        vocab : vocabulary array from CountVectorizer.
+        np    : numpy module.
+
+    Returns:
+        List of dicts with keys: topic_id, topic_label (None), term,
+        weight, rank.  Length = N_TOPICS × N_TOP_TERMS.
+    """
     results = []
     for topic_id, component in enumerate(lda.components_):
         top_indices = component.argsort()[::-1][:N_TOP_TERMS]
@@ -345,7 +498,27 @@ def extract_topic_terms(lda, vocab, np) -> list[dict]:
 
 def compute_document_topics(doc_topic_matrix, metadata, np, PCA) -> list[dict]:
     """
-    For each page: dominant topic, full vector, and PCA coordinates.
+    Compute per-page dominant topic and PCA coordinates.
+
+    For each page:
+      dominant_topic = argmax of the topic weight vector
+      topic_weight   = the weight of the dominant topic
+      topic_vector   = full topic distribution stored as JSON (useful
+                       for future dimensionality reduction experiments)
+      pca_1/2/3      = coordinates in PCA-reduced topic space
+
+    PCA is fitted on the document-topic matrix (n_docs × N_TOPICS) to
+    project documents into a 2-3 dimensional space for visualisation.
+    PC1 typically separates client from worker pages.
+
+    Args:
+        doc_topic_matrix : ndarray (n_docs, N_TOPICS) from LDA.
+        metadata         : list of per-page dicts from load_corpus.
+        np               : numpy module.
+        PCA              : sklearn PCA class.
+
+    Returns:
+        List of dicts with document-topic data aligned with metadata.
     """
     log.info(f"Running PCA ({N_PCA_DIMS} components) on document-topic matrix...")
     pca = PCA(n_components=N_PCA_DIMS, random_state=RANDOM_STATE)
@@ -382,8 +555,28 @@ def compute_document_topics(doc_topic_matrix, metadata, np, PCA) -> list[dict]:
 
 def compute_topic_profiles(doc_topic_matrix, metadata, np) -> list[dict]:
     """
-    For each topic: mean weight in client pages vs worker pages.
-    Classify as client_leaning, worker_leaning, or shared.
+    Compute per-topic B2B vs B2W balance.
+
+    For each topic, computes:
+      avg_weight_client : mean topic weight across client pages
+      avg_weight_worker : mean topic weight across worker pages
+      client_share      : client_sum / (client_sum + worker_sum)
+      category          : 'client_leaning' | 'worker_leaning' | 'shared'
+      n_dominant_client : count of client pages where this is the
+                          dominant topic (argmax)
+      n_dominant_worker : same for worker pages
+
+    The client_share and category are used in:
+      - fig10 to visualise topic audience balance
+      - Step 2 sampling to select pages from hypothesis-relevant topics
+
+    Args:
+        doc_topic_matrix : ndarray (n_docs, N_TOPICS) from LDA.
+        metadata         : list of per-page dicts from load_corpus.
+        np               : numpy module.
+
+    Returns:
+        List of N_TOPICS dicts, one per topic.
     """
     client_mask = [m["audience"] == "client" for m in metadata]
     worker_mask = [m["audience"] == "worker" for m in metadata]
@@ -391,7 +584,7 @@ def compute_topic_profiles(doc_topic_matrix, metadata, np) -> list[dict]:
     client_matrix = doc_topic_matrix[client_mask]
     worker_matrix = doc_topic_matrix[worker_mask]
 
-    # Dominant topic counts
+    # Dominant topic counts per audience
     client_dominant = client_matrix.argmax(axis=1) if client_matrix.shape[0] > 0 else []
     worker_dominant = worker_matrix.argmax(axis=1) if worker_matrix.shape[0] > 0 else []
 
@@ -432,12 +625,29 @@ def compute_topic_profiles(doc_topic_matrix, metadata, np) -> list[dict]:
 
 def compute_collocate_divergence(conn: sqlite3.Connection) -> dict:
     """
-    For each focus term in cooccurrence_results (from 02_step1_frequency.py),
-    compute how different its collocate profile is between client and worker.
+    Compute how differently each focus term is framed in B2B vs B2W.
 
-    Divergence = 1 - cosine_similarity(PMI_vector_client, PMI_vector_worker)
+    Uses the PMI profiles stored in cooccurrence_results by
+    02_step1_frequency.py.  For each focus term, computes the cosine
+    similarity between its B2B PMI profile (vector of collocate PMI
+    scores in client texts) and its B2W PMI profile.
 
-    Returns {focus_term: divergence_score}
+    divergence = 1 - cosine_similarity(PMI_client, PMI_worker)
+    = 0 means identical collocate profiles (term used the same way)
+    = 1 means completely different collocate profiles (term used
+         very differently by B2B vs B2W)
+
+    Terms with high divergence are analytically productive for Step 2:
+    the same word is doing different rhetorical work in each register.
+    For example, "human" in B2B texts may collocate with "oversight" and
+    "quality", while in B2W texts it collocates with "task" and "work".
+
+    Only the cross_platform comparison is used (all client vs all worker),
+    not within-pair comparisons.
+
+    Returns:
+        Dict {focus_term: divergence_score}
+        Empty dict if cooccurrence_results table does not exist yet.
     """
     log.info("Computing collocate divergence from 02 co-occurrence data...")
 
@@ -477,7 +687,7 @@ def compute_collocate_divergence(conn: sqlite3.Connection) -> dict:
         if len(all_collocates) < 3:
             continue
 
-        # Cosine similarity on PMI vectors
+        # Cosine similarity of PMI vectors
         dot  = sum(c_vec.get(c, 0) * w_vec.get(c, 0) for c in all_collocates)
         mag_c = math.sqrt(sum(c_vec.get(c, 0) ** 2 for c in all_collocates))
         mag_w = math.sqrt(sum(w_vec.get(c, 0) ** 2 for c in all_collocates))
@@ -491,7 +701,7 @@ def compute_collocate_divergence(conn: sqlite3.Connection) -> dict:
 
     log.info(f"  Divergence scores for {len(divergences)} focus terms.")
 
-    # Log most divergent
+    # Log most divergent — these terms should appear prominently in Step 2
     by_div = sorted(divergences.items(), key=lambda x: x[1], reverse=True)
     log.info("  Most DIVERGENT collocate profiles (same word, different framing):")
     for term, div in by_div[:15]:
@@ -504,20 +714,28 @@ def compute_collocate_divergence(conn: sqlite3.Connection) -> dict:
 # Step 7: Build Step 2 sampling table
 # ---------------------------------------------------------------------------
 
-def compute_topic_hypothesis_relevance(
-    topic_terms_list: list[dict],
-) -> dict:
+def compute_topic_hypothesis_relevance(topic_terms_list: list[dict]) -> dict:
     """
-    For each hypothesis, compute a relevance score for each topic based on
-    the overlap between the topic's top terms and the hypothesis vocabulary.
+    Score each LDA topic by its overlap with each hypothesis vocabulary.
 
-    Returns: {hypothesis_key: [(topic_id, overlap_score, matching_terms), ...]}
-    sorted by overlap descending.
+    For each hypothesis in HYPOTHESIS_TERMS, calculates how many of the
+    topic's top 15 terms appear in the hypothesis vocabulary set.  Topics
+    with more overlapping terms are more relevant to that hypothesis.
+
+    This relevance score determines which topics are sampled for each
+    hypothesis in build_step2_sample.
+
+    Args:
+        topic_terms_list: list of dicts from extract_topic_terms().
+
+    Returns:
+        Dict {hypothesis_key: [(topic_id, overlap_score, matching_terms), ...]}
+        Sorted by overlap_score descending.
     """
-    # Build topic → top terms mapping
+    # Build topic → top terms mapping (top 15 terms for matching)
     topic_top = defaultdict(set)
     for r in topic_terms_list:
-        if r["rank"] <= 15:   # consider top 15 terms per topic
+        if r["rank"] <= 15:
             topic_top[r["topic_id"]].add(r["term"])
 
     result = {}
@@ -527,7 +745,6 @@ def compute_topic_hypothesis_relevance(
         for topic_id, top_terms in topic_top.items():
             overlap = top_terms & hyp_terms
             if overlap:
-                # Score: number of matching terms weighted by their rank
                 score = len(overlap)
                 scored.append((topic_id, score, overlap))
         scored.sort(key=lambda x: x[1], reverse=True)
@@ -545,20 +762,47 @@ def build_step2_sample(
     conn: sqlite3.Connection,
 ) -> list[dict]:
     """
-    HYPOTHESIS-STRATIFIED sampling strategy.
+    Build the hypothesis-stratified Step 2 sampling table.
 
-    For each hypothesis (H1a, H1b, H1c):
-      1. Identify the 2-3 most relevant topics (by term overlap with
-         hypothesis vocabulary)
-      2. From those topics, sample top pages per audience, scored by
-         topic weight × collocate divergence
+    Selection strategy:
+      For each hypothesis (H1a, H1b, H1c):
+        1. Identify the n_topics most topic-relevant LDA topics (by term
+           overlap with hypothesis vocabulary).
+        2. From those topics, score all candidate pages by:
+             combined = topic_weight × (1 + avg_div) × (1 + hyp_density × 10)
+           where:
+             topic_weight  — LDA assignment weight for the dominant topic
+             avg_div       — mean collocate divergence of terms on the page
+             hyp_density   — fraction of page terms in hypothesis vocabulary
+        3. Take the top n_pages_per_topic_per_audience pages for each
+           (topic, audience) combination.
+        4. Skip pages already selected by a previous hypothesis to avoid
+           duplication.
 
-    This ensures coverage of each hypothesis domain with clear
-    theoretical justification for every selection.
+    After selection, all results are globally ranked by combined
+    analytical interest:
+      rank_score = topic_weight × (1 + collocate_divergence)
+
+    The sampling_reason column records which hypothesis, topic, and
+    matching terms justified the selection, providing full transparency
+    for the thesis methodology description.
+
+    Args:
+        doc_topics        : list from compute_document_topics().
+        topic_profiles    : list from compute_topic_profiles().
+        topic_terms_list  : list from extract_topic_terms().
+        divergences       : dict from compute_collocate_divergence().
+        metadata          : list from load_corpus().
+        conn              : open SQLite connection (for page term lookup).
+
+    Returns:
+        List of dicts with keys: page_id, url, domain, audience,
+        dominant_topic, topic_weight, sampling_reason,
+        collocate_divergence, priority_rank.
     """
     log.info("Building hypothesis-stratified Step 2 sampling table...")
 
-    # --- Compute topic-hypothesis relevance ---
+    # Compute topic-hypothesis relevance
     relevance = compute_topic_hypothesis_relevance(topic_terms_list)
 
     for hyp_key, scored_topics in relevance.items():
@@ -570,18 +814,19 @@ def build_step2_sample(
             log.info(f"    Topic {topic_id} [{cat}]  overlap={score}  "
                      f"terms: {', '.join(sorted(terms))}")
 
-    # --- Build metadata lookup ---
+    # Build metadata lookup by page_id
     meta_by_page = {m["page_id"]: m for m in metadata}
 
-    # --- Group document-topic entries by topic ---
+    # Group document-topic entries by dominant topic
     by_topic = defaultdict(list)
     for dt in doc_topics:
         by_topic[dt["dominant_topic"]].append(dt)
 
-    # --- Page-level divergence scoring ---
+    # Page-level term cache (avoids re-querying the DB per page)
     page_terms_cache = {}
 
     def get_page_terms(page_id):
+        """Fetch and cache the unigrams for a page."""
         if page_id not in page_terms_cache:
             row = conn.execute(
                 "SELECT unigrams FROM corpus_view WHERE page_id = ?", (page_id,)
@@ -593,7 +838,15 @@ def build_step2_sample(
         return page_terms_cache[page_id]
 
     def score_page(dt, hyp_terms):
-        """Score a page by topic weight, collocate divergence, and hypothesis term density."""
+        """
+        Score a page by combined analytical interest.
+
+        combined = topic_weight × (1 + avg_divergence) × (1 + hyp_density × 10)
+
+        The 10× multiplier on hyp_density gives strong weight to pages
+        that directly use the hypothesis vocabulary, ensuring the sample
+        covers the terms the thesis is testing.
+        """
         page_id = dt["page_id"]
         terms = get_page_terms(page_id)
 
@@ -608,7 +861,6 @@ def build_step2_sample(
         hyp_count = len(terms & hyp_terms)
         hyp_density = hyp_count / len(terms) if terms else 0
 
-        # Combined: topic_weight × (1 + divergence) × (1 + hyp_density × 10)
         combined = dt["topic_weight"] * (1 + avg_div) * (1 + hyp_density * 10)
 
         return {
@@ -624,7 +876,7 @@ def build_step2_sample(
         }
 
     results = []
-    seen_pages = set()   # avoid duplicate sampling across hypotheses
+    seen_pages = set()   # avoid sampling the same page for multiple hypotheses
 
     for hyp_key, scored_topics in relevance.items():
         hyp_config = HYPOTHESIS_TERMS[hyp_key]
@@ -632,7 +884,6 @@ def build_step2_sample(
         n_topics   = hyp_config["n_topics"]
         n_per      = hyp_config["n_pages_per_topic_per_audience"]
 
-        # Select top N topics for this hypothesis
         selected_topics = scored_topics[:n_topics]
         if not selected_topics:
             log.warning(f"  No relevant topics for {hyp_key} — skipping.")
@@ -690,6 +941,7 @@ def build_step2_sample(
 # ---------------------------------------------------------------------------
 
 def save_topic_terms(conn, results):
+    """Insert topic term rows into topic_terms table."""
     conn.executemany("""
         INSERT INTO topic_terms (topic_id, topic_label, term, weight, rank)
         VALUES (:topic_id, :topic_label, :term, :weight, :rank)
@@ -698,6 +950,7 @@ def save_topic_terms(conn, results):
 
 
 def save_document_topics(conn, results):
+    """Insert document-topic assignments into document_topics table."""
     conn.executemany("""
         INSERT INTO document_topics
             (page_id, domain, audience, dominant_topic, topic_weight,
@@ -710,6 +963,7 @@ def save_document_topics(conn, results):
 
 
 def save_topic_profiles(conn, results):
+    """Insert topic audience profiles into topic_audience_profile table."""
     conn.executemany("""
         INSERT INTO topic_audience_profile
             (topic_id, topic_label, avg_weight_client, avg_weight_worker,
@@ -722,6 +976,7 @@ def save_topic_profiles(conn, results):
 
 
 def save_step2_sample(conn, results):
+    """Insert Step 2 sampling results into step2_sample table."""
     conn.executemany("""
         INSERT INTO step2_sample
             (page_id, url, domain, audience, dominant_topic, topic_weight,
@@ -738,6 +993,11 @@ def save_step2_sample(conn, results):
 # ---------------------------------------------------------------------------
 
 def main():
+    """
+    Orchestrate the topic modelling and Step 2 sampling pipeline.
+
+    Re-run safe: all output tables are dropped and recreated at the start.
+    """
     if not Path(DB_PATH).exists():
         raise FileNotFoundError(f"Database not found: {DB_PATH}")
 
@@ -760,10 +1020,10 @@ def main():
 
     init_output_tables(conn)
 
-    # --- Load ---
+    # Load
     docs, metadata, excluded_terms = load_corpus(conn)
 
-    # --- LDA ---
+    # LDA
     log.info("-" * 60)
     log.info("TOPIC MODELLING (LDA)")
     log.info("-" * 60)
@@ -772,21 +1032,21 @@ def main():
         excluded_terms=excluded_terms
     )
 
-    # --- Topic terms ---
+    # Topic terms
     topic_terms = extract_topic_terms(lda, vocab, np)
 
-    # Log top terms per topic
+    # Log top terms per topic for manual inspection
     for t in range(N_TOPICS):
         terms = [r["term"] for r in topic_terms if r["topic_id"] == t and r["rank"] <= 8]
         log.info(f"  Topic {t:>2}: {', '.join(terms)}")
 
-    # --- Document-topic assignments + PCA ---
+    # Document-topic assignments + PCA
     log.info("-" * 60)
     log.info("DOCUMENT-TOPIC ASSIGNMENTS + PCA")
     log.info("-" * 60)
     doc_topics = compute_document_topics(doc_topic_matrix, metadata, np, PCA)
 
-    # --- Topic audience profiles ---
+    # Topic audience profiles
     log.info("-" * 60)
     log.info("TOPIC AUDIENCE PROFILES")
     log.info("-" * 60)
@@ -805,13 +1065,13 @@ def main():
                  f"share={p['client_share']:.2f}  "
                  f"terms: {', '.join(terms)}")
 
-    # --- Collocate divergence (from 02 outputs) ---
+    # Collocate divergence (from 02 outputs)
     log.info("-" * 60)
     log.info("COLLOCATE DIVERGENCE (from 02_step1_frequency.py)")
     log.info("-" * 60)
     divergences = compute_collocate_divergence(conn)
 
-    # --- Step 2 sampling ---
+    # Step 2 sampling
     log.info("-" * 60)
     log.info("STEP 2 SAMPLING STRATEGY")
     log.info("-" * 60)
@@ -834,9 +1094,7 @@ def main():
                      f"div={s['collocate_divergence']:.3f}  "
                      f"{s['domain']}")
 
-    # -----------------------------------------------------------------------
     # Save everything
-    # -----------------------------------------------------------------------
     log.info("-" * 60)
     log.info("Saving results to database...")
 
@@ -852,9 +1110,6 @@ def main():
     save_step2_sample(conn, sample)
     log.info(f"  step2_sample           : {len(sample):,} rows")
 
-    # -----------------------------------------------------------------------
-    # Summary
-    # -----------------------------------------------------------------------
     log.info("=" * 60)
     log.info("TOPIC MODELLING & SAMPLING COMPLETE")
     log.info("Query examples:")
@@ -870,14 +1125,9 @@ def main():
     log.info("")
     log.info("  -- Step 2 sample (ranked by analytical interest):")
     log.info("  SELECT s.priority_rank, s.page_id, s.audience, s.domain,")
-    log.info("         s.dominant_topic, s.collocate_divergence, c.url")
+    log.info("         s.dominant_topic, s.collocate_divergence, s.sampling_reason")
     log.info("  FROM step2_sample s")
-    log.info("  JOIN corpus_view c ON c.page_id = s.page_id")
     log.info("  ORDER BY s.priority_rank LIMIT 30;")
-    log.info("")
-    log.info("  -- PCA coordinates for visualisation:")
-    log.info("  SELECT page_id, audience, domain, pca_1, pca_2, dominant_topic")
-    log.info("  FROM document_topics;")
     log.info("=" * 60)
 
     conn.close()
