@@ -88,6 +88,7 @@ Fixes applied over v1:
   - Extended ARTIFACT_TERMS covers residual noise terms from v1
 """
 
+import math
 import sqlite3
 import logging
 from pathlib import Path
@@ -160,6 +161,38 @@ FONT_ANNOT = {"fontsize":  8, "color": C_SUBTEXT}
 logging.basicConfig(level=logging.INFO,
                     format="%(asctime)s  %(levelname)-8s  %(message)s")
 log = logging.getLogger(__name__)
+
+# ---------------------------------------------------------------------------
+# Hypothesis vocabulary for register scatter (fig_register_scatter)
+# ---------------------------------------------------------------------------
+# Each entry: display label → {terms, color, marker}
+# Matches the HYPOTHESIS_TERMS vocabulary in 02c_step1_topics.py.
+# Color logic: H1a terms should appear BELOW the y=x diagonal (more B2W);
+# H1b terms should appear ABOVE (more B2B); H1c terms may straddle both.
+C_H1C = "#E67E22"   # orange for H1c — neither client nor worker color
+
+HYPOTHESIS_VOCAB = {
+    "H1a — Labour visibility": {
+        "terms": {"worker", "labour", "task", "job", "earn", "pay", "payment",
+                  "annotator", "gig", "contractor", "wage", "labeller",
+                  "freelance", "income"},
+        "color":  C_WORKER,
+        "marker": "o",
+    },
+    "H1b — Automation myth": {
+        "terms": {"autonomous", "machine", "automate", "automation", "algorithm",
+                  "pipeline", "deploy", "inference", "neural", "llm",
+                  "intelligent", "scalable"},
+        "color":  C_CLIENT,
+        "marker": "s",
+    },
+    "H1c — Strategic hypervisibility": {
+        "terms": {"human", "quality", "oversight", "annotation", "label",
+                  "expert", "accuracy", "datum", "review", "verification"},
+        "color":  C_H1C,
+        "marker": "^",
+    },
+}
 
 
 # ---------------------------------------------------------------------------
@@ -940,6 +973,162 @@ def fig_theory_cooccurrence(conn, style):
 
 
 # ---------------------------------------------------------------------------
+# Figure S1: Register gap scatter
+# ---------------------------------------------------------------------------
+
+def fig_register_scatter(conn, style):
+    """
+    Figure S1 — Register gap scatter: all unigrams by B2B vs B2W relative frequency.
+
+    Plots every unigram in keyness_results as a dot on a log-log scale:
+      x-axis: log10(relative frequency in B2W — worker)
+      y-axis: log10(relative frequency in B2B — client)
+
+    The y = x diagonal marks equal frequency in both registers.
+    Terms above the diagonal are B2B-distinctive (more frequent in client texts);
+    terms below are B2W-distinctive (more frequent in worker texts).
+
+    Hypothesis vocabulary terms are highlighted with distinct shapes and colours:
+      H1a (labour visibility): red circles — predicted to fall BELOW diagonal
+        (pay, earn, task should appear more in B2W)
+      H1b (automation myth): blue squares — predicted to fall ABOVE diagonal
+        (autonomous, algorithm, deploy should appear more in B2B)
+      H1c (hypervisibility): orange triangles — may straddle both registers
+        because human, quality, oversight appear in both but differently framed
+
+    Why this figure matters:
+      Figures 1 and 3 show the TOP 20 terms per register — necessarily a
+      curated selection.  This figure plots the FULL vocabulary (thousands of
+      terms) so the analyst and reader can see that the register differentiation
+      is not cherry-picked but systematic: hypothesis vocabulary consistently
+      falls in the predicted regions of the frequency space.
+
+    Terms with zero frequency in one register are plotted at the epsilon floor
+    (0.001 per 1,000 tokens) — they appear as a band along the left or
+    bottom edge, showing strong register exclusivity.
+
+    Saves to: figS1_register_scatter_{style}.png
+    """
+    log.info(f"Figure S1 — Register gap scatter ({style})")
+
+    all_rows = conn.execute(f"""
+        SELECT term, rel_freq_client, rel_freq_worker
+        FROM keyness_results
+        WHERE comparison = 'cross_platform'
+          AND term_type = 'unigram'
+          AND term NOT IN ({_ph()})
+    """, list(ARTIFACT_TERMS)).fetchall()
+
+    if not all_rows:
+        log.warning("  No keyness data — skipping register scatter.")
+        return
+
+    # Build flat lookup: term → hypothesis config (first match wins)
+    term_to_hyp = {}
+    for hyp_key, cfg in HYPOTHESIS_VOCAB.items():
+        for t in cfg["terms"]:
+            if t not in term_to_hyp:
+                term_to_hyp[t] = (hyp_key, cfg)
+
+    # Separate background from hypothesis-highlighted terms
+    EPS = 0.001   # floor to avoid log10(0)
+    bg_x, bg_y = [], []
+    hyp_data = {k: {"x": [], "y": [], "labels": []} for k in HYPOTHESIS_VOCAB}
+
+    for row in all_rows:
+        xv = math.log10(max(row["rel_freq_worker"], EPS))
+        yv = math.log10(max(row["rel_freq_client"],  EPS))
+        if row["term"] in term_to_hyp:
+            hyp_key, _ = term_to_hyp[row["term"]]
+            hyp_data[hyp_key]["x"].append(xv)
+            hyp_data[hyp_key]["y"].append(yv)
+            hyp_data[hyp_key]["labels"].append(row["term"])
+        else:
+            bg_x.append(xv)
+            bg_y.append(yv)
+
+    bg_colour = C_BG_PUB if style == "pub" else C_BG_EXP
+    fig, ax = plt.subplots(figsize=(12, 10), facecolor=bg_colour)
+    ax.set_facecolor(bg_colour)
+
+    # Layer 0: all background terms — small, grey, transparent
+    ax.scatter(bg_x, bg_y, s=7, color=C_GRID, alpha=0.30,
+               edgecolors="none", zorder=1)
+
+    # Diagonal y = x reference line
+    all_x = bg_x + [v for d in hyp_data.values() for v in d["x"]]
+    all_y = bg_y + [v for d in hyp_data.values() for v in d["y"]]
+    if all_x and all_y:
+        lo = min(min(all_x), min(all_y)) - 0.15
+        hi = max(max(all_x), max(all_y)) + 0.15
+        ax.plot([lo, hi], [lo, hi], color=C_SUBTEXT, linewidth=1.0,
+                linestyle="--", alpha=0.55, zorder=2)
+
+    # Layer 1: hypothesis terms — larger, coloured, labelled
+    for hyp_key, cfg in HYPOTHESIS_VOCAB.items():
+        layer = hyp_data[hyp_key]
+        if not layer["x"]:
+            continue
+        ax.scatter(layer["x"], layer["y"],
+                   s=70, color=cfg["color"], alpha=0.92,
+                   edgecolors="white", linewidths=0.6,
+                   marker=cfg["marker"], zorder=4)
+        for xv, yv, lbl in zip(layer["x"], layer["y"], layer["labels"]):
+            ax.annotate(lbl, (xv, yv), fontsize=7.5,
+                        color=cfg["color"], fontweight="bold",
+                        textcoords="offset points", xytext=(5, 4),
+                        zorder=5)
+
+    # Directional region labels
+    ylo, yhi = ax.get_ylim()
+    xlo, xhi = ax.get_xlim()
+    ax.text(0.97, 0.03, "← more B2W-distinctive →",
+            transform=ax.transAxes, ha="right", va="bottom",
+            fontsize=8.5, color=C_WORKER, style="italic", alpha=0.75)
+    ax.text(0.03, 0.97, "← more B2B-distinctive →",
+            transform=ax.transAxes, ha="left", va="top",
+            fontsize=8.5, color=C_CLIENT, style="italic", alpha=0.75,
+            rotation=90)
+
+    ax.set_xlabel("log₁₀(relative frequency in B2W — worker register)",
+                  **FONT_LABEL)
+    ax.set_ylabel("log₁₀(relative frequency in B2B — client register)",
+                  **FONT_LABEL)
+    ax.xaxis.grid(True, color=C_GRID, linewidth=0.4, linestyle=":")
+    ax.yaxis.grid(True, color=C_GRID, linewidth=0.4, linestyle=":")
+    apply_base_style(ax, bg_colour)
+
+    # Legend
+    legend_entries = [
+        plt.Line2D([0], [0], color=C_SUBTEXT, linestyle="--", alpha=0.6,
+                   label="Equal frequency (y = x)"),
+        plt.Line2D([0], [0], marker="o", color="w",
+                   markerfacecolor=C_GRID, markersize=7, alpha=0.6,
+                   label=f"All terms (n={len(bg_x)+sum(len(d['x']) for d in hyp_data.values()):,})"),
+    ]
+    for hyp_key, cfg in HYPOTHESIS_VOCAB.items():
+        short = hyp_key.split("—")[0].strip()
+        legend_entries.append(
+            plt.Line2D([0], [0], marker=cfg["marker"], color="w",
+                       markerfacecolor=cfg["color"], markersize=9,
+                       label=short)
+        )
+    ax.legend(handles=legend_entries, loc="upper left", frameon=True,
+              fontsize=8.5, facecolor=bg_colour, edgecolor=C_GRID)
+
+    ax.set_title(
+        "Register Gap: Full Vocabulary Distribution by Audience Frequency",
+        **FONT_TITLE, pad=12)
+    fig.text(
+        0.5, -0.02,
+        "Each dot = one unigram  •  Above diagonal = B2B-distinctive  •  "
+        "Below = B2W-distinctive  •  "
+        "Hypothesis vocabulary should cluster in predicted regions",
+        ha="center", **FONT_ANNOT)
+    save(fig, "figS1_register_scatter", style)
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
@@ -974,6 +1163,7 @@ def main():
         fig_within_pair(conn, style)
         fig_platform_heatmap(conn, style)
         fig_theory_cooccurrence(conn, style)
+        fig_register_scatter(conn, style)   # NEW: full vocabulary register gap
 
     conn.close()
     log.info("=" * 60)

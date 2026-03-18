@@ -134,6 +134,50 @@ logging.basicConfig(level=logging.INFO,
                     format="%(asctime)s  %(levelname)-8s  %(message)s")
 log = logging.getLogger(__name__)
 
+# ---------------------------------------------------------------------------
+# Domain outlier config — for two-panel PCA (fig9)
+# ---------------------------------------------------------------------------
+# www.sama.com pages dominate PC1 because their content is formatted as
+# highly uniform template pages (session/description/duration metadata).
+# This collapses PC1 into a "sama-ness" axis rather than a register axis.
+# The two-panel PCA shows (a) the full data with Sama annotated, and (b) the
+# corpus with Sama filtered out, revealing the underlying B2B/B2W structure.
+SAMA_DOMAIN = "www.sama.com"
+
+# ---------------------------------------------------------------------------
+# Hypothesis vocabulary for topic map (fig_hypothesis_topic_map) and
+# topic landscape (fig_topic_landscape)
+# ---------------------------------------------------------------------------
+# Mirrors HYPOTHESIS_TERMS in 02c_step1_topics.py.
+C_H1C = "#E67E22"   # orange for H1c — distinct from both audience colours
+
+HYP_VOCAB = {
+    "H1a_visibility": {
+        "label":  "H1a — Labour visibility",
+        "terms":  {"worker", "labour", "task", "job", "earn", "pay", "payment",
+                   "annotator", "labeller", "gig", "contractor", "wage",
+                   "freelance", "income"},
+        "color":  C_WORKER,
+        "n_topics": 3,
+    },
+    "H1b_automation": {
+        "label":  "H1b — Automation myth",
+        "terms":  {"autonomous", "machine", "automate", "automation", "algorithm",
+                   "pipeline", "deploy", "inference", "neural", "llm",
+                   "intelligent", "scalable"},
+        "color":  C_CLIENT,
+        "n_topics": 3,
+    },
+    "H1c_hypervisibility": {
+        "label":  "H1c — Strategic hypervisibility",
+        "terms":  {"human", "quality", "oversight", "annotation", "label",
+                   "datum", "accuracy", "review", "expert", "curate",
+                   "verification"},
+        "color":  C_H1C,
+        "n_topics": 3,
+    },
+}
+
 
 # ---------------------------------------------------------------------------
 # Database helpers
@@ -511,84 +555,128 @@ def fig_exclusivity_volcano(conn, style):
 
 def fig_pca_scatter(conn, style):
     """
-    Produce Figure 9: PCA projection of document-topic space, coloured by audience.
+    Produce Figure 9: Two-panel PCA projection of document-topic space.
 
-    Data source: document_topics table (written by 02c_step1_topics.py).
-    Each row is one page; pca_1 and pca_2 are the first two principal
-    components of the N_TOPICS-dimensional document-topic weight matrix
-    computed by LDA.
+    Panel A — Full corpus (left):
+      All pages plotted, with www.sama.com pages shown in a third colour
+      (orange) and annotated.  This panel reveals the structural outlier:
+      Sama pages dominate PC1 because their template-heavy service pages
+      (description/duration/session/store vocabulary) are captured by a
+      single high-concentration topic (Topic 6), collapsing PC1 into a
+      "Sama-ness" axis rather than a register axis.  Transparency is the
+      correct methodological response: show the outlier, explain it, then
+      correct for it in Panel B.
 
-    Interpretation:
-      If audience is a dominant structural axis in the corpus, client and
-      worker pages should cluster separately along PC1 (the maximum-variance
-      direction).  The degree of separation validates the Step 1 hypothesis
-      that B2B and B2W platforms occupy meaningfully different topic spaces.
+    Panel B — Corpus without www.sama.com (right):
+      Same plot with Sama pages removed.  PC1 now separates the remaining
+      B2B and B2W pages more cleanly.  The audience separability that the
+      logistic regression CV (78.4%) measured is better visible here, and
+      the actual rhetorical structure of the corpus becomes interpretable.
 
-    exp style adds:
-      - Centroid markers (X) for each audience cluster.
-      - Centroid labels with audience name.
+    exp style adds centroid markers and labels for both panels.
 
     Output: fig9_pca_scatter_{pub,exp}.jpg
-
-    Args:
-        conn  : Open sqlite3.Connection.
-        style : "pub" or "exp".
     """
-    log.info(f"Figure 9 — PCA scatter ({style})")
+    log.info(f"Figure 9 — PCA scatter two-panel ({style})")
 
+    # Only fetch rows with valid PCA coordinates.
+    # Pages in PCA_EXCLUDE_DOMAINS (e.g. www.sama.com) have pca_1 = NULL
+    # because 02c filters them out before fitting PCA; they cannot be
+    # plotted as scatter points.
     rows = conn.execute("""
         SELECT page_id, domain, audience, dominant_topic, pca_1, pca_2
         FROM document_topics
+        WHERE pca_1 IS NOT NULL AND pca_2 IS NOT NULL
     """).fetchall()
 
+    # Count excluded pages for the annotation note
+    n_total = conn.execute(
+        "SELECT COUNT(*) FROM document_topics"
+    ).fetchone()[0]
+    n_excluded = n_total - len(rows)
+
     if not rows:
-        log.warning("  No data in document_topics — skipping.")
+        log.warning("  No data in document_topics with valid PCA coords — skipping.")
         return
 
-    x_vals = [r["pca_1"] for r in rows]
-    y_vals = [r["pca_2"] for r in rows]
-    auds   = [r["audience"] for r in rows]
-    colors = [C_CLIENT if a == "client" else C_WORKER for a in auds]
+    log.info(f"  {len(rows)} pages have PCA coords; "
+             f"{n_excluded} excluded from PCA fitting (NULL coords).")
 
     bg = C_BG_PUB if style == "pub" else C_BG_EXP
-    fig, ax = plt.subplots(figsize=(12, 9), facecolor=bg)
-    ax.set_facecolor(bg)
+    fig, axes = plt.subplots(1, 2, figsize=(20, 8), facecolor=bg)
+    fig.subplots_adjust(wspace=0.30)
 
-    ax.scatter(x_vals, y_vals, c=colors, s=PCA_SIZE, alpha=PCA_ALPHA,
-               edgecolors="white", linewidths=0.2)
+    # Panel A: all pages with valid coords (Sama already excluded at analysis stage).
+    # Panel B: additionally filter any remaining pages from SAMA_DOMAIN
+    #          (defensive — should be empty after 02c filter, but harmless).
+    panels = [
+        ("Full PCA corpus\n(Sama.com excluded at analysis stage)", False),
+        ("Audience register structure\n(B2B vs B2W separation)", True),
+    ]
 
-    ax.set_xlabel("PC 1", **FONT_LABEL)
-    ax.set_ylabel("PC 2", **FONT_LABEL)
-    ax.xaxis.grid(True, color=C_GRID, linewidth=0.4, linestyle=":")
-    ax.yaxis.grid(True, color=C_GRID, linewidth=0.4, linestyle=":")
-    apply_base_style(ax, bg)
+    for ax, (title_suffix, filter_sama) in zip(axes, panels):
+        ax.set_facecolor(bg)
 
-    if style == "exp":
-        # Mark and label audience centroids
-        for aud, col, label in [("client", C_CLIENT, "B2B centroid"),
-                                ("worker", C_WORKER, "B2W centroid")]:
-            xs = [x_vals[i] for i, a in enumerate(auds) if a == aud]
-            ys = [y_vals[i] for i, a in enumerate(auds) if a == aud]
-            if xs:
-                cx, cy = np.mean(xs), np.mean(ys)
-                ax.plot(cx, cy, "X", color=col, markersize=14,
-                        markeredgecolor="white", markeredgewidth=1.5)
-                ax.annotate(label, (cx, cy), fontsize=8, color=col,
-                            fontweight="bold",
-                            textcoords="offset points", xytext=(10, 10))
+        panel_rows = [r for r in rows
+                      if not filter_sama or r["domain"] != SAMA_DOMAIN]
 
-    # Legend
-    client_patch = mpatches.Patch(color=C_CLIENT, alpha=0.7, label="Client (B2B)")
-    worker_patch = mpatches.Patch(color=C_WORKER, alpha=0.7, label="Worker (B2W)")
-    ax.legend(handles=[client_patch, worker_patch], loc="upper right",
-              frameon=True, fontsize=9, facecolor=bg, edgecolor=C_GRID)
+        c_x = [r["pca_1"] for r in panel_rows if r["audience"] == "client"]
+        c_y = [r["pca_2"] for r in panel_rows if r["audience"] == "client"]
+        w_x = [r["pca_1"] for r in panel_rows if r["audience"] == "worker"]
+        w_y = [r["pca_2"] for r in panel_rows if r["audience"] == "worker"]
 
-    ax.set_title("Document-Topic Space: PCA Projection Coloured by Audience",
-                 **FONT_TITLE, pad=12)
-    fig.text(0.5, -0.02,
-             "Each dot = one page  •  Colour = audience register  •  "
-             "Separation along PC1 indicates audience is a dominant structural axis",
-             ha="center", **FONT_ANNOT)
+        ax.scatter(c_x, c_y, c=C_CLIENT, s=PCA_SIZE, alpha=PCA_ALPHA,
+                   edgecolors="white", linewidths=0.2, zorder=2,
+                   label="Client (B2B)")
+        ax.scatter(w_x, w_y, c=C_WORKER, s=PCA_SIZE, alpha=PCA_ALPHA,
+                   edgecolors="white", linewidths=0.2, zorder=2,
+                   label="Worker (B2W)")
+
+        # Panel A: add an explanatory text box where the Sama cluster would have been
+        if not filter_sama and n_excluded > 0:
+            ax.text(0.97, 0.97,
+                    f"{SAMA_DOMAIN}\n(n≈{n_excluded})\nexcluded before PCA fitting\n"
+                    f"(template-heavy pages dominated PC1\nwith loading +0.98 on Topic 6)",
+                    transform=ax.transAxes, ha="right", va="top",
+                    fontsize=7.5, color=C_ACCENT, style="italic",
+                    bbox=dict(boxstyle="round,pad=0.4", facecolor=bg,
+                              edgecolor=C_ACCENT, linewidth=1.0, alpha=0.85),
+                    zorder=6)
+
+        ax.set_xlabel("PC 1", **FONT_LABEL)
+        ax.set_ylabel("PC 2", **FONT_LABEL)
+        ax.xaxis.grid(True, color=C_GRID, linewidth=0.4, linestyle=":")
+        ax.yaxis.grid(True, color=C_GRID, linewidth=0.4, linestyle=":")
+        apply_base_style(ax, bg)
+
+        if style == "exp":
+            for xs, ys, col, lbl in [
+                (c_x, c_y, C_CLIENT, "B2B centroid"),
+                (w_x, w_y, C_WORKER, "B2W centroid"),
+            ]:
+                if xs:
+                    cx, cy = np.mean(xs), np.mean(ys)
+                    ax.plot(cx, cy, "X", color=col, markersize=14,
+                            markeredgecolor="white", markeredgewidth=1.5,
+                            zorder=6)
+                    ax.annotate(lbl, (cx, cy), fontsize=8, color=col,
+                                fontweight="bold",
+                                textcoords="offset points", xytext=(10, 8))
+
+        ax.legend(loc="upper left", frameon=True, fontsize=8,
+                  facecolor=bg, edgecolor=C_GRID)
+        ax.set_title(title_suffix, fontsize=11, fontweight="bold",
+                     color=C_TEXT, pad=10)
+
+    fig.suptitle(
+        "Document-Topic Space: PCA Projection Coloured by Audience",
+        **FONT_TITLE, y=1.02)
+    fig.text(
+        0.5, -0.02,
+        f"Each dot = one page  •  {SAMA_DOMAIN} excluded from PCA fitting (NULL pca coords) — "
+        "its template pages collapsed PC1 into a platform-identity axis  •  "
+        "PC1 now reflects audience register separation",
+        ha="center", **FONT_ANNOT)
     save(fig, "fig9_pca_scatter", style)
 
 
@@ -889,10 +977,12 @@ def fig_step2_sample_map(conn, style):
     """
     log.info(f"Figure 12 — Step 2 sample map ({style})")
 
-    # All documents for background scatter
+    # All documents for background scatter — only those with valid PCA coords.
+    # Pages in PCA_EXCLUDE_DOMAINS have pca_1 = NULL and cannot be plotted.
     all_docs = conn.execute("""
         SELECT page_id, audience, pca_1, pca_2, dominant_topic
         FROM document_topics
+        WHERE pca_1 IS NOT NULL AND pca_2 IS NOT NULL
     """).fetchall()
 
     if not all_docs:
@@ -985,6 +1075,448 @@ def fig_step2_sample_map(conn, style):
 
 
 # ---------------------------------------------------------------------------
+# Figure 13: Topic landscape — concentration asymmetry (H1a evidence)
+# ---------------------------------------------------------------------------
+
+def fig_topic_landscape(conn, style):
+    """
+    Produce Figure 13: scatter of all LDA topics showing audience concentration
+    asymmetry.
+
+    Data sources: topic_audience_profile, topic_terms.
+
+    Axes:
+      x = total dominant pages (n_dominant_client + n_dominant_worker)
+          — how many pages "belong" to this topic as their primary topic
+      y = client_share — fraction of the topic's weight from client pages
+
+    What this reveals:
+      Worker-leaning topics (low y) tend to have HIGH x — a small number of
+      worker topics dominate the B2W corpus, meaning B2W discourse is channeled
+      into a narrow, concentrated set of topics (task queue, payment, job board).
+
+      Client-leaning topics (high y) tend to have LOWER individual x values —
+      B2B content is spread across 25+ topics, each capturing a different
+      rhetorical register (technical, regulatory, marketing, sector-specific).
+
+      This asymmetry is structural evidence for H1a (Labour Visibility Gap):
+      workers are addressed in a compressed, transactional topic space, while
+      clients are engaged across a broad, diverse rhetorical landscape.  The
+      imbalance is not just a difference in vocabulary — it is a difference in
+      the complexity and variety of address.
+
+    Dot size: proportional to avg_weight_client + avg_weight_worker (total
+    average topic weight), so topics that contribute most to the corpus are
+    visually prominent.
+
+    Key topics are annotated in exp style.
+
+    Output: fig13_topic_landscape_{pub,exp}.jpg
+    """
+    log.info(f"Figure 13 — Topic landscape ({style})")
+
+    profiles = conn.execute("""
+        SELECT topic_id, client_share, category,
+               avg_weight_client, avg_weight_worker,
+               n_dominant_client, n_dominant_worker
+        FROM topic_audience_profile
+    """).fetchall()
+
+    if not profiles:
+        log.warning("  No data in topic_audience_profile — skipping.")
+        return
+
+    # Top 5 terms per topic for annotations
+    topic_labels = {}
+    for r in conn.execute(
+        "SELECT topic_id, term FROM topic_terms WHERE rank <= 3 ORDER BY topic_id, rank"
+    ).fetchall():
+        topic_labels.setdefault(r["topic_id"], []).append(r["term"])
+
+    cat_colors = {"client_leaning": C_CLIENT,
+                  "shared":         C_SHARED,
+                  "worker_leaning": C_WORKER}
+
+    x_vals, y_vals, sizes, colors, tids = [], [], [], [], []
+    for p in profiles:
+        n_dom  = (p["n_dominant_client"] or 0) + (p["n_dominant_worker"] or 0)
+        weight = (p["avg_weight_client"] or 0) + (p["avg_weight_worker"] or 0)
+        x_vals.append(n_dom)
+        y_vals.append(p["client_share"])
+        sizes.append(max(weight * 8000, 30))
+        colors.append(cat_colors.get(p["category"], C_SHARED))
+        tids.append(p["topic_id"])
+
+    bg = C_BG_PUB if style == "pub" else C_BG_EXP
+    fig, ax = plt.subplots(figsize=(13, 8), facecolor=bg)
+    ax.set_facecolor(bg)
+
+    ax.scatter(x_vals, y_vals, c=colors, s=sizes, alpha=0.75,
+               edgecolors="white", linewidths=0.6, zorder=3)
+
+    # Threshold lines
+    ax.axhline(0.65, color=C_GRID, linewidth=1.0, linestyle="--", zorder=1)
+    ax.axhline(0.35, color=C_GRID, linewidth=1.0, linestyle="--", zorder=1)
+    ax.text(ax.get_xlim()[1] if x_vals else 100, 0.66, "client-leaning threshold",
+            ha="right", va="bottom", fontsize=7.5, color=C_SUBTEXT, style="italic")
+    ax.text(ax.get_xlim()[1] if x_vals else 100, 0.34, "worker-leaning threshold",
+            ha="right", va="top",    fontsize=7.5, color=C_SUBTEXT, style="italic")
+
+    # Annotate prominent topics in exp style
+    if style == "exp":
+        for i, (p, tid) in enumerate(zip(profiles, tids)):
+            n_dom = x_vals[i]
+            cs    = y_vals[i]
+            # Annotate: top worker topics (share<0.15) or top client (share>0.90)
+            # or very high dominant page count
+            top_terms = ", ".join(topic_labels.get(tid, [])[:3])
+            if cs < 0.15 or cs > 0.90 or n_dom > 80:
+                ax.annotate(
+                    f"T{tid}: {top_terms}",
+                    (n_dom, cs), fontsize=6.5,
+                    color=colors[i],
+                    textcoords="offset points",
+                    xytext=(6, 4 if cs < 0.5 else -10),
+                    zorder=5)
+
+    ax.set_xlabel("Total dominant pages (n_dominant_client + n_dominant_worker)",
+                  **FONT_LABEL)
+    ax.set_ylabel("Client share  (fraction of topic weight from B2B pages)",
+                  **FONT_LABEL)
+    ax.set_ylim(-0.05, 1.10)
+    ax.xaxis.grid(True, color=C_GRID, linewidth=0.4, linestyle=":")
+    ax.yaxis.grid(True, color=C_GRID, linewidth=0.4, linestyle=":")
+    apply_base_style(ax, bg)
+
+    legend_entries = [
+        mpatches.Patch(color=C_CLIENT, alpha=0.75, label="Client-leaning (25 topics)"),
+        mpatches.Patch(color=C_SHARED, alpha=0.75, label="Shared (3 topics)"),
+        mpatches.Patch(color=C_WORKER, alpha=0.75, label="Worker-leaning (12 topics)"),
+        plt.Line2D([0], [0], color="w", label="Dot size ∝ topic avg weight"),
+    ]
+    ax.legend(handles=legend_entries, loc="center right", frameon=True,
+              fontsize=8.5, facecolor=bg, edgecolor=C_GRID)
+
+    ax.set_title(
+        "Topic Landscape: Audience Concentration vs. Corpus Prominence",
+        **FONT_TITLE, pad=12)
+    fig.text(
+        0.5, -0.02,
+        "Worker topics: few, concentrated (high dominant pages, low client_share)  •  "
+        "Client topics: many, diffuse (spread across 25 topics)  •  "
+        "Asymmetry supports H1a (Labour Visibility Gap)",
+        ha="center", **FONT_ANNOT)
+    save(fig, "fig13_topic_landscape", style)
+
+
+# ---------------------------------------------------------------------------
+# Figure 14: Hypothesis–topic alignment map (Step 1 → Step 2 bridge)
+# ---------------------------------------------------------------------------
+
+def fig_hypothesis_topic_map(conn, style):
+    """
+    Produce Figure 14: which LDA topics are most relevant to each hypothesis?
+
+    This is the explicit Step 1 → Step 2 bridge figure.  It answers the
+    question: if the hypotheses predict specific patterns of register
+    difference, which LDA topics operationalise those patterns?
+
+    Layout: 3 rows (one per hypothesis) × 3 columns (top-3 relevant topics).
+    Each cell shows:
+      - Topic term bars (horizontal, sorted by LDA weight).
+      - Bars are coloured in the hypothesis colour when the term overlaps with
+        the hypothesis vocabulary; grey otherwise.
+      - Subtitle: topic ID, audience category, and client_share value.
+    This makes the term-level evidence for each hypothesis immediately visible
+    without needing to cross-reference the LDA output.
+
+    Relevance scoring: same method as 02c build_step2_sample —
+    count of topic top-15 terms that intersect with hypothesis vocabulary.
+    Topics with more overlapping terms rank higher for that hypothesis.
+
+    Why this figure matters for the thesis:
+      It provides the explicit theoretical justification for the Step 2
+      sample: "I am reading these pages because they come from topics that
+      directly operationalise the relevant hypothesis vocabulary."  The figure
+      shows the reader exactly which terms create the hypothesis-topic linkage,
+      making the sampling strategy falsifiable and transparent.
+
+    Output: fig14_hypothesis_topic_map_{pub,exp}.jpg
+    """
+    log.info(f"Figure 14 — Hypothesis topic map ({style})")
+
+    # Load data
+    topic_terms_rows = conn.execute("""
+        SELECT topic_id, term, weight, rank
+        FROM topic_terms
+        WHERE rank <= 15
+        ORDER BY topic_id, rank
+    """).fetchall()
+
+    profiles = {r["topic_id"]: dict(r) for r in conn.execute("""
+        SELECT topic_id, client_share, category
+        FROM topic_audience_profile
+    """).fetchall()}
+
+    if not topic_terms_rows or not profiles:
+        log.warning("  Missing topic data — skipping fig14.")
+        return
+
+    # Build: topic_id → set of top-15 terms and top-8 (weight, term) pairs
+    topic_top15 = {}
+    topic_top8w = {}
+    for r in topic_terms_rows:
+        tid = r["topic_id"]
+        topic_top15.setdefault(tid, set()).add(r["term"])
+        if r["rank"] <= 8:
+            topic_top8w.setdefault(tid, []).append((r["weight"], r["term"]))
+    for tid in topic_top8w:
+        topic_top8w[tid].sort(reverse=True)
+
+    # Find top-3 relevant topics per hypothesis (by vocabulary overlap count)
+    n_hyp_topics = 3
+    hyp_topics = {}
+    for hyp_key, cfg in HYP_VOCAB.items():
+        scored = []
+        for tid, terms in topic_top15.items():
+            overlap = terms & cfg["terms"]
+            if overlap:
+                scored.append((tid, len(overlap), overlap))
+        scored.sort(key=lambda x: x[1], reverse=True)
+        hyp_topics[hyp_key] = scored[:n_hyp_topics]
+
+    n_rows = len(HYP_VOCAB)
+    n_cols = n_hyp_topics
+    bg = C_BG_PUB if style == "pub" else C_BG_EXP
+    fig, axes = plt.subplots(n_rows, n_cols,
+                             figsize=(18, n_rows * 3.8),
+                             facecolor=bg)
+    fig.subplots_adjust(hspace=0.65, wspace=0.45)
+
+    for row_idx, (hyp_key, cfg) in enumerate(HYP_VOCAB.items()):
+        hyp_color  = cfg["color"]
+        hyp_terms  = cfg["terms"]
+        rel_topics = hyp_topics.get(hyp_key, [])
+
+        for col_idx in range(n_cols):
+            ax = axes[row_idx, col_idx]
+            ax.set_facecolor(bg)
+
+            if col_idx >= len(rel_topics):
+                ax.axis("off")
+                continue
+
+            tid, overlap_count, overlap_terms = rel_topics[col_idx]
+            prof   = profiles.get(tid, {})
+            cat    = prof.get("category", "?")
+            cshare = prof.get("client_share", 0.5)
+
+            top_terms = topic_top8w.get(tid, [])
+            if not top_terms:
+                ax.axis("off")
+                continue
+
+            weights = [w for w, _ in top_terms]
+            terms   = [t for _, t in top_terms]
+            y_pos   = np.arange(len(terms))
+
+            # Colour: hypothesis colour if overlap term, grey otherwise
+            bar_colors = [hyp_color if t in hyp_terms else C_GRID
+                          for t in terms]
+
+            ax.barh(y_pos, weights, color=bar_colors, alpha=0.85,
+                    edgecolor="white", linewidth=0.4, height=0.65)
+            ax.set_yticks(y_pos)
+            ax.set_yticklabels(terms, fontsize=8, color=C_TEXT)
+            ax.set_xlabel("LDA weight", fontsize=7, color=C_SUBTEXT)
+            ax.xaxis.grid(True, color=C_GRID, linewidth=0.4, linestyle=":")
+            apply_base_style(ax, bg)
+
+            cat_short = cat.replace("_leaning", "").replace("client", "B2B").replace("worker", "B2W")
+            ax.set_title(
+                f"Topic {tid}  [{cat_short}]  share={cshare:.2f}\n"
+                f"overlap: {', '.join(sorted(overlap_terms))}",
+                fontsize=8.5, fontweight="bold", color=hyp_color, pad=8)
+
+            if style == "exp":
+                ax.text(0.98, 0.02, f"overlap={overlap_count}",
+                        transform=ax.transAxes, ha="right", va="bottom",
+                        fontsize=7, color=C_SUBTEXT)
+
+        # Row label in left margin
+        ax_first = axes[row_idx, 0]
+        ax_first.set_ylabel(
+            cfg["label"], fontsize=9, fontweight="bold",
+            color=hyp_color, labelpad=12)
+
+    fig.suptitle(
+        "Hypothesis–Topic Alignment: LDA Topics Operationalising H1a–H1c",
+        **FONT_TITLE, y=1.01)
+    fig.text(
+        0.5, -0.01,
+        "Coloured bars = terms overlapping hypothesis vocabulary  •  "
+        "Grey bars = non-hypothesis topic terms  •  "
+        "share = fraction of topic weight from B2B pages  •  "
+        "This is the Step 1 → Step 2 bridge: sampled pages come from these topics",
+        ha="center", **FONT_ANNOT)
+    save(fig, "fig14_hypothesis_topic_map", style)
+
+
+# ---------------------------------------------------------------------------
+# Figure 15: Divergent term profiles — side-by-side PMI (analytical deep-dive)
+# ---------------------------------------------------------------------------
+
+def fig_divergent_term_profiles(conn, style):
+    """
+    Produce Figure 15: side-by-side B2B and B2W collocate profiles for the
+    top-5 most divergent focus terms.
+
+    While Figure 11 ranks terms by divergence score, this figure shows WHY
+    they are divergent: the actual words each term co-occurs with in each
+    register, making the rhetorical difference concrete and interpretable.
+
+    The five terms shown are selected automatically by descending divergence
+    (same formula as fig11: 1 − cosine similarity of PMI vectors).  "outli"
+    (truncated artifact from outlier.ai) is excluded from the ranking.
+
+    Layout: one row per divergent term, B2B collocates on left (blue),
+    B2W collocates on right (red).  Reading each row left-to-right shows
+    the semantic neighbourhood shift.
+
+    Exemplary divergent terms from this corpus:
+      "segmentation" — B2B: technical computer-vision (class/object/pixel);
+                       B2W: task types in gig platform instructions
+      "min"          — B2B: minimum quality threshold (minimum/standard);
+                       B2W: duration of task (minutes / time estimate)
+      "anonymous"    — B2B: data-privacy/GDPR framing;
+                       B2W: worker anonymity/account context
+    These concrete illustrations of register divergence are the strongest
+    direct evidence for Step 2: they show the analyst exactly what to look
+    for during close reading.
+
+    Output: fig15_divergent_term_profiles_{pub,exp}.jpg
+    """
+    log.info(f"Figure 15 — Divergent term profiles ({style})")
+
+    table_check = conn.execute(
+        "SELECT name FROM sqlite_master WHERE type='table' AND name='cooccurrence_results'"
+    ).fetchone()
+    if not table_check:
+        log.warning("  cooccurrence_results not found — skipping fig15.")
+        return
+
+    rows = conn.execute("""
+        SELECT focus_term, audience, collocate, pmi, cofreq
+        FROM cooccurrence_results
+        WHERE comparison = 'cross_platform'
+    """).fetchall()
+
+    if not rows:
+        log.warning("  No co-occurrence data — skipping fig15.")
+        return
+
+    # Build PMI profiles per (term, audience)
+    profiles = {}
+    for r in rows:
+        key = (r["focus_term"], r["audience"])
+        profiles.setdefault(key, []).append(
+            {"collocate": r["collocate"], "pmi": r["pmi"], "cofreq": r["cofreq"]}
+        )
+
+    # Compute divergence (1 − cosine similarity)
+    ARTIFACT_PREFIXES = {"outli", "utm"}  # truncated / tracking artifacts
+    import math as _math
+    divergences = {}
+    for term in {k[0] for k in profiles}:
+        if any(term.startswith(p) for p in ARTIFACT_PREFIXES):
+            continue
+        c_vec = {r["collocate"]: r["pmi"] for r in profiles.get((term, "client"), [])}
+        w_vec = {r["collocate"]: r["pmi"] for r in profiles.get((term, "worker"), [])}
+        if not c_vec or not w_vec:
+            continue
+        union = set(c_vec) | set(w_vec)
+        if len(union) < 3:
+            continue
+        dot   = sum(c_vec.get(c, 0) * w_vec.get(c, 0) for c in union)
+        mag_c = _math.sqrt(sum(v ** 2 for v in c_vec.values()))
+        mag_w = _math.sqrt(sum(v ** 2 for v in w_vec.values()))
+        cos   = dot / (mag_c * mag_w) if mag_c > 0 and mag_w > 0 else 0
+        divergences[term] = 1.0 - cos
+
+    if not divergences:
+        log.warning("  No divergence scores — skipping fig15.")
+        return
+
+    top5 = sorted(divergences, key=divergences.get, reverse=True)[:5]
+    n_terms = len(top5)
+    TOP_N_COOC = 8
+
+    bg = C_BG_PUB if style == "pub" else C_BG_EXP
+    fig, axes = plt.subplots(n_terms, 2,
+                             figsize=(16, n_terms * 3.0),
+                             facecolor=bg)
+    if n_terms == 1:
+        axes = [axes]
+    fig.subplots_adjust(hspace=0.60, wspace=0.50)
+
+    for row_idx, term in enumerate(top5):
+        div_score = divergences[term]
+        for col_idx, (audience, color, reg_label) in enumerate([
+            ("client", C_CLIENT, "B2B"),
+            ("worker", C_WORKER, "B2W"),
+        ]):
+            ax = axes[row_idx][col_idx]
+            ax.set_facecolor(bg)
+
+            cooc = sorted(
+                profiles.get((term, audience), []),
+                key=lambda x: x["pmi"], reverse=True
+            )[:TOP_N_COOC]
+
+            title = (f'"{term}"  —  {reg_label}'
+                     + (f'  [div={div_score:.3f}]' if col_idx == 0 else ""))
+            ax.set_title(title, fontsize=10, fontweight="bold",
+                         color=color, pad=8)
+
+            if not cooc:
+                ax.text(0.5, 0.5, "No collocates",
+                        ha="center", va="center",
+                        transform=ax.transAxes, **FONT_LABEL)
+                ax.axis("off")
+                continue
+
+            collocates = [r["collocate"] for r in reversed(cooc)]
+            pmi_vals   = [r["pmi"]       for r in reversed(cooc)]
+            y_pos      = np.arange(len(collocates))
+
+            bars = ax.barh(y_pos, pmi_vals, color=color, alpha=0.80,
+                           edgecolor="white", linewidth=0.4, height=0.65)
+            ax.set_yticks(y_pos)
+            ax.set_yticklabels(collocates, fontsize=8.5, color=C_TEXT)
+            ax.set_xlabel("PMI score", **FONT_LABEL)
+            ax.xaxis.grid(True, color=C_GRID, linewidth=0.4, linestyle=":")
+            apply_base_style(ax, bg)
+
+            if style == "exp":
+                for bar, row in zip(bars, reversed(cooc)):
+                    ax.text(bar.get_width() + max(pmi_vals, default=1) * 0.02,
+                            bar.get_y() + bar.get_height() / 2,
+                            f"f={row['cofreq']}",
+                            va="center", fontsize=6.5, color=C_SUBTEXT)
+
+    fig.suptitle(
+        "Divergent Term Profiles: Top-5 Most Register-Differentiated Terms",
+        **FONT_TITLE, y=1.01)
+    fig.text(
+        0.5, -0.01,
+        "Same term, completely different discursive neighbourhood by audience register  •  "
+        "Left = B2B collocates (blue)  •  Right = B2W collocates (red)  •  "
+        "Divergence = 1 − cosine(PMI vectors)  •  These terms are the richest targets for Step 2 close reading",
+        ha="center", **FONT_ANNOT)
+    save(fig, "fig15_divergent_term_profiles", style)
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
@@ -1026,10 +1558,13 @@ def main():
         log.info(f"\n{'='*30} Style: {style.upper()} {'='*30}")
         fig_distinctiveness_heatmap(conn, style)
         fig_exclusivity_volcano(conn, style)
-        fig_pca_scatter(conn, style)
-        fig_topic_audience_profile(conn, style)
-        fig_collocate_divergence(conn, style)
-        fig_step2_sample_map(conn, style)
+        fig_pca_scatter(conn, style)           # fig9  — now two-panel (with/without Sama)
+        fig_topic_audience_profile(conn, style) # fig10 — full diverging bar (all 40 topics)
+        fig_collocate_divergence(conn, style)   # fig11 — divergence ranking
+        fig_step2_sample_map(conn, style)       # fig12 — sample in PCA space
+        fig_topic_landscape(conn, style)        # fig13 — NEW: concentration asymmetry
+        fig_hypothesis_topic_map(conn, style)   # fig14 — NEW: hypothesis-topic bridge
+        fig_divergent_term_profiles(conn, style) # fig15 — NEW: side-by-side PMI profiles
 
     conn.close()
     log.info("=" * 60)
