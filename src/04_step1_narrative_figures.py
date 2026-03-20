@@ -63,13 +63,13 @@ EXT        = "jpg"    # "png" for lossless, "pdf" for vector
 
 # ── toggle figures ─────────────────────────────────────────────────────────────
 FIGURES = {
-    "f1_vocab_terrain":       True,
-    "f2_exclusive_vocab":     True,
+    "f1_vocab_terrain":       False, #True,
+    "f2_exclusive_vocab":     False, #True,
     "f3_shared_divergent":    True,
-    "f4_topic_profiles":      True,
-    "f5_topic_hyp_alignment": True,
-    "f6_document_space":      True,
-    "f7_step2_sample_map":    True,
+    "f4_topic_profiles":      False, #True,
+    "f5_topic_hyp_alignment": False, #True,
+    "f6_document_space":      False, #True,
+    "f7_step2_sample_map":    False, #True,
 }
 
 # ── palette ────────────────────────────────────────────────────────────────────
@@ -98,7 +98,7 @@ F2_TOP_N       = 25     # terms per direction
 F2_LL_MIN      = 10.83  # minimum |LL| (p < 0.001)
 
 # F3 — shared terms, divergent contexts
-F3_TERMS       = ["human", "annotation", "autonomous", "earn"]  # ← edit freely
+F3_TERMS       = ["human", "work", "quality", "earn"]  # ← edit freely
 F3_N_COLLOC    = 8      # collocates per side per term
 F3_MIN_COFREQ  = 5      # minimum co-occurrence frequency
 
@@ -126,7 +126,7 @@ HYP = {
         label  = "H1a — Labour visibility",
         terms  = {"worker", "labour", "task", "job", "earn", "pay", "payment",
                   "annotator", "gig", "contractor", "wage", "labeller",
-                  "freelance", "income"},
+                  "freelance", "income", "work"},
         color  = PAL["b2w"],
         marker = "o",
     ),
@@ -141,7 +141,7 @@ HYP = {
     "H1c": dict(
         label  = "H1c — Strategic hypervisibility",
         terms  = {"human", "quality", "oversight", "annotation", "label",
-                  "expert", "accuracy", "datum", "review", "verification",
+                  "expert", "accuracy", "review", "verification",
                   "curate"},
         color  = PAL["h1c"],
         marker = "^",
@@ -162,7 +162,9 @@ NOISE = {
     "squeeze", "retrofit", "yt", "outli",
     "deciphering", "trafficking", "recap", "ueberwinden", "bildbearbeitung",
     "sicherstellung", "kunst", "human-le", "pto", "generous",
-    "dhanesh", "ramachandram", "outlet", "daniela", "braga", "forbe",
+    "dhanesh", "ramachandram", "outlet", "daniela", "braga", "forbe", "january", 
+    "february", "march", "abril", "may", "june", "july", "september", "october",
+    "november", "december"
 }
 
 
@@ -338,8 +340,8 @@ def fig_f1_vocab_terrain(conn):
     hi = max(max(xs), max(ys)) + 0.15
     ax.plot([lo, hi], [lo, hi], "--", color=PAL["sub"], linewidth=1.0,
             zorder=1, alpha=0.7, label="Equal usage  (y = x)")
-    ax.set_xlim(0, hi)
-    ax.set_ylim(0, hi)
+    ax.set_xlim(lo, hi)
+    ax.set_ylim(lo, hi)
 
     # ── label top terms by asymmetry × frequency score ─────────────────────
     score = [abs(diff[i]) * math.log10(max(totals[i], 1) + 1)
