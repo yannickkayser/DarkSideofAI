@@ -1,3 +1,4 @@
+/STMAnalysis
 /output
 /outputs
 /data
@@ -8,3 +9,4 @@ __pycache__/
 *.html
 *_report.txt
 *_report.json
+.Rproj.user
