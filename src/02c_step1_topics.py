@@ -186,7 +186,7 @@ MIN_PAGES_PER_DOMAIN = 5
 # Add any domain string here to exclude it from PCA (and from the PCA
 # quality checks that follow it: audience separability test, tail log).
 # The domain_quality table in 02b records the page counts for reference.
-PCA_EXCLUDE_DOMAINS = {"www.sama.com"}
+PCA_EXCLUDE_DOMAINS = {"www.sama.com", "mindy-support.com", "scale.com"}
 
 # ---------------------------------------------------------------------------
 # LDA diagnostic mode
@@ -253,6 +253,23 @@ HYPOTHESIS_TERMS = {
         "n_pages_per_topic_per_audience": 5,
     },
 }
+
+# ---------------------------------------------------------------------------
+# Artifact / noise terms to exclude from LDA vocabulary.
+# These are added to excluded_terms before vectorisation so they cannot
+# contribute to any topic.  Add month names, platform-specific noise,
+# and any other terms identified as artifacts during topic inspection.
+# ---------------------------------------------------------------------------
+EXTRA_STOP_WORDS = {
+    # Calendar noise (from job posting timestamps)
+    "january", "february", "march", "april", "may", "june",
+    "july", "august", "september", "october", "november", "december",
+    "jan", "feb", "mar", "apr", "jun", "jul", "aug", "sep", "oct", "nov", "dec",
+    # Other known artifacts (extend as needed after topic inspection)
+    "cookie", "faq", "subscribe", "website", "youtube",
+    "de", "en", "esp", "la", "du", "và", "có", "viêc"
+}
+
 
 logging.basicConfig(
     level=logging.INFO,
@@ -481,6 +498,9 @@ def load_corpus(conn: sqlite3.Connection) -> tuple:
     log.info("Loading corpus from corpus_view...")
 
     excluded_pages, excluded_terms = load_exclusions(conn)
+    # Merge script-level artifact terms into the excluded set
+    excluded_terms = excluded_terms | EXTRA_STOP_WORDS
+    log.info(f"  EXTRA_STOP_WORDS: {len(EXTRA_STOP_WORDS)} additional terms merged into exclusions.")
 
     rows = conn.execute(f"""
         SELECT page_id, url, audience, domain, unigrams, token_count

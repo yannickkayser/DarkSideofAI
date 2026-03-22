@@ -1,0 +1,77 @@
+========================================================================
+EXPORT B — KWIC concordance: 'datum' in CLIENT texts
+Hypothesis: H1c  |  Context: ±2 sentences
+Generated: 2026-03-20 12:51
+========================================================================
+
+READING NOTES:
+  Scan these concordance lines for recurring patterns.
+  What subjects and objects appear with 'datum'?
+  What verbs frame it? What is the implied agent?
+  Note any lines that surprise you or complicate H1c.
+
+========================================================================
+
+————————————————————————————————————————————————————————————
+Platform: Sama  |  https://www.sama.com/blog/data-annotation-guide
+————————————————————————————————————————————————————————————
+
+  [1]
+      When all or most annotators agree on how to label a specific piece of data, it shows they’re doing their jobs correctly and that you’ve created a schema with little room for error.
+      Here are some data annotation metrics you can use to measure IAA.
+  >>> Percent agreement is a simple measurement of the percentage of your annotators who agree when labeling a sample >>>datum<<<. <<<
+      Although this metric is quick and easy, it’s not the most accurate, as there’s a chance that your annotators are agreeing by coincidence.
+      Cohen’s kappa measures the likelihood that your annotators are agreeing by coincidence.
+
+————————————————————————————————————————————————————————————
+Platform: Mindy support  |  https://mindy-support.com/de/allgemeine-datenschutz-und-eu-gdpr-richtlinie/
+————————————————————————————————————————————————————————————
+
+  [1]
+  >>> Allgemeine Datenschutz- und EU-DSGVO Richtlinie KONTAKT AUFNEHMEN ALLGEMEINE RICHTLINIE ZU DATENSCHUTZ UND EU-DSGVO Einleitung >>>Datum<<< des Inkrafttretens: Mai 11, 2021 Mindy Support („wir“, „uns“ oder „unser“) betreibt die Website https://mindy-support.com (im Folgenden als „Dienst“ bezeichnet). <<<
+      Auf dieser Seite informieren wir Sie über unsere Richtlinien zur Erhebung, Nutzung und Offenlegung personenbezogener Daten bei der Inanspruchnahme unseres Dienstes sowie über die Wahlmöglichkeiten, die Ihnen im Zusammenhang mit diesen Daten zur Verfügung stehen.
+      Mit dieser Richtlinie informieren wir Sie darüber, dass wir in Fällen, in denen wir gesetzlich dazu verpflichtet sind, hinsichtlich der Erhebung, Speicherung, Nutzung, Verarbeitung, Übertragung und Löschung personenbezogener Daten die DSGVO anwenden.
+
+————————————————————————————————————————————————————————————
+Platform: Mindy support  |  https://mindy-support.com/de/hipaa-konformitaet/
+————————————————————————————————————————————————————————————
+
+  [1]
+      Richtlinien und Verfahren müssen bei Bedarf angemessen angepasst werden, um Änderungen in Gesetzen, Standards, Anforderungen und Vorschriften zur Implementierung (einschließlich Änderungen und Modifikationen von Vorschriften) zu entsprechen.
+      Alle Änderungen an Richtlinien oder Verfahren müssen umgehend dokumentiert werden.
+  >>> Sofern sich eine Gesetzesänderung auf diese HIPAA Compliance Richtlinie auswirkt, muss sie zeitnah überarbeitet und zur Verfügung gestellt werden. Änderungen betreffen lediglich die geschützten Gesundheitsinformationen, die nach dem >>>Datum<<< des Inkrafttretens erstellt oder erhalten wurden. <<<
+      Das Unternehmen muss bestimmte Ereignisse und Maßnahmen (einschließlich Autorisierungen, Anfragen nach Auskunft, Sanktionen und Beschwerden) im Zusammenhang mit den Datenschutzrechten einer Person dokumentieren.
+      Die Dokumentation aller Richtlinien und Verfahren, Aktionen, Aktivitäten und Benennungen kann entweder in schriftlicher oder elektronischer Form erfolgen.
+
+  [2]
+      Dieses Formular wird verwendet, um Meldungen über Datenschutzverletzungen zu dokumentieren, indem Mitarbeiter, die den vermuteten Vorfall überprüft oder erhalten haben, es an den HIPAA Datenschutzbeauftragten weiterleiten.
+      Nach Erhalt des Formulars klassifiziert der HIPAA Datenschutzbeauftragte die Schwere des Vorfalls und analysiert die Situation.
+  >>> Die Dokumentation des Vorfalls muss vom Unternehmen mindestens sechs Jahre lang ab dem >>>Datum<<< des gemeldeten Vorfalls aufbewahrt werden. <<<
+      Wenn der HIPAA Datenschutzbeauftragte den Vorfall lösen kann, muss der HIPAA Datenschutzbeauftragte auch die zur Lösung des Vorfalls ergriffenen Maßnahmen im Formular „Vorfallsbericht“ dokumentieren.
+      X.
+
+  [3]
+      Offenlegung de-identifizierter Gesundheitsinformationen Das Unternehmen kann de-identifizierte Gesundheitsinformationen frei nutzen und offenlegen.
+      Bei de-identifizierten Gesundheitsinformationen handelt es sich um Gesundheitsinformationen, die eine Person nicht eindeutig identifizieren und bei denen es keinen vernünftigen Grund zur Annahme gibt, dass sie zur Identifizierung einer Person verwendet werden können.
+  >>> Es gibt zwei Möglichkeiten, wie eine betroffene juristische Person feststellen kann, ob es sich um de-identifizierte Gesundheitsinformationen handelt: durch eine professionelle statistische Analyse oder durch die Abwesenheit 18 spezifischer Identifikatoren. 18 spezifische Identifikatoren für nicht de-identifizierte Gesundheitsinformationen: Namen Geografische Unterteilungen, die kleiner als ein Bundesstaat sind Alle Elemente eines Datums, außer einer Jahresangabe, die sich auf eine Person beziehen, einschließlich >>>Datum<<< der Aufnahme und Entlassung oder >>>Datum<<< der Geburt oder des Todes. <<<
+      Bei Personen über 89 Jahren zählt das Geburtsjahr dazu.
+      Telefonnummern Faxnummern E-Mail Adressen Sozialversicherungsnummer Krankenakten-Nummern Die einer Person durch ihren Krankenversicherungsplan zugewiesene Nummer Kontonummern Zertifikatsnummern / Führerscheinnummern Fahrzeugkennungen und Seriennummern einschließlich Nummernschilder Gerätekennungen und Seriennummern Internet URLs IP-Adressen Biometrische Identifikatoren, einschließlich Finger- und Stimmabdrücke Vollständige Gesichtsfotos und vergleichbare Bilder Jede eindeutige Identifikationsnummer, jedes eindeutige Merkmal oder jeder eindeutige Code Eine fachkompetente Person muss feststellen, dass ein geringes Risiko besteht, dass die de-identifizierten Gesundheitsinformationen allein oder in Kombination mit anderen verfügbaren Informationen von einem voraussichtlichen Empfänger zur Identifizierung der Person verwendet werden könnten.
+
+  [4]
+      Der HIPAA Datenschutzbeauftragte dokumentiert alle Datenschutzvorfälle und vorgenommene Maßnahmen.
+      Die Dokumentation muss eine Beschreibung der Korrekturmaßnahmen (falls erforderlich) oder eine Erklärung, warum Korrekturmaßnahmen nicht erforderlich sind, sowie etwaige Maßnahmen zur Schadensbegrenzung für jeden einzelnen Datenschutzvorfall enthalten.
+  >>> Die gesamte Dokumentation einer Datenschutzverletzung muss beim HIPAA Datenschutzbeauftragten aufbewahrt und mindestens sechs Jahre ab dem >>>Datum<<< der Untersuchung aufbewahrt werden. <<<
+      Die Dokumentation des Vorfalls gilt nicht als Teil der Gesundheitsakte des Teilnehmers.
+      Wenn dem Teilnehmer eine Datenschutzverletzung nicht bekannt ist, untersucht der HIPAA Datenschutzbeauftragte den Vorfall gründlich, bevor er entscheidet, ob der Teilnehmer informiert werden sollte.
+
+————————————————————————————————————————————————————————————
+Platform: Mindy support  |  https://mindy-support.com/de/news-post/was-bedeuten-service-level-agreements-slas-im-kundenservice-service-level-agreements-und-ihre-rolle-fuer-unternehmen/
+————————————————————————————————————————————————————————————
+
+  [1]
+      Schauen wir uns nocheinmal die Definition eines Service Level Agreements genauer an, indem wir die individuellen Komponenten identifizieren, die eine solche Vereinbarung gewöhnlicherweise enthält.
+      Hauptkomponenten einer Service Level Vereinbarung Ein gutes SLA umfasst mehr Informationen als nur die zetlichen Aspekte einer durchgeführten Dienstleistungen, indem sie durch eine Formalisierung der Rollen und Funktionen der Parteien die Erwartungen eines Kunden und eines beauftragten Dienstleisters festlegt.
+  >>> Zusammenfassung der Vereinbarung: Enthält Details zu den beteiligten Vertragsparteien, das >>>Datum<<< des Inkrafttretens an und das Ziel der Vereinbarung und der zu erbringenden Customer Support Dienstleistungen. <<<
+      Beschreibung der Support Dienstleistungen: Eine detaillierte Beschreibung der vom Dienstleister durchzuführenden Customer Support Dienstleistungen.
+      Serviceverfügbarkeit: Regelt wann und wo Kunden die Support Mitarbeiter des Dienstleisters kontaktieren können.
+

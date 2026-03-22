@@ -1,0 +1,196 @@
+========================================================================
+EXPORT C — Within-pair sample: centific.com
+Company: CENTIFIC  |  Audience: CLIENT (B2B)
+Pages: 20 of 220 total
+Generated: 2026-03-20 12:51
+========================================================================
+
+READING NOTES:
+  Read this alongside centific_b2w.txt
+  This is the SAME COMPANY communicating to a DIFFERENT audience.
+  Question: What changes? What stays the same?
+  Pay attention to: labour vocabulary, compensation framing,
+  worker agency, automation claims, quality rhetoric.
+
+  Terms to watch: autonomous, automate, automation, machine, human, quality, worker, work, job, earn, pay, payment
+
+————————————————————————————————————————————————————————————
+URL:       https://www.centific.com/
+Platform:  Centific
+Type:      n/a
+Audience:  client
+————————————————————————————————————————————————————————————
+
+Customer Stories Proven results with leading AI teams. See how organizations use Centific’s data and expert services to build, deploy, and scale production-ready AI. Explore more Global technology leader shaping digital innovation Centific’s platform enabled the systematic measurement and ranking of harm within multiple versions of the client’s foundational models while tracking model iterations and parameters. World’s largest software maker Centific Flow helped the client deploy compliant, AI-ready data solutions that enabled secure, global large-scale healthcare projects. Leading multinational technology company Centific rapidly onboarded more than 1,200 multilingual resources for a global client, overcoming onboarding delays to ensure SME certification success. World’s largest ecommerce company Centific helped build an AI-powered ecommerce chatbot capable of helping customers save time and make more-informed decisions through natural language queries.
+
+————————————————————————————————————————————————————————————
+URL:       https://www.centific.com/blog/ai-democratization-bridges-the-gap-between-ai-creators-and-users
+Platform:  Centific
+Type:      n/a
+Audience:  client
+————————————————————————————————————————————————————————————
+
+Article AI democratization bridges the gap between AI creators and users AI for all starts with inclusion. Learn how democratizing AI helps to ensure ethical, equitable, and culturally appropriate innovation at scale.
+
+————————————————————————————————————————————————————————————
+URL:       https://www.centific.com/blog/anthropic-s-multi-agent-research-system-raises-the-bar-for-open-ended-ai-reasoning
+Platform:  Centific
+Type:      n/a
+Audience:  client
+————————————————————————————————————————————————————————————
+
+Industry Takes Anthropic’s multi-agent research system raises the bar for open-ended AI reasoning Anthropic’s multi-agent research system sets a new standard in AI. Learn how coordinated agents enhance open-ended reasoning and research tasks.
+
+————————————————————————————————————————————————————————————
+URL:       https://www.centific.com/blog/centific-and-lenovo-showcase-ai-innovations-at-nvidia-gtc
+Platform:  Centific
+Type:      n/a
+Audience:  client
+————————————————————————————————————————————————————————————
+
+Article Centific and Lenovo showcase AI innovations at NVIDIA GTC Centific and Lenovo realed top AI solutions at NVIDIA GTC 2025. Explore a few of those solutions, from concierge tech to powerful data tools.
+
+————————————————————————————————————————————————————————————
+URL:       https://www.centific.com/blog/centific-to-redefine-ai-powered-video-intelligence-using-nvidia-ai
+Platform:  Centific
+Type:      n/a
+Audience:  client
+————————————————————————————————————————————————————————————
+
+Press release Centific to Redefine AI-Powered Video Intelligence Using NVIDIA AI With NVIDIA AI, Centific's frontier AI data foundry platform is transforming video intelligence for public safety and media use cases.
+
+————————————————————————————————————————————————————————————
+URL:       https://www.centific.com/blog/design-intelligent-products-for-emotional-trust
+Platform:  Centific
+Type:      n/a
+Audience:  client
+————————————————————————————————————————————————————————————
+
+Article Design intelligent products for emotional trust Learn how to design AI products that build emotional trust by addressing user skepticism with transparency, clear communication, and relatable experiences.
+
+————————————————————————————————————————————————————————————
+URL:       https://www.centific.com/blog/genai-s-got-talent-and-recruiters-have-some-catching-up-to-do
+Platform:  Centific
+Type:      n/a
+Audience:  client
+————————————————————————————————————————————————————————————
+
+Article GenAI’s got talent and recruiters have some catching up to do GenAI makes hiring smarter and fairer. Read this article to see how GenAI is optimizing recruiting, onboarding, and employee retention.
+
+————————————————————————————————————————————————————————————
+URL:       https://www.centific.com/blog/how-ai-governance-turns-ai-investments-into-roi
+Platform:  Centific
+Type:      n/a
+Audience:  client
+————————————————————————————————————————————————————————————
+
+Article How AI governance turns AI investments into ROI Learn how AI governance transforms opaque, high-risk model investments into sustainable ROI. Discover how Centific’s PentagonAI™ brings lifecycle oversight, drift monitoring, and compliance alignment to protect enterprise AI value.
+
+————————————————————————————————————————————————————————————
+URL:       https://www.centific.com/blog/johnson-johnson-pivots-on-genai-to-deliver-business-value
+Platform:  Centific
+Type:      n/a
+Audience:  client
+————————————————————————————————————————————————————————————
+
+Industry Takes Johnson & Johnson pivots on GenAI to deliver business value Johnson & Johnson pivots on GenAI to deliver business value
+
+————————————————————————————————————————————————————————————
+URL:       https://www.centific.com/blog/medical-device-manufacturing-needs-computer-vision-to-protect-your-health
+Platform:  Centific
+Type:      n/a
+Audience:  client
+————————————————————————————————————————————————————————————
+
+Article Medical device manufacturing needs computer vision to protect your health Discover how computer vision AI is revolutionizing medical device manufacturing by enhancing precision, compliance, and quality.
+
+————————————————————————————————————————————————————————————
+URL:       https://www.centific.com/blog/openai-s-move-into-hardware-could-change-how-ai-is-trained
+Platform:  Centific
+Type:      n/a
+Audience:  client
+————————————————————————————————————————————————————————————
+
+Industry Takes OpenAI’s move into hardware could change how AI is trained The AI interface is shifting from screens to space. Explore how OpenAI’s hardware ambitions are redefining how AI is trained, evaluated, and experienced.
+
+————————————————————————————————————————————————————————————
+URL:       https://www.centific.com/blog/successful-localization-starts-with-genai
+Platform:  Centific
+Type:      n/a
+Audience:  client
+————————————————————————————————————————————————————————————
+
+Article Successful localization starts with GenAI Successful localization is about more than just having the right plan and the right tools. Read this article to learn how GenAI is driving localization success.
+
+————————————————————————————————————————————————————————————
+URL:       https://www.centific.com/blog/transform-healthcare-administration-with-ai-agents
+Platform:  Centific
+Type:      n/a
+Audience:  client
+————————————————————————————————————————————————————————————
+
+Article Transform healthcare administration with AI agents AI agents are the future of healthcare administration. Automate admin tasks, cut costs, and boost compliance with safe, scalable AI agent solutions.
+
+————————————————————————————————————————————————————————————
+URL:       https://www.centific.com/blog/why-small-language-models-are-gaining-ground-as-agentic-ai-goes-mainstream
+Platform:  Centific
+Type:      n/a
+Audience:  client
+————————————————————————————————————————————————————————————
+
+Article Why small language models are gaining ground as agentic AI goes mainstream As agentic AI scales across the enterprise, small language models are gaining ground. Learn why SLMs deliver cost control, speed, and predictable performance for specialized AI agents and how they reshape enterprise AI architecture.
+
+————————————————————————————————————————————————————————————
+URL:       https://www.centific.com/client-repo/client-google
+Platform:  Centific
+Type:      n/a
+Audience:  client
+————————————————————————————————————————————————————————————
+
+Security Robust data security and confidentiality across enterprise, regulated, and mission-critical AI systems. Disciplined security and privacy practices aligned with global standards to protect sensitive data, intellectual property, and model assets throughout the AI lifecycle. Centific applies rigorous security, access control, and auditability standards to safeguard enterprise data, human workflows, and AI systems at scale. ISO 27001 E n t e r p r i s e - g r a d e i n f o r m a t i o n s e c u r i t y g o v e r n a n c e . E n t e r p r i s e - g r a d e i n f o r m a t i o n s e c u r i t y g o v e r n a n c e . E n t e r p r i s e - g r a d e i n f o r m a t i o n s e c u r i t y g o v e r n a n c e SOC2 HIPAA GDPR
+
+————————————————————————————————————————————————————————————
+URL:       https://www.centific.com/company/locations
+Platform:  Centific
+Type:      n/a
+Audience:  client
+————————————————————————————————————————————————————————————
+
+Locations Global by Design Local teams. Worldwide impact. Our people span continents, cultures, and communities. From major innovation hubs to emerging tech centers, our global footprint allows us to capture real-world perspectives; ensuring the AI we support is shaped by the diversity of the world it serves.
+
+————————————————————————————————————————————————————————————
+URL:       https://www.centific.com/customer-stories/global-music-streaming-platform
+Platform:  Centific
+Type:      n/a
+Audience:  client
+————————————————————————————————————————————————————————————
+
+Customer Story Global music streaming platform Centific’s AI expertise helped a global music streaming platform scale its localization efforts, tripling translation volume while maintaining cultural relevance and reducing costs. 3X increase in translation output
+
+————————————————————————————————————————————————————————————
+URL:       https://www.centific.com/customer-stories/the-world-s-largest-home-improvement-retailer
+Platform:  Centific
+Type:      n/a
+Audience:  client
+————————————————————————————————————————————————————————————
+
+Customer Story The world’s largest home improvement retailer Centific and Google Cloud transformed the client’s customer experience by developing a GenAI-powered tool that provides AI-driven assistance for home improvement projects. 24/7 availability for customer assistance
+
+————————————————————————————————————————————————————————————
+URL:       https://www.centific.com/leaderboard/flint-benchmark
+Platform:  Centific
+Type:      n/a
+Audience:  client
+————————————————————————————————————————————————————————————
+
+Responsible AI Security FLINT Benchmark AI safety red-teaming: Can frontier models withstand sophisticated, multi-step adversarial attacks while maintaining robust guardrails? View Leaderboard
+
+————————————————————————————————————————————————————————————
+URL:       https://www.centific.com/products/data-canvas
+Platform:  Centific
+Type:      n/a
+Audience:  client
+————————————————————————————————————————————————————————————
+
+Data Canvas The Unified Command Center Powering AI Data Operations Data Canvas is Centific’s next-generation annotation and data transformation platform that turns raw data into model-ready assets. Through end-to-end workflows, from preprocessing to QA and post-processing, it ensures consistent, high-quality data for AI, analytics, and research at scale. Talk to an AI data expert The hidden infrastructure behind world-class AI models
+

@@ -1,0 +1,93 @@
+========================================================================
+EXPORT A — Top pages for term: 'automate'
+Audience: CLIENT  |  Hypothesis: H1b
+Showing top 8 pages by relative frequency
+Generated: 2026-03-20 12:51
+========================================================================
+
+READING NOTES:
+  Term 'automate' is client-distinctive (Step 1 keyness).
+  Question for Step 2: What is 'automate' doing rhetorically in CLIENT texts?
+  Is its usage consistent with H1b?
+  Are there unexpected usages that complicate the hypothesis?
+
+————————————————————————————————————————————————————————————
+URL:       https://www.centific.com/
+Platform:  Centific
+Type:      enterprise_bpo
+Audience:  n/a
+Term freq: 1.55‰  (abs: 9)
+————————————————————————————————————————————————————————————
+
+Customer Stories Proven results with leading AI teams. See how organizations use Centific’s data and expert services to build, deploy, and scale production-ready AI. Explore more Global technology leader shaping digital innovation Centific’s platform enabled the systematic measurement and ranking of harm within multiple versions of the client’s foundational models while tracking model iterations and parameters. World’s largest software maker Centific Flow helped the client deploy compliant, AI-ready data solutions that enabled secure, global large-scale healthcare projects. Leading multinational technology company Centific rapidly onboarded more than 1,200 multilingual resources for a global client, overcoming onboarding delays to ensure SME certification success. World’s largest ecommerce company Centific helped build an AI-powered ecommerce chatbot capable of helping customers save time and make more-informed decisions through natural language queries.
+
+————————————————————————————————————————————————————————————
+URL:       https://www.centific.com/company/about
+Platform:  Centific
+Type:      enterprise_bpo
+Audience:  n/a
+Term freq: 1.55‰  (abs: 9)
+————————————————————————————————————————————————————————————
+
+About Centific Building trusted AI for the real world. Centific is a global data and AI solutions company that helps organizations move from models to real-world impact. We design, build, and operate the data systems that train, evaluate, and scale AI across languages, domains, and industries; so intelligence works where it matters most.
+
+————————————————————————————————————————————————————————————
+URL:       https://www.centific.com/company/careers
+Platform:  Centific
+Type:      enterprise_bpo
+Audience:  n/a
+Term freq: 1.55‰  (abs: 9)
+————————————————————————————————————————————————————————————
+
+Careers at Centific Train the future And build what the world’s AI runs on. At Centific, we help the world’s leading organizations design, train, govern, and deploy AI systems that operate reliably in complex, real-world environments. From data and language to evaluation, governance, and human expertise — our work powers AI that people can trust. See open positions
+
+————————————————————————————————————————————————————————————
+URL:       https://www.centific.com/company/leadership
+Platform:  Centific
+Type:      enterprise_bpo
+Audience:  n/a
+Term freq: 1.55‰  (abs: 9)
+————————————————————————————————————————————————————————————
+
+Leadership Driving AI Innovation Together We are builders, operators, and problem-solvers who believe that great AI starts with great data, and great leadership starts with people. Our leaders guide Centific with integrity, curiosity, and a relentless focus on turning complexity into clarity for our customers and teams.
+
+————————————————————————————————————————————————————————————
+URL:       https://www.centific.com/blog
+Platform:  Centific
+Type:      enterprise_bpo
+Audience:  n/a
+Term freq: 1.55‰  (abs: 9)
+————————————————————————————————————————————————————————————
+
+Blog & Insights From the Front Lines Practical research, benchmarks, and field insights on AI data, evaluation, and human-in-the-loop systems. The hidden infrastructure behind world-class AI models
+
+————————————————————————————————————————————————————————————
+URL:       https://www.centific.com/news
+Platform:  Centific
+Type:      enterprise_bpo
+Audience:  n/a
+Term freq: 1.55‰  (abs: 9)
+————————————————————————————————————————————————————————————
+
+News & Press Making Headlines Our story, in real time. Company news, product updates, and expert perspectives shaping the future of AI operations. The hidden infrastructure behind world-class AI models
+
+————————————————————————————————————————————————————————————
+URL:       https://www.centific.com/company/locations
+Platform:  Centific
+Type:      enterprise_bpo
+Audience:  n/a
+Term freq: 1.55‰  (abs: 9)
+————————————————————————————————————————————————————————————
+
+Locations Global by Design Local teams. Worldwide impact. Our people span continents, cultures, and communities. From major innovation hubs to emerging tech centers, our global footprint allows us to capture real-world perspectives; ensuring the AI we support is shaped by the diversity of the world it serves.
+
+————————————————————————————————————————————————————————————
+URL:       https://www.centific.com/customer-stories
+Platform:  Centific
+Type:      enterprise_bpo
+Audience:  n/a
+Term freq: 1.55‰  (abs: 9)
+————————————————————————————————————————————————————————————
+
+Customer Stories Meet companies scaling smarter with Centific. Trusted by hundreds of forward-thinking organizations, from high-growth scaleups to established enterprises — we help finance teams replace complexity with clarity. The hidden infrastructure behind world-class AI models
+

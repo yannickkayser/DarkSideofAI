@@ -63,13 +63,13 @@ EXT        = "jpg"    # "png" for lossless, "pdf" for vector
 
 # ── toggle figures ─────────────────────────────────────────────────────────────
 FIGURES = {
-    "f1_vocab_terrain":       False, #True,
-    "f2_exclusive_vocab":     False, #True,
+    "f1_vocab_terrain":       True,
+    "f2_exclusive_vocab":     True,
     "f3_shared_divergent":    True,
-    "f4_topic_profiles":      False, #True,
-    "f5_topic_hyp_alignment": False, #True,
-    "f6_document_space":      False, #True,
-    "f7_step2_sample_map":    False, #True,
+    "f4_topic_profiles":      True,
+    "f5_topic_hyp_alignment": True,
+    "f6_document_space":      True,
+    "f7_step2_sample_map":    True,
 }
 
 # ── palette ────────────────────────────────────────────────────────────────────
