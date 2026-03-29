@@ -68,10 +68,10 @@ sys.path.append(str(Path(__file__).parent.parent))
 # Config
 # ---------------------------------------------------------------------------
 
-DB_PATH                  = "scraping_2.db"
+DB_PATH                  = "data/scraping_2.db"
 TOP_N_COOC               = 150    # co-occurrence profiles for top N terms by LL
 MIN_TERM_FREQ            = 5      # ignore terms below this corpus-wide frequency
-WINDOW_SIZE              = 15     # ±15 token window (within-sentence only)
+WINDOW_SIZE              = 5     # ±15 token window (within-sentence only)
 MIN_PMI_COFREQ           = 10     # minimum co-occurrence count to store PMI pair
 MIN_PAGES_PER_DOMAIN     = 5      # domain quality gate for platform-level analyses
 EXCLUSIVITY_THRESHOLD    = 0.70   # prevalence fraction to classify as exclusive
