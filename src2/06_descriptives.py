@@ -1,5 +1,5 @@
 """
-03_descriptives.py
+06_descriptives.py
 ==================
 Computes descriptive statistics for the AI Labour Narrative Corpus.
 
