@@ -34,7 +34,7 @@ from datetime import datetime
 # ---------------------------------------------------------------------------
 # Config
 # ---------------------------------------------------------------------------
-DB_PATH    = "scraping_2.db"
+DB_PATH    = "data/scraping_2.db"
 STM_DIR    = Path("STMAnalysis/output/step_1/stm")
 
 THETA_CSV      = STM_DIR / "stm_theta.csv"

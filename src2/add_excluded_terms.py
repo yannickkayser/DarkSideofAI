@@ -67,6 +67,38 @@ TERMS_TO_EXCLUDE = {
 
     # Additional from the same diagnostic run
     "são", "côte", "ärztin",
+
+
+    # E — UI / web-chrome artifacts (scraped from page navigation, buttons,
+    #     CSS class names, image filenames, robots.txt, sitemap boilerplate)
+    "png", "svg", "css", "iframe", "favicon", "navbar", "tooltip",
+    "dropdown", "sidebar", "accordion", "carousel", "breadcrumb",
+    "pagination", "modal", "checkbox", "toolbar", "widget",
+    "resize", "resizing", "topmost", "decoration", "tile", "vertex",
+    "picker", "disallow", "cloning", "oops", "natively",
+    "identically", "logarithmic",
+
+    # F — Security / auth / compliance boilerplate
+    #     (login pages, cookie banners, privacy policy text, GDPR notices)
+    "sso", "mfa", "gdpr", "oauth", "saml", "captcha", "recaptcha",
+    "csrf", "authenticator", "identifier",
+
+    # G — Third-party software product names from integration listing pages
+    #     (platforms publish "we integrate with X, Y, Z" pages that list
+    #      100+ tool names — none are part of platform discourse)
+    "hubspot", "mozilla", "gong", "zendesk", "intercom",
+    "mailchimp", "zapier", "okta", "jira", "confluence", "figma",
+    "datadog", "splunk", "tableau",
+
+    # I — Proper nouns visible as dominant topic terms
+    #     (raising LOWER_THRESH to 15 will remove most of these automatically;
+    #      adding them here gives belt-and-suspenders coverage)
+    "carlson", "bloomberg", "zuckerberg", "teresa", "virginia",
+    "olympiad",
+
+    # J — Date / ordinal fragments from blog post timestamps
+    #     (appear as "August 22nd", "January 8th" on scraped blog pages)
+    "22nd", "8th", "1st", "2nd", "3rd",
 }
 
 

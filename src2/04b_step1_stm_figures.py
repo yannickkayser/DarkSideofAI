@@ -1,15 +1,19 @@
+
 """
 04b_step1_stm_figures.py
 ========================
 STM visualisations for the DarkSideofAI thesis.
 
-Reads the CSV exports produced by STMAnalysis/04_export.R and produces
+Reads from the SQLite tables populated by 03b_import_stm.py and produces
 four publication-ready figures in the same visual style as 04_step1_figures.py.
 
 Prerequisites:
-  STMAnalysis/03_fit_model.R  → stm_model.rds, prev_df.rds
-  STMAnalysis/04_export.R     → stm_theta.csv, stm_topic_terms.csv,
-                                 stm_prevalence.csv  (stm_content.csv optional)
+  STMAnalysis/04_export.R  → writes stm_*.csv to STMAnalysis/output/step_1/stm/
+  src2/03b_import_stm.py   → loads those CSVs into scraping_2.db as:
+      stm_theta        (long format: one row per page × topic)
+      stm_topic_terms  (top-N terms per topic)
+      stm_prevalence   (audience prevalence effects)
+      stm_content      (audience-specific terms, optional)
 
 Figures produced (output/step_1/stm/):
   STM_A  — Topic overview bar chart
@@ -39,9 +43,8 @@ Usage (from project root):
     FIGURES = {"STM_A": True, "STM_B": True, "STM_C": False, "STM_D": False}
 """
 
-import csv
+import sqlite3
 import logging
-import math
 from pathlib import Path
 from collections import defaultdict
 
@@ -51,18 +54,12 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import numpy as np
 
-try:
-    import seaborn as sns
-    _HAS_SNS = True
-except ImportError:
-    _HAS_SNS = False
-
 # ---------------------------------------------------------------------------
 # Config
 # ---------------------------------------------------------------------------
 
-STM_DIR    = Path("STMAnalysis/output/step_1/stm")   # R export location
-OUTPUT_DIR = Path("output/step_1/stm")                # Python figure output
+DB_PATH    = "data/scraping_2.db"
+OUTPUT_DIR = Path("output/step_1/stm")
 DPI        = 150
 EXT        = "jpg"
 
@@ -132,7 +129,7 @@ logging.basicConfig(
 log = logging.getLogger(__name__)
 
 # ---------------------------------------------------------------------------
-# Helpers
+# Style helpers
 # ---------------------------------------------------------------------------
 
 def apply_base_style(ax, bg=C_BG_PUB):
@@ -151,20 +148,8 @@ def save(fig, name: str, style: str):
     path = OUTPUT_DIR / f"{name}_{style}.{EXT}"
     fig.savefig(str(path), dpi=DPI, bbox_inches="tight",
                 facecolor=fig.get_facecolor())
-    log.info(f"  Saved: {path}")
+    log.info("  Saved: %s", path)
     plt.close(fig)
-
-
-def load_csv(filename: str) -> list[dict]:
-    """Load a CSV from the STM export directory."""
-    path = STM_DIR / filename
-    if not path.exists():
-        raise FileNotFoundError(
-            f"STM export file not found: {path}\n"
-            f"Run STMAnalysis/04_export.R first."
-        )
-    with open(path, newline="", encoding="utf-8") as f:
-        return list(csv.DictReader(f))
 
 
 def shorten_domain(d: str) -> str:
@@ -174,74 +159,137 @@ def shorten_domain(d: str) -> str:
 
 
 # ---------------------------------------------------------------------------
-# Data loading
+# Data loading — queries scraping_2.db (populated by 03b_import_stm.py)
 # ---------------------------------------------------------------------------
 
-def load_stm_data() -> dict:
-    """
-    Load all STM export CSVs into structured dicts.
-    Returns a dict with keys: theta, terms, prevalence, content (optional).
-    """
-    log.info("Loading STM export CSVs from %s", STM_DIR)
+def require_table(con: sqlite3.Connection, name: str) -> None:
+    exists = con.execute(
+        "SELECT name FROM sqlite_master WHERE type IN ('table','view') AND name=?",
+        (name,),
+    ).fetchone()
+    if not exists:
+        raise RuntimeError(
+            f"Table '{name}' not found in {DB_PATH}.\n"
+            "  -> Run src2/03b_import_stm.py first."
+        )
 
-    # ── Topic terms ──────────────────────────────────────────────────────────
-    raw_terms = load_csv("stm_topic_terms.csv")
+
+def load_stm_data(con: sqlite3.Connection) -> dict:
+    """
+    Load all STM data from SQLite into the same in-memory structure that the
+    figure functions expect.  Returns a dict with keys:
+
+        K          -- int, number of topics
+        terms      -- dict[topic_id] = {"frex": [...], "prob": [...]}
+        prevalence -- dict[topic_id] = {estimate, ci_lower, ci_upper,
+                                         significant, direction, frex_label}
+        theta      -- list of dicts  {page_id, audience, domain,
+                                      props: [float x K], dominant: int}
+        content    -- dict[topic_id][audience] = [term, ...]  (may be empty)
+
+    Note: stm_theta is stored in long format (one row per page x topic).
+    This function pivots it back to a per-document props list by grouping
+    on page_id ordered by topic_id.
+    """
+    for t in ("stm_theta", "stm_topic_terms", "stm_prevalence"):
+        require_table(con, t)
+
+    # -- K (number of topics) ------------------------------------------------
+    K = con.execute(
+        "SELECT MAX(topic_id) FROM stm_topic_terms"
+    ).fetchone()[0]
+    if K is None:
+        raise RuntimeError("stm_topic_terms is empty -- re-run 03b_import_stm.py.")
+
+    # -- Topic terms ---------------------------------------------------------
     terms = defaultdict(lambda: {"frex": [], "prob": []})
-    for row in raw_terms:
-        t = int(row["topic_id"])
-        terms[t]["frex"].append(row["frex_term"])
-        terms[t]["prob"].append(row["prob_term"])
+    for row in con.execute(
+        "SELECT topic_id, prob_term, frex_term "
+        "FROM stm_topic_terms ORDER BY topic_id, rank"
+    ):
+        topic_id, prob_term, frex_term = row
+        terms[topic_id]["frex"].append(frex_term or "")
+        terms[topic_id]["prob"].append(prob_term or "")
 
-    # ── Prevalence effects ───────────────────────────────────────────────────
-    raw_prev  = load_csv("stm_prevalence.csv")
+    # -- Prevalence effects --------------------------------------------------
     prevalence = {}
-    for row in raw_prev:
-        t = int(row["topic_id"])
-        prevalence[t] = {
-            "estimate":    float(row["estimate"]),
-            "ci_lower":    float(row["ci_lower"]),
-            "ci_upper":    float(row["ci_upper"]),
-            "significant": row["significant"].strip().upper() in ("TRUE", "1"),
-            "direction":   row["direction"],
-            "frex_label":  row["frex_label"],
+    for row in con.execute(
+        "SELECT topic_id, frex_label, estimate, ci_lower, ci_upper, "
+        "       significant, direction "
+        "FROM stm_prevalence"
+    ):
+        topic_id, frex_label, estimate, ci_lower, ci_upper, significant, direction = row
+        prevalence[topic_id] = {
+            "estimate":    estimate  or 0.0,
+            "ci_lower":    ci_lower  or 0.0,
+            "ci_upper":    ci_upper  or 0.0,
+            "significant": bool(significant),
+            "direction":   direction or "",
+            "frex_label":  frex_label or "",
         }
 
-    # ── Document-topic proportions (theta) ───────────────────────────────────
-    raw_theta = load_csv("stm_theta.csv")
-    K = max(int(k.replace("topic_", ""))
-            for k in raw_theta[0].keys() if k.startswith("topic_"))
+    # -- Theta: pivot long -> wide (one entry per document) ------------------
+    #
+    # stm_theta stores one row per (page_id, topic_id).
+    # Rows arrive ordered by page_id, topic_id so we can stream-group them.
 
     theta_rows = []
-    for row in raw_theta:
-        entry = {
-            "page_id":  row["page_id"],
-            "audience": row["audience"],
-            "domain":   row["domain"],
-            "props":    [float(row[f"topic_{t}"]) for t in range(1, K + 1)],
-            "dominant": int(row["dominant_topic"]),
-        }
-        theta_rows.append(entry)
+    current_page  = None
+    current_entry = None
 
-    # ── Content covariate (optional) ─────────────────────────────────────────
-    content_path = STM_DIR / "stm_content.csv"
+    for row in con.execute(
+        "SELECT page_id, audience, domain, topic_id, theta, "
+        "       dominant_topic, dominant_prop "
+        "FROM stm_theta "
+        "ORDER BY page_id, topic_id"
+    ):
+        page_id, audience, domain, topic_id, theta_val, dominant_topic, dominant_prop = row
+
+        if page_id != current_page:
+            if current_entry is not None:
+                theta_rows.append(current_entry)
+            current_page  = page_id
+            current_entry = {
+                "page_id":  page_id,
+                "audience": audience,
+                "domain":   domain,
+                "props":    [],
+                "dominant": dominant_topic,
+            }
+        current_entry["props"].append(theta_val or 0.0)
+
+    if current_entry is not None:
+        theta_rows.append(current_entry)
+
+    # -- Content covariate terms (optional) ----------------------------------
     content = {}
-    if content_path.exists():
-        for row in load_csv("stm_content.csv"):
-            t   = int(row["topic_id"])
-            aud = row["audience"]
-            content.setdefault(t, {})[aud] = content.get(t, {}).get(aud, [])
-            content[t][aud].append(row["term"])
+    content_exists = con.execute(
+        "SELECT name FROM sqlite_master WHERE type='table' AND name='stm_content'"
+    ).fetchone()
+    if content_exists:
+        for row in con.execute(
+            "SELECT topic_id, audience, term "
+            "FROM stm_content ORDER BY topic_id, audience, rank"
+        ):
+            topic_id, audience, term = row
+            content.setdefault(topic_id, {}).setdefault(audience, []).append(term or "")
 
-    log.info("  Topics (K)   : %d", K)
+    log.info("  K            : %d", K)
     log.info("  Documents    : %d", len(theta_rows))
-    log.info("  Prevalence   : %d topics with estimates", len(prevalence))
+    log.info("  Topics w/ prevalence : %d", len(prevalence))
+    log.info("  Content table: %s", "yes" if content_exists else "no")
 
-    return {"K": K, "terms": dict(terms), "prevalence": prevalence,
-            "theta": theta_rows, "content": content}
+    return {
+        "K":          K,
+        "terms":      dict(terms),
+        "prevalence": prevalence,
+        "theta":      theta_rows,
+        "content":    content,
+    }
 
 
 # ---------------------------------------------------------------------------
-# Figure STM_A — Topic overview bar chart
+# Figure STM_A -- Topic overview bar chart
 # ---------------------------------------------------------------------------
 
 def fig_stm_topic_overview(data: dict, style: str):
@@ -260,32 +308,30 @@ def fig_stm_topic_overview(data: dict, style: str):
     prevalence = data["prevalence"]
     theta      = data["theta"]
 
-    # Expected proportion = mean of each topic column across all documents
     mean_props = [
         sum(row["props"][t - 1] for row in theta) / len(theta)
         for t in range(1, K + 1)
     ]
 
-    # Build rows sorted by proportion descending
     rows = []
     for t in range(1, K + 1):
         prev  = prevalence.get(t, {})
         sig   = prev.get("significant", False)
-        dirn  = prev.get("direction", "—")
+        dirn  = prev.get("direction", "")
         color = (C_CLIENT if sig and dirn == "client"
                  else C_WORKER if sig and dirn == "worker"
                  else C_SHARED)
         frex5 = ", ".join(terms.get(t, {}).get("frex", [])[:LABEL_FREX_N])
         rows.append({
-            "topic":  t,
-            "prop":   mean_props[t - 1],
-            "color":  color,
-            "frex5":  frex5,
-            "sig":    sig,
-            "dirn":   dirn,
+            "topic": t,
+            "prop":  mean_props[t - 1],
+            "color": color,
+            "frex5": frex5,
+            "sig":   sig,
+            "dirn":  dirn,
         })
 
-    rows.sort(key=lambda r: r["prop"])   # ascending so top is at top of chart
+    rows.sort(key=lambda r: r["prop"])   # ascending so highest is at top
 
     bg = C_BG_EXP if style == "exp" else C_BG_PUB
     fig, ax = plt.subplots(figsize=(10, max(6, K * 0.35)))
@@ -299,10 +345,9 @@ def fig_stm_topic_overview(data: dict, style: str):
     bars = ax.barh(list(y_pos), props, color=colors, alpha=0.82,
                    edgecolor="none", height=0.7)
 
-    # Labels: "T07: frex1, frex2, ..."
     for i, (bar, row) in enumerate(zip(bars, rows)):
-        label = f"T{row['topic']:02d}: {row['frex5']}"
-        ax.text(bar.get_width() + 0.001, i, label,
+        ax.text(bar.get_width() + 0.001, i,
+                f"T{row['topic']:02d}: {row['frex5']}",
                 va="center", **FONT_ANNOT)
 
     if style == "exp":
@@ -330,14 +375,13 @@ def fig_stm_topic_overview(data: dict, style: str):
 
 
 # ---------------------------------------------------------------------------
-# Figure STM_B — Audience separation forest plot
+# Figure STM_B -- Audience separation forest plot
 # ---------------------------------------------------------------------------
 
 def fig_stm_audience_forest(data: dict, style: str):
     """
     Forest plot of audience prevalence effects (worker vs client coefficient).
 
-    Each topic is a point with 95% CI bars.
     Positive estimate = topic more prevalent in worker pages.
     Negative estimate = topic more prevalent in client pages.
     Significant topics are labelled with their top FREX term.
@@ -352,13 +396,13 @@ def fig_stm_audience_forest(data: dict, style: str):
         if p is None:
             continue
         rows.append({
-            "topic":    t,
-            "est":      p["estimate"],
-            "lo":       p["ci_lower"],
-            "hi":       p["ci_upper"],
-            "sig":      p["significant"],
-            "dirn":     p["direction"],
-            "frex1":    (terms.get(t, {}).get("frex", ["?"])[0]),
+            "topic": t,
+            "est":   p["estimate"],
+            "lo":    p["ci_lower"],
+            "hi":    p["ci_upper"],
+            "sig":   p["significant"],
+            "dirn":  p["direction"],
+            "frex1": terms.get(t, {}).get("frex", ["?"])[0],
         })
 
     rows.sort(key=lambda r: r["est"])
@@ -368,7 +412,6 @@ def fig_stm_audience_forest(data: dict, style: str):
     fig.patch.set_facecolor(bg)
     apply_base_style(ax, bg)
     ax.grid(axis="x", color=C_GRID, linewidth=0.6)
-
     ax.axvline(0, color=C_TEXT, linewidth=0.8, linestyle="--", alpha=0.5)
 
     for i, row in enumerate(rows):
@@ -376,25 +419,18 @@ def fig_stm_audience_forest(data: dict, style: str):
                  else C_WORKER if row["sig"] and row["dirn"] == "worker"
                  else C_SHARED)
         alpha = 1.0 if row["sig"] else 0.4
-
         ax.plot([row["lo"], row["hi"]], [i, i],
                 color=color, linewidth=1.2, alpha=alpha)
-        ax.scatter([row["est"]], [i],
-                   color=color, s=35, zorder=3, alpha=alpha)
-
+        ax.scatter([row["est"]], [i], color=color, s=35, zorder=3, alpha=alpha)
         if row["sig"]:
-            x_off = row["hi"] + 0.002
-            ax.text(x_off, i, row["frex1"],
+            ax.text(row["hi"] + 0.002, i, row["frex1"],
                     va="center", fontsize=7.5, color=color)
 
-    y_labels = [f"T{r['topic']:02d}" for r in rows]
     ax.set_yticks(range(len(rows)))
-    ax.set_yticklabels(y_labels, fontsize=8)
-
+    ax.set_yticklabels([f"T{r['topic']:02d}" for r in rows], fontsize=8)
     ax.set_xlabel("Prevalence coefficient  (positive = worker, negative = client)",
                   **FONT_LABEL)
-    ax.set_title(f"STM Audience Separation — K={K}  (95% CI)",
-                 **FONT_TITLE)
+    ax.set_title(f"STM Audience Separation — K={K}  (95% CI)", **FONT_TITLE)
 
     n_sig = sum(r["sig"] for r in rows)
     ax.annotate(f"{n_sig}/{len(rows)} topics significant",
@@ -414,7 +450,7 @@ def fig_stm_audience_forest(data: dict, style: str):
 
 
 # ---------------------------------------------------------------------------
-# Figure STM_C — Hypothesis alignment heatmap
+# Figure STM_C -- Hypothesis alignment heatmap
 # ---------------------------------------------------------------------------
 
 def fig_stm_hypothesis_heatmap(data: dict, style: str):
@@ -422,26 +458,21 @@ def fig_stm_hypothesis_heatmap(data: dict, style: str):
     Heatmap of FREX-term overlap between each topic and each hypothesis vocab.
 
     Cell value = number of top-20 FREX terms matching the hypothesis vocabulary.
-    Cell colour scales from white (0) to the hypothesis colour (max overlap).
-    Rows are sorted by dominant hypothesis (highest overlap column).
     """
     K          = data["K"]
     terms      = data["terms"]
     prevalence = data["prevalence"]
     hyp_keys   = list(HYP_VOCAB.keys())
 
-    # Build overlap matrix  (K × len(hyp_keys))
     matrix = np.zeros((K, len(hyp_keys)), dtype=int)
     for t in range(1, K + 1):
         frex20 = {w.lower() for w in terms.get(t, {}).get("frex", [])}
         for j, hyp in enumerate(hyp_keys):
             matrix[t - 1, j] = len(frex20 & HYP_VOCAB[hyp]["terms"])
 
-    # Sort topics: first by max overlap column, then by max overlap value desc
     best_col = matrix.argmax(axis=1)
     best_val = matrix.max(axis=1)
-    order    = sorted(range(K),
-                      key=lambda i: (best_col[i], -best_val[i]))
+    order    = sorted(range(K), key=lambda i: (best_col[i], -best_val[i]))
 
     mat_sorted   = matrix[order, :]
     topic_labels = []
@@ -452,12 +483,10 @@ def fig_stm_hypothesis_heatmap(data: dict, style: str):
         topic_labels.append(f"T{t:02d} [{dirn}]")
 
     bg = C_BG_EXP if style == "exp" else C_BG_PUB
-    fig, ax = plt.subplots(figsize=(len(hyp_keys) * 1.2 + 2,
-                                     max(6, K * 0.38)))
+    fig, ax = plt.subplots(figsize=(len(hyp_keys) * 1.2 + 2, max(6, K * 0.38)))
     fig.patch.set_facecolor(bg)
     ax.set_facecolor(bg)
 
-    # Draw cells manually so each hypothesis column can have its own colour
     vmax = max(mat_sorted.max(), 1)
     for j, hyp in enumerate(hyp_keys):
         col_color = matplotlib.colors.to_rgb(HYP_VOCAB[hyp]["color"])
@@ -484,10 +513,8 @@ def fig_stm_hypothesis_heatmap(data: dict, style: str):
                  "(FREX overlap count, top-20 terms per topic)",
                  **FONT_TITLE)
 
-    # Colour legend
     legend_patches = [
-        mpatches.Patch(color=HYP_VOCAB[h]["color"], label=h)
-        for h in hyp_keys
+        mpatches.Patch(color=HYP_VOCAB[h]["color"], label=h) for h in hyp_keys
     ]
     ax.legend(handles=legend_patches, loc="lower right",
               fontsize=7.5, framealpha=0.8, ncol=2)
@@ -498,24 +525,20 @@ def fig_stm_hypothesis_heatmap(data: dict, style: str):
 
 
 # ---------------------------------------------------------------------------
-# Figure STM_D — Domain × topic heatmap
+# Figure STM_D -- Domain x topic heatmap
 # ---------------------------------------------------------------------------
 
 def fig_stm_domain_topic(data: dict, style: str):
     """
     Heatmap of mean topic proportion per platform domain.
 
-    Reveals whether STM results are driven by a single platform or
-    represent genuine cross-platform discourse patterns.
-
-    Rows   = platforms (sorted by audience: client → both → worker)
+    Rows   = platforms (sorted by audience: client -> both -> worker)
     Columns = topics (sorted by mean proportion, most prevalent first)
-    Cell   = mean theta value for that domain × topic combination
+    Cell   = mean theta value for that domain x topic combination
     """
     theta = data["theta"]
     K     = data["K"]
 
-    # Aggregate mean proportion per domain per topic
     domain_counts = defaultdict(int)
     domain_sums   = defaultdict(lambda: [0.0] * K)
     domain_aud    = {}
@@ -528,28 +551,19 @@ def fig_stm_domain_topic(data: dict, style: str):
             domain_sums[d][t] += row["props"][t]
 
     domains = sorted(domain_counts.keys())
-    means   = {d: [domain_sums[d][t] / domain_counts[d]
-                   for t in range(K)]
+    means   = {d: [domain_sums[d][t] / domain_counts[d] for t in range(K)]
                for d in domains}
 
-    # Only keep topics with mean prop > threshold (avoids blank columns)
     topic_means = [sum(means[d][t] for d in domains) / len(domains)
                    for t in range(K)]
     keep_topics = [t for t in range(K) if topic_means[t] >= DOMAIN_MIN_PROP]
     keep_topics.sort(key=lambda t: -topic_means[t])
 
-    # Build matrix
-    mat = np.array([[means[d][t] for t in keep_topics] for d in domains])
-
-    # Sort domains by audience label (client first, then both, then worker)
     aud_order = {"client": 0, "both": 1, "worker": 2}
     domains   = sorted(domains,
                        key=lambda d: (aud_order.get(domain_aud.get(d, "both"), 1),
                                       shorten_domain(d)))
-    mat       = np.array([[means[d][t] for t in keep_topics] for d in domains])
-
-    col_labels = [f"T{t+1:02d}" for t in keep_topics]
-    row_labels = [shorten_domain(d) for d in domains]
+    mat = np.array([[means[d][t] for t in keep_topics] for d in domains])
 
     bg = C_BG_EXP if style == "exp" else C_BG_PUB
     fig, ax = plt.subplots(figsize=(max(8, len(keep_topics) * 0.55),
@@ -557,8 +571,7 @@ def fig_stm_domain_topic(data: dict, style: str):
     fig.patch.set_facecolor(bg)
     ax.set_facecolor(bg)
 
-    im = ax.imshow(mat, aspect="auto", cmap="Blues",
-                   vmin=0, vmax=mat.max())
+    im = ax.imshow(mat, aspect="auto", cmap="Blues", vmin=0, vmax=mat.max())
 
     if style == "exp":
         for i in range(len(domains)):
@@ -570,11 +583,11 @@ def fig_stm_domain_topic(data: dict, style: str):
                             color="white" if v > mat.max() * 0.6 else C_TEXT)
 
     ax.set_xticks(range(len(keep_topics)))
-    ax.set_xticklabels(col_labels, fontsize=8, rotation=45, ha="right")
+    ax.set_xticklabels([f"T{t+1:02d}" for t in keep_topics],
+                       fontsize=8, rotation=45, ha="right")
     ax.set_yticks(range(len(domains)))
-    ax.set_yticklabels(row_labels, fontsize=8)
+    ax.set_yticklabels([shorten_domain(d) for d in domains], fontsize=8)
 
-    # Audience separator lines
     prev_aud = None
     for i, d in enumerate(domains):
         aud = domain_aud.get(d, "both")
@@ -582,19 +595,18 @@ def fig_stm_domain_topic(data: dict, style: str):
             ax.axhline(i - 0.5, color=C_GRID, linewidth=1.5)
         prev_aud = aud
 
-    # Audience labels on right y-axis
     ax2 = ax.twinx()
     ax2.set_ylim(ax.get_ylim())
     ax2.set_yticks(range(len(domains)))
     ax2.set_yticklabels(
         [domain_aud.get(d, "")[:1].upper() for d in domains],
-        fontsize=7, color=C_SUBTEXT
+        fontsize=7, color=C_SUBTEXT,
     )
     ax2.spines[:].set_visible(False)
 
     plt.colorbar(im, ax=ax, shrink=0.6, label="Mean topic proportion")
 
-    ax.set_title("Domain × Topic distribution\n"
+    ax.set_title("Domain x Topic distribution\n"
                  "(mean STM topic proportion per platform)",
                  **FONT_TITLE)
     ax.set_xlabel("Topic (ranked by corpus proportion)", **FONT_LABEL)
@@ -611,32 +623,33 @@ def fig_stm_domain_topic(data: dict, style: str):
 
 def main():
     log.info("=" * 60)
-    log.info("04b_step1_stm_figures.py — STM visualisations")
-    log.info(f"  STM exports : {STM_DIR}")
-    log.info(f"  Output dir  : {OUTPUT_DIR}")
+    log.info("04b_step1_stm_figures.py -- STM visualisations")
+    log.info("  Database   : %s", Path(DB_PATH).resolve())
+    log.info("  Output dir : %s", OUTPUT_DIR)
     log.info("=" * 60)
 
-    data = load_stm_data()
+    with sqlite3.connect(DB_PATH) as con:
+        data = load_stm_data(con)
 
-    for style in ("pub", "exp"):
-        log.info("-" * 40)
-        log.info("Style: %s", style)
+        for style in ("pub", "exp"):
+            log.info("-" * 40)
+            log.info("Style: %s", style)
 
-        if FIGURES.get("STM_A"):
-            log.info("STM_A — Topic overview")
-            fig_stm_topic_overview(data, style)
+            if FIGURES.get("STM_A"):
+                log.info("STM_A -- Topic overview")
+                fig_stm_topic_overview(data, style)
 
-        if FIGURES.get("STM_B"):
-            log.info("STM_B — Audience forest plot")
-            fig_stm_audience_forest(data, style)
+            if FIGURES.get("STM_B"):
+                log.info("STM_B -- Audience forest plot")
+                fig_stm_audience_forest(data, style)
 
-        if FIGURES.get("STM_C"):
-            log.info("STM_C — Hypothesis alignment heatmap")
-            fig_stm_hypothesis_heatmap(data, style)
+            if FIGURES.get("STM_C"):
+                log.info("STM_C -- Hypothesis alignment heatmap")
+                fig_stm_hypothesis_heatmap(data, style)
 
-        if FIGURES.get("STM_D"):
-            log.info("STM_D — Domain × topic heatmap")
-            fig_stm_domain_topic(data, style)
+            if FIGURES.get("STM_D"):
+                log.info("STM_D -- Domain x topic heatmap")
+                fig_stm_domain_topic(data, style)
 
     log.info("=" * 60)
     log.info("Done.  Figures written to %s", OUTPUT_DIR.resolve())
