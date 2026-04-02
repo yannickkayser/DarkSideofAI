@@ -68,7 +68,6 @@ TERMS_TO_EXCLUDE = {
     # Additional from the same diagnostic run
     "são", "côte", "ärztin",
 
-
     # E — UI / web-chrome artifacts (scraped from page navigation, buttons,
     #     CSS class names, image filenames, robots.txt, sitemap boilerplate)
     "png", "svg", "css", "iframe", "favicon", "navbar", "tooltip",
@@ -90,6 +89,11 @@ TERMS_TO_EXCLUDE = {
     "mailchimp", "zapier", "okta", "jira", "confluence", "figma",
     "datadog", "splunk", "tableau",
 
+    # H — Academic / HPC computing terms
+    #     (researcher job posts or academic partner pages contaminating corpus)
+    "postdoctoral", "hpc", "iac", "microsecond", "subsystem",
+    "combinatoric", "systematize", "deprecate",
+
     # I — Proper nouns visible as dominant topic terms
     #     (raising LOWER_THRESH to 15 will remove most of these automatically;
     #      adding them here gives belt-and-suspenders coverage)
@@ -98,7 +102,7 @@ TERMS_TO_EXCLUDE = {
 
     # J — Date / ordinal fragments from blog post timestamps
     #     (appear as "August 22nd", "January 8th" on scraped blog pages)
-    "22nd", "8th", "1st", "2nd", "3rd",
+    "22nd", "8th", "1st", "2nd", "3rd", "datum"
 }
 
 
@@ -120,12 +124,18 @@ def main():
         )
     """)
 
-    # Insert — ignore duplicates so this script is safe to re-run
+    # Insert — ignore duplicates so this script is safe to re-run.
+    # The table requires reason + detection_method (NOT NULL) so we must
+    # supply them; 'manual' is the correct detection_method for hand-curated lists.
     inserted = 0
     skipped  = 0
     for term in sorted(TERMS_TO_EXCLUDE):
         try:
-            cur.execute("INSERT INTO excluded_terms (term) VALUES (?)", (term,))
+            cur.execute(
+                "INSERT INTO excluded_terms (term, reason, detection_method) "
+                "VALUES (?, 'manual exclusion', 'manual')",
+                (term,),
+            )
             inserted += 1
         except sqlite3.IntegrityError:
             skipped += 1

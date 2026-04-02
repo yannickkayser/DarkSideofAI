@@ -1,4 +1,3 @@
-
 """
 04b_step1_stm_figures.py
 ========================
@@ -65,10 +64,12 @@ EXT        = "jpg"
 
 # Toggle individual figures
 FIGURES = {
-    "STM_A": True,   # topic overview
-    "STM_B": True,   # audience separation
-    "STM_C": True,   # hypothesis alignment
+    "STM_A": True,   # topic overview (all topics, full corpus)
+    "STM_B": True,   # audience separation forest plot
+    "STM_C": True,   # hypothesis alignment heatmap
     "STM_D": True,   # domain × topic heatmap
+    "STM_E": True,   # dominant topics per audience (mirrored bar chart)
+    "STM_F": True,   # within-platform divergence heatmap (worker - client)
 }
 
 # How many FREX terms to show as labels on figures
@@ -618,6 +619,381 @@ def fig_stm_domain_topic(data: dict, style: str):
 
 
 # ---------------------------------------------------------------------------
+# Figure STM_E -- Audience-specific dominant topics (mirrored bar chart)
+# ---------------------------------------------------------------------------
+
+def fig_stm_audience_topics(data: dict, style: str):
+    """
+    Side-by-side horizontal bar charts showing the top topics within each
+    audience sub-corpus, ranked by mean theta calculated only over pages
+    belonging to that audience.
+
+    Left panel  = top topics among CLIENT pages  (bars extend left, blue)
+    Right panel = top topics among WORKER pages  (bars extend right, red)
+
+    Topics are the same set in both panels so rows align, making it easy to
+    see which topics are exclusive to one audience vs shared.  The ranking
+    is determined by each audience's own mean proportion, so topics that
+    dominate client pages rise to the top on the left and vice versa.
+
+    This figure directly supports the core B2B vs B2W research question:
+    what discourse is each audience predominantly exposed to?
+    """
+    K          = data["K"]
+    terms      = data["terms"]
+    prevalence = data["prevalence"]
+    theta      = data["theta"]
+
+    TOP_N = min(15, K)   # show at most 15 topics per side to keep it readable
+
+    # Compute mean theta per topic, split by audience
+    client_sums  = [0.0] * K
+    worker_sums  = [0.0] * K
+    client_count = 0
+    worker_count = 0
+
+    for row in theta:
+        if row["audience"] == "client":
+            for t in range(K):
+                client_sums[t] += row["props"][t]
+            client_count += 1
+        elif row["audience"] == "worker":
+            for t in range(K):
+                worker_sums[t] += row["props"][t]
+            worker_count += 1
+
+    client_means = [s / client_count if client_count else 0.0
+                    for s in client_sums]
+    worker_means = [s / worker_count if worker_count else 0.0
+                    for s in worker_sums]
+
+    # Build unified topic list ranked by max(client_mean, worker_mean) so
+    # the most prominent topics in either audience appear at the top
+    all_topics = list(range(1, K + 1))
+    all_topics.sort(
+        key=lambda t: max(client_means[t - 1], worker_means[t - 1]),
+        reverse=True,
+    )
+    top_topics = all_topics[:TOP_N]
+    top_topics.reverse()   # ascending so the highest ends up at the top of the chart
+
+    # Build label and colour for each topic row
+    def topic_color(t):
+        prev = prevalence.get(t, {})
+        if prev.get("significant"):
+            return C_CLIENT if prev.get("direction") == "client" else C_WORKER
+        return C_SHARED
+
+    row_labels = []
+    for t in top_topics:
+        frex5 = ", ".join(terms.get(t, {}).get("frex", [])[:LABEL_FREX_N])
+        row_labels.append(f"T{t:02d}: {frex5}")
+
+    c_props = [client_means[t - 1] for t in top_topics]
+    w_props = [worker_means[t - 1] for t in top_topics]
+    colors  = [topic_color(t)      for t in top_topics]
+
+    bg = C_BG_EXP if style == "exp" else C_BG_PUB
+    fig, (ax_c, ax_w) = plt.subplots(
+        1, 2,
+        figsize=(14, max(5, TOP_N * 0.42)),
+        sharey=True,
+    )
+    fig.patch.set_facecolor(bg)
+
+    y_pos = range(TOP_N)
+
+    # -- Client panel (left) -------------------------------------------------
+    ax_c.set_facecolor(bg)
+    ax_c.spines["top"].set_visible(False)
+    ax_c.spines["left"].set_visible(False)
+    ax_c.spines["bottom"].set_color(C_GRID)
+    ax_c.spines["right"].set_color(C_GRID)
+    ax_c.tick_params(colors=C_TEXT, labelsize=9)
+    ax_c.set_axisbelow(True)
+    ax_c.grid(axis="x", color=C_GRID, linewidth=0.6)
+    ax_c.invert_xaxis()   # bars grow leftward for visual mirroring
+
+    bars_c = ax_c.barh(list(y_pos), c_props, color=C_CLIENT,
+                       alpha=0.82, edgecolor="none", height=0.68)
+
+    if style == "exp":
+        for i, (bar, v) in enumerate(zip(bars_c, c_props)):
+            if v > 0.005:
+                ax_c.text(v / 2, i, f"{v:.3f}", va="center", ha="center",
+                          fontsize=7, color="white", fontweight="bold")
+
+    ax_c.set_title("CLIENT pages", **{**FONT_TITLE, "color": C_CLIENT, "fontsize": 11})
+    ax_c.set_xlabel("Mean topic proportion", **FONT_LABEL)
+    xmax_c = max(c_props + [0.001]) * 1.15
+    ax_c.set_xlim(xmax_c, 0)
+
+    # -- Worker panel (right) ------------------------------------------------
+    ax_w.set_facecolor(bg)
+    ax_w.spines["top"].set_visible(False)
+    ax_w.spines["right"].set_visible(False)
+    ax_w.spines["left"].set_color(C_GRID)
+    ax_w.spines["bottom"].set_color(C_GRID)
+    ax_w.tick_params(colors=C_TEXT, labelsize=9)
+    ax_w.set_axisbelow(True)
+    ax_w.grid(axis="x", color=C_GRID, linewidth=0.6)
+
+    bars_w = ax_w.barh(list(y_pos), w_props, color=C_WORKER,
+                       alpha=0.82, edgecolor="none", height=0.68)
+
+    if style == "exp":
+        for i, (bar, v) in enumerate(zip(bars_w, w_props)):
+            if v > 0.005:
+                ax_w.text(v / 2, i, f"{v:.3f}", va="center", ha="center",
+                          fontsize=7, color="white", fontweight="bold")
+
+    ax_w.set_title("WORKER pages", **{**FONT_TITLE, "color": C_WORKER, "fontsize": 11})
+    ax_w.set_xlabel("Mean topic proportion", **FONT_LABEL)
+    xmax_w = max(w_props + [0.001]) * 1.15
+    ax_w.set_xlim(0, xmax_w)
+
+    # -- Shared y-axis labels (topic names, centred between panels) ----------
+    ax_c.set_yticks(list(y_pos))
+    ax_c.set_yticklabels([])          # hide on left panel
+
+    ax_w.set_yticks(list(y_pos))
+    ax_w.set_yticklabels(row_labels, fontsize=8)
+
+    # Significance indicator dots on the dividing spine
+    for i, t in enumerate(top_topics):
+        prev = prevalence.get(t, {})
+        if prev.get("significant"):
+            dot_color = (C_CLIENT if prev.get("direction") == "client"
+                         else C_WORKER)
+            ax_w.plot(-0.002, i, "o", color=dot_color,
+                      markersize=5, transform=ax_w.get_yaxis_transform(),
+                      clip_on=False)
+
+    # -- Shared title --------------------------------------------------------
+    n_client = client_count
+    n_worker = worker_count
+    fig.suptitle(
+        f"Dominant topics by audience\n"
+        f"(top {TOP_N} of K={K}  |  {n_client} client pages, "
+        f"{n_worker} worker pages)",
+        **FONT_TITLE,
+        y=1.01,
+    )
+
+    # -- Legend --------------------------------------------------------------
+    legend_patches = [
+        mpatches.Patch(color=C_CLIENT, label="Sig. client-dominant"),
+        mpatches.Patch(color=C_WORKER, label="Sig. worker-dominant"),
+        mpatches.Patch(color=C_SHARED, label="Not significant"),
+    ]
+    fig.legend(handles=legend_patches, loc="lower center",
+               ncol=3, fontsize=8, framealpha=0.8,
+               bbox_to_anchor=(0.5, -0.04))
+
+    fig.tight_layout()
+    save(fig, "STM_E_audience_topics", style)
+
+
+# ---------------------------------------------------------------------------
+# Figure STM_F -- Within-platform topic divergence heatmap
+# ---------------------------------------------------------------------------
+
+def fig_stm_within_platform(con: sqlite3.Connection, data: dict, style: str):
+    """
+    Heatmap of topic divergence (worker theta - client theta) computed
+    WITHIN each platform company.
+
+    Only companies that have BOTH client-facing and worker-facing pages are
+    included (the within-pair design).  Comparing the same company's two
+    audiences controls for house style, sector, and company size — so any
+    divergence is attributable to audience-driven rhetorical choices.
+
+    Rows    = platform companies (sorted by total divergence magnitude)
+    Columns = topics with the highest divergence anywhere (ranked by
+              max |worker - client| across all companies)
+    Cell    = mean_worker_theta - mean_client_theta for that company x topic
+              Positive (red)  = topic more prominent in worker pages
+              Negative (blue) = topic more prominent in client pages
+              White           = no difference
+
+    The column headers show FREX labels so the topic content is immediately
+    readable.  A row of mostly red means a platform's worker content is
+    systematically different from its client content — the core evidence for
+    H1a, H2, H3 (worker-side discourse) and H1b, H1c (client-side discourse).
+
+    Requires corpus_view in the database (from 01_prepare_corpus.py) to
+    look up company_id for each domain.  Falls back to domain-level
+    comparison if corpus_view is unavailable.
+    """
+    K     = data["K"]
+    terms = data["terms"]
+    prevalence = data["prevalence"]
+
+    # -- Load per-domain topic means from SQLite -----------------------------
+    # Join stm_theta with corpus_view to get company_id + audience per domain.
+    cv_exists = con.execute(
+        "SELECT name FROM sqlite_master "
+        "WHERE type IN ('view','table') AND name='corpus_view'"
+    ).fetchone()
+
+    if cv_exists:
+        rows = con.execute("""
+            SELECT cv.company_id,
+                   cv.audience,
+                   th.topic_id,
+                   AVG(th.theta) AS mean_theta,
+                   COUNT(DISTINCT th.page_id) AS n_pages
+            FROM stm_theta th
+            JOIN corpus_view cv ON cv.page_id = th.page_id
+            WHERE cv.audience IN ('client', 'worker')
+            GROUP BY cv.company_id, cv.audience, th.topic_id
+        """).fetchall()
+        id_col = "company_id"
+    else:
+        log.warning("corpus_view not found — using domain as platform identifier.")
+        rows = con.execute("""
+            SELECT th.domain,
+                   th.audience,
+                   th.topic_id,
+                   AVG(th.theta) AS mean_theta,
+                   COUNT(DISTINCT th.page_id) AS n_pages
+            FROM stm_theta th
+            WHERE th.audience IN ('client', 'worker')
+            GROUP BY th.domain, th.audience, th.topic_id
+        """).fetchall()
+        id_col = "domain"
+
+    # Organise into nested dict: platform -> audience -> topic_id -> mean_theta
+    platform_data: dict = {}
+    for platform, audience, topic_id, mean_theta, n_pages in rows:
+        platform_data.setdefault(platform, {}).setdefault(audience, {})[topic_id] = mean_theta
+
+    # Keep only platforms that have BOTH audiences (the within-pair design)
+    paired = {
+        p: d for p, d in platform_data.items()
+        if "client" in d and "worker" in d
+    }
+    if not paired:
+        log.warning("STM_F: no platforms found with both client and worker pages. "
+                    "Skipping figure.")
+        return
+
+    # -- Compute divergence matrix  (worker - client) ------------------------
+    platforms = sorted(paired.keys())
+    divergence: dict = {}   # platform -> {topic_id: delta}
+    for p in platforms:
+        c_theta = paired[p]["client"]
+        w_theta = paired[p]["worker"]
+        all_topics = set(c_theta) | set(w_theta)
+        divergence[p] = {
+            t: w_theta.get(t, 0.0) - c_theta.get(t, 0.0)
+            for t in all_topics
+        }
+
+    # -- Select columns: topics with highest max |divergence| across platforms
+    MAX_TOPICS = min(18, K)
+    topic_max_div = {
+        t: max(abs(divergence[p].get(t, 0.0)) for p in platforms)
+        for t in range(1, K + 1)
+    }
+    top_topics = sorted(topic_max_div, key=topic_max_div.get, reverse=True)[:MAX_TOPICS]
+    top_topics.sort()   # left-to-right in topic number order for readability
+
+    # -- Sort platforms by total absolute divergence (most divergent on top) -
+    platforms.sort(
+        key=lambda p: sum(abs(divergence[p].get(t, 0.0)) for t in top_topics),
+        reverse=True,
+    )
+
+    # -- Build matrix --------------------------------------------------------
+    mat = np.array([
+        [divergence[p].get(t, 0.0) for t in top_topics]
+        for p in platforms
+    ])
+
+    # -- Column labels: "T07\nfrex1, frex2" ----------------------------------
+    col_labels = []
+    for t in top_topics:
+        frex3 = ", ".join(terms.get(t, {}).get("frex", [])[:3])
+        prev  = prevalence.get(t, {})
+        sig_marker = (
+            " ●C" if prev.get("significant") and prev.get("direction") == "client"
+            else " ●W" if prev.get("significant") and prev.get("direction") == "worker"
+            else ""
+        )
+        col_labels.append(f"T{t:02d}{sig_marker}\n{frex3}")
+
+    # -- Plot ----------------------------------------------------------------
+    vmax = max(np.abs(mat).max(), 0.01)
+
+    bg = C_BG_EXP if style == "exp" else C_BG_PUB
+    fig, ax = plt.subplots(
+        figsize=(max(10, len(top_topics) * 0.75),
+                 max(4, len(platforms) * 0.55)),
+    )
+    fig.patch.set_facecolor(bg)
+    ax.set_facecolor(bg)
+
+    # Custom diverging colourmap: blue (client) – white – red (worker)
+    import matplotlib.colors as mcolors
+    cmap = mcolors.LinearSegmentedColormap.from_list(
+        "bwr_thesis",
+        [C_CLIENT, "#FFFFFF", C_WORKER],
+    )
+
+    im = ax.imshow(mat, aspect="auto", cmap=cmap,
+                   vmin=-vmax, vmax=vmax)
+
+    # Cell annotations (exp style only — avoid clutter in pub)
+    if style == "exp":
+        for i in range(len(platforms)):
+            for j in range(len(top_topics)):
+                v = mat[i, j]
+                if abs(v) > 0.005:
+                    txt_color = "white" if abs(v) > vmax * 0.55 else C_TEXT
+                    ax.text(j, i, f"{v:+.2f}", ha="center", va="center",
+                            fontsize=6.5, color=txt_color)
+
+    # Axes
+    ax.set_xticks(range(len(top_topics)))
+    ax.set_xticklabels(col_labels, fontsize=7.5, rotation=35, ha="right",
+                       linespacing=1.3)
+    ax.set_yticks(range(len(platforms)))
+    ax.set_yticklabels(
+        [shorten_domain(str(p)) for p in platforms],
+        fontsize=9,
+    )
+
+    ax.set_xlabel("Topic  (●C = sig. client-dominant,  ●W = sig. worker-dominant)",
+                  **FONT_LABEL)
+    ax.set_ylabel(f"Platform  ({id_col})", **FONT_LABEL)
+    ax.set_title(
+        "Within-platform topic divergence  (worker − client)\n"
+        "Red = more prominent in worker pages   |   Blue = more prominent in client pages",
+        **FONT_TITLE,
+    )
+    ax.spines[:].set_visible(False)
+
+    # Colourbar
+    cb = plt.colorbar(im, ax=ax, shrink=0.6, pad=0.02)
+    cb.set_label("Δ mean topic proportion  (worker − client)", fontsize=8)
+    cb.ax.tick_params(labelsize=7)
+
+    # Zero-line reference at centre of colourbar
+    cb.ax.axhline(0, color=C_TEXT, linewidth=0.8, linestyle="--", alpha=0.5)
+
+    n_paired = len(platforms)
+    ax.annotate(
+        f"n = {n_paired} platforms with both client and worker pages",
+        xy=(0.01, -0.18), xycoords="axes fraction",
+        fontsize=7.5, color=C_SUBTEXT,
+    )
+
+    fig.tight_layout()
+    save(fig, "STM_F_within_platform_divergence", style)
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
@@ -650,6 +1026,14 @@ def main():
             if FIGURES.get("STM_D"):
                 log.info("STM_D -- Domain x topic heatmap")
                 fig_stm_domain_topic(data, style)
+
+            if FIGURES.get("STM_E"):
+                log.info("STM_E -- Audience-specific dominant topics")
+                fig_stm_audience_topics(data, style)
+
+            if FIGURES.get("STM_F"):
+                log.info("STM_F -- Within-platform topic divergence")
+                fig_stm_within_platform(con, data, style)
 
     log.info("=" * 60)
     log.info("Done.  Figures written to %s", OUTPUT_DIR.resolve())

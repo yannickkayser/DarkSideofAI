@@ -6,20 +6,20 @@ the Python figure scripts and any downstream analysis can query them directly
 without reading CSV files.
 
 Pipeline position:
-  Stage 3b — STM Import (run after 04_export.R in R)
-  Reads from: STMAnalysis/output/step_1/stm/*.csv
-  Writes to:  scraping_2.db  (four tables + one view)
-  Next step:  04b_step1_stm_figures.py  (STM visualisations)
+    Stage 3b — STM Import (run after 04_export.R in R)
+    Reads from: STMAnalysis/output/step_1/stm/*.csv
+    Writes to:  scraping_2.db  (four tables + one view)
+    Next step:  04b_step1_stm_figures.py  (STM visualisations)
 
 Tables created / replaced:
-  stm_theta        — per-document topic proportions (θ matrix)
-  stm_topic_terms  — top-N terms per topic (prob + frex / sage columns)
-  stm_prevalence   — audience prevalence effects from estimateEffect()
-  stm_content      — per-audience word log-odds per topic (if available)
+    stm_theta        — per-document topic proportions (θ matrix)
+    stm_topic_terms  — top-N terms per topic (prob + frex / sage columns)
+    stm_prevalence   — audience prevalence effects from estimateEffect()
+    stm_content      — per-audience word log-odds per topic (if available)
 
 View created / replaced:
-  stm_topic_profile — convenience join of stm_theta + stm_prevalence
-                       + corpus_view metadata (audience, domain, platform_type)
+    stm_topic_profile — convenience join of stm_theta + stm_prevalence
+                        + corpus_view metadata (audience, domain, platform_type)
 
 Usage:
     python3 src2/03b_import_stm.py
@@ -108,9 +108,9 @@ def load_theta(con: sqlite3.Connection, rows: list[dict]) -> int:
     stm_theta: one row per document × topic proportion.
 
     Columns from R:
-      page_id, audience, domain,
-      topic_1 … topic_K,   (K dynamic — we pivot to long format)
-      dominant_topic, dominant_prop
+    page_id, audience, domain,
+        topic_1 … topic_K,   (K dynamic — we pivot to long format)
+        dominant_topic, dominant_prop
     """
     con.execute("DROP TABLE IF EXISTS stm_theta")
     con.execute("""
@@ -129,7 +129,7 @@ def load_theta(con: sqlite3.Connection, rows: list[dict]) -> int:
     if not rows:
         return 0
     topic_cols = [c for c in rows[0].keys() if c.startswith("topic_")
-                  and c[6:].isdigit()]
+                    and c[6:].isdigit()]
     topic_cols.sort(key=lambda c: int(c[6:]))
 
     records = []
