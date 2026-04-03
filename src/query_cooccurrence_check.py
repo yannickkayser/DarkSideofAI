@@ -29,7 +29,7 @@ from pathlib import Path
 DB_PATH     = "data/scraping.db"
 QUERY_WORDS = ["work", "baby"]   # words that co-occur suspiciously
 WINDOW      = 10                 # tokens either side for KWIC context
-MAX_PAGES   = 30                 # max pages to display
+MAX_PAGES   = 50                 # max pages to display
 
 # ---------------------------------------------------------------------------
 

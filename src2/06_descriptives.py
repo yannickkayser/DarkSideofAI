@@ -140,7 +140,7 @@ def _word_count_stats(group: pd.DataFrame) -> dict:
     wc = group["token_count"]
     return {
         "mean_tokens": round(wc.mean()),
-        "sd_tokens":   round(wc.std()),
+        "sd_tokens":   round(wc.std()) if len(wc) > 1 else 0,
         "median_tokens": round(wc.median()),
     }
 
@@ -322,7 +322,7 @@ def build_per_platform(df: pd.DataFrame) -> pd.DataFrame:
 
 def main():
     log.info("=" * 60)
-    log.info("03_descriptives.py — Corpus Descriptive Statistics")
+    log.info("06_descriptives.py — Corpus Descriptive Statistics")
     log.info("=" * 60)
 
     conn = open_db(DB_PATH)
