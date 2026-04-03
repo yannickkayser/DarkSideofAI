@@ -21,14 +21,14 @@ try:
 except ImportError:
     raise SystemExit("openpyxl not installed. Run: pip install openpyxl")
 
-XLSX_PATH   = Path("output/intercoder/intercoder_coding_sheet.xlsx")
+XLSX_PATH   = Path("output/intercoder/intercoder_coding_sheet_filledout.xlsx")
 REPORT_PATH = Path("output/intercoder/reliability_report.txt")
 
-VALID_LABELS = {"client", "worker", "both", "unclear"}
+VALID_LABELS = {"Client", "Worker", "Both", "Unclear"}
 
 # Column indices — Domain Coding sheet (coder-facing, no study label)
 COL_DOMAIN      = 1
-COL_CODER_LABEL = 6   # coder's label (was column 7 before; study label col removed)
+COL_CODER_LABEL = 6   # coder's label
 COL_NOTES       = 7
 
 # Column indices — _study_labels hidden sheet
@@ -72,8 +72,8 @@ def interpret_kappa(k):
 def main():
     if not XLSX_PATH.exists():
         raise SystemExit(f"File not found: {XLSX_PATH}\n"
-                         "Run generate_intercoder_materials.py first and ensure "
-                         "the second coder has returned their labels.")
+                        "Run generate_intercoder_materials.py first and ensure "
+                        "the second coder has returned their labels.")
 
     wb = openpyxl.load_workbook(XLSX_PATH, data_only=True)
 

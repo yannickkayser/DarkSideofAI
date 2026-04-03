@@ -270,33 +270,81 @@ def create_corpus_view(conn: sqlite3.Connection):
       (which is derived from URL matching and unreliable).  This is the
       authoritative audience assignment.
 
+    Override support:
+      If the page_audience_override table already exists (populated by
+      01_prepare_audience_overrides.py), this script builds the override-aware
+      version of corpus_view automatically.  Re-running this script therefore
+      never silently loses the URL-based client/worker splits.
+
     Key columns:
       page_id, url, segments, unigrams, bigrams, token_count
       audience, platform_type, company_id, hq_region, platform_name, domain
     """
+    # Check whether the override table exists and has rows.
+    has_overrides = conn.execute("""
+        SELECT COUNT(*) FROM sqlite_master
+        WHERE type='table' AND name='page_audience_override'
+    """).fetchone()[0] > 0
+
+    if has_overrides:
+        n_overrides = conn.execute(
+            "SELECT COUNT(*) FROM page_audience_override"
+        ).fetchone()[0]
+        has_overrides = n_overrides > 0
+
     conn.execute("DROP VIEW IF EXISTS corpus_view")
-    conn.execute("""
-        CREATE VIEW corpus_view AS
-        SELECT
-            t.page_id,
-            t.url,
-            t.segments,        -- JSON list of lists: per-sentence token lists
-            t.unigrams,        -- JSON flat list: used by keyness analysis
-            t.bigrams,         -- JSON list of within-sentence bigrams
-            t.token_count,
-            pl.audience,       -- from config via platforms — authoritative
-            pl.platform_type,
-            pl.company_id,
-            pl.hq_region,
-            pl.name    AS platform_name,
-            w.domain
-        FROM pages_tfidf t
-        JOIN pages    pg ON pg.id       = t.page_id
-        JOIN websites w  ON w.id        = pg.website_id
-        JOIN platforms pl ON pl.domain  = REPLACE(w.domain, 'www.', '')
-    """)
-    conn.commit()
-    log.info("corpus_view created (includes segments column).")
+
+    if has_overrides:
+        conn.execute("""
+            CREATE VIEW corpus_view AS
+            SELECT
+                t.page_id,
+                t.url,
+                t.segments,        -- JSON list of lists: per-sentence token lists
+                t.unigrams,        -- JSON flat list: used by keyness analysis
+                t.bigrams,         -- JSON list of within-sentence bigrams
+                t.token_count,
+                COALESCE(o.audience,   pl.audience)   AS audience,
+                COALESCE(o.company_id, pl.company_id) AS company_id,
+                pl.platform_type,
+                pl.hq_region,
+                pl.name    AS platform_name,
+                w.domain
+            FROM pages_tfidf t
+            JOIN pages    pg ON pg.id      = t.page_id
+            JOIN websites w  ON w.id       = pg.website_id
+            JOIN platforms pl ON pl.domain = REPLACE(w.domain, 'www.', '')
+            LEFT JOIN page_audience_override o ON o.page_id = t.page_id
+        """)
+        log.info(
+            f"corpus_view created with override support "
+            f"({n_overrides} page_audience_override rows applied)."
+        )
+    else:
+        conn.execute("""
+            CREATE VIEW corpus_view AS
+            SELECT
+                t.page_id,
+                t.url,
+                t.segments,        -- JSON list of lists: per-sentence token lists
+                t.unigrams,        -- JSON flat list: used by keyness analysis
+                t.bigrams,         -- JSON list of within-sentence bigrams
+                t.token_count,
+                pl.audience,       -- from config via platforms — authoritative
+                pl.platform_type,
+                pl.company_id,
+                pl.hq_region,
+                pl.name    AS platform_name,
+                w.domain
+            FROM pages_tfidf t
+            JOIN pages    pg ON pg.id       = t.page_id
+            JOIN websites w  ON w.id        = pg.website_id
+            JOIN platforms pl ON pl.domain  = REPLACE(w.domain, 'www.', '')
+        """)
+        log.info(
+            "corpus_view created (no overrides — run "
+            "01_prepare_audience_overrides.py to add URL-based splits)."
+        )
 
 
 # ===========================================================================
@@ -506,9 +554,23 @@ def detect_excluded_terms(conn: sqlite3.Connection):
       D. (Planned)     — boilerplate co-occurrence detection
 
     All exclusions are auditable: each entry records reason and method.
+
+    Safe re-run behaviour:
+      Only auto-detected rows (detection_method != 'manual') are cleared on each
+      run.  Rows inserted by add_excluded_terms.py (detection_method = 'manual')
+      are preserved, so re-running this script never silently removes the
+      hand-curated foreign/noise term list.
     """
     log.info("Detecting artifact / noise terms for exclusion...")
-    conn.execute("DELETE FROM excluded_terms")
+    # Preserve manual entries — only clear auto-detected ones.
+    n_manual = conn.execute(
+        "SELECT COUNT(*) FROM excluded_terms WHERE detection_method = 'manual'"
+    ).fetchone()[0]
+    conn.execute(
+        "DELETE FROM excluded_terms WHERE detection_method != 'manual'"
+    )
+    if n_manual:
+        log.info(f"  Preserved {n_manual} manual exclusion(s) from add_excluded_terms.py.")
 
     excluded_page_ids = {
         r[0] for r in conn.execute("SELECT page_id FROM excluded_pages").fetchall()
@@ -606,9 +668,19 @@ def main():
     """
     Run the full corpus preparation sequence:
       1. Platform metadata → platforms table
-      2. corpus_view (with segments)
+      2. corpus_view — with override support if page_audience_override exists
       3. Diagnostics
-      4. Exclusion tables (pages + terms)
+      4. Exclusion tables (pages + terms); manual entries preserved
+
+    REQUIRED run order (run ALL of these when setting up or re-preparing):
+      python3 src2/00_preprocess.py
+      python3 src2/01_prepare_corpus.py             ← this script
+      python3 src/01_prepare_audience_overrides.py  ← URL-based audience splits
+      python3 src2/add_excluded_terms.py            ← hand-curated noise terms
+
+    Safe to re-run: this script detects existing overrides and preserves
+    manually-added excluded terms, so the output is always the correct
+    fully-prepared corpus regardless of re-run order within a session.
     """
     if not Path(DB_PATH).exists():
         raise FileNotFoundError(f"Database not found: {DB_PATH}")
@@ -671,10 +743,28 @@ def main():
 
     n_exc_pages = conn.execute("SELECT COUNT(*) FROM excluded_pages").fetchone()[0]
     n_exc_terms = conn.execute("SELECT COUNT(*) FROM excluded_terms").fetchone()[0]
+    n_manual    = conn.execute(
+        "SELECT COUNT(*) FROM excluded_terms WHERE detection_method='manual'"
+    ).fetchone()[0]
+    n_auto      = n_exc_terms - n_manual
+
+    # Check whether corpus_view has override support
+    cv_sql = conn.execute(
+        "SELECT sql FROM sqlite_master WHERE type='view' AND name='corpus_view'"
+    ).fetchone()[0]
+    has_overrides = "page_audience_override" in cv_sql
+
     log.info("=" * 60)
-    log.info(f"CORPUS READY")
+    log.info("CORPUS READY")
+    log.info(f"  corpus_view audience overrides : {'YES' if has_overrides else 'NO — run 01_prepare_audience_overrides.py'}")
     log.info(f"  Excluded pages : {n_exc_pages}")
-    log.info(f"  Excluded terms : {n_exc_terms}")
+    log.info(f"  Excluded terms : {n_exc_terms}  "
+             f"(auto={n_auto}, manual={n_manual})")
+    if n_manual == 0:
+        log.warning(
+            "  No manual exclusions found — run add_excluded_terms.py "
+            "to add the hand-curated foreign/noise term list."
+        )
     log.info("Next step: python3 src2/02_step1_analysis.py")
     log.info("=" * 60)
 
