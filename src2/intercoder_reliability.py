@@ -85,11 +85,22 @@ def main():
         )
     study_label_map = {}
     for row in wb["_study_labels"].iter_rows(min_row=2, values_only=True):
-        domain = str(row[COL_HL_DOMAIN - 1] or "").strip()
+        # Normalise to lowercase so lookup is case-insensitive
+        domain = str(row[COL_HL_DOMAIN - 1] or "").strip().lower()
         label  = str(row[COL_HL_LABEL  - 1] or "").strip().lower()
         if domain:
             # Normalise split → both for kappa purposes
             study_label_map[domain] = "both" if label == "split" else label
+
+    print(f"[DIAGNOSTIC] _study_labels sheet: {len(study_label_map)} domains loaded")
+    if study_label_map:
+        sample = list(study_label_map.items())[:5]
+        print(f"[DIAGNOSTIC] First 5 hidden-sheet domains: {sample}")
+    else:
+        raise SystemExit(
+            "ERROR: _study_labels sheet exists but is empty.\n"
+            "Re-run generate_intercoder_materials.py to rebuild the file."
+        )
 
     ws = wb["Domain Coding"]
 
@@ -97,9 +108,11 @@ def main():
     coder_labels      = []
     disagreements     = []
     missing_coder     = []
+    skipped_no_study  = []
 
     for row in ws.iter_rows(min_row=2, values_only=True):
-        domain      = str(row[COL_DOMAIN - 1] or "").strip()
+        # Normalise domain to lowercase to match the hidden sheet key
+        domain      = str(row[COL_DOMAIN - 1] or "").strip().lower()
         coder_label = str(row[COL_CODER_LABEL - 1] or "").strip().lower()
         note        = str(row[COL_NOTES - 1] or "").strip()
 
@@ -108,9 +121,18 @@ def main():
 
         study_label = study_label_map.get(domain)
         if not study_label:
-            continue   # domain not in hidden sheet (legend row etc.)
+            skipped_no_study.append(domain)
+            continue   # domain not in hidden sheet (legend row, header, etc.)
 
         if not coder_label or coder_label in ("none", "nan", ""):
+            missing_coder.append(domain)
+            continue
+
+        # Validate coder label value
+        valid_lower = {v.lower() for v in VALID_LABELS}
+        if coder_label not in valid_lower:
+            print(f"[WARNING] Unexpected coder label '{coder_label}' for '{domain}' — "
+                  f"expected one of {sorted(valid_lower)}. Treating as missing.")
             missing_coder.append(domain)
             continue
 
@@ -128,6 +150,19 @@ def main():
     kappa, n = cohen_kappa(researcher_labels, coder_labels)
     p_agree  = round(sum(a == b for a, b in zip(researcher_labels, coder_labels)) / max(n, 1) * 100, 1)
 
+    # Diagnostic: show skipped rows if nothing matched — surface the root cause
+    if n == 0:
+        print("\n[DIAGNOSTIC] No domains matched between the two sheets.")
+        print(f"  Domains in _study_labels : {len(study_label_map)}")
+        print(f"  Rows in Domain Coding    : {ws.max_row - 1}")
+        print(f"  Skipped (no match)       : {len(skipped_no_study)}")
+        if skipped_no_study:
+            print(f"  First 5 unmatched domain-coding rows: {skipped_no_study[:5]}")
+        print("\nLikely cause: the domain strings in the two sheets differ.")
+        print("Check for uppercase letters, 'www.' prefix, trailing spaces,")
+        print("or extra columns shifting the domain column index.")
+        raise SystemExit("Aborting — no data to compute kappa. See diagnostics above.")
+
     # ── Build report ──────────────────────────────────────────────────────────
     lines = [
         "DarkSideofAI — Intercoder Reliability Report",
@@ -135,6 +170,7 @@ def main():
         "",
         f"Domains coded by both raters : {n}",
         f"Domains with missing coder label : {len(missing_coder)}",
+        f"Domains skipped (not in hidden sheet) : {len(skipped_no_study)}",
         "",
         "OVERALL AGREEMENT",
         f"  Observed agreement (p_o) : {p_agree}%",
