@@ -27,7 +27,7 @@ from pathlib import Path
 # ---------------------------------------------------------------------------
 
 DB_PATH     = "data/scraping.db"
-QUERY_WORDS = ["work", "baby"]   # words that co-occur suspiciously
+QUERY_WORDS = ["worker", "migrant"]   # words that co-occur suspiciously
 WINDOW      = 10                 # tokens either side for KWIC context
 MAX_PAGES   = 50                 # max pages to display
 
