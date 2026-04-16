@@ -85,12 +85,17 @@ HIGH_VARIANCE_PERCENTILE = 50     # percentile cut for vocabulary used in JSD/co
 # H1c — Strategic hypervisibility
 THEORY_FOCUS_TERMS = {
     "worker", "labour", "task", "job", "pay", "earn",
-    "autonomous", "machine", "automate", "intelligent", "automation",
+    "autonomous", "machine", "automate", "intelligent", "automation", "algorithm", "AI", "model",
     "human", "quality", "oversight", "annotation", "label",
     # Additional terms for H2–H4
     "flexible", "flexibility", "freedom", "autonomy",
     "talent", "resource", "contributor", "workforce",
     "community", "collective", "score", "rating", "rank",
+    "earn", "wage", "salary", "payment", "bonus", "rate", "income", "fee", "compensation", "paid",
+    "hour", "schedule", "deadline", "flexible", "available", "shift", "weekend", "full-time", "part-time", "anytime",
+    "ethical", "responsible", "fair", "transparent", "safety", "wellbeing", "dignity", "sustainable", "principle", "accountability",
+    "visible", "invisible", "hidden", "behind", "anonymous", "named", "recognised", "credit", "attribution", "byline"
+
 }
 
 logging.basicConfig(
