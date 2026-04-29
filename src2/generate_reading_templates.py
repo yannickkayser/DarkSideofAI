@@ -212,8 +212,11 @@ for _, pg in sample.iterrows():
     # Use original if available, otherwise derive from dominant topic
     if orig_hypothesis:
         primary_hyp = orig_hypothesis
-    elif dominant_topic is not None:
-        primary_hyp = TOPIC_HYPOTHESIS.get(int(dominant_topic), None) or "general"
+    elif dominant_topic is not None and pd.notna(dominant_topic):
+        try:
+            primary_hyp = TOPIC_HYPOTHESIS.get(int(dominant_topic), None) or "general"
+        except (ValueError, TypeError):
+            primary_hyp = "general"
     else:
         primary_hyp = "general"
 
@@ -222,6 +225,11 @@ for _, pg in sample.iterrows():
     filename = f"s{orig_stratum}_{primary_hyp}_{audience}_{safe_domain}_p{page_id}.md"
 
     out_path = TEMPLATE_DIR / filename
+
+    # ── Skip files that already exist (preserve prior annotations) ─
+    if out_path.exists():
+        skipped += 1
+        continue
 
     # ── Gather KWIC lines for ALL hypotheses' focal terms ──────
     segments = get_page_segments(conn, page_id)
@@ -342,9 +350,8 @@ for _, pg in sample.iterrows():
     out_path.write_text("\n".join(lines), encoding="utf-8")
     generated += 1
 
-print(f"\n  Generated {generated} reading templates → {TEMPLATE_DIR}/")
-if skipped:
-    print(f"  Skipped {skipped} (already coded)")
+print(f"\n  Generated {generated} new templates → {TEMPLATE_DIR}/")
+print(f"  Skipped  {skipped} (file already exists — annotations preserved)")
 
 # ── Print reading order summary ────────────────────────────────
 print(f"\n{'='*60}")
@@ -373,7 +380,9 @@ for _, pg in sample.iterrows():
     hyp = orig.get("hypothesis", "general")
     stratum = orig.get("stratum", pg.get("stratum", ""))
     fname = f"s{stratum}_{hyp}_{aud}_{safe_domain}_p{page_id}.md"
-    print(f"    {ro:>3d}. {fname}")
+    fpath = TEMPLATE_DIR / fname
+    exists_marker = " ✓EXISTS" if fpath.exists() else ""
+    print(f"    {ro:>3d}. {fname}{exists_marker}")
 
 conn.close()
 print(f"\n{'='*60}")

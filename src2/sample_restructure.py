@@ -104,6 +104,37 @@ TOPIC_HYPOTHESIS = {
     21: 'H1b',  22: 'H1a',  23: 'H1b', 24: 'H1b',  25: 'H1b',
 }
 
+# ─── Boilerplate topics (mapped to None in TOPIC_HYPOTHESIS) ──────
+# Pages whose dominant topic is one of these carry no hypothesis-relevant
+# content — they are legal text, cookie banners, or navigational chrome.
+# Excluding them from close reading follows Baker (2006, §4.2) and
+# Mautner (2009): boilerplate saturates frequency and topic measures
+# but contributes nothing to register analysis.
+BOILERPLATE_TOPICS = {
+    tid for tid, h in TOPIC_HYPOTHESIS.items() if h is None
+}   # = {3, 8, 10, 13, 15}
+
+# ─── URL-path patterns that signal non-content pages ──────────────
+# Matched case-insensitively against the full URL. Any page whose URL
+# contains one of these substrings is excluded from selection (but not
+# from the corpus-level STM/keyness aggregates, which already ran).
+import re
+BOILERPLATE_URL_PATTERNS = re.compile(
+    r'(?i)('
+    r'terms[-_]of[-_]service|terms[-_]and[-_]conditions|'
+    r'privacy[-_]polic|privacy[-_]statement|'
+    r'cookie[-_]polic|cookie[-_]notice|'
+    r'legal[-_]polic|legal/|/legal|'
+    r'data[-_]?process|gdpr|'
+    r'acceptable[-_]use|'
+    r'modern[-_]slavery|'
+    r'imprint|impressum|'
+    r'disclaimer|'
+    r'/api-reference/|/docs/api|'
+    r'/careers/\d|/jobs/\d'
+    r')'
+)
+
 
 # ─── Connect ───────────────────────────────────────────────────────
 conn = sqlite3.connect(DB_PATH)
@@ -200,37 +231,84 @@ def get_domain_pages(domain: str, conn: sqlite3.Connection) -> pd.DataFrame:
 # ─── Helper: select top-N pages for a domain ──────────────────────
 def select_top_pages(pages: pd.DataFrame, n: int,
                      protected: set[int]) -> pd.DataFrame:
-    """Select top-N pages by max_theta, always keeping protected pages.
-    Also ensure homepage is included if it exists."""
+    """Select top-N pages for close reading.
+
+    Selection logic (applied in order):
+      1. Always keep protected pages (already coded by user).
+      2. Always keep the homepage (first encounter with the register).
+      3. EXCLUDE pages whose dominant STM topic is boilerplate
+         (T3, T8, T10, T13, T15 — legal text, cookie notices, nav chrome).
+      4. EXCLUDE pages whose URL matches boilerplate patterns
+         (terms-of-service, privacy-policy, legal/, api-reference, etc.).
+      5. Rank remaining candidates by hypothesis-relevant theta:
+             best_hyp_theta = max(theta_H1a, theta_H1b, theta_H1c)
+         NOT by raw max_theta, which may peak on a boilerplate topic.
+      6. Take the top-N from that ranking.
+
+    Methodological justification: Baker (2006, §4.2) and Mautner (2009)
+    both exclude formulaic/legal text from close reading on the ground
+    that it inflates frequency counts without contributing to the
+    register patterns under study. The notebook's Cell 4b applied the
+    same filter at the step2_sample level; this function applies it at
+    the per-domain selection level.
+    """
 
     if pages.empty:
         return pages
 
-    # Identify homepage candidates
     pages = pages.copy()
+
+    # ── Identify homepage candidates ───────────────────────────
     pages["is_homepage"] = pages["url"].apply(
-        lambda u: u.rstrip("/").endswith((".com", ".ai", ".me", ".org", ".net"))
-        if pd.notna(u) else False
-    )
-    # Also check for paths that are just "/"
-    pages["is_homepage"] = pages["is_homepage"] | pages["url"].apply(
         lambda u: u.rstrip("/").split("//")[-1].count("/") == 0
         if pd.notna(u) else False
     )
 
+    # ── Tag boilerplate pages ──────────────────────────────────
+    pages["is_boilerplate_topic"] = pages["dominant_topic"].apply(
+        lambda t: int(t) in BOILERPLATE_TOPICS
+        if pd.notna(t) else False
+    )
+    pages["is_boilerplate_url"] = pages["url"].apply(
+        lambda u: bool(BOILERPLATE_URL_PATTERNS.search(str(u)))
+        if pd.notna(u) else False
+    )
+    pages["is_boilerplate"] = (
+        pages["is_boilerplate_topic"] | pages["is_boilerplate_url"]
+    )
+
+    # ── Compute hypothesis-relevant ranking score ──────────────
+    # max(theta_H1a, theta_H1b, theta_H1c) — ignores boilerplate topics
+    hyp_cols = ["theta_H1a", "theta_H1b", "theta_H1c"]
+    available_hyp = [c for c in hyp_cols if c in pages.columns]
+    if available_hyp:
+        pages["best_hyp_theta"] = pages[available_hyp].max(axis=1)
+    else:
+        pages["best_hyp_theta"] = pages.get("max_theta", 0)
+
+    # ── Partition into must-keep vs. candidates ────────────────
     is_protected = pages["page_id"].isin(protected)
     is_home = pages["is_homepage"]
 
     must_keep = pages[is_protected | is_home].copy()
-    candidates = pages[~(is_protected | is_home)].copy()
 
-    # Sort candidates by max_theta descending
-    candidates = candidates.sort_values("max_theta", ascending=False)
+    candidates = pages[
+        ~(is_protected | is_home) & ~pages["is_boilerplate"]
+    ].copy()
+
+    # Count what we excluded
+    n_excluded = int(pages["is_boilerplate"].sum())
+    n_bp_topic = int(pages["is_boilerplate_topic"].sum())
+    n_bp_url = int(pages["is_boilerplate_url"].sum())
+    if n_excluded > 0:
+        print(f"      excluded {n_excluded} boilerplate pages "
+              f"({n_bp_topic} by topic, {n_bp_url} by URL)")
+
+    # ── Rank by hypothesis-relevant theta ──────────────────────
+    candidates = candidates.sort_values("best_hyp_theta", ascending=False)
 
     slots = max(0, n - len(must_keep))
     selected = pd.concat([must_keep, candidates.head(slots)], ignore_index=True)
-
-    # Deduplicate
     selected = selected.drop_duplicates(subset="page_id")
 
     return selected

@@ -25,5 +25,5 @@ def download_video_with_metadata(url, output_path="%(title)s.%(ext)s"):
         "description": info.get("description"),
     }
 
-video = download_video_with_metadata("https://www.youtube.com/watch?v=lBokZmnbcVw")
+video = download_video_with_metadata("https://www.youtube.com/watch?v=mjVjVLNjXx0")
 print(json.dumps(video, indent=2))
